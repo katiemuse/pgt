@@ -1,8 +1,9 @@
+@import 'fonts';
 @import 'base';
-@import 'fonts.scss';
 @import 'animated-icons';
 @import 'buttons';
 @import 'forms';
+@import 'sprites';
 
 * {
   @include user-select(none);

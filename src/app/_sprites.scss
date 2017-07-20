@@ -1,0 +1,124 @@
+.icon-salesforce {
+  background-image: url(../assets/images/sprites/drip-logic-sprite.png);
+  background-position: 0 0;
+  width: 16px;
+  height: 16px;
+}
+
+.icon-hotspot {
+  &.active {
+    background-position: 0 0;
+    background-image: url(../assets/images/sprites/hotspots-sprite.png);
+    width: 25px;
+    height: 25px;
+  }
+  background-image: url(../assets/images/sprites/hotspots-sprite.png);
+  width: 25px;
+  height: 25px;
+  background-position: -25px 0;
+}
+
+.icon-next {
+  &.active {
+    background-position: 0 0;
+    background-image: url(../assets/images/sprites/panel-navigation-sprite.png);
+    width: 10px;
+    height: 8px;
+  }
+  background-image: url(../assets/images/sprites/panel-navigation-sprite.png);
+  width: 10px;
+  height: 8px;
+  background-position: -10px 0;
+}
+
+.icon-previous {
+  &.active {
+    background-position: 0 -8px;
+    background-image: url(../assets/images/sprites/panel-navigation-sprite.png);
+    width: 10px;
+    height: 8px;
+  }
+  background-image: url(../assets/images/sprites/panel-navigation-sprite.png);
+  width: 10px;
+  height: 8px;
+  background-position: -10px -8px;
+}
+
+.icon-indicator-complete-inverse {
+  background-position: 0 0;
+  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
+  width: 15px;
+  height: 15px;
+}
+
+.icon-indicator-complete {
+  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
+  width: 15px;
+  height: 15px;
+  background-position: -15px 0;
+}
+
+.icon-indicator-gray {
+  &.active {
+    background-position: 0 -15px;
+    background-image: url(../assets/images/sprites/story-indicators-sprite.png);
+    width: 15px;
+    height: 15px;
+  }
+  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
+  width: 15px;
+  height: 15px;
+  background-position: -15px -15px;
+}
+
+.icon-indicator-white {
+  &.active {
+    background-position: -30px 0;
+    background-image: url(../assets/images/sprites/story-indicators-sprite.png);
+    width: 15px;
+    height: 15px;
+  }
+  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
+  width: 15px;
+  height: 15px;
+  background-position: -30px -15px;
+}
+
+.icon-did-you-know {
+  &.active {
+    background-position: 0 0;
+    background-image: url(../assets/images/sprites/tips-sprite.png);
+    width: 55px;
+    height: 55px;
+  }
+  background-image: url(../assets/images/sprites/tips-sprite.png);
+  width: 55px;
+  height: 55px;
+  background-position: -55px 0;
+}
+
+.icon-hot-spots {
+  &.active {
+    background-position: 0 -55px;
+    background-image: url(../assets/images/sprites/tips-sprite.png);
+    width: 55px;
+    height: 55px;
+  }
+  background-image: url(../assets/images/sprites/tips-sprite.png);
+  width: 55px;
+  height: 55px;
+  background-position: -55px -55px;
+}
+
+.icon-info {
+  &.active {
+    background-position: -110px 0;
+    background-image: url(../assets/images/sprites/tips-sprite.png);
+    width: 55px;
+    height: 55px;
+  }
+  background-image: url(../assets/images/sprites/tips-sprite.png);
+  width: 55px;
+  height: 55px;
+  background-position: -110px -55px;
+}

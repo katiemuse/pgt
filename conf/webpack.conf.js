@@ -11,15 +11,15 @@ module.exports = {
     loaders: [
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "url-loader?limit=10000&mimetype=application/font-woff"
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff'
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader"
+        loader: 'url-loader?limit=100000'
       },
-      { test: /\.png$/, loader: "file-loader" },
-      { test: /\.gif$/, loader: "file-loader" },
-      { test: /\.jpg/, loader: "file-loader" },
+      { test: /\.png$/, loader: 'file-loader' },
+      { test: /\.gif$/, loader: 'file-loader' },
+      { test: /\.jpg/, loader: 'file-loader' },
       {
         test: /\.json$/,
         loaders: [
@@ -34,12 +34,18 @@ module.exports = {
       },
       {
         test: /\.(css|scss)$/,
-        loaders: [
-          'style-loader',
-          'css-loader',
-          'sass-loader',
-          'postcss-loader'
-        ]
+        use: [{
+          loader: 'style-loader'
+        }, {
+          loader: 'css-loader', options: {
+            sourceMap: true
+          }
+        }, {
+          loader: 'sass-loader', options: {
+            sourceMap: true,
+            outputStyle: 'expanded'
+          }
+        }]
       },
       {
         test: /\.js$/,
