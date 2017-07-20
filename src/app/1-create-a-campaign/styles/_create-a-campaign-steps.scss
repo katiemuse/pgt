@@ -1,0 +1,22 @@
+@import '../../base';
+
+#step-container {
+
+  &.create-a-campaign-steps {
+
+    .step-three {
+      &.active {
+        .step-title {
+          transition: none;
+          padding-top: 10px;
+        }
+      }
+    }
+
+   .step-two, .step-three {
+    &.active {
+      height: 90px;
+    }
+  }
+  }
+}

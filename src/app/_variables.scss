@@ -1,0 +1,140 @@
+
+/* Fonts */
+$proximanova: 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
+$salesforcesans:  SalesforceSans, 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
+
+/* Screen Sizes */
+$screen-1080p: 1920px;
+
+/* Content Colors */
+$color-salesforce-blue:#009ddc;
+$color-salesforce-gray:#7c868d;
+$color-sales-cloud-blue: #5eb4ff;
+$color-sales-cloud-blue-medium: #7fbef4;
+$color-sales-cloud-purple: #8b2ecd;
+$color-sales-cloud-blue-light: #9fcaef;
+$color-sales-cloud-purple-medium: #ab4ada;
+$color-sales-cloud-purple-light: #c26dea;
+$color-marketing-cloud-orange: #e98300;
+$color-marketing-cloud-orange-medium: #ffa100;
+$color-marketing-cloud-orange-light: #f6b436;
+$color-platform-blue: #00267f;
+$color-platform-blue-medium: #0047b6;
+$color-platform-blue-light: #0077d4;
+$color-analytics-cloud-green: #009a7e;
+$color-analytics-cloud-green-medium: #01b493;
+$color-analytics-cloud-green-light: #01cda3;
+$color-community-cloud-yellow: #f5c400;
+$color-community-cloud-yellow-medium: #f4cd00;
+$color-community-cloud-yellow-light: #f7d93e;
+$color-button-white: #ffffff;
+$color-hotspot-panel-grey: #cccccc;
+
+/* Background Colors */
+$color-salesforce-background-grey: #ebecec;
+$color-salesforce-background-azure: #d0d9de;
+$color-salesforce-background-cadet-blue: #4e748b;
+$color-salesforce-background-slate: #003c4d;
+$color-background-gray-light2: #f4f4f4;
+$color-background-gray-light: #e5e5e5;
+$color-background-gray: #cccccc;
+$color-background-gray-medium: #F7F7F7;
+$color-background-black: #212121;
+$color-background-white: #ffffff;
+
+/* Text Colors */
+$text-color-white: #ffffff;
+$mobile-text-color-gray: #333333;
+$color-text-grey: #4d4d4d;
+$color-text-black: #212121;
+$color-form-label: #666666;
+$color-text-header: #444444;
+
+/* Error Colors */
+$error-red: #a21b0f;
+
+/* H1, H2, H3 */
+$header1-font-size: 48px;
+$header1-line-space: 52px;
+$header1-font-color: $color-text-black;
+$header1-font-family: $proximanova;
+$header1-font-weight: 100;
+
+$header2-font-size: 35px;
+$header2-line-space: 36px;
+$header2-font-family: $proximanova;
+$header2-font-weight: bold;
+
+$header3-font-size: 20px;
+$header3-line-space: 24px;
+$header3-font-family: $proximanova;
+$header3-font-weight: bold;
+
+/* Link Color */
+$link-color: #278AC7;
+
+/* Paragraph (P) */
+$paragraph-after-heading-font-size: 20px;
+$paragraph-after-heading-line-space: 24px;
+$paragraph-after-heading-font-color: $color-text-grey;
+
+$paragraph-font-size: 16px;
+$paragraph-font-line-space: 20px;
+$paragraph-font-color: $color-text-grey;
+
+/* Descriptors */
+$descriptors-font-size: 16px;
+$descriptors-font-line-height:18px;
+$descriptors-font-color: $color-text-black;
+$descriptors-text-transform: uppercase;
+
+/* Links */
+$text-link-font-size: 14px;
+$text-link-font-color: $link-color;
+$text-link-font-hover-color: $color-text-black;
+$text-link-text-transform: uppercase;
+
+/* Buttons */
+$cta-button-font-size: $text-link-font-size;
+$cta-button-font-color: $text-link-font-color;
+$cta-button-text-transform: uppercase;
+
+/* Footnotes */
+$footnotes-font-size: 12px;
+$footnotes-font-line-height: 15px;
+$footnotes-color: $color-text-black;
+
+/* Montior Display */
+$monitor-width: 792px;
+$monitor-height: 519px;
+
+/* Drawer Display */
+$drawer-width: 410px;
+$drawer-height: 610px;
+$drawer-padding-top: 80px;
+$drawer-padding-bottom: 80px;
+$drawer-padding-left: 46px;
+$drawer-padding-right: 46px;
+
+
+/* Z-indexes */
+
+$z-index-drawer: 2500;
+$z-index-drawer-blocker: 2490;
+
+$z-index-progress-navbar-opened-active: 2400;
+$z-index-progress-navbar-opened-inactive: 1998;
+$z-index-progress-navbar-blocker: 2390;
+
+$z-index-progress-navbar-opened: 2300;
+$z-index-progress-navbar-closed: 2290;
+
+$z-index-step-container: 2000;
+
+$z-index-footer: 2000;
+
+$z-index-hotspot: 2000;
+
+$z-index-centered-content: 2000;
+
+$z-index-monitor: 1999;

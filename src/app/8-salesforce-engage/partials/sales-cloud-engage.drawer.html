@@ -1,0 +1,67 @@
+<div class="drawer-content sales-cloud-engage-drawer">
+
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <wizard name="monitor" on-finish="beginStory()">
+      <wz-step>
+        <h2>Salesforce® Engage</h2>
+        <p>If you're a sales rep, you don't want to waste time jumping between sales applications, especially when your quota is on the line. Pardot's Salesforce® Engage allows you to take care of all of your selling tasks right from within your CRM.</p>
+        <p>With Salesforce® Engage, you can keep tabs on your active prospects in real time, send 1:1 emails to prospects using pre-approved templates or plain text, report on the success of these emails, and more.</p>
+        <p class="continue">
+          <a class="btn btn-rounded blue next" wz-next>Next</a>
+        </p>
+      </wz-step>
+      <wz-step>
+        <h2>Salesforce® Engage</h2>
+        <p>Let's use the Engage Alerts functionality to check back in on our prospect's activities. Sales Alerts are broken into customizable horizontal filters, each containing prospect activity cards that update in real time.</p>
+        <p class="continue">
+          <a class="btn btn-continue" wz-next>Continue</a>
+        </p>
+      </wz-step>
+    </wizard>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Add New Filter</h2>
+        <img src="assets/images/stories/8-sales-edge/8-drawer-add-new-filter.png"/>
+        <p>
+          View only the most relevant activity on your Engage Alert feed by customizing your own filters based on geography, activity type, and more.
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+  <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>You can use icons above each Engage Alert slider to pause them, change their settings, delete them, or toggle notifications on or off. The colors on each slide represent a different activity so you can quickly glance at the cards and get an overall sense of your prospect's actions.</p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Did You Know?</h2>
+        <p>Engage Alerts provides real-time alerts of prospect activities, which will appear as pop-up notifications at the top right of your desktop when a visitor or prospect takes an action.</p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="03">
+      <h2>Did You Know?</h2>
+      <p>You can also view a list of your prospect activities on-the-go from within Salesforce® Engage mobile application on Salesforce1.</p>
+    </drawer-panel-tab>
+
+    </drawer-panel>
+  </div>
+
+</div>

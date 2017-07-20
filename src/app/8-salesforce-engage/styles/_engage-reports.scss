@@ -1,0 +1,67 @@
+@import '../../base';
+
+@include keyframes (bounceReport) {
+  0% {
+    @include transform(translateY(0px));
+  }
+  100% {
+    @include transform(translateY(-160px));
+  }
+}
+
+.micro-campaign-reporting {
+
+  .step-0, .step-1, .step-2 {
+    background: url('../assets/images/stories/8-sales-edge/8-screen-report-no-controls.png') top center no-repeat;
+
+    height: 679px !important;
+  }
+
+  .step-0, .step-1 {
+    @include transform(translateY(0px));
+  }
+
+  .step-0, .step-1 {
+
+    #engage-report {
+      position: absolute;
+      left: 328px;
+      top: 200px;
+      width: 140px;
+      height: 100px;
+    }
+
+    .btn-primary {
+      position: absolute;
+      left: 693px;
+      top: 460px;
+      padding: 6px 19px;
+    }
+  }
+
+  section {
+    &.step {
+
+      &.current {
+
+//        .step-1 {
+//          @include animation(bounceReport 1s);
+//          @include animation-iteration-count(1);
+//          @include animation-fill-mode(forwards);
+//          @include animation-delay(0.5s);
+//          @include transition(all 1s linear);
+//        }
+
+      }
+    }
+  }
+}
+
+
+
+
+/*
+
+
+
+    */

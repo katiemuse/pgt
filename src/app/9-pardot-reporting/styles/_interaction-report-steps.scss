@@ -1,0 +1,14 @@
+@import '../../base';
+
+#step-container {
+
+  &.interaction-report-steps {
+
+    .step-one {
+      &.active {
+        height: 90px;
+      }
+    }
+
+  }
+}

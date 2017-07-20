@@ -1,0 +1,46 @@
+@import '../../base';
+
+.build-a-form-and-landing-page {
+
+
+  .step-0, .step-1 {
+    background: url('../assets/images/stories/2-build-a-form-and-landing-page/2-screen-build-a-form-and-landing-page-no-controls.png') center center no-repeat;
+  }
+
+  .step-0, .step-1 {
+    form {
+      position:absolute;
+      left: 73px;
+      top: 200px;
+
+      .control-group.tags {
+        margin-bottom: 39px;
+      }
+    }
+
+    .form-actions {
+      position: absolute;
+      bottom: 47px;
+      left: 110px;
+    }
+
+    form.form-horizontal .controls {
+      margin-left: 177px;
+    }
+
+    form.form-horizontal .control-label {
+      width: 157px;
+    }
+
+    label.campaign-name {
+      margin-left: 34px;
+      margin-top: 4px;
+      font-size: 14px;
+      letter-spacing: 0.23px;
+      &:after {
+        content: ''
+      }
+    }
+  }
+
+}

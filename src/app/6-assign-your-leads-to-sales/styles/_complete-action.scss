@@ -1,0 +1,41 @@
+@import '../../base';
+
+.complete-action {
+
+  .step-0, .step-1, .step-2 {
+    background: url('../assets/images/stories/6-assign-your-leads-to-sales/6-screen-complete-action-no-controls.png') center center no-repeat;
+  }
+
+
+  .step-0, .step-1, .step-2 {
+    .form {
+
+      &.salesperson {
+        position: absolute;
+        top: 85px;
+        left: 369px;
+      }
+
+      &.action {
+        position: absolute;
+        left: 163px;
+        top: 458px;
+      }
+
+      &.form-horizontal {
+        .controls {
+          margin-left:15px;
+        }
+      }
+
+
+      .form-actions {
+        input {
+          width: auto;
+        }
+      }
+
+    }
+  }
+
+}

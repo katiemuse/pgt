@@ -1,0 +1,70 @@
+<div class="row monitor-height assign-your-leads-to-sales">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+              <form class="form form-horizontal score">
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="score"  ng-model="prospect.score" class="text text-small" maxlength="20" disabled>
+                  </div>
+                </div>
+              </form>
+              <form class="form form-horizontal grade">
+                <div class="control-group">
+                  <div class="controls">
+                    <select class="text-small" ng-model="prospect.grade" disabled="disabled" ng-options="opt as opt.label for opt in gradeOptions">
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <input class="btn btn-primary" ng-class="{active:prospectNextBtn}" ng-disabled="!prospectNextBtn" ng-click="prospectNext()" type="submit" value="Next »" />
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <form class="form form-horizontal score">
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="score"  ng-model="prospect.score" li-autofocus="wizard.stateIndex == 1" class="text text-small active" maxlength="20">
+                  </div>
+                </div>
+              </form>
+              <form class="form form-horizontal grade">
+                <div class="control-group">
+                  <div class="controls">
+                    <select class="text-small" ng-model="prospect.grade" disabled="disabled" ng-options="opt as opt.label for opt in gradeOptions">
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <input class="btn btn-primary" ng-class="{active:prospectNextBtn}" ng-disabled="!prospectNextBtn" ng-click="prospectNext()" type="submit" value="Next »" />
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <form class="form form-horizontal score">
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="score"  ng-model="prospect.score" class="text text-small" maxlength="20" disabled>
+                  </div>
+                </div>
+              </form>
+              <form class="form form-horizontal grade">
+                <div class="control-group">
+                  <div class="controls">
+                    <select class="text-small active" ng-model="prospect.grade" li-autofocus="wizard.stateIndex == 2"  ng-options="opt as opt.label for opt in gradeOptions">
+                    </select>
+                  </div>
+                </div>
+              </form>
+              <input class="btn btn-primary" ng-class="{active:prospectNextBtn}" li-autofocus="prospectNextBtn"  ng-disabled="!prospectNextBtn" ng-click="prospectNext()" type="submit" value="Next »" />
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

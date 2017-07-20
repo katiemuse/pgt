@@ -1,0 +1,54 @@
+<div class="progress-navbar-container" ng-class="{'active':progress.open}">
+  <ul class="nav nav-stacked progress-navbar standard">
+    <li class="logo">
+      <a ui-sref="intro" href="#/">
+        <span class="logo"></span>
+      </a>
+    </li>
+    <li class="title">
+      <h1>Interactive Guided Tour</h1>
+    </li>
+    <li class="toggle">
+      <div class="animated-icon animated circular light" ng-class="{'x': progress.open, 'plus':!progress.open}" ng-click="progress.toggleOpen()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </li>
+    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="create-a-campaign"><span progress-state-class="1"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="build-a-form-and-landing-page"><span  progress-state-class="2"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="build-an-email"><span progress-state-class="3"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="view-a-prospect-profile"><span progress-state-class="4"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-class="5"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="assign-your-leads-to-sales"><span progress-state-class="6"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="sales-view-in-salesforce"><span progress-state-class="7"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="8" ui-sref="salesforce-engage"><span progress-state-class="8"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="9" ui-sref="pardot-reporting"><span progress-state-class="9"></span></a></li>
+  </ul>
+  <ul class="nav nav-stacked progress-navbar inverted" ng-class="{'active':progress.open}">
+    <li class="logo">
+      <a ui-sref="intro" href="#/">
+        <span class="logo"></span>
+      </a>
+    </li>
+    <li class="title">
+      <h1>Interactive Guided Tour</h1>
+    </li>
+    <li class="toggle">
+      <div class="animated-icon animated circular light" ng-class="{'x': progress.open, 'plus':!progress.open}" ng-click="progress.toggleOpen()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </li>
+    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="create-a-campaign"><span progress-state-inverted-class="1"></span><span class="label">Create a Campaign</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="build-a-form-and-landing-page"><span progress-state-inverted-class="2"></span><span class="label">Build a Form &amp; Landing Page</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="build-an-email"><span progress-state-inverted-class="3"></span><span class="label">Build an Email</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="view-a-prospect-profile"><span progress-state-inverted-class="4"></span><span class="label">View a Prospect Profile</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-inverted-class="5"></span><span class="label">Engagement Studio</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="assign-your-leads-to-sales"><span progress-state-inverted-class="6"></span><span class="label">Assign Your Leads to Sales</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="sales-view-in-salesforce"><span progress-state-inverted-class="7"></span><span class="label">Sales View in Salesforce&#0153;</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="8" ui-sref="salesforce-engage"><span progress-state-inverted-class="8"></span><span class="label">Salesforce® Engage</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="9" ui-sref="pardot-reporting"><span progress-state-inverted-class="9"></span><span class="label">Pardot Reporting</span></a></li>
+    <li class="text-center"><a id="start-over" class="btn btn-rounded btn-blue" href="#" ng-click="progress.startOver($event)">Start Over</a></li>
+    <li class="text-center"><a href="#" class="skip-section" ng-click="progress.skipToNextSection($event)" ng-show="canSkip">Skip to Next Section of the Tour &#x2794;</a></li>
+  </ul>
+</div>

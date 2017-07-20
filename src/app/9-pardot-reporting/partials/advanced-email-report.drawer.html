@@ -1,0 +1,75 @@
+<div class="drawer-content advanced-email-report-drawer">
+
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <h2>Advanced Email Report</h2>
+    <p>
+      Pardot’s advanced email reporting provides insight into email engagement, email clients and devices used by recipients, deliverability rates, and more.
+    </p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+    </p>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Click-Through Rate</h2>
+        <p>
+          Use this tab to see which areas of your emails are actually getting engaged with.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Interaction</h2>
+        <p>
+          See whether your emails have been read, skimmed, or ignored by your email recipients.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="03">
+        <h2>Email Clients</h2>
+        <p>
+          Take a look at the email clients, browsers, and devices used to open your emails.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="04">
+        <h2>Delivery Rate</h2>
+        <p>
+          Check important stats like your delivery rate, open rate, and click-to-open ratio at a glance.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="05">
+        <h2>Suppression List</h2>
+        <p>
+          Pardot allows you to create &ldquo;suppression lists&rdquo; that will omit a selected group of recipients from list emails or drip programs.
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+  <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>Pardot comes with more than twenty out-of-the-box reports, including paid search reporting, content and social reports, landing page reports, sales funnel reporting, and more.</p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Did You Know?</h2>
+        <p>Pardot's device reporting captures and tracks email client usage across 120+ email clients.</p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+</div>

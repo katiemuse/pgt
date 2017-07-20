@@ -1,0 +1,39 @@
+@import '../../base';
+
+.create-a-campaign {
+
+  .step-0, .step-1, .step-2, .step-3 {
+    background: url('../assets/images/stories/1-create-a-campaign/1-screen-create-campaign-no-controls.png') center center no-repeat;
+  }
+
+  .step-0, .step-1, .step-2, .step-3 {
+    form {
+      position:absolute;
+      left: 30px;
+      top: 132px;
+      &.form-horizontal {
+        .control-label {
+          width: 145px;
+        }
+        .controls {
+          margin-left:161px;
+        }
+      }
+    }
+
+    .form-actions {
+      position: absolute;
+      bottom: 63px;
+      left: 192px;
+    }
+  }
+
+  .step-2 {
+
+  }
+
+  .step-3 {
+
+  }
+
+}

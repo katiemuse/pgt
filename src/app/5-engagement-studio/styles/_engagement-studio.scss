@@ -1,0 +1,81 @@
+@import '../../base';
+
+.engagement-studio {
+
+  font-family: $salesforcesans;
+
+  #hotspots-container {
+    .hotspot-1 {
+      @include animation-delay(1.5s);
+    }
+    .hotspot-2 {
+      @include animation-delay(1.75s);
+    }
+  }
+
+  .step-0 {
+    background: url('../assets/images/stories/5-engagement-studio/engagement-studio-step-0-bkg.png') top center no-repeat;
+    height: 792px !important;
+  }
+
+  .step-1, .step-2, .step-3, .step-4, .step-5 {
+    background: url('../assets/images/stories/5-engagement-studio/engagement-studio-bkg-no-header.png') top center no-repeat;
+    height: 792px !important;
+  }
+
+  //#vertical-line, #node-end-container {
+  //  transition: all 1s ease-in-out;
+  //}
+
+  #node-end-container {
+    left: 393px;
+    top: 140px;
+    transition: top .2s ease-in-out;
+    &.step-2 {
+      left: 393px;
+      top: 460px;
+    }
+  }
+
+  #vertical-line {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .2s ease-in-out;
+    &.step-2 {
+      transform: scaleY(3.4);
+      transform-origin: top;
+    }
+  }
+
+
+  .step-3, .step-4 {
+    #node-end-container {
+      left: 393px;
+      top: 460px;
+    }
+    #vertical-line {
+      transform: scaleY(3.4);
+      transform-origin: top;
+    }
+  }
+
+  .step-4 {
+    form.form-horizontal .controls {
+      margin-left: 0;
+      select {
+        width: 100%;
+      }
+    }
+    .radio {
+      pointer-events: none;
+    }
+    .slds-button {
+      pointer-events: none;
+      &.active {
+        pointer-events: all;
+      }
+    }
+  }
+
+}
+

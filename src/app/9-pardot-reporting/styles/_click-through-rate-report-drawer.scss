@@ -1,0 +1,17 @@
+@import '../../base';
+
+.click-through-rate-report-drawer {
+
+  p.continue {
+    text-align: center;
+
+    a.btn-continue, a.btn-rounded {
+      margin:30px auto;
+    }
+
+    a.next {
+      padding: 10px 80px;
+    }
+  }
+
+}

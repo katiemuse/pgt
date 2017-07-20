@@ -1,0 +1,159 @@
+@import '../../base';
+
+.landing-page-builder {
+
+  .headline {
+    position: absolute;
+    left: 60px;
+    top: 225px;
+    font-size: 28px;
+    color: #626262;
+  }
+
+  .headline-modal {
+    position: absolute;
+    left: 57px;
+    top: 201px;
+    font-size: 28px;
+    color: #626262;
+    width: 610px;
+    &:focus {
+      @include animation(borderActive 1.5s infinite);
+    }
+  }
+
+
+  .step-0, .step-1, .step-3, .step-5 {
+    background: url('../assets/images/stories/2-build-a-form-and-landing-page/2-screen-landing-page-builder-no-controls.png') center center no-repeat;
+  }
+
+  .step-2 {
+    background: url('../assets/images/stories/2-build-a-form-and-landing-page/2-screen-headline-edit.png') center center no-repeat;
+  }
+
+  .step-4 {
+    background: url('../assets/images/stories/2-build-a-form-and-landing-page/2-screen-edit-image.png') center center no-repeat;
+  }
+
+  .step-0, .step-1, .step-2, .step-3, .step-4, .step-5 {
+
+    #headline {
+      position: absolute;
+      width: 674px;
+      height: 33px;
+      left: 52px;
+      top: 229px;
+      &.active {
+        @include animation(borderActive 1.5s infinite);
+      }
+    }
+
+    #save {
+      position: absolute;
+      width: 61px;
+      height: 34px;
+      left: 675px;
+      top: 401px;
+      &.active {
+        @include animation(borderActive 1.5s infinite);
+      }
+    }
+
+    #image-editor {
+      position: absolute;
+      width: 675px;
+      height: 161px;
+      left: 52px;
+      top: 300px;
+      &.active {
+        @include animation(borderActive 1.5s infinite);
+      }
+    }
+
+    #ok-btn {
+      &.active {
+        @include animation(borderActive 1.5s infinite);
+      }
+    }
+
+    form {
+
+      position:absolute;
+      left: 30px;
+      top: 177px;
+
+      .control-group {
+        &.hover-control-group {
+          width: 640px;
+        }
+      }
+
+      .controls {
+        input.text {
+          width:350px;
+          float:left;
+          pointer-events: none;
+        }
+
+        div.actions {
+          float:left;
+          width:88px;
+          height: 24px;
+          background-image:url("../assets/images/stories/2-build-a-form-and-landing-page/2-form-builder-drag-icons-transparent.png");
+        }
+      }
+
+      .ui-sortable-placeholder {
+        border:2px dashed black;
+      }
+
+      .ui-sortable-handle {
+        cursor: move;
+      }
+
+    }
+
+    .form-actions {
+
+      position: absolute;
+      bottom: 18px;
+      left: 188px;
+
+    }
+
+    select {
+      background-color: white;
+      width: 134px;
+      position: absolute;
+      left: 79px;
+      top: 146px;
+      height: 24px;
+    }
+
+    img {
+      position: absolute;
+      left: 436px;
+      top: 135px;
+      max-width: 278px;
+    }
+  }
+
+  .step-4 {
+    .btn {
+      position: absolute;
+      left: 664px;
+      top: 423px;
+      width: 42px;
+      height: 27px;
+    }
+  }
+
+  .step-5 {
+    img {
+      left: 52px;
+      top: 299px;
+      max-width: 100%;
+    }
+  }
+
+}

@@ -1,0 +1,53 @@
+@import "../../../app/base";
+
+.monitor {
+  .steps {
+
+    height: $monitor-height;
+    width: $monitor-width;
+
+    > section {
+      height: $monitor-height;
+      width: $monitor-width;
+
+      > .step {
+        height: $monitor-height;
+        width: $monitor-width;
+
+        &.success {
+            background: url('../assets/images/backgrounds/intro-screen.jpg') center center repeat;
+
+            img {
+              margin-bottom: 20px;
+            }
+
+            a, a:visited {
+              &.content {
+                color: white;
+                text-decoration:underline;
+              }
+            }
+        }
+      }
+    }
+  }
+}
+
+
+.drawer {
+  .steps {
+
+    height: $drawer-height;
+    width: $drawer-width - $drawer-padding-left - $drawer-padding-right;
+
+    > section {
+      height: $drawer-height;
+      width: $drawer-width - $drawer-padding-left - $drawer-padding-right;
+
+      > .step {
+        height: $drawer-height;
+        width: $drawer-width - $drawer-padding-left - $drawer-padding-right;
+      }
+    }
+  }
+}

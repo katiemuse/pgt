@@ -1,0 +1,13 @@
+@import '../../base';
+
+.drawer {
+  .drawer-content {
+    &.form-completion-actions-drawer {
+      .drawer-intro {
+        padding: 60px 46px 0;
+      }
+    }
+  }
+}
+
+

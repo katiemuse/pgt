@@ -1,0 +1,38 @@
+<div class="row monitor-height micro-campaign-reporting">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+              <input class="btn btn-primary" type="submit" value="Next" disabled/>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <input class="btn btn-primary active" ng-click="Next()" type="submit" value="Next"/>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="assets/images/badge.png"/>
+                </p>
+                <h2>Almost There!</h2>
+                <p>
+                  As your sales reps leverage Salesforce® Engage to turn Jeremy Jones into a brand new customer,<br/>
+                  it's time for marketing to turn their attention to reporting. Click &lsquo;Next&rsquo; to move onto our last<br/>
+                  (but not least!) section on campaign reporting in Pardot.
+                </p>
+                <p>
+                  <a ui-sref="pardot-reporting" class="btn btn-rounded active">Next</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

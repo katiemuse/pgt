@@ -1,0 +1,56 @@
+<div class="drawer-content personalized-email-drawer">
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <h2>Personalized Email</h2>
+    <p>Add individual prospects to lists from within Salesforce. This allows sales reps to enroll prospects in drip
+      campaigns if further nurturing is needed, or remove them from lists if necessary.</p>
+    <p>Since Jeremy is actively participating in the sales cycle but isn't quite ready to pull the trigger yet, let's
+      add him to a short 30-day nurture list.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+    </p>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Score and Grade</h2>
+        <p>
+          You can see your prospect's score and grade in the Salesforce contact record. This helps sales reps prioritize their hottest leads at a glance.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Prospect Activity</h2>
+        <p>
+          See a log of John Smith's activities, including website browsing activities, interactions with marketing campaigns, call history and more.
+        </p>
+        <p class="continue">
+          <a class="btn btn-continue" ng-click="Continue()">Continue</a>
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+  <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>Marketers can set lists to be "CRM Visible" so that only certain lists are viewable in Salesforce by sales reps.</p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+</div>

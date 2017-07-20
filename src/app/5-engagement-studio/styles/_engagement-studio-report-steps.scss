@@ -1,0 +1,26 @@
+@import '../../base';
+
+#step-container {
+
+  &.engagement-studio-report-steps {
+
+    .step-one {
+      &.active {
+          height: 150px;
+        }
+    }
+
+   .step-two {
+      &.active {
+        height: 130px;
+      }
+    }
+
+    .step-three {
+      &.active {
+        height: 110px;
+      }
+    }
+
+  }
+}

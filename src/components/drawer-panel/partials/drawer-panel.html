@@ -1,0 +1,24 @@
+<div class="drawer-panel frame">
+    <ul class="nav nav-{{type || 'tabs'}}" ng-class="{'nav-stacked': vertical, 'nav-justified': justified}" ng-transclude></ul>
+    <div class="tab-content">
+      <div class="tab-pane"
+           ng-repeat="tab in tabs"
+           ng-class="{active: tab.active}"
+           drawer-panel-tab-content-transclude="tab">
+      </div>
+    </div>
+    <ul class="nav nav-indicators" ng-show="previousActive || nextActive">
+      <li class="previous" ng-class="{active:previousActive}">
+        <a ng-click="Previous($event)" href="#">
+          <span class="icon icon-previous" ng-class="{active:previousActive}"></span>
+          <span class="title">Previous</span>
+        </a>
+      </li>
+      <li class="next" ng-class="{active:nextActive}">
+        <a ng-click="Next($event)" href="#">
+          <span class="title">Next</span>
+          <span class="icon icon-next" ng-class="{active:nextActive}"></span>
+        </a>
+      </li>
+    </ul>
+</div>

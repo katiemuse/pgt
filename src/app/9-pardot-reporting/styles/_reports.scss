@@ -1,0 +1,56 @@
+
+.advanced-email-report, .click-through-rate-report, .email-client-report, .interaction-report {
+
+  #done-button {
+    position: absolute;
+    left: 500px;
+    top: 32px;
+  }
+
+  #report-link {
+    left: 60px;
+    position: absolute;
+    top: 100px;
+    width: 77px;
+    height: 37px;
+    &.active {
+      @include animation(borderActive 1.5s infinite);
+    }
+  }
+
+  #click-through-link {
+    left: 138px;
+    position: absolute;
+    top: 100px;
+    width: 198px;
+    height: 37px;
+    &.active {
+      @include animation(borderActive 1.5s infinite);
+    }
+  }
+
+  #interaction-link {
+    left: 338px;
+    position: absolute;
+    top: 100px;
+    width: 97px;
+    height: 37px;
+    &.active {
+      @include animation(borderActive 1.5s infinite);
+    }
+  }
+
+  #email-client-link {
+    left: 436px;
+    position: absolute;
+    top: 100px;
+    width: 108px;
+    height: 37px;
+    &.active {
+      @include animation(borderActive 1.5s infinite);
+    }
+  }
+
+
+
+}

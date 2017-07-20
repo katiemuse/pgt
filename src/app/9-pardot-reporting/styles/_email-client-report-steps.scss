@@ -1,0 +1,14 @@
+@import '../../base';
+
+#step-container {
+
+  &.email-client-report-steps {
+
+    .step-one {
+      &.active {
+        height: 150px;
+      }
+    }
+
+  }
+}

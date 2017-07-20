@@ -1,0 +1,80 @@
+<div class="row monitor-height build-a-form-and-landing-page">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+              <form class="form form-horizontal">
+                <div class="control-group required ">
+                  <label class="control-label" for="name">Name</label>
+                  <div class="controls">
+                    <input type="text" name="name" ng-model="form.name" id="name" class="text" maxlength="80" disabled>
+                  </div>
+                </div>
+                <div class="control-group tags">
+                  <label class="control-label" for="name">Tags</label>
+                  <div class="controls">
+                    <div class="no-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group required ">
+                  <label class="control-label" for="name">Folder</label>
+                  <div class="controls">
+                    <div class="no-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group required">
+                  <label class="control-label" for="name">Campaign</label>
+                  <div class="controls">
+                    <label class="form-label campaign-name">{{form.campaignName}}</label>
+                  </div>
+                </div>
+              </form>
+              <div class="form-actions">
+                <input class="btn btn-primary" wz-next type="submit" value="Next »" disabled/>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <form class="form form-horizontal">
+                <div class="control-group required">
+                  <label class="control-label" for="name">Name</label>
+                  <div class="controls">
+                    <input type="text" name="name" ng-model="form.name" class="text" maxlength="80" disabled>
+                  </div>
+                </div>
+                <div class="control-group tags">
+                  <label class="control-label" for="name">Tags</label>
+                  <div class="controls">
+                    <div class="no-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group required">
+                  <label class="control-label" for="name">Folder</label>
+                  <div class="controls">
+                    <div class="no-control">
+                    </div>
+                  </div>
+                </div>
+                <div class="control-group required">
+                  <label class="control-label" for="name">Campaign</label>
+                  <div class="controls">
+                    <label class="form-label campaign-name">{{form.campaignName}}</label>
+                  </div>
+                </div>
+              </form>
+              <div class="form-actions">
+                <input class="btn btn-primary active" li-autofocus="wizard.stateIndex == 1" ng-click="CreateForm(form)" type="submit" value="Next »"/>
+              </div>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,301 @@
+<div class="row monitor-height set-up-a-lead-nurturing-campaign">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1" ng-class="{complete:drip.complete}">
+
+              <div class="drip-available-actions">
+                <p class="drip-action-text">
+                  <i class="fa fa-envelope-o pull-left"></i> Send Email
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-link pull-left"></i> Has Prospect clicked link?
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-envelope-o pull-left"></i> Has Prospect opened email?
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-pause pull-left"></i> Pause
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-arrow-right pull-left"></i> Jump to step
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-user pull-left"></i> Assign to user
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-group pull-left"></i> Assign to group
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-bell-o pull-left"></i> Notify user
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-bell-o pull-left"></i> Notify assigned user
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-plus-circle text-success pull-left"></i> Add to list
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-times-circle text-error pull-left"></i> Remove from list
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-tag text-success pull-left"></i> Add tags
+                </p>
+                <p class="drip-action-text">
+                  <i class="fa fa-tag text-error pull-left"></i> Remove tags
+                </p>
+              </div>
+
+              <div class="drip-available-actions drag-source">
+                <p id="send-email" class="drip-action-text" draggable>
+                  <i class="fa fa-envelope-o pull-left"></i> Send Email
+                </p>
+                <p id="prospect-clicked" class="drip-action-text">
+                  <i class="fa fa-link pull-left"></i> Has Prospect clicked link?
+                </p>
+                <p id="prospect-opened" class="drip-action-text">
+                  <i class="fa fa-envelope-o pull-left"></i> Has Prospect opened email?
+                </p>
+                <p id="pause" class="drip-action-text">
+                  <i class="fa fa-pause pull-left"></i> Pause
+                </p>
+                <p id="jump" class="drip-action-text">
+                  <i class="fa fa-arrow-right pull-left"></i> Jump to step
+                </p>
+                <p id="assign-user" class="drip-action-text" draggable>
+                  <i class="fa fa-user pull-left"></i> Assign to user
+                </p>
+                <p id="assign-group" class="drip-action-text">
+                  <i class="fa fa-group pull-left"></i> Assign to group
+                </p>
+                <p id="notify-user" class="drip-action-text">
+                  <i class="fa fa-bell-o pull-left"></i> Notify user
+                </p>
+                <p id="notify-assigned-user" class="drip-action-text">
+                  <i class="fa fa-bell-o pull-left"></i> Notify assigned user
+                </p>
+                <p id="add-to-list" class="drip-action-text">
+                  <i class="fa fa-plus-circle text-success pull-left"></i> Add to list
+                </p>
+                <p id="remove-from-list" class="drip-action-text">
+                  <i class="fa fa-times-circle text-error pull-left"></i> Remove from list
+                </p>
+                <p id="add-tags" class="drip-action-text">
+                  <i class="fa fa-tag text-success pull-left"></i> Add tags
+                </p>
+                <p id="remove-tags" class="drip-action-text">
+                  <i class="fa fa-tag text-error pull-left"></i> Remove tags
+                </p>
+              </div>
+
+
+              <div class="drip-logic">
+                <ul>
+                  <li id="start" class="rigid" style="position: relative;">
+                    <i class="fa fa-play" title="Start"></i> Start
+                    <br>
+                    <i class="fa fa-arrow-down text-success" title="Down"></i>
+                  </li>
+                  <li id="step-1" style="position: relative;">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="step_name" name="step_name">1</span>.
+                    Send email
+                    <a class="value">Going Green Without Gold</a>
+                    <i class="fa fa-remove text-error" title="Remove"></i>
+                    <br clear="all">
+                    <i class="fa fa-arrow-down text-success" title="Down"></i>
+                  </li>
+                  <li id="step-2" style="position: relative;">
+                    <i class="fa fa-pause"></i>
+                    <span class="step_name" name="step_name">2</span>.
+		                <span class="step_label">Pause <a class="value" name="days">9</a>
+                      days
+                      <i class="fa fa-remove text-error" title="Remove"></i>
+                      <br clear="all">
+                      <i class="fa fa-arrow-down text-success" title="Down"></i>
+                    </span>
+                  </li>
+
+                  <li id="step-3" class="folder" style="position: relative;" droppable drop="AssignUserDropped()">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="step_name" name="step_name">3</span>.
+		                <span class="step_label">
+                      Has prospect opened email?
+					            <i class="icon-remove text-error" title="Remove"></i>
+			                </span>
+                    <br clear="all">
+                    <span class="no-branch">No</span>
+                    <span class="branch">Yes</span>
+                    <ul class="long-arrow-middle" style="position: relative;">
+                      <div class="branch-arrow">
+                        <i class="fa fa-arrow-down text-success" title="Down"></i>
+                      </div>
+                      <li id="step-3-1" ng-class="{empty:!drip.droppedStepThree, 'not-empty':drip.droppedStepThree}" style="position: relative;">
+                        <div class="step-contents">
+                          <i class="fa fa-user"></i>
+                          <span class="step_name" name="step_name">3.1</span>.
+                          <span class="step_label">
+                            Assign to user
+                            <a class="value" name="email_template_id">
+                              {{drip.salesManagerLabel}}
+                            </a>
+                            <i class="fa fa-remove text-error" title="Remove"></i>
+                          </span>
+                          <br clear="all">
+                          <i class="fa fa-arrow-down text-success" title="Down"></i>
+                        </div>
+                        <div id="step-3-1-drop-target" class="drop-target" ng-class="{'show-target':!drip.droppedStepThree}">
+                        </div>
+                      </li>
+                      <li id="step-3-2" class="rigid end" style="position: relative;">
+                        <i class="fa fa-stop" title="Stop"></i>
+                        End
+                      </li>
+                    </ul>
+                    <i class="fa fa-chevron-down text-error pull-left clearleft push-left" title="Down"></i>
+                  </li>
+                  <li id="step-4" ng-class="{empty:!drip.droppedStepFour, 'not-empty':drip.droppedStepFour}" style="position: relative;" droppable drop="SendEmailDropped()">
+                    <div class="step-contents">
+                      <i class="fa fa-envelope-o"></i>
+                      <span class="step_name" name="step_name">4</span>.
+                      Send email
+                      <a class="value">{{drip.emailTemplateLabel}}</a>
+                      <i class="fa fa-remove text-error" title="Remove"></i>
+                      <br clear="all">
+                      <i class="fa fa-arrow-down text-success" title="Down"></i>
+                    </div>
+                    <div id="step-4-1-drop-target" ng-class="{'show-target':!drip.droppedStepFour && drip.salesManagerSelected}" class="drop-target" ng-show="!drip.droppedStepFour && drip.salesManagerSelected">
+                    </div>
+                    <div id="step-4-1-stop">
+                      <i class="fa fa-stop" title="Stop"></i> End
+                    </div>
+                  </li>
+                  <li id="step-5" style="position: relative;">
+                    <i class="fa fa-pause"></i>
+                    <span class="step_name" name="step_name">5</span>.
+		                <span class="step_label">Pause <a class="value" name="days">9</a>
+                      days
+                      <i class="fa fa-remove text-error" title="Remove"></i>
+                      <br clear="all">
+                      <i class="fa fa-arrow-down text-success" title="Down"></i>
+                    </span>
+                  </li>
+                  <li id="step-6" class="folder" style="position: relative;">
+                    <i class="fa fa-envelope-o"></i>
+                    <span class="step_name" name="step_name">6</span>.
+		                <span class="step_label">
+                      Has prospect opened email?
+					            <i class="icon-remove text-error" title="Remove"></i>
+			                </span>
+                    <br clear="all">
+                    <span class="no-branch">No</span>
+                    <span class="branch">Yes</span>
+                    <ul class="long-arrow-middle" style="position: relative;">
+                      <div class="branch-arrow">
+                        <i class="fa fa-arrow-down text-success" title="Down"></i>
+                      </div>
+                      <li id="step-6-1" class="" style="position: relative;">
+                        <i class="fa fa-user"></i>
+                        <span class="step_name" name="step_name">6.1</span>.
+		                    <span class="step_label">
+                          Assign to user
+                          <a class="value" name="email_template_id">
+                            Sales Manager
+                          </a>
+					                <i class="fa fa-remove text-error" title="Remove"></i>
+			                  </span>
+                        <br clear="all">
+                        <i class="fa fa-arrow-down text-success" title="Down"></i>
+                      </li>
+                      <li id="step-6-2" class="rigid end" style="position: relative;">
+                        <i class="fa fa-stop" title="Stop"></i>
+                        End
+                      </li>
+                    </ul>
+                    <i class="fa fa-chevron-down text-error pull-left clearleft push-left" title="Down"></i>
+                  </li>
+                  <li id="step-7" class="" style="position: relative;">
+                    <i class="fa fa-plus-circle text-success"></i>
+                    <span class="step_name" name="step_name">7</span>.
+		                <span class="step_label">
+                      Add to list
+                      <a class="value" name="listx_id">Inactive Prospect List</a>
+					            <i class="icon-remove text-error" title="Remove"></i>
+				            </span>
+                    <br clear="all">
+                    <i class="fa fa-arrow-down text-success" title="Down"></i>
+                  </li>
+                  <li id="end" class="rigid end">
+                    <i class="fa fa-stop" title="Stop"></i> End
+                  </li>
+                </ul>
+              </div>
+              <a class="btn btn-highlight" id="run-drip-program" ng-click="RunDripProgram()" ng-class="{'active':drip.emailTemplate}"></a>
+            </div>
+
+            <div class="highlights" id="highlights-step-three" ng-show="!drip.droppedStepThree">
+              <svg class="assign-to-user" width="400" height="110">
+                <rect id="assign-box" x="4" y="4" width="150" rx="4" ry="4" height="30" class="box"></rect>
+              </svg>
+              <img id="assign-to-user-arrow" class="arrow" src="assets/images/arrow.svg"/>
+            </div>
+
+            <div class="highlights" id="highlights-step-four" ng-show="!drip.droppedStepFour && drip.salesManagerSelected" ng-class="{'show-highlights':!drip.droppedStepFour && drip.salesManagerSelected}">
+              <svg class="send-email" width="400" height="110">
+                <rect id="send-email-box" x="4" y="4" width="115" rx="4" ry="4" height="30" class="box"></rect>
+              </svg>
+              <img id="send-email-arrow" class="arrow" src="assets/images/arrow-long.svg"/>
+            </div>
+
+            <div id="assign-modal" ng-show="drip.droppedStepThree && !drip.salesManagerSelected">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <select class="text-small" ng-class="{'active':drip.droppedStepThree && !drip.salesManagerSelected}" li-autofocus="drip.droppedStepThree && !drip.salesManagerSelected" ng-model="drip.salesManager" ng-options="opt as opt.label for opt in salesManagerOptions">
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+            <div id="send-email-modal" ng-show="drip.droppedStepFour && drip.salesManagerSelected && !drip.emailTemplateSelected">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <select class="text-small" ng-class="{'active':drip.droppedStepFour && drip.salesManagerSelected && !drip.emailTemplateSelected}" li-autofocus="drip.droppedStepFour && drip.salesManagerSelected && !drip.emailTemplateSelected"   ng-model="drip.emailTemplate" ng-options="opt as opt.label for opt in emailTemplateOptions">
+                    </select>
+                  </div>
+                </div>
+              </form>
+            </div>
+
+
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="assets/images/badge.png"/>
+                </p>
+                <h2>Great Job!</h2>
+                <p>
+                  Your sample drip program has been deployed! Let's see what happens after<br/>
+                  a prospect has interacted with your program and is ready to be assigned to a sales rep.
+                </p>
+                <p>
+                  <a ui-sref="assign-your-leads-to-sales" li-autofocus="wizard.stateIndex == 4" class="btn btn-rounded">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

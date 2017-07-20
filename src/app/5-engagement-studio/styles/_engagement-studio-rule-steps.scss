@@ -1,0 +1,38 @@
+@import '../../base';
+
+#step-container {
+
+  &.engagement-studio-rule-steps {
+
+    .step-one {
+      &.active {
+        height: 90px;
+      }
+    }
+
+    .step-two {
+      &.active {
+        height: 90px;
+      }
+    }
+
+    .step-three {
+      &.active {
+        height: 110px;
+      }
+    }
+
+    .step-four {
+      &.active {
+        height: 110px;
+      }
+    }
+
+    .step-five {
+      &.active {
+        height: 90px;
+      }
+    }
+
+  }
+}

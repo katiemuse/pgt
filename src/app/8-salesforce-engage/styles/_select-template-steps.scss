@@ -1,0 +1,26 @@
+@import '../../base';
+
+#step-container {
+
+  &.select-template-steps {
+
+    .step-one {
+      &.active {
+        height: 150px;
+      }
+    }
+
+    .step-two {
+      &.active {
+        height: 150px;
+      }
+    }
+
+    .step-three {
+      &.active {
+        height: 180px;
+      }
+    }
+
+  }
+}

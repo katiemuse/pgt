@@ -1,0 +1,656 @@
+@font-face {
+    font-family: 'ProximaNovaRegular';
+    src: url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-reg-webfont.eot');
+    src: url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-reg-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-reg-webfont.woff') format('woff'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-reg-webfont.ttf') format('truetype'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-reg-webfont.svg#ProximaNovaRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaLight';
+    src: url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-light-webfont.eot');
+    src: url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-light-webfont.woff') format('woff'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-light-webfont.ttf') format('truetype'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-light-webfont.svg#ProximaNovaLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'ProximaNovaSemiBold';
+    src: url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-sbold-webfont.eot');
+    src: url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-sbold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-sbold-webfont.woff') format('woff'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-sbold-webfont.ttf') format('truetype'),
+         url('//www.sfdcstatic.com/cdn/fonts/ProximaNova/proximanova-sbold-webfont.svg#ProximaNovaSemiBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@import 'base';
+
+.intro-page {
+	overflow: hidden;
+
+  .container {
+    max-width: 100%;
+  }
+  
+  h1 {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    line-height: 1;
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 50px;
+      margin-top: 40px;
+    }
+  }
+  h2 {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    font-weight: 400;
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 38px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+  p {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 0;
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 22px;
+      line-height: 150%;
+    }
+    + p {
+      margin-top: 20px;
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    @media(max-width: $screen-xs-max) {
+      padding: 10px 0 50px;
+      @include retina-image("//www2.pardot.com/l/1/2015-04-23/357m8w/1/172330/mobile_intro_hero.jpg", "jpg");
+      background-size: cover;
+    }
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      padding: 20px 0 20px;
+      background-image: url(//www2.pardot.com/l/1/2015-04-23/357m8t/1/172328/mobile_intro_hero_2x.jpg);
+      background-size: cover;
+    }
+    @media(min-width: $screen-md-min) {
+      height: 375px;
+      background-image: url(//www2.pardot.com/l/1/2015-04-23/357m8y/1/172332/desktop_intro_hero.jpg);
+      background-position: center top;
+    }
+    h1 {
+      color: $text-color-white;
+      @media(max-width: $screen-xs-max) {
+        font-size: 47px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 60px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+      @media(min-width: $screen-md-min) {
+        font-size: 74px;
+        margin-top: 0;
+      }
+    }
+    h2 {
+      color: $text-color-white;
+	  line-height: 150%;
+	  
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        margin-top: 45px;
+        margin-bottom: 0;
+      }
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 28px;
+        margin-top: 90px;
+        margin-bottom: 0;
+      }
+      @media(min-width: $screen-md-min) {
+        font-size: 33px;
+        margin-top: 100px;
+      }
+    }
+    .logo {
+      @include retina-image("//www2.pardot.com/l/1/2015-04-23/357m93/1/172334/logo_transparent.png", 143px 55px);
+      width: 155px;
+      height: 60px;
+      display: block;
+      margin: 0 auto;
+      background-repeat: no-repeat;
+      @media(min-width: $screen-md-min) {
+        margin: 20px 0;
+      }
+    }
+    .tray {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 390px;
+      @include transition(top 0.3s ease-in-out);
+      &.active {
+        top: 0;
+        .tray-btn {
+          @include transform(translateY(40px));
+          span {
+            @include transform(rotate(-270deg));
+          }
+          p {
+            margin-top: 30px;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+      .tray-btn {
+        position: relative;
+        z-index: 1;
+        background-color: $color-salesforce-blue;
+        height: 85px;
+        width: 165px;
+        margin: 0 auto;
+        padding-top: 10px;
+        cursor: pointer;
+        @include border-top-radius(10px);
+        @include transition(transform 0.3s ease-in-out);
+        span {
+          display: block;
+          color: $text-color-white;
+          font-size: 36px;
+          font-family: $proximanova;
+          font-weight: bold;
+          line-height: 1;
+          @include transform(rotate(-90deg));
+          @include transition(transform 0.3s ease-in-out);
+        }
+        p {
+          color: $text-color-white;
+          font-size: 18px;
+          font-family: $proximanova;
+          font-weight: bold;
+          line-height: 1;
+          margin-top: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .tray-container {
+        position: relative;
+        z-index: 2;
+        background-color: $color-salesforce-blue;
+        height: 400px;
+        width: 800px;
+        margin: 0 auto;
+        @include border-top-radius(10px);
+      }
+    }
+  }
+  .did-you-know {
+    position: relative;
+    @media(max-width: $screen-xs-max) {
+      padding: 10px 10px 35px;
+    }
+	.stat {
+	  margin-bottom: 20px;
+	}
+	form.form, .thank-you-content {
+	margin: 0;
+	padding: 0;
+	
+	    .col-md-6 {
+		    min-height: 80px;
+		}
+	    h2 {
+		    color: #fff;
+        font-size: 29px;
+        line-height: 150%;
+        font-family: $proximanova;
+        font-weight: 300;
+		}
+		
+		p {
+		    color: #fff;
+			
+			    &.error {
+				      color: #8b0000;
+                      padding: 5px;
+                      margin: 0;
+                      font-size: 14px;
+					  max-width: 350px;
+				}
+		}
+		
+		span.error {
+		  clear: left;
+          margin-top: 0px;
+          padding-left: 5px;
+		  padding: 5px;
+          font-weight: normal;
+          max-width: 350px;
+          display: inline;
+		  font-size: 14px;
+		}
+		
+		input {
+		    width: 350px;
+		    max-width: 100%;
+            height: 35px;
+            padding: 5px;
+            border: none;
+            margin-bottom: 5px;
+			color: #666;
+		}
+		
+		select {
+		  max-width: 100%;
+          width: 350px;
+          border: 0px;
+          height: 35px;
+          color: #666;
+		}
+		
+		.submit input {
+		  padding: 5px 15px;
+          background-color: #1c6b9f;
+          font: bold 15px/30px 'ProximaNovaSemiBold', 'Helvetica Neue', Arial, sans-serif;
+          color: #fff;
+          text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+          text-transform: uppercase;
+          border-radius: 3px;
+          border: 1px solid #bbb;
+          border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+          box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.2), 0 1px 2px rgba(0, 0, 0, 0.05);
+          text-align: center;
+          vertical-align: middle;
+          cursor: pointer;
+          margin-bottom: 15px;
+          white-space: normal;
+          max-width: 100%;
+          line-height: 130%;
+          margin-top: 10px;
+		}
+		
+		label {
+		    font-size: 16px;
+            line-height: normal;
+            padding: 3px 13px 3px 0;
+		}
+		
+		textarea {
+		    resize: none;
+			width: 350px;
+			max-width: 100%;
+			color: #666;
+		}
+	}
+	.copy {
+	    padding: 20px 0 20px;
+		
+		    @media(min-width: $screen-md-min) {
+			    padding: 20px 15px 30px;
+			}
+	}
+	.form-container {
+	    padding: 20px 30px 20px 30px;
+		background: $color-salesforce-blue;
+		height: 100%;
+	}
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      padding: 20px 20px 50px;
+    }
+    @media(min-width: $screen-md-min) {
+      padding: 0px 0px 0px;
+    }
+    h2 {
+      color: $color-salesforce-blue;
+      font-family: $proximanova;
+      @media(max-width: $screen-xs-max) {
+        margin-top: 0;
+      }
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        margin-top: 0;
+        font-size: 32px;
+      }
+      @media(min-width: $screen-md-min) {
+        margin-top: 0;
+        font-size: 29px;
+      }
+    }
+    p {
+      color: $mobile-text-color-gray;
+      @media(min-width: $screen-md-min) {
+        font-size: 18px;
+      }
+    }
+  }
+  .blue-container {
+	  
+	.overflow {
+	    overflow: hidden;
+	}  
+	  
+    @media(max-width: $screen-xs-max) {
+      @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mb9/1/172346/mobile_blue_container_intro_page.jpg", 375px 848px, "jpg");
+      background-size: cover;
+      padding: 38px 11px;
+    }
+    @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb7/1/172344/mobile_blue_container_intro_page_2x.jpg);
+      background-size: cover;
+      padding: 76px 22px 0;
+    }
+    @media(min-width: $screen-md-min) {
+      background-color: #EBECEC;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    h3 {
+      color: $text-color-white;
+      margin-top: 0;
+      padding-top: 0;
+      @media(max-width: $screen-xs-max) {
+        font-size: 23px;
+      }
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 24px;
+      }
+      @media(min-width: $screen-md-min) {
+        text-align: center;
+        font-size: 23px;
+      }
+    }
+    p {
+      color: $text-color-white;
+	  overflow: hidden;
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 18px;
+        margin-bottom: 0;
+      }
+      @media(min-width: $screen-md-min) {
+        text-align: center;
+      }
+    }
+    .row {
+      @media(min-width: $screen-md-min) {
+        margin-bottom: 30px;
+      }
+      &.last {
+        @media(min-width: $screen-md-min) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .icon-container {
+      @media(min-width: $screen-md-min) {
+        position: relative;
+        padding: 60px 40px;
+      }
+      &.imc {
+        @media(min-width: $screen-md-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb1/1/172336/desktop_intro_icon_container_01.jpg);
+          background-size: cover;
+        }
+      }
+      &.ln {
+        @media(min-width: $screen-md-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357m9y/1/172338/desktop_intro_icon_container_02.jpg);
+          background-size: cover;
+        }
+      }
+      &.ssmr {
+        @media(min-width: $screen-md-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb3/1/172340/desktop_intro_icon_container_03.jpg);
+          background-size: cover;
+        }
+      }
+      &.ctr {
+        @media(min-width: $screen-md-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb5/1/172342/desktop_intro_icon_container_04.jpg);
+          background-size: cover;
+        }
+      }
+      .hover {
+        @media(min-width: $screen-md-min) {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: #002882;
+        }
+        p {
+          @media(min-width: $screen-md-min) {
+            position: absolute;
+            top: 50%;
+            @include transform(translateY(-50%));
+            padding: 0 60px;
+          }
+        }
+      }
+      &:hover, &:focus {
+        .hover {
+          @media(min-width: $screen-md-min) {
+            display: block;
+          }
+        }
+      }
+    }
+    
+	.icon-container {
+	    margin-bottom: 50px;
+		
+		   @media(min-width: $screen-md-min) {
+		       margin-bottom: 0px;  
+		   }
+		   
+		   &.last {
+              margin-bottom: 0px;  
+		   }
+	}
+	
+	.icon {
+      height: 45px;
+      width: 45px;
+      background-repeat: no-repeat;
+      @media(max-width: $screen-xs-max) {
+        float: left;
+        height: 45px;
+        width: 45px;
+        margin-right: 15px;
+        margin-left: -10px;
+      }
+      @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        float: left;
+        height: 90px;
+        width: 90px;
+        margin-right: 30px;
+        margin-left: -10px;
+      }
+      @media(min-width: $screen-md-min) {
+        margin: 0 auto 15px;
+        height: 70px;
+        width: 70px;
+      }
+      &.imc {
+        @media(max-width: $screen-xs-max) {
+          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mcc/1/172354/icon_intergrated_marketing_campaigns.png", 45px 45px);
+        }
+        @media(min-width: $screen-sm-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mc7/1/172350/icon_intergrated_marketing_campaigns_2x.png);
+          background-size: contain;
+        }
+      }
+      &.ln {
+        @media(max-width: $screen-xs-max) {
+          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mch/1/172358/icon_lead_nurturing.png", 45px 45px);
+        }
+        @media(min-width: $screen-sm-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mcf/1/172356/icon_lead_nurturing_2x.png);
+          background-size: contain;
+        }
+      }
+      &.ssmr {
+        @media(max-width: $screen-xs-max) {
+          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mcm/1/172362/icon_simplified_sales_marketing_relationship.png", 45px 45px);
+        }
+        @media(min-width: $screen-sm-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mck/1/172360/icon_simplified_sales_marketing_relationship_2x.png);
+          background-size: contain;
+        }
+      }
+      &.ctr {
+        @media(max-width: $screen-xs-max) {
+          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mc5/1/172348/icon_campaign_tracking_and_reporting.png", 45px 45px);
+        }
+        @media(min-width: $screen-sm-min) {
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mc9/1/172352/icon_campaign_tracking_and_reporting_2x.png);
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .btn-orange {
+    background-color: $color-marketing-cloud-orange-medium;
+    border-radius: 25px;
+    padding: 0 5%;
+    color: white;
+    font-family: $proximanova;
+    font-size: 18px;
+    line-height: 50px;
+    display: inline-block;
+    float: right;
+    margin: 0;
+  }
+
+  .text-center {
+    .btn-orange {
+      float: none;
+      padding: 0 15%;
+    }
+  }
+
+  #footer {
+    padding-top: 10px;
+    img {
+      padding: 50px;
+    }
+    background: #f7f7f7;
+    font-size: 12px;
+    color: #444444;
+    #sub-floor {
+      padding: 10px 0;
+    }
+    #sub-floor, a, .phone-button {
+      background: #f7f7f7;
+      font-size: 12px;
+      color: #444444;
+    }
+    h3, h4 {
+      color: #444444;
+    }
+    #sub-floor #credit {
+      padding: 0px;
+      color: #444444;
+    }
+    #footer-links {
+      float: left;
+    }
+    #credit {
+      text-align: center;
+    }
+  }
+
+  #sub-floor a {
+    color: #444444;
+  }
+
+  #footer {
+    #sub-floor #credit a, .phone-button {
+      color: #444444;
+    }
+    .span12 {
+      padding: 0 20px;
+    }
+    .social-icons {
+      float: left;
+      .btn {
+        border: 0px;
+      }
+    }
+    #menu-main-navigation {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: 0px;
+    }
+    #sub-floor #credit a:hover {
+      color: inherit;
+    }
+    .navbar .nav > li > a {
+      padding: 0px 10px 0px;
+    }
+  }
+
+  .clearall {
+    clear: both;
+  }
+
+  #footer {
+    .navbar .nav > li {
+      float: left;
+    }
+  }
+}
+
+/* ==========================================================================
+   Custom Helpers
+   ========================================================================== */
+   
+img {
+  max-width: 100%;
+}

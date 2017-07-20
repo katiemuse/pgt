@@ -1,0 +1,14 @@
+@import '../../base';
+
+#step-container {
+
+  &.pardot-reporting-steps {
+
+    .step-one {
+      &.active {
+        height: 190px;
+      }
+    }
+
+  }
+}

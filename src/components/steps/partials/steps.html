@@ -1,0 +1,13 @@
+
+<div  id="step-container" ng-class="[config.position, config.animation, stateClass + '-steps']">
+  <div ng-repeat="step in steps" class="step {{step.active?'active':''}}" ng-class="[step.number]" ng-click="click(step)" ng-mouseover="stopTimer(step)"  ng-mouseout="restartTimer(step)">
+  <button class="step-close-button" ng-show="config.closeButton" ng-click="click(step, true)">&times;</button>
+  <div ng-class="config.title"  ng-bind-html="step.title"></div>
+  <div ng-class="config.message" ng-switch on="step.bodyOutputType">
+    <div ng-switch-when="trustedHtml" ng-bind-html="step.html"></div>
+    <div ng-switch-when="template"><div ng-include="step.bodyTemplate"></div></div>
+    <div ng-switch-when="templateWithData"><div ng-include="step.bodyTemplate"></div></div>
+    <div ng-switch-default >{{step.body}}</div>
+    </div>
+  </div>
+</div>

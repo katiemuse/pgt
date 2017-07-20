@@ -1,0 +1,14 @@
+@import '../../base';
+
+#step-container {
+
+  &.assign-your-leads-to-sales-steps {
+
+    .step-one, .step-two {
+      &.active {
+        height: 110px;
+      }
+    }
+
+  }
+}

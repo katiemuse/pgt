@@ -1,0 +1,53 @@
+<div class="drawer-content sales-view-in-salesforce-drawer">
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <h2>Sales View in Salesforce</h2>
+    <p>Because of Pardot's integration with Salesforce, all of the data collected by Pardot is available to your sales
+      reps &mdash; and they don't even have to leave their CRM to access it. This makes it easy for sales reps to follow
+      up with their assigned prospects, keep tabs on their prospects' activities, and add leads to lists for further nurturing.</p>
+    <p>You may remember Jeremy Jones from step four. Let's take a look at his contact record in Salesforce.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+    </p>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Score and Grade</h2>
+        <p>
+          You can see your prospect's score and grade in the Salesforce contact record. This helps sales reps prioritize their hottest leads at a glance.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Prospect Activity</h2>
+        <p>
+          See a log of Jeremy Jones' activities, including website browsing activities, interactions with marketing campaigns, call history and more.
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+  <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>Syncing between Pardot and Salesforce ensures that records are always up-to-date.</p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+</div>

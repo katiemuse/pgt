@@ -1,0 +1,292 @@
+@import '../../base';
+
+@include keyframes(arrowAnimation) {
+  0% {
+    opacity: 0;
+    transform: translateX(50px);
+    transform-origin: center right;
+  }
+  15% {
+    opacity: 1;
+    transform: translateX(0);
+    transform-origin: center left;
+  }
+  60% {
+    opacity: 0;
+    transform-origin: center left;
+  }
+  100% {
+    opacity: 0;
+    transform-origin: center left;
+  }
+}
+
+.engagement-studio-report {
+  font-family: $salesforcesans;
+  .btn {
+    &.active {
+      animation: borderActive 1.5s infinite;
+    }
+  }
+
+  .tooltip {
+    opacity: 1;
+    top: -47px;
+    left: 50%;
+    transform: translateX(-50%);
+    &.no {
+      left: -100px;
+      top: -30px;
+      transform: translateX(0);
+    }
+    &.yes {
+      left: 100px;
+      top: -30px;
+      transform: translateX(0);
+    }
+    .tooltip-arrow {
+      bottom: -4px;
+      margin-left: -10px;
+      border-width: 10px 10px 0;
+    }
+    .tooltip-inner {
+      font-size: 18px;
+      border-radius: 6px;
+      padding: 5px 8px;
+      .fa {
+        display: inline;
+        margin-right: 3px;
+      }
+    }
+  }
+
+  .step-0 {
+    background: url('../assets/images/stories/5-engagement-studio/engagement-studio-report-bkg.png') top center no-repeat;
+    height: 792px !important;
+  }
+
+  .step-1, .step-2, .step-3, .step-4 {
+    background: white;
+    position: relative;
+  }
+
+  .canvas-area {
+    width: 1600px !important;
+    height: 931px !important;
+    transition: transform .2s linear;
+    transform: scale(1);
+    transform-origin: top left;
+  }
+
+  .step-1 {
+    .canvas-area {
+      transform: scale(0.5) translateY(90px);
+    }
+    #intro-email-node {
+      #intro-email-node-closed {
+        position: absolute;
+        transform: scale(1);
+        transition: transform .2s linear 4.4s;
+      }
+      #intro-email-node-open {
+        position: absolute;
+        opacity: 0;
+        transition: opacity .2s linear 4.6s;
+      }
+    }
+  }
+
+  .step-2 {
+    .canvas-area {
+      transform: scale(0.5) translateY(90px);
+    }
+    #intro-email-node {
+      #intro-email-node-closed {
+        transform: scale(1);
+      }
+      #intro-email-node-open {
+        opacity: 0;
+      }
+    }
+    #send-email-node-2 {
+      #send-email-node-2-closed {
+        position: absolute;
+      }
+      #send-email-node-2-open {
+        position: absolute;
+        z-index: 10000;
+      }
+      .fa-photo {
+        animation: borderActive 1.5s infinite;
+      }
+    }
+  }
+
+  .step-3 {
+    .canvas-area {
+      transform: scale(1) translateY(-310px) translateX(50px);
+    }
+    #intro-email-node {
+      #intro-email-node-closed {
+        transform: scale(1);
+      }
+      #intro-email-node-open {
+        opacity: 0;
+      }
+    }
+    #send-email-node-2 {
+      #send-email-node-2-closed {
+        position: absolute;
+      }
+      #send-email-node-2-open {
+        position: absolute;
+        z-index: 10000;
+      }
+    }
+    #finish {
+      position: absolute;
+      top: 770px;
+      left: 320px;
+    }
+  }
+
+  .current {
+    .step-1 {
+      .canvas-area {
+
+      }
+      #send-email-node-2-icon {
+        &.active {
+          display: block;
+          height: 42px;
+          width: 42px;
+          position: absolute;
+          top: 4px;
+          left: 4px;
+          border-radius: 4px;
+          animation: borderActive 1.5s infinite;
+          cursor: pointer;
+          svg {
+            position: absolute;
+            top: -4px;
+            left: -4px;
+          }
+        }
+      }
+      #arrow {
+        animation: arrowAnimation 2.5s infinite;
+      }
+    }
+    .step-2 {
+      .canvas-area {
+        transform: scale(1) translateY(-310px) translateX(50px);
+        transition-delay: .2s;
+      }
+    }
+    .step-3 {
+      .canvas-area {
+
+      }
+    }
+  }
+
+  #ember1375 {
+    display: none;
+  }
+
+  .email-template-selected {
+    position: relative;
+    .ember-power-select, .select2-container {
+      width: calc(100% - 30px);
+    }
+    .preview-email-anchor {
+      position: absolute;
+      top: 3px;
+      right: -4px;
+    }
+  }
+
+  .preview-email-arrow, .preview-email-frame {
+    top: 50%;
+    background-color: #fff;
+    position: absolute;
+  }
+
+  .email-template-selected .preview-email-frame {
+    left: 32px;
+  }
+
+  .preview-email-anchor {
+    padding: 4px;
+    cursor: pointer;
+    &:hover .fa {
+      color: #999;
+    }
+    .fa {
+      color: #ccc;
+    }
+  }
+
+  .preview-email-arrow {
+    left: -7px;
+    width: 12px;
+    height: 12px;
+    border-left: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    -webkit-transform: translateY(-50%) rotate(45deg);
+    transform: translateY(-50%) rotate(45deg);
+  }
+
+  .preview-email-frame {
+    z-index: 2;
+    left: 30px;
+    width: 168px;
+    height: 234px;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    top: 55px;
+    left: 340px;
+    display: none;
+    &::after {
+      content: '';
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: -16px;
+      background-color: transparent;
+    }
+    .arrow {
+      width: 0;
+      height: 0;
+      border-top: 10px solid transparent;
+      border-bottom: 10px solid transparent;
+      border-right: 10px solid #fff;
+      box-shadow: 0 0 -1px #000;
+    }
+    iframe {
+      display: block;
+      width: 400%;
+      height: 400%;
+      border: 4px solid #ccc;
+      -webkit-transform-origin: 0 0;
+      transform-origin: 0 0;
+      -webkit-transform: scale(0.25);
+      transform: scale(0.25);
+      overflow: hidden;
+    }
+  }
+
+  .fa {
+    &:hover {
+      + .preview-email-frame {
+        display: block;
+      }
+    }
+  }
+}
+

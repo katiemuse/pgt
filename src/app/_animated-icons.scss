@@ -1,0 +1,143 @@
+@import "base";
+
+$animated-icon-color: #929292;
+
+section.animated-standalone-section {
+  margin: 0 20px 20px 0;
+}
+
+section.animated-standalone-section {
+  width: 35px;
+  padding: 0;
+  height: 35px;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 999px;
+    cursor: pointer;
+  }
+}
+
+.animated-green {
+  background: #fff;
+}
+
+.animated-icon {
+
+  &.circular {
+    border: 2px solid $animated-icon-color;
+    border-radius: 35px;
+  }
+
+  width:35px;
+  height: 35px;
+  margin: 0px;
+  position:relative;
+
+  &.animated {
+    @include transition(all 800ms ease);
+
+    > span {
+      @include transition(all 800ms ease);
+    }
+  }
+
+  &:before, &:after {
+    content: "";
+    background: transparent;
+    width: 0;
+    height: 0;
+    display: block;
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100px;
+    height: 40px;
+    @include transform(translateY 0);
+    @include transition(all 800ms ease);
+    z-index: 2;
+    font-weight: bold;
+    color: transparent;
+  }
+
+  &:after {
+    content: "";
+    @include transform(translateY 40px);
+    top: auto;
+    bottom: -10px;
+  }
+
+  > span {
+    background-color:$animated-icon-color;
+    display:block;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:1;
+    height:2px;
+    @include transform(translateY(29px));
+  }
+
+  &.x {
+    span {
+      &.first {
+        @include transform(rotate(-45deg) translateY(14px) translateX(-6px));
+        width: 20px;
+      }
+
+      &.second {
+        @include transform(rotate(45deg) translateY(6px) translateX(14px));
+        width: 20px;
+      }
+    }
+  }
+
+  &.plus {
+    span {
+      &.first {
+        @include transform(rotate(0deg) translateY(15px) translateX(5px));
+        width: 20px;
+      }
+
+      &.second {
+        @include transform(rotate(-90deg) translateY(5px) translateX(-15px));
+        width: 20px;
+      }
+    }
+  }
+
+
+  &.hamburger {
+
+    span {
+      &.second {
+        @include transform(translateY(0));
+      }
+      &.third {
+        @include transform(translateY(60px));
+      }
+    }
+  }
+
+
+  &.light {
+    border-color: #fff;
+
+    > span {
+      background-color:#fff;
+    }
+  }
+
+}

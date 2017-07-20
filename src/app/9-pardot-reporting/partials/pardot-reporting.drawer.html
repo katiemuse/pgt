@@ -1,0 +1,69 @@
+<div class="drawer-content pardot-reporting-drawer">
+
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <wizard name="monitor" on-finish="beginStory()">
+      <wz-step>
+        <h2>Pardot Reporting</h2>
+        <p>
+          With some help from Pardot and Salesforce® Engage, your sales rep has likely persuaded Jeremy Jones to become
+          a new customer. The sales process is complete &mdash; but as a marketer, you still want to look back at your
+          campaigns to see what worked and what didn't. Pardot reporting can help.
+        </p>
+        <p>
+          Let&rsquo;s take a look at two Pardot reports that will help you gauge your campaign success. We'll start with the
+          Campaign Performance Overview report to see how your initial campaign is doing, then dive deeper with advanced
+          email reporting. Let's get started!
+        </p>
+        <p class="continue">
+          <a class="btn btn-rounded blue next" wz-next>Next</a>
+        </p>
+      </wz-step>
+      <wz-step>
+        <h2>Campaign Reporting</h2>
+        <p>
+          The Campaign Performance Overview report gives a high level overview of your campaign's overall health in
+          comparison to other campaigns. Each campaign is represented by a color bubble in the chart to the left. The graph
+          can be adjusted by altering the values on the four axes.
+        </p>
+        <p class="continue">
+          <a class="btn btn-rounded blue next" wz-next>Continue</a>
+        </p>
+      </wz-step>
+    </wizard>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Standard Chart</h2>
+        <p>
+          Prefer the standard chart and numbers approach? View a breakdown of campaign data, including the prospects associated with your campaign, the number of assigned leads, opportunities created, and more.
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+  <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>Pardot comes with more than twenty out-of-the-box reports, including paid search reporting, content and social reports, landing page reports, sales funnel reporting, and more.</p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+</div>

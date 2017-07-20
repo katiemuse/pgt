@@ -1,0 +1,451 @@
+<div class="row monitor-height engagement-studio">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+
+              <svg class="line-area">
+                <path id="vertical-line" class="canvas-path" d="M418,55 418,175" style="stroke-dasharray: none;"></path>
+              </svg>
+
+              <div id="node-start-container" class="canvas-node" style="left: 393px;top: 30px;">
+                <div id="node-start" class="node-click-zone ">
+                  <svg id="node-start-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-start clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-start-text" class="node-info text-left" style="top: -14px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="Start">Start</strong>
+                    <br>
+                    <span id="ember1444" class="">
+                      <div id="ember1445" data-hint="" class="hint--rounded hint--title hint--no-animate hint--bottom-right">
+                        <span class="elide-within"><a href="javascript:"></a></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+                <div id="new-node-container" class="node-path">
+                  <div id="new-node" class="new-node closed" style="left: 0px; top: 60px;">
+                    <a class="active" wz-next ng-click="nextStep()">
+                      <svg id="new-node-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-new clickable">
+                        <g><circle cx="25" cy="25" r="10"></circle><text x="25" y="29.8" style="font-size: 12px;"></text></g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="node-end-container" class="canvas-node">
+                <div class="node-click-zone">
+                  <svg id="node-end-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-end clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-end-text" class="node-info text-left" style="top: -15px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="End">End</strong><br>&nbsp;
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+
+              <svg class="line-area">
+                <path id="vertical-line" class="canvas-path" ng-class="wizard.stateIndex == 2 ? 'step-2': ''" d="M418,55 418,175" style="stroke-dasharray: none;"></path>
+              </svg>
+
+              <div id="node-start-container" class="canvas-node" style="left: 393px;top: 30px;">
+                <div id="node-start" class="node-click-zone ">
+                  <svg id="node-start-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-start clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-start-text" class="node-info text-left" style="top: -14px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="Start">Start</strong>
+                    <br>
+                    <span id="ember1444" class="">
+                      <div id="ember1445" data-hint="" class="hint--rounded hint--title hint--no-animate hint--bottom-right">
+                        <span class="elide-within"><a href="javascript:"></a></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+
+                <div id="new-node-container" class="ember-view new-node" ng-class="wizard.stateIndex == 2 ? 'opening open': ''" style="left: 0px; top: 60px;">
+                  <div id="ember1880" class="ember-view node-card well">
+                    <div class="header text-center" data-ember-action="1881">
+                      <svg id="ember1882" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-new clickable">
+                        <g><circle cx="25" cy="25" r="10"></circle><text x="25" y="29.8" style="font-size: 12px;"></text></g>
+                      </svg>
+                    </div>
+                    <div class="node-blocks clearfix">
+                      <div class="node-block-action active" data-ember-action="1883" wz-next ng-click="nextStep()">
+                        <svg id="ember1884" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-action center-block clickable">
+                          <g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect></g>
+                        </svg>
+                        <h4>Action</h4>
+                        <p>
+                          Do <strong>something</strong>...<br>
+                          <em>For example:</em><br>
+                          Send an email today<br>
+                          (or after a few days)
+                        </p>
+                      </div>
+
+                      <div class="node-block-trigger" data-ember-action="1885">
+                        <svg id="ember1886" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-trigger center-block clickable">
+                          <g>
+                            <path transform="translate(25,25)" d="m-17,0l8.499999999999998,14.722431864335457l17,1.7763568394002505e-15l8.500000000000004,-14.72243186433545l-8.499999999999993,-14.72243186433546l-16.999999999999996,-1.2434497875801753e-14l-8.50000000000001,14.722431864335444z" class="shadow"></path>
+                            <path transform="translate(25,25)" d="m-17,0l8.499999999999998,14.722431864335457l17,1.7763568394002505e-15l8.500000000000004,-14.72243186433545l-8.499999999999993,-14.72243186433546l-16.999999999999996,-1.2434497875801753e-14l-8.50000000000001,14.722431864335444z"></path>
+                          </g>
+                        </svg>
+                        <h4>Trigger</h4>
+                        <p>
+                          Listen for <strong>something</strong>...<br>
+                          <em>For example:</em> A prospect<br>
+                          opens an email today<br>
+                          (or within a few days)
+                        </p>
+                      </div>
+
+                      <div class="node-block-rule" data-ember-action="1887">
+                        <svg id="ember1888" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-decision center-block clickable">
+                          <g><rect x="2" y="2" ry="8" rx="8" height="31.81818181818182" width="31.81818181818182" transform="translate(25, 0) rotate(45)"></rect></g>
+                        </svg>
+                        <h4>Rule</h4>
+                        <p>
+                          Check <strong>something</strong>...<br>
+                          <em>For example:</em><br>
+                          A prospect’s score, list,<br>
+                          or a field value
+                        </p>
+                      </div>
+
+                      <div disabled="true" class="node-block-end node-block-disabled" data-ember-action="1889">
+                        <svg id="ember1890" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-end center-block clickable">
+                          <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                        </svg>
+                        <h4>End</h4>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="new-node-container" class="node-path">
+                  <div id="new-node" class="new-node closed" style="left: 0px; top: 60px;">
+                    <a>
+                      <svg id="new-node-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-new clickable">
+                        <g><circle cx="25" cy="25" r="10"></circle><text x="25" y="29.8" style="font-size: 12px;"></text></g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="node-end-container" class="canvas-node" ng-class="wizard.stateIndex == 2 ? 'step-2': ''">
+                <div class="node-click-zone">
+                  <svg id="node-end-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-end clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-end-text" class="node-info text-left" style="top: -15px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="End">End</strong><br>&nbsp;
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+
+              <svg class="line-area">
+                <path id="vertical-line" class="canvas-path" d="M418,55 418,175" style="stroke-dasharray: none;"></path>
+              </svg>
+
+              <div id="node-start-container" class="canvas-node" style="left: 393px;top: 30px;">
+                <div id="node-start" class="node-click-zone ">
+                  <svg id="node-start-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-start clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-start-text" class="node-info text-left" style="top: -14px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="Start">Start</strong>
+                    <br>
+                    <span id="ember1444" class="">
+                      <div id="ember1445" data-hint="" class="hint--rounded hint--title hint--no-animate hint--bottom-right">
+                        <span class="elide-within"><a href="javascript:"></a></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+
+
+                <div id="ember1488" class="ember-view node-path">
+                  <div id="ember1489" class="ember-view new-node open" style="left: 0px; top: 60px;">
+                    <div id="ember2114" class="ember-view node-card well">
+                      <div class="header text-center" data-ember-action="2115">
+                        <svg id="ember2116" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable">
+                          <g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect></g>
+                        </svg>
+                      </div>
+                      <div id="ember2159" class="ember-view">
+                        <div class="row padded">
+                          <a class="pull-left" data-ember-action="2160"><i class="fa fa-arrow-left"></i> Change Step</a>
+                          <a class="pull-right" data-ember-action="2161">Cancel</a>
+                        </div>
+                        <div class="row">
+                          <div class="form-group has-feedback">
+                            <input id="ember2162" placeholder="Search" type="text" class="form-control input-sm ember-view ember-text-field">
+                            <i class="fa fa-search form-control-feedback"></i>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="ember2163" class="ember-view">
+                        <div class="list-group">
+                          <a class="list-group-item clearfix" data-ember-action="2164">
+                            <svg id="ember2165" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Add to List">
+                              Add to List
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2166">
+                            <svg id="ember2167" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Adjust Score">
+                              Adjust Score
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2168">
+                            <svg id="ember2169" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Apply Tags">
+                              Apply Tags
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2170">
+                            <svg id="ember2171" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Assign to Group">
+                              Assign to Group
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2172">
+                            <svg id="ember2173" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Assign to User">
+                              Assign to User
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2174">
+                            <svg id="ember2175" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Change Prospect Field Value">
+                              Change Prospect Field Value
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2176">
+                            <svg id="ember2177" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Notify User">
+                              Notify User
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2178">
+                            <svg id="ember2179" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Remove from List">
+                              Remove from List
+                            </div>
+                          </a>
+                          <a class="list-group-item clearfix" data-ember-action="2180">
+                            <svg id="ember2181" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Remove Tags">
+                              Remove Tags
+                            </div>
+                          </a>
+                          <a wz-next ng-click="nextStep()" class="list-group-item clearfix active" data-ember-action="2182">
+                            <svg id="ember2183" width="28" height="28" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable"><!----><g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect><text x="25" y="33" style="font-size: 20px;"></text></g></svg>
+                            <div class="item-label" title="Send Email">
+                              Send Email
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div id="new-node-container" class="node-path">
+                  <div id="new-node" class="new-node closed" style="left: 0px; top: 60px;">
+                    <a>
+                      <svg id="new-node-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-new clickable">
+                        <g><circle cx="25" cy="25" r="10"></circle><text x="25" y="29.8" style="font-size: 12px;"></text></g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="node-end-container" class="canvas-node">
+                <div class="node-click-zone">
+                  <svg id="node-end-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-end clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-end-text" class="node-info text-left" style="top: -15px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="End">End</strong><br>&nbsp;
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+
+              <svg class="line-area">
+                <path id="vertical-line" class="canvas-path" d="M418,55 418,175" style="stroke-dasharray: none;"></path>
+              </svg>
+
+              <div id="node-start-container" class="canvas-node" style="left: 393px;top: 30px;">
+                <div id="node-start" class="node-click-zone ">
+                  <svg id="node-start-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-start clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-start-text" class="node-info text-left" style="top: -14px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="Start">Start</strong>
+                    <br>
+                    <span id="ember1444" class="">
+                      <div id="ember1445" data-hint="" class="hint--rounded hint--title hint--no-animate hint--bottom-right">
+                        <span class="elide-within"><a href="javascript:"></a></span>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+
+
+                <div id="ember964" class="ember-view node-path">
+                  <div id="ember965" class="ember-view new-node open" style="left: 0px; top: 60px;">
+                    <div id="ember1237" class="ember-view node-card well">
+                      <div class="header text-center" data-ember-action="1238">
+                        <svg id="ember1239" width="50" height="50" viewBox="0 0 50 50" class="ember-view node-icon node-action clickable">
+                          <g><rect x="4" y="4" ry="8" rx="8" height="42" width="42"></rect>
+                            <text x="25" y="33" style="font-size: 20px;"></text>
+                          </g>
+                        </svg>
+                      </div>
+                      <div id="ember1310" class="ember-view">
+                        <div class="row padded">
+                          <a class="pull-left" data-qa="choose-asset-change-button" data-ember-action="1311"><i class="fa fa-arrow-left"></i> Change Action</a>
+                          <a class="pull-right" data-qa="choose-asset-cancel-button" data-ember-action="1312">Cancel</a>
+                        </div>
+                      </div>
+                      <div class="row padded">
+                        <div class="asset-title">
+                          Send Email
+                        </div>
+                      </div>
+                      <div class="row padded">
+                        <form id="ember1313" class="form form-horizontal action">
+                          <label>Send prospect</label>
+
+                          <div class="control-group">
+                            <div class="controls">
+                              <select name="" id="" ng-class="{active:list.sendEmail == null}" ng-model="list.sendEmail" ng-options="opt as opt.label for opt in sendEmailOptions">
+                                <option value="">Select an email template</option>
+                              </select>
+                            </div>
+                          </div>
+
+                          <div class="timeout">
+                            <div id="ember1315" class="ember-view">
+                              <div class="form-group">
+                                When?
+                                <div class="radio">
+                                  <label data-qa="build-card-immediately-radio">
+                                    <label class="ember-radio-button checked ember-view">
+                                      <input id="ember1317" name="timeout-type" type="radio" value="immediately" class="ember-view" checked>
+                                      Immediately
+                                    </label>
+                                  </label>
+                                </div>
+                                <div class="radio">
+                                  <label data-qa="build-card-after-radio">
+                                    <label class="ember-radio-button  ember-view">
+                                      <input id="ember1319" name="timeout-type" type="radio" value="after" class="ember-view">
+                                      Wait
+                                    </label>
+                                  </label>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                        <div id="ember1320" class="ember-view">
+                          <div class="align-bottom">
+                            <button class="slds-button slds-button--brand btn-fill" ng-class="{active:list.sendEmail != null}" ui-sref="engagement-studio-trigger">
+                              <i class="fa fa-check"></i> Save
+                            </button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+
+
+                <div id="new-node-container" class="node-path">
+                  <div id="new-node" class="new-node closed" style="left: 0px; top: 60px;">
+                    <a>
+                      <svg id="new-node-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-new clickable">
+                        <g><circle cx="25" cy="25" r="10"></circle><text x="25" y="29.8" style="font-size: 12px;"></text></g>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div id="node-end-container" class="canvas-node">
+                <div class="node-click-zone">
+                  <svg id="node-end-svg" width="50" height="50" viewBox="0 0 50 50" class="node-icon node-end clickable">
+                    <g><circle cx="25" cy="25" r="21"></circle><text x="25" y="33" style="font-size: 20px;"></text></g>
+                  </svg>
+                  <div id="node-end-text" class="node-info text-left" style="top: -15px; left: 50px;">
+                    <span>&nbsp;</span>
+                    <strong title="End">End</strong><br>&nbsp;
+                  </div>
+                </div>
+              </div>
+
+
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="assets/images/badge.png"/>
+                </p>
+                <h2>Congratulations!</h2>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pretium, nunc pellentesque <br/>
+                  lobortis luctus, dolor leo sodales erat, et porta odio metus at arcu. Integer in erat elit. Sed suscipit.
+                </p>
+                <p>
+                  <a ui-sref="engagement-studio-trigger" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

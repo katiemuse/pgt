@@ -1,0 +1,53 @@
+<div class="row monitor-height send-email">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <select class="send-to" ng-class="{active:list.sendTo == null}" ng-model="list.sendTo" li-autofocus="wizard.stateIndex == 0" ng-options="opt as opt.label for opt in sendToOptions">
+                    </select>
+                    <select class="sender-a" ng-class="{active:list.sendTo == null && list.senderA == null}" ng-model="list.senderA" ng-options="opt as opt.label for opt in senderAOptions">
+                      <option value="" disabled>Select a list to add...</option>
+                    </select>
+                    <select class="sender-b" ng-class="{active:list.sendTo == null && list.senderB == null}" ng-model="list.senderB" ng-options="opt as opt.label for opt in senderBOptions">
+                      <option value="" disabled>Select a list to add...</option>
+                    </select>
+                    <input ng-model="list.senderA.label" type="text" class="text sender-a-input-name">
+                    <input ng-model="list.senderA.email" type="text" class="text sender-a-input-email">
+                    <input ng-model="list.senderB.label" type="text" class="text sender-b-input-name">
+                    <input ng-model="list.senderB.email" type="text" class="text sender-b-input-email">
+                  </div>
+                </div>
+              </form>
+              <div class="form-actions">
+                <input class="btn btn-primary" ng-class="{active:list.sendTo != null}" li-autofocus="list.sendTo != null" type="submit" ng-click="SendNow()" value="Save" />
+              </div>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="assets/images/badge.png"/>
+                </p>
+                <h2>Right On!</h2>
+                <p>
+                  You just walked through the full email building process! Let's see what happens<br/>
+                  in Pardot when someone interacts with one of your marketing messages.
+                </p>
+                <p>
+                  <a ui-sref="view-a-prospect-profile"  li-autofocus="list.sendTo != null"   class="btn btn-rounded active">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

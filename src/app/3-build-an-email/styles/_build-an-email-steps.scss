@@ -1,0 +1,22 @@
+@import '../../base';
+
+#step-container {
+
+  &.build-an-email-steps {
+
+    .step-two {
+      &.active {
+        height: 210px;
+      }
+    }
+
+    .step-three {
+      &.active {
+        .step-title {
+          transition: none;
+          padding-top: 10px;
+        }
+      }
+    }
+  }
+}

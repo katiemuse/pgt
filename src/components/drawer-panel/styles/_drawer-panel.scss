@@ -1,0 +1,149 @@
+@import "../../../app/base";
+
+.drawer-panel {
+
+  h2 {
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+
+  &.frame {
+
+    margin: 20px 0px 40px 40px;
+    min-height:550px;
+    overflow: hidden;
+  }
+
+  ul.nav {
+    border: none;
+    margin: 0 0 0 -9px;
+    padding: 0;
+    height: 100%;
+
+    li {
+      float: left;
+      list-style: none;
+      padding: 0px 0px 0px 0px;
+      border: none;
+      width: 60px;
+      text-align: center;
+
+      a, a:focus {
+
+        border: none;
+        color: $color-hotspot-panel-grey;
+        font-family: $proximanova;
+        font-width: bold;
+        font-size: 40px;
+        line-height: 45px;
+        padding: 0;
+
+        &:hover {
+          border: none;
+        }
+
+        &.active {
+          border: none;
+        }
+      }
+
+      a, a:focus, a:hover {
+        background-color: transparent;
+      }
+
+      &.active {
+        a, a:focus {
+          color: $color-marketing-cloud-orange;
+        }
+      }
+    }
+
+    &.nav-indicators {
+      position: absolute;
+      bottom: 0px;
+      width: 300px;
+      border: none;
+      margin: 0 0 0 0px;
+      padding: 0;
+      height: auto;
+
+      li {
+
+        a, a:focus {
+          font-size: $text-link-font-size;
+          line-height:20px;
+          cursor: default;
+        }
+
+        &.active {
+          span.title {
+            color: $color-salesforce-blue;
+          }
+
+          a {
+            cursor: pointer;
+          }
+        }
+
+        span {
+          display: block;
+          float:left;
+
+          &.icon {
+            margin:5px 0px;
+          }
+        }
+
+        width: 50%;
+
+        &.next {
+
+          .icon {
+            margin-left: 5px;
+          }
+
+          a {
+            float:right;
+          }
+        }
+
+        &.previous {
+          float: left;
+
+          .icon {
+            margin-right: 5px;
+          }
+
+          a {
+            float:left;
+          }
+        }
+
+      }
+    }
+
+  }
+
+  &.panel-hotspots {
+    ul.nav li.active a {
+      color: $color-marketing-cloud-orange;
+    }
+  }
+
+  &.panel-did-you-know {
+    ul.nav li.active a {
+      color: $color-salesforce-blue;
+    }
+  }
+
+  .tab-content {
+      .tab-pane {
+        img {
+          margin-bottom: 20px;
+        }
+        p {
+          margin-right:40px;
+        }
+      }
+  }
+}

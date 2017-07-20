@@ -1,0 +1,41 @@
+@import '../../base';
+
+.assign-your-leads-to-sales {
+
+  .step-0, .step-1, .step-2 {
+    background: url('../assets/images/stories/6-assign-your-leads-to-sales/6-screen-assign-your-leads-to-sales-no-controls.png') center center no-repeat;
+  }
+
+
+  .step-0, .step-1, .step-2 {
+    .form {
+
+      &.score {
+        position: absolute;
+        top: 144px;
+        left: 348px;
+      }
+
+      &.grade {
+        position: absolute;
+        top: 244px;
+        left: 348px;
+
+      }
+
+      input {
+        width: 150px;
+      }
+    }
+    form.form-horizontal .controls {
+      margin-left: 177px;
+    }
+    .btn {
+      position: absolute;
+      top: 468px;
+      left: 642px;
+      height: 40px;
+    }
+  }
+
+}

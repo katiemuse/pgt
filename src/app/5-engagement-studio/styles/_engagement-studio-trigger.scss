@@ -1,0 +1,120 @@
+@import '../../base';
+
+.engagement-studio-trigger {
+  font-family: $salesforcesans;
+  #hotspots-container {
+    .hotspot-1 {
+      @include animation-delay(1.5s);
+    }
+    .hotspot-2 {
+      @include animation-delay(1.75s);
+    }
+  }
+
+  .step-0 {
+    background: url('../assets/images/stories/5-engagement-studio/engagement-studio-trigger-bkg.png') top center no-repeat;
+    height: 792px !important;
+  }
+
+  .steps {
+    > section {
+      background: url('../assets/images/stories/5-engagement-studio/engagement-studio-bkg-no-header.png') top center no-repeat;
+    }
+  }
+
+  .step {
+    &.translate-up {
+      transform: translateY(-130px);
+      transition: transform .2s ease-in-out;
+    }
+  }
+
+  .step-1, .step-2, .step-3, .step-4, .step-5 {
+    height: 792px !important;
+  }
+
+  //#vertical-line, #node-end-container {
+  //  transition: all 1s ease-in-out;
+  //}
+
+  #node-end-container {
+    left: 393px;
+    top: 250px;
+    transition: top .2s ease-in-out;
+    &.step-2 {
+      left: 393px;
+      top: 590px;
+    }
+  }
+
+  #vertical-line {
+    transform: scaleY(1);
+    transform-origin: top;
+    transition: transform .2s ease-in-out;
+    &.step-2 {
+      transform: scaleY(4.5);
+      transform-origin: top;
+    }
+  }
+
+  #trigger {
+    position: absolute;
+    top: 165px;
+    left: 0px;
+  }
+
+  .step-2 {
+    #new-node-container {
+      opacity: 0;
+      &.step-2 {
+        position: absolute;
+        top: 165px;
+        opacity: 1;
+        transition: opacity .2s ease-in-out .2s;
+        &.new-node.opening .node-new {
+          animation-delay: .4s;
+        }
+      }
+    }
+  }
+
+  .timeout {
+    .form-group {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+
+  #send-email-container {
+    left: 393px;
+    top: 140px;
+  }
+
+
+  .step-3, .step-4 {
+    transform: translateY(-130px);
+    #node-end-container {
+      top: 590px;
+    }
+    #vertical-line {
+      transform: scaleY(4.5);
+      transform-origin: top;
+    }
+  }
+
+  .step-4 {
+    form.form-horizontal .controls {
+      margin-left: 0;
+      select {
+        width: 100%;
+      }
+    }
+    .slds-button {
+      pointer-events: none;
+      &.active {
+        pointer-events: all;
+      }
+    }
+  }
+
+}

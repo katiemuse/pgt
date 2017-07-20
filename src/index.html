@@ -1,0 +1,165 @@
+<!doctype html>
+<html class="no-js" ng-app="pardotInteractiveGuidedTour">
+  <head>
+    <meta charset="utf-8">
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Pardot Interactive Guided Tour</title>
+    <meta name="description" content="">
+    <!--<meta name="viewport" content="width=device-width, maximum-scale=0.75">-->
+    <script>
+    if(navigator.userAgent.match(/Android/i)
+    || navigator.userAgent.match(/webOS/i)
+    || navigator.userAgent.match(/iPhone/i)
+    || navigator.userAgent.match(/iPod/i)
+    || navigator.userAgent.match(/BlackBerry/i)
+    || navigator.userAgent.match(/Windows Phone/i)) {
+    document.write('<meta name="viewport" content="width=device-width, user-scalable=no" />');
+    }
+    </script>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <style type="text/css">
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+        display: none !important;
+      }
+    </style>
+
+    <!--[if lte IE 9]>
+    <style>
+      .desktop {display: none !important;}
+      .mobile {display: block !important;}
+      [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak, .ng-hide:not(.ng-hide-animate) {
+        display: block !important;
+      }
+      .drawer-no-scroll {overflow: visible;}
+      .drawer-bg.active {display: none !important;}
+      #intro-container {display: block;}
+    </style>
+    <![endif]-->
+  </head>
+  <body ng-cloak>
+
+    <div class="container-fluid main desktop background hidden-sm hidden-xs">
+
+      <div ui-view="getting-started" class="getting-started-view">
+      </div>
+
+      <progress-navbar>
+      </progress-navbar>
+
+      <div drawer="right" ng-cloak>
+        <div ui-view="drawer"></div>
+      </div>
+
+      <div class="container-fluid top-nav-container">
+        <div class="row">
+          <div ng-include="'components/top-navbar/partials/top-navbar.html'"></div>
+        </div>
+      </div>
+
+      <div class="container monitor">
+        <div ui-view="monitor"></div>
+      </div>
+
+      <steps-container>
+
+      </steps-container>
+
+    </div>
+
+    <div class="container-fluid main mobile hidden-lg hidden-md" ng-hide="$state.current.name == 'intro'">
+      <div class="top-nav-container">
+        <div class="row">
+          <div ng-include="'components/top-navbar/partials/top-navbar.mobile.html'"></div>
+        </div>
+        <div class="row product-tour">
+          <div class="col-xs-12">
+            <h2>Product Tour</h2>
+          </div>
+        </div>
+      </div>
+
+      <div ui-view="mobile" autoscroll="true">
+
+      </div>
+    </div>
+
+    <div class="hidden-lg hidden-md" ui-view="intro" autoscroll="true" ng-hide="$state.current.name != 'intro'">
+
+    </div>
+
+    <footer ng-hide="$state.current.name == 'intro'">
+      <div class="copyright">
+        <ul>
+          <li>
+            &copy; 2016 Pardot, a salesforce.com company.&nbsp;
+          </li>
+          <li>
+            All Rights Reserved
+          </li>
+        </ul>
+      </div>
+      <div class="links">
+        <ul>
+          <li>
+            <a href="http://www.pardot.com/pricing/" target="_blank">Pricing</a>
+          </li>
+          <li>
+            <a href="http://www.pardot.com/company/legal/privacy-policy/" target="_blank">Privacy Policy</a>
+          </li>
+          <li>
+            <a href="http://www.pardot.com/company/legal/permission-based-marketing-policy/" target="_blank">Permission Based Marketing Policy</a>
+          </li>
+          <li>
+            <a href="http://www.pardot.com/company/legal/site-terms-of-service/" target="_blank">Website Terms of Use</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+
+    <!-- Google Analytics -->
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-1824249-30', 'auto');
+      ga('send', 'pageview');
+    </script>
+
+    <!-- Pardot Analytics -->
+    <script type="text/javascript">
+      piAId = '1001';
+      piCId = '99770';
+
+      (function() {
+        function async_load(){
+          var s = document.createElement('script'); s.type = 'text/javascript';
+          s.src = ('https:' == document.location.protocol ? 'https://pi' : 'http://cdn') + '.pardot.com/pd.js';
+          var c = document.getElementsByTagName('script')[0]; c.parentNode.insertBefore(s, c);
+        }
+        if(window.attachEvent) { window.attachEvent('onload', async_load); }
+        else { window.addEventListener('load', async_load, false); }
+      })();
+    </script>
+
+    <!-- build:js(src) scripts/vendor.js -->
+    <!-- bower:js -->
+    <!-- run `gulp wiredep` to automaticaly populate bower script dependencies -->
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
+    <!-- inject:js -->
+    <!-- js files will be automaticaly insert here -->
+    <!-- endinject -->
+
+    <!-- inject:partials -->
+    <!-- angular templates will be automatically converted in js and inserted here -->
+    <!-- endinject -->
+    <!-- endbuild -->
+
+  </body>
+</html>

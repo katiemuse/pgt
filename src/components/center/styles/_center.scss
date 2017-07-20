@@ -1,0 +1,17 @@
+@import "../../../app/base";
+
+
+.center-container {
+  position: absolute;
+  top:0;
+  left:0;
+  height:100%;
+  width:100%;
+  display:table;
+  z-index:$z-index-centered-content;
+}
+.centered {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}

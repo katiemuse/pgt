@@ -1,0 +1,27 @@
+@import '../../base';
+
+#step-container {
+
+  &.view-a-prospect-profile-steps {
+
+    .step-one {
+      &.active {
+        height: 150px;
+      }
+    }
+
+    .step-two {
+      &.active {
+        height: 90px;
+
+        .step-title {
+          padding-top:10px;
+          transition:none;
+        }
+      }
+    }
+
+
+
+  }
+}

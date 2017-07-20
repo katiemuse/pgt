@@ -1,0 +1,94 @@
+@import '../../base';
+
+.sales-view-in-salesforce, .personalized-email {
+  .down-arrow {
+    cursor:pointer;
+    position: absolute;
+    top: 410px;
+    left: 342px;
+    background: url('../assets/images/down-arrow.png') center top no-repeat;
+    width:97px;
+    height:97px;
+    z-index: $z-index-hotspot;
+    border-radius: 50%;
+
+    &.fade-out {
+      opacity:0;
+      @include transition-duration(0.5s);
+      @include transition-timing-function(ease-out);
+      @include transition-delay(0.0s);
+    }
+
+    &.active {
+      @include animation(borderActive 1.5s infinite);
+    }
+  }
+}
+
+.sales-view-in-salesforce {
+
+  .step-0, .step-1, .step-2 {
+    background: url('../assets/images/stories/7-sales-view-in-salesforce/7-screen-sales-view-in-salesforce-full.png') center top no-repeat;
+    height: 1231px !important;
+  }
+
+  .step-0 {
+    @include transform(translateY(0px));
+  }
+
+  .step-2 {
+    @include transform(translateY(-520px));
+  }
+
+  section {
+    &.step {
+
+      &.current {
+
+        .step-1 {
+          @include transform(translateY(0px));
+          @include transition-duration(1.0s);
+          @include transition-timing-function(ease-in);
+          @include transition-delay(0.0s);
+          @include transform(translateY(-520px));
+        }
+
+        .step-2 {
+          @include transform(translateY(0px));
+          @include transition-duration(0.75s);
+          @include transition-timing-function(ease-in);
+          @include transition-delay(0.0s);
+          @include transform(translateY(-520px));
+        }
+      }
+    }
+  }
+
+  .step-2, .step-3 {
+    background: url('../assets/images/stories/7-sales-view-in-salesforce/7-screen-sales-view-in-salesforce-full.png') center top no-repeat;
+
+  }
+
+  .step-1 {
+    #page-view {
+      position:absolute;
+      width: 285px;
+      height: 33px;
+      left: 507px;
+      top: 218px;
+    }
+  }
+
+  .step-2 {
+    .form-actions {
+      position: absolute;
+      bottom: 15px;
+      left: 681px;
+
+      .btn {
+        padding: 6px 27px;
+      }
+    }
+  }
+
+}

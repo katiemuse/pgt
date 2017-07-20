@@ -1,0 +1,30 @@
+<nav class="navbar navbar-static-top top-navbar" ng-controller="TopNavbarController">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" ui-sref="intro">
+        <span class="logo"></span>
+      </a>
+      <a class="navbar-link" href="http://www2.pardot.com/guided-tour/demo-request?url_called=70130000000mAQD" target="_blank">Schedule a Live Demo</a>
+    </div>
+
+    <nav class="tips">
+      <ul class="tips-icons">
+        <li  ng-click="topNavbar.didYouKnowClicked()"  class="icon-did-you-know" ng-class="{'enabled' : topNavbar.didYouKnowEnabled, 'active' : topNavbar.didYouKnowActive}">
+          <span class="count" ng-show="topNavbar.didYouKnowCount > 0">
+            {{ topNavbar.didYouKnowCount }}
+          </span>
+        </li>
+        <li ng-click="topNavbar.hotspotsClicked()" class="icon-hot-spots last" ng-class="{'enabled' : topNavbar.hotspotsEnabled, 'active' : topNavbar.hotspotsActive}">
+          <span class="count" ng-show="topNavbar.hotspotsCount > 0">
+            {{ topNavbar.hotspotsCount }}
+          </span>
+        </li>
+        <!--
+        <li class="icon-info last" ng-class="{'enabled' : topNavbar.infoEnabled, 'active' : topNavbar.infoActive}">
+        </li>
+        -->
+      </ul>
+    </nav>
+
+  </div>
+</nav>
