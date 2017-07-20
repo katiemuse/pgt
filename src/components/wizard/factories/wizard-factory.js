@@ -1,35 +1,28 @@
 'use strict';
-/**
- * @ngdoc service
- * @name pardotInteractiveGuidedTour.wizard
- * @description
- * # wizard
- * Factory in the pardotInteractiveGuidedTour.
- */
-angular.module('pardotInteractiveGuidedTour')
-  .factory('WizardHandler', function() {
-    var service = {};
 
-    var wizards = {};
+export default function WizardHandler() {
+  const service = {};
 
-    service.defaultName = "defaultWizard";
+  const wizards = {};
 
-    service.addWizard = function(name, wizard) {
-      wizards[name] = wizard;
-    };
+  service.defaultName = 'defaultWizard';
 
-    service.removeWizard = function(name) {
-      delete wizards[name];
-    };
+  service.addWizard = function (name, wizard) {
+    wizards[name] = wizard;
+  };
 
-    service.wizard = function(name) {
-      var nameToUse = name;
-      if (!name) {
-        nameToUse = service.defaultName;
-      }
+  service.removeWizard = function (name) {
+    delete wizards[name];
+  };
 
-      return wizards[nameToUse];
-    };
+  service.wizard = function (name) {
+    let nameToUse = name;
+    if (!name) {
+      nameToUse = service.defaultName;
+    }
 
-    return service;
-  });
+    return wizards[nameToUse];
+  };
+
+  return service;
+}

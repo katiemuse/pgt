@@ -1,28 +1,22 @@
 'use strict';
-/**
- * @ngdoc directive
- * @name pardotInteractiveGuidedTour.directive:contentEditable
- * @description
- * # contentEditable
- */
-angular.module('pardotInteractiveGuidedTour')
-  .directive('contenteditable', function () {
-    return {
-      restrict: 'A',
-      require: 'ngModel',
-      link: function(scope, element, attrs, ngModel) {
 
-        function read() {
-          ngModel.$setViewValue(element.html());
-        }
-
-        ngModel.$render = function() {
-          element.html(ngModel.$viewValue || "");
-        };
-
-        element.bind("blur keyup change", function(){
-          scope.$apply(read);
-        })
+export default function contenteditable() {
+  return {
+    restrict: 'A',
+    require: 'ngModel',
+    link: (scope, element, attrs, ngModel) => {
+      function read() {
+        ngModel.$setViewValue(element.html());
       }
-    };
-  });
+
+      ngModel.$render = function () {
+        element.html(ngModel.$viewValue || '');
+      };
+
+      element.bind('blur keyup change', () => {
+        scope.$apply(read);
+      });
+    }
+  };
+}
+

@@ -1,22 +1,18 @@
 'use strict';
-/**
- * @ngdoc directive
- * @name pardotInteractiveGuidedTour.directive:autofocus
- * @description
- * # autofocus
- */
-angular.module('pardotInteractiveGuidedTour')
-  .directive('liAutofocus', function ($timeout) {
-    return {
-      restrict: 'A',
-      link: function(scope, element, attrs) {
-        scope.$watch( attrs.liAutofocus, function( val ){
-          if(angular.isDefined(val) && val) {
-            $timeout(function(){
-              element[0].focus();
-            });
-          }
-        }, true);
-      }
-    };
-  });
+
+import angular from 'angular';
+
+export default function liAutoFocus($timeout) {
+  return {
+    restrict: 'A',
+    link: (scope, element, attrs) => {
+      scope.$watch(attrs.liAutofocus, val => {
+        if (angular.isDefined(val) && val) {
+          $timeout(() => {
+            element[0].focus();
+          });
+        }
+      }, true);
+    }
+  };
+}

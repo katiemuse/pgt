@@ -1,183 +1,190 @@
 'use strict';
 
+import angular from 'angular';
 import '../styles/_steps.scss';
 
-angular.module('pardotInteractiveGuidedTour')
-  .directive('stepsContainer',
-    function ($parse, $rootScope, $interval, $sce, stepsConfig, Steps, stepsRegisterEvents, TopNavbar) {
-      return {
-        replace: true,
-        restrict: 'EA',
-        scope: true, // creates an internal scope for this directive
-        link: function (scope, elm, attrs) {
+export default function stepsContainer($parse, $rootScope, $interval, $sce, stepsConfig, Steps, stepsRegisterEvents) {
+  return {
+    replace: true,
+    restrict: 'EA',
+    scope: true, // creates an internal scope for this directive
+    templateUrl: 'components/steps/partials/steps.html',
+    link(scope, attrs) {
+      let id = 0;
 
-          var id = 0,
-            mergedConfig;
+      const mergedConfig = angular.extend({}, stepsConfig, scope.$eval(attrs.stepsOptions));
 
-          mergedConfig = angular.extend({}, stepsConfig, scope.$eval(attrs.stepsOptions));
-
-          scope.config = {
-            position: mergedConfig['position-class'],
-            title: mergedConfig['title-class'],
-            message: mergedConfig['message-class'],
-            tap: mergedConfig['tap-to-dismiss'],
-            closeButton: mergedConfig['close-button'],
-            animation: mergedConfig['animation-class'],
-            mouseoverTimer:  mergedConfig['mouseover-timer-stop']
-          };
-
-          scope.deregClearSteps = null;
-          scope.deregNewStep = null;
-
-          scope.$on("$destroy",function () {
-            if (scope.deregClearSteps) scope.deregClearSteps();
-            if (scope.deregNewStep) scope.deregNewStep();
-            if (scope.deregStepActivated) scope.deregStepActivated();
-            scope.deregClearSteps=null;
-            scope.deregNewStep=null;
-            scope.deregStepActivated=null;
-          });
-
-          scope.configureTimer = function configureTimer(step) {
-            var timeout = typeof (step.timeout) == "number" ? step.timeout : mergedConfig['time-out'];
-            if (timeout > 0)
-              setTimeout(step, timeout);
-          };
-
-          function addStep(step) {
-            step.number = mergedConfig['number-classes'][step.number];
-            if (!step.number)
-              step.number = mergedConfig['number-class'];
-
-            id++;
-            angular.extend(step, { id: id });
-
-            // Set the step.bodyOutputType to the default if it isn't set
-            step.bodyOutputType = step.bodyOutputType || mergedConfig['body-output-type'];
-            switch (step.bodyOutputType) {
-              case 'trustedHtml':
-                step.html = $sce.trustAsHtml(step.body);
-                break;
-              case 'template':
-                step.bodyTemplate = step.body || mergedConfig['body-template'];
-                break;
-              case 'templateWithData':
-                var fcGet = $parse(step.body || mergedConfig['body-template']);
-                var templateWithData = fcGet(scope);
-                step.bodyTemplate = templateWithData.template;
-                step.data = templateWithData.data;
-                break;
-            }
-
-            scope.configureTimer(step);
-
-            if (mergedConfig['newest-on-top'] === true) {
-              scope.steps.unshift(step);
-              if (mergedConfig['limit'] > 0 && scope.steps.length > mergedConfig['limit']) {
-                scope.steps.pop();
-              }
-            } else {
-              scope.steps.push(step);
-              if (mergedConfig['limit'] > 0 && scope.steps.length > mergedConfig['limit']) {
-                scope.steps.shift();
-              }
-            }
-
-            step.mouseover = false;
-          }
-
-          function setTimeout(step, time) {
-            step.timeout = $interval(function () {
-              if (!step.mouseover)
-                scope.removeStep(step.id);
-            }, time);
-          }
-
-          scope.steps = [];
-
-          if(!stepsRegisterEvents.isRegisteredNewStepEvent()){
-            stepsRegisterEvents.registerNewStepEvent();
-            scope.deregNewStep = $rootScope.$on('steps-newStep', function () {
-              addStep(Steps.step);
-            });
-          }
-
-          if(!stepsRegisterEvents.isRegisteredStepActivatedEvent()){
-            stepsRegisterEvents.registerStepActivatedEvent();
-            scope.deregStepActivated = $rootScope.$on('steps-activate', function (event, number) {
-              var i = 0;
-              for (i; i < scope.steps.length; i++) {
-                scope.steps[i].active = scope.steps[i].number === mergedConfig['number-classes'][number] ? true : false;
-              }
-            });
-          }
-
-          if(!stepsRegisterEvents.isRegisteredClearAllStepsEvent()){
-            stepsRegisterEvents.registerClearAllStepsEvent();
-            scope.deregClearSteps = $rootScope.$on('steps-clearSteps', function () {
-              scope.steps.splice(0, scope.steps.length);
-            });
-          }
-        },
-        controller: function ($scope, $element, $attrs) {
-
-          $rootScope.$on('$stateChangeSuccess',
-            function(event, toState, toParams, fromState, fromParams) {
-              $scope.stateClass = toState.name;
-            }
-          );
-
-          $scope.stopTimer = function (step) {
-            step.mouseover = true;
-            if ($scope.config.mouseoverTimer === true) {
-              if (step.timeout) {
-                $interval.cancel(step.timeout);
-                step.timeout = null;
-              }
-            }
-          };
-
-          $scope.restartTimer = function (step) {
-            step.mouseover = false;
-            if ($scope.config.mouseoverTimer === true) {
-              if (!step.timeout)
-                $scope.configureTimer(step);
-            }
-            else if (step.timeout === null) {
-              $scope.removeStep(step.id);
-            }
-          };
-
-          $scope.removeStep = function (id) {
-            var i = 0;
-            for (i; i < $scope.steps.length; i++) {
-              if ($scope.steps[i].id === id)
-                break;
-            }
-            $scope.steps.splice(i, 1);
-          };
-
-
-          /*$scope.click = function (step, isCloseButton) {
-            if ($scope.config.tap === true || isCloseButton == true) {
-              var removeToast = true;
-              if (step.clickHandler) {
-                if (angular.isFunction(step.clickHandler)) {
-                  removeToast = step.clickHandler(step, isCloseButton);
-                }
-                else if (angular.isFunction($scope.$parent.$eval(step.clickHandler))) {
-                  removeToast = $scope.$parent.$eval(step.clickHandler)(step, isCloseButton);
-                }
-                else {
-                  console.log("STEP-NOTE: Your click handler is not inside a parent scope of step-container.");
-                }
-              }
-              if (removeToast) {
-                $scope.removeToast(step.id);
-              }
-            }
-          };*/
-        },
-        templateUrl: 'components/steps/partials/steps.html'
+      scope.config = {
+        position: mergedConfig['position-class'],
+        title: mergedConfig['title-class'],
+        message: mergedConfig['message-class'],
+        tap: mergedConfig['tap-to-dismiss'],
+        closeButton: mergedConfig['close-button'],
+        animation: mergedConfig['animation-class'],
+        mouseoverTimer: mergedConfig['mouseover-timer-stop']
       };
-    });
+
+      scope.deregClearSteps = null;
+      scope.deregNewStep = null;
+
+      scope.$on('$destroy', () => {
+        if (scope.deregClearSteps) {
+          scope.deregClearSteps();
+        }
+        if (scope.deregNewStep) {
+          scope.deregNewStep();
+        }
+        if (scope.deregStepActivated) {
+          scope.deregStepActivated();
+        }
+        scope.deregClearSteps = null;
+        scope.deregNewStep = null;
+        scope.deregStepActivated = null;
+      });
+
+      scope.configureTimer = function configureTimer(step) {
+        const timeout = typeof (step.timeout) === 'number' ? step.timeout : mergedConfig['time-out'];
+        if (timeout > 0) {
+          setTimeout(step, timeout);
+        }
+      };
+
+      function addStep(step) {
+        step.number = mergedConfig['number-classes'][step.number];
+        if (!step.number) {
+          step.number = mergedConfig['number-class'];
+        }
+
+        id++;
+        angular.extend(step, {id});
+
+        // Set the step.bodyOutputType to the default if it isn't set
+        step.bodyOutputType = step.bodyOutputType || mergedConfig['body-output-type'];
+        switch (step.bodyOutputType) {
+          case 'trustedHtml':
+            step.html = $sce.trustAsHtml(step.body);
+            break;
+          case 'template':
+            step.bodyTemplate = step.body || mergedConfig['body-template'];
+            break;
+          case 'templateWithData':
+            const fcGet = $parse(step.body || mergedConfig['body-template']);
+            const templateWithData = fcGet(scope);
+            step.bodyTemplate = templateWithData.template;
+            step.data = templateWithData.data;
+            break;
+        }
+
+        scope.configureTimer(step);
+
+        if (mergedConfig['newest-on-top'] === true) {
+          scope.steps.unshift(step);
+          if (mergedConfig.limit > 0 && scope.steps.length > mergedConfig.limit) {
+            scope.steps.pop();
+          }
+        } else {
+          scope.steps.push(step);
+          if (mergedConfig.limit > 0 && scope.steps.length > mergedConfig.limit) {
+            scope.steps.shift();
+          }
+        }
+
+        step.mouseover = false;
+      }
+
+      function setTimeout(step, time) {
+        step.timeout = $interval(() => {
+          if (!step.mouseover) {
+            scope.removeStep(step.id);
+          }
+        }, time);
+      }
+
+      scope.steps = [];
+
+      if (!stepsRegisterEvents.isRegisteredNewStepEvent()) {
+        stepsRegisterEvents.registerNewStepEvent();
+        scope.deregNewStep = $rootScope.$on('steps-newStep', () => {
+          addStep(Steps.step);
+        });
+      }
+
+      if (!stepsRegisterEvents.isRegisteredStepActivatedEvent()) {
+        stepsRegisterEvents.registerStepActivatedEvent();
+        scope.deregStepActivated = $rootScope.$on('steps-activate', (event, number) => {
+          let i = 0;
+          for (i; i < scope.steps.length; i++) {
+            scope.steps[i].active = scope.steps[i].number === mergedConfig['number-classes'][number];
+          }
+        });
+      }
+
+      if (!stepsRegisterEvents.isRegisteredClearAllStepsEvent()) {
+        stepsRegisterEvents.registerClearAllStepsEvent();
+        scope.deregClearSteps = $rootScope.$on('steps-clearSteps', () => {
+          scope.steps.splice(0, scope.steps.length);
+        });
+      }
+    },
+    controller($scope) {
+      const x = $rootScope.$on('$stateChangeSuccess',
+        (event, toState, toParams, fromState, fromParams) => {
+          $scope.stateClass = toState.name;
+        }
+      );
+
+      $rootScope.$on('$destroy', x);
+
+      $scope.stopTimer = function (step) {
+        step.mouseover = true;
+        if ($scope.config.mouseoverTimer === true) {
+          if (step.timeout) {
+            $interval.cancel(step.timeout);
+            step.timeout = null;
+          }
+        }
+      };
+
+      $scope.restartTimer = function (step) {
+        step.mouseover = false;
+        if ($scope.config.mouseoverTimer === true) {
+          if (!step.timeout) {
+            $scope.configureTimer(step);
+          }
+        } else if (step.timeout === null) {
+          $scope.removeStep(step.id);
+        }
+      };
+
+      $scope.removeStep = function (id) {
+        let i = 0;
+        for (i; i < $scope.steps.length; i++) {
+          if ($scope.steps[i].id === id) {
+            break;
+          }
+        }
+        $scope.steps.splice(i, 1);
+      };
+
+      /* $scope.click = function (step, isCloseButton) {
+        if ($scope.config.tap === true || isCloseButton == true) {
+          var removeToast = true;
+          if (step.clickHandler) {
+            if (angular.isFunction(step.clickHandler)) {
+              removeToast = step.clickHandler(step, isCloseButton);
+            }
+            else if (angular.isFunction($scope.$parent.$eval(step.clickHandler))) {
+              removeToast = $scope.$parent.$eval(step.clickHandler)(step, isCloseButton);
+            }
+            else {
+              console.log("STEP-NOTE: Your click handler is not inside a parent scope of step-container.");
+            }
+          }
+          if (removeToast) {
+            $scope.removeToast(step.id);
+          }
+        }
+      }; */
+    }
+  };
+}

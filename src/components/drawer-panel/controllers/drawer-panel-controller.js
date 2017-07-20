@@ -1,45 +1,45 @@
 'use strict';
-/**
- * @ngdoc function
- * @name pardotInteractiveGuidedTour.controller:hotspotPanelCtrl
- * @description
- * # hotspotPanelCtrl
- * Controller of the pardotInteractiveGuidedTour
- */
-angular.module('pardotInteractiveGuidedTour')
-  .controller('DrawerPanelCtrl', function ($scope, Hotspots, TopNavbar) {
-    var ctrl = this,
-      tabs = ctrl.tabs = $scope.tabs = [];
 
-    $scope.previousActive = false;
-    $scope.nextActive = false;
+import * as _ from 'lodash';
 
-    ctrl.select = function(selectedTab) {
-      angular.forEach(tabs, function(tab) {
+export class DrawerPanelController {
+  constructor($scope, Hotspots, TopNavbar) {
+    this.$scope = $scope;
+    this.Hotspots = Hotspots;
+    this.TopNavbar = TopNavbar;
+
+    const ctrl = this,
+      tabs = ctrl.tabs = this.$scope.tabs = [];
+
+    this.$scope.previousActive = false;
+    this.$scope.nextActive = false;
+
+    ctrl.select = function (selectedTab) {
+      angular.forEach(tabs, tab => {
         if (tab.active && tab !== selectedTab) {
           tab.active = false;
           tab.onDeselect();
         }
       });
 
-      var selectedTabIndex = _.indexOf(tabs, selectedTab);
-      $scope.previousActive = selectedTabIndex > 0;
-      $scope.nextActive = selectedTabIndex < (tabs.length - 1);
+      const selectedTabIndex = _.indexOf(tabs, selectedTab);
+      this.$scope.previousActive = selectedTabIndex > 0;
+      this.$scope.nextActive = selectedTabIndex < (tabs.length - 1);
 
       selectedTab.active = true;
       selectedTab.onSelect();
     };
 
-    ctrl.notifySelected = function(selectedTab) {
-      var selectedTabIndex = _.indexOf(tabs, selectedTab);
-      if($scope.type && $scope.type == "hotspots"){
-        Hotspots.activate(selectedTabIndex + 1);
+    ctrl.notifySelected = function (selectedTab) {
+      const selectedTabIndex = _.indexOf(tabs, selectedTab);
+      if (this.$scope.type && this.$scope.type === 'hotspots') {
+        this.Hotspots.activate(selectedTabIndex + 1);
       }
     };
 
-    ctrl.selectByIndex = function(index) {
-      var selectedTab = tabs[index];
-      angular.forEach(tabs, function(tab) {
+    ctrl.selectByIndex = function (index) {
+      const selectedTab = tabs[index];
+      angular.forEach(tabs, tab => {
         if (tab.active && tab !== selectedTab) {
           tab.active = false;
           tab.onDeselect();
@@ -57,64 +57,59 @@ angular.module('pardotInteractiveGuidedTour')
         tab.active = true;
       } else if (tab.active) {
         ctrl.select(tab);
-      }
-      else {
+      } else {
         tab.active = false;
       }
 
-      if($scope.type && $scope.type == "hotspots"){
-        TopNavbar.HotspotsEnabled = true;
+      if (this.$scope.type && this.$scope.type === 'hotspots') {
+        this.TopNavbar.HotspotsEnabled = true;
       }
 
-      if($scope.type && $scope.type == "did-you-know"){
-        TopNavbar.DidYouKnowEnabled = true;
+      if (this.$scope.type && this.$scope.type === 'did-you-know') {
+        this.TopNavbar.DidYouKnowEnabled = true;
       }
-
     };
 
     ctrl.removeTab = function removeTab(tab) {
-      var index = tabs.indexOf(tab);
-      //Select a new tab if the tab to be removed is selected and not destroyed
+      const index = tabs.indexOf(tab);
+      // Select a new tab if the tab to be removed is selected and not destroyed
       if (tab.active && tabs.length > 1 && !destroyed) {
-        //If this is the last tab, select the previous tab. else, the next tab.
-        var newActiveIndex = index == tabs.length - 1 ? index - 1 : index + 1;
+        // If this is the last tab, select the previous tab. else, the next tab.
+        const newActiveIndex = index === tabs.length - 1 ? index - 1 : index + 1;
         ctrl.select(tabs[newActiveIndex]);
       }
       tabs.splice(index, 1);
     };
 
-
-
-    var destroyed;
-    $scope.$on('$destroy', function() {
+    let destroyed;
+    this.$scope.$on('$destroy', function () {
       destroyed = true;
 
-      if($scope.type && $scope.type == "hotspots"){
-        TopNavbar.HotspotsEnabled = false;
+      if (this.$scope.type && this.$scope.type === 'hotspots') {
+        this.TopNavbar.HotspotsEnabled = false;
       }
 
-      if($scope.type && $scope.type == "did-you-know"){
-        TopNavbar.DidYouKnowActive = false;
+      if (this.$scope.type && this.$scope.type === 'did-you-know') {
+        this.TopNavbar.DidYouKnowActive = false;
       }
     });
 
-
-    $scope.$watch('selected',function(newValue, oldValue){
-      if(newValue) {
-        if(newValue != oldValue) {
+    this.$scope.$watch('selected', (newValue, oldValue) => {
+      if (newValue) {
+        if (newValue !== oldValue) {
           ctrl.selectByIndex(newValue.number - 1);
         }
       }
     });
 
-    $scope.Next = function($event) {
-      var selectedTab = _.find(tabs, function(tab){
-        return tab.active == true;
+    this.$scope.Next = function ($event) {
+      const selectedTab = _.find(tabs, tab => {
+        return tab.active === true;
       });
 
-      var selectedTabIndex = _.indexOf(tabs, selectedTab);
+      const selectedTabIndex = _.indexOf(tabs, selectedTab);
 
-      if(selectedTabIndex < tabs.length - 1 ){
+      if (selectedTabIndex < tabs.length - 1) {
         ctrl.selectByIndex(selectedTabIndex + 1);
         ctrl.notifySelected(tabs[selectedTabIndex + 1]);
       }
@@ -123,20 +118,20 @@ angular.module('pardotInteractiveGuidedTour')
       return false;
     };
 
-    $scope.Previous = function($event) {
-      var selectedTab = _.find(tabs, function(tab){
+    this.$scope.Previous = function ($event) {
+      const selectedTab = _.find(tabs, tab => {
         return tab.active == true;
       });
 
-      var selectedTabIndex = _.indexOf(tabs, selectedTab);
+      const selectedTabIndex = _.indexOf(tabs, selectedTab);
 
-      if(selectedTabIndex > 0){
+      if (selectedTabIndex > 0) {
         ctrl.selectByIndex(selectedTabIndex - 1);
-        ctrl.notifySelected(tabs[selectedTabIndex - 1])
+        ctrl.notifySelected(tabs[selectedTabIndex - 1]);
       }
 
       $event.preventDefault();
       return false;
     };
-
-  });
+  }
+}
