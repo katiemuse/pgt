@@ -1,10 +1,5 @@
 'use strict';
-/**
- * @ngdoc directive
- * @name pardotInteractiveGuidedTour.directive:buttons
- * @description
- * # buttons
- */
+
 export default function wizardButtonDirective(action) {
   return {
     restrict: 'A',
@@ -21,8 +16,3 @@ export default function wizardButtonDirective(action) {
     }
   };
 }
-
-wizardButtonDirective('wzNext');
-wizardButtonDirective('wzPrevious');
-wizardButtonDirective('wzFinish');
-wizardButtonDirective('wzCancel');
