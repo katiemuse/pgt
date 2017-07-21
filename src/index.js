@@ -10,7 +10,7 @@ import 'angular-ui-router';
 import 'angular-ui-sortable';
 import 'textangular';
 import 'textAngular/dist/textAngular-sanitize';
-import run from './run';
+import run from './index.run';
 import {Steps} from './components/steps/services/steps-service';
 import StepsConfig from './components/steps/constants/steps-constant';
 import {TopNavbar} from './components/top-navbar/factories/top-navbar-factory';
@@ -43,6 +43,39 @@ import wizardStep from './components/wizard/directives/step-directive';
 import wizardDirective from './components/wizard/directives/wizard-directive';
 import wizardFactory from './components/wizard/factories/wizard-factory';
 import wizardButton from './components/wizard/directives/buttons-directive';
+import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
+import CreateACampaignController from './app/1-create-a-campaign/controllers/create-a-campaign.controller';
+import CreateACampaignDrawerController from './app/1-create-a-campaign/controllers/create-a-campaign.drawer.controller';
+import BuildAFormAndLandingController from './app/2-build-a-form-and-landing-page/controllers/build-a-form-and-landing-page.controller';
+import BuildAFormAndLandingDrawerController from './app/2-build-a-form-and-landing-page/controllers/build-a-form-and-landing-page.drawer.controller';
+import FormBuilderController from './app/2-build-a-form-and-landing-page/controllers/form-builder.controller';
+import FormBuilderDrawerController from './app/2-build-a-form-and-landing-page/controllers/form-builder.drawer.controller';
+import FormCompletionActionsController from './app/2-build-a-form-and-landing-page/controllers/form-completion-actions.controller';
+import FormCompletionActionsDrawerController from './app/2-build-a-form-and-landing-page/controllers/form-completion-actions.drawer.controller';
+import LandingPageBuilderController from './app/2-build-a-form-and-landing-page/controllers/landing-page-builder.controller';
+import LandingPageBuilderDrawerController from './app/2-build-a-form-and-landing-page/controllers/landing-page-builder.drawer.controller';
+import ABTestingController from './app/3-build-an-email/controllers/a-b-testing.controller';
+import ABTestingDrawerController from './app/3-build-an-email/controllers/a-b-testing.drawer.controller';
+import BuildAnEmailController from './app/3-build-an-email/controllers/build-an-email.controller';
+import BuildAnEmailDrawerController from './app/3-build-an-email/controllers/build-an-email.drawer.controller';
+import EmailPreviewController from './app/3-build-an-email/controllers/email-preview.controller';
+import EmailPreviewDrawerController from './app/3-build-an-email/controllers/email-preview.drawer.controller';
+import SendEmailController from './app/3-build-an-email/controllers/send-email.controller';
+import SendEmailDrawerController from './app/3-build-an-email/controllers/send-email.drawer.controller';
+import ViewAProspectProfileController from './app/4-view-a-prospect-profile/controllers/view-a-prospect-profile.controller';
+import ViewAProspectProfileDrawerController from './app/4-view-a-prospect-profile/controllers/view-a-prospect-profile.drawer.controller';
+import EngagementStudioController from './app/5-engagement-studio/controllers/engagement-studio.controller';
+import EngagementStudioDrawerController from './app/5-engagement-studio/controllers/engagement-studio.drawer.controller';
+import EngagementStudioReportController from './app/5-engagement-studio/controllers/engagement-studio-report.controller';
+import EngagementStudioReportDrawerController from './app/5-engagement-studio/controllers/engagement-studio-report.drawer.controller';
+import EngagementStudioRuleController from './app/5-engagement-studio/controllers/engagement-studio-rule.controller';
+import EngagementStudioRuleDrawerController from './app/5-engagement-studio/controllers/engagement-studio-rule.drawer.controller';
+import EngagementStudioTestController from './app/5-engagement-studio/controllers/engagement-studio-test.controller';
+import EngagementStudioTestDrawerController from './app/5-engagement-studio/controllers/engagement-studio-test.drawer.controller';
+import EngagementStudioTriggerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.controller';
+import EngagementStudioTriggerDrawerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.drawer.controller';
+import SetUpALeadNurturingCampaignController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.controller';
+import SetUpALeadNurturingCampaignDrawerController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.drawer.controller';
 
 import 'font-awesome-sass-loader';
 import './app/vendor.scss';
@@ -102,5 +135,38 @@ angular
   .factory('wizardFactory', wizardFactory)
   .controller('TopNavbarController', TopNavbarController)
   .controller('drawerPanelController', drawerPanelController)
+  .controller('IntroDrawerController', IntroDrawerController)
+  .controller('CreateACampaignController', CreateACampaignController)
+  .controller('CreateACampaignDrawerController', CreateACampaignDrawerController)
+  .controller('BuildAFormAndLandingController', BuildAFormAndLandingController)
+  .controller('BuildAFormAndLandingDrawerController', BuildAFormAndLandingDrawerController)
+  .controller('FormBuilderController', FormBuilderController)
+  .controller('FormBuilderDrawerController', FormBuilderDrawerController)
+  .controller('FormCompletionActionsController', FormCompletionActionsController)
+  .controller('FormCompletionActionsDrawerController', FormCompletionActionsDrawerController)
+  .controller('LandingPageBuilderController', LandingPageBuilderController)
+  .controller('LandingPageBuilderDrawerController', LandingPageBuilderDrawerController)
+  .controller('ABTestingController', ABTestingController)
+  .controller('ABTestingDrawerController', ABTestingDrawerController)
+  .controller('BuildAnEmailController', BuildAnEmailController)
+  .controller('BuildAnEmailDrawerController', BuildAnEmailDrawerController)
+  .controller('EmailPreviewController', EmailPreviewController)
+  .controller('EmailPreviewDrawerController', EmailPreviewDrawerController)
+  .controller('SendEmailController', SendEmailController)
+  .controller('SendEmailDrawerController', SendEmailDrawerController)
+  .controller('ViewAProspectProfileController', ViewAProspectProfileController)
+  .controller('ViewAProspectProfileDrawerController', ViewAProspectProfileDrawerController)
+  .controller('EngagementStudioController', EngagementStudioController)
+  .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
+  .controller('EngagementStudioReportController', EngagementStudioReportController)
+  .controller('EngagementStudioReportDrawerController', EngagementStudioReportDrawerController)
+  .controller('EngagementStudioRuleController', EngagementStudioRuleController)
+  .controller('EngagementStudioRuleDrawerController', EngagementStudioRuleDrawerController)
+  .controller('EngagementStudioTestController', EngagementStudioTestController)
+  .controller('EngagementStudioTestDrawerController', EngagementStudioTestDrawerController)
+  .controller('EngagementStudioTriggerController', EngagementStudioTriggerController)
+  .controller('EngagementStudioTriggerDrawerController', EngagementStudioTriggerDrawerController)
+  .controller('SetUpALeadNurturingCampaignController', SetUpALeadNurturingCampaignController)
+  .controller('SetUpALeadNurturingCampaignDrawerController', SetUpALeadNurturingCampaignDrawerController)
   .service('Hotspots', Hotspots)
   .run(run);

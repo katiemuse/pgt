@@ -1,53 +1,42 @@
 'use strict';
-/**
- * @ngdoc function
- * @name pardotInteractiveGuidedTour.controller:EngagementStudioReportDrawerCtrl
- * @description
- * # EngagementStudioReportDrawerCtrl
- * Controller of the pardotInteractiveGuidedTour
- */
-angular.module('pardotInteractiveGuidedTour')
-  .controller('EngagementStudioReportDrawerCtrl', function ($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
 
-    TopNavbar.InfoActive = true;
-    Drawer.openToIntro();
+export default function EngagementStudioReportDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+  TopNavbar.InfoActive = true;
+  Drawer.openToIntro();
 
-    $scope.beginStory = function(){
-      Drawer.close();
-      WizardHandler.wizard("monitor").next();
-      TopNavbar.InfoActive = false;
+  $scope.beginStory = function () {
+    Drawer.close();
+    WizardHandler.wizard('monitor').next();
+    TopNavbar.InfoActive = false;
 
-      Steps.clear();
-      Steps.pop({
-        number: 'one',
-        title: "At a glance, understand the health of your campaign and see where you might need to adjust your tactics. Ready to dive deeper? Click the email icon."
-      });
+    Steps.clear();
+    Steps.pop({
+      number: 'one',
+      title: 'At a glance, understand the health of your campaign and see where you might need to adjust your tactics. Ready to dive deeper? Click the email icon.'
+    });
 
-      Steps.pop({
-        number: 'two',
-        title: 'Key data like open rates and clickthroughs are available right on the canvas. Now hover over the email preview icon.'
-      });
+    Steps.pop({
+      number: 'two',
+      title: 'Key data like open rates and clickthroughs are available right on the canvas. Now hover over the email preview icon.'
+    });
 
-      Steps.pop({
-        number: 'three',
-        title: "When you are ready to continue, press done."
-      });
+    Steps.pop({
+      number: 'three',
+      title: 'When you are ready to continue, press done.'
+    });
 
-      Hotspots.clear();
+    Hotspots.clear();
 
-      Hotspots.pop({
-        number:1,
-        position: {
-          left: '303px',
-          top: '148px'
-        }
-      });
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '303px',
+        top: '148px'
+      }
+    });
 
-      $timeout(function(){
-        Steps.activate('one');
-      }, 100);
-      
-
-    };
-
-  });
+    $timeout(() => {
+      Steps.activate('one');
+    }, 100);
+  };
+}
