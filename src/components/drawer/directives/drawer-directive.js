@@ -2,11 +2,13 @@
 
 import angular from 'angular';
 import '../styles/_drawer.scss';
+import $ from 'jquery';
 
 export default function drawer($window, $rootScope, drawerRegisterEvents, $timeout, Hotspots, $document) {
   const isInit = false;
 
-  let bgEl, drawerEl;
+  let bgEl;
+  let drawerEl;
   const bodyEl = angular.element($document.body);
   const DRAWER_MODE = {
     INTRO: 0,
@@ -97,7 +99,9 @@ export default function drawer($window, $rootScope, drawerRegisterEvents, $timeo
           scope.drawer.mode = 'did-you-know';
           openDrawer(DRAWER_MODE.DID_YOU_KNOW);
           $timeout(() => {
+            /* eslint-disable */
             $('.frame', drawerEl).sly('reload');
+            /* eslint-enable */
           }, 0);
         });
       }
@@ -117,7 +121,9 @@ export default function drawer($window, $rootScope, drawerRegisterEvents, $timeo
           scope.drawer.currentHotspot = hotspot;
           openDrawer(DRAWER_MODE.HOTSPOTS);
           $timeout(() => {
+            /* eslint-disable */
             $('.frame', drawerEl).sly('reload');
+            /* eslint-enable */
           }, 0);
         });
       }

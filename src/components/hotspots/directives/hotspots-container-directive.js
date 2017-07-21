@@ -1,6 +1,7 @@
 'use strict';
 
 import angular from 'angular';
+import * as _ from 'lodash';
 import '../styles/_hotspots.scss';
 
 export default function hotspotsContainer($parse, $rootScope, $interval, $sce, Hotspots, TopNavbar) {
@@ -51,7 +52,7 @@ export default function hotspotsContainer($parse, $rootScope, $interval, $sce, H
     },
     controller($scope, $element, $attrs, $rootScope, Drawer, TopNavbar) {
       const x = $rootScope.$on('$stateChangeSuccess',
-        (event, toState, toParams, fromState, fromParams) => {
+        () => {
           Hotspots.clear();
           $scope.hotspots = Hotspots.hotspots;
         }

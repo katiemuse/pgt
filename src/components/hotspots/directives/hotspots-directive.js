@@ -1,6 +1,5 @@
 'use strict';
 
-import angular from 'angular';
 import '../styles/_hotspots.scss';
 
 export default function hotspotsContainer() {

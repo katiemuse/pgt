@@ -6,8 +6,8 @@ export default function draggable() {
     link(element) {
       element.draggable({
         revert: true,
-        start(event, ui) {},
-        stop(event, ui) {}
+        start() {},
+        stop() {}
       });
     }
   };

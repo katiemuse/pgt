@@ -1,6 +1,7 @@
 'use strict';
 
 import * as _ from 'lodash';
+import angular from 'angular';
 
 export default function wizard() {
   return {
@@ -110,13 +111,13 @@ export default function wizard() {
             thisStep = 0;
           }
           // $log.log('steps[thisStep] Data: ', $scope.steps[thisStep].canexit);
-          if (typeof ($scope.steps[thisStep].canexit) === 'undefined' || $scope.steps[thisStep].canexit($scope.context) === true) {
+          if (angular.isUndefined($scope.steps[thisStep].canexit) || $scope.steps[thisStep].canexit($scope.context) === true) {
             exitallowed = true;
           }
           if ($scope.getStepNumber(step) < $scope.currentStepNumber()) {
             exitallowed = true;
           }
-          if (exitallowed && step.canenter === undefined || exitallowed && step.canenter($scope.context) === true) {
+          if ((exitallowed && angular.isUndefined(step.canenter)) || (exitallowed && step.canenter($scope.context) === true)) {
             enterallowed = true;
           }
 

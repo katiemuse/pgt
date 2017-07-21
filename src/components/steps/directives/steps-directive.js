@@ -42,10 +42,12 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
         scope.deregStepActivated = null;
       });
 
-      scope.configureTimer = function configureTimer(step) {
-        const timeout = typeof (step.timeout) === 'number' ? step.timeout : mergedConfig['time-out'];
+      scope.configureTimer = function (step) {
+        const timeout = angular.isNumber(step.timeout) === 'number' ? step.timeout : mergedConfig['time-out'];
         if (timeout > 0) {
+          /* eslint-disable */
           setTimeout(step, timeout);
+          /* eslint-enable */
         }
       };
 
@@ -61,18 +63,24 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
         // Set the step.bodyOutputType to the default if it isn't set
         step.bodyOutputType = step.bodyOutputType || mergedConfig['body-output-type'];
         switch (step.bodyOutputType) {
-          case 'trustedHtml':
+          case 'trustedHtml': {
             step.html = $sce.trustAsHtml(step.body);
             break;
-          case 'template':
+          }
+          case 'template': {
             step.bodyTemplate = step.body || mergedConfig['body-template'];
             break;
-          case 'templateWithData':
+          }
+          case 'templateWithData': {
             const fcGet = $parse(step.body || mergedConfig['body-template']);
             const templateWithData = fcGet(scope);
             step.bodyTemplate = templateWithData.template;
             step.data = templateWithData.data;
             break;
+          }
+          default: {
+            break;
+          }
         }
 
         scope.configureTimer(step);
@@ -128,7 +136,7 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
     },
     controller($scope) {
       const x = $rootScope.$on('$stateChangeSuccess',
-        (event, toState, toParams, fromState, fromParams) => {
+        (event, toState) => {
           $scope.stateClass = toState.name;
         }
       );

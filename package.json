@@ -11,6 +11,8 @@
     "bootstrap-sass": "^3.3.7",
     "bourbon": "^4.3.4",
     "font-awesome-sass-loader": "^2.0.1",
+    "jquery": "^3.2.1",
+    "sly": "0.0.1",
     "textangular": "^1.5.16"
   },
   "devDependencies": {

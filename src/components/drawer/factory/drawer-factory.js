@@ -1,46 +1,38 @@
 'use strict';
-/**
- * @ngdoc factory
- * @name pardotInteractiveGuidedTour.drawer
- * @description
- * # drawer
- * Factory in the pardotInteractiveGuidedTour.
- */
-angular.module('pardotInteractiveGuidedTour')
-  .factory('drawerRegisterEvents', function() {
 
-  var drawerFactory = {
+export default function drawerRegisterEvents() {
+  const drawerFactory = {
     _DrawerOpenedToDidYouKnowEvent: false,
     _DrawerOpenedToIntroEvent: false,
     _DrawerOpenedToHotspotEvent: false,
     _DrawerClosedEvent: false,
 
-    registerDrawerOpenedToDidYouKnowEvent: function(){
+    registerDrawerOpenedToDidYouKnowEvent() {
       this._DrawerOpenedToDidYouKnowEvent = true;
     },
-    registerDrawerOpenedToIntroEvent: function(){
+    registerDrawerOpenedToIntroEvent() {
       this._DrawerOpenedToIntroEvent = true;
     },
-    registerDrawerOpenedToHotspotEvent: function(){
+    registerDrawerOpenedToHotspotEvent() {
       this._DrawerOpenedToHotspotEvent = true;
     },
-    registerDrawerClosedEvent: function(){
+    registerDrawerClosedEvent() {
       this._DrawerClosedEvent = true;
     },
 
-    isRegisteredDrawerOpenedToDidYouKnowEvent: function(){
+    isRegisteredDrawerOpenedToDidYouKnowEvent() {
       return this._DrawerOpenedToDidYouKnowEvent;
     },
-    isRegisteredDrawerOpenedToIntroEvent: function(){
+    isRegisteredDrawerOpenedToIntroEvent() {
       return this._DrawerOpenedToIntroEvent;
     },
-    isRegisterDrawerOpenedToHotspotEvent: function(){
+    isRegisterDrawerOpenedToHotspotEvent() {
       return this._DrawerOpenedToHotspotEvent;
     },
-    isRegisterDrawerClosedEvent: function(){
+    isRegisterDrawerClosedEvent() {
       return this._DrawerClosedEvent;
     }
-  }
+  };
   return {
     registerDrawerOpenedToDidYouKnowEvent: drawerFactory.registerDrawerOpenedToDidYouKnowEvent,
     registerDrawerOpenedToIntroEvent: drawerFactory.registerDrawerOpenedToIntroEvent,
@@ -50,5 +42,5 @@ angular.module('pardotInteractiveGuidedTour')
     isRegisteredDrawerOpenedToIntroEvent: drawerFactory.isRegisteredDrawerOpenedToIntroEvent,
     isRegisterDrawerOpenedToHotspotEvent: drawerFactory.isRegisterDrawerOpenedToHotspotEvent,
     isRegisterDrawerClosedEvent: drawerFactory.isRegisterDrawerClosedEvent
-  }
-});
+  };
+}

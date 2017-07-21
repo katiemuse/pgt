@@ -1,6 +1,7 @@
 'use strict';
 
 import * as _ from 'lodash';
+import angular from 'angular';
 
 export class DrawerPanelController {
   constructor($scope, Hotspots, TopNavbar) {
@@ -8,8 +9,8 @@ export class DrawerPanelController {
     this.Hotspots = Hotspots;
     this.TopNavbar = TopNavbar;
 
-    const ctrl = this,
-      tabs = ctrl.tabs = this.$scope.tabs = [];
+    const ctrl = this;
+    const tabs = ctrl.tabs = this.$scope.tabs = [];
 
     this.$scope.previousActive = false;
     this.$scope.nextActive = false;
@@ -49,7 +50,7 @@ export class DrawerPanelController {
       selectedTab.onSelect();
     };
 
-    ctrl.addTab = function addTab(tab) {
+    ctrl.addTab = function (tab) {
       tabs.push(tab);
       // we can't run the select function on the first tab
       // since that would select it twice
@@ -70,7 +71,7 @@ export class DrawerPanelController {
       }
     };
 
-    ctrl.removeTab = function removeTab(tab) {
+    ctrl.removeTab = function (tab) {
       const index = tabs.indexOf(tab);
       // Select a new tab if the tab to be removed is selected and not destroyed
       if (tab.active && tabs.length > 1 && !destroyed) {
@@ -120,7 +121,7 @@ export class DrawerPanelController {
 
     this.$scope.Previous = function ($event) {
       const selectedTab = _.find(tabs, tab => {
-        return tab.active == true;
+        return tab.active === true;
       });
 
       const selectedTabIndex = _.indexOf(tabs, selectedTab);

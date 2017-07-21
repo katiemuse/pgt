@@ -7,9 +7,6 @@ export default function liCenter() {
     restrict: 'ECA',
     transclude: true,
     template:
-      '<div class="center-container">\
-        <div class="centered" ng-transclude>\
-        </div>\
-      </div>'
+      '<div class="center-container"><div class="centered" ng-transclude></div></div>'
   };
 }
