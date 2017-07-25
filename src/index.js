@@ -1,5 +1,10 @@
 'use strict';
-
+require('jquery');
+import 'jquery-ui/ui/core';
+import 'jquery-ui/ui/widgets/selectable';
+import 'jquery-ui/ui/widgets/sortable';
+import 'jquery-ui/ui/widgets/draggable';
+import 'jquery-ui/ui/widgets/droppable';
 import angular from 'angular';
 import 'angular-animate';
 import 'angular-cookies';

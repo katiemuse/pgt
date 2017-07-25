@@ -3,6 +3,8 @@
 import * as _ from 'lodash';
 import angular from 'angular';
 
+import '../styles/_wizard.scss';
+
 export default function wizard() {
   return {
     restrict: 'EA',

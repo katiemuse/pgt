@@ -9,7 +9,7 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
     restrict: 'EA',
     scope: true, // creates an internal scope for this directive
     templateUrl: 'components/steps/partials/steps.html',
-    link(scope, attrs) {
+    link(scope, elm, attrs) {
       let id = 0;
 
       const mergedConfig = angular.extend({}, stepsConfig, scope.$eval(attrs.stepsOptions));

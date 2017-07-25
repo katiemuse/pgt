@@ -10,7 +10,7 @@ export default function hotspot() {
     transclude: true,
 
     scope: true, // creates an internal scope for this directive
-    link(attrs, hotspotsContainerCtrl) {
+    link(scope, elm, attrs, hotspotsContainerCtrl) {
       hotspotsContainerCtrl.addHotspot({
         number: attrs.number,
         position: {

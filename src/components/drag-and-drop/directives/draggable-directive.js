@@ -3,7 +3,7 @@
 export default function draggable() {
   return {
     restrict: 'A',
-    link(element) {
+    link(scope, element) {
       element.draggable({
         revert: true,
         start() {},
