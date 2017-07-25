@@ -144,7 +144,7 @@
 }
 
 
-@keyframes(beginButton) {
+@keyframes beginButton {
   0% {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg) scale3d(1, 1, 1);
     transition-timing-function: ease-in;
@@ -172,7 +172,7 @@
 }
 
 
-@keyframes(flapIn) {
+@keyframes flapIn {
   0% {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transition-timing-function: ease-in;
@@ -188,7 +188,7 @@
 
 
 
-@keyframes(flapDown) {
+@keyframes flapDown {
   0% {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transition-timing-function: ease-in;
@@ -260,7 +260,7 @@
   animation-fill-mode: forwards;
 }
 
-@keyframes(heartbeat) {
+@keyframes heartbeat {
   0%  { transform: scale(1);   }
   14% { transform: scale(1.1); }
   28% { transform: scale(1);   }
