@@ -1,29 +1,20 @@
 'use strict';
-/**
- * @ngdoc function
- * @name pardotInteractiveGuidedTour.controller:EmailClientReportDrawerCtrl
- * @description
- * # EmailClientReportDrawerCtrl
- * Controller of the pardotInteractiveGuidedTour
- */
-angular.module('pardotInteractiveGuidedTour')
-  .controller('EmailClientReportDrawerCtrl', function ($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout, $stateParams) {
 
-    Steps.clear();
-    Steps.pop({
-      number: 'one',
-      title: "View a breakdown of the email clients and devices used to open your emails. When you're done looking at the reports, click &ldquo;Done&rdquo;."
-    });
-
-    $timeout(function(){
-      document.getElementById("report-link").className += " active";
-      document.getElementById("interaction-link").className += " active";
-      document.getElementById("click-through-link").className += " active";
-      document.getElementById("done-button").className += " active";
-    },0);
-
-    $timeout(function(){
-      Steps.activate('one');
-    }, 1000);
-
+export default function EmailClientReportDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout, $document) {
+  Steps.clear();
+  Steps.pop({
+    number: 'one',
+    title: 'View a breakdown of the email clients and devices used to open your emails. When you\'re done looking at the reports, click &ldquo;Done&rdquo;.'
   });
+
+  $timeout(() => {
+    $document[0].getElementById('report-link').className += ' active';
+    $document[0].getElementById('interaction-link').className += ' active';
+    $document[0].getElementById('click-through-link').className += ' active';
+    $document[0].getElementById('done-button').className += ' active';
+  }, 0);
+
+  $timeout(() => {
+    Steps.activate('one');
+  }, 1000);
+}

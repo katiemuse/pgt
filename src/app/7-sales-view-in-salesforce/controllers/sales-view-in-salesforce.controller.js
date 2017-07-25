@@ -1,60 +1,53 @@
 'use strict';
-/**
- * @ngdoc function
- * @name pardotInteractiveGuidedTour.controller:salesViewInSalesforceCtrl
- * @description
- * # salesViewInSalesforceCtrl
- * Controller of the pardotInteractiveGuidedTour
- */
-angular.module('pardotInteractiveGuidedTour')
-  .controller('SalesViewInSalesforceCtrl', function ($scope, WizardHandler, Steps, Hotspots, $timeout, $state) {
 
-    $scope.view = {
-      selectedList: null,
-      showArrow: true
-    };
+export default function SalesViewInSalesforceController($scope, WizardHandler, Steps, Hotspots, $timeout, $state) {
+  $scope.view = {
+    selectedList: null,
+    showArrow: true
+  };
 
+  $scope.view.listOptions = [
+    {label: 'Active - 30 day nurture', value: 13}
+  ];
 
-    $scope.view.listOptions = [
-      { label: 'Active - 30 day nurture', value: 13 }
-    ];
+  $scope.ScrollDownToStep = function () {
+    switch (WizardHandler.wizard('monitor').currentStepNumber()) {
+      case 1: {
+        WizardHandler.wizard('monitor').next();
 
-    $scope.ScrollDownToStep = function(number){
-      switch(WizardHandler.wizard("monitor").currentStepNumber()){
-        case 1:
-          WizardHandler.wizard("monitor").next();
+        $timeout(() => {
+          Hotspots.pop({
+            number: 1,
+            position: {
+              left: '88px',
+              top: '9px'
+            }
+          });
 
-          $timeout(function() {
+          Hotspots.pop({
+            number: 2,
+            position: {
+              left: '159px',
+              top: '200px'
+            }
+          });
+        }, 1000);
+        break;
+      }
+      case 2: {
+        Hotspots.clear();
 
-            Hotspots.pop({
-              number: 1,
-              position: {
-                left: '88px',
-                top: '9px'
-              }
-            });
+        $scope.view.showArrow = false;
 
-            Hotspots.pop({
-              number: 2,
-              position: {
-                left: '159px',
-                top: '200px'
-              }
-            });
+        $timeout(() => {
+          $state.go('personalized-email');
+        }, 600);
 
-          }, 1000);
-          break;
-        case 2:
-          Hotspots.clear();
-
-          $scope.view.showArrow = false;
-
-          $timeout(function(){
-            $state.go("personalized-email");
-          }, 600);
-
-          break;
+        break;
+      }
+      default: {
+        break;
       }
     }
-
-  });
+  };
+}

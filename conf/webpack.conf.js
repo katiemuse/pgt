@@ -17,9 +17,9 @@ module.exports = {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
         loader: 'url-loader?limit=100000'
       },
-      { test: /\.png$/, loader: 'file-loader' },
-      { test: /\.gif$/, loader: 'file-loader' },
-      { test: /\.jpg/, loader: 'file-loader' },
+      {test: /\.png$/, loader: 'file-loader'},
+      {test: /\.gif$/, loader: 'file-loader'},
+      {test: /\.jpg/, loader: 'file-loader'},
       {
         test: /\.json$/,
         loaders: [
@@ -75,6 +75,13 @@ module.exports = {
         postcss: () => [autoprefixer]
       },
       debug: true
+    }),
+    new webpack.ProvidePlugin({
+      jQuery: 'jquery',
+      $: 'jquery',
+      jquery: 'jquery',
+      Tether: 'tether',
+      'window.Tether': 'tether'
     })
   ],
   devtool: 'source-map',

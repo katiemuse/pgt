@@ -2,6 +2,9 @@
 
 import angular from 'angular';
 import $ from 'jquery';
+import 'sly/dist/sly';
+
+import '../styles/_drawer-panel.scss';
 
 export default function drawerPanel(drawerPanelConfig) {
   return {
@@ -12,10 +15,10 @@ export default function drawerPanel(drawerPanelConfig) {
       type: '@',
       selected: '='
     },
-    controller: 'DrawerPanelCtrl',
+    controller: 'DrawerPanelController',
     templateUrl: 'components/drawer-panel/partials/drawer-panel.html',
     link(scope, element, attrs) {
-      const frame = angular.element(element);
+      const frame = $(element);
       const wrap = frame.parent();
 
       const defaultControls = {

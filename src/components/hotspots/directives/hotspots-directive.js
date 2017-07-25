@@ -2,7 +2,7 @@
 
 import '../styles/_hotspots.scss';
 
-export default function hotspotsContainer() {
+export default function hotspot() {
   return {
     replace: true,
     require: '^hotspots-container',

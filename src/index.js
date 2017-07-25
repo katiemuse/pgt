@@ -11,6 +11,7 @@ import 'angular-ui-sortable';
 import 'textangular';
 import 'textAngular/dist/textAngular-sanitize';
 import run from './index.run';
+import routerConfig from './index.config';
 import {Steps} from './components/steps/services/steps-service';
 import StepsConfig from './components/steps/constants/steps-constant';
 import {TopNavbar} from './components/top-navbar/factories/top-navbar-factory';
@@ -26,9 +27,10 @@ import center from './components/center/directives/center-directive';
 import contentEditable from './components/content-editable/directives/content-editable-directive';
 import draggable from './components/drag-and-drop/directives/draggable-directive';
 import droppable from './components/drag-and-drop/directives/droppable-directive';
+import drawerRegisterEvents from './components/drawer/factory/drawer-factory';
 import drawerDirective from './components/drawer/directives/drawer-directive';
 import {drawerPanelConfig} from './components/drawer-panel/constants/drawer-panel-constant';
-import {drawerPanelController} from './components/drawer-panel/controllers/drawer-panel-controller';
+import drawerPanelController from './components/drawer-panel/controllers/drawer-panel-controller';
 import drawerPanelContentTransclude from './components/drawer-panel/directives/drawer-panel-content-transclude-directive';
 import drawerPanelHeadingTransclude from './components/drawer-panel/directives/drawer-panel-heading-transclude-directive';
 import drawerPanelTab from './components/drawer-panel/directives/drawer-panel-tab-directive';
@@ -41,7 +43,7 @@ import stripTags from './components/stip-tags/filters/stip-tags-filter';
 import userProfile from './components/user-profile/factories/user-profile-factory';
 import wizardStep from './components/wizard/directives/step-directive';
 import wizardDirective from './components/wizard/directives/wizard-directive';
-import wizardFactory from './components/wizard/factories/wizard-factory';
+import WizardHandler from './components/wizard/factories/wizard-factory';
 import wizardButton from './components/wizard/directives/buttons-directive';
 import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
 import CreateACampaignController from './app/1-create-a-campaign/controllers/create-a-campaign.controller';
@@ -76,10 +78,34 @@ import EngagementStudioTriggerController from './app/5-engagement-studio/control
 import EngagementStudioTriggerDrawerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.drawer.controller';
 import SetUpALeadNurturingCampaignController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.controller';
 import SetUpALeadNurturingCampaignDrawerController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.drawer.controller';
+import AssignYourLeadsToSalesController from './app/6-assign-your-leads-to-sales/controllers/assign-your-leads-to-sales.controller';
+import AssignYourLeadsToSalesDrawerController from './app/6-assign-your-leads-to-sales/controllers/assign-your-leads-to-sales.drawer.controller';
+import CompleteActionController from './app/6-assign-your-leads-to-sales/controllers/complete-action.controller';
+import CompleteActionDrawerController from './app/6-assign-your-leads-to-sales/controllers/complete-action.drawer.controller';
+import PersonalizedEmailController from './app/7-sales-view-in-salesforce/controllers/personalized-email.controller';
+import PersonalizedEmailDrawerController from './app/7-sales-view-in-salesforce/controllers/personalized-email.drawer.controller';
+import SalesViewInSalesforceController from './app/7-sales-view-in-salesforce/controllers/sales-view-in-salesforce.controller';
+import SalesViewInSalesforceDrawerController from './app/7-sales-view-in-salesforce/controllers/sales-view-in-salesforce.drawer.controller';
+import EngageCampaignsController from './app/8-salesforce-engage/controllers/engage-campaigns.controller';
+import EngageCampaignsDrawerController from './app/8-salesforce-engage/controllers/engage-campaigns.drawer.controller';
+import MicroCampaignReportingController from './app/8-salesforce-engage/controllers/micro-campaign-reporting.controller';
+import MicroCampaignReportingDrawerController from './app/8-salesforce-engage/controllers/micro-campaign-reporting.drawer.controller';
+import SalesCloudEngageController from './app/8-salesforce-engage/controllers/sales-cloud-engage.controller';
+import SalesCloudEngageDrawerController from './app/8-salesforce-engage/controllers/sales-cloud-engage.drawer.controller';
+import SelectTemplateController from './app/8-salesforce-engage/controllers/select-template.controller';
+import SelectTemplateDrawerController from './app/8-salesforce-engage/controllers/select-template.drawer.controller';
+import AdvancedEmailReportDrawerController from './app/9-pardot-reporting/controllers/advanced-email-report.drawer.controller';
+import ClickThroughRateReportDrawerController from './app/9-pardot-reporting/controllers/click-through-rate-report.drawer.controller';
+import EmailClientReportDrawerController from './app/9-pardot-reporting/controllers/email-client-report.drawer.controller';
+import InteractionReportDrawerController from './app/9-pardot-reporting/controllers/interaction-report.drawer.controller';
+import PardotReportingController from './app/9-pardot-reporting/controllers/pardot-reporting.controller';
+import PardotReportingDrawerController from './app/9-pardot-reporting/controllers/pardot-reporting.drawer.controller';
+import ReportController from './app/9-pardot-reporting/controllers/report.controller';
 
 import 'font-awesome-sass-loader';
 import './app/vendor.scss';
 import './app/index.scss';
+import './app/app.scss';
 
 angular
   .module('pardotInteractiveGuidedTour', [
@@ -95,34 +121,25 @@ angular
   .constant('stepsConfig', StepsConfig)
   .constant('drawerPanelConfig', drawerPanelConfig)
   .filter('stripTags', stripTags)
-  .config(($stateProvider, $urlRouterProvider, $provide) => {
-    $provide.decorator('$uiViewScroll', ($delegate, $window) => {
-      return () => {
-        $window.scrollTo(0, 0);
-      };
-    });
-
-    $urlRouterProvider.otherwise('/');
-  })
   .directive('progressStateClass', progressStateClass)
   .directive('progressDisabledClass', progressDisabledClass)
   .directive('progressStateInvertedClass', progressStateInvertedClass)
   .directive('progressNavbar', progressNavbar)
-  .directive('autofocus', autofocus)
-  .directive('center', center)
-  .directive('contentEditable', contentEditable)
+  .directive('liAutoFocus', autofocus)
+  .directive('liCenter', center)
+  .directive('contenteditable', contentEditable)
   .directive('draggable', draggable)
   .directive('droppable', droppable)
-  .directive('drawerDirective', drawerDirective)
-  .directive('drawerPanelContentTransclude', drawerPanelContentTransclude)
-  .directive('drawerPanelHeadingTransclude', drawerPanelHeadingTransclude)
+  .directive('drawer', drawerDirective)
+  .directive('drawerPanelTabContentTransclude', drawerPanelContentTransclude)
+  .directive('drawerPanelTabHeadingTransclude', drawerPanelHeadingTransclude)
   .directive('drawerPanelTab', drawerPanelTab)
   .directive('drawerPanel', drawerPanel)
-  .directive('hotspotsDirective', hotspotsDirective)
   .directive('hotspotsContainer', hotspotsContainer)
-  .directive('stepsDirective', stepsDirective)
-  .directive('wizardStep', wizardStep)
-  .directive('wizardDirective', wizardDirective)
+  .directive('hotspot', hotspotsDirective)
+  .directive('stepsContainer', stepsDirective)
+  .directive('wzStep', wizardStep)
+  .directive('wizard', wizardDirective)
   .directive('wzNext', wizardButton('wzNext'))
   .directive('wzPrevious', wizardButton('wzPrevious'))
   .directive('wzFinish', wizardButton('wzFinish'))
@@ -130,11 +147,12 @@ angular
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
-  .factory('stepsFactory', stepsFactory)
-  .factory('userProfile', userProfile)
-  .factory('wizardFactory', wizardFactory)
+  .factory('stepsRegisterEvents', stepsFactory)
+  .factory('UserProfile', userProfile)
+  .factory('WizardHandler', WizardHandler)
+  .factory('drawerRegisterEvents', drawerRegisterEvents)
   .controller('TopNavbarController', TopNavbarController)
-  .controller('drawerPanelController', drawerPanelController)
+  .controller('DrawerPanelController', drawerPanelController)
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('CreateACampaignController', CreateACampaignController)
   .controller('CreateACampaignDrawerController', CreateACampaignDrawerController)
@@ -168,5 +186,67 @@ angular
   .controller('EngagementStudioTriggerDrawerController', EngagementStudioTriggerDrawerController)
   .controller('SetUpALeadNurturingCampaignController', SetUpALeadNurturingCampaignController)
   .controller('SetUpALeadNurturingCampaignDrawerController', SetUpALeadNurturingCampaignDrawerController)
+  .controller('AssignYourLeadsToSalesDrawerController', AssignYourLeadsToSalesDrawerController)
+  .controller('AssignYourLeadsToSalesController', AssignYourLeadsToSalesController)
+  .controller('CompleteActionController', CompleteActionController)
+  .controller('CompleteActionDrawerController', CompleteActionDrawerController)
+  .controller('PersonalizedEmailController', PersonalizedEmailController)
+  .controller('PersonalizedEmailDrawerController', PersonalizedEmailDrawerController)
+  .controller('SalesViewInSalesforceController', SalesViewInSalesforceController)
+  .controller('SalesViewInSalesforceDrawerController', SalesViewInSalesforceDrawerController)
+  .controller('EngageCampaignsController', EngageCampaignsController)
+  .controller('EngageCampaignsDrawerController', EngageCampaignsDrawerController)
+  .controller('MicroCampaignReportingController', MicroCampaignReportingController)
+  .controller('MicroCampaignReportingDrawerController', MicroCampaignReportingDrawerController)
+  .controller('SalesCloudEngageController', SalesCloudEngageController)
+  .controller('SalesCloudEngageDrawerController', SalesCloudEngageDrawerController)
+  .controller('SelectTemplateController', SelectTemplateController)
+  .controller('SelectTemplateDrawerController', SelectTemplateDrawerController)
+  .controller('AdvancedEmailReportDrawerController', AdvancedEmailReportDrawerController)
+  .controller('ClickThroughRateReportDrawerController', ClickThroughRateReportDrawerController)
+  .controller('EmailClientReportDrawerController', EmailClientReportDrawerController)
+  .controller('InteractionReportDrawerController', InteractionReportDrawerController)
+  .controller('PardotReportingController', PardotReportingController)
+  .controller('PardotReportingDrawerController', PardotReportingDrawerController)
+  .controller('ReportController', ReportController)
   .service('Hotspots', Hotspots)
+  // .config(($stateProvider, $urlRouterProvider, $provide) => {
+  //   $provide.decorator('$uiViewScroll', ($delegate, $window) => {
+  //     return () => {
+  //       $window.scrollTo(0, 0);
+  //     };
+  //   });
+  //
+  //   $stateProvider
+  //     .state('intro', {
+  //       url: '/',
+  //       views: {
+  //         monitor: {
+  //           templateUrl: 'app/0-intro/partials/intro.html'
+  //         },
+  //         drawer: {
+  //           controller: 'IntroDrawerController',
+  //           template: '<h1></h1>'
+  //         },
+  //         mobile: {
+  //           templateUrl: 'app/1-create-a-campaign/partials/create-a-campaign.mobile.html'
+  //         },
+  //         intro: {
+  //           templateUrl: 'app/0-intro/partials/intro.mobile.html'
+  //         },
+  //         'getting-started': {
+  //           templateUrl: 'app/0-intro/partials/getting-started.html'
+  //         }
+  //       },
+  //       onEnter(TopNavbar) {
+  //         TopNavbar.DidYouKnowCount = 0;
+  //         TopNavbar.DidYouKnowEnabled = false;
+  //         TopNavbar.HotspotsCount = 0;
+  //         TopNavbar.HotspotsEnabled = false;
+  //       }
+  //     });
+  //
+  //   $urlRouterProvider.otherwise('/');
+  // })
+  .config(routerConfig)
   .run(run);

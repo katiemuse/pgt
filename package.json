@@ -12,7 +12,7 @@
     "bourbon": "^4.3.4",
     "font-awesome-sass-loader": "^2.0.1",
     "jquery": "^3.2.1",
-    "sly": "0.0.1",
+    "sly": "github:darsain/sly",
     "textangular": "^1.5.16"
   },
   "devDependencies": {
