@@ -1,5 +1,5 @@
 'use strict';
-
+/* eslint-disable */
 import angular from 'angular';
 
 export default function drawerPanelTabContentTransclude() {
@@ -11,6 +11,7 @@ export default function drawerPanelTabContentTransclude() {
 
       // Now our tab is ready to be transcluded: both the tab heading area
       // and the tab content area are loaded.  Transclude 'em both.
+
       tab.$transcludeFn(tab.$parent, contents => {
         angular.forEach(contents, node => {
           if (isTabHeading(node)) {
@@ -32,3 +33,4 @@ export default function drawerPanelTabContentTransclude() {
     );
   }
 }
+/* eslint-enable */

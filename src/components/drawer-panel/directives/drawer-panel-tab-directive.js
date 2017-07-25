@@ -18,7 +18,7 @@ export default function drawerPanelTab($parse) {
     controller() {
       // Empty controller so other directives can require being 'under' a tab
     },
-    compile(transclude) {
+    compile(elm, attrs, transclude) {
       return function (scope, elm, attrs, drawerPanelCtrl) {
         scope.$watch('active', active => {
           if (active) {

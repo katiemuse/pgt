@@ -16,7 +16,7 @@ export default function wzStep() {
     templateUrl(attributes) {
       return attributes.template || 'components/wizard/partials/step.html';
     },
-    link($scope, wizard) {
+    link($scope, $element, $attrs, wizard) {
       $scope.title = $scope.title || $scope.wzTitle;
       wizard.addStep($scope);
     }
