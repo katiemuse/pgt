@@ -1,11 +1,11 @@
 @import '../../base';
 
-@include keyframes (bounceReport) {
+@keyframes (bounceReport) {
   0% {
-    @include transform(translateY(0px));
+    transform: translateY(0px);
   }
   100% {
-    @include transform(translateY(-160px));
+    transform: translateY(-160px);
   }
 }
 
@@ -18,7 +18,7 @@
   }
 
   .step-0, .step-1 {
-    @include transform(translateY(0px));
+    transform: translateY(0px);
   }
 
   .step-0, .step-1 {

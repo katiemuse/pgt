@@ -18,7 +18,7 @@
     color: #626262;
     width: 610px;
     &:focus {
-      @include animation(borderActive 1.5s infinite);
+      animation: borderActive 1.5s infinite;
     }
   }
 
@@ -44,7 +44,7 @@
       left: 52px;
       top: 229px;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 
@@ -55,7 +55,7 @@
       left: 675px;
       top: 401px;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 
@@ -66,13 +66,13 @@
       left: 52px;
       top: 300px;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 
     #ok-btn {
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 

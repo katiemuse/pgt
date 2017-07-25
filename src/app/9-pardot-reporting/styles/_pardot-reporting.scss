@@ -56,7 +56,7 @@
       }
 
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
         opacity:0.75;
       }
 

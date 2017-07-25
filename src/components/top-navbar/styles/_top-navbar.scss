@@ -78,7 +78,7 @@ nav.top-navbar {
       line-height: 45px;
       display: inline-block;
       float: right;
-      @include transition(all 0.2s ease-in-out);
+      transition: all 0.2s ease-in-out;
     }
     &:hover, &:focus {
       @media(min-width: $screen-md-min) {

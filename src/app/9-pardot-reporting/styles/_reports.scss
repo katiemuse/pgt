@@ -14,7 +14,7 @@
     width: 77px;
     height: 37px;
     &.active {
-      @include animation(borderActive 1.5s infinite);
+      animation: borderActive 1.5s infinite;
     }
   }
 
@@ -25,7 +25,7 @@
     width: 198px;
     height: 37px;
     &.active {
-      @include animation(borderActive 1.5s infinite);
+      animation: borderActive 1.5s infinite;
     }
   }
 
@@ -36,7 +36,7 @@
     width: 97px;
     height: 37px;
     &.active {
-      @include animation(borderActive 1.5s infinite);
+      animation: borderActive 1.5s infinite;
     }
   }
 
@@ -47,7 +47,7 @@
     width: 108px;
     height: 37px;
     &.active {
-      @include animation(borderActive 1.5s infinite);
+      animation: borderActive 1.5s infinite;
     }
   }
 

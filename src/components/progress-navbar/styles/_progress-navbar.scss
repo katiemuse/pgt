@@ -60,7 +60,7 @@ $progress-top: 15px;
     clip: rect(0px, $progress-width, 1340px, 0px);
     width: $progress-width-inactive;
 
-    @include transition(all $progress-transition-time ease-in-out);
+    transition: all $progress-transition-time ease-in-out;
 
     li {
       margin-bottom: 15px;
@@ -187,7 +187,7 @@ $progress-top: 15px;
             padding-right: 15%;
             margin-top: 20px;
             margin-left: -50px;
-            @include transition(all 0.2s ease-in-out);
+            transition: all 0.2s ease-in-out;
             &:hover, &:focus {
               text-decoration: none;
               border: 2px solid transparent;

@@ -12,7 +12,7 @@
       left: 613px;
       top: 85px;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 

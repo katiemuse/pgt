@@ -4,7 +4,7 @@
 
   .down-arrow {
     &.fade-out {
-      @include transition(all 800ms);
+      transition: all 800ms;
       opacity:0;
     }
   }
@@ -13,7 +13,7 @@
   }
 
   .step-0, .step-1, .step-2 {
-    @include transform(translateY(-698px));
+    transform: translateY(-698px);
     background: url('../assets/images/stories/7-sales-view-in-salesforce/7-screen-sales-view-in-salesforce-full.png') center top no-repeat;
     height: 1231px !important;
 
@@ -39,7 +39,7 @@
   }
 
   .step-0, .step-1 {
-    @include transform(translateY(-520px));
+    transform: translateY(-520px);
   }
 
   .step-1 {
@@ -59,11 +59,11 @@
       &.current {
 
         .step-1 {
-          @include transform(translateY(0px));
-          @include transition-duration(500ms);
-          @include transition-timing-function(ease-in);
-          @include transition-delay(0s);
-          @include transform(translateY(-698px));
+          transform: translateY(0px);
+          transition-duration: 500ms;
+          transition-timing-function: ease-in;
+          transition-delay: 0s;
+          transform: translateY(-698px);
         }
       }
     }

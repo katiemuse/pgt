@@ -94,7 +94,7 @@ button, a {
   background-color: $color-marketing-cloud-orange-medium;
 
   color: $color-button-white;
-  @include transition(background .2s ease-in-out);
+  transition: background .2s ease-in-out;
   &:hover {
     background-color: darken($color-marketing-cloud-orange-medium, 5%);
     color: $color-button-white;

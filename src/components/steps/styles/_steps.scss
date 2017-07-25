@@ -106,7 +106,7 @@ button.step-close-button {
       opacity: 1;
       -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
       filter: alpha(opacity = 80);
-      @include transition(all 0.3s ease-in-out);
+      transition: all 0.3s ease-in-out;
     }
     :hover {
       cursor: default;
@@ -164,7 +164,7 @@ button.step-close-button {
       max-height:500px;
 
       .step-title, .step-message {
-        @include transition (all, 2.0s, ease-in-out);
+        transition: all, 2.0s, ease-in-out;
         opacity: 1;
       }
 
@@ -252,13 +252,13 @@ button.step-close-button {
 
 
 :not(.no-enter)#step-container > div.ng-enter {
-  @include transition(150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all);
+  transition: 150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
 }
 
 
 
 :not(.no-leave)#step-container > div.ng-leave {
-  @include transition(50ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all);
+  transition: 50ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
 }
 
 

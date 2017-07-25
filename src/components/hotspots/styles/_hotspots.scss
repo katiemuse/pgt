@@ -11,7 +11,7 @@ $hotspot-z-index: 1997;
     transition:none;
 
     &.ng-enter {
-      @include transition(opacity 1s linear);
+      transition: opacity 1s linear;
       opacity: 0;
     }
 

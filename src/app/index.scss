@@ -6,9 +6,9 @@
 @import 'sprites';
 
 * {
-  @include user-select(none);
+  user-select: none;
   input, .html-editor *, .headline-modal {
-    @include user-select(auto);
+    user-select: auto;
   }
 }
 
@@ -46,10 +46,14 @@ body {
 
 
   &.background {
-    @include background(url('../assets/images/backgrounds/monitor.jpg') top center repeat);
+    background-image: url('../assets/images/backgrounds/monitor.jpg');
+    background-position: top center;
+    background-repeat: repeat;
 
     @media screen and (min-width: $screen-1080p) {
-      @include background(url('../assets/images/backgrounds/monitor-big.jpg') center center repeat);
+      background-image: url('../assets/images/backgrounds/monitor-big.jpg');
+      background-position: center center;
+      background-repeat: repeat;
     }
   }
 

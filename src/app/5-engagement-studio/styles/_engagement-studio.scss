@@ -6,10 +6,10 @@
 
   #hotspots-container {
     .hotspot-1 {
-      @include animation-delay(1.5s);
+      animation-delay: 1.5s;
     }
     .hotspot-2 {
-      @include animation-delay(1.75s);
+      animation-delay: 1.75s;
     }
   }
 

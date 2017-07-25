@@ -12,7 +12,7 @@
       left: 95px;
       top: 114px;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 
@@ -45,10 +45,10 @@
       height:423px;
       width:994px;
 
-      @include transform(translateX(0px));
-      @include transition-duration(0.25s);
-      @include transition-timing-function(ease-in);
-      @include transition-delay(0.05s);
+      transform: translateX(0px);
+      transition-duration: 0.25s;
+      transition-timing-function: ease-in;
+      transition-delay: 0.05s;
 
       .html {
         position: absolute;
@@ -89,7 +89,7 @@
       }
 
       &.open {
-        @include transform(translateX(-200px));
+        transform: translateX(-200px);
       }
 
       .inner-drawer {
@@ -99,13 +99,12 @@
         height:421px;
         right:0;
         top:1px;
-        @include transform(translateX(379px));
-        //@include transform(translateX(0px));
-        @include transition-duration(0.25s);
-        @include transition-delay(0.5s);
+        transform: translateX(379px);
+        transition-duration: 0.25s;
+        transition-delay: 0.5s;
 
         &.open {
-          @include transform(translateX(0px));
+          transform: translateX(0px);
         }
 
       }
@@ -120,7 +119,7 @@
       top: 83px;
       border:none;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
 

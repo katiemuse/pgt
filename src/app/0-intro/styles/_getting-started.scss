@@ -144,7 +144,7 @@
 }
 
 
-@include keyframes(beginButton) {
+@keyframes(beginButton) {
   0% {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg) scale3d(1, 1, 1);
     transition-timing-function: ease-in;
@@ -172,7 +172,7 @@
 }
 
 
-@include keyframes(flapIn) {
+@keyframes(flapIn) {
   0% {
     transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
     transition-timing-function: ease-in;
@@ -188,7 +188,7 @@
 
 
 
-@include keyframes(flapDown) {
+@keyframes(flapDown) {
   0% {
     transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
     transition-timing-function: ease-in;
@@ -213,15 +213,15 @@
 }
 
 #dyk, #hs {
-  @include animation(flapDown 1s forwards);
+  animation: flapDown 1s forwards;
 }
 
 #dyk {
-  @include animation-delay(0.25s);
+  animation-delay: 0.25s;
 }
 
 #hs {
-  @include animation-delay(0.55s);
+  animation-delay: 0.55s;
 }
 
 #dyk, #hs {
@@ -237,33 +237,33 @@
 }
 
 #steps, #timeline {
-  @include animation(flapIn 1s);
-  @include animation-fill-mode(forwards);
+  animation: flapIn 1s;
+  animation-fill-mode: forwards;
 }
 
 #steps {
-  @include animation-delay(0.75s);
+  animation-delay: 0.75s;
 }
 
 #timeline {
-  @include animation-delay(0.95s);
+  animation-delay: 0.95s;
 }
 
 #begin-the-tour {
-  @include animation(beginButton 700ms 1s forwards, heartbeat 1300ms ease infinite normal);
-  @include transition(all 0.2s ease-in-out);
+  animation: beginButton 700ms 1s forwards, heartbeat 1300ms ease infinite normal;
+  transition: all 0.2s ease-in-out;
 }
 
 #sald {
-  @include animation(flapIn 1s);
-  @include animation-delay(5.25s);
-  @include animation-fill-mode(forwards);
+  animation: flapIn 1s;
+  animation-delay: 5.25s;
+  animation-fill-mode: forwards;
 }
 
-@include keyframes(heartbeat) {
-  0%  { @include transform(scale(1));   }
-  14% { @include transform(scale(1.1)); }
-  28% { @include transform(scale(1));   }
-  42% { @include transform(scale(1.1)); }
-  70% { @include transform(scale(1));   }
+@keyframes(heartbeat) {
+  0%  { transform: scale(1);   }
+  14% { transform: scale(1.1); }
+  28% { transform: scale(1);   }
+  42% { transform: scale(1.1); }
+  70% { transform: scale(1);   }
 }

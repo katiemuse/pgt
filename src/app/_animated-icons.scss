@@ -46,10 +46,10 @@ section.animated-standalone-section {
   position:relative;
 
   &.animated {
-    @include transition(all 800ms ease);
+    transition: all 800ms ease;
 
     > span {
-      @include transition(all 800ms ease);
+      transition: all 800ms ease;
     }
   }
 
@@ -64,8 +64,8 @@ section.animated-standalone-section {
     left: 0;
     width: 100px;
     height: 40px;
-    @include transform(translateY 0);
-    @include transition(all 800ms ease);
+    transform: translateY(0);
+    transition: all 800ms ease;
     z-index: 2;
     font-weight: bold;
     color: transparent;
@@ -73,7 +73,7 @@ section.animated-standalone-section {
 
   &:after {
     content: "";
-    @include transform(translateY 40px);
+    transform: translateY 40px;
     top: auto;
     bottom: -10px;
   }
@@ -87,18 +87,18 @@ section.animated-standalone-section {
     width:100%;
     z-index:1;
     height:2px;
-    @include transform(translateY(29px));
+    transform: translateY(29px);
   }
 
   &.x {
     span {
       &.first {
-        @include transform(rotate(-45deg) translateY(14px) translateX(-6px));
+        transform: rotate(-45deg) translateY(14px) translateX(-6px);
         width: 20px;
       }
 
       &.second {
-        @include transform(rotate(45deg) translateY(6px) translateX(14px));
+        transform: rotate(45deg) translateY(6px) translateX(14px);
         width: 20px;
       }
     }
@@ -107,12 +107,12 @@ section.animated-standalone-section {
   &.plus {
     span {
       &.first {
-        @include transform(rotate(0deg) translateY(15px) translateX(5px));
+        transform: rotate(0deg) translateY(15px) translateX(5px);
         width: 20px;
       }
 
       &.second {
-        @include transform(rotate(-90deg) translateY(5px) translateX(-15px));
+        transform: rotate(-90deg) translateY(5px) translateX(-15px);
         width: 20px;
       }
     }
@@ -123,10 +123,10 @@ section.animated-standalone-section {
 
     span {
       &.second {
-        @include transform(translateY(0));
+        transform: translateY(0);
       }
       &.third {
-        @include transform(translateY(60px));
+        transform: translateY(60px);
       }
     }
   }

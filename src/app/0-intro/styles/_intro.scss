@@ -140,13 +140,13 @@
       right: 0;
       bottom: 0;
       top: 390px;
-      @include transition(top 0.3s ease-in-out);
+      transition: top 0.3s ease-in-out;
       &.active {
         top: 0;
         .tray-btn {
-          @include transform(translateY(40px));
+          transform: translateY(40px);
           span {
-            @include transform(rotate(-270deg));
+            transform: rotate(-270deg);
           }
           p {
             margin-top: 30px;
@@ -165,7 +165,7 @@
         padding-top: 10px;
         cursor: pointer;
         @include border-top-radius(10px);
-        @include transition(transform 0.3s ease-in-out);
+        transition: transform 0.3s ease-in-out;
         span {
           display: block;
           color: $text-color-white;
@@ -173,8 +173,8 @@
           font-family: $proximanova;
           font-weight: bold;
           line-height: 1;
-          @include transform(rotate(-90deg));
-          @include transition(transform 0.3s ease-in-out);
+          transform: rotate(-90deg);
+          transition: transform 0.3s ease-in-out;
         }
         p {
           color: $text-color-white;
@@ -331,7 +331,7 @@
           @media(min-width: $screen-md-min) {
             position: absolute;
             top: 50%;
-            @include transform(translateY(-50%));
+            transform: translateY(-50%);
             padding: 0 60px;
           }
         }

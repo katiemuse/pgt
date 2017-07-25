@@ -14,7 +14,7 @@
       left: 40px;
       bottom: 3px;
       &.active {
-        @include animation(borderActive 1.5s infinite);
+        animation: borderActive 1.5s infinite;
       }
     }
   }
@@ -37,11 +37,11 @@
       &.current {
 
         .step-1 {
-          @include transform(translateY(0px));
-          @include transition-duration(0.75s);
-          @include transition-timing-function(ease-out);
-          @include transition-delay(0.5s);
-          @include transform(translateY(-382px));
+          transform: translateY(0px);
+          transition-duration: 0.75s;
+          transition-timing-function: ease-out;
+          transition-delay: 0.5s;
+          transform: translateY(-382px);
         }
 
       }

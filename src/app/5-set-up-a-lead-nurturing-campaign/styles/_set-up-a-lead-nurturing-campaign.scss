@@ -1,7 +1,7 @@
 @import '../../base';
 
 
-@include keyframes (dragStep1) {
+@keyframes (dragStep1) {
   0% {
     opacity:0.0;
   }
@@ -10,16 +10,16 @@
   }
   99% {
     opacitiy:0.0;
-    @include transform(translateX(285px) translateY(52px));
+    transform: translateX(285px) translateY(52px);
   }
   100% {
     opacitiy:1.0;
-    @include transform(translateX(0px) translateY(0px));
+    transform: translateX(0px) translateY(0px);
   }
 }
 
 
-@include keyframes (dragStep2) {
+@keyframes (dragStep2) {
   0% {
     opacity:0.0;
   }
@@ -28,12 +28,12 @@
   }
   100% {
     opacitiy:0.0;
-    @include transform(translateX(285px) translateY(12px));
+    transform: translateX(285px) translateY(12px);
   }
 }
 
 
-@include keyframes (dragStep3) {
+@keyframes (dragStep3) {
   0% {
     opacity:0.0;
   }
@@ -42,13 +42,13 @@
   }
   100% {
     opacitiy:0.0;
-    @include transform(translateX(285px) translateY(92px));
+    transform: translateX(285px) translateY(92px);
   }
 }
 
 
 
-@include keyframes (dragStep3_1) {
+@keyframes (dragStep3_1) {
   0% {
     opacity:0.0;
   }
@@ -57,13 +57,13 @@
   }
   100% {
     opacitiy:0.0;
-    @include transform(translateX(319px) translateY(77px));
+    transform: translateX(319px) translateY(77px);
   }
 }
 
 
 
-@include keyframes (dragStep4) {
+@keyframes (dragStep4) {
   0% {
     opacity:0.0;
   }
@@ -72,7 +72,7 @@
   }
   100% {
     opacitiy:0.0;
-    @include transform(translateX(285px) translateY(127px));
+    transform: translateX(285px) translateY(127px);
   }
 }
 
@@ -82,10 +82,10 @@
 
   #hotspots-container {
     .hotspot-1 {
-      @include animation-delay(1.5s);
+      animation-delay: 1.5s;
     }
     .hotspot-2 {
-      @include animation-delay(1.75s);
+      animation-delay: 1.75s;
     }
   }
 
@@ -97,7 +97,7 @@
     width: 121px;
     background: none;
     &.active {
-      @include animation(borderActive 1.5s infinite);
+      animation: borderActive 1.5s infinite;
     }
   }
 
@@ -142,7 +142,7 @@
         left: 166px;
         width: 160px;
         height: 160px;
-        @include transform(rotate(110deg));
+        transform: rotate(110deg);
       }
 
       &#send-email-arrow {
@@ -150,7 +150,7 @@
         left: 16px;
         width: 340px;
         height: 340px;
-        @include transform(rotate(162deg));
+        transform: rotate(162deg);
       }
     }
 
@@ -160,8 +160,8 @@
   .step-0, .step-1 {
 
     #step-3.drop-hover, #step-4.drop-hover{
-      @include transition-duration(0.5s);
-      @include transition-delay(0s);
+      transition-duration: 0.5s;
+      transition-delay: 0s;
 
       .drop-target {
         display:none;
@@ -178,7 +178,7 @@
 
 
     #step-1, #step-2, #step-3, #step-3-1, #step-3-2, #step-4, #step-4-end, #step-5, #step-6, #step-7, #step-7-1, #step-7-2, #end {
-      @include transform(scale(0.0));
+      transform: scale(0.0);
       opacity: 0.0;
     }
     
@@ -297,7 +297,7 @@
       .drop-target {
         border-top: 3px solid $color-salesforce-blue;
         width:90px;
-        @include transform(scale(0.0));
+        transform: scale(0.0);
         display:block;
       }
 
@@ -309,7 +309,7 @@
         overflow: hidden;
 
         #step-4-1-stop {
-          @include transform(scaleY(1.0));
+          transform: scaleY(1.0);
         }
 
         .no-branch {
@@ -356,7 +356,7 @@
         &.not-empty {
           .drop-target {
             display:none;
-            @include transition(none);
+            transition: none;
           }
         }
 
@@ -372,11 +372,11 @@
   }
 
   @mixin animation-step($animation, $delay) {
-    @include animation($animation 0.5s);
-    @include animation-iteration-count(1);
-    @include animation-fill-mode(forwards);
-    @include animation-delay($delay);
-    @include transition(all 0.5s cubic-bezier(.98,0,1,.28));
+    animation: $animation 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-delay: $delay;
+    transition: all 0.5s cubic-bezier(.98,0,1,.28);
   }
 
   #assign-modal {
@@ -402,7 +402,7 @@
         height: 24px;
         width: 158px;
         &.active {
-          @include animation(borderActive 1.5s infinite);
+          animation: borderActive 1.5s infinite;
         }
       }
     }
@@ -432,7 +432,7 @@
         height: 24px;
         width: 301px;
         &.active {
-          @include animation(borderActive 1.5s infinite);
+          animation: borderActive 1.5s infinite;
         }
       }
     }
@@ -447,17 +447,17 @@
         .step-1 {
 
           &.complete {
-            @include transform(translateY(-333px));
-            @include transition-duration(0.5s);
-            @include transition-delay(0.5s);
-            @include transition-timing-function(ease-in);
+            transform: translateY(-333px);
+            transition-duration: 0.5s;
+            transition-delay: 0.5s;
+            transition-timing-function: ease-in;
 
             #step-4-1-stop {
               height:0px;
-              @include transform(scaleY(0.0));
-              @include transition-duration(0.25s);
-              @include transition-delay(0.25s);
-              @include transition-timing-function(ease-out);
+              transform: scaleY(0.0);
+              transition-duration: 0.25s;
+              transition-delay: 0.25s;
+              transition-timing-function: ease-out;
             }
 
             div.drip-logic {
@@ -465,9 +465,9 @@
                 li {
                   @for $i from 6 through 12 {
                     &:nth-child(#{$i}) {
-                      @include transition-duration(0.5s);
-                      @include transition-delay(#{($i - 5) * 0.5}s);
-                      @include transition-timing-function(ease-in);
+                      transition-duration: 0.5s;
+                      transition-delay: #{($i - 5) * 0.5}s;
+                      transition-timing-function: ease-in;
                       transform: scale(1.0) !important;
                       opacity: 1.0 !important;
                     }
@@ -480,15 +480,15 @@
           div.drip-available-actions.drag-source {
             #send-email {
               //@include animation(scale 3.0s ease-in, slide 3.0s ease, opacity 1.0s ease);
-              @include animation-step(dragStep1, 1.0s);
+              animation-step: dragStep1, 1.0s;
             }
 
             #pause {
-              @include animation-step(dragStep2, 1.5s);
+              animation-step: dragStep2, 1.5s;
             }
 
             #prospect-opened {
-              @include animation-step(dragStep3, 2.0s);
+              animation-step: dragStep3, 2.0s;
             }
           }
 
@@ -497,9 +497,9 @@
               li {
                 @for $i from 1 through 5 {
                   &:nth-child(#{$i}) {
-                    @include transition-duration(0.5s);
-                    @include transition-delay(#{$i * 0.5}s);
-                    @include transition-timing-function(ease-in);
+                    transition-duration: 0.5s;
+                    transition-delay: #{$i * 0.5}s;
+                    transition-timing-function: ease-in;
                     transform: scale(1.0) !important;
                     opacity: 1.0 !important;
                   }
@@ -508,16 +508,16 @@
 
               #step-3-1-drop-target {
                 transform: scale(1.0) !important;
-                @include transition-duration(0.25s);
-                @include transition-delay(4.0s);
-                @include transition-timing-function(ease-in);
+                transition-duration: 0.25s;
+                transition-delay: 4.0s;
+                transition-timing-function: ease-in;
               }
 
              #step-4-1-drop-target {
                transform: scale(1.0) !important;
-               @include transition-duration(0.25s);
-               @include transition-delay(0.5s);
-               @include transition-timing-function(ease-in);
+               transition-duration: 0.25s;
+               transition-delay: 0.5s;
+               transition-timing-function: ease-in;
 
                .show-target {
                  display:block;
@@ -528,42 +528,42 @@
         }
 
         .step-2 {
-          @include transform(translateY(0px));
-          @include transition-duration(1.0s);
-          @include transition-timing-function(ease-in);
-          @include transition-delay(1.5s);
-          @include transform(translateY(-720px));
+          transform: translateY(0px);
+          transition-duration: 1.0s;
+          transition-timing-function: ease-in;
+          transition-delay: 1.5s;
+          transform: translateY(-720px);
         }
 
         div.highlights {
           pointer-events: none;
 
           #assign-box {
-            @include transition-duration(0.5s);
-            @include transition-delay(3s);
-            @include transition-timing-function(ease-in);
+            transition-duration: 0.5s;
+            transition-delay: 3s;
+            transition-timing-function: ease-in;
             opacity: 1.0 !important;
           }
 
           #assign-to-user-arrow {
-            @include transition-duration(0.5s);
-            @include transition-delay(3.5s);
-            @include transition-timing-function(ease-in);
+            transition-duration: 0.5s;
+            transition-delay: 3.5s;
+            transition-timing-function: ease-in;
             opacity: 1.0 !important;
           }
 
           &.show-highlights {
             #send-email-box {
-              @include transition-duration(0.5s);
-              @include transition-delay(1s);
-              @include transition-timing-function(ease-in);
+              transition-duration: 0.5s;
+              transition-delay: 1s;
+              transition-timing-function: ease-in;
               opacity: 1.0 !important;
             }
 
             #send-email-arrow {
-              @include transition-duration(0.5s);
-              @include transition-delay(1.5s);
-              @include transition-timing-function(ease-in);
+              transition-duration: 0.5s;
+              transition-delay: 1.5s;
+              transition-timing-function: ease-in;
               opacity: 1.0 !important;
             }
           }
