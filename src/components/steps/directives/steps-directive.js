@@ -43,7 +43,7 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
       });
 
       scope.configureTimer = function (step) {
-        const timeout = angular.isNumber(step.timeout) === 'number' ? step.timeout : mergedConfig['time-out'];
+        const timeout = angular.isNumber(step.timeout) ? step.timeout : mergedConfig['time-out'];
         if (timeout > 0) {
           /* eslint-disable */
           setTimeout(step, timeout);
@@ -134,12 +134,10 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
         });
       }
     },
-    controller($scope) {
-      const x = $rootScope.$on('$stateChangeSuccess',
-        (event, toState) => {
-          $scope.stateClass = toState.name;
-        }
-      );
+    controller($scope, $transitions) {
+      const x = $transitions.onSuccess({ }, trans => {
+        $scope.stateClass = trans.to().name;
+      });
 
       $rootScope.$on('$destroy', x);
 

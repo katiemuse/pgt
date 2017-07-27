@@ -80,7 +80,7 @@ export default function EngagementStudioRuleController($scope, Steps, Hotspots, 
     }
     if (WizardHandler.wizard('monitor').currentStepNumber() === 6) {
       $timeout(() => {
-        $document.getElementsByClassName('step-5')[0].className += ' active';
+        $document[0].getElementsByClassName('step-5')[0].className += ' active';
       }, 500);
 
       $timeout(() => {

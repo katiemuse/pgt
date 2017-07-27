@@ -1,63 +1,55 @@
 'use strict';
-/**
- * @ngdoc function
- * @name pardotInteractiveGuidedTour.controller:EngagementStudioTestFactory
- * @description
- * # EngagementStudioTestFactory
- * Factory of the pardotInteractiveGuidedTour
- */
-angular.module('pardotInteractiveGuidedTour')
-  .factory('steplog', function() {
-    var log = {
-      step1: null,
-      emailSent: false,
-      wasEmailOpened: false,
-      prospectDefaultFieldMatched: false,
-      assignedToUser: false,
-      engagementEnded: false
-    };
-    var logService = {};
 
-    logService.getEmailSent = function() {
-      return log.emailSent;
-    }
+export default function steplog() {
+  const log = {
+    step1: null,
+    emailSent: false,
+    wasEmailOpened: false,
+    prospectDefaultFieldMatched: false,
+    assignedToUser: false,
+    engagementEnded: false
+  };
+  const logService = {};
 
-    logService.setEmailSent = function(i) {
-      log.emailSent = i;
-    }
+  logService.getEmailSent = function () {
+    return log.emailSent;
+  };
 
-    logService.getWasEmailOpened = function() {
-      return log.wasEmailOpened;
-    }
+  logService.setEmailSent = function (i) {
+    log.emailSent = i;
+  };
 
-    logService.setWasEmailOpened = function(i) {
-      log.wasEmailOpened = i;
-    }
+  logService.getWasEmailOpened = function () {
+    return log.wasEmailOpened;
+  };
 
-    logService.getProspectDefaultFieldMatched = function() {
-      return log.prospectDefaultFieldMatched;
-    }
+  logService.setWasEmailOpened = function (i) {
+    log.wasEmailOpened = i;
+  };
 
-    logService.setProspectDefaultFieldMatched = function(i) {
-      log.prospectDefaultFieldMatched = i;
-    }
+  logService.getProspectDefaultFieldMatched = function () {
+    return log.prospectDefaultFieldMatched;
+  };
 
-    logService.getAssignedToUser = function() {
-      return log.assignedToUser;
-    }
+  logService.setProspectDefaultFieldMatched = function (i) {
+    log.prospectDefaultFieldMatched = i;
+  };
 
-    logService.setAssignedToUser = function(i) {
-      log.assignedToUser = i;
-    }
+  logService.getAssignedToUser = function () {
+    return log.assignedToUser;
+  };
 
-    logService.getEngagementEnded = function() {
-      return log.engagementEnded;
-    }
+  logService.setAssignedToUser = function (i) {
+    log.assignedToUser = i;
+  };
 
-    logService.setEngagementEnded = function(i) {
-      log.engagementEnded = i;
-    }
+  logService.getEngagementEnded = function () {
+    return log.engagementEnded;
+  };
 
-    return logService;
+  logService.setEngagementEnded = function (i) {
+    log.engagementEnded = i;
+  };
 
-  });
+  return logService;
+}

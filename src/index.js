@@ -49,7 +49,7 @@ import userProfile from './components/user-profile/factories/user-profile-factor
 import wizardStep from './components/wizard/directives/step-directive';
 import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
-import wizardButton from './components/wizard/directives/buttons-directive';
+import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
 import CreateACampaignController from './app/1-create-a-campaign/controllers/create-a-campaign.controller';
 import CreateACampaignDrawerController from './app/1-create-a-campaign/controllers/create-a-campaign.drawer.controller';
@@ -79,6 +79,7 @@ import EngagementStudioRuleController from './app/5-engagement-studio/controller
 import EngagementStudioRuleDrawerController from './app/5-engagement-studio/controllers/engagement-studio-rule.drawer.controller';
 import EngagementStudioTestController from './app/5-engagement-studio/controllers/engagement-studio-test.controller';
 import EngagementStudioTestDrawerController from './app/5-engagement-studio/controllers/engagement-studio-test.drawer.controller';
+import steplog from './app/5-engagement-studio/factory/engagement-studio-test.factory';
 import EngagementStudioTriggerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.controller';
 import EngagementStudioTriggerDrawerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.drawer.controller';
 import SetUpALeadNurturingCampaignController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.controller';
@@ -145,10 +146,10 @@ angular
   .directive('stepsContainer', stepsDirective)
   .directive('wizard', wizardDirective)
   .directive('wzStep', wizardStep)
-  .directive('wzNext', wizardButton('wzNext'))
-  .directive('wzPrevious', wizardButton('wzPrevious'))
-  .directive('wzFinish', wizardButton('wzFinish'))
-  .directive('wzCancel', wizardButton('wzCancel'))
+  .directive('wzNext', wzNext)
+  .directive('wzPrevious', wzPrevious)
+  .directive('wzFinish', wzFinish)
+  .directive('wzCancel', wzCancel)
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
@@ -156,6 +157,7 @@ angular
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
+  .factory('steplog', steplog)
   .controller('TopNavbarController', TopNavbarController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('IntroDrawerController', IntroDrawerController)
@@ -215,43 +217,5 @@ angular
   .controller('PardotReportingDrawerController', PardotReportingDrawerController)
   .controller('ReportController', ReportController)
   .service('Hotspots', Hotspots)
-  // .config(($stateProvider, $urlRouterProvider, $provide) => {
-  //   $provide.decorator('$uiViewScroll', ($delegate, $window) => {
-  //     return () => {
-  //       $window.scrollTo(0, 0);
-  //     };
-  //   });
-  //
-  //   $stateProvider
-  //     .state('intro', {
-  //       url: '/',
-  //       views: {
-  //         monitor: {
-  //           templateUrl: 'app/0-intro/partials/intro.html'
-  //         },
-  //         drawer: {
-  //           controller: 'IntroDrawerController',
-  //           template: '<h1></h1>'
-  //         },
-  //         mobile: {
-  //           templateUrl: 'app/1-create-a-campaign/partials/create-a-campaign.mobile.html'
-  //         },
-  //         intro: {
-  //           templateUrl: 'app/0-intro/partials/intro.mobile.html'
-  //         },
-  //         'getting-started': {
-  //           templateUrl: 'app/0-intro/partials/getting-started.html'
-  //         }
-  //       },
-  //       onEnter(TopNavbar) {
-  //         TopNavbar.DidYouKnowCount = 0;
-  //         TopNavbar.DidYouKnowEnabled = false;
-  //         TopNavbar.HotspotsCount = 0;
-  //         TopNavbar.HotspotsEnabled = false;
-  //       }
-  //     });
-  //
-  //   $urlRouterProvider.otherwise('/');
-  // })
   .config(routerConfig)
   .run(run);
