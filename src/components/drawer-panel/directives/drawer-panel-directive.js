@@ -18,7 +18,9 @@ export default function drawerPanel(drawerPanelConfig) {
     controller: 'DrawerPanelController',
     templateUrl: 'components/drawer-panel/partials/drawer-panel.html',
     link(scope, element, attrs) {
+      /* eslint-disable */
       const frame = $(element);
+      /* eslint-enable */
       const wrap = frame.parent();
 
       const defaultControls = {
