@@ -11,10 +11,8 @@ export default function progressStateClass($rootScope) {
 
       const setClass = index => {
         if (index > progressStateIndex) {
-          debugger;
           element.removeClass(iconClass).addClass(completeClass);
         } else {
-          debugger;
           element.removeClass(completeClass).addClass(iconClass);
         }
       };
