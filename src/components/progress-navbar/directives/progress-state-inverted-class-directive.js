@@ -5,7 +5,7 @@ export default function progressStateInvertedClass($rootScope) {
     restrict: 'A',
     scope: {},
     link: (scope, element, attrs) => {
-      const progressStateIndex = attrs.progressStateInvertedClass;
+      const progressStateIndex = Number(attrs.progressStateInvertedClass);
       const iconClass = 'icon-indicator-gray';
       const completeClass = 'icon-indicator-complete-inverse';
 

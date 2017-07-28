@@ -5,7 +5,7 @@ export default function progressStateClass($rootScope) {
     restrict: 'A',
     scope: {},
     link: (scope, element, attrs) => {
-      const progressStateIndex = attrs.progressStateClass;
+      const progressStateIndex = Number(attrs.progressStateClass);
       const iconClass = 'icon-indicator-white';
       const completeClass = 'icon-indicator-complete';
 
