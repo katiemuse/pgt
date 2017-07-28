@@ -1,7 +1,5 @@
 'use strict';
 
-import angular from 'angular';
-
 export default function progressStateClass($rootScope) {
   return {
     restrict: 'A',
@@ -13,17 +11,19 @@ export default function progressStateClass($rootScope) {
 
       const setClass = index => {
         if (index > progressStateIndex) {
-          angular.element(element).removeClass(iconClass).addClass(completeClass);
+          debugger;
+          element.removeClass(iconClass).addClass(completeClass);
         } else {
-          angular.element(element).removeClass(completeClass).addClass(iconClass);
+          debugger;
+          element.removeClass(completeClass).addClass(iconClass);
         }
       };
 
       const setActiveClass = index => {
         if (index === progressStateIndex) {
-          angular.element(element).addClass('active');
+          element.addClass('active');
         } else {
-          angular.element(element).removeClass('active');
+          element.removeClass('active');
         }
       };
 

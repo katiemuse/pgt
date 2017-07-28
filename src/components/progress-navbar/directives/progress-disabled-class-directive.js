@@ -1,7 +1,5 @@
 'use strict';
 
-import angular from 'angular';
-
 export default function progressDisabledClass($rootScope) {
   return {
     restrict: 'A',
@@ -10,10 +8,10 @@ export default function progressDisabledClass($rootScope) {
       const progressStateIndex = parseInt(attrs.progressDisabledClass, 10);
       const setDisabledClass = index => {
         if (progressStateIndex < index) {
-          angular.element(element).removeClass('disabled');
+          element.removeClass('disabled');
           // console.log('setDisabledClass', progressStateIndex,index, 'enabled');
         } else {
-          angular.element(element).addClass('disabled');
+          element.addClass('disabled');
           // console.log('setDisabledClass', progressStateIndex,index, 'disabled');
         }
       };

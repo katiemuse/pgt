@@ -6,7 +6,8 @@ export default function run(
   Steps,
   TopNavbar,
   $log,
-  Drawer
+  Drawer,
+  $transitions
 ) {
   $rootScope.$state = $state;
   $rootScope.allowJumpingStories = false;
@@ -43,10 +44,14 @@ export default function run(
       'engagement-studio-trigger',
       'engagement-studio-rule',
       'engagement-studio-test',
-      'engagement-studio-report'
+      'engagement-studio-report',
+      'set-up-a-lead-nurturing-campaign'
     ],
     6: ['assign-your-leads-to-sales', 'complete-action'],
-    7: ['sales-view-in-salesforce'],
+    7: [
+      'personalized-email',
+      'sales-view-in-salesforce'
+    ],
     8: [
       'salesforce-engage',
       'engage-campaigns',
@@ -77,11 +82,8 @@ export default function run(
     return -1;
   };
 
-  const z = $rootScope.$on('$stateChangeStart', (
-    event,
-    toState
-  ) => {
-    $rootScope.progressIndex = $rootScope.getProgressIndex(toState.name);
+  const z = $transitions.onSuccess({ }, trans => {
+    $rootScope.progressIndex = $rootScope.getProgressIndex(trans.to().name);
     $rootScope.canSkip =
       $rootScope.progressIndex + 1 < _.values($rootScope.progressStates).length;
   });
