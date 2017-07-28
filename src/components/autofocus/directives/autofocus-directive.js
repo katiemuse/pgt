@@ -10,7 +10,7 @@ export default function liAutoFocus($timeout) {
         if (angular.isDefined(val) && val) {
           $timeout(() => {
             element[0].focus();
-          });
+          }, 10);
         }
       }, true);
     }
