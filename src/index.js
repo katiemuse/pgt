@@ -131,7 +131,7 @@ angular
   .directive('progressStateInvertedClass', progressStateInvertedClass)
   .directive('progressDisabledClass', progressDisabledClass)
   .directive('progressNavbar', progressNavbar)
-  .directive('liAutoFocus', autofocus)
+  .directive('liAutofocus', autofocus)
   .directive('liCenter', center)
   .directive('contenteditable', contentEditable)
   .directive('draggable', draggable)
