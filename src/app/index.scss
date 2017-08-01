@@ -77,11 +77,8 @@ body {
       margin-top: -285px;
     }
 
-    @include border-top-radius(5px);
-    @include border-right-radius(5px);
-    @include border-bottom-radius(5px);
-    @include border-left-radius(5px);
-  }
+    border-radius: 5px;
+   }
 
   .monitor-height {
     height:$monitor-height;
@@ -98,7 +95,11 @@ body {
       .product-tour {
         padding-left: 10px;
         padding-right: 10px;
-        @include retina-image("../assets/images/backgrounds/product-tour-background", 375px 56px);
+        background-image: url(../assets/images/backgrounds/product-tour-background.png);
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+          background-image: url(../assets/images/backgrounds/product-tour-background_2x.png);
+          background-size: 375px 56px;
+        }
         h2 {
           font-family: $proximanova;
           font-size: 25px;

@@ -200,22 +200,8 @@ button.step-close-button {
 .step-one, .step-two, .step-three, .step-four, .step-five {
 
   &.active {
-  // No gradient, just white
-  @include linear-gradient($color-background-step-active 0px, transparent 300px);
-
-  // Gradient w/ transparency on right, white on left
-  @include linear-gradient(to left, transparent , $color-background-step-active);
+    background-image: linear-gradient(to right, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
   }
-
-  // No gradient, just white
-  @include linear-gradient($color-background-step 0px, transparent 100px);
-
-  // Gradient w/ transparency on right, white on left
-  @include linear-gradient(to left, transparent , $color-background-step);
-
-  background-image: -webkit-linear-gradient(left, #ffffff 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
-  background-image: -webkit-linear-gradient(left, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
-  background-image: linear-gradient(to right,white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
 }
 
 

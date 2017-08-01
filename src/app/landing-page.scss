@@ -102,8 +102,11 @@
     overflow: hidden;
     @media(max-width: $screen-xs-max) {
       padding: 10px 0 50px;
-      @include retina-image("//www2.pardot.com/l/1/2015-04-23/357m8w/1/172330/mobile_intro_hero.jpg", "jpg");
       background-size: cover;
+      background-image: url("//www2.pardot.com/l/1/2015-04-23/357m8w/1/172330/mobile_intro_hero.jpg");
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        background-image: url("//www2.pardot.com/l/1/2015-04-23/357m8w/1/172330/mobile_intro_hero_2x.jpg");
+      }
     }
     @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       padding: 20px 0 20px;
@@ -152,12 +155,16 @@
       }
     }
     .logo {
-      @include retina-image("//www2.pardot.com/l/1/2015-04-23/357m93/1/172334/logo_transparent.png", 143px 55px);
       width: 155px;
       height: 60px;
       display: block;
       margin: 0 auto;
       background-repeat: no-repeat;
+      background-image: url(//www2.pardot.com/l/1/2015-04-23/357m93/1/172334/logo_transparent.png);
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        background-image: url(//www2.pardot.com/l/1/2015-04-23/357m93/1/172334/logo_transparent_2x.png);
+        background-size: 143px 55px;
+      }
       @media(min-width: $screen-md-min) {
         margin: 20px 0;
       }
@@ -192,7 +199,8 @@
         margin: 0 auto;
         padding-top: 10px;
         cursor: pointer;
-        @include border-top-radius(10px);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
         transition: transform 0.3s ease-in-out;
         span {
           display: block;
@@ -222,7 +230,8 @@
         height: 400px;
         width: 800px;
         margin: 0 auto;
-        @include border-top-radius(10px);
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
       }
     }
   }
@@ -371,9 +380,13 @@
 	}  
 	  
     @media(max-width: $screen-xs-max) {
-      @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mb9/1/172346/mobile_blue_container_intro_page.jpg", 375px 848px, "jpg");
       background-size: cover;
       padding: 38px 11px;
+      background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb9/1/172346/mobile_blue_container_intro_page.jpg);
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+        background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb9/1/172346/mobile_blue_container_intro_page_2x.jpg);
+        background-size: 375px 848px;
+      }
     }
     @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       background-image: url(//www2.pardot.com/l/1/2015-04-23/357mb7/1/172344/mobile_blue_container_intro_page_2x.jpg);
@@ -519,7 +532,11 @@
       }
       &.imc {
         @media(max-width: $screen-xs-max) {
-          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mcc/1/172354/icon_intergrated_marketing_campaigns.png", 45px 45px);
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mcc/1/172354/icon_intergrated_marketing_campaigns.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+            background-image: url(//www2.pardot.com/l/1/2015-04-23/357mcc/1/172354/icon_intergrated_marketing_campaigns_2x.png);
+            background-size: 45px 45px;
+          }
         }
         @media(min-width: $screen-sm-min) {
           background-image: url(//www2.pardot.com/l/1/2015-04-23/357mc7/1/172350/icon_intergrated_marketing_campaigns_2x.png);
@@ -528,7 +545,11 @@
       }
       &.ln {
         @media(max-width: $screen-xs-max) {
-          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mch/1/172358/icon_lead_nurturing.png", 45px 45px);
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mch/1/172358/icon_lead_nurturing.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+            background-image: url(//www2.pardot.com/l/1/2015-04-23/357mch/1/172358/icon_lead_nurturing_2x.png);
+            background-size: 45px 45px;
+          }
         }
         @media(min-width: $screen-sm-min) {
           background-image: url(//www2.pardot.com/l/1/2015-04-23/357mcf/1/172356/icon_lead_nurturing_2x.png);
@@ -537,7 +558,11 @@
       }
       &.ssmr {
         @media(max-width: $screen-xs-max) {
-          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mcm/1/172362/icon_simplified_sales_marketing_relationship.png", 45px 45px);
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mcm/1/172362/icon_simplified_sales_marketing_relationship.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+            background-image: url(//www2.pardot.com/l/1/2015-04-23/357mcm/1/172362/icon_simplified_sales_marketing_relationship_2x.png);
+            background-size: 45px 45px;
+          }
         }
         @media(min-width: $screen-sm-min) {
           background-image: url(//www2.pardot.com/l/1/2015-04-23/357mck/1/172360/icon_simplified_sales_marketing_relationship_2x.png);
@@ -546,7 +571,11 @@
       }
       &.ctr {
         @media(max-width: $screen-xs-max) {
-          @include retina-image("//www2.pardot.com/l/1/2015-04-23/357mc5/1/172348/icon_campaign_tracking_and_reporting.png", 45px 45px);
+          background-image: url(//www2.pardot.com/l/1/2015-04-23/357mc5/1/172348/icon_campaign_tracking_and_reporting.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+            background-image: url(//www2.pardot.com/l/1/2015-04-23/357mc5/1/172348/icon_campaign_tracking_and_reporting_2x.png);
+            background-size: 45px 45px;
+          }
         }
         @media(min-width: $screen-sm-min) {
           background-image: url(//www2.pardot.com/l/1/2015-04-23/357mc9/1/172352/icon_campaign_tracking_and_reporting_2x.png);

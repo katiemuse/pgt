@@ -39,7 +39,6 @@ $drawer-width: 410px;
   overflow: auto;
   z-index: $z-index-drawer;
   width: $drawer-width;
-  /*@include long-text();*/
 
   &.drawer-left {
     left: 0;

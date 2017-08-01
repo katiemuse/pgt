@@ -101,10 +101,14 @@ $progress-top: 15px;
       }
 
       &.logo {
-        @include retina-image("../../../assets/images/logos/logo-transparent", 155px 60px);
         width: 155px;
         height: 60px;
         display: block;
+        background-image: url(../../../assets/images/logos/logo-transparent.png);
+        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+          background-image: url(../../../assets/images/logos/logo-transparent_2x.png);
+          background-size: 155px 60px;
+        }
       }
 
       &.title {
@@ -203,7 +207,11 @@ $progress-top: 15px;
         }
 
         &.logo {
-          @include retina-image("../../../assets/images/logos/logo-gray-transparent", 155px 60px);
+          background-image: url(../../../assets/images/logos/logo-gray-transparent.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
+            background-image: url(../../../assets/images/logos/logo-gray-transparent_2x.png);
+            background-size: 155px 60px;
+          }
         }
 
         &.title {
