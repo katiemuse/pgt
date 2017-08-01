@@ -78,11 +78,11 @@ button, a {
 
 .btn-continue {
   border-radius: $button-rounded-radius;
-  background-color: $color-marketing-cloud-orange-medium;
+  background-color: $color-green;
   color: $color-button-white;
   transition: background .2s ease-in-out;
   &:hover {
-    background-color: darken($color-marketing-cloud-orange-medium, 5%);
+    background-color: darken($color-green, 5%);
     color: $color-button-white;
   }
 
