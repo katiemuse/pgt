@@ -25,7 +25,7 @@ h2 {
 }
 
 p {
-  font-family: $proximanova;
+  font-family: $salesforcesans;
   font-size: 20px;
 }
 
@@ -34,6 +34,7 @@ html, body {
 }
 
 body {
+  -webkit-font-smoothing: antialiased;
   > iframe {
     height: 0;
   }
@@ -101,7 +102,7 @@ body {
           background-size: 375px 56px;
         }
         h2 {
-          font-family: $proximanova;
+          font-family: $salesforcesans;
           font-size: 25px;
           font-weight: bold;
           color: $text-color-white;
@@ -132,13 +133,13 @@ footer {
       float: left;
       color:$text-color-white;
       padding:15px 0;
-      font-family: $proximanova;
+      font-family: $salesforcesans;
       font-weight: bold;
       font-size: $footnotes-font-size;
       line-height: 1;
       @media(max-width: $screen-sm-max) {
         color: $color-text-header;
-        font-family: $proximanova;
+        font-family: $salesforcesans;
         font-size: 16px;
       }
       a {

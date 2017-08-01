@@ -16,7 +16,7 @@
     z-index: 100;
     h3 {
       color: $text-color-white;
-      font-family: $proximanova;
+      font-family: $salesforcesans;
       font-weight: bold;
       font-size: 14px;
       margin: 0;
@@ -24,7 +24,7 @@
     }
     p {
       color: $text-color-white;
-      font-family: $proximanova;
+      font-family: $salesforcesans;
       font-size: 14px;
       line-height: 1.2;
       margin: 0;
@@ -251,7 +251,25 @@
 
 #begin-the-tour {
   animation: beginButton 700ms 1s forwards, heartbeat 1300ms ease infinite normal;
-  transition: all 0.2s ease-in-out;
+  font-size: 38px;
+  font-weight: 700;
+  opacity: 1;
+  display: inline-block;
+  position: relative;
+  height: 70px;
+  line-height: 70px;
+  padding: 0 60px;
+  background: white;
+  color: #174181;
+  text-align: center;
+  text-decoration: none;
+  clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
+  transition: color .2s ease-in-out, background .2s ease-in-out;
+  backface-visibility: hidden;
+  &:hover {
+    color: white;
+    background-color: transparent;
+  }
 }
 
 #sald {

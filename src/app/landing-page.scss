@@ -40,7 +40,7 @@
   
   h1 {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-weight: bold;
     font-size: 25px;
     margin-top: 20px;
@@ -53,7 +53,7 @@
   }
   h2 {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-weight: bold;
     font-size: 21px;
     margin-top: 10px;
@@ -67,7 +67,7 @@
   }
   h3 {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-size: 19px;
     margin-top: 0;
     margin-bottom: 10px;
@@ -81,7 +81,7 @@
   }
   p {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-size: 19px;
     line-height: 24px;
     margin: 0;
@@ -206,7 +206,7 @@
           display: block;
           color: $text-color-white;
           font-size: 36px;
-          font-family: $proximanova;
+          font-family: $salesforcesans;
           font-weight: bold;
           line-height: 1;
           transform: rotate(-90deg);
@@ -215,7 +215,7 @@
         p {
           color: $text-color-white;
           font-size: 18px;
-          font-family: $proximanova;
+          font-family: $salesforcesans;
           font-weight: bold;
           line-height: 1;
           margin-top: 0;
@@ -254,7 +254,7 @@
 		    color: #fff;
         font-size: 29px;
         line-height: 150%;
-        font-family: $proximanova;
+        font-family: $salesforcesans;
         font-weight: 300;
 		}
 		
@@ -353,7 +353,7 @@
     }
     h2 {
       color: $color-salesforce-blue;
-      font-family: $proximanova;
+      font-family: $salesforcesans;
       @media(max-width: $screen-xs-max) {
         margin-top: 0;
       }
@@ -589,7 +589,7 @@
     border-radius: 25px;
     padding: 0 5%;
     color: white;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-size: 18px;
     line-height: 50px;
     display: inline-block;

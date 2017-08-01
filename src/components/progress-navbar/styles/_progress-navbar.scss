@@ -88,7 +88,7 @@ $progress-top: 15px;
 
           &.label {
             font-size: $text-link-font-size;
-            font-family: $proximanova;
+            font-family: $salesforcesans;
             font-weight: bold;
             display: none;
           }
@@ -111,7 +111,7 @@ $progress-top: 15px;
       &.title {
         height: 77px;
         h1 {
-          font-family: $proximanova;
+          font-family: $salesforcesans;
           font-weight: bold;
           font-size: 24px;
           line-height: 20px;
@@ -166,7 +166,7 @@ $progress-top: 15px;
           }
           width: 100%;
           &.skip-section {
-            font-family: $proximanova;
+            font-family: $salesforcesans;
             margin: 20px 0 0 -50px;
             height: auto;
             width: auto;

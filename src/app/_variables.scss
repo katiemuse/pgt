@@ -2,6 +2,7 @@
 /* Fonts */
 $proximanova: 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
 $salesforcesans:  SalesforceSans, 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
+$font-family-sans-serif: $salesforcesans;
 
 /* Screen Sizes */
 $screen-1080p: 1920px;
@@ -58,17 +59,17 @@ $error-red: #a21b0f;
 $header1-font-size: 48px;
 $header1-line-space: 52px;
 $header1-font-color: $color-text-black;
-$header1-font-family: $proximanova;
+$header1-font-family: $salesforcesans;
 $header1-font-weight: 100;
 
 $header2-font-size: 35px;
 $header2-line-space: 36px;
-$header2-font-family: $proximanova;
+$header2-font-family: $salesforcesans;
 $header2-font-weight: bold;
 
 $header3-font-size: 20px;
 $header3-line-space: 24px;
-$header3-font-family: $proximanova;
+$header3-font-family: $salesforcesans;
 $header3-font-weight: bold;
 
 /* Link Color */

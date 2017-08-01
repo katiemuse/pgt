@@ -12,7 +12,7 @@
 .mobile {
   h1 {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-weight: bold;
     font-size: 25px;
     margin-top: 20px;
@@ -28,7 +28,7 @@
   }
   h2 {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-weight: bold;
     font-size: 21px;
     margin-top: 10px;
@@ -42,7 +42,7 @@
   }
   h3 {
     color: $color-text-header;
-    font-family: $proximanova;
+    font-family: $salesforcesans;
     font-weight: bold;
     font-size: 19px;
     margin-top: 0;
@@ -155,7 +155,7 @@
     }
     h2 {
       color: $color-salesforce-blue;
-      font-family: $proximanova;
+      font-family: $salesforcesans;
       font-weight: normal;
       @media(min-width: $screen-sm-min) {
         font-size: 44px;
