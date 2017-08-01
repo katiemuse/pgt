@@ -29,6 +29,7 @@ $color-community-cloud-yellow-medium: #f4cd00;
 $color-community-cloud-yellow-light: #f7d93e;
 $color-button-white: #ffffff;
 $color-hotspot-panel-grey: #cccccc;
+$color-green: #8AAF2A;
 
 /* Background Colors */
 $color-salesforce-background-grey: #ebecec;
@@ -116,6 +117,15 @@ $drawer-padding-bottom: 80px;
 $drawer-padding-left: 46px;
 $drawer-padding-right: 46px;
 
+/* Icon Indicator */
+$icon-indicator-white: white;
+$icon-indicator-white-active: $color-green;
+$icon-indicator-gray: #999999;
+$icon-indicator-gray-active: $color-green;
+$icon-indicator-complete-border: white;
+$icon-indicator-complete-bkg: white;
+$icon-indicator-complete-inverse-border: $color-green;
+$icon-indicator-complete-inverse-bkg: $color-green;
 
 /* Z-indexes */
 

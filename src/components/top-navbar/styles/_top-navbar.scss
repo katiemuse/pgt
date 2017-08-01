@@ -65,7 +65,7 @@ nav.top-navbar {
       position: absolute;
       top: 15px;
       right: 35px;
-      background-color: $color-marketing-cloud-orange-medium;
+      background-color: $color-green;
       border-radius: 22px;
       padding: 0 2%;
       color: white;
@@ -79,7 +79,7 @@ nav.top-navbar {
     }
     &:hover, &:focus {
       @media(min-width: $screen-md-min) {
-        background-color: darken($color-marketing-cloud-orange-medium, 5%);
+        background-color: darken($color-green, 5%);
         text-decoration: none;
       }
     }

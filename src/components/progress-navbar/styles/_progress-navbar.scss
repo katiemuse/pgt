@@ -101,14 +101,11 @@ $progress-top: 15px;
       }
 
       &.logo {
-        width: 155px;
+        width: 86px;
         height: 60px;
         display: block;
-        background-image: url(../../../assets/images/logos/logo-transparent.png);
-        @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-          background-image: url(../../../assets/images/logos/logo-transparent_2x.png);
-          background-size: 155px 60px;
-        }
+        background-image: url(../../../assets/images/logos/salesforce-logo.svg);
+        background-size: 86px 60px;
       }
 
       &.title {
@@ -206,14 +203,6 @@ $progress-top: 15px;
           color: $color-text-header;
         }
 
-        &.logo {
-          background-image: url(../../../assets/images/logos/logo-gray-transparent.png);
-          @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-            background-image: url(../../../assets/images/logos/logo-gray-transparent_2x.png);
-            background-size: 155px 60px;
-          }
-        }
-
         &.title {
           opacity: 1;
         }
@@ -222,3 +211,38 @@ $progress-top: 15px;
   }
 }
 
+.icon-indicator-white,
+.icon-indicator-gray,
+.icon-indicator-complete,
+.icon-indicator-complete-inverse {
+  width: 15px;
+  height: 15px;
+  border: 2px solid transparent;
+  background-color: transparent;
+  transition: border .2s ease-in-out, background .2s ease-in-out;
+  border-radius: 50%;
+}
+
+.icon-indicator-white {
+  border-color: $icon-indicator-white;
+  &.active {
+    border-color: $icon-indicator-white-active;
+  }
+}
+
+.icon-indicator-gray {
+  border-color: $icon-indicator-gray;
+  &.active {
+    border-color: $icon-indicator-gray-active;
+  }
+}
+
+.icon-indicator-complete {
+  border-color: $icon-indicator-complete-border;
+  background-color: $icon-indicator-complete-bkg;
+}
+
+.icon-indicator-complete-inverse {
+  border-color: $icon-indicator-complete-inverse-border;
+  background-color: $icon-indicator-complete-inverse-bkg;
+}

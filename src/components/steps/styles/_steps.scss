@@ -198,9 +198,10 @@ button.step-close-button {
 }
 
 .step-one, .step-two, .step-three, .step-four, .step-five {
-
+  background-color: transparent;
+  background-image: linear-gradient(to right, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
   &.active {
-    background-image: linear-gradient(to right, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
+    background-image: linear-gradient(to left,transparent,#009cdb);
   }
 }
 

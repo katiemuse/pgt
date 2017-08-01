@@ -44,46 +44,6 @@
   background-position: -10px -8px;
 }
 
-.icon-indicator-complete-inverse {
-  background-position: 0 0;
-  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
-  width: 15px;
-  height: 15px;
-}
-
-.icon-indicator-complete {
-  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
-  width: 15px;
-  height: 15px;
-  background-position: -15px 0;
-}
-
-.icon-indicator-gray {
-  &.active {
-    background-position: 0 -15px;
-    background-image: url(../assets/images/sprites/story-indicators-sprite.png);
-    width: 15px;
-    height: 15px;
-  }
-  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
-  width: 15px;
-  height: 15px;
-  background-position: -15px -15px;
-}
-
-.icon-indicator-white {
-  &.active {
-    background-position: -30px 0;
-    background-image: url(../assets/images/sprites/story-indicators-sprite.png);
-    width: 15px;
-    height: 15px;
-  }
-  background-image: url(../assets/images/sprites/story-indicators-sprite.png);
-  width: 15px;
-  height: 15px;
-  background-position: -30px -15px;
-}
-
 .icon-did-you-know {
   &.active {
     background-position: 0 0;
