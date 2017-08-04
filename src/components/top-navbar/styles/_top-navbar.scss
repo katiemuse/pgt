@@ -1,23 +1,59 @@
 @import "../../../app/base";
 
+#intro {
+  .icon-did-you-know,
+  .icon-hot-spots,
+  .icon-mobile-view {
+    border-color: white;
+    > svg {
+      path,
+      rect {
+        stroke: white;
+        fill: white;
+      }
+    }
+  }
+}
+
 nav.top-navbar {
 
   height:50px;
 
   nav.tips {
     margin:15px auto 0 auto;
-    width: 180px;
+    width: 225px;
 
     ul.tips-icons {
+      padding: 0;
       li {
         position: relative;
         margin-right: 30px;
         float:left;
         list-style-type: none;
 
-        &.icon-did-you-know, &.icon-hot-spots {
-          
-
+        &.icon-did-you-know, &.icon-hot-spots, &.icon-mobile-view {
+          width: 55px;
+          height: 55px;
+          text-align: center;
+          border: 2px solid #717272;
+          border-radius: 50%;
+          transition: border .2s ease-in-out;
+          > svg {
+            margin: 8px 0;
+            height: 35px;
+            path, rect {
+              transition: all .2s ease-in-out;
+            }
+          }
+          //&.active {
+          //  border-color: white;
+          //  > svg {
+          //    path, rect {
+          //      stroke: white;
+          //      fill: white;
+          //    }
+          //  }
+          //}
           span.count {
             position:absolute;
             left:-2px;
@@ -34,14 +70,14 @@ nav.top-navbar {
 
         &.icon-did-you-know {
           span.count {
-            background-color: $color-salesforce-blue;
+            background-color: $color-green;
             color: white;
           }
         }
 
         &.icon-hot-spots {
           span.count {
-            background-color: $color-marketing-cloud-orange;
+            background-color: $color-purple;
             color:white;
           }
         }
@@ -155,3 +191,4 @@ nav.top-navbar {
     }
   }
 }
+

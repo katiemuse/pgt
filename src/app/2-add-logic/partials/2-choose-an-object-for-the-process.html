@@ -1,0 +1,91 @@
+<div class="row monitor-height choose-an-object-for-the-process">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+              <form class="form form-horizontal">
+
+                <div class="formFieldsPreview" ui-sortable="ChooseAnObjectForTheProcess.sortableOptions" ng-model="ChooseAnObjectForTheProcess.fields"  style="position: relative;">
+
+                  <div class="field-edit" ng-repeat="field in ChooseAnObjectForTheProcess.fields">
+                    <div class="control-group hover-control-group" ng-class="{required:field.required}">
+                      <label class="control-label">
+                        {{ field.name }}
+                      </label>
+                      <div class="controls">
+                        <input class="text" type="text" size="30" readonly="readonly">
+                        <div class="actions">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </form>
+              <div class="form-actions">
+                <input class="btn btn-primary" wz-next type="submit" value="Next »" disabled/>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <form class="form form-horizontal">
+
+                <div class="formFieldsPreview" ui-sortable="ChooseAnObjectForTheProcess.sortableOptions" ng-model="ChooseAnObjectForTheProcess.fields"  style="position: relative;">
+
+                  <div class="field-edit" ng-repeat="field in ChooseAnObjectForTheProcess.fields">
+                    <div class="control-group hover-control-group" ng-class="{required:field.required}">
+                      <label class="control-label">
+                        {{ field.name }}
+                      </label>
+                      <div class="controls">
+                        <input class="text" type="text" size="30" readonly="readonly">
+                        <div class="actions">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </form>
+              <div class="form-actions">
+                <input class="btn btn-primary" wz-next type="submit" value="Next »" disabled/>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <form class="form form-horizontal">
+
+                <div class="formFieldsPreview" ui-sortable="ChooseAnObjectForTheProcess.sortableOptions" ng-model="ChooseAnObjectForTheProcess.fields"  style="position: relative;">
+
+                  <div class="field-edit" ng-repeat="field in ChooseAnObjectForTheProcess.fields">
+                    <div class="control-group hover-control-group" ng-class="{required:field.required}">
+                      <label class="control-label">
+                        {{ field.name }}
+                      </label>
+                      <div class="controls">
+                        <input class="text" type="text" size="30" readonly="readonly">
+                        <div class="actions">
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+              </form>
+              <div class="form-actions">
+                <input class="btn btn-primary active" li-autofocus="wizard.stateIndex == 2" ng-click="Next()" type="submit" value="Next »"/>
+              </div>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

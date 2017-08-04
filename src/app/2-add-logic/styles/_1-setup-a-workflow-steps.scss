@@ -1,0 +1,34 @@
+@import '../../base';
+
+#step-container {
+
+  &.setup-a-workflow-steps, &.choose-an-object-for-the-process-steps, &.add-criteria-steps {
+
+    top: 110px;
+
+    .step-one {
+      &.active {
+        height: 90px;
+      }
+    }
+
+    .step-two {
+      &.active {
+        height: 130px;
+      }
+    }
+
+    .step-three {
+      &.active {
+        height: 110px;
+      }
+    }
+
+    .step-four {
+      &.active {
+        height: 90px;
+      }
+    }
+
+  }
+}

@@ -41,8 +41,8 @@
     padding-right: 25px;
     margin-left: -250px;
     @media (min-width: $screen-lg-min) {
-      top: 45px;
-      margin-left: -280px;
+      top: 70px;
+      margin-left: -330px;
     }
 
     p {
@@ -51,8 +51,8 @@
     .info-block-arrow {
       top: 0;
       right: 0;
-      width: 106px;
-      height: 74px;
+      width: 108px;
+      height: 77px;
       background-image: url(../assets/images/icons/info-block-arrow-dyk.png);
       background-repeat: no-repeat;
     }
@@ -66,8 +66,32 @@
     padding-left: 25px;
     margin-right: -300px;
     @media(min-width: $screen-lg-min) {
-      top: 45px;
-      margin-right: -320px;
+      top: 70px;
+      margin-right: -114px;
+    }
+
+    p {
+      width: 200px;
+    }
+    .info-block-arrow {
+      top: 5px;
+      left: 110px;
+      width: 3px;
+      height: 70px;
+      background-image: url(../assets/images/icons/info-block-arrow-hs.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  #mv {
+    top: 75px;
+    right: 50%;
+    padding-top: 75px;
+    padding-left: 25px;
+    margin-right: -300px;
+    @media(min-width: $screen-lg-min) {
+      top: 70px;
+      margin-right: -354px;
     }
 
     p {
@@ -75,10 +99,10 @@
     }
     .info-block-arrow {
       top: 0;
-      left: 0;
-      width: 60px;
-      height: 70px;
-      background-image: url(../assets/images/icons/info-block-arrow-hs.png);
+      left: -20px;
+      width: 63px;
+      height: 72px;
+      background-image: url(../assets/images/icons/info-block-arrow-mv.png);
       background-repeat: no-repeat;
     }
   }
@@ -93,8 +117,8 @@
     .info-block-arrow {
       top: 0;
       right: 27px;
-      width: 102px;
-      height: 90px;
+      width: 92px;
+      height: 104px;
       background-image: url(../assets/images/icons/info-block-arrow-steps.png);
       background-repeat: no-repeat;
     }
@@ -114,8 +138,8 @@
     .info-block-arrow {
       top: 0;
       left: 0;
-      width: 62px;
-      height: 36px;
+      width: 63px;
+      height: 33px;
       background-image: url(../assets/images/icons/info-block-arrow-timeline.png);
       background-repeat: no-repeat;
     }
@@ -130,10 +154,10 @@
       width: 170px;
     }
     .info-block-arrow {
-      bottom: 0;
+      bottom: 10px;
       right: 0;
-      width: 62px;
-      height: 18px;
+      width: 79px;
+      height: 20px;
       background-image: url(../assets/images/icons/info-block-arrow-sald.png);
       background-repeat: no-repeat;
     }
@@ -208,11 +232,11 @@
 /**************/
 
 
-#dyk, #hs, #steps, #timeline, #sald, #begin-the-tour {
+#dyk, #hs, #steps, #timeline, #sald, #mv, #begin-the-tour {
   opacity:0;
 }
 
-#dyk, #hs {
+#dyk, #hs, #mv {
   animation: flapDown 1s forwards;
 }
 
@@ -224,7 +248,11 @@
   animation-delay: 0.55s;
 }
 
-#dyk, #hs {
+#mv {
+  animation-delay: 0.75s;
+}
+
+#dyk, #hs, #mv {
   transform-origin: top center;
 }
 

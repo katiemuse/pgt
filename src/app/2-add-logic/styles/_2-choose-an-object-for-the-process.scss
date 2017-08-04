@@ -1,0 +1,62 @@
+@import '../../base';
+
+.choose-an-object-for-the-process {
+
+
+  .step-0, .step-1, .step-2, .step-3 {
+    background: url('../assets/images/stories/2-add-logic/2-screen-form-builder-no-controls.png') center center no-repeat;
+  }
+
+
+
+  .step-0, .step-1, .step-2, .step-3 {
+    form {
+      position:absolute;
+      left: 82px;
+      top: 170px;
+
+      .control-group {
+        &.hover-control-group {
+          width: 680px;
+        }
+      }
+
+      .controls {
+        input.text {
+          width:370px;
+          float:left;
+          pointer-events: none;
+        }
+
+        div.actions {
+          float:left;
+          width:68px;
+          height: 31px;
+          background-image:url("../assets/images/stories/2-add-logic/2-form-builder-drag-icons.png");
+        }
+      }
+
+      .ui-sortable-placeholder {
+        border:2px dashed black;
+      }
+
+      .ui-sortable-handle {
+        cursor: move;
+      }
+
+    }
+
+    .form-actions {
+      position: absolute;
+      bottom: 47px;
+      left: 196px;
+    }
+  }
+
+  .step-2 {
+    form {
+      pointer-events: none;
+    }
+  }
+
+}

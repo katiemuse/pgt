@@ -29,13 +29,12 @@ export default function run(
 
   $rootScope.progressStates = {
     0: ['intro'],
-    1: ['create-a-campaign'],
+    1: ['add-an-object'],
     2: [
-      'build-a-form-and-landing-page',
-      'form-builder',
-      'landing-page',
-      'form-completion-actions',
-      'landing-page-builder'
+      'setup-a-workflow',
+      'choose-an-object-for-the-process',
+      'add-criteria',
+      'add-actions'
     ],
     3: ['build-an-email', 'a-b-testing', 'email-preview', 'send-email'],
     4: ['view-a-prospect-profile'],

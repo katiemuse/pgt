@@ -51,16 +51,16 @@ import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
-import CreateACampaignController from './app/1-create-a-campaign/controllers/create-a-campaign.controller';
-import CreateACampaignDrawerController from './app/1-create-a-campaign/controllers/create-a-campaign.drawer.controller';
-import BuildAFormAndLandingController from './app/2-build-a-form-and-landing-page/controllers/build-a-form-and-landing-page.controller';
-import BuildAFormAndLandingDrawerController from './app/2-build-a-form-and-landing-page/controllers/build-a-form-and-landing-page.drawer.controller';
-import FormBuilderController from './app/2-build-a-form-and-landing-page/controllers/form-builder.controller';
-import FormBuilderDrawerController from './app/2-build-a-form-and-landing-page/controllers/form-builder.drawer.controller';
-import FormCompletionActionsController from './app/2-build-a-form-and-landing-page/controllers/form-completion-actions.controller';
-import FormCompletionActionsDrawerController from './app/2-build-a-form-and-landing-page/controllers/form-completion-actions.drawer.controller';
-import LandingPageBuilderController from './app/2-build-a-form-and-landing-page/controllers/landing-page-builder.controller';
-import LandingPageBuilderDrawerController from './app/2-build-a-form-and-landing-page/controllers/landing-page-builder.drawer.controller';
+import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-an-object.controller';
+import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
+import SetupAWorkflowController from './app/2-add-logic/controllers/1-setup-a-workflow.controller';
+import SetupAWorkflowDrawerController from './app/2-add-logic/controllers/1-setup-a-workflow.drawer.controller';
+import ChooseAnObjectForTheProcessController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.controller';
+import ChooseAnObjectForTheProcessDrawerController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.drawer.controller';
+import AddCriteriaController from './app/2-add-logic/controllers/3-add-criteria.controller';
+import AddCriteriaDrawerController from './app/2-add-logic/controllers/3-add-criteria.drawer.controller';
+import AddActionsController from './app/2-add-logic/controllers/4-add-actions.controller';
+import AddActionsDrawerController from './app/2-add-logic/controllers/4-add-actions.drawer.controller';
 import ABTestingController from './app/3-build-an-email/controllers/a-b-testing.controller';
 import ABTestingDrawerController from './app/3-build-an-email/controllers/a-b-testing.drawer.controller';
 import BuildAnEmailController from './app/3-build-an-email/controllers/build-an-email.controller';
@@ -161,16 +161,16 @@ angular
   .controller('TopNavbarController', TopNavbarController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('IntroDrawerController', IntroDrawerController)
-  .controller('CreateACampaignController', CreateACampaignController)
-  .controller('CreateACampaignDrawerController', CreateACampaignDrawerController)
-  .controller('BuildAFormAndLandingController', BuildAFormAndLandingController)
-  .controller('BuildAFormAndLandingDrawerController', BuildAFormAndLandingDrawerController)
-  .controller('FormBuilderController', FormBuilderController)
-  .controller('FormBuilderDrawerController', FormBuilderDrawerController)
-  .controller('FormCompletionActionsController', FormCompletionActionsController)
-  .controller('FormCompletionActionsDrawerController', FormCompletionActionsDrawerController)
-  .controller('LandingPageBuilderController', LandingPageBuilderController)
-  .controller('LandingPageBuilderDrawerController', LandingPageBuilderDrawerController)
+  .controller('AddAnObjectController', AddAnObjectController)
+  .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
+  .controller('SetupAWorkflowController', SetupAWorkflowController)
+  .controller('SetupAWorkflowDrawerController', SetupAWorkflowDrawerController)
+  .controller('ChooseAnObjectForTheProcessController', ChooseAnObjectForTheProcessController)
+  .controller('ChooseAnObjectForTheProcessDrawerController', ChooseAnObjectForTheProcessDrawerController)
+  .controller('AddCriteriaController', AddCriteriaController)
+  .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
+  .controller('AddActionsController', AddActionsController)
+  .controller('AddActionsDrawerController', AddActionsDrawerController)
   .controller('ABTestingController', ABTestingController)
   .controller('ABTestingDrawerController', ABTestingDrawerController)
   .controller('BuildAnEmailController', BuildAnEmailController)

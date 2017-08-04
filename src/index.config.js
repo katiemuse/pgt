@@ -17,7 +17,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: '<div></div>'
         },
         mobile: {
-          templateUrl: 'app/1-create-a-campaign/partials/create-a-campaign.mobile.html'
+          templateUrl: 'app/1-build-a-data-model/partials/1-add-an-object.mobile.html'
         },
         intro: {
           templateUrl: 'app/0-intro/partials/intro.mobile.html'
@@ -33,19 +33,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('create-a-campaign', {
-      url: '/create-a-campaign',
+    .state('add-an-object', {
+      url: '/add-an-object',
       views: {
         monitor: {
-          templateUrl: 'app/1-create-a-campaign/partials/create-a-campaign.html',
-          controller: 'CreateACampaignController'
+          templateUrl: 'app/1-build-a-data-model/partials/1-add-an-object.html',
+          controller: 'AddAnObjectController'
         },
         drawer: {
-          templateUrl: 'app/1-create-a-campaign/partials/create-a-campaign.drawer.html',
-          controller: 'CreateACampaignDrawerController'
+          templateUrl: 'app/1-build-a-data-model/partials/1-add-an-object.drawer.html',
+          controller: 'AddAnObjectDrawerController'
         },
         mobile: {
-          templateUrl: 'app/1-create-a-campaign/partials/create-a-campaign.mobile.html'
+          templateUrl: 'app/1-build-a-data-model/partials/1-add-an-object.mobile.html'
         }
       },
       onEnter(TopNavbar) {
@@ -55,19 +55,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
-    .state('build-a-form-and-landing-page', {
-      url: '/build-a-form-and-landing-page',
+    .state('setup-a-workflow', {
+      url: '/setup-a-workflow',
       views: {
         monitor: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/build-a-form-and-landing-page.html',
-          controller: 'BuildAFormAndLandingController'
+          templateUrl: 'app/2-add-logic/partials/1-setup-a-workflow.html',
+          controller: 'SetupAWorkflowController'
         },
         drawer: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/build-a-form-and-landing-page.drawer.html',
-          controller: 'BuildAFormAndLandingDrawerController'
+          templateUrl: 'app/2-add-logic/partials/1-setup-a-workflow.drawer.html',
+          controller: 'SetupAWorkflowDrawerController'
         },
         mobile: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/build-a-form-and-landing-page.mobile.html'
+          templateUrl: 'app/2-add-logic/partials/1-setup-a-workflow.mobile.html'
         }
       },
       onEnter(TopNavbar) {
@@ -77,19 +77,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
-    .state('form-builder', {
-      url: '/form-builder',
+    .state('choose-an-object-for-the-process', {
+      url: '/choose-an-object-for-the-process',
       views: {
         monitor: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/form-builder.html',
-          controller: 'FormBuilderController'
+          templateUrl: 'app/2-add-logic/partials/2-choose-an-object-for-the-process.html',
+          controller: 'ChooseAnObjectForTheProcessController'
         },
         drawer: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/form-builder.drawer.html',
-          controller: 'FormBuilderDrawerController'
+          templateUrl: 'app/2-add-logic/partials/2-choose-an-object-for-the-process.drawer.html',
+          controller: 'ChooseAnObjectForTheProcessDrawerController'
         },
         mobile: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/build-a-form-and-landing-page.mobile.html'
+          templateUrl: 'app/2-add-logic/partials/1-setup-a-workflow.mobile.html'
         }
       },
       onEnter(TopNavbar) {
@@ -97,19 +97,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsCount = 2;
       }
     })
-    .state('form-completion-actions', {
-      url: '/form-completion-actions',
+    .state('add-criteria', {
+      url: '/add-criteria',
       views: {
         monitor: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/form-completion-actions.html',
-          controller: 'FormCompletionActionsController'
+          templateUrl: 'app/2-add-logic/partials/3-add-criteria.html',
+          controller: 'AddCriteriaController'
         },
         drawer: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/form-completion-actions.drawer.html',
-          controller: 'FormCompletionActionsDrawerController'
+          templateUrl: 'app/2-add-logic/partials/3-add-criteria.drawer.html',
+          controller: 'AddCriteriaDrawerController'
         },
         mobile: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/build-a-form-and-landing-page.mobile.html'
+          templateUrl: 'app/2-add-logic/partials/1-setup-a-workflow.mobile.html'
         }
       },
       onEnter(TopNavbar) {
@@ -117,19 +117,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsCount = 1;
       }
     })
-    .state('landing-page-builder', {
-      url: '/landing-page-builder',
+    .state('add-actions', {
+      url: '/add-actions',
       views: {
         monitor: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/landing-page-builder.html',
-          controller: 'LandingPageBuilderController'
+          templateUrl: 'app/2-add-logic/partials/4-add-actions.html',
+          controller: 'AddActionsController'
         },
         drawer: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/landing-page-builder.drawer.html',
-          controller: 'LandingPageBuilderDrawerController'
+          templateUrl: 'app/2-add-logic/partials/4-add-actions.drawer.html',
+          controller: 'AddActionsDrawerController'
         },
         mobile: {
-          templateUrl: 'app/2-build-a-form-and-landing-page/partials/build-a-form-and-landing-page.mobile.html'
+          templateUrl: 'app/2-add-logic/partials/1-setup-a-workflow.mobile.html'
         }
       },
       onEnter(TopNavbar) {
