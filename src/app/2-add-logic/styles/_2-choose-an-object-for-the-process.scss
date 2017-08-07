@@ -4,58 +4,63 @@
 
 
   .step-0, .step-1, .step-2, .step-3 {
-    background: url('../assets/images/stories/2-add-logic/2-screen-form-builder-no-controls.png') center center no-repeat;
+    background: url('../app/2-add-logic/assets/2-choose-an-object-for-the-process-screen-1.png') center center no-repeat;
   }
-
-
 
   .step-0, .step-1, .step-2, .step-3 {
-    form {
-      position:absolute;
-      left: 82px;
-      top: 170px;
 
-      .control-group {
-        &.hover-control-group {
-          width: 680px;
-        }
-      }
+  }
 
-      .controls {
-        input.text {
-          width:370px;
-          float:left;
-          pointer-events: none;
-        }
-
-        div.actions {
-          float:left;
-          width:68px;
-          height: 31px;
-          background-image:url("../assets/images/stories/2-add-logic/2-form-builder-drag-icons.png");
-        }
-      }
-
-      .ui-sortable-placeholder {
-        border:2px dashed black;
-      }
-
-      .ui-sortable-handle {
-        cursor: move;
-      }
-
-    }
-
-    .form-actions {
+  .step-1 {
+    .click-box {
       position: absolute;
-      bottom: 47px;
-      left: 196px;
+      top: 146px;
+      left: 21px;
+      width: 104px;
+      height: 40px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+      }
     }
   }
 
-  .step-2 {
-    form {
-      pointer-events: none;
+  .step-2, .step-3 {
+    .inner-drawer {
+      position:absolute;
+      background: url('../app/2-add-logic/assets/2-choose-an-object-for-the-process-slideout.png');
+      width:559px;
+      height:412px;
+      right:0;
+      top: 79px;
+      transform: translateX(559px);
+      transition-duration: 0.25s;
+      transition-delay: 0.5s;
+
+      &.open {
+        transform: translateX(0px);
+      }
+
+      .form {
+        &.form-horizontal {
+          position: absolute;
+          top: 96px;
+          left: 11px;
+          .controls {
+            margin-left: 0;
+          }
+        }
+      }
+
+      .form-actions {
+        position: absolute;
+        bottom: 10px;
+        left: 12px;
+        .btn {
+          padding: 5px 15px;
+        }
+      }
+
     }
   }
 

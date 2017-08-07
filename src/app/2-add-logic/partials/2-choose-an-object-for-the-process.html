@@ -5,84 +5,60 @@
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
             <div class="step step-0">
-              <form class="form form-horizontal">
 
-                <div class="formFieldsPreview" ui-sortable="ChooseAnObjectForTheProcess.sortableOptions" ng-model="ChooseAnObjectForTheProcess.fields"  style="position: relative;">
-
-                  <div class="field-edit" ng-repeat="field in ChooseAnObjectForTheProcess.fields">
-                    <div class="control-group hover-control-group" ng-class="{required:field.required}">
-                      <label class="control-label">
-                        {{ field.name }}
-                      </label>
-                      <div class="controls">
-                        <input class="text" type="text" size="30" readonly="readonly">
-                        <div class="actions">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary" wz-next type="submit" value="Next »" disabled/>
-              </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <form class="form form-horizontal">
-
-                <div class="formFieldsPreview" ui-sortable="ChooseAnObjectForTheProcess.sortableOptions" ng-model="ChooseAnObjectForTheProcess.fields"  style="position: relative;">
-
-                  <div class="field-edit" ng-repeat="field in ChooseAnObjectForTheProcess.fields">
-                    <div class="control-group hover-control-group" ng-class="{required:field.required}">
-                      <label class="control-label">
-                        {{ field.name }}
-                      </label>
-                      <div class="controls">
-                        <input class="text" type="text" size="30" readonly="readonly">
-                        <div class="actions">
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary" wz-next type="submit" value="Next »" disabled/>
-              </div>
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <form class="form form-horizontal">
-
-                <div class="formFieldsPreview" ui-sortable="ChooseAnObjectForTheProcess.sortableOptions" ng-model="ChooseAnObjectForTheProcess.fields"  style="position: relative;">
-
-                  <div class="field-edit" ng-repeat="field in ChooseAnObjectForTheProcess.fields">
-                    <div class="control-group hover-control-group" ng-class="{required:field.required}">
-                      <label class="control-label">
-                        {{ field.name }}
-                      </label>
-                      <div class="controls">
-                        <input class="text" type="text" size="30" readonly="readonly">
-                        <div class="actions">
-                        </div>
-                      </div>
+              <div class="inner-drawer" ng-class="wizard.stateIndex == 2 ? 'open': ''">
+                <form class="form form-horizontal">
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="process-starts" id="process-starts" ng-model="process.starts" li-autofocus="wizard.stateIndex == 2" ng-options="opt as opt.label for opt in processOptions" class="active"></select>
                     </div>
                   </div>
-
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
                 </div>
-
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary active" li-autofocus="wizard.stateIndex == 2" ng-click="Next()" type="submit" value="Next »"/>
               </div>
             </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <div class="inner-drawer open">
+                <form class="form form-horizontal">
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="process-starts" id="process-starts" ng-model="process.starts" ng-options="opt as opt.label for opt in processOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary active" type="submit" value="Save" wz-next li-autofocus="wizard.stateIndex == 3" />
+                </div>
+              </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <li-center>
+              <p>
+                <img src="assets/images/success.png"/>
+              </p>
+              <h2>Success!</h2>
+              <p>
+                Next, we'll specify which object changes we want to activate our process.
+              </p>
+              <p>
+                <a ui-sref="add-criteria"  li-autofocus="wizard.stateIndex == 4"   class="btn btn-rounded active">Continue</a>
+              </p>
+            </li-center>
           </wz-step>
         </wizard>
       </hotspots-container>
