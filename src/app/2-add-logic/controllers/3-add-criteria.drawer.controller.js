@@ -12,27 +12,22 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click &lsquo;Next&rsquo; to start setting up your form.'
+      title: 'Click \'Add Criteria\''
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click and drag the form fields into the order that you prefer.'
+      title: 'Name your first criteria ’New Customer Idea’ and choose ‘conditions are met’ as the Criteria for Executing Action.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Click &lsquo;Next&rsquo; to learn how to add completion actions to your form.'
+      title: 'Choose ‘Customer Idea’ from the ‘Field’ dropdown'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Use the blank dropdown menu to view all the possible completion actions that can be triggered after a form submission.'
-    });
-
-    Steps.pop({
-      number: 'five',
-      title: 'Click &lsquo;Next&rsquo; to advance to the Landing Page Builder.'
+      title: 'Click ‘Save’'
     });
 
     Hotspots.clear();

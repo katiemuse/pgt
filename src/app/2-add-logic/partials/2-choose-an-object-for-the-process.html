@@ -11,11 +11,25 @@
           <wz-step>
             <div class="step step-1">
               <div class="click-box active" ng-click="Next()"></div>
+              <div class="inner-drawer" ng-class="{open:editor.open}">
+                <img src="../app/2-add-logic/assets/2-choose-an-object-for-the-process-slideout.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="process-starts" id="process-starts" ng-model="process.starts" ng-options="opt as opt.label for opt in processOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
+                </div>
+              </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="inner-drawer" ng-class="wizard.stateIndex == 2 ? 'open': ''">
+              <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/2-choose-an-object-for-the-process-slideout.png" alt="">
                 <form class="form form-horizontal">
                   <div class="control-group">
                     <div class="controls">
@@ -32,6 +46,7 @@
           <wz-step>
             <div class="step step-3">
               <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/2-choose-an-object-for-the-process-slideout.png" alt="">
                 <form class="form form-horizontal">
                   <div class="control-group">
                     <div class="controls">
@@ -43,22 +58,23 @@
                   <input class="btn btn-primary active" type="submit" value="Save" wz-next li-autofocus="wizard.stateIndex == 3" />
                 </div>
               </div>
-              </div>
             </div>
           </wz-step>
           <wz-step success="true">
-            <li-center>
-              <p>
-                <img src="assets/images/success.png"/>
-              </p>
-              <h2>Success!</h2>
-              <p>
-                Next, we'll specify which object changes we want to activate our process.
-              </p>
-              <p>
-                <a ui-sref="add-criteria"  li-autofocus="wizard.stateIndex == 4"   class="btn btn-rounded active">Continue</a>
-              </p>
-            </li-center>
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="assets/images/success.png"/>
+                </p>
+                <h2>Success!</h2>
+                <p>
+                  Next, we'll specify which object changes we want to activate our process.
+                </p>
+                <p>
+                  <a ui-sref="add-criteria"  li-autofocus="wizard.stateIndex == 4"   class="btn btn-rounded active">Continue</a>
+                </p>
+              </li-center>
+            </div>
           </wz-step>
         </wizard>
       </hotspots-container>

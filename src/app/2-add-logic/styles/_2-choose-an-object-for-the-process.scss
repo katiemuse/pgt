@@ -25,20 +25,30 @@
     }
   }
 
-  .step-2, .step-3 {
+  .current {
+    .step-2 {
+      .inner-drawer {
+        transform: translateX(0px);
+      }
+    }
+  }
+
+  .step-1, .step-2, .step-3 {
+    position: relative;
+    overflow: hidden;
     .inner-drawer {
       position:absolute;
-      background: url('../app/2-add-logic/assets/2-choose-an-object-for-the-process-slideout.png');
       width:559px;
       height:412px;
       right:0;
       top: 79px;
       transform: translateX(559px);
       transition-duration: 0.25s;
-      transition-delay: 0.5s;
+      transition-delay: 0;
 
       &.open {
         transform: translateX(0px);
+        transition-delay: 0;
       }
 
       .form {
@@ -64,4 +74,37 @@
     }
   }
 
+}
+
+#step-container {
+
+  &.choose-an-object-for-the-process-steps {
+
+    top: 110px;
+
+    .step-one {
+      &.active {
+        height: 90px;
+      }
+    }
+
+    .step-two {
+      &.active {
+        height: 130px;
+      }
+    }
+
+    .step-three {
+      &.active {
+        height: 170px !important;
+      }
+    }
+
+    .step-four {
+      &.active {
+        height: 90px;
+      }
+    }
+
+  }
 }
