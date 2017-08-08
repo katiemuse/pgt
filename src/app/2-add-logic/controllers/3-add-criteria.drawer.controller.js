@@ -1,6 +1,6 @@
 'use strict';
 
-export default function AddCriteriaDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function AddCriteriaDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer) {
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
@@ -38,9 +38,5 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
         top: '277px'
       }
     });
-
-    $timeout(() => {
-      Steps.activate('four');
-    }, 1000);
   };
 }

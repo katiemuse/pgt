@@ -1,47 +1,77 @@
 'use strict';
 
-export default function AddCriteriaController($scope, $timeout, Steps, WizardHandler, Hotspots) {
-  $scope.response = {
-    action: null,
-    actionsViewed: false
+export default function AddCriteriaController($scope, $timeout, Steps, WizardHandler) {
+  $scope.editor = {
+    open: false
   };
 
-  $scope.responseOptions = [
-    {label: 'Add tags', value: 0},
-    {label: 'Add to list', value: 1},
-    {label: 'Add to salesforce.com campaign', value: 2},
-    {label: 'Adjust score', value: 3},
-    {label: 'Assign prospect via salesforce.com active assignment rule', value: 4},
-    {label: 'Assign to group', value: 5},
-    {label: 'Assign to queue', value: 6},
-    {label: 'Assign to user', value: 7},
-    {label: 'Change prospect custom field value', value: 8},
-    {label: 'Change prospect default field value', value: 9},
-    {label: 'Create salesforce.com task', value: 10},
-    {label: 'Increment prospect field value', value: 11},
-    {label: 'Notify assigned user', value: 12},
-    {label: 'Notify user', value: 13},
-    {label: 'Notify user via Twillio (phone)', value: 14},
-    {label: 'Register for webinar', value: 15},
-    {label: 'Remove from list', value: 16},
-    {label: 'Remove tags', value: 17},
-    {label: 'Send autoresponder email', value: 18},
-    {label: 'Set profile', value: 19},
-    {label: 'Set profile\'s source campaign', value: 20}
+  $scope.ToggleEditor = function () {
+    $scope.editor.open = !$scope.editor.open;
+  };
+
+  $scope.criteriaOptions = [
+    {label: 'Find Field', value: 0},
+    {label: 'Account Number', value: 1},
+    {label: 'Created By ID', value: 2},
+    {label: 'Customer Idea', value: 3},
+    {label: 'Order Details', value: 4},
+    {label: 'Owner ID (Queue)', value: 5},
+    {label: 'Owner ID (User)', value: 6}
   ];
 
-  $scope.$watch('response.action', (newValue, oldValue) => {
+  $scope.criteria = {
+    name: '',
+    radio: 0,
+    starts: $scope.criteriaOptions[0]
+  };
+
+  $scope.step1complete = false;
+
+  const delayInMs = 1000;
+
+  let timeoutCriteriaName;
+  $scope.$watch('criteria.name', (newValue, oldValue) => {
+    if (oldValue !== newValue) {
+      $timeout.cancel(timeoutCriteriaName);
+      timeoutCriteriaName = $timeout(() => {
+        if (newValue.length > 3) {
+          $scope.step1complete = true;
+        }
+      }, delayInMs);
+    }
+  });
+
+  $scope.$watch('criteria.radio', newValue => {
+    if (Number(newValue) === 1) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('three');
+    }
+  });
+
+  $scope.$watch('criteria.starts', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
-        $scope.response.actionsViewed = true;
-        Steps.activate('five');
+      if (newValue.value === 3) {
+        Steps.activate('four');
+        if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+          WizardHandler.wizard('monitor').next();
+        }
       }
     }
   });
 
-  $scope.Confirm = function () {
-    WizardHandler.wizard('monitor').next();
-    Steps.clear();
-    Hotspots.clear();
+  $scope.Next = function () {
+    if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('one');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
+      $scope.editor.open = !$scope.editor.open;
+      $timeout(() => {
+        WizardHandler.wizard('monitor').next();
+        Steps.activate('two');
+      }, 300);
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('three');
+    }
   };
 }

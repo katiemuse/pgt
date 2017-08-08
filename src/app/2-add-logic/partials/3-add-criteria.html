@@ -5,40 +5,188 @@
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
             <div class="step step-0">
-              <form class="form form-horizontal action">
-                <div class="control-group">
-                  <div class="controls">
-                    <select ng-model="response.action" disabled="disabled" ng-options="opt as opt.label for opt in responseOptions">
-                    </select>
-                  </div>
-                </div>
-              </form>
-              <form class="form form-horizontal confirm">
-                <div class="control-group">
-                  <div class="form-actions">
-                    <input class="btn btn-primary" type="submit" value="Next »"/>
-                  </div>
-                </div>
-              </form>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <form class="form form-horizontal action">
-                <div class="control-group">
-                  <div class="controls">
-                    <select class="action" ng-class="{active:!response.actionsViewed}" li-autofocus="wizard.stateIndex == 1" ng-model="response.action" ng-options="opt as opt.label for opt in responseOptions">
-                    </select>
+              <div class="click-box active" ng-click="Next()"></div>
+              <div class="inner-drawer" ng-class="{open:editor.open}">
+                <img src="../app/2-add-logic/assets/3-add-criteria-slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input type="text" name="name" id="name" ng-model="criteria.name" class="text" maxlength="80" disabled>
+                    </div>
                   </div>
-                </div>
-              </form>
-              <form class="form form-horizontal confirm">
-                <div class="control-group">
-                  <div class="form-actions">
-                    <input class="btn btn-primary" ng-class="{active:response.actionsViewed}" li-autofocus="response.actionsViewed" ng-click="Confirm()" type="submit" value="Next »" />
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" value="1">
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" value="1">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" value="1">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
                   </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" ng-options="opt as opt.label for opt in criteriaOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
                 </div>
-              </form>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/3-add-criteria-slideout-1.png" alt="">
+                <div class="highlight" ng-class="{active:step1complete}"></div>
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input type="text" name="name" id="name" ng-model="criteria.name" class="text active" ng-class="{active:!step1complete}" maxlength="80" li-autofocus="wizard.stateIndex == 2">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" ng-model="criteria.radio" value="1">
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" ng-model="criteria.radio" value="2">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" ng-model="criteria.radio" value="3">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" ng-options="opt as opt.label for opt in criteriaOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
+                </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/3-add-criteria-slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input type="text" name="name" id="name" ng-model="criteria.name" class="text" maxlength="80" disabled>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" value="1" checked>
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" value="1">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" value="1">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" li-autofocus="wizard.stateIndex == 3" ng-options="opt as opt.label for opt in criteriaOptions" class="active"></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
+                </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/3-add-criteria-slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input type="text" name="name" id="name" ng-model="criteria.name" class="text" maxlength="80">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" value="1" checked>
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" value="1">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" value="1">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" li-autofocus="wizard.stateIndex == 3" ng-options="opt as opt.label for opt in criteriaOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary active" type="submit" value="Save" value="Save" wz-next li-autofocus="wizard.stateIndex == 4" />
+                </div>
+              </div>
             </div>
           </wz-step>
           <wz-step success="true">
@@ -47,13 +195,12 @@
                 <p>
                   <img src="assets/images/badge.png"/>
                 </p>
-                <h2>Congratulations!</h2>
+                <h2>Success!</h2>
                 <p>
-                  You've created a Pardot form! Now it's time for the fun part. The landing page builder used<br/>
-                  in the following steps is a simplified version of the builder inside Pardot. Let's get started!
+                  Conditions are all set, so we can move on to the "then" of the process builder.
                 </p>
                 <p>
-                  <a ui-sref="add-actions" li-autofocus="wizard.stateIndex == 2" class="btn btn-rounded active">Continue</a>
+                  <a ui-sref="add-actions" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active">Continue</a>
                 </p>
               </li-center>
             </div>

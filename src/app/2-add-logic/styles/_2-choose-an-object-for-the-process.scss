@@ -21,6 +21,7 @@
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
+        cursor: pointer;
       }
     }
   }
@@ -44,11 +45,11 @@
       top: 79px;
       transform: translateX(559px);
       transition-duration: 0.25s;
-      transition-delay: 0;
+      transition-delay: 0s;
 
       &.open {
         transform: translateX(0px);
-        transition-delay: 0;
+        transition-delay: 0s;
       }
 
       .form {
