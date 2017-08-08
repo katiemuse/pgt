@@ -7,7 +7,6 @@ RUN curl -sL https://deb.nodesource.com/setup_5.x | bash -
 RUN apt-get install -y nodejs
 
 RUN npm install gulp-cli -g
-RUN npm install -g gulp
 
 RUN mkdir /app
 ADD . /app
