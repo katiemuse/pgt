@@ -34,7 +34,7 @@ export default function AddCriteriaController($scope, $timeout, Steps, WizardHan
     if (oldValue !== newValue) {
       $timeout.cancel(timeoutCriteriaName);
       timeoutCriteriaName = $timeout(() => {
-        if (newValue.length > 3) {
+        if (newValue.length > 3 && newValue.toLowerCase() === 'new customer idea') {
           $scope.step1complete = true;
         }
       }, delayInMs);
