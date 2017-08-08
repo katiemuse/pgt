@@ -69,7 +69,6 @@ module.exports = {
       compress: {unused: true, dead_code: true, warnings: false} // eslint-disable-line camelcase
     }),
     new ExtractTextPlugin('index-[contenthash].css'),
-    ,
     new webpack.ProvidePlugin({
       jQuery: 'jquery',
       $: 'jquery',
