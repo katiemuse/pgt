@@ -4,58 +4,115 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <label class="headline">{{ChooseAnObjectForTheProcess.headline}}</label>
             <div class="step step-0">
-              <div class="form-actions">
-                <input class="btn btn-success" wz-next type="submit" value="Confirm & Save"/>
-              </div>
             </div>
           </wz-step>
           <wz-step>
-            <label class="headline">{{ChooseAnObjectForTheProcess.headline | stripTags}}</label>
             <div class="step step-1">
-              <input class="btn btn-highlight active" id="headline" ng-click="ShowHeadlineEditor()" type="submit" value="" />
-              <div class="form-actions">
-                <input class="btn btn-success" wz-next type="submit" value="Confirm & Save" disabled="disabled"/>
+              <div class="click-box active" ng-click="Next()"></div>
+              <div class="inner-drawer" ng-class="{open:editor.open}">
+                <img src="../app/2-add-logic/assets/4-add-actions-slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group">
+                    <label for="name" class="control-label">Action Type </label>
+                    <div class="controls">
+                      <select name="action-type" id="action-type" ng-model="action.starts" ng-options="opt as opt.label for opt in actionOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
+                </div>
               </div>
             </div>
           </wz-step>
           <wz-step>
-            <label class="headline-modal" li-autofocus="wizard.stateIndex == 2" contenteditable ng-model="ChooseAnObjectForTheProcess.headline"></label>
             <div class="step step-2">
-              <input class="btn btn-highlight active" id="save" ng-click="SaveHeadline()" type="submit" value="" />
-              <div class="form-actions">
-                <input class="btn btn-success" wz-next type="submit" value="Confirm & Save" disabled="disabled"/>
+              <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/4-add-actions-slideout-1.png" alt="">
+                <div class="highlight" ng-class="{active:step1complete}"></div>
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Action Type </label>
+                    <div class="controls">
+                      <select name="action-type" id="action-type" ng-model="action.starts" ng-options="opt as opt.label for opt in actionOptions" class="active"  li-autofocus="wizard.stateIndex == 2"></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
+                </div>
               </div>
             </div>
           </wz-step>
           <wz-step>
-            <label class="headline">{{ChooseAnObjectForTheProcess.headline | stripTags}}</label>
             <div class="step step-3">
-              <input class="btn btn-highlight active" id="image-editor" ng-click="ShowImageEditor()" type="submit" value="" />
-              <div class="form-actions">
-                <input class="btn btn-success" wz-next type="submit" value="Confirm & Save" disabled="disabled"/>
+              <div class="inner-drawer open">
+                <img src="../app/2-add-logic/assets/4-add-actions-slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Action Type </label>
+                    <div class="controls">
+                      <select name="action-type" id="action-type" ng-model="action.starts" ng-options="opt as opt.label for opt in actionOptions" disabled></select>
+                    </div>
+                  </div>
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Action Name </label>
+                    <div class="controls">
+                      <input type="text" name="name" id="name" ng-model="action.name" class="text active" maxlength="80"  li-autofocus="wizard.stateIndex == 3">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label for="name" class="control-label">Email Alert </label>
+                    <div class="controls">
+                      <select name="email-alert" id="email-alert"  disabled>
+                        <option value="1">New_Customer_Idea</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary" type="submit" value="Save" disabled/>
+                </div>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <select class="text-small active" li-autofocus="wizard.stateIndex == 4" ng-model="ChooseAnObjectForTheProcess.image" ng-options="opt as opt.label for opt in imageOptions">
-              </select>
-              <img ng-src="{{ChooseAnObjectForTheProcess.imageUrl}}" />
-              <input class="btn btn-highlight active" id="ok-btn" wz-next type="submit" ng-click="ShowStepThree()" value="" />
-              <div class="form-actions">
-                <a class="btn btn-highlight transparent" id="ok">
-                </a>
+              <div class="inner-drawer" ng-class="{open:editor.open}">
+                <img src="../app/2-add-logic/assets/4-add-actions-slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Action Type </label>
+                    <div class="controls">
+                      <select name="action-type" id="action-type" ng-model="action.starts" ng-options="opt as opt.label for opt in actionOptions" disabled></select>
+                    </div>
+                  </div>
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Action Name </label>
+                    <div class="controls">
+                      <input type="text" name="name" id="name" ng-model="action.name" class="text" maxlength="80" disabled>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <label for="name" class="control-label">Email Alert </label>
+                    <div class="controls">
+                      <select name="email-alert" id="email-alert"  disabled>
+                        <option value="1">New_Customer_Idea</option>
+                      </select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary active" type="submit" value="Save" ng-click="Next()" li-autofocus="wizard.stateIndex == 4" />
+                </div>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-5">
-              <label class="headline">{{ChooseAnObjectForTheProcess.headline | stripTags}}</label>
-              <img ng-src="{{ChooseAnObjectForTheProcess.bannerImageUrl}}" />
-              <div class="form-actions">
-                <input class="btn btn-success active" ng-click="Done()" li-autofocus="wizard.stateIndex == 5" type="submit" value="Confirm & Save"/>
+              <div class="form-actions activate">
+                <input class="btn btn-primary active" type="submit" value="Activate" wz-next li-autofocus="wizard.stateIndex == 5" />
               </div>
             </div>
           </wz-step>
@@ -63,16 +120,14 @@
             <div class="step success">
               <li-center>
                 <p>
-                  <img src="assets/images/badge.png"/>
+                  <img src="assets/images/success.png"/>
                 </p>
-                <h2>Awesome!</h2>
+                <h2>Success!</h2>
                 <p>
-                  Now you've created a landing page! Landing pages are publishable<br/>
-                  with one click, so it's easy to move on to the next step. Click &ldquo;continue&rdquo;<br/>
-                  to start creating your autoresponder email using Pardot's Email Builder.
+                  We've built a simple process here, to act upon the data we're pulling in from our third party apps. But we aren't limited to just a single-step process. You can continue to add criteria and actions to account for any update your records might undergo.
                 </p>
                 <p>
-                  <a ui-sref="build-an-email" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
+                  <a ui-sref="create-a-new-lightning-page" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
                 </p>
               </li-center>
             </div>

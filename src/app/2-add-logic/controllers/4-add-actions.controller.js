@@ -1,52 +1,88 @@
 'use strict';
 
 export default function AddActionsController($scope, $timeout, Steps, WizardHandler) {
-  $scope.ChooseAnObjectForTheProcess = {
-    headline: 'Ready To Clean Up Your Act?',
-    image: null,
-    imageUrl: null,
-    bannerImageUrl: null
+  $scope.editor = {
+    open: false
   };
 
-  $scope.imageOptions = [
-    {label: 'Butterfly', value: 'assets/images/stories/2-add-logic/2-screen-edit-image-1.png', bannerImage: 'assets/images/stories/2-add-logic/2-banner-a.png'},
-    {label: 'Wind Energy', value: 'assets/images/stories/2-add-logic/2-screen-edit-image-2.png', bannerImage: 'assets/images/stories/2-add-logic/2-banner-b.png'},
-    {label: 'Blue Sky', value: 'assets/images/stories/2-add-logic/2-screen-edit-image-3.png', bannerImage: 'assets/images/stories/2-add-logic/2-banner-c.png'}
+  $scope.ToggleEditor = function () {
+    $scope.editor.open = !$scope.editor.open;
+  };
+
+  $scope.actionOptions = [
+    {label: 'Select One', value: 0},
+    {label: 'Apex', value: 1},
+    {label: 'Created a Record', value: 2},
+    {label: 'Email Alerts', value: 3},
+    {label: 'Flows', value: 4},
+    {label: 'Post to Chatter', value: 5},
+    {label: 'Processes', value: 6},
+    {label: 'Quick Actions', value: 7},
+    {label: 'Send Push Notification', value: 8},
+    {label: 'Submit for Approval', value: 9},
+    {label: 'Update Records', value: 10}
   ];
 
-  $scope.$watch('ChooseAnObjectForTheProcess.image', newValue => {
-    $scope.ChooseAnObjectForTheProcess.imageUrl = newValue.value;
-    $scope.ChooseAnObjectForTheProcess.bannerImageUrl = newValue.bannerImage;
+  $scope.action = {
+    name: '',
+    radio: 0,
+    starts: $scope.actionOptions[0]
+  };
+
+  $scope.step1complete = false;
+
+  const delayInMs = 1000;
+
+  let timeoutCriteriaName;
+  $scope.$watch('action.name', (newValue, oldValue) => {
+    if (oldValue !== newValue) {
+      $timeout.cancel(timeoutCriteriaName);
+      timeoutCriteriaName = $timeout(() => {
+        if (newValue.length > 3 && newValue.toLowerCase() === 'notify product team') {
+          WizardHandler.wizard('monitor').next();
+          Steps.activate('four');
+        }
+      }, delayInMs);
+    }
   });
 
-  $scope.ChooseAnObjectForTheProcess.image = $scope.imageOptions[0];
-
-  $scope.ShowHeadlineEditor = function () {
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
+  $scope.$watch('action.radio', newValue => {
+    if (Number(newValue) === 1) {
       WizardHandler.wizard('monitor').next();
+      Steps.activate('three');
     }
-  };
+  });
 
-  $scope.SaveHeadline = function () {
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+  $scope.$watch('action.starts', (newValue, oldValue) => {
+    if (newValue !== oldValue) {
+      if (Number(newValue.value) === 8) {
+        Steps.activate('three');
+        if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+          WizardHandler.wizard('monitor').next();
+        }
+      }
+    }
+  });
+
+  $scope.Next = function () {
+    if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
-      Steps.activate('two');
-    }
-  };
-
-  $scope.ShowImageEditor = function () {
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+      Steps.activate('one');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
+      $scope.editor.open = !$scope.editor.open;
+      $timeout(() => {
+        WizardHandler.wizard('monitor').next();
+        Steps.activate('two');
+      }, 300);
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();
-      // Steps.activate("three");
+      Steps.activate('three');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
+      $scope.editor.open = !$scope.editor.open;
+      $timeout(() => {
+        WizardHandler.wizard('monitor').next();
+        Steps.activate('five');
+      }, 300);
     }
-  };
-
-  $scope.ShowStepThree = function () {
-    Steps.activate('three');
-  };
-
-  $scope.Done = function () {
-    Steps.clear();
-    WizardHandler.wizard('monitor').next();
   };
 }

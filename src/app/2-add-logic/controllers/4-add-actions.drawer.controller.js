@@ -12,7 +12,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Try clicking on the Header text to change the title of your landing page.<br/><br/>Click &ldquo;Save&rdquo; when you are finished.',
+      title: 'Click ‘Add Action’',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
@@ -21,7 +21,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'two',
-      title: 'You can also click on the image to select a new image.<br/><br/>Click &ldquo;OK&rdquo; when you are finished.',
+      title: 'From the Action Type dropdown select \'Send push notification\' ',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
@@ -30,7 +30,25 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'three',
-      title: 'When you are finished editing your landing page, click &ldquo;Confirm &amp; Save&rdquo;.',
+      title: 'Name your action ‘Notify Product Team’',
+      clickHandler() {
+        // console.log('clicked step', step);
+        return false;
+      }
+    });
+
+    Steps.pop({
+      number: 'four',
+      title: 'Click ‘Save’',
+      clickHandler() {
+        // console.log('clicked step', step);
+        return false;
+      }
+    });
+
+    Steps.pop({
+      number: 'five',
+      title: 'Click \'Activate\' to set your process in motion.',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
