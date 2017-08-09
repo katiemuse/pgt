@@ -2,7 +2,7 @@
 
 import angular from 'angular';
 import $ from 'jquery';
-import 'sly/dist/sly';
+import '../../../assets/js/sly.min';
 
 import '../styles/_drawer-panel.scss';
 

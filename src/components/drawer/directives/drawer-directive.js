@@ -3,6 +3,7 @@
 import angular from 'angular';
 import '../styles/_drawer.scss';
 import $ from 'jquery';
+import '../../../assets/js/sly.min';
 
 export default function drawer($window, $rootScope, drawerRegisterEvents, $timeout, Hotspots, $document) {
   const isInit = false;

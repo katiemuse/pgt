@@ -17,7 +17,7 @@ module.exports = {
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: "file-loader"
+        loader: "url-loader?limit=100000"
       },
       { test: /\.png$/, loader: "file-loader" },
       { test: /\.gif$/, loader: "file-loader" },
@@ -73,6 +73,7 @@ module.exports = {
       jQuery: 'jquery',
       $: 'jquery',
       jquery: 'jquery',
+      "window.jQuery": "jquery",
       Tether: 'tether',
       'window.Tether': 'tether'
     }),
@@ -83,6 +84,12 @@ module.exports = {
       }
     })
   ],
+  stats: {
+    colors: true,
+    modules: true,
+    reasons: true,
+    errorDetails: true
+  },
   output: {
     path: path.join(process.cwd(), conf.paths.dist),
     filename: '[name]-[hash].js'

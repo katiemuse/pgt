@@ -31,7 +31,10 @@ function webpackWrapper(watch, conf, done) {
       colors: true,
       chunks: false,
       hash: false,
-      version: false
+      version: false,
+      modules: true,
+      reasons: true,
+      errorDetails: true
     }));
     if (done) {
       done();
