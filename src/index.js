@@ -120,8 +120,7 @@ angular
     'ngSanitize',
     'ngResource',
     'ui.router',
-    'ui.sortable',
-    'textAngular'
+    'ui.sortable'
   ])
   .constant('stepsConfig', StepsConfig)
   .constant('drawerPanelConfig', drawerPanelConfig)
