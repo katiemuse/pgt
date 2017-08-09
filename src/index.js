@@ -108,7 +108,6 @@ import PardotReportingController from './app/9-pardot-reporting/controllers/pard
 import PardotReportingDrawerController from './app/9-pardot-reporting/controllers/pardot-reporting.drawer.controller';
 import ReportController from './app/9-pardot-reporting/controllers/report.controller';
 
-import 'font-awesome-sass-loader';
 import './app/vendor.scss';
 import './app/index.scss';
 import './app/app.scss';
