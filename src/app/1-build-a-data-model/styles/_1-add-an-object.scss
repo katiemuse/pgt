@@ -60,7 +60,7 @@
 
   .step-3 {
     height: 1040px !important;
-    transition: transform .3s ease-in-out;
+    transition: transform .3s ease-in-out .3s;
     .form {
       &.form-horizontal {
         position: absolute;
@@ -88,10 +88,17 @@
   .step-4 {
     height: 1040px !important;
     transform: translateY(-549px);
-    .form-actions {
+    .click-box {
       position: absolute;
-      bottom: 79px;
-      right: 148px;
+      bottom: 34px;
+      left: 308px;
+      width: 39px;
+      height: 22px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
     }
   }
 }
