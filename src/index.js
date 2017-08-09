@@ -7,7 +7,7 @@ import 'jquery-ui/ui/widgets/draggable';
 import 'jquery-ui/ui/widgets/droppable';
 import angular from 'angular';
 import 'angular-animate';
-import 'angular-cookies';
+// import 'angular-cookies';
 import 'angular-touch';
 import 'angular-sanitize';
 import 'angular-resource';
@@ -115,7 +115,6 @@ import './app/app.scss';
 angular
   .module('pardotInteractiveGuidedTour', [
     'ngAnimate',
-    'ngCookies',
     'ngTouch',
     'ngSanitize',
     'ngResource',
