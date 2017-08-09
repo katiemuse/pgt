@@ -5,142 +5,36 @@
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
             <div class="step step-0">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <label class="control-label" for="name">Name</label>
-                  <div class="controls">
-                    <input type="text" name="name" id="name" ng-model="campaign.name" class="text" maxlength="80" disabled>
-                  </div>
-                </div>
-                <div class="control-group required ">
-                  <label class="control-label" for="name">Folder</label>
-                  <div class="controls">
-                    <div class="no-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="name">Tags</label>
-                  <div class="controls">
-                    <div class="no-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="name">Cost</label>
-                  <div class="controls">
-                    <input type="text" name="cost" id="cost" ng-model="campaign.cost" class="text text-x-small" maxlength="20" disabled>
-                  </div>
-                </div>
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary" type="submit" value="Create Campaign" disabled/>
-              </div>
+
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <label class="control-label" for="name">Name</label>
-                  <div class="controls">
-                    <input type="text" name="name" ng-model="campaign.name" id="name" li-autofocus="wizard.stateIndex == 1" class="text active" maxlength="80">
-                    <span class="help-inline" style="display:none;" id="error_for_name"></span>
-                  </div>
-                </div>
-                <div class="control-group required ">
-                  <label class="control-label" for="name">Folder</label>
-                  <div class="controls">
-                    <div class="no-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="name">Tags</label>
-                  <div class="controls">
-                    <div class="no-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="name">Cost</label>
-                  <div class="controls">
-                    <input type="text" name="cost" id="cost" autofocus ng-model="campaign.cost" class="text text-x-small" maxlength="20" disabled>
-                  </div>
-                </div>
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary" wz-next type="submit" value="Create Campaign" disabled/>
-              </div>
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-                <form class="form form-horizontal">
-                  <div class="control-group required">
-                    <label class="control-label" for="name">Name</label>
-                    <div class="controls">
-                      <input type="text" name="name" ng-model="campaign.name" class="text" maxlength="80">
-                    </div>
-                  </div>
-                  <div class="control-group required">
-                    <label class="control-label" for="name">Folder</label>
-                    <div class="controls">
-                      <div class="no-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="name">Tags</label>
-                    <div class="controls">
-                      <div class="no-control">
-                      </div>
-                    </div>
-                  </div>
-                  <div class="control-group">
-                    <label class="control-label" for="name">Cost</label>
-                    <div class="controls">
-                      <input type="text" name="cost" id="cost" ng-model="campaign.cost" value="" li-autofocus="wizard.stateIndex == 2" class="text text-x-small active" maxlength="20">
-                    </div>
-                  </div>
-                </form>
-                <div class="form-actions">
-                  <input class="btn btn-primary" wz-next type="submit" value="Create Campaign" disabled/>
-                </div>
-              </div>
+              <div class="click-box" ng-class="{active:!button.show}" ng-click="ToggleButton()"></div>
+              <img src="../app/1-build-a-data-model/assets/1-add-an-object-button.png" alt="custom object" class="custom-object" ng-class="{active:button.show}" ng-click="Next()">
+            </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3">
+            <div class="step step-3" ng-class="{active:!label.active}">
               <form class="form form-horizontal">
-                <div class="control-group required">
-                  <label class="control-label" for="name">Name</label>
-                  <div class="controls">
-                    <input type="text" name="name" ng-model="campaign.name" class="text" maxlength="80">
-                  </div>
-                </div>
-                <div class="control-group required">
-                  <label class="control-label" for="name">Folder</label>
-                  <div class="controls">
-                    <div class="no-control">
-                    </div>
-                  </div>
-                </div>
                 <div class="control-group">
-                  <label class="control-label" for="name">Tags</label>
+                  <label for="name" class="control-label">Label </label>
                   <div class="controls">
-                    <div class="no-control">
-                    </div>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <label class="control-label" for="name">Cost</label>
-                  <div class="controls">
-                    <input type="text" name="cost" ng-model="campaign.cost" value="" class="text text-x-small" maxlength="20">
+                    <input type="text" name="name" id="name" ng-model="customobj.name" class="text" maxlength="80" ng-class="{active:label.active}">
                   </div>
                 </div>
               </form>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
               <div class="form-actions">
-                <input class="btn btn-primary active" type="submit" ng-click="CreateCampaign(campaign)" li-autofocus="wizard.stateIndex == 3" value="Create Campaign"/>
+                <input class="btn btn-primary active" type="submit" value="Save" wz-next li-autofocus="wizard.stateIndex == 3" />
               </div>
             </div>
           </wz-step>

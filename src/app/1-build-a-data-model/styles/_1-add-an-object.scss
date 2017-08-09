@@ -2,38 +2,96 @@
 
 .add-an-object {
 
-  .step-0, .step-1, .step-2, .step-3 {
-    background: url('../assets/images/stories/1-build-a-data-model/1-screen-create-campaign-no-controls.png') center center no-repeat;
+  .step-0, .step-1{
+    background: url('../app/1-build-a-data-model/assets/1-add-an-object-screen-bkg-1.png') center center no-repeat;
   }
 
-  .step-0, .step-1, .step-2, .step-3 {
-    form {
-      position:absolute;
-      left: 30px;
-      top: 132px;
-      &.form-horizontal {
-        .control-label {
-          width: 145px;
-        }
-        .controls {
-          margin-left:161px;
-        }
-      }
-    }
+  .step-2 {
+    background: url('../app/1-build-a-data-model/assets/1-add-an-object-screen-bkg-2.png') center center no-repeat;
+  }
 
-    .form-actions {
+  .step-3, .step-4  {
+    background: url('../app/1-build-a-data-model/assets/1-add-an-object-screen-bkg-3.png') center top no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
       position: absolute;
-      bottom: 63px;
-      left: 192px;
+      top: 33px;
+      left: 181px;
+      width: 142px;
+      height: 36px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
     }
   }
 
   .step-2 {
-
+    .click-box {
+      position: absolute;
+      top: 21px;
+      left: 616px;
+      width: 89px;
+      height: 30px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .custom-object {
+      position: absolute;
+      top: 56px;
+      left: 603px;
+      opacity: 0;
+      pointer-events: none;
+      border-radius: 5px;
+      &.active {
+        opacity: 1;
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+        pointer-events: all;
+      }
+    }
   }
 
   .step-3 {
-
+    height: 1040px !important;
+    transition: transform .3s ease-in-out;
+    .form {
+      &.form-horizontal {
+        position: absolute;
+        top: 196px;
+        left: 1px;
+        .control-label {
+          width: 155px;
+          padding-top: 7px;
+          color: #000;
+        }
+        .controls {
+          input {
+            &.text {
+              width: 316px;
+            }
+          }
+        }
+      }
+    }
+    &.active {
+      transform: translateY(-549px);
+    }
   }
 
+  .step-4 {
+    height: 1040px !important;
+    transform: translateY(-549px);
+    .form-actions {
+      position: absolute;
+      bottom: 79px;
+      right: 148px;
+    }
+  }
 }
