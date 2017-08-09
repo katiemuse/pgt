@@ -33,8 +33,8 @@ function webpackWrapper(watch, conf, done) {
       hash: false,
       version: false,
       modules: true,
-      reasons: true,
-      errorDetails: true
+      reasons: false,
+      errorDetails: false
     }));
     if (done) {
       done();

@@ -16,7 +16,7 @@ export default function drawerPanel(drawerPanelConfig) {
       selected: '='
     },
     controller: 'DrawerPanelController',
-    templateUrl: 'components/drawer-panel/partials/drawer-panel.html',
+    template: require('../partials/drawer-panel.html'),
     link(scope, element, attrs) {
       /* eslint-disable */
       const frame = $(element);

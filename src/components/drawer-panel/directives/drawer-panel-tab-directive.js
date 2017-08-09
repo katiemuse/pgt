@@ -5,7 +5,7 @@ export default function drawerPanelTab($parse) {
     require: '^drawerPanel',
     restrict: 'EA',
     replace: true,
-    templateUrl: 'components/drawer-panel/partials/drawer-panel-tab.html',
+    template: require('../partials/drawer-panel-tab.html'),
     transclude: true,
     scope: {
       active: '=?',

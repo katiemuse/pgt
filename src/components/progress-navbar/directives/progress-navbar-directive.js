@@ -27,7 +27,7 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
 
   return {
     restrict: 'AE',
-    templateUrl: 'components/progress-navbar/partials/progress-navbar.html',
+    template: require('../partials/progress-navbar.html'),
     scope: {},
     link: scope => {
       if (!isInit) {

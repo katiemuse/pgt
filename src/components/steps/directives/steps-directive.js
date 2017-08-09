@@ -8,7 +8,7 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
     replace: true,
     restrict: 'EA',
     scope: true, // creates an internal scope for this directive
-    templateUrl: 'components/steps/partials/steps.html',
+    template: require('../partials/steps.html'),
     link(scope, elm, attrs) {
       let id = 0;
 
