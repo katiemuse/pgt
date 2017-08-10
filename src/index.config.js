@@ -77,6 +77,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('heroku-connect', {
+      url: '/heroku-connect',
+      views: {
+        monitor: {
+          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.html'),
+          controller: 'HerokuConnectController'
+        },
+        drawer: {
+          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.drawer.html'),
+          controller: 'HerokuConnectDrawerController'
+        },
+        mobile: {
+          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 2;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('setup-a-workflow', {
       url: '/setup-a-workflow',
       views: {
