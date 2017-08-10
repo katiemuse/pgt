@@ -31,7 +31,8 @@ export default function run(
     0: ['intro'],
     1: [
       'add-an-object',
-      'add-an-external-object'
+      'add-an-external-object',
+      'heroku-connect'
     ],
     2: [
       'setup-a-workflow',
@@ -48,26 +49,7 @@ export default function run(
       'engagement-studio-test',
       'engagement-studio-report',
       'set-up-a-lead-nurturing-campaign'
-    ],
-    6: ['assign-your-leads-to-sales', 'complete-action'],
-    7: [
-      'personalized-email',
-      'sales-view-in-salesforce'
-    ],
-    8: [
-      'salesforce-engage',
-      'engage-campaigns',
-      'engage-reports',
-      'select-template'
-    ],
-    9: [
-      'pardot-reporting',
-      'click-through-rate-report',
-      'advanced-email-report',
-      'interaction-report',
-      'email-client-report'
-    ],
-    10: ['the-end']
+    ]
   };
 
   $rootScope.progressIndex = 0;

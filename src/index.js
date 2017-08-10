@@ -56,6 +56,8 @@ import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-
 import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
 import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/2-add-an-external-object.controller';
 import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/2-add-an-external-object.drawer.controller';
+import HerokuConnectController from './app/1-build-a-data-model/controllers/4-heroku-connect.controller';
+import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/4-heroku-connect.drawer.controller';
 import SetupAWorkflowController from './app/2-add-logic/controllers/1-setup-a-workflow.controller';
 import SetupAWorkflowDrawerController from './app/2-add-logic/controllers/1-setup-a-workflow.drawer.controller';
 import ChooseAnObjectForTheProcessController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.controller';
@@ -85,31 +87,6 @@ import EngagementStudioTestDrawerController from './app/5-engagement-studio/cont
 import steplog from './app/5-engagement-studio/factory/engagement-studio-test.factory';
 import EngagementStudioTriggerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.controller';
 import EngagementStudioTriggerDrawerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.drawer.controller';
-import SetUpALeadNurturingCampaignController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.controller';
-import SetUpALeadNurturingCampaignDrawerController from './app/5-set-up-a-lead-nurturing-campaign/controllers/set-up-a-lead-nurturing-campaign.drawer.controller';
-import AssignYourLeadsToSalesController from './app/6-assign-your-leads-to-sales/controllers/assign-your-leads-to-sales.controller';
-import AssignYourLeadsToSalesDrawerController from './app/6-assign-your-leads-to-sales/controllers/assign-your-leads-to-sales.drawer.controller';
-import CompleteActionController from './app/6-assign-your-leads-to-sales/controllers/complete-action.controller';
-import CompleteActionDrawerController from './app/6-assign-your-leads-to-sales/controllers/complete-action.drawer.controller';
-import PersonalizedEmailController from './app/7-sales-view-in-salesforce/controllers/personalized-email.controller';
-import PersonalizedEmailDrawerController from './app/7-sales-view-in-salesforce/controllers/personalized-email.drawer.controller';
-import SalesViewInSalesforceController from './app/7-sales-view-in-salesforce/controllers/sales-view-in-salesforce.controller';
-import SalesViewInSalesforceDrawerController from './app/7-sales-view-in-salesforce/controllers/sales-view-in-salesforce.drawer.controller';
-import EngageCampaignsController from './app/8-salesforce-engage/controllers/engage-campaigns.controller';
-import EngageCampaignsDrawerController from './app/8-salesforce-engage/controllers/engage-campaigns.drawer.controller';
-import MicroCampaignReportingController from './app/8-salesforce-engage/controllers/micro-campaign-reporting.controller';
-import MicroCampaignReportingDrawerController from './app/8-salesforce-engage/controllers/micro-campaign-reporting.drawer.controller';
-import SalesCloudEngageController from './app/8-salesforce-engage/controllers/sales-cloud-engage.controller';
-import SalesCloudEngageDrawerController from './app/8-salesforce-engage/controllers/sales-cloud-engage.drawer.controller';
-import SelectTemplateController from './app/8-salesforce-engage/controllers/select-template.controller';
-import SelectTemplateDrawerController from './app/8-salesforce-engage/controllers/select-template.drawer.controller';
-import AdvancedEmailReportDrawerController from './app/9-pardot-reporting/controllers/advanced-email-report.drawer.controller';
-import ClickThroughRateReportDrawerController from './app/9-pardot-reporting/controllers/click-through-rate-report.drawer.controller';
-import EmailClientReportDrawerController from './app/9-pardot-reporting/controllers/email-client-report.drawer.controller';
-import InteractionReportDrawerController from './app/9-pardot-reporting/controllers/interaction-report.drawer.controller';
-import PardotReportingController from './app/9-pardot-reporting/controllers/pardot-reporting.controller';
-import PardotReportingDrawerController from './app/9-pardot-reporting/controllers/pardot-reporting.drawer.controller';
-import ReportController from './app/9-pardot-reporting/controllers/report.controller';
 
 import './app/vendor.scss';
 import './app/index.scss';
@@ -166,6 +143,8 @@ angular
   .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
   .controller('AddAnExternalObjectController', AddAnExternalObjectController)
   .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
+  .controller('HerokuConnectController', HerokuConnectController)
+  .controller('HerokuConnectDrawerController', HerokuConnectDrawerController)
   .controller('SetupAWorkflowController', SetupAWorkflowController)
   .controller('SetupAWorkflowDrawerController', SetupAWorkflowDrawerController)
   .controller('ChooseAnObjectForTheProcessController', ChooseAnObjectForTheProcessController)
@@ -194,31 +173,6 @@ angular
   .controller('EngagementStudioTestDrawerController', EngagementStudioTestDrawerController)
   .controller('EngagementStudioTriggerController', EngagementStudioTriggerController)
   .controller('EngagementStudioTriggerDrawerController', EngagementStudioTriggerDrawerController)
-  .controller('SetUpALeadNurturingCampaignController', SetUpALeadNurturingCampaignController)
-  .controller('SetUpALeadNurturingCampaignDrawerController', SetUpALeadNurturingCampaignDrawerController)
-  .controller('AssignYourLeadsToSalesDrawerController', AssignYourLeadsToSalesDrawerController)
-  .controller('AssignYourLeadsToSalesController', AssignYourLeadsToSalesController)
-  .controller('CompleteActionController', CompleteActionController)
-  .controller('CompleteActionDrawerController', CompleteActionDrawerController)
-  .controller('PersonalizedEmailController', PersonalizedEmailController)
-  .controller('PersonalizedEmailDrawerController', PersonalizedEmailDrawerController)
-  .controller('SalesViewInSalesforceController', SalesViewInSalesforceController)
-  .controller('SalesViewInSalesforceDrawerController', SalesViewInSalesforceDrawerController)
-  .controller('EngageCampaignsController', EngageCampaignsController)
-  .controller('EngageCampaignsDrawerController', EngageCampaignsDrawerController)
-  .controller('MicroCampaignReportingController', MicroCampaignReportingController)
-  .controller('MicroCampaignReportingDrawerController', MicroCampaignReportingDrawerController)
-  .controller('SalesCloudEngageController', SalesCloudEngageController)
-  .controller('SalesCloudEngageDrawerController', SalesCloudEngageDrawerController)
-  .controller('SelectTemplateController', SelectTemplateController)
-  .controller('SelectTemplateDrawerController', SelectTemplateDrawerController)
-  .controller('AdvancedEmailReportDrawerController', AdvancedEmailReportDrawerController)
-  .controller('ClickThroughRateReportDrawerController', ClickThroughRateReportDrawerController)
-  .controller('EmailClientReportDrawerController', EmailClientReportDrawerController)
-  .controller('InteractionReportDrawerController', InteractionReportDrawerController)
-  .controller('PardotReportingController', PardotReportingController)
-  .controller('PardotReportingDrawerController', PardotReportingDrawerController)
-  .controller('ReportController', ReportController)
   .service('Hotspots', Hotspots)
   .config(routerConfig)
   .run(run);
