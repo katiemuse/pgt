@@ -1,0 +1,77 @@
+<div class="row monitor-height add-an-external-object">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="name" id="name" ng-model="customobj.name" class="text search" maxlength="80" placeholder="Quick Find" disabled>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1" ng-class="{active:bkg.active}">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input type="text" name="name" id="name" ng-model="customobj.name" class="text search" maxlength="80" placeholder="Quick Find" ng-class="{active:!bkg.active}" ng-disabled="bkg.active" li-autofocus="wizard.stateIndex == 1">
+                  </div>
+                </div>
+              </form>
+              <div class="click-box" ng-class="{active:bkg.active}" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3" ng-class="{active:!input.active}">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <!--<label for="name" class="control-label">External Data Source </label>-->
+                  <div class="controls">
+                    <input type="text" name="name" id="name" ng-model="extds.name" class="text" maxlength="80" ng-class="{active:input.active}" li-autofocus="wizard.stateIndex == 3">
+                  </div>
+                </div>
+              </form>
+              <div class="click-box active" ng-click="Next()" ng-class="{active:!input.active}"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="click-box active" wz-next></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
+
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="../../../assets/images/success.png"/>
+                </p>
+                <h2>Success!</h2>
+                <p>
+                  And just like, within a few minutes, we've integrated SAP with Salesforce.
+                </p>
+                <p>
+                  <a ui-sref="setup-a-workflow" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

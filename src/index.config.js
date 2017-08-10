@@ -55,6 +55,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('add-an-external-object', {
+      url: '/add-an-external-object',
+      views: {
+        monitor: {
+          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.html'),
+          controller: 'AddAnExternalObjectController'
+        },
+        drawer: {
+          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.drawer.html'),
+          controller: 'AddAnExternalObjectDrawerController'
+        },
+        mobile: {
+          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 2;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('setup-a-workflow', {
       url: '/setup-a-workflow',
       views: {

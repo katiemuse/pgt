@@ -53,6 +53,8 @@ import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/direct
 import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
 import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-an-object.controller';
 import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
+import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/2-add-an-external-object.controller';
+import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/2-add-an-external-object.drawer.controller';
 import SetupAWorkflowController from './app/2-add-logic/controllers/1-setup-a-workflow.controller';
 import SetupAWorkflowDrawerController from './app/2-add-logic/controllers/1-setup-a-workflow.drawer.controller';
 import ChooseAnObjectForTheProcessController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.controller';
@@ -160,6 +162,8 @@ angular
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('AddAnObjectController', AddAnObjectController)
   .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
+  .controller('AddAnExternalObjectController', AddAnExternalObjectController)
+  .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
   .controller('SetupAWorkflowController', SetupAWorkflowController)
   .controller('SetupAWorkflowDrawerController', SetupAWorkflowDrawerController)
   .controller('ChooseAnObjectForTheProcessController', ChooseAnObjectForTheProcessController)

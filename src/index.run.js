@@ -29,7 +29,10 @@ export default function run(
 
   $rootScope.progressStates = {
     0: ['intro'],
-    1: ['add-an-object'],
+    1: [
+      'add-an-object',
+      'add-an-external-object'
+    ],
     2: [
       'setup-a-workflow',
       'choose-an-object-for-the-process',
