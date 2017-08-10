@@ -13,9 +13,7 @@ export default function wzStep() {
       canexit: '='
     },
     require: '^wizard',
-    templateUrl(attributes) {
-      return attributes.template || 'components/wizard/partials/step.html';
-    },
+    template: require('../partials/step.html'),
     link($scope, $element, $attrs, wizard) {
       $scope.title = $scope.title || $scope.wzTitle;
       wizard.addStep($scope);

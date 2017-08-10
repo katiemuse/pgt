@@ -10,7 +10,7 @@ export default function run(
   $transitions
 ) {
   $rootScope.$state = $state;
-  $rootScope.allowJumpingStories = false;
+  $rootScope.allowJumpingStories = true;
   $rootScope.wizard = {
     stateIndex: -1
   };
