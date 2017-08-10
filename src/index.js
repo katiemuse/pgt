@@ -21,7 +21,8 @@ import {Steps} from './components/steps/services/steps-service';
 import StepsConfig from './components/steps/constants/steps-constant';
 import {TopNavbar} from './components/top-navbar/factories/top-navbar-factory';
 import {Drawer} from './components/drawer/service/drawer-service';
-import {TopNavbarController} from './components/top-navbar/controllers/topNavbar.controller';
+import topNavbar from './components/top-navbar/directives/top-navbar-directive';
+import topNavbarMobile from './components/top-navbar/directives/top-navbar-mobile-directive';
 import {Hotspots} from './components/hotspots/service/hotspots-service';
 import progressNavbar from './components/progress-navbar/directives/progress-navbar-directive';
 import progressDisabledClass from './components/progress-navbar/directives/progress-disabled-class-directive';
@@ -149,6 +150,8 @@ angular
   .directive('wzPrevious', wzPrevious)
   .directive('wzFinish', wzFinish)
   .directive('wzCancel', wzCancel)
+  .directive('topNavbar', topNavbar)
+  .directive('topNavbarMobile', topNavbarMobile)
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
@@ -157,7 +160,6 @@ angular
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   .factory('steplog', steplog)
-  .controller('TopNavbarController', TopNavbarController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('AddAnObjectController', AddAnObjectController)

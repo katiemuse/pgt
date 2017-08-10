@@ -53,7 +53,7 @@
 
       <div class="container-fluid top-nav-container">
         <div class="row">
-          <div ng-include="'components/top-navbar/partials/top-navbar.html'"></div>
+          <top-navbar></top-navbar>
         </div>
       </div>
 
@@ -70,7 +70,7 @@
     <div class="container-fluid main mobile hidden-lg hidden-md" ng-hide="$state.current.name == 'intro'">
       <div class="top-nav-container">
         <div class="row">
-          <div ng-include="'components/top-navbar/partials/top-navbar.mobile.html'"></div>
+          <top-navbar-mobile></top-navbar-mobile>
         </div>
         <div class="row product-tour">
           <div class="col-xs-12">
