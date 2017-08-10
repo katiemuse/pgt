@@ -18,6 +18,10 @@
     background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-5.png') center top no-repeat;
   }
 
+  .step-5  {
+    background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-8.png') center top no-repeat;
+  }
+
   .step-0, .step-1 {
     &.active {
       background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-2.png') center center no-repeat;
@@ -93,7 +97,6 @@
   .step-3 {
     height: 980px !important;
     transition: transform .3s ease-in-out .3s;
-    position: relative;
     .form {
       &.form-horizontal {
         position: absolute;
@@ -131,6 +134,12 @@
   }
 
   .step-4 {
+    &.image1 {
+      background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-6.png') center top no-repeat;
+    }
+    &.image2 {
+      background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-7.png') center top no-repeat;
+    }
     .click-box {
       position: absolute;
       top: 185px;
@@ -141,6 +150,40 @@
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
+      }
+    }
+    .click-box-1 {
+      position: absolute;
+      bottom: 8px;
+      left: 46px;
+      width: 33px;
+      height: 28px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .click-box-2 {
+      position: absolute;
+      bottom: 200px;
+      left: 427px;
+      width: 61px;
+      height: 28px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-5 {
+    .form {
+      &.form-horizontal {
+        position: absolute;
+        bottom: 15px;
+        left: 170px;
       }
     }
   }
