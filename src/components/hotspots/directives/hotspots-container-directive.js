@@ -97,6 +97,6 @@ export default function hotspotsContainer($parse, $rootScope, $interval, $sce, H
         TopNavbar.HotspotsCount = 0;
       };
     },
-    templateUrl: 'components/hotspots/partials/hotspots.html'
+    template: require('../partials/hotspots.html')
   };
 }

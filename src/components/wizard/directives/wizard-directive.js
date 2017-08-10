@@ -17,9 +17,7 @@ export default function wizard() {
       editMode: '=',
       name: '@'
     },
-    templateUrl(attributes) {
-      return attributes.template || 'components/wizard/partials/wizard.html';
-    },
+    template: require('../partials/wizard.html'),
 
     // controller for wizard directive, treat this just like an angular controller
     controller($scope, WizardHandler, TopNavbar, Drawer) {
