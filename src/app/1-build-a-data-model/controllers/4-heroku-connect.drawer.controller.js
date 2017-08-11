@@ -12,22 +12,17 @@ export default function HerokuConnectDrawerController($scope, WizardHandler, Top
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'Object Manager\' tab'
+      title: 'Click on the \'Customer Feedback\' object from the list'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click \'Create\' and select \'Custom object\''
+      title: 'Click the check box next to the ‘Customer Idea’ field'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Label your object, let\'s call it \'Customer Feedback\''
-    });
-
-    Steps.pop({
-      number: 'four',
-      title: 'Click \'Save\''
+      title: 'Click \'Save\' to see the data in action'
     });
 
     Hotspots.clear();

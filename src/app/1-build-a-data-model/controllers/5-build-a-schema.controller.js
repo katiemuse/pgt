@@ -1,13 +1,12 @@
 'use strict';
 
-export default function HerokuConnectController($scope, Steps, Hotspots, WizardHandler, $timeout) {
+export default function BuildASchemaController($scope, Steps, Hotspots, WizardHandler, $timeout) {
   $scope.customobj = {
     name: ''
   };
 
   $scope.button = {
-    show: false,
-    save: false
+    show: false
   };
 
   $scope.label = {
@@ -16,10 +15,6 @@ export default function HerokuConnectController($scope, Steps, Hotspots, WizardH
 
   $scope.ToggleButton = () => {
     $scope.button.show = !$scope.button.show;
-  };
-
-  $scope.ToggleClicked = () => {
-    $scope.button.clicked = !$scope.button.clicked;
   };
 
   $scope.toggleLabel = () => {
