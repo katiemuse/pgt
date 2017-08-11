@@ -22,7 +22,8 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'three',
-      title: 'Here we are going to identify the name of the external data source, select the type of connection we want, and establish the endpoint. Click \'Save\'.'
+      title: 'Let’s label the data source‘SAP’ and select ‘Platform \n' +
+      'Connect: OData 2.0’ as the Type. Then, click ‘Save.’'
     });
 
     Steps.pop({

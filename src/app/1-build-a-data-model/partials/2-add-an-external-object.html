@@ -32,16 +32,17 @@
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3" ng-class="{active:!input.active}">
+            <div class="step step-3" ng-class="{active:scrollstep.active}">
               <form class="form form-horizontal">
                 <div class="control-group">
                   <!--<label for="name" class="control-label">External Data Source </label>-->
                   <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="extds.name" class="text" maxlength="80" ng-class="{active:input.active}" li-autofocus="wizard.stateIndex == 3">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="extds.name" class="text" maxlength="80" ng-class="{active:input.active}" ng-disabled="!input.active" li-autofocus="wizard.stateIndex == 3">
                   </div>
                 </div>
+                <select name="process-starts" id="process-starts" ng-model="process.starts" ng-options="opt as opt.label for opt in processOptions" ng-disabled="!select.active" ng-class="{active:select.active}"></select>
               </form>
-              <div class="click-box" ng-click="Next()" ng-class="{active:!input.active}"></div>
+              <div class="click-box" ng-click="Next()" ng-class="{active:scrollstep.active}"></div>
             </div>
           </wz-step>
           <wz-step>

@@ -13,6 +13,14 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
     active: true
   };
 
+  $scope.select = {
+    active: false
+  };
+
+  $scope.scrollstep = {
+    active: false
+  };
+
   $scope.bkg = {
     active: false
   };
@@ -23,8 +31,26 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
     box3: false
   };
 
+  $scope.processOptions = [
+    {label: '--None--', value: 1},
+    {label: 'Platform Connect: OData 2.0', value: 2}
+  ];
+
+  $scope.process = {
+    name: '',
+    starts: $scope.processOptions[0]
+  };
+
   $scope.toggleScroll = () => {
+    $scope.scrollstep.active = !$scope.scrollstep.active;
+  };
+
+  $scope.toggleInput = () => {
     $scope.input.active = !$scope.input.active;
+  };
+
+  $scope.toggleSelect = () => {
+    $scope.select.active = !$scope.select.active;
   };
 
   $scope.toggleBkg = () => {
@@ -58,9 +84,19 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
     $timeout.cancel(timeoutExtdsName);
     timeoutExtdsName = $timeout(() => {
       if (newValue.length > 2) {
-        $scope.toggleScroll();
+        $scope.toggleInput();
+        $scope.toggleSelect();
       }
     }, delayInMs);
+  });
+
+  $scope.$watch('process.starts', (newValue, oldValue) => {
+    if (newValue !== oldValue) {
+      if (newValue.value === 2) {
+        $scope.toggleSelect();
+        $scope.toggleScroll();
+      }
+    }
   });
 
   $scope.Next = function () {
