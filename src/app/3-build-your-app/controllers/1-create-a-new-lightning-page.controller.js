@@ -1,49 +1,37 @@
 'use strict';
 
-export default function CreateANewLightningPageController($scope, WizardHandler, Steps) {
-  $scope.editor = {
-    selectedTab: 'A',
-    hasToggled: false
+export default function CreateANewLightningPageController($scope, WizardHandler, Steps, $log) {
+  $scope.lightning = {
+    input: ''
   };
 
-  $scope.Save = function () {
-    if (!$scope.editor.hasToggled) {
-      return;
-    }
+  $scope.input = {
+    active: true
+  };
 
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+  $scope.$watch('lightning.input', (newValue, oldValue) => {
+    $log.log(newValue);
+    if (newValue !== oldValue) {
+      if (newValue.toLowerCase() === 'customer feedback loop for pms') {
+        $scope.input.active = false;
+      }
+    }
+  });
+
+  $scope.Next = function () {
+    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
+    if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
-      Steps.clear();
+      Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
-      WizardHandler.wizard('monitor').next();
-      Steps.clear();
-    }
-  };
-
-  $scope.SelectTab = function (tab) {
-    $scope.editor.selectedTab = tab;
-    $scope.editor.hasToggled = true;
-
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
-      WizardHandler.wizard('monitor').next();
       Steps.activate('two');
-      return;
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('three');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('four');
     }
-
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
-      WizardHandler.wizard('monitor').previous();
-      Steps.activate('two');
-      return;
-    }
-  };
-
-  $scope.ToggleEditor = function () {
-    $scope.editor.open = !$scope.editor.open;
-    $scope.showSave = true;
-  };
-
-  $scope.SelectTemplate = function () {
-    $scope.editor.templateSelected = true;
   };
 }

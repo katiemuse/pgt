@@ -5,25 +5,34 @@
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
             <div class="step step-0">
-              <div class="form-actions">
-                <input class="btn btn-primary" type="submit" value="Save" />
-              </div>
+
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="form-actions">
-                <input class="btn btn-highlight transparent active" li-autofocus="wizard.stateIndex == 1" id="b-button" ng-click="SelectTab('B')" type="submit" value="" />
-                <input class="btn btn-primary" ng-class="{active:editor.hasToggled}" type="submit" value="Save" ng-click="Save()" />
-              </div>
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="form-actions">
-                <input class="btn btn-highlight transparent" li-autofocus="wizard.stateIndex == 1" id="a-button" ng-click="SelectTab('A')" type="submit" value="" />
-                <input class="btn btn-primary active" li-autofocus="wizard.stateIndex == 2" ng-click="Save()" type="submit" value="Save" />
-              </div>
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="lightning.input" class="text" maxlength="80" ng-disabled="!input.active" ng-class="{active:input.active}">
+                  </div>
+                </div>
+              </form>
+              <div class="click-box" ng-click="Next()" ng-class="{active:!input.active}"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="click-box active" wz-next></div>
             </div>
           </wz-step>
           <wz-step success="true">

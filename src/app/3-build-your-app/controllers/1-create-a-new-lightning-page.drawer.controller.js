@@ -20,13 +20,11 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
       title: 'Click &lsquo;Save&rsquo; to conduct a rendering test of your emails &mdash; and don\'t forget to check out the on-screen tips before moving on!'
     });
 
-    Steps.clear();
     Steps.pop({
       number: 'three',
       title: 'Type your page label in the open field; let\'s call this ‘Customer Feedback Loop for PMs’. Click ‘Next’'
     });
 
-    Steps.clear();
     Steps.pop({
       number: 'four',
       title: 'We will use the ‘Header and Right Sidebar’ layout choice. Click ‘Finish.’ '
