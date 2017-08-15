@@ -1,6 +1,6 @@
 'use strict';
 
-export default function EmailPreviewController($scope, WizardHandler, Steps, $timeout) {
+export default function CreateAnAppFromBaseAndCustomLightningComponentsController($scope, WizardHandler, Steps, $timeout) {
   $scope.preview = {
     iPhoneSelected: false
   };

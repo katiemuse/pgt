@@ -245,16 +245,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('email-preview', {
-      url: '/email-preview',
+    .state('create-an-app-from-base-and-custom-lightning-components', {
+      url: '/create-an-app-from-base-and-custom-lightning-components',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/email-preview.html'),
-          controller: 'EmailPreviewController'
+          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.html'),
+          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/email-preview.drawer.html'),
-          controller: 'EmailPreviewDrawerController'
+          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.drawer.html'),
+          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsDrawerController'
         },
         mobile: {
           template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
