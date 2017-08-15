@@ -12,17 +12,17 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: ''
+      title: 'TBD: Drag Report chart in to first square'
     });
 
     Steps.pop({
       number: 'two',
-      title: ''
+      title: 'TBD: Type "customer service cases" in the textbox'
     });
 
     Steps.pop({
       number: 'three',
-      title: ''
+      title: 'TBD: Select "case" from drop down'
     });
 
     Steps.pop({
