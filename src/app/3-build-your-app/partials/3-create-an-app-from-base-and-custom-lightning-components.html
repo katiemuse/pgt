@@ -10,12 +10,9 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart-drag.png"
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
                    alt="report chart drag" class="report-chart-drag" ng-class="{active:!reportchart.active}">
-              <div class="drop-box active"></div>
-              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart.png"
-                   alt="report chart"
-                   class="report-chart" ng-show="reportchart.active">
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'Next'}"></div>
             </div>
           </wz-step>
           <wz-step>

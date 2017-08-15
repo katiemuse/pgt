@@ -1,6 +1,11 @@
 'use strict';
 
-export default function CreateAnAppFromBaseAndCustomLightningComponentsController($scope, WizardHandler, Steps) {
+export default function CreateAnAppFromBaseAndCustomLightningComponentsController($scope, WizardHandler, Steps, $log) {
+
+  $scope.label = {
+    input: ''
+  };
+
   $scope.search = {
     input: ''
   };
@@ -29,8 +34,9 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
 
   $scope.$watch('label.input', (newValue, oldValue) => {
     if (newValue !== oldValue) {
+      $log.log('value changed', newValue);
       if (newValue.toLowerCase() === 'customer service cases') {
-        if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+        if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
           WizardHandler.wizard('monitor').next();
         }
       }
