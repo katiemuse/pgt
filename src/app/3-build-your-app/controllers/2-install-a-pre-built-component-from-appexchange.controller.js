@@ -1,6 +1,6 @@
 'use strict';
 
-export default function BuildAnEmailController($scope, WizardHandler, Steps, $timeout) {
+export default function InstallAPreBuiltComponentFromAppexchangeController($scope, WizardHandler, Steps, $timeout) {
   $scope.editor = {
     templateSelected: false,
     open: false,

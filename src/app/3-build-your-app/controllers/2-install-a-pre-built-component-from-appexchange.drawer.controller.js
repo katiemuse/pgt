@@ -1,6 +1,6 @@
 'use strict';
 
-export default function BuildAnEmailDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function InstallAPreBuiltComponentFromAppexchangeDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 

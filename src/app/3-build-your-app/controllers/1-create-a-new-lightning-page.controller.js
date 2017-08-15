@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateANewLightningPageController($scope, WizardHandler, Steps, $log) {
+export default function CreateANewLightningPageController($scope, WizardHandler, Steps) {
   $scope.lightning = {
     input: ''
   };
@@ -10,7 +10,6 @@ export default function CreateANewLightningPageController($scope, WizardHandler,
   };
 
   $scope.$watch('lightning.input', (newValue, oldValue) => {
-    $log.log(newValue);
     if (newValue !== oldValue) {
       if (newValue.toLowerCase() === 'customer feedback loop for pms') {
         $scope.input.active = false;

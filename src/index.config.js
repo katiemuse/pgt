@@ -215,7 +215,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateANewLightningPageDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -224,19 +224,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('build-an-email', {
-      url: '/build-an-email',
+    .state('install-a-pre-built-component-from-appexchange', {
+      url: '/install-a-pre-built-component-from-appexchange',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/build-an-email.html'),
-          controller: 'BuildAnEmailController'
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.html'),
+          controller: 'InstallAPreBuiltComponentFromAppexchangeController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/build-an-email.drawer.html'),
-          controller: 'BuildAnEmailDrawerController'
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.drawer.html'),
+          controller: 'InstallAPreBuiltComponentFromAppexchangeDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -257,7 +257,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'EmailPreviewDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -278,7 +278,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'SendEmailDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {

@@ -70,8 +70,8 @@ import AddActionsController from './app/2-add-logic/controllers/4-add-actions.co
 import AddActionsDrawerController from './app/2-add-logic/controllers/4-add-actions.drawer.controller';
 import CreateANewLightningPageController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.controller';
 import CreateANewLightningPageDrawerController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.drawer.controller';
-import BuildAnEmailController from './app/3-build-your-app/controllers/build-an-email.controller';
-import BuildAnEmailDrawerController from './app/3-build-your-app/controllers/build-an-email.drawer.controller';
+import InstallAPreBuiltComponentFromAppexchangeController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.controller';
+import InstallAPreBuiltComponentFromAppexchangeDrawerController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.drawer.controller';
 import EmailPreviewController from './app/3-build-your-app/controllers/email-preview.controller';
 import EmailPreviewDrawerController from './app/3-build-your-app/controllers/email-preview.drawer.controller';
 import SendEmailController from './app/3-build-your-app/controllers/send-email.controller';
@@ -159,8 +159,8 @@ angular
   .controller('AddActionsDrawerController', AddActionsDrawerController)
   .controller('CreateANewLightningPageController', CreateANewLightningPageController)
   .controller('CreateANewLightningPageDrawerController', CreateANewLightningPageDrawerController)
-  .controller('BuildAnEmailController', BuildAnEmailController)
-  .controller('BuildAnEmailDrawerController', BuildAnEmailDrawerController)
+  .controller('InstallAPreBuiltComponentFromAppexchangeController', InstallAPreBuiltComponentFromAppexchangeController)
+  .controller('InstallAPreBuiltComponentFromAppexchangeDrawerController', InstallAPreBuiltComponentFromAppexchangeDrawerController)
   .controller('EmailPreviewController', EmailPreviewController)
   .controller('EmailPreviewDrawerController', EmailPreviewDrawerController)
   .controller('SendEmailController', SendEmailController)
