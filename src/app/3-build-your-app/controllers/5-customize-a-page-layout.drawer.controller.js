@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateANewLightningPageDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function CustomizeAPageLayoutDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 

@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateANewLightningPageController($scope, WizardHandler, Steps) {
+export default function CustomizeAPageLayoutController($scope, WizardHandler, Steps) {
   $scope.lightning = {
     input: ''
   };

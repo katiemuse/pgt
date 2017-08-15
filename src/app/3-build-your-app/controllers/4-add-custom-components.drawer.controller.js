@@ -1,6 +1,6 @@
 'use strict';
 
-export default function SendEmailDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function AddCustomComponentsDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   TopNavbar.InfoActive = true;
 
   $scope.beginStory = function () {

@@ -1,7 +1,7 @@
 'use strict';
 
-export default function CreateANewLightningPageController($scope, WizardHandler, Steps) {
-  $scope.lightning = {
+export default function InstallAPreBuiltComponentFromAppexchangeController($scope, WizardHandler, Steps) {
+  $scope.search = {
     input: ''
   };
 
@@ -9,10 +9,11 @@ export default function CreateANewLightningPageController($scope, WizardHandler,
     active: true
   };
 
-  $scope.$watch('lightning.input', (newValue, oldValue) => {
+  $scope.$watch('search.input', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer feedback loop for pms') {
-        $scope.input.active = false;
+      if (newValue.toLowerCase() === 'ideas') {
+        WizardHandler.wizard('monitor').next();
+        Steps.activate('three');
       }
     }
   });

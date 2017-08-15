@@ -1,5 +1,10 @@
-<div class="drawer-content send-email-drawer">
+<div class="drawer-content build-an-email-drawer">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <h2>Install a Pre-Built Component from AppExchange </h2>
+    <p>The Lightning App Builder already comes equipped with a library of powerful standard components. With the AppExchange, we can expand that library with custom-built components, no coding skills required. Let's explore.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+    </p>
   </div>
 
   <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
@@ -11,10 +16,6 @@
     </div>
 
     <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
-      <drawer-panel-tab heading="01">
-        <h2>Email Sending Lists</h2>
-        <p>Email sending isn’t limited to a single list. You can select multiple lists to send your emails to, as shown here. You also have the option to remove lists in Pardot by clicking &ldquo;x.&rdquo;</p>
-      </drawer-panel-tab>
     </drawer-panel>
   </div>
 
@@ -29,8 +30,16 @@
     <drawer-panel class="panel-did-you-know" type="did-you-know">
       <drawer-panel-tab heading="01">
         <h2>Did You Know?</h2>
-        <p>Pardot gives you the ability to segment your database into targeted lists that can be used to send highly personalized emails. </p>
-        <p>Segment your email recipients based on job title, industry, geography, and a number of other criteria.</p>
+        <p>
+         Pardot also comes with a number of responsive email templates that will ensure your emails display correctly across all devices.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Did You Know?</h2>
+        <img src="../../../assets/images/stories/3-build-an-email/3-drawer-html-editor.jpg"/>
+        <p>
+          While Pardot comes with a number of pre-made templates for you to choose from, you can also use custom HTML to create templates of you own.
+        </p>
       </drawer-panel-tab>
     </drawer-panel>
   </div>

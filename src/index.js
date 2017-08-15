@@ -73,12 +73,14 @@ import AddActionsController from './app/2-add-logic/controllers/4-add-actions.co
 import AddActionsDrawerController from './app/2-add-logic/controllers/4-add-actions.drawer.controller';
 import CreateANewLightningPageController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.controller';
 import CreateANewLightningPageDrawerController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.drawer.controller';
-import BuildAnEmailController from './app/3-build-your-app/controllers/build-an-email.controller';
-import BuildAnEmailDrawerController from './app/3-build-your-app/controllers/build-an-email.drawer.controller';
-import EmailPreviewController from './app/3-build-your-app/controllers/email-preview.controller';
-import EmailPreviewDrawerController from './app/3-build-your-app/controllers/email-preview.drawer.controller';
-import SendEmailController from './app/3-build-your-app/controllers/send-email.controller';
-import SendEmailDrawerController from './app/3-build-your-app/controllers/send-email.drawer.controller';
+import InstallAPreBuiltComponentFromAppexchangeController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.controller';
+import InstallAPreBuiltComponentFromAppexchangeDrawerController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.drawer.controller';
+import CreateAnAppFromBaseAndCustomLightningComponentsController from './app/3-build-your-app/controllers/3-create-an-app-from-base-and-custom-lightning-components.controller';
+import CreateAnAppFromBaseAndCustomLightningComponentsDrawerController from './app/3-build-your-app/controllers/3-create-an-app-from-base-and-custom-lightning-components.drawer.controller';
+import AddCustomComponentsController from './app/3-build-your-app/controllers/4-add-custom-components.controller';
+import AddCustomComponentsDrawerController from './app/3-build-your-app/controllers/4-add-custom-components.drawer.controller';
+import CustomizeAPageLayoutController from './app/3-build-your-app/controllers/5-customize-a-page-layout.controller';
+import CustomizeAPageLayoutDrawerController from './app/3-build-your-app/controllers/5-customize-a-page-layout.drawer.controller';
 import ViewAProspectProfileController from './app/4-customize-mobile/controllers/view-a-prospect-profile.controller';
 import ViewAProspectProfileDrawerController from './app/4-customize-mobile/controllers/view-a-prospect-profile.drawer.controller';
 import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
@@ -162,12 +164,14 @@ angular
   .controller('AddActionsDrawerController', AddActionsDrawerController)
   .controller('CreateANewLightningPageController', CreateANewLightningPageController)
   .controller('CreateANewLightningPageDrawerController', CreateANewLightningPageDrawerController)
-  .controller('BuildAnEmailController', BuildAnEmailController)
-  .controller('BuildAnEmailDrawerController', BuildAnEmailDrawerController)
-  .controller('EmailPreviewController', EmailPreviewController)
-  .controller('EmailPreviewDrawerController', EmailPreviewDrawerController)
-  .controller('SendEmailController', SendEmailController)
-  .controller('SendEmailDrawerController', SendEmailDrawerController)
+  .controller('InstallAPreBuiltComponentFromAppexchangeController', InstallAPreBuiltComponentFromAppexchangeController)
+  .controller('InstallAPreBuiltComponentFromAppexchangeDrawerController', InstallAPreBuiltComponentFromAppexchangeDrawerController)
+  .controller('CreateAnAppFromBaseAndCustomLightningComponentsController', CreateAnAppFromBaseAndCustomLightningComponentsController)
+  .controller('CreateAnAppFromBaseAndCustomLightningComponentsDrawerController', CreateAnAppFromBaseAndCustomLightningComponentsDrawerController)
+  .controller('AddCustomComponentsController', AddCustomComponentsController)
+  .controller('AddCustomComponentsDrawerController', AddCustomComponentsDrawerController)
+  .controller('CustomizeAPageLayoutController', CustomizeAPageLayoutController)
+  .controller('CustomizeAPageLayoutDrawerController', CustomizeAPageLayoutDrawerController)
   .controller('ViewAProspectProfileController', ViewAProspectProfileController)
   .controller('ViewAProspectProfileDrawerController', ViewAProspectProfileDrawerController)
   .controller('EngagementStudioController', EngagementStudioController)

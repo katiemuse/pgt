@@ -1,0 +1,94 @@
+@import '../../base';
+
+.build-an-email {
+
+  .step-0, .step-1 {
+    background: url('../app/3-build-your-app/assets/2-install-a-pre-built-component-from-appexchange-screen-bkg-1.png') center center no-repeat;
+  }
+
+  .step-2 {
+    background: url('../app/3-build-your-app/assets/2-install-a-pre-built-component-from-appexchange-screen-bkg-2.png') left center no-repeat;
+  }
+
+  .step-3 {
+    background: url('../app/3-build-your-app/assets/2-install-a-pre-built-component-from-appexchange-screen-bkg-3.png') center center no-repeat;
+  }
+
+  .step-4 {
+    background: url('../app/3-build-your-app/assets/2-install-a-pre-built-component-from-appexchange-screen-bkg-4.png') center center no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
+      position: absolute;
+      top: 451px;
+      left: 10px;
+      width: 188px;
+      height: 30px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-2, .step-3 {
+    .form {
+      &.form-horizontal {
+        position: absolute;
+        top: 58px;
+        left: 246px;
+        .controls {
+          input {
+            &.text {
+              width: 292px;
+              border-radius: 4px;
+              background-image: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='1792' height='1792' viewBox='0 0 1792 1792'><path fill='#444' d='M1216 832q0-185-131.5-316.5t-316.5-131.5-316.5 131.5-131.5 316.5 131.5 316.5 316.5 131.5 316.5-131.5 131.5-316.5zm512 832q0 52-38 90t-90 38q-54 0-90-38l-343-342q-179 124-399 124-143 0-273.5-55.5t-225-150-150-225-55.5-273.5 55.5-273.5 150-225 225-150 273.5-55.5 273.5 55.5 225 150 150 225 55.5 273.5q0 220-124 399l343 343q37 37 37 90z'></path></svg>");
+              background-size: 12px;
+              background-position: 5% 50%;
+              background-repeat: no-repeat;
+              padding-left: 45px;
+              font-size: 12px;
+              height: 32px;
+              &::placeholder {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .step-3 {
+    .click-box {
+      position: absolute;
+      top: 211px;
+      left: 95px;
+      width: 134px;
+      height: 75px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-4 {
+    .click-box {
+      position: absolute;
+      bottom: 34px;
+      right: 84px;
+      width: 109px;
+      height: 31px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

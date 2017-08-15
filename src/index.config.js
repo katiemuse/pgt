@@ -215,7 +215,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateANewLightningPageDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -224,19 +224,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('build-an-email', {
-      url: '/build-an-email',
+    .state('install-a-pre-built-component-from-appexchange', {
+      url: '/install-a-pre-built-component-from-appexchange',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/build-an-email.html'),
-          controller: 'BuildAnEmailController'
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.html'),
+          controller: 'InstallAPreBuiltComponentFromAppexchangeController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/build-an-email.drawer.html'),
-          controller: 'BuildAnEmailDrawerController'
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.drawer.html'),
+          controller: 'InstallAPreBuiltComponentFromAppexchangeDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -245,19 +245,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('email-preview', {
-      url: '/email-preview',
+    .state('create-an-app-from-base-and-custom-lightning-components', {
+      url: '/create-an-app-from-base-and-custom-lightning-components',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/email-preview.html'),
-          controller: 'EmailPreviewController'
+          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.html'),
+          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/email-preview.drawer.html'),
-          controller: 'EmailPreviewDrawerController'
+          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.drawer.html'),
+          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -266,19 +266,40 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('send-email', {
-      url: '/send-email',
+    .state('add-custom-components', {
+      url: '/add-custom-components',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/send-email.html'),
-          controller: 'SendEmailController'
+          template: require('./app/3-build-your-app/partials/4-add-custom-components.html'),
+          controller: 'AddCustomComponentsController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/send-email.drawer.html'),
-          controller: 'SendEmailDrawerController'
+          template: require('./app/3-build-your-app/partials/4-add-custom-components.drawer.html'),
+          controller: 'AddCustomComponentsDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 1;
+        TopNavbar.HotspotsCount = 1;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
+    .state('customize-a-page-layout', {
+      url: '/customize-a-page-layout',
+      views: {
+        monitor: {
+          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.html'),
+          controller: 'CustomizeAPageLayoutController'
+        },
+        drawer: {
+          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.drawer.html'),
+          controller: 'CustomizeAPageLayoutDrawerController'
+        },
+        mobile: {
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
         }
       },
       onEnter(TopNavbar) {
