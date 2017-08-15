@@ -12,30 +12,22 @@ export default function InstallAPreBuiltComponentFromAppexchangeDrawerController
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Select the highlighted template, then click &lsquo;Apply&rsquo;.',
-      clickHandler() {
-        // console.log('clicked step', step);
-        return false;
-      }
+      title: 'Click ‘Get more on the AppExchange’ '
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Pardot\'s WYSIWYG email builder works similarly to the landing page builder you used in step two.<br/><br/>' +
-      'Click on the text to view the content editor where you can edit the autoresponder email in real time.',
-      clickHandler() {
-        // console.log('clicked step', step);
-        return false;
-      }
+      title: 'In the search bar, type ‘Ideas’ and hit enter'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'When you are done, Click &lsquo;Save&rsquo;.',
-      clickHandler() {
-        // console.log('clicked step', step);
-        return false;
-      }
+      title: 'Select ‘Community Idea’ from search results'
+    });
+
+    Steps.pop({
+      number: 'four',
+      title: 'Click ‘Get It Now’'
     });
 
     Hotspots.clear();

@@ -1,29 +1,10 @@
 <div class="drawer-content build-an-email-drawer">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
-
-    <wizard name="drawer" on-finish="beginStory()">
-      <wz-step>
-        <h2>Build an Email</h2>
-        <p>At this point, you've created your form and your landing page &mdash; but whats happens when a user submits their information?</p>
-        <p class="continue">
-            <a class="btn btn-rounded blue next" wz-next >Next</a>
-        </p>
-      </wz-step>
-      <wz-step>
-        <h2>Build an Email</h2>
-        <p>Within minutes, your buyer will have a Pardot autoresponder email containing the exact resource they requested waiting in their inbox. These emails are triggered by form submissions so that they'll automatically deploy &mdash; no manual sending required. But before that can happen, we have to create that email using Pardot's WYSIWYG email builder.</p>
-        <p class="continue">
-          <a class="btn btn-rounded blue next" wz-next >Next</a>
-        </p>
-      </wz-step>
-      <wz-step>
-        <h2>Build an Email</h2>
-        <p>Let's start by choosing an email template. Pardot comes with more than forty email templates out of the box, but for the purpose of this exercise, we'll be using the first template highlighted here.</p>
-        <p class="continue">
-          <a class="btn btn-continue" wz-next >Continue</a>
-        </p>
-      </wz-step>
-    </wizard>
+    <h2>Install a Pre-Built Component from AppExchange </h2>
+    <p>The Lightning App Builder already comes equipped with a library of powerful standard components. With the AppExchange, we can expand that library with custom-built components, no coding skills required. Let's explore.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+    </p>
   </div>
 
   <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">

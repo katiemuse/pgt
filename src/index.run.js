@@ -41,7 +41,10 @@ export default function run(
       'add-criteria',
       'add-actions'
     ],
-    3: ['create-a-new-lightning-page'],
+    3: [
+      'create-a-new-lightning-page',
+      'install-a-pre-built-component-from-appexchange'
+    ],
     4: ['view-a-prospect-profile'],
     5: [
       'engagement-studio',

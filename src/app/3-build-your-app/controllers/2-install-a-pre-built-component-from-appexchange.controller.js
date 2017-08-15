@@ -1,44 +1,37 @@
 'use strict';
 
-export default function InstallAPreBuiltComponentFromAppexchangeController($scope, WizardHandler, Steps, $timeout) {
-  $scope.editor = {
-    templateSelected: false,
-    open: false,
-    html:
-      '<h2>Going Green Without a Lot of Gold</h2><p>LenoxSoft comes complete with a suite of powerful features that can help you get the most out of your energy usage. Tailor your energy management software to your exact specifications &mdash; without any IT headaches.</p>',
-    showSave: false
-
+export default function InstallAPreBuiltComponentFromAppexchangeController($scope, WizardHandler, Steps) {
+  $scope.search = {
+    input: ''
   };
 
-  $scope.Apply = function () {
-    if ($scope.editor.templateSelected) {
-      if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
+  $scope.input = {
+    active: true
+  };
+
+  $scope.$watch('search.input', (newValue, oldValue) => {
+    if (newValue !== oldValue) {
+      if (newValue.toLowerCase() === 'ideas') {
         WizardHandler.wizard('monitor').next();
-        Steps.activate('two');
-      }
-    }
-  };
-
-  $scope.ToggleEditor = function () {
-    $scope.editor.open = !$scope.editor.open;
-    $scope.editor.showSave = true;
-  };
-
-  $scope.$watch('editor.showSave', newValue => {
-    if (newValue) {
-      if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
         Steps.activate('three');
       }
     }
   });
 
-  $scope.SelectTemplate = function () {
-    $scope.editor.templateSelected = true;
-  };
-
-  $scope.BuildEmailSuccess = function () {
-    $timeout(() => {
-      Steps.clear();
-    }, 0);
+  $scope.Next = function () {
+    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
+    if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('one');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('two');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('three');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('four');
+    }
   };
 }
