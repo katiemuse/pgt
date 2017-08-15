@@ -109,11 +109,33 @@
       width: 198px;
       height: 19px;
       border-radius: 5px;
+
+      &.lookup {
+        background-image:url('../app/1-build-a-data-model/assets/5-build-a-schema-lookup.png');
+        width: 197px;
+        height: 17px;
+        background-size: cover;
+      }
+
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
       }
     }
+
+
+
+    .customer-feedback {
+      position: absolute;
+      top: 203px;
+      right: 295px;
+
+      &.ui-droppable-active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+
   }
 
   .step-5 {

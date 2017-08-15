@@ -1,4 +1,5 @@
 'use strict';
+
 require('jquery');
 import 'jquery-ui/ui/core';
 import 'jquery-ui/ui/widgets/selectable';
@@ -12,7 +13,9 @@ import 'angular-touch';
 import 'angular-sanitize';
 import 'angular-resource';
 import 'angular-ui-router';
-import 'angular-ui-sortable';
+// import 'angular-ui-sortable';
+import 'angular-dragdrop';
+
 // import 'textangular';
 // import 'textAngular/dist/textAngular-sanitize';
 import run from './index.run';
@@ -103,7 +106,7 @@ angular
     'ngSanitize',
     'ngResource',
     'ui.router',
-    'ui.sortable'
+    'ngDragDrop'
   ])
   .constant('stepsConfig', StepsConfig)
   .constant('drawerPanelConfig', drawerPanelConfig)

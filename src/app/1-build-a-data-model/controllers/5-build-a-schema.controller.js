@@ -16,6 +16,10 @@ export default function BuildASchemaController($scope, Steps, Hotspots, WizardHa
     active: true
   };
 
+  $scope.drag = {
+    dropped: false
+  };
+
   $scope.orderOptions = [
     {label: '--None--', value: 1},
     {label: 'Customer Feedback', value: 2}
@@ -51,6 +55,7 @@ export default function BuildASchemaController($scope, Steps, Hotspots, WizardHa
   });
 
   $scope.Next = function () {
+    debugger;
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
