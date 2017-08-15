@@ -203,40 +203,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsCount = 0;
       }
     })
-    .state('build-an-email', {
-      url: '/build-an-email',
+    .state('create-a-new-lightning-page', {
+      url: '/create-a-new-lightning-page',
       views: {
         monitor: {
-          template: require('./app/3-build-an-email/partials/build-an-email.html'),
-          controller: 'BuildAnEmailController'
+          template: require('./app/3-build-your-app/partials/1-create-a-new-lightning-page.html'),
+          controller: 'CreateANewLightningPageController'
         },
         drawer: {
-          template: require('./app/3-build-an-email/partials/build-an-email.drawer.html'),
-          controller: 'BuildAnEmailDrawerController'
+          template: require('./app/3-build-your-app/partials/1-create-a-new-lightning-page.drawer.html'),
+          controller: 'CreateANewLightningPageDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-an-email/partials/build-an-email.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
-      }
-    })
-    .state('a-b-testing', {
-      url: '/a-b-testing',
-      views: {
-        monitor: {
-          template: require('./app/3-build-an-email/partials/a-b-testing.html'),
-          controller: 'ABTestingController'
-        },
-        drawer: {
-          template: require('./app/3-build-an-email/partials/a-b-testing.drawer.html'),
-          controller: 'ABTestingDrawerController'
-        },
-        mobile: {
-          template: require('./app/3-build-an-email/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -245,19 +224,40 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
+    .state('build-an-email', {
+      url: '/build-an-email',
+      views: {
+        monitor: {
+          template: require('./app/3-build-your-app/partials/build-an-email.html'),
+          controller: 'BuildAnEmailController'
+        },
+        drawer: {
+          template: require('./app/3-build-your-app/partials/build-an-email.drawer.html'),
+          controller: 'BuildAnEmailDrawerController'
+        },
+        mobile: {
+          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 2;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
+      }
+    })
     .state('email-preview', {
       url: '/email-preview',
       views: {
         monitor: {
-          template: require('./app/3-build-an-email/partials/email-preview.html'),
+          template: require('./app/3-build-your-app/partials/email-preview.html'),
           controller: 'EmailPreviewController'
         },
         drawer: {
-          template: require('./app/3-build-an-email/partials/email-preview.drawer.html'),
+          template: require('./app/3-build-your-app/partials/email-preview.drawer.html'),
           controller: 'EmailPreviewDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-an-email/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -270,15 +270,15 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/send-email',
       views: {
         monitor: {
-          template: require('./app/3-build-an-email/partials/send-email.html'),
+          template: require('./app/3-build-your-app/partials/send-email.html'),
           controller: 'SendEmailController'
         },
         drawer: {
-          template: require('./app/3-build-an-email/partials/send-email.drawer.html'),
+          template: require('./app/3-build-your-app/partials/send-email.drawer.html'),
           controller: 'SendEmailDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-an-email/partials/build-an-email.mobile.html')
+          template: require('./app/3-build-your-app/partials/build-an-email.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -291,15 +291,15 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/view-a-prospect-profile',
       views: {
         monitor: {
-          template: require('./app/4-view-a-prospect-profile/partials/view-a-prospect-profile.html'),
+          template: require('./app/4-customize-mobile/partials/view-a-prospect-profile.html'),
           controller: 'ViewAProspectProfileController'
         },
         drawer: {
-          template: require('./app/4-view-a-prospect-profile/partials/view-a-prospect-profile.drawer.html'),
+          template: require('./app/4-customize-mobile/partials/view-a-prospect-profile.drawer.html'),
           controller: 'ViewAProspectProfileDrawerController'
         },
         mobile: {
-          template: require('./app/4-view-a-prospect-profile/partials/view-a-prospect-profile.mobile.html')
+          template: require('./app/4-customize-mobile/partials/view-a-prospect-profile.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -312,16 +312,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/engagement-studio',
       views: {
         monitor: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio.html'),
           controller: 'EngagementStudioController'
 
         },
         drawer: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.drawer.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio.drawer.html'),
           controller: 'EngagementStudioDrawerController'
         },
         mobile: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.mobile.html')
+          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -334,16 +334,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/engagement-studio-trigger',
       views: {
         monitor: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-trigger.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-trigger.html'),
           controller: 'EngagementStudioTriggerController'
 
         },
         drawer: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-trigger.drawer.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-trigger.drawer.html'),
           controller: 'EngagementStudioTriggerDrawerController'
         },
         mobile: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.mobile.html')
+          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -356,16 +356,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/engagement-studio-rule',
       views: {
         monitor: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-rule.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-rule.html'),
           controller: 'EngagementStudioRuleController'
 
         },
         drawer: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-rule.drawer.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-rule.drawer.html'),
           controller: 'EngagementStudioRuleDrawerController'
         },
         mobile: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.mobile.html')
+          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -378,16 +378,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/engagement-studio-test',
       views: {
         monitor: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-test.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-test.html'),
           controller: 'EngagementStudioTestController'
 
         },
         drawer: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-test.drawer.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-test.drawer.html'),
           controller: 'EngagementStudioTestDrawerController'
         },
         mobile: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.mobile.html')
+          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -400,16 +400,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/engagement-studio-report',
       views: {
         monitor: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-report.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-report.html'),
           controller: 'EngagementStudioReportController'
 
         },
         drawer: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio-report.drawer.html'),
+          template: require('./app/5-in-the-field/partials/engagement-studio-report.drawer.html'),
           controller: 'EngagementStudioReportDrawerController'
         },
         mobile: {
-          template: require('./app/5-engagement-studio/partials/engagement-studio.mobile.html')
+          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
         }
       },
       onEnter(TopNavbar) {

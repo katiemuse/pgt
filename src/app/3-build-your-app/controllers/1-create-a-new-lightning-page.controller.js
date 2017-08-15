@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ABTestingController($scope, WizardHandler, Steps) {
+export default function CreateANewLightningPageController($scope, WizardHandler, Steps) {
   $scope.editor = {
     selectedTab: 'A',
     hasToggled: false

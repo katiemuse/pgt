@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ABTestingDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function CreateANewLightningPageDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
@@ -12,12 +12,24 @@ export default function ABTestingDrawerController($scope, WizardHandler, TopNavb
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Toggle between two different versions of your email by clicking on the &ldquo;A&rdquo; or &ldquo;B&rdquo; at the top of the email screen to the left. Notice that the header image is different in each email.'
+      title: 'Click \'New\''
     });
 
     Steps.pop({
       number: 'two',
       title: 'Click &lsquo;Save&rsquo; to conduct a rendering test of your emails &mdash; and don\'t forget to check out the on-screen tips before moving on!'
+    });
+
+    Steps.clear();
+    Steps.pop({
+      number: 'three',
+      title: 'Type your page label in the open field; let\'s call this ‘Customer Feedback Loop for PMs’. Click ‘Next’'
+    });
+
+    Steps.clear();
+    Steps.pop({
+      number: 'four',
+      title: 'We will use the ‘Header and Right Sidebar’ layout choice. Click ‘Finish.’ '
     });
 
     Hotspots.clear();

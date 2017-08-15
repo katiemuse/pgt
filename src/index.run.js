@@ -41,7 +41,7 @@ export default function run(
       'add-criteria',
       'add-actions'
     ],
-    3: ['build-an-email', 'a-b-testing', 'email-preview', 'send-email'],
+    3: ['create-a-new-lightning-page'],
     4: ['view-a-prospect-profile'],
     5: [
       'engagement-studio',

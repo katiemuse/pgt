@@ -68,27 +68,27 @@ import AddCriteriaController from './app/2-add-logic/controllers/3-add-criteria.
 import AddCriteriaDrawerController from './app/2-add-logic/controllers/3-add-criteria.drawer.controller';
 import AddActionsController from './app/2-add-logic/controllers/4-add-actions.controller';
 import AddActionsDrawerController from './app/2-add-logic/controllers/4-add-actions.drawer.controller';
-import ABTestingController from './app/3-build-an-email/controllers/a-b-testing.controller';
-import ABTestingDrawerController from './app/3-build-an-email/controllers/a-b-testing.drawer.controller';
-import BuildAnEmailController from './app/3-build-an-email/controllers/build-an-email.controller';
-import BuildAnEmailDrawerController from './app/3-build-an-email/controllers/build-an-email.drawer.controller';
-import EmailPreviewController from './app/3-build-an-email/controllers/email-preview.controller';
-import EmailPreviewDrawerController from './app/3-build-an-email/controllers/email-preview.drawer.controller';
-import SendEmailController from './app/3-build-an-email/controllers/send-email.controller';
-import SendEmailDrawerController from './app/3-build-an-email/controllers/send-email.drawer.controller';
-import ViewAProspectProfileController from './app/4-view-a-prospect-profile/controllers/view-a-prospect-profile.controller';
-import ViewAProspectProfileDrawerController from './app/4-view-a-prospect-profile/controllers/view-a-prospect-profile.drawer.controller';
-import EngagementStudioController from './app/5-engagement-studio/controllers/engagement-studio.controller';
-import EngagementStudioDrawerController from './app/5-engagement-studio/controllers/engagement-studio.drawer.controller';
-import EngagementStudioReportController from './app/5-engagement-studio/controllers/engagement-studio-report.controller';
-import EngagementStudioReportDrawerController from './app/5-engagement-studio/controllers/engagement-studio-report.drawer.controller';
-import EngagementStudioRuleController from './app/5-engagement-studio/controllers/engagement-studio-rule.controller';
-import EngagementStudioRuleDrawerController from './app/5-engagement-studio/controllers/engagement-studio-rule.drawer.controller';
-import EngagementStudioTestController from './app/5-engagement-studio/controllers/engagement-studio-test.controller';
-import EngagementStudioTestDrawerController from './app/5-engagement-studio/controllers/engagement-studio-test.drawer.controller';
-import steplog from './app/5-engagement-studio/factory/engagement-studio-test.factory';
-import EngagementStudioTriggerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.controller';
-import EngagementStudioTriggerDrawerController from './app/5-engagement-studio/controllers/engagement-studio-trigger.drawer.controller';
+import CreateANewLightningPageController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.controller';
+import CreateANewLightningPageDrawerController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.drawer.controller';
+import BuildAnEmailController from './app/3-build-your-app/controllers/build-an-email.controller';
+import BuildAnEmailDrawerController from './app/3-build-your-app/controllers/build-an-email.drawer.controller';
+import EmailPreviewController from './app/3-build-your-app/controllers/email-preview.controller';
+import EmailPreviewDrawerController from './app/3-build-your-app/controllers/email-preview.drawer.controller';
+import SendEmailController from './app/3-build-your-app/controllers/send-email.controller';
+import SendEmailDrawerController from './app/3-build-your-app/controllers/send-email.drawer.controller';
+import ViewAProspectProfileController from './app/4-customize-mobile/controllers/view-a-prospect-profile.controller';
+import ViewAProspectProfileDrawerController from './app/4-customize-mobile/controllers/view-a-prospect-profile.drawer.controller';
+import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
+import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
+import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
+import EngagementStudioReportDrawerController from './app/5-in-the-field/controllers/engagement-studio-report.drawer.controller';
+import EngagementStudioRuleController from './app/5-in-the-field/controllers/engagement-studio-rule.controller';
+import EngagementStudioRuleDrawerController from './app/5-in-the-field/controllers/engagement-studio-rule.drawer.controller';
+import EngagementStudioTestController from './app/5-in-the-field/controllers/engagement-studio-test.controller';
+import EngagementStudioTestDrawerController from './app/5-in-the-field/controllers/engagement-studio-test.drawer.controller';
+import steplog from './app/5-in-the-field/factory/engagement-studio-test.factory';
+import EngagementStudioTriggerController from './app/5-in-the-field/controllers/engagement-studio-trigger.controller';
+import EngagementStudioTriggerDrawerController from './app/5-in-the-field/controllers/engagement-studio-trigger.drawer.controller';
 
 import './app/vendor.scss';
 import './app/index.scss';
@@ -157,8 +157,8 @@ angular
   .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
   .controller('AddActionsController', AddActionsController)
   .controller('AddActionsDrawerController', AddActionsDrawerController)
-  .controller('ABTestingController', ABTestingController)
-  .controller('ABTestingDrawerController', ABTestingDrawerController)
+  .controller('CreateANewLightningPageController', CreateANewLightningPageController)
+  .controller('CreateANewLightningPageDrawerController', CreateANewLightningPageDrawerController)
   .controller('BuildAnEmailController', BuildAnEmailController)
   .controller('BuildAnEmailDrawerController', BuildAnEmailDrawerController)
   .controller('EmailPreviewController', EmailPreviewController)
