@@ -36,6 +36,7 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
       if (newValue.toLowerCase() === 'customer service cases') {
         if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
           WizardHandler.wizard('monitor').next();
+          Steps.activate('three');
         }
       }
     }
@@ -47,6 +48,7 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
         Steps.activate('three');
         if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
           WizardHandler.wizard('monitor').next();
+          Steps.activate('four');
         }
       }
     }
