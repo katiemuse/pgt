@@ -5,30 +5,70 @@
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
             <div class="step step-0">
+
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart-drag.png"
+                   alt="report chart drag" class="report-chart-drag" ng-class="{active:!reportchart.active}">
+              <div class="drop-box active"></div>
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart.png"
+                   alt="report chart"
+                   class="report-chart" ng-show="reportchart.active">
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="label.input" class="text active" maxlength="80">
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <select name="report-select" id="report-select" ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions" disabled></select>
+                  </div>
+                </div>
+              </form>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="label.input" class="text" maxlength="80" disabled>
+                  </div>
+                </div>
+                <div class="control-group">
+                  <div class="controls">
+                    <select name="report-select" id="report-select" class="active" ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions"></select>
+                  </div>
+                </div>
+              </form>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4">
-
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-chatter-feed-drag.png"
+                   alt="chatter feed drag" class="chatter-feed-drag" ng-class="{active:!chatterfeed.active}">
+              <div class="drop-box active"></div>
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart.png"
+                   alt="chatter feed"
+                   class="chatter-feed" ng-show="chatterfeed.active">
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-5">
-
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-customer-ideas-drag.png"
+                   alt="customer ideas drag" class="customer-ideas-drag" ng-class="{active:!customerideas.active}">
+              <div class="drop-box active"></div>
+              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-customer-ideas.png"
+                   alt="customer ideas"
+                   class="customer-ideas" ng-show="customerideas.active">
+            </div>
             </div>
           </wz-step>
           <wz-step success="true">
