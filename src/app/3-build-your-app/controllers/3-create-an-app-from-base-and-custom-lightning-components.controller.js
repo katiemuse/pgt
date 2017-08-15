@@ -5,15 +5,45 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
     input: ''
   };
 
-  $scope.input = {
-    active: true
+  $scope.reportchart = {
+    active: false
   };
 
-  $scope.$watch('search.input', (newValue, oldValue) => {
+  $scope.chatterfeed = {
+    active: false
+  };
+
+  $scope.customerideas = {
+    active: false
+  };
+
+  $scope.reportOptions = [
+    {label: 'Choose a Report', value: 1},
+    {label: 'Case', value: 2}
+  ];
+
+  $scope.report = {
+    active: false,
+    select: $scope.reportOptions[0]
+  };
+
+  $scope.$watch('label.input', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'ideas') {
-        WizardHandler.wizard('monitor').next();
+      if (newValue.toLowerCase() === 'customer service cases') {
+        if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+          WizardHandler.wizard('monitor').next();
+        }
+      }
+    }
+  });
+
+  $scope.$watch('report.select', (newValue, oldValue) => {
+    if (newValue !== oldValue) {
+      if (newValue.value === 2) {
         Steps.activate('three');
+        if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+          WizardHandler.wizard('monitor').next();
+        }
       }
     }
   });
@@ -30,6 +60,9 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('four');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('four');
     }
