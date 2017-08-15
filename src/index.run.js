@@ -43,7 +43,10 @@ export default function run(
     ],
     3: [
       'create-a-new-lightning-page',
-      'install-a-pre-built-component-from-appexchange'
+      'install-a-pre-built-component-from-appexchange',
+      'create-an-app-from-base-and-custom-lightning-components',
+      'add-custom-components',
+      'customize-a-page-layout'
     ],
     4: ['view-a-prospect-profile'],
     5: [

@@ -287,6 +287,27 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('customize-a-page-layout', {
+      url: '/customize-a-page-layout',
+      views: {
+        monitor: {
+          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.html'),
+          controller: 'CustomizeAPageLayoutController'
+        },
+        drawer: {
+          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.drawer.html'),
+          controller: 'CustomizeAPageLayoutDrawerController'
+        },
+        mobile: {
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 1;
+        TopNavbar.HotspotsCount = 1;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('view-a-prospect-profile', {
       url: '/view-a-prospect-profile',
       views: {
