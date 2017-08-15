@@ -27,13 +27,13 @@ export default function EngagementStudioReportDrawerController($scope, WizardHan
 
     Hotspots.clear();
 
-    Hotspots.pop({
-      number: 1,
-      position: {
-        left: '303px',
-        top: '148px'
-      }
-    });
+    // Hotspots.pop({
+    //   number: 1,
+    //   position: {
+    //     left: '303px',
+    //     top: '148px'
+    //   }
+    // });
 
     $timeout(() => {
       Steps.activate('one');
