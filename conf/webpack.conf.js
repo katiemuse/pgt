@@ -82,7 +82,8 @@ module.exports = {
       jquery: 'jquery',
       "window.jQuery": "jquery",
       Tether: 'tether',
-      'window.Tether': 'tether'
+      'window.Tether': 'tether',
+      pace: 'pace-progress'
     })
   ],
   devtool: 'source-map',

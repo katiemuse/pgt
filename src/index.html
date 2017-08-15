@@ -18,11 +18,17 @@
     </script>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
 
+
     <style type="text/css">
       [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
         display: none !important;
       }
     </style>
+
+    <link rel="stylesheet" href="../node_modules/pace-progress/themes/blue/pace-theme-loading-bar.css">
+    <script src="../node_modules/pace-progress/pace.js">
+
+    </script>
 
     <!--[if lte IE 9]>
     <style>
@@ -37,7 +43,7 @@
     </style>
     <![endif]-->
   </head>
-  <body ng-cloak id="{{$state.current.name}}">
+  <body ng-cloak class="pace" id="{{$state.current.name}}">
 
     <div class="container-fluid main desktop background hidden-sm hidden-xs">
 

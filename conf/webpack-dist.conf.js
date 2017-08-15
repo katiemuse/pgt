@@ -77,7 +77,8 @@ module.exports = {
       jquery: 'jquery',
       "window.jQuery": "jquery",
       Tether: 'tether',
-      'window.Tether': 'tether'
+      'window.Tether': 'tether',
+      pace: 'pace-progress'
     }),
     new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
     new webpack.LoaderOptionsPlugin({
