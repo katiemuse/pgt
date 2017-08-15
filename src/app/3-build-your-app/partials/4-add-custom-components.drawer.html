@@ -1,10 +1,21 @@
 <div class="drawer-content add-custom-components-drawer">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
-    <h2>Add Custom Components</h2>
-    <p></p>
-    <p class="continue">
-      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
-    </p>
+    <wizard name="drawer" on-finish="beginStory()">
+      <wz-step>
+        <h2>Add Custom Components</h2>
+        <p>In addition to standard components and those you can download from the AppExchange, you can create custom components in your developer console. Click 'Continue' to see how.</p>
+        <p class="continue">
+          <a class="btn btn-rounded blue next" wz-next>Next</a>
+        </p>
+      </wz-step>
+      <wz-step>
+        <p>To add custom components our own team has created, we open up the Developer Console, add our component detail, and write our code.</p>
+        <img src="../assets/4-add-custom-components-intro.gif" alt="" class="img-responsive">
+        <p class="continue">
+          <a class="btn btn-continue" wz-next>Continue</a>
+        </p>
+      </wz-step>
+    </wizard>
   </div>
 
   <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
