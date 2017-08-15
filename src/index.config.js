@@ -266,16 +266,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('send-email', {
-      url: '/send-email',
+    .state('add-custom-components', {
+      url: '/add-custom-components',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/send-email.html'),
-          controller: 'SendEmailController'
+          template: require('./app/3-build-your-app/partials/4-add-custom-components.html'),
+          controller: 'AddCustomComponentsController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/send-email.drawer.html'),
-          controller: 'SendEmailDrawerController'
+          template: require('./app/3-build-your-app/partials/4-add-custom-components.drawer.html'),
+          controller: 'AddCustomComponentsDrawerController'
         },
         mobile: {
           template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')

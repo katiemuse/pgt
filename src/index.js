@@ -74,8 +74,8 @@ import InstallAPreBuiltComponentFromAppexchangeController from './app/3-build-yo
 import InstallAPreBuiltComponentFromAppexchangeDrawerController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.drawer.controller';
 import CreateAnAppFromBaseAndCustomLightningComponentsController from './app/3-build-your-app/controllers/3-create-an-app-from-base-and-custom-lightning-components.controller';
 import CreateAnAppFromBaseAndCustomLightningComponentsDrawerController from './app/3-build-your-app/controllers/3-create-an-app-from-base-and-custom-lightning-components.drawer.controller';
-import SendEmailController from './app/3-build-your-app/controllers/send-email.controller';
-import SendEmailDrawerController from './app/3-build-your-app/controllers/send-email.drawer.controller';
+import AddCustomComponentsController from './app/3-build-your-app/controllers/4-add-custom-components.controller';
+import AddCustomComponentsDrawerController from './app/3-build-your-app/controllers/4-add-custom-components.drawer.controller';
 import ViewAProspectProfileController from './app/4-customize-mobile/controllers/view-a-prospect-profile.controller';
 import ViewAProspectProfileDrawerController from './app/4-customize-mobile/controllers/view-a-prospect-profile.drawer.controller';
 import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
@@ -163,8 +163,8 @@ angular
   .controller('InstallAPreBuiltComponentFromAppexchangeDrawerController', InstallAPreBuiltComponentFromAppexchangeDrawerController)
   .controller('CreateAnAppFromBaseAndCustomLightningComponentsController', CreateAnAppFromBaseAndCustomLightningComponentsController)
   .controller('CreateAnAppFromBaseAndCustomLightningComponentsDrawerController', CreateAnAppFromBaseAndCustomLightningComponentsDrawerController)
-  .controller('SendEmailController', SendEmailController)
-  .controller('SendEmailDrawerController', SendEmailDrawerController)
+  .controller('AddCustomComponentsController', AddCustomComponentsController)
+  .controller('AddCustomComponentsDrawerController', AddCustomComponentsDrawerController)
   .controller('ViewAProspectProfileController', ViewAProspectProfileController)
   .controller('ViewAProspectProfileDrawerController', ViewAProspectProfileDrawerController)
   .controller('EngagementStudioController', EngagementStudioController)

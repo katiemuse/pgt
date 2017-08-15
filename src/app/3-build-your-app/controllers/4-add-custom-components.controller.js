@@ -1,6 +1,6 @@
 'use strict';
 
-export default function SendEmailController($scope, WizardHandler, Steps, Hotspots) {
+export default function AddCustomComponentsController($scope, WizardHandler, Steps, Hotspots) {
   $scope.list = {
     sendTo: null,
     senderA: null,
