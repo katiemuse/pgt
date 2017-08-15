@@ -31,21 +31,21 @@ export default function AddAnObjectDrawerController($scope, WizardHandler, TopNa
     });
 
     Hotspots.clear();
-    Hotspots.pop({
-      number: 1,
-      position: {
-        left: '117px',
-        top: '223px'
-      }
-    });
-
-    Hotspots.pop({
-      number: 2,
-      position: {
-        left: '117px',
-        top: '273px'
-      }
-    });
+    // Hotspots.pop({
+    //   number: 1,
+    //   position: {
+    //     left: '117px',
+    //     top: '223px'
+    //   }
+    // });
+    //
+    // Hotspots.pop({
+    //   number: 2,
+    //   position: {
+    //     left: '117px',
+    //     top: '273px'
+    //   }
+    // });
 
     $timeout(() => {
       Steps.activate('one');

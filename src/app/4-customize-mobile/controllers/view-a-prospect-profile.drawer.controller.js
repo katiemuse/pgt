@@ -23,29 +23,29 @@ export default function ViewAProspectProfileDrawerController($scope, WizardHandl
     });
 
     Hotspots.clear();
-    Hotspots.pop({
-      number: 1,
-      position: {
-        left: '54px',
-        top: '391px'
-      }
-    });
-
-    Hotspots.pop({
-      number: 2,
-      position: {
-        left: '140px',
-        top: '421px'
-      }
-    });
-
-    Hotspots.pop({
-      number: 3,
-      position: {
-        left: '365px',
-        top: '115px'
-      }
-    });
+    // Hotspots.pop({
+    //   number: 1,
+    //   position: {
+    //     left: '54px',
+    //     top: '391px'
+    //   }
+    // });
+    //
+    // Hotspots.pop({
+    //   number: 2,
+    //   position: {
+    //     left: '140px',
+    //     top: '421px'
+    //   }
+    // });
+    //
+    // Hotspots.pop({
+    //   number: 3,
+    //   position: {
+    //     left: '365px',
+    //     top: '115px'
+    //   }
+    // });
 
     $timeout(() => {
       Steps.activate('one');

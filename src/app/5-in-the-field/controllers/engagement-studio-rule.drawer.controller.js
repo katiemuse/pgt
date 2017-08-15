@@ -31,13 +31,13 @@ export default function EngagementStudioRuleDrawerController($scope, WizardHandl
     });
 
     Hotspots.clear();
-    Hotspots.pop({
-      number: 1,
-      position: {
-        left: '382px',
-        top: '84px'
-      }
-    });
+    // Hotspots.pop({
+    //   number: 1,
+    //   position: {
+    //     left: '382px',
+    //     top: '84px'
+    //   }
+    // });
 
     $timeout(() => {
       Steps.activate('one');

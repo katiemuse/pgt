@@ -31,12 +31,12 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
     });
 
     Hotspots.clear();
-    Hotspots.pop({
-      number: 1,
-      position: {
-        left: '381px',
-        top: '277px'
-      }
-    });
+    // Hotspots.pop({
+    //   number: 1,
+    //   position: {
+    //     left: '381px',
+    //     top: '277px'
+    //   }
+    // });
   };
 }
