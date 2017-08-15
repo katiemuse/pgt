@@ -2,102 +2,156 @@
 
 .build-a-schema {
 
-  .step-0, .step-1{
+  .step-0, .step-1, .step-2, .step-3 {
     background: url('../app/1-build-a-data-model/assets/5-build-a-schema-screen-bkg-1.png') center center no-repeat;
   }
 
-  .step-2 {
-    background: url('../app/1-build-a-data-model/assets/1-add-an-object-screen-bkg-2.png') center center no-repeat;
+  .step-4  {
+    background: url('../app/1-build-a-data-model/assets/5-build-a-schema-screen-bkg-2.png') center top no-repeat;
   }
 
-  .step-3, .step-4  {
-    background: url('../app/1-build-a-data-model/assets/1-add-an-object-screen-bkg-3.png') center top no-repeat;
+  .step-5  {
+    background: url('../app/1-build-a-data-model/assets/5-build-a-schema-screen-bkg-3.png') center top no-repeat;
   }
 
-  .step-1 {
-    .click-box {
-      position: absolute;
-      top: 33px;
-      left: 181px;
-      width: 142px;
-      height: 36px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
-    }
-  }
-
-  .step-2 {
-    .click-box {
-      position: absolute;
-      top: 21px;
-      left: 616px;
-      width: 89px;
-      height: 30px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
-    }
-    .custom-object {
-      position: absolute;
-      top: 56px;
-      left: 603px;
-      opacity: 0;
-      pointer-events: none;
-      border-radius: 5px;
-      &.active {
-        opacity: 1;
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-        pointer-events: all;
-      }
-    }
-  }
-
-  .step-3 {
-    height: 1040px !important;
-    transition: transform .3s ease-in-out .3s;
+  .step-1, .step-2, .step-3 {
     .form {
       &.form-horizontal {
         position: absolute;
-        top: 196px;
-        left: 1px;
-        .control-label {
-          width: 155px;
-          padding-top: 7px;
-          color: #000;
-        }
-        .controls {
-          input {
-            &.text {
-              width: 316px;
+        top: 299px;
+        left: -175px;
+        .checkbox {
+          min-height: 11px;
+          padding-top: 0;
+          height: 11px;
+          margin-bottom: 9px;
+          label {
+            min-height: 16px;
+            input[type="checkbox"] {
+              margin: -1px 0 0;
             }
           }
         }
       }
     }
-    &.active {
-      transform: translateY(-549px);
+    .customer-feedback {
+      position: absolute;
+      top: 203px;
+      right: 295px;
+    }
+    .account {
+      position: absolute;
+      top: 219px;
+      right: 437px;
+    }
+    .order {
+      position: absolute;
+      top: 258px;
+      right: 154px;
+    }
+    .product {
+      position: absolute;
+      top: 169px;
+      right: 12px;
     }
   }
 
-  .step-4 {
-    height: 1040px !important;
-    transform: translateY(-549px);
+  .step-1 {
     .click-box {
       position: absolute;
-      bottom: 34px;
-      left: 308px;
-      width: 39px;
-      height: 22px;
+      top: 297px;
+      left: 12px;
+      width: 11px;
+      height: 72px;
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
+      }
+    }
+  }
+
+  .step-2 {
+    .click-box {
+      position: absolute;
+      top: 204px;
+      left: 366px;
+      width: 125px;
+      height: 176px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-3 {
+    .click-box {
+      position: absolute;
+      top: 171px;
+      left: 12px;
+      width: 69px;
+      height: 23px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-4 {
+    .click-box {
+      position: absolute;
+      bottom: 99px;
+      left: 7px;
+      width: 198px;
+      height: 19px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-5 {
+    .form {
+      &.form-horizontal {
+        position: absolute;
+        top: 212px;
+        left: 163px;
+        .controls {
+          input {
+            width: 312px;
+          }
+          select {
+            margin-top: 37px;
+            width: 226px;
+            height: 27px;
+            line-height: 23px;
+          }
+        }
+      }
+    }
+    .click-box {
+      position: absolute;
+      bottom: 31px;
+      left: 407px;
+      width: 40px;
+      height: 21px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+  .step {
+    &.success {
+      p {
+        padding: 0 22%;
       }
     }
   }
