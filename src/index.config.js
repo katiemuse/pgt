@@ -308,6 +308,27 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('customize-navigation', {
+      url: '/customize-navigation',
+      views: {
+        monitor: {
+          template: require('./app/3-build-your-app/partials/6-customize-navigation.html'),
+          controller: 'CustomizeNavigationController'
+        },
+        drawer: {
+          template: require('./app/3-build-your-app/partials/6-customize-navigation.drawer.html'),
+          controller: 'CustomizeNavigationDrawerController'
+        },
+        mobile: {
+          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 1;
+        TopNavbar.HotspotsCount = 1;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('create-a-custom-action', {
       url: '/create-a-custom-action',
       views: {
