@@ -55,7 +55,6 @@ export default function BuildASchemaController($scope, Steps, Hotspots, WizardHa
   });
 
   $scope.Next = function () {
-    debugger;
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();

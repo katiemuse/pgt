@@ -130,7 +130,7 @@
       top: 203px;
       right: 295px;
 
-      &.ui-droppable-active {
+      &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
       }
