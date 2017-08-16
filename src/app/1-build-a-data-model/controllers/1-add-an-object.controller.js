@@ -28,7 +28,7 @@ export default function AddAnObjectController($scope, Steps, Hotspots, WizardHan
         $timeout(() => {
           WizardHandler.wizard('monitor').next();
           Steps.activate('four');
-        }, 600);
+        }, 2000);
       }
     }
   });
@@ -49,7 +49,7 @@ export default function AddAnObjectController($scope, Steps, Hotspots, WizardHan
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
         Steps.activate('four');
-      }, 600);
+      }, 2600);
     }
   };
 }
