@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ViewAProspectProfileDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function CreateACustomActionDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   TopNavbar.InfoActive = true;
 
   Drawer.openToIntro();
@@ -14,12 +14,17 @@ export default function ViewAProspectProfileDrawerController($scope, WizardHandl
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on the highlighted &lsquo;page views&rsquo; link under the Prospect Activities section to explore how this prospect has interacted with your website.'
+      title: ' Click \'New Action\''
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click &lsquo;Next&rsquo; to continue.'
+      title: ' Choose \'Customer Feedback\' from the Target Object Dropdown, then click \'Save"'
+    });
+
+    Steps.pop({
+      number: 'three',
+      title: 'Since we want to move the Customer Idea field into our backlog, drag-and-drop it to the active area.'
     });
 
     Hotspots.clear();

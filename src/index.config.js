@@ -308,19 +308,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
-    .state('view-a-prospect-profile', {
-      url: '/view-a-prospect-profile',
+    .state('create-a-custom-action', {
+      url: '/create-a-custom-action',
       views: {
         monitor: {
-          template: require('./app/4-customize-mobile/partials/view-a-prospect-profile.html'),
-          controller: 'ViewAProspectProfileController'
+          template: require('./app/4-customize-mobile/partials/1-create-a-custom-action.html'),
+          controller: 'CreateACustomActionController'
         },
         drawer: {
-          template: require('./app/4-customize-mobile/partials/view-a-prospect-profile.drawer.html'),
-          controller: 'ViewAProspectProfileDrawerController'
+          template: require('./app/4-customize-mobile/partials/1-create-a-custom-action.drawer.html'),
+          controller: 'CreateACustomActionDrawerController'
         },
         mobile: {
-          template: require('./app/4-customize-mobile/partials/view-a-prospect-profile.mobile.html')
+          template: require('./app/4-customize-mobile/partials/1-create-a-custom-action.mobile.html')
         }
       },
       onEnter(TopNavbar) {

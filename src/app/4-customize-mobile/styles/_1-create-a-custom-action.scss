@@ -1,0 +1,24 @@
+@import '../../base';
+
+.create-a-custom-action {
+
+  .step-0, .step-1 {
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-1.png') center center no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
+      position: absolute;
+      top: 156px;
+      left: 330px;
+      width: 85px;
+      height: 25px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

@@ -81,8 +81,8 @@ import AddCustomComponentsController from './app/3-build-your-app/controllers/4-
 import AddCustomComponentsDrawerController from './app/3-build-your-app/controllers/4-add-custom-components.drawer.controller';
 import CustomizeAPageLayoutController from './app/3-build-your-app/controllers/5-customize-a-page-layout.controller';
 import CustomizeAPageLayoutDrawerController from './app/3-build-your-app/controllers/5-customize-a-page-layout.drawer.controller';
-import ViewAProspectProfileController from './app/4-customize-mobile/controllers/view-a-prospect-profile.controller';
-import ViewAProspectProfileDrawerController from './app/4-customize-mobile/controllers/view-a-prospect-profile.drawer.controller';
+import CreateACustomActionController from './app/4-customize-mobile/controllers/1-create-a-custom-action.controller';
+import CreateACustomActionDrawerController from './app/4-customize-mobile/controllers/1-create-a-custom-action.drawer.controller';
 import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
 import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
@@ -172,8 +172,8 @@ angular
   .controller('AddCustomComponentsDrawerController', AddCustomComponentsDrawerController)
   .controller('CustomizeAPageLayoutController', CustomizeAPageLayoutController)
   .controller('CustomizeAPageLayoutDrawerController', CustomizeAPageLayoutDrawerController)
-  .controller('ViewAProspectProfileController', ViewAProspectProfileController)
-  .controller('ViewAProspectProfileDrawerController', ViewAProspectProfileDrawerController)
+  .controller('CreateACustomActionController', CreateACustomActionController)
+  .controller('CreateACustomActionDrawerController', CreateACustomActionDrawerController)
   .controller('EngagementStudioController', EngagementStudioController)
   .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
   .controller('EngagementStudioReportController', EngagementStudioReportController)
