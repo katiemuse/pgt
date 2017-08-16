@@ -9,18 +9,6 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
     input: ''
   };
 
-  $scope.reportchart = {
-    active: false
-  };
-
-  $scope.chatterfeed = {
-    active: false
-  };
-
-  $scope.customerideas = {
-    active: false
-  };
-
   $scope.reportOptions = [
     {label: 'Choose a Report', value: 1},
     {label: 'Case', value: 2}
@@ -34,10 +22,7 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
   $scope.$watch('label.input', (newValue, oldValue) => {
     if (newValue !== oldValue) {
       if (newValue.toLowerCase() === 'customer service cases') {
-        if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
-          WizardHandler.wizard('monitor').next();
-          Steps.activate('three');
-        }
+        $scope.next();
       }
     }
   });
@@ -45,16 +30,12 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
   $scope.$watch('report.select', (newValue, oldValue) => {
     if (newValue !== oldValue) {
       if (newValue.value === 2) {
-        Steps.activate('three');
-        if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
-          WizardHandler.wizard('monitor').next();
-          Steps.activate('four');
-        }
+        $scope.next();
       }
     }
   });
 
-  $scope.Next = function () {
+  $scope.next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
@@ -70,7 +51,10 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
       Steps.activate('four');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
       WizardHandler.wizard('monitor').next();
-      Steps.activate('four');
+      Steps.activate('five');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 6) {
+      Steps.clear();
+      WizardHandler.wizard('monitor').next();
     }
   };
 }

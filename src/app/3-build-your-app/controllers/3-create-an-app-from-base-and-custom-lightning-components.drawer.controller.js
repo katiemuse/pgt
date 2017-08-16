@@ -27,12 +27,12 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
 
     Steps.pop({
       number: 'four',
-      title: ''
+      title: 'TBD: Drag Chatter feed to box'
     });
 
     Steps.pop({
       number: 'five',
-      title: ''
+      title: 'TBD: Drag Customer Ideas to box'
     });
 
     Hotspots.clear();
