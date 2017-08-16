@@ -12,22 +12,17 @@ export default function CustomizeAPageLayoutDrawerController($scope, WizardHandl
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'New\''
+      title: 'Open the screen display dropdown and choose \'Desktop\' view. Then, try the other screen sizes to see how your app comes to life across devices.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click &lsquo;Save&rsquo; to conduct a rendering test of your emails &mdash; and don\'t forget to check out the on-screen tips before moving on!'
+      title: 'Once you\'ve made sure it looks great across multiple layouts click \'Save\''
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Type your page label in the open field; let\'s call this ‘Customer Feedback Loop for PMs’. Click ‘Next’'
-    });
-
-    Steps.pop({
-      number: 'four',
-      title: 'We will use the ‘Header and Right Sidebar’ layout choice. Click ‘Finish.’ '
+      title: 'We\'re not ready to activate our app just yet, click "Not Yet"'
     });
 
     Hotspots.clear();

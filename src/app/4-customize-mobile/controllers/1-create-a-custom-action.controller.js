@@ -1,26 +1,6 @@
 'use strict';
 
-export default function CustomizeAPageLayoutController($scope, WizardHandler, Steps) {
-  $scope.lightning = {
-    input: ''
-  };
-
-  $scope.dropdown = {
-    active: false
-  };
-
-  $scope.activatedropdown = () => {
-    $scope.dropdown.active = !$scope.dropdown.active;
-  };
-
-  $scope.$watch('lightning.input', (newValue, oldValue) => {
-    if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer feedback loop for pms') {
-        $scope.input.active = false;
-      }
-    }
-  });
-
+export default function CreateACustomActionController($scope, Steps, WizardHandler) {
   $scope.Next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
@@ -38,3 +18,4 @@ export default function CustomizeAPageLayoutController($scope, WizardHandler, St
     }
   };
 }
+

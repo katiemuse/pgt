@@ -1,22 +1,10 @@
-<div class="drawer-content view-a-prospect-profile-drawer">
+<div class="drawer-content create-a-custom-action-drawer">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
-    <wizard name="drawer" on-finish="beginStory()">
-      <wz-step>
-        <h2>View a Prospect Profile</h2>
-        <p>Your forms and landing pages are set up and your emails are deploying as planned.</p>
-        <p>What happens when users interact with your marketing programs by submitting their information via a Pardot form, viewing a landing page, or clicking on a link in one of your emails?</p>
-        <p class="continue">
-          <a class="btn btn-rounded blue next" wz-next>Next</a>
-        </p>
-      </wz-step>
-      <wz-step>
-        <h2>View a Prospect Profile</h2>
-        <p>All of this information is tracked in Pardot and displayed in each prospect&rsquo;s profile. Take a look at the highlighted sections to see how one particular prospect, Jeremy Jones, has interacted with all of the marketing materials you&rsquo;ve created so far.</p>
-        <p class="continue">
-          <a class="btn btn-continue" wz-next>Continue</a>
-        </p>
-      </wz-step>
-    </wizard>
+    <h2>Create a Custom Action</h2>
+    <p>Now that you've selected which components to include in your app, let's customize the action bar to make it even easier for your users to work on mobile. Salesforce1 already comes with built-in actions, but you can also create custom actions tailored to your own business process and use cases.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+    </p>
   </div>
 
   <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">

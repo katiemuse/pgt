@@ -3,28 +3,41 @@
 .customize-a-page-layout {
 
   .step-0, .step-1 {
-    background: url('../app/3-build-your-app/assets/1-create-a-new-lightning-page-screen-bkg-1.png') center center no-repeat;
+    background: url('../app/3-build-your-app/assets/5-customize-a-page-layout-screen-bkg-1.png') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../app/3-build-your-app/assets/1-create-a-new-lightning-page-screen-bkg-2.png') center center no-repeat;
+    background: url('../app/3-build-your-app/assets/5-customize-a-page-layout-screen-bkg-2.png') center center no-repeat;
   }
 
   .step-3 {
-    background: url('../app/3-build-your-app/assets/1-create-a-new-lightning-page-screen-bkg-3.png') center center no-repeat;
-  }
-
-  .step-4 {
-    background: url('../app/3-build-your-app/assets/1-create-a-new-lightning-page-screen-bkg-4.png') center center no-repeat;
+    background: url('../app/3-build-your-app/assets/5-customize-a-page-layout-screen-bkg-3.png') center center no-repeat;
   }
 
   .step-1 {
     .click-box {
       position: absolute;
-      top: 175px;
-      left: 172px;
-      width: 45px;
-      height: 25px;
+      top: 48px;
+      left: 218px;
+      width: 148px;
+      height: 27px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .step1-dropdown {
+      position: absolute;
+      top: 80px;
+      left: 216px;
+    }
+    .click-box-1 {
+      position: absolute;
+      top: 164px;
+      left: 218px;
+      width: 150px;
+      height: 26px;
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
@@ -36,10 +49,10 @@
   .step-2 {
     .click-box {
       position: absolute;
-      bottom: 72px;
-      right: 85px;
-      width: 58px;
-      height: 31px;
+      top: 49px;
+      right: 136px;
+      width: 49px;
+      height: 26px;
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
@@ -51,43 +64,16 @@
   .step-3 {
     .click-box {
       position: absolute;
-      bottom: 72px;
-      right: 85px;
-      width: 58px;
-      height: 31px;
+      bottom: 113px;
+      right: 131px;
+      width: 70px;
+      height: 29px;
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
       }
     }
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        top: 237px;
-        left: 63px;
-        .controls {
-          input {
-            width: 316px;
-          }
-        }
-      }
-    }
-  }
-
-  .step-4 {
-    .click-box {
-      position: absolute;
-      bottom: 72px;
-      right: 85px;
-      width: 58px;
-      height: 31px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
-    }
-  }
+   }
 
 }

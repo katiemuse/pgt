@@ -10,7 +10,9 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="Next()"></div>
+              <div class="click-box" ng-click="activatedropdown()" ng-class="{active:!dropdown.active}" ng-show="!dropdown.active"></div>
+              <img src="../assets/5-customize-a-page-layout-dropdown.png" alt="dropdown" class="step1-dropdown" ng-show="dropdown.active">
+              <div class="click-box-1" ng-class="{active:dropdown.active}" ng-show="dropdown.active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
@@ -20,19 +22,7 @@
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <form class="form form-horizontal">
-                <div class="control-group">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="lightning.input" class="text" maxlength="80" ng-disabled="!input.active" ng-class="{active:input.active}" li-autofocus="wizard.stateIndex == 3">
-                  </div>
-                </div>
-              </form>
-              <div class="click-box" ng-click="Next()" ng-class="{active:!input.active}"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-4">
-              <div class="click-box active" wz-next></div>
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step success="true">
@@ -43,10 +33,10 @@
                 </p>
                 <h2>Success!</h2>
                 <p>
-                  We've got our framework in place and we're ready to start exploring components to fill it out.
+                  Nice work! It seems like our app is missing something. Nothing a little custom code can't fix. Don't worry, it's not as complex as it sounds.
                 </p>
                 <p>
-                  <a ui-sref="create-a-custom-action" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 3">Next</a>
+                  <a ui-sref="create-a-custom-action" class="btn btn-rounded active">Continue</a>
                 </p>
               </li-center>
             </div>
