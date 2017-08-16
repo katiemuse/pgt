@@ -12,27 +12,27 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'TBD: Drag Report chart in to first square'
+      title: 'Choose \'Report Chart\' from the left hand side of the screen and, drag-and-drop it into the top section of the canvas'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'TBD: Type "customer service cases" in the textbox'
+      title: 'Label your component "Customer Service Cases"'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'TBD: Select "case" from drop down'
+      title: 'Choose the "Case" option from the \'Report\' dropdown. This lets us pull in our \'Case\' standard object from Salesforce to show the number of Customer Service Cases that are created over time.  '
     });
 
     Steps.pop({
       number: 'four',
-      title: 'TBD: Drag Chatter feed to box'
+      title: 'Drag-and-drop the Chatter Feed Component into the middle section on the canvas. We want our users to see the posts that are most important to them, so we\'ll keep "Bookmarked" default field setting.'
     });
 
     Steps.pop({
       number: 'five',
-      title: 'TBD: Drag Customer Ideas to box'
+      title: 'Now let\'s add the Customer Ideas AppExchange component to our page. Drag-and-drop it into the third section on the canvas'
     });
 
     Hotspots.clear();
