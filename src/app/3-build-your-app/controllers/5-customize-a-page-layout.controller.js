@@ -5,8 +5,12 @@ export default function CustomizeAPageLayoutController($scope, WizardHandler, St
     input: ''
   };
 
-  $scope.input = {
-    active: true
+  $scope.dropdown = {
+    active: false
+  };
+
+  $scope.activatedropdown = () => {
+    $scope.dropdown.active = !$scope.dropdown.active;
   };
 
   $scope.$watch('lightning.input', (newValue, oldValue) => {
