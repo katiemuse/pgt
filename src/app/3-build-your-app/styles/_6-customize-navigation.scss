@@ -3,40 +3,43 @@
 .customize-navigation {
 
   .step-0, .step-1 {
-    background: url('../app/3-build-your-app/assets/5-customize-a-page-layout-screen-bkg-1.png') center center no-repeat;
+    background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-1.png') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../app/3-build-your-app/assets/5-customize-a-page-layout-screen-bkg-2.png') center center no-repeat;
+    background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-2.png') center center no-repeat;
+    &.active {
+      background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-3.png') center center no-repeat;
+    }
   }
 
   .step-3 {
-    background: url('../app/3-build-your-app/assets/5-customize-a-page-layout-screen-bkg-3.png') center center no-repeat;
+    background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-4.png') center center no-repeat;
+    &.step3a {
+      background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-5.png') center center no-repeat;
+    }
+    &.step3b {
+      background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-6.png') center center no-repeat;
+    }
+  }
+
+  .step-4 {
+    background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-7.png') center center no-repeat;
+    &.active {
+      background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-8.png') center center no-repeat;
+    }
+  }
+
+  .step-5 {
+    background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-9.png') center center no-repeat;
   }
 
   .step-1 {
     .click-box {
       position: absolute;
       top: 48px;
-      left: 218px;
-      width: 148px;
-      height: 27px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
-    }
-    .step1-dropdown {
-      position: absolute;
-      top: 80px;
-      left: 216px;
-    }
-    .click-box-1 {
-      position: absolute;
-      top: 164px;
-      left: 218px;
-      width: 150px;
+      right: 44px;
+      width: 80px;
       height: 26px;
       border-radius: 5px;
       &.active {
@@ -49,10 +52,22 @@
   .step-2 {
     .click-box {
       position: absolute;
-      top: 49px;
-      right: 136px;
-      width: 49px;
-      height: 26px;
+      top: 258px;
+      right: 359px;
+      width: 29px;
+      height: 30px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .click-box-1 {
+      position: absolute;
+      top: 180px;
+      left: 184px;
+      width: 39px;
+      height: 37px;
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
@@ -64,9 +79,9 @@
   .step-3 {
     .click-box {
       position: absolute;
-      bottom: 113px;
-      right: 131px;
-      width: 70px;
+      top: 146px;
+      left: 219px;
+      width: 130px;
       height: 29px;
       border-radius: 5px;
       &.active {
@@ -74,6 +89,72 @@
         cursor: pointer;
       }
     }
+    .click-box-1 {
+      position: absolute;
+      top: 310px;
+      left: 491px;
+      width: 80px;
+      height: 21px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .click-box-2 {
+      position: absolute;
+      top: 426px;
+      right: 110px;
+      width: 37px;
+      height: 20px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
    }
+
+  .step-4 {
+    .click-box {
+      position: absolute;
+      top: 146px;
+      left: 363px;
+      width: 89px;
+      height: 29px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .click-box-1 {
+      position: absolute;
+      top: 310px;
+      left: 491px;
+      width: 80px;
+      height: 21px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-5 {
+    .click-box {
+      position: absolute;
+      top: 426px;
+      right: 110px;
+      width: 37px;
+      height: 20px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
 
 }

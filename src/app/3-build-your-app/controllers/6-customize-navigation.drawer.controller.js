@@ -12,17 +12,27 @@ export default function CustomizeNavigationDrawerController($scope, WizardHandle
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Open the screen display dropdown and choose \'Desktop\' view. Then, try the other screen sizes to see how your app comes to life across devices.'
+      title: ' Click on the \'Activation\' button'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Once you\'ve made sure it looks great across multiple layouts click \'Save\''
+      title: 'Next to the icon, click \'Change\' and select an icon to represent your app.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'We\'re not ready to activate our app just yet, click "Not Yet"'
+      title: 'Click on the \'Lightning Experience\' tab, then click \'Add page to Lightning Apps\'. This will allow your desktop users to access the app.'
+    });
+
+    Steps.pop({
+      number: 'four',
+      title: 'Click on the \'Salesforce1\' tab, then click \'Add page to App\'. This will allow your mobile users to access the app.'
+    });
+
+    Steps.pop({
+      number: 'five',
+      title: 'Drag-and-Drop your app to reorder how its displayed in the Salesforce1 dashboard, then click \'Save\''
     });
 
     Hotspots.clear();

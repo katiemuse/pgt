@@ -10,19 +10,31 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box" ng-click="activatedropdown()" ng-class="{active:!dropdown.active}" ng-show="!dropdown.active"></div>
-              <img src="../assets/5-customize-a-page-layout-dropdown.png" alt="dropdown" class="step1-dropdown" ng-show="dropdown.active">
-              <div class="click-box-1" ng-class="{active:dropdown.active}" ng-show="dropdown.active" ng-click="Next()"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-2">
               <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3">
-              <div class="click-box active" ng-click="Next()"></div>
+            <div class="step step-2" ng-class="{active:active.step2}">
+              <div class="click-box" ng-class="{active:!active.step2}" ng-click="activatestep2()"></div>
+              <div class="click-box-1" ng-class="{active:active.step2}" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3" ng-class="{step3a:active.step3a, step3b:active.step3b}">
+              <div class="click-box" ng-class="{active:!active.step3a && !active.step3b}" ng-click="activatestep3a()"></div>
+              <div class="click-box-1" ng-class="{active:active.step3a}" ng-click="activatestep3b()"></div>
+              <div class="click-box-2" ng-class="{active:active.step3b}" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4" ng-class="{active:active.step4}">
+              <div class="click-box" ng-class="{active:!active.step4}" ng-click="activatestep4()"></div>
+              <div class="click-box-1" ng-class="{active:active.step4}" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
+              <div class="click-box active" wz-next></div>
             </div>
           </wz-step>
           <wz-step success="true">
