@@ -149,6 +149,10 @@ $progress-top: 15px;
 
       li {
 
+        &.skip-links {
+          margin-left: -15px;
+        }
+
         > .animated-icon {
 
           &.circular {
@@ -165,9 +169,8 @@ $progress-top: 15px;
             pointer-events: none;
           }
           width: 100%;
-          &.skip-section {
+          &.skip {
             font-family: $salesforcesans;
-            margin: 20px 0 0 -50px;
             height: auto;
             width: auto;
             &:link, &:visited {
@@ -178,6 +181,8 @@ $progress-top: 15px;
               color: $color-salesforce-blue;
               text-decoration: underline;
             }
+
+            float:left;
           }
           &.btn-blue {
             display: inline-block;
@@ -196,6 +201,11 @@ $progress-top: 15px;
               color: #ffffff;
             }
           }
+        }
+
+        > span {
+          float: left;
+          padding-top: 10px;
         }
 
         span.label {

@@ -8,18 +8,22 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
   const isInit = false;
   let bgEl;
   const bodyEl = angular.element($document.body);
+
   function init() {
     bgEl = bodyEl.append('<div class="progress-bg"></div>');
 
     onResize();
     angular.element($window).bind('resize', onResize);
   }
+
   function openProgressNavigation() {
     bodyEl.addClass('progress-no-scroll');
   }
+
   function closeProgressNavigation() {
     bodyEl.removeClass('progress-no-scroll');
   }
+
   function onResize() {
     const height = angular.element(window)[0].innerHeight + 'px';
     bgEl.css('height', height);
@@ -47,7 +51,8 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
         toggleOpen: () => {
           scope.progress.open = !scope.progress.open;
         },
-        canSkip: true
+        canSkip: true,
+        canSkipPrevious: false
       };
 
       scope.$watch('progress.open', (newValue, oldValue) => {
@@ -57,15 +62,33 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
           } else {
             closeProgressNavigation();
           }
-
-          // console.log('watch progress.open', newValue, oldValue);
         }
       });
 
-      scope.progress.skipToNextSection = $event => {
+      const unregisterCanSkip = scope.$watch('canSkip', (newValue, oldValue) => {
+        if (newValue !== oldValue) {
+          scope.progress.canSkip = newValue;
+        }
+      });
+
+      const unregisterCanSkipPrevious = scope.$watch('canSkipPrevious', (newValue, oldValue) => {
+        if (newValue !== oldValue) {
+          scope.progress.canSkipPrevious = newValue;
+        }
+      });
+
+      scope.progress.skipToNextTask = $event => {
         const progressStates = _.values($rootScope.progressStates);
-        if ($rootScope.progressIndex + 1 < progressStates.length) {
-          $state.go(progressStates[$rootScope.progressIndex + 1][0]);
+        if ($rootScope.taskIndex + 1 < progressStates[$rootScope.progressIndex].length) {
+          $state.go(progressStates[$rootScope.progressIndex][$rootScope.taskIndex + 1]);
+          $event.preventDefault();
+        }
+      };
+
+      scope.progress.skipToPreviousTask = $event => {
+        const progressStates = _.values($rootScope.progressStates);
+        if ($rootScope.taskIndex - 1 >= 0) {
+          $state.go(progressStates[$rootScope.progressIndex][$rootScope.taskIndex - 1]);
           $event.preventDefault();
         }
       };
@@ -77,11 +100,15 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
       };
 
       // when navigating, close the drawer
-      const x = $rootScope.$on('$stateChangeStart', () => {
+      const unregisterStateChangeStart = $rootScope.$on('$stateChangeStart', () => {
         scope.progress.open = false;
       });
 
-      $rootScope.$on('$destroy', x);
+      $rootScope.$on('$destroy', () => {
+        unregisterStateChangeStart();
+        unregisterCanSkip();
+        unregisterCanSkipPrevious();
+      });
     }
   };
 }

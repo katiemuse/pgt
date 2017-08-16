@@ -60,6 +60,7 @@ export default function run(
   };
 
   $rootScope.progressIndex = 0;
+  $rootScope.taskIndex = 0;
 
   $rootScope.getProgressIndex = function (stateName) {
     const existingState = _.find(_.values($rootScope.progressStates),
@@ -73,10 +74,23 @@ export default function run(
     return -1;
   };
 
+  $rootScope.getTaskIndex = function (stateName) {
+    const existingStateIndex = _.findIndex(_.values($rootScope.progressStates),
+      stateArray => {
+        return _.indexOf(stateArray, stateName) !== -1;
+      });
+
+    if (existingStateIndex > -1) {
+      return _.indexOf(_.values($rootScope.progressStates[existingStateIndex]), stateName);
+    }
+    return -1;
+  };
+
   const z = $transitions.onSuccess({ }, trans => {
     $rootScope.progressIndex = $rootScope.getProgressIndex(trans.to().name);
-    $rootScope.canSkip =
-      $rootScope.progressIndex + 1 < _.values($rootScope.progressStates).length;
+    $rootScope.taskIndex = $rootScope.getTaskIndex(trans.to().name);
+    $rootScope.canSkip = $rootScope.taskIndex + 1 < _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
+    $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
   });
 
   $rootScope.$on('$destroy', z);

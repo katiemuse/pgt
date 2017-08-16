@@ -26,21 +26,6 @@ export default function ChooseAnObjectForTheProcessDrawerController($scope, Wiza
     });
 
     Hotspots.clear();
-    // Hotspots.pop({
-    //   number: 2,
-    //   position: {
-    //     left: '389px',
-    //     top: '363px'
-    //   }
-    // });
-    //
-    // Hotspots.pop({
-    //   number: 1,
-    //   position: {
-    //     left: '694px',
-    //     top: '168px'
-    //   }
-    // });
 
     $timeout(() => {
       Steps.activate('one');

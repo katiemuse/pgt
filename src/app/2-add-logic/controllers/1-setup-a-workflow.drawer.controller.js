@@ -32,22 +32,6 @@ export default function SetupAWorkflowDrawerController($scope, WizardHandler, To
 
     Hotspots.clear();
 
-    // Hotspots.pop({
-    //   number: 1,
-    //   position: {
-    //     left: '154px',
-    //     top: '324px'
-    //   }
-    // });
-    //
-    // Hotspots.pop({
-    //   number: 2,
-    //   position: {
-    //     left: '127px',
-    //     top: '375px'
-    //   }
-    // });
-
     $timeout(() => {
       Steps.activate('one');
     }, 1000);
