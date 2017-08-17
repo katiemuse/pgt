@@ -10,22 +10,19 @@ button, a {
 }
 
 .btn {
-  border-radius: $button-rounded-radius;
-  border: none;
-  background-color:#14315d;
-  color: $color-button-white;
-  padding: 10px 40px;
-  transition: color .2s ease-in-out, background .2s ease-in-out, border .2s ease-in-out;
-  &:active, &:focus {
-    color: $color-button-white;
-    outline:none;
+  font-family: $salesforcesans;
+  font-weight: bold;
+  font-size: $button-font-size;
+  padding: 4px 15px;
+  &:focus {
+    outline: none !important;
   }
 }
 
 .btn-rounded {
   border-radius: $button-rounded-radius;
-  border: none;
-  background-color:#14315d;
+  border: 2px solid $color-button-white;
+  background-color:transparent;
   color: $color-button-white;
   padding: 10px 40px;
   transition: color .2s ease-in-out, background .2s ease-in-out, border .2s ease-in-out;
@@ -122,6 +119,29 @@ button, a {
   margin: 0;
   &:hover, &:focus {
     color: white;
+  }
+}
+
+
+.btn-intro {
+  border-radius: $button-rounded-radius;
+  background-color:#14315d;
+  color: $color-button-white;
+  padding: 10px 40px;
+  transition: color .2s ease-in-out, background .2s ease-in-out, border .2s ease-in-out;
+  &:active, &:focus {
+    color: $color-button-white;
+    outline:none;
+  }
+
+  &:focus {
+    outline:none;
+  }
+
+  &:hover {
+    border-color: transparent;
+    background-color: $color-button-white;
+    color: $color-text-black;
   }
 }
 
