@@ -14,17 +14,22 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: ' Click \'New Action\''
+      title: 'Click on \'Select\' and we\'ll add some actions to our app'
     });
 
     Steps.pop({
       number: 'two',
-      title: ' Choose \'Customer Feedback\' from the Target Object Dropdown, then click \'Save"'
+      title: 'Let\'s add the action we just created right into our app. Select "New Customer Feedback" in the column on the left, and drag it into the column on the right'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Since we want to move the Customer Idea field into our backlog, drag-and-drop it to the active area.'
+      title: 'We also want our users to be able to quickly alert customers that their feedback has been heard, so lets drag the "New Customer Response" action over to the right. And so users can keep their thoughts organized, let\'s pull over \'New Note\' as well.'
+    });
+
+    Steps.pop({
+      number: 'four',
+      title: 'Click \'ok\''
     });
 
     Hotspots.clear();
