@@ -1,11 +1,13 @@
 'use strict';
 
 export default function CustomizeTheActionBarController($scope, Steps, WizardHandler) {
-  $scope.targetObjects = [
-    {label: 'Select one', value: 1},
-    {label: 'A record changes', value: 2},
-    {label: 'Its invoked by another process', value: 3}
-  ];
+  $scope.active = {
+    step2: false
+  };
+
+  $scope.activatestep2 = () => {
+    $scope.active.step2 = !$scope.active.step2;
+  };
 
   $scope.next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
