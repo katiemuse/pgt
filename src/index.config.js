@@ -350,6 +350,27 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('customize-the-action-bar', {
+      url: '/customize-the-action-bar',
+      views: {
+        monitor: {
+          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.html'),
+          controller: 'CustomizeTheActionBarController'
+        },
+        drawer: {
+          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.drawer.html'),
+          controller: 'CustomizeTheActionBarDrawerController'
+        },
+        mobile: {
+          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 1;
+        TopNavbar.HotspotsCount = 3;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('engagement-studio', {
       url: '/engagement-studio',
       views: {

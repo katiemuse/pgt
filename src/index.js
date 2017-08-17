@@ -88,6 +88,8 @@ import CustomizeNavigationController from './app/3-build-your-app/controllers/6-
 import CustomizeNavigationDrawerController from './app/3-build-your-app/controllers/6-customize-navigation.drawer.controller';
 import CreateACustomActionController from './app/4-customize-mobile/controllers/1-create-a-custom-action.controller';
 import CreateACustomActionDrawerController from './app/4-customize-mobile/controllers/1-create-a-custom-action.drawer.controller';
+import CustomizeTheActionBarController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.controller';
+import CustomizeTheActionBarDrawerController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.drawer.controller';
 import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
 import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
@@ -181,6 +183,8 @@ angular
   .controller('CustomizeNavigationDrawerController', CustomizeNavigationDrawerController)
   .controller('CreateACustomActionController', CreateACustomActionController)
   .controller('CreateACustomActionDrawerController', CreateACustomActionDrawerController)
+  .controller('CustomizeTheActionBarController', CustomizeTheActionBarController)
+  .controller('CustomizeTheActionBarDrawerController', CustomizeTheActionBarDrawerController)
   .controller('EngagementStudioController', EngagementStudioController)
   .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
   .controller('EngagementStudioReportController', EngagementStudioReportController)
