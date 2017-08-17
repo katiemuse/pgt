@@ -20,13 +20,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/1-build-a-data-model/partials/1-add-an-object.mobile.html')
         },
         intro: {
-          template: require('./app/0-intro/partials/intro.mobile.html')
+          template: require('./app/0-intro/partials/intro.mobile.html'),
+          controller: 'IntroController'
         },
         'getting-started': {
-          template: require('./app/0-intro/partials/getting-started.html')
+          template: require('./app/0-intro/partials/getting-started.html'),
+          controller: 'IntroController'
         }
       },
-      onEnter(TopNavbar) {
+      onEnter(TopNavbar, Drawer) {
+        Drawer.close();
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;

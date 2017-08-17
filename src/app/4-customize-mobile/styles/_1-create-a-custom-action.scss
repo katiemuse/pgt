@@ -89,13 +89,19 @@
   .step-5 {
     background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-5.png') center center no-repeat;
 
+    .continue {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%) translateY(-4px);
+    }
+
     .click-box {
       position: absolute;
-      top: 380px;
-      left: 330px;
-      width: 31px;
-      height: 16px;
-      border-radius: 5px;
+      top: -8px;
+      left: 316px;
+      width: 153px;
+      height: 58px;
+      border-radius: 11px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
