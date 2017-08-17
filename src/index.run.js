@@ -51,15 +51,8 @@ export default function run(
     ],
     4: [
       'create-a-custom-action',
-      'customize-the-action-bar'
-    ],
-    5: [
-      'engagement-studio',
-      'engagement-studio-trigger',
-      'engagement-studio-rule',
-      'engagement-studio-test',
-      'engagement-studio-report',
-      'set-up-a-lead-nurturing-campaign'
+      'customize-the-action-bar',
+      'end'
     ]
   };
 
