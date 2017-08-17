@@ -1,5 +1,8 @@
 'use strict';
 
+import Pace from 'pace-progress';
+Pace.start();
+
 require('jquery');
 import 'jquery-ui/ui/core';
 import 'jquery-ui/ui/widgets/selectable';

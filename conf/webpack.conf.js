@@ -60,6 +60,10 @@ module.exports = {
         loaders: [
           'html-loader'
         ]
+      },
+      {
+        test: require.resolve('pace-progress'),
+        loader: 'imports-loader?define=>false'
       }
     ]
   },
