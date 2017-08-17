@@ -57,6 +57,7 @@ import wizardStep from './components/wizard/directives/step-directive';
 import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
+import IntroController from './app/0-intro/controllers/intro.controller';
 import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
 import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-an-object.controller';
 import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
@@ -151,6 +152,7 @@ angular
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   .factory('steplog', steplog)
+  .controller('IntroController', IntroController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('AddAnObjectController', AddAnObjectController)

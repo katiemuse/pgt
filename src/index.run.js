@@ -15,11 +15,11 @@ export default function run(
     stateIndex: -1
   };
 
-  const x = $rootScope.$on('$stateChangeSuccess', () => {
-    Drawer.close();
-  });
+  // const x = $transitions.onSuccess({ }, () => {
+  //   Drawer.close();
+  // });
 
-  $rootScope.$on('$destroy', x);
+  // $rootScope.$on('$destroy', x);
 
   const y = $rootScope.$on('wizard:stepChanged', (event, args) => {
     $rootScope.wizard.stateIndex = args.index;

@@ -1,7 +1,50 @@
 <div class="row monitor-height intro">
   <div class="col-lg-12 monitor-height">
-    <li-center>
-      <a ui-sref="add-an-object" id="begin-the-tour">Begin the Tour</a>
-    </li-center>
+    <div class="row monitor-height">
+      <wizard name="monitor">
+        <wz-step>
+          <div class="step step-0">
+            <li-center>
+              <a ng-click="beginTour" href="" wz-next id="begin-the-tour" li-autofocus="wizard.stateIndex == 0">Begin the Tour</a>
+            </li-center>
+          </div>
+        </wz-step>
+        <wz-step>
+          <div class="step step-1">
+            <div class="intro-copy">
+              <h2>Welcome to the Sales Platform guided tour!</h2>
+              <p>Your company, HeartofHome, builds Connected Thermostats. Your customers can access a mobile app that lets them
+                control their system. It also has a survey and feedback component where users can ask questions or submit
+                ideas.
+              </p>
+              <a class="btn btn-rounded active" href="" li-autofocus="wizard.stateIndex == 1" wz-next>Next</a>
+            </div>
+          </div>
+        </wz-step>
+        <wz-step>
+          <div class="step step-2">
+            <div class="intro-copy">
+              <h2>Welcome to the Sales Platform guided tour!</h2>
+              <p>The app is built on Platform and Heroku, which means you can easily pull your customers' data straight into
+                Salesforce.
+              </p>
+              <a class="btn btn-rounded active" href="" li-autofocus="wizard.stateIndex == 2" wz-next>Next</a>
+            </div>
+          </div>
+        </wz-step>
+        <wz-step>
+          <div class="step step-3" ng-class="{active:!label.active}">
+            <div class="intro-copy">
+              <h2>Welcome to the Sales Platform guided tour!</h2>
+              <p>To enable your Product Managers to constantly improve your products, we're going to build an internal app to
+                enable them to access all of this valuable customer info, and then some. We'll build it using only tools
+                found in Salesforce platform, like the Drag-and-drop app builder.
+              </p>
+              <a ui-sref="add-an-object" href="" li-autofocus="wizard.stateIndex == 3" class="btn btn-rounded active" wz-next>Let&rsquo;s get started!</a>
+            </div>
+          </div>
+        </wz-step>
+      </wizard>
+    </div>
   </div>
 </div>

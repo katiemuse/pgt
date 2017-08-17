@@ -21,8 +21,8 @@ button, a {
 
 .btn-rounded {
   border-radius: $button-rounded-radius;
-  border: 2px solid $color-button-white;
-  background-color:transparent;
+  border: none;
+  background-color:#14315d;
   color: $color-button-white;
   padding: 10px 40px;
   transition: color .2s ease-in-out, background .2s ease-in-out, border .2s ease-in-out;

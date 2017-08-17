@@ -527,3 +527,32 @@
     }
   }
 }
+
+.intro {
+  .step-1, .step-2, .step-3 {
+    background-image:url('../app/0-intro/assets/intro-background.png');
+
+    .intro-copy {
+      text-align: center;
+      color: white;
+      width: 333px;
+      left: 380px;
+      position: absolute;
+
+      h2 { 
+        font-size: 26px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      a {
+        position: absolute;
+        top: 360px;
+        left: 60px;
+        width: 200px;
+      }
+    }
+  }
+}
