@@ -7,7 +7,7 @@ export default function CustomizeTheActionBarController($scope, Steps, WizardHan
     {label: 'Its invoked by another process', value: 3}
   ];
 
-  $scope.Next = function () {
+  $scope.next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
@@ -21,6 +21,9 @@ export default function CustomizeTheActionBarController($scope, Steps, WizardHan
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('four');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('five');
     }
   };
 }
