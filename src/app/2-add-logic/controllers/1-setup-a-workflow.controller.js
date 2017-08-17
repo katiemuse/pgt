@@ -9,14 +9,16 @@ export default function SetupAWorkflowController($scope, $timeout, Steps, Wizard
 
   $scope.process = {
     name: '',
+    api: '',
     starts: $scope.processOptions[0]
   };
 
-  const delayInMs = 1000;
+  const delayInMs = 1500;
 
   let timeoutProcessName;
   $scope.$watch('process.name', (newValue, oldValue) => {
     if (oldValue !== newValue) {
+      $scope.process.api = $scope.process.name.toLowerCase().replace(/ /g, '_');
       $timeout.cancel(timeoutProcessName);
       timeoutProcessName = $timeout(() => {
         if (newValue.length > 3) {

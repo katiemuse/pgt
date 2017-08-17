@@ -25,6 +25,11 @@
                     <input autocomplete="off" type="text" name="name" id="name" ng-model="process.name" class="text active" maxlength="80" li-autofocus="wizard.stateIndex == 2">
                   </div>
                 </div>
+                <div class="control-group required ">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="api" id="api" ng-model="process.api" class="text" maxlength="80" disabled>
+                  </div>
+                </div>
                 <div class="control-group">
                   <div class="controls">
                     <select name="process-starts" id="process-starts" ng-model="process.starts" ng-options="opt as opt.label for opt in processOptions" disabled></select>
@@ -44,6 +49,11 @@
                     <input autocomplete="off" type="text" name="name" id="name" ng-model="process.name" class="text" maxlength="80" disabled>
                   </div>
                 </div>
+                <div class="control-group required ">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="api" id="api" ng-model="process.api" class="text" maxlength="80" disabled>
+                  </div>
+                </div>
                 <div class="control-group">
                   <div class="controls">
                     <select name="process-starts" id="process-starts" ng-model="process.starts" li-autofocus="wizard.stateIndex == 3" ng-options="opt as opt.label for opt in processOptions" class="active"></select>
@@ -61,6 +71,11 @@
                 <div class="control-group required ">
                   <div class="controls">
                     <input autocomplete="off" type="text" name="name" id="name" ng-model="process.name" class="text" maxlength="80" disabled>
+                  </div>
+                </div>
+                <div class="control-group required ">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="api" id="api" ng-model="process.api" class="text" maxlength="80" disabled>
                   </div>
                 </div>
                 <div class="control-group">
