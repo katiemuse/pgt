@@ -1,6 +1,6 @@
 @import '../../base';
 
-.create-a-custom-action {
+.customize-the-action-bar {
 
   .step-0, .step-1 {
     background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-1.png') center center no-repeat;
@@ -24,7 +24,6 @@
   .step-2 {
     background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-2.png') center center no-repeat;
 
-
       .click-box {
         position: absolute;
         top: 156px;
@@ -41,7 +40,7 @@
   }
 
   .step-3 {
-    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3a.png') center center no-repeat;
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3.png') center center no-repeat;
 
     .click-box {
       position: absolute;
@@ -54,11 +53,6 @@
         animation: borderActive 1.5s infinite;
         cursor: pointer;
       }
-    }
-
-
-    &.dropped {
-      background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3b.png') center center no-repeat;
     }
   }
   .step-4 {
