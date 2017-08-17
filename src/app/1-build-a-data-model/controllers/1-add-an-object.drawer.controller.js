@@ -22,7 +22,7 @@ export default function AddAnObjectDrawerController($scope, WizardHandler, TopNa
 
     Steps.pop({
       number: 'three',
-      title: 'Label your object, let\'s call it \'Customer Feedback\''
+      title: 'Label your object, let\'s call it \'Customer Insights\''
     });
 
     Steps.pop({

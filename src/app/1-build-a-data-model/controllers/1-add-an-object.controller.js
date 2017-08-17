@@ -23,7 +23,7 @@ export default function AddAnObjectController($scope, Steps, Hotspots, WizardHan
 
   $scope.$watch('customobj.name', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer feedback') {
+      if (newValue.toLowerCase() === 'customer insights') {
         $scope.toggleLabel();
         $timeout(() => {
           WizardHandler.wizard('monitor').next();
