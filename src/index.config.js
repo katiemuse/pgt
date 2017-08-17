@@ -371,6 +371,23 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('end', {
+      url: '/end',
+      views: {
+        monitor: {
+          template: require('./app/4-customize-mobile/partials/3-end.html'),
+          controller: 'EndController'
+        },
+        mobile: {
+          template: require('./app/4-customize-mobile/partials/3-end.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 1;
+        TopNavbar.HotspotsCount = 3;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('engagement-studio', {
       url: '/engagement-studio',
       views: {
