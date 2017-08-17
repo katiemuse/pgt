@@ -1,25 +1,29 @@
 'use strict';
 
 export default function CustomizeNavigationController($scope, WizardHandler, Steps) {
-  $scope.lightning = {
-    input: ''
+  $scope.active = {
+    step2: false,
+    step3a: false,
+    step3b: false,
+    step4: false
   };
 
-  $scope.dropdown = {
-    active: false
+  $scope.activatestep2 = () => {
+    $scope.active.step2 = !$scope.active.step2;
   };
 
-  $scope.activatedropdown = () => {
-    $scope.dropdown.active = !$scope.dropdown.active;
+  $scope.activatestep3a = () => {
+    $scope.active.step3a = !$scope.active.step3a;
   };
 
-  $scope.$watch('lightning.input', (newValue, oldValue) => {
-    if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer feedback loop for pms') {
-        $scope.input.active = false;
-      }
-    }
-  });
+  $scope.activatestep3b = () => {
+    $scope.active.step3a = false;
+    $scope.active.step3b = !$scope.active.step3b;
+  };
+
+  $scope.activatestep4 = () => {
+    $scope.active.step4 = !$scope.active.step4;
+  };
 
   $scope.Next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
@@ -35,6 +39,9 @@ export default function CustomizeNavigationController($scope, WizardHandler, Ste
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('four');
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('five');
     }
   };
 }
