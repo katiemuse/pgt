@@ -61,6 +61,7 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
     $scope.step4.box1 = false;
     $scope.step4.box2 = true;
     $scope.step4.box3 = false;
+    Steps.activate('five');
   };
 
   $scope.toggleBox3 = () => {
