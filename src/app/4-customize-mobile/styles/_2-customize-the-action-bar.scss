@@ -1,0 +1,83 @@
+@import '../../base';
+
+.create-a-custom-action {
+
+  .step-0, .step-1 {
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-1.png') center center no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
+      position: absolute;
+      top: 156px;
+      left: 330px;
+      width: 85px;
+      height: 25px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-2 {
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-2.png') center center no-repeat;
+
+
+      .click-box {
+        position: absolute;
+        top: 156px;
+        left: 330px;
+        width: 85px;
+        height: 25px;
+        border-radius: 5px;
+        &.active {
+          animation: borderActive 1.5s infinite;
+          cursor: pointer;
+        }
+      }
+
+  }
+
+  .step-3 {
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3a.png') center center no-repeat;
+
+    .click-box {
+      position: absolute;
+      top: 156px;
+      left: 330px;
+      width: 85px;
+      height: 25px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+
+
+    &.dropped {
+      background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3b.png') center center no-repeat;
+    }
+  }
+  .step-4 {
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-4.png') center center no-repeat;
+
+    .click-box {
+      position: absolute;
+      top: 156px;
+      left: 330px;
+      width: 85px;
+      height: 25px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+
+}

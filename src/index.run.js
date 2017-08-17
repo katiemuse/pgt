@@ -46,9 +46,13 @@ export default function run(
       'install-a-pre-built-component-from-appexchange',
       'create-an-app-from-base-and-custom-lightning-components',
       'add-custom-components',
-      'customize-a-page-layout'
+      'customize-a-page-layout',
+      'customize-navigation'
     ],
-    4: ['create-a-custom-action'],
+    4: [
+      'create-a-custom-action',
+      'customize-the-action-bar'
+    ],
     5: [
       'engagement-studio',
       'engagement-studio-trigger',
