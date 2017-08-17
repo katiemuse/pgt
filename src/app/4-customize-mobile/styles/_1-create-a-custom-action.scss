@@ -25,13 +25,15 @@
     background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-2.png') center center no-repeat;
 
 
-      .click-box {
+      select {
         position: absolute;
-        top: 156px;
-        left: 330px;
-        width: 85px;
-        height: 25px;
+        top: 201px;
+        left: 234px;
+        width: 145px;
+        height: 20px;
         border-radius: 5px;
+        font-size: 13px;
+        font-weight: 800;
         &.active {
           animation: borderActive 1.5s infinite;
           cursor: pointer;
@@ -41,24 +43,31 @@
   }
 
   .step-3 {
-    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3a.png') center center no-repeat;
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3.png') center center no-repeat;
 
-    .click-box {
+    .customer-idea-drag {
       position: absolute;
-      top: 156px;
-      left: 330px;
-      width: 85px;
-      height: 25px;
+      bottom: 257px;
+      left: 179px;
+      border-radius: 4px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+    }
+
+
+    .drop-box {
+      position: absolute;
+      top: 298px;
+      left: 60px;
+      width: 663px;
+      height: 107px;
       border-radius: 5px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
       }
-    }
-
-
-    &.dropped {
-      background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-3b.png') center center no-repeat;
     }
   }
   .step-4 {
@@ -66,11 +75,10 @@
 
     .click-box {
       position: absolute;
-      top: 156px;
-      left: 330px;
-      width: 85px;
-      height: 25px;
-      border-radius: 5px;
+      top: 101px;
+      left: 26px;
+      width: 30px;
+      height: 16px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: pointer;
@@ -78,6 +86,20 @@
     }
   }
 
+  .step-5 {
+    background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-5.png') center center no-repeat;
 
-
+    .click-box {
+      position: absolute;
+      top: 380px;
+      left: 330px;
+      width: 31px;
+      height: 16px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
 }
