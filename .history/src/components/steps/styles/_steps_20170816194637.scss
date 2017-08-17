@@ -162,11 +162,10 @@ button.step-close-button {
       width: 280px;
       margin-left:0px;
       max-height:500px;
-      min-height: auto;
-      height: auto !important;
+      height: auto;
 
       .step-title, .step-message {
-        width: 260px;
+        width: 280px;
         transition: all, 2.0s, ease-in-out;
         opacity: 1;
       }

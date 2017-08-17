@@ -123,7 +123,6 @@ button.step-close-button {
     position: relative;
     width: 174px;
     margin-left:119px;
-    height:90px;
 
     .step-title {
       font-family: $salesforcesans;
@@ -162,8 +161,7 @@ button.step-close-button {
       width: 280px;
       margin-left:0px;
       max-height:500px;
-      min-height: auto;
-      height: auto !important;
+      height: auto;
 
       .step-title, .step-message {
         width: 260px;

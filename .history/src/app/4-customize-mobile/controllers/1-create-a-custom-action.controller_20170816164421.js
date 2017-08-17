@@ -1,6 +1,8 @@
 'use strict';
 
 export default function CreateACustomActionController($scope, Steps, WizardHandler) {
+
+
   $scope.targetObjects = [
     {label: 'Select one', value: 1},
     {label: 'A record changes', value: 2},

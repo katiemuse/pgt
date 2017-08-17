@@ -48,7 +48,7 @@ export default function run(
       'add-custom-components',
       'customize-a-page-layout'
     ],
-    4: ['view-a-prospect-profile'],
+    4: ['create-a-custom-action'],
     5: [
       'engagement-studio',
       'engagement-studio-trigger',
