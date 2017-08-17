@@ -10,12 +10,15 @@ button, a {
 }
 
 .btn {
-  font-family: $salesforcesans;
-  font-weight: bold;
-  font-size: $button-font-size;
-  padding: 4px 15px;
-  &:focus {
-    outline: none !important;
+  border-radius: $button-rounded-radius;
+  border: none;
+  background-color:#14315d;
+  color: $color-button-white;
+  padding: 10px 40px;
+  transition: color .2s ease-in-out, background .2s ease-in-out, border .2s ease-in-out;
+  &:active, &:focus {
+    color: $color-button-white;
+    outline:none;
   }
 }
 
