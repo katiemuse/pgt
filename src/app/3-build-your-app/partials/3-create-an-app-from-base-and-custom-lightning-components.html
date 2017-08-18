@@ -20,12 +20,12 @@
               <form class="form form-horizontal">
                 <div class="control-group">
                   <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="label.input" class="text active" maxlength="80">
+                    <input autocomplete="off"  li-autofocus="wizard.stateIndex == 2" type="text" name="name" id="name" ng-model="label.input" class="text report-chart-label active" maxlength="80">
                   </div>
                 </div>
                 <div class="control-group">
                   <div class="controls">
-                    <select name="report-select" id="report-select" ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions" disabled></select>
+                    <select name="report-select" class="report-chart-dropdown" id="report-select" ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions" disabled></select>
                   </div>
                 </div>
               </form>
@@ -36,12 +36,12 @@
               <form class="form form-horizontal">
                 <div class="control-group">
                   <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="label.input" class="text" maxlength="80" disabled>
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="label.input" class="text report-chart-label " maxlength="80" disabled>
                   </div>
                 </div>
                 <div class="control-group">
                   <div class="controls">
-                    <select name="report-select" id="report-select" class="active" ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions"></select>
+                    <select name="report-select"  li-autofocus="wizard.stateIndex == 3" id="report-select" class="report-chart-dropdown active" ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions"></select>
                   </div>
                 </div>
               </form>
