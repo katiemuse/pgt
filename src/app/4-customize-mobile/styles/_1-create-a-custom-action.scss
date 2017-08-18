@@ -40,6 +40,19 @@
         }
       }
 
+      .click-box {
+        position: absolute;
+        top: 443px;
+        left: 349px;
+        width: 42px;
+        height: 24px;
+        border-radius: 5px;
+        &.active {
+          animation: borderActive 1.5s infinite;
+          cursor: pointer;
+        }
+      }
+
   }
 
   .step-3 {

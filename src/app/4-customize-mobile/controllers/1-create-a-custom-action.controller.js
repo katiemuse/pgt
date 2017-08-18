@@ -7,13 +7,14 @@ export default function CreateACustomActionController($scope, Steps, WizardHandl
   ];
 
   $scope.action = {
-    target: $scope.targetObjects[0]
+    target: $scope.targetObjects[0],
+    selected: false
   };
 
   $scope.$watch('action.target', (newValue, oldValue) => {
     if (newValue !== oldValue) {
       if (newValue.value === 2) {
-        $scope.next();
+        $scope.action.selected = true;
       }
     }
   });
