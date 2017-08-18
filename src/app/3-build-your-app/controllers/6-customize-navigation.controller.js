@@ -3,8 +3,7 @@
 export default function CustomizeNavigationController($scope, WizardHandler, Steps) {
   $scope.active = {
     step2: false,
-    step3a: false,
-    step3b: false,
+    step3: false,
     step4: false
   };
 
@@ -12,14 +11,14 @@ export default function CustomizeNavigationController($scope, WizardHandler, Ste
     $scope.active.step2 = !$scope.active.step2;
   };
 
-  $scope.activatestep3a = () => {
-    $scope.active.step3a = !$scope.active.step3a;
+  $scope.activatestep3 = () => {
+    $scope.active.step3 = !$scope.active.step3;
   };
 
-  $scope.activatestep3b = () => {
-    $scope.active.step3a = false;
-    $scope.active.step3b = !$scope.active.step3b;
-  };
+  // $scope.activatestep3b = () => {
+  //   $scope.active.step3a = false;
+  //   $scope.active.step3b = !$scope.active.step3b;
+  // };
 
   $scope.activatestep4 = () => {
     $scope.active.step4 = !$scope.active.step4;
