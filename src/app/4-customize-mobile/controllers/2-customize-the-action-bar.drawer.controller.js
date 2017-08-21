@@ -24,7 +24,7 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
 
     Steps.pop({
       number: 'three',
-      title: 'We also want our users to be able to quickly alert customers that their feedback has been heard, so lets drag the "New Customer Response" action over to the right. And so users can keep their thoughts organized, let\'s pull over \'New Note\' as well.'
+      title: 'We also want our users to be able to quickly alert customers that their feedback has been heard, so lets drag the "New Customer Feedback" action over to the right. And so users can keep their thoughts organized, let\'s pull over \'New Note\' as well.'
     });
 
     Steps.pop({
