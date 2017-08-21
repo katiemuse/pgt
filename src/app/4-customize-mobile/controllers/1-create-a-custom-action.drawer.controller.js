@@ -34,7 +34,7 @@ export default function CreateACustomActionDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'five',
-      title: 'Click \'Next\' to continue.'
+      title: 'Click \'Continue\'.'
     });
 
     Hotspots.clear();

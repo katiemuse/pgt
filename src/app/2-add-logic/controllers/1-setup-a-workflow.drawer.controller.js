@@ -34,7 +34,7 @@ export default function SetupAWorkflowDrawerController($scope, WizardHandler, To
 
     $timeout(() => {
       Steps.activate('one');
-    }, 1000);
+    }, 100);
   };
 
   $scope.beginForBuilderStory = function () {
