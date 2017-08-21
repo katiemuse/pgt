@@ -4,7 +4,7 @@ export default function ChooseAnObjectForTheProcessController($scope, $timeout, 
   $scope.processOptions = [
     {label: 'Find an object...', value: 1},
     {label: 'Asset', value: 2},
-    {label: 'Customer Feedback', value: 3},
+    {label: 'Customer Insights', value: 3},
     {label: 'Assistant Progress', value: 4},
     {label: 'Campaign', value: 5},
     {label: 'Campaign Member', value: 6}
