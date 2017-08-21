@@ -80,6 +80,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
+    .state('add-a-custom-field', {
+      url: '/add-a-custom-field',
+      views: {
+        monitor: {
+          template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.html'),
+          controller: 'AddACustomFieldController'
+        },
+        drawer: {
+          template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.drawer.html'),
+          controller: 'AddACustomFieldDrawerController'
+        },
+        mobile: {
+          template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 2;
+        TopNavbar.HotspotsEnabled = true;
+      }
+    })
     .state('heroku-connect', {
       url: '/heroku-connect',
       views: {

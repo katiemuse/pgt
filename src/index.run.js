@@ -32,6 +32,7 @@ export default function run(
     1: [
       'add-an-object',
       'add-an-external-object',
+      'add-a-custom-field',
       'heroku-connect',
       'build-a-schema'
     ],

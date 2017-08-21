@@ -11,7 +11,7 @@ export default function CreateANewLightningPageController($scope, WizardHandler,
 
   $scope.$watch('lightning.input', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer feedback loop for pms') {
+      if (newValue.toLowerCase() === 'customer 360') {
         $scope.input.active = false;
       }
     }

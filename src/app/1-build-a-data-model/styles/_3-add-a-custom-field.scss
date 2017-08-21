@@ -1,0 +1,159 @@
+@import '../../base';
+
+.add-a-custom-field {
+
+  .step-0, .step-1{
+    background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-1.png') center center no-repeat;
+  }
+
+  .step-2 {
+    background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-2.png') center center no-repeat;
+    &.selected {
+      background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-2-selected.png') center top no-repeat;
+    }
+  }
+
+  .step-3 {
+    background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-3.png') center top no-repeat;
+    &.selected {
+      background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-3-selected.png') center top no-repeat;
+    }
+  }
+
+  .step-4 {
+    background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-4.png') center top no-repeat;
+    &.selected {
+      background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-4-selected.png') center top no-repeat;
+    }
+  }
+
+
+  .step-5 {
+    background: url('../app/1-build-a-data-model/assets/3-add-a-custom-field-bkg-5.png') center top no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
+      position: absolute;
+      top: 85px;
+      left: 444px;
+      width: 57px;
+      height: 28px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-2 {
+    .click-box {
+      position: absolute;
+
+      &.next {
+        top: 147px;
+        left: 652px;
+        width: 50px;
+        height: 25px;
+      }
+
+      &.select {
+        top: 255px;
+        left: 15px;
+        width: 747px;
+        height: 28px;
+      }
+      
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
+    }
+  }
+
+  .step-3 {
+    .click-box {
+      position: absolute;
+
+      &.next { 
+        top: 422px;
+        left: 665px;
+        width: 59px;
+        height: 21px;
+      }
+
+      &.select { 
+        top: 363px;
+        left: 87px;
+        width: 83px;
+        height: 22px;
+      }
+
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-4 {
+    .click-box {
+      position: absolute;
+      border-radius: 5px;
+
+      &.next { 
+        top: 422px;
+        left: 665px;
+        width: 59px;
+        height: 21px;
+      }
+
+      &.select { 
+        top: 214px;
+        left: 83px;
+        width: 20px;
+        height: 62px;
+      }
+
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+  .step-5 {
+
+    input {
+      position: absolute;
+      left: 100px;
+      top: 153px;
+      opacity: 0.5;
+      height: 26px !important;
+      width: 201px !important;
+    }
+
+    .click-box {
+      position: absolute;
+      top: 422px;
+      left: 666px;
+      width: 58px;
+      height: 21px;
+      border-radius: 5px;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: pointer;
+      }
+    }
+  }
+
+
+}

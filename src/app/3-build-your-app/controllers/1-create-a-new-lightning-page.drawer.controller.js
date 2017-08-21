@@ -22,7 +22,7 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
 
     Steps.pop({
       number: 'three',
-      title: 'Type your page label in the open field; let\'s call this ‘Customer Feedback Loop for PMs’. Click ‘Next’'
+      title: 'Type your page label in the open field; let\'s call this ‘Customer 360’. Click ‘Next’'
     });
 
     Steps.pop({

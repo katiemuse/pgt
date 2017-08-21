@@ -63,6 +63,8 @@ import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-
 import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
 import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/2-add-an-external-object.controller';
 import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/2-add-an-external-object.drawer.controller';
+import AddACustomFieldController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.controller';
+import AddACustomFieldDrawerController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.drawer.controller';
 import HerokuConnectController from './app/1-build-a-data-model/controllers/4-heroku-connect.controller';
 import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/4-heroku-connect.drawer.controller';
 import BuildASchemaController from './app/1-build-a-data-model/controllers/5-build-a-schema.controller';
@@ -158,6 +160,8 @@ angular
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('AddAnObjectController', AddAnObjectController)
   .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
+  .controller('AddACustomFieldController', AddACustomFieldController)
+  .controller('AddACustomFieldDrawerController', AddACustomFieldDrawerController)
   .controller('AddAnExternalObjectController', AddAnExternalObjectController)
   .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
   .controller('HerokuConnectController', HerokuConnectController)

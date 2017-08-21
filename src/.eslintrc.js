@@ -7,6 +7,7 @@ module.exports = {
     'max-params': 0,
     'guard-for-in' : 0,
     'no-debugger' : 0,
-    'angular/window-service' : 0
+    'angular/window-service' : 0,
+    'space-before-function-paren' : 0
   }
 }
