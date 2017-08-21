@@ -4,6 +4,13 @@
       <wizard name="monitor">
         <wz-step>
           <div class="step step-0">
+            <svg class="clip-svg">
+              <defs>
+                <clipPath id="clip-polygon" clipPathUnits="objectBoundingBox">
+                  <polygon points="0.94 0, 1 0.5, 0.94 1, 0 1, 0.05 0.5, 0 0" />
+                </clipPath>
+              </defs>
+            </svg>
             <li-center>
               <a ng-click="beginTour" href="" wz-next id="begin-the-tour" li-autofocus="wizard.stateIndex == 0">Begin the Tour</a>
             </li-center>

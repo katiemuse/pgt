@@ -294,7 +294,13 @@
   color: #174181;
   text-align: center;
   text-decoration: none;
-  clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
+  clip-path:url(#clip-polygon);
+  -webkit-clip-path:url(#clip-polygon);
+  -moz-clip-path: url(#clip-polygon);
+  -ms-clip-path: url(#clip-polygon);
+  // clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
+  // -ms-clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
+  // -webkit-clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
   transition: color .2s ease-in-out, background .2s ease-in-out;
   backface-visibility: hidden;
   &:hover {
