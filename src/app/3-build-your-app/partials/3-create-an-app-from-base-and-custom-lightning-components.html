@@ -55,10 +55,10 @@
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-5">
+            <div class="step step-5" ng-class="{dropped: report.dropped}">
               <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-customer-ideas-drag.png"
-                   alt="customer ideas drag" class="customer-ideas-drag active"  data-drag="true" jqyoui-draggable="{index: 4, animate:true}" data-jqyoui-options="{revert: 'invalid'}">
-              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 5 , onDrop:'next'}"></div>
+                   alt="customer ideas drag" class="customer-ideas-drag" ng-class="{active: !report.dropped}" ng-show="{!report.dropped}"  data-drag="true" jqyoui-draggable="{index: 4, animate:true}" data-jqyoui-options="{revert: 'invalid'}">
+              <div class="drop-box" ng-show="{!report.dropped}" ng-class="{active: !report.dropped}" data-drop="true" jqyoui-droppable="{index: 5 , onDrop:'dropCustomerIdeas'}"></div>
             </div>
           </wz-step>
           <wz-step success="true">

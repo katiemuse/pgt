@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateAnAppFromBaseAndCustomLightningComponentsController($scope, WizardHandler, Steps) {
+export default function CreateAnAppFromBaseAndCustomLightningComponentsController($scope, WizardHandler, Steps, $timeout) {
   $scope.label = {
     input: ''
   };
@@ -16,7 +16,8 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
 
   $scope.report = {
     active: false,
-    select: $scope.reportOptions[0]
+    select: $scope.reportOptions[0],
+    dropped: false
   };
 
   $scope.$watch('label.input', (newValue, oldValue) => {
@@ -56,6 +57,14 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
       Steps.clear();
       WizardHandler.wizard('monitor').next();
     }
+  };
+
+  $scope.dropCustomerIdeas = function() {
+    $scope.report.dropped = true;
+    Steps.clear();
+    $timeout(() => {
+      $scope.next();
+    }, 1500);
   };
 }
 
