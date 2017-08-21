@@ -291,22 +291,40 @@
   line-height: 70px;
   padding: 0 60px;
   background: white;
-  color: #174181;
   text-align: center;
   text-decoration: none;
-  clip-path:url(#clip-polygon);
-  -webkit-clip-path:url(#clip-polygon);
-  -moz-clip-path: url(#clip-polygon);
-  -ms-clip-path: url(#clip-polygon);
+  clip-path:url(#clipArrow);
+  -webkit-clip-path:url(#clipArrow);
+  -moz-clip-path: url(#clipArrow);
+  -ms-clip-path: url(#clipArrow);
   // clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
   // -ms-clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
   // -webkit-clip-path: polygon(94% 0%, 100% 50%, 94% 100%, 0% 100%, 5% 50%, 0% 0%);
   transition: color .2s ease-in-out, background .2s ease-in-out;
+  transform: translate(1px);
   backface-visibility: hidden;
   &:hover {
     color: white;
     background-color: transparent;
   }
+
+  a {
+    height: 70px;
+    line-height: 70px;
+    text-decoration:none;
+
+    > text {    
+      fill: #174181;
+    }
+
+    &:hover {
+      > text {    
+        fill: white;
+      }
+    }
+  }
+
+  
 }
 
 #sald {
