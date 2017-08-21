@@ -12,7 +12,7 @@ export default function HerokuConnectDrawerController($scope, WizardHandler, Top
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on the \'Customer Feedback\' object from the list'
+      title: 'Click on the \'Customer Insights\' object from the list'
     });
 
     Steps.pop({
