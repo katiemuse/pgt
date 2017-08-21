@@ -3,7 +3,7 @@
 export default function CreateACustomActionController($scope, Steps, WizardHandler) {
   $scope.targetObjects = [
     {label: '-- None --', value: 1},
-    {label: 'Customer Feedback', value: 2}
+    {label: 'Customer Insights', value: 2}
   ];
 
   $scope.action = {

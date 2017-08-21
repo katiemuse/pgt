@@ -19,7 +19,7 @@ export default function CreateACustomActionDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'two',
-      title: ' Choose \'Customer Feedback\' from the Target Object Dropdown, then click \'New"'
+      title: ' Choose \'Customer Insights\' from the Target Object Dropdown, then click \'New"'
     });
 
     Steps.pop({
