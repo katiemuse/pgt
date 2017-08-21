@@ -20,10 +20,10 @@ export default function CustomizeAPageLayoutDrawerController($scope, WizardHandl
       title: 'Once you\'ve made sure it looks great across multiple layouts click \'Save\''
     });
 
-    Steps.pop({
-      number: 'three',
-      title: 'We\'re not ready to activate our app just yet, click "Not Yet"'
-    });
+    // Steps.pop({
+    //   number: 'three',
+    //   title: 'We\'re not ready to activate our app just yet, click "Not Yet"'
+    // });
 
     Hotspots.clear();
 
