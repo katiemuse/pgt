@@ -51,19 +51,19 @@
                 <img src="../assets/4-add-actions-slideout-1.png" alt="">
                 <form class="form form-horizontal">
                   <div class="control-group required">
-                    <label for="name" class="control-label">Action Type </label>
+                    <label for="name" class="control-label clearfix">Action Type </label>
                     <div class="controls">
                       <select name="action-type" id="action-type" ng-model="action.starts" ng-options="opt as opt.label for opt in actionOptions" disabled></select>
                     </div>
                   </div>
                   <div class="control-group required">
-                    <label for="name" class="control-label">Action Name </label>
+                    <label for="name" class="control-label clearfix">Action Name </label>
                     <div class="controls">
                       <input autocomplete="off" type="text" name="name" id="name" ng-model="action.name" class="text active" maxlength="80"  li-autofocus="wizard.stateIndex == 3">
                     </div>
                   </div>
                   <div class="control-group">
-                    <label for="name" class="control-label">Push Notification </label>
+                    <label for="name" class="control-label clearfix">Push Notification </label>
                     <div class="controls">
                       <select name="email-alert" id="email-alert"  disabled>
                         <option value="1">New_Customer_Idea</option>

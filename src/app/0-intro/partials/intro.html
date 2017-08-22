@@ -5,18 +5,11 @@
         <wz-step>
           <div class="step step-0">
             <li-center>
-                <svg id="begin-the-tour" class="clip-svg">
-                    <defs>
-                      <clipPath id="clipArrow" clipPathUnits="objectBoundingBox">
-                        <polygon points="0.94 0, 1 0.5, 0.94 1, 0 1, 0.05 0.5, 0 0" />
-                      </clipPath>
-                    </defs>
-                    <a ng-click="beginTour" href="" wz-next li-autofocus="wizard.stateIndex == 0">
-                      <text text-anchor="middle" x="50%" y="50%" alignment-baseline="middle" > 
-                        Begin the Tour
-                      </text>
-                    </a>
-                  </svg>
+              <a id="begin-the-tour" ng-click="beginTour" href="" wz-next li-autofocus="wizard.stateIndex == 0">
+                <text text-anchor="middle" x="50%" y="50%" alignment-baseline="middle">
+                  Begin the Tour
+                </text>
+              </a>
             </li-center>
           </div>
         </wz-step>

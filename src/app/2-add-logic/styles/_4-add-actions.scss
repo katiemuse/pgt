@@ -87,6 +87,12 @@
                 color: #5E7195;
               }
             }
+
+            select {
+              padding-left:0px;
+              padding-right:0px;
+              text-indent:5px;
+            }
           }
         }
       }
@@ -113,6 +119,12 @@
       .btn {
         padding: 4px 10px;
       }
+    }
+  }
+
+  .step-2, .step-3, .step-4 {
+    label {
+      width: 100% !important;
     }
   }
 
