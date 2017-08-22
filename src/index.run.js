@@ -52,8 +52,7 @@ export default function run(
     ],
     4: [
       'create-a-custom-action',
-      'customize-the-action-bar',
-      'end'
+      'customize-the-action-bar'
     ]
   };
 
