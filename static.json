@@ -1,0 +1,11 @@
+{
+  "root": "dist/",
+
+  "routes": {
+    "/fonts/**": "/fonts/**",
+    "/app/**": "/app/**",
+    "/assets/**": "/assets/**",
+    "/robots.txt": "robots.txt",
+    "/**": "index.html"
+  }
+}
