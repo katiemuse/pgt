@@ -34,6 +34,44 @@
     background: url('../app/3-build-your-app/assets/6-customize-navigation-screen-bkg-9.png') center center no-repeat;
   }
 
+  .step-6, .step-7, .step-8 {
+    background-image:url('../app/0-intro/assets/intro-background.png');
+
+    .outro-copy {
+      text-align: center;
+      color: white;
+      width: 333px;
+      left: 380px;
+      position: absolute;
+
+      h2 { 
+        font-size: 26px;
+      }
+
+      > p {
+        margin-top:70px;
+      }
+
+      p {
+        font-size: 18px;
+      }
+
+      a {
+        position: absolute;
+        top: 360px;
+        left: 60px;
+        width: 200px;
+
+        &.start-a-trial, &.calculate-your-roi {
+          position:relative;
+          top: auto;
+          left: auto;
+        }
+      }
+    }
+
+  }
+
   .step-1 {
     .click-box {
       position: absolute;
