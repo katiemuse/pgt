@@ -13,23 +13,23 @@ module.exports = {
     loaders: [
       {
         test: /\.woff(2)?(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=./assets/[name].[ext]'
+        loader: 'url-loader?limit=10000&mimetype=application/font-woff&name=./fonts/[hash].[ext]'
       },
       {
         test: /\.(ttf|eot|svg)(\?v=[0-9]\.[0-9]\.[0-9])?$/,
-        loader: 'url-loader?limit=100000&name=./assets/[name].[ext]'
+        loader: 'url-loader?limit=100000&name=./fonts/[hash].[ext]'
       },
       {
         test: /\.png$/,
-        loader: 'file-loader?name=./assets/[name].[ext]'
+        loader: 'file-loader?name=./assets/images/[hash].[ext]'
       },
       {
         test: /\.gif$/,
-        loader: 'file-loader?name=./assets/[name].[ext]'
+        loader: 'file-loader?name=./assets/images/[hash].[ext]'
       },
       {
         test: /\.jpg/,
-        loader: 'file-loader?name=./assets/[name].[ext]'
+        loader: 'file-loader?name=./assets/images/[hash].[ext]'
       },
       {
         test: /\.json$/,
