@@ -43,7 +43,7 @@ export default function AddACustomFieldDrawerController(
     Steps.pop({
       number: 'five',
       title:
-        'Name our predictive field \'Future NPS Score\' and review the details, then click \'Start\''
+        'Name our predictive field \'Future NPS Score\' and review the details, then click \'Next\''
     });
 
     Hotspots.clear();
