@@ -80,28 +80,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     })
-    .state('add-a-custom-field', {
-      url: '/add-a-custom-field',
-      views: {
-        monitor: {
-          template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.html'),
-          controller: 'AddACustomFieldController'
-        },
-        drawer: {
-          template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.drawer.html'),
-          controller: 'AddACustomFieldDrawerController'
-        },
-        mobile: {
-          template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
-      }
-    })
+    // .state('add-a-custom-field', {
+    //   url: '/add-a-custom-field',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.html'),
+    //       controller: 'AddACustomFieldController'
+    //     },
+    //     drawer: {
+    //       template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.drawer.html'),
+    //       controller: 'AddACustomFieldDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 0;
+    //     TopNavbar.DidYouKnowEnabled = false;
+    //     TopNavbar.HotspotsCount = 2;
+    //     TopNavbar.HotspotsEnabled = true;
+    //   }
+    // })
     .state('heroku-connect', {
       url: '/heroku-connect',
       views: {
@@ -412,117 +412,117 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsCount = 3;
         TopNavbar.HotspotsEnabled = true;
       }
-    })
-    .state('engagement-studio', {
-      url: '/engagement-studio',
-      views: {
-        monitor: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.html'),
-          controller: 'EngagementStudioController'
-
-        },
-        drawer: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.drawer.html'),
-          controller: 'EngagementStudioDrawerController'
-        },
-        mobile: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
-      }
-    })
-    .state('engagement-studio-trigger', {
-      url: '/engagement-studio-trigger',
-      views: {
-        monitor: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-trigger.html'),
-          controller: 'EngagementStudioTriggerController'
-
-        },
-        drawer: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-trigger.drawer.html'),
-          controller: 'EngagementStudioTriggerDrawerController'
-        },
-        mobile: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
-      }
-    })
-    .state('engagement-studio-rule', {
-      url: '/engagement-studio-rule',
-      views: {
-        monitor: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-rule.html'),
-          controller: 'EngagementStudioRuleController'
-
-        },
-        drawer: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-rule.drawer.html'),
-          controller: 'EngagementStudioRuleDrawerController'
-        },
-        mobile: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = false;
-      }
-    })
-    .state('engagement-studio-test', {
-      url: '/engagement-studio-test',
-      views: {
-        monitor: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-test.html'),
-          controller: 'EngagementStudioTestController'
-
-        },
-        drawer: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-test.drawer.html'),
-          controller: 'EngagementStudioTestDrawerController'
-        },
-        mobile: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = false;
-      }
-    })
-    .state('engagement-studio-report', {
-      url: '/engagement-studio-report',
-      views: {
-        monitor: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-report.html'),
-          controller: 'EngagementStudioReportController'
-
-        },
-        drawer: {
-          template: require('./app/5-in-the-field/partials/engagement-studio-report.drawer.html'),
-          controller: 'EngagementStudioReportDrawerController'
-        },
-        mobile: {
-          template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = false;
-      }
     });
+    // .state('engagement-studio', {
+    //   url: '/engagement-studio',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.html'),
+    //       controller: 'EngagementStudioController'
+
+    //     },
+    //     drawer: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.drawer.html'),
+    //       controller: 'EngagementStudioDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 2;
+    //     TopNavbar.HotspotsCount = 0;
+    //     TopNavbar.HotspotsEnabled = false;
+    //   }
+    // })
+    // .state('engagement-studio-trigger', {
+    //   url: '/engagement-studio-trigger',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-trigger.html'),
+    //       controller: 'EngagementStudioTriggerController'
+
+    //     },
+    //     drawer: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-trigger.drawer.html'),
+    //       controller: 'EngagementStudioTriggerDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 2;
+    //     TopNavbar.HotspotsCount = 0;
+    //     TopNavbar.HotspotsEnabled = false;
+    //   }
+    // })
+    // .state('engagement-studio-rule', {
+    //   url: '/engagement-studio-rule',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-rule.html'),
+    //       controller: 'EngagementStudioRuleController'
+
+    //     },
+    //     drawer: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-rule.drawer.html'),
+    //       controller: 'EngagementStudioRuleDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 2;
+    //     TopNavbar.HotspotsCount = 1;
+    //     TopNavbar.HotspotsEnabled = false;
+    //   }
+    // })
+    // .state('engagement-studio-test', {
+    //   url: '/engagement-studio-test',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-test.html'),
+    //       controller: 'EngagementStudioTestController'
+
+    //     },
+    //     drawer: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-test.drawer.html'),
+    //       controller: 'EngagementStudioTestDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 2;
+    //     TopNavbar.HotspotsCount = 2;
+    //     TopNavbar.HotspotsEnabled = false;
+    //   }
+    // })
+    // .state('engagement-studio-report', {
+    //   url: '/engagement-studio-report',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-report.html'),
+    //       controller: 'EngagementStudioReportController'
+
+    //     },
+    //     drawer: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio-report.drawer.html'),
+    //       controller: 'EngagementStudioReportDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 2;
+    //     TopNavbar.HotspotsCount = 1;
+    //     TopNavbar.HotspotsEnabled = false;
+    //   }
+    // });
 
   $urlRouterProvider.otherwise('/');
 }
