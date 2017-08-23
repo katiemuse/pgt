@@ -4,8 +4,19 @@ export default function CustomizeNavigationController($scope, WizardHandler, Ste
   $scope.active = {
     step2: false,
     step3: false,
-    step4: false
+    step4: false,
+    step5: false
   };
+
+  $scope.draglist = [
+    {classname: 'chatter', drag: true},
+    {classname: 'today', drag: true},
+    {classname: 'dashboards', drag: true},
+    {classname: 'tasks', drag: true},
+    {classname: 'smart-search-items', drag: true},
+    {classname: 'customer-360', drag: true},
+    {classname: 'people', drag: true}
+  ];
 
   $scope.activatestep2 = () => {
     $scope.active.step2 = !$scope.active.step2;
@@ -22,6 +33,10 @@ export default function CustomizeNavigationController($scope, WizardHandler, Ste
 
   $scope.activatestep4 = () => {
     $scope.active.step4 = !$scope.active.step4;
+  };
+
+  $scope.activatestep5 = () => {
+    $scope.active.step5 = !$scope.active.step5;
   };
 
   $scope.Next = function () {

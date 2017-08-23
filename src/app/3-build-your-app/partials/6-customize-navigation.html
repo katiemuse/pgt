@@ -33,7 +33,12 @@
           </wz-step>
           <wz-step>
             <div class="step step-5">
-              <div class="click-box active" wz-next></div>
+              <div class="drag-drop-list-wrapper">
+                <ul class="drag-drop-list">
+                  <li ng-repeat="item in draglist" class="{{item.classname}}" ng-class="{active:item.classname=='customer-360'&&!active.step5}" data-drop="true"  data-drag="true" ng-model="draglist" jqyoui-droppable="{index: {{$index}}, onDrop: 'activatestep5'}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-direction="{{item.jqyouiDirection}}"></li>
+                </ul>
+              </div>
+              <div class="click-box" ng-class="{active:active.step5}" wz-next></div>
             </div>
           </wz-step>
           <wz-step>
