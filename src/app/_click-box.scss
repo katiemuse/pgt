@@ -1,0 +1,12 @@
+.click-box,
+.click-box-1,
+.click-box-2 {
+  position: absolute;
+  border-radius: 5px;
+  pointer-events: none;
+  &.active {
+    animation: borderActive 1.5s infinite;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+}

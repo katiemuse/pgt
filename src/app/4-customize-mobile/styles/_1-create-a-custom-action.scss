@@ -8,16 +8,10 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 156px;
       left: 330px;
       width: 85px;
       height: 25px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
@@ -41,16 +35,10 @@
       }
 
       .click-box {
-        position: absolute;
         top: 443px;
         left: 349px;
         width: 42px;
         height: 24px;
-        border-radius: 5px;
-        &.active {
-          animation: borderActive 1.5s infinite;
-          cursor: pointer;
-        }
       }
 
   }
@@ -71,31 +59,20 @@
 
 
     .drop-box {
-      position: absolute;
       top: 298px;
       left: 60px;
       width: 663px;
       height: 107px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
   .step-4 {
     background: url('../app/4-customize-mobile/assets/1-create-a-custom-action-screen-bkg-4.png') center center no-repeat;
 
     .click-box {
-      position: absolute;
       top: 101px;
       left: 26px;
       width: 30px;
       height: 16px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
@@ -109,16 +86,11 @@
     }
 
     .click-box {
-      position: absolute;
       top: -8px;
       left: 316px;
       width: 153px;
       height: 58px;
       border-radius: 11px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 }

@@ -89,124 +89,137 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 48px;
       right: 44px;
       width: 80px;
       height: 26px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       top: 264px;
       left: 432px;
       width: 37px;
       height: 14px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       top: 180px;
       left: 184px;
       width: 39px;
       height: 37px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-3 {
     .click-box {
-      position: absolute;
       top: 146px;
       left: 219px;
       width: 130px;
       height: 29px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       top: 310px;
       left: 491px;
       width: 80px;
       height: 21px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-2 {
-      position: absolute;
       top: 426px;
       right: 110px;
       width: 37px;
       height: 20px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-4 {
     .click-box {
-      position: absolute;
       top: 146px;
       left: 363px;
       width: 89px;
       height: 29px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       top: 310px;
       left: 491px;
       width: 80px;
       height: 21px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-5 {
-    .click-box {
+    .drag-drop-list-wrapper {
+      width: 272px;
+      height: 196px;
       position: absolute;
+      top: 222px;
+      left: 394px;
+    }
+    .drag-drop-list {
+      position: relative;
+      margin: 0;
+      padding: 0;
+      width: 272px;
+      height: 196px;
+      list-style: none;
+      li {
+        position: relative;
+        height: 28px;
+        width: 272px;
+        background-position: center;
+        border: 1px solid #E4E8EE;
+        &.chatter {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-chatter.png');
+        }
+        &.today {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-today.png');
+        }
+        &.dashboards {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-dashboards.png');
+        }
+        &.tasks {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-tasks.png');
+        }
+        &.smart-search-items {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-smart-search-items.png');
+        }
+        &.customer-360 {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-customer-360.png');
+          z-index: 1000;
+          &.active {
+            animation: borderActive 1.5s infinite;
+            cursor: move;
+          }
+        }
+        &.people {
+          background-image: url('../app/3-build-your-app/assets/6-customize-navigation-people.png');
+        }
+        &.ng-leave {
+          transition-duration: 0s;
+          opacity: 1;
+          &.ng-leave-active {
+            opacity: 0;
+          }
+        }
+        &.ng-enter {
+          transition: top 0.3s;
+          &[data-direction="left"] {
+            top: -28px;
+          }
+          &[data-direction="right"] {
+            top: 28px;
+          }
+          &.ng-enter-active {
+            top: 0px;
+          }
+        }
+      }
+    }
+    .click-box {
       top: 426px;
       right: 110px;
       width: 37px;
       height: 20px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 }

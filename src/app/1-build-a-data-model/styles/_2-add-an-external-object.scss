@@ -57,31 +57,19 @@
       }
     }
     .click-box {
-      position: absolute;
       top: 196px;
       left: 15px;
       width: 165px;
       height: 25px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       top: 177px;
       left: 302px;
       width: 186px;
       height: 27px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .custom-object {
       position: absolute;
@@ -140,16 +128,10 @@
       color: black;
     }
     .click-box {
-      position: absolute;
       bottom: 25px;
       left: 265px;
       width: 47px;
       height: 26px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
@@ -161,40 +143,22 @@
       background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-7.png') center top no-repeat;
     }
     .click-box {
-      position: absolute;
       top: 185px;
       left: 332px;
       width: 127px;
       height: 28px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       bottom: 8px;
       left: 46px;
       width: 33px;
       height: 28px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-2 {
-      position: absolute;
       bottom: 200px;
       left: 427px;
       width: 61px;
       height: 28px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 

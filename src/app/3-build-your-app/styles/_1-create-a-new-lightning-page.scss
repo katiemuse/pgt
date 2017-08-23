@@ -20,46 +20,28 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 175px;
       left: 172px;
       width: 45px;
       height: 25px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       bottom: 72px;
       right: 85px;
       width: 58px;
       height: 31px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-3 {
     .click-box {
-      position: absolute;
       bottom: 72px;
       right: 85px;
       width: 58px;
       height: 31px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .form {
       &.form-horizontal {
@@ -77,16 +59,10 @@
 
   .step-4 {
     .click-box {
-      position: absolute;
       bottom: 72px;
       right: 85px;
       width: 58px;
       height: 31px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
