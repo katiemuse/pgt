@@ -99,7 +99,7 @@ button.step-close-button {
   > {
     div {
       margin: 0 0 6px;
-      padding: 25px 5px 25px 25px;
+      padding: 25px;
       background-position: 0px center;
       background-repeat: no-repeat;
       color: $stepContainerColor;
@@ -160,13 +160,13 @@ button.step-close-button {
 
     &.active {
       width: 280px;
-      margin-left:0px;
+      margin-left:13px;
       max-height:500px;
       min-height: auto;
       height: auto !important;
 
       .step-title, .step-message {
-        width: 260px;
+        width: 235px;
         transition: all, 2.0s, ease-in-out;
         opacity: 1;
       }
@@ -205,7 +205,7 @@ button.step-close-button {
   background-color: transparent;
   background-image: linear-gradient(to right, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
   &.active {
-    background-image: linear-gradient(to left,transparent,#009cdb);
+    background-image: linear-gradient(to left, rgba(120,120,120,.5), #009cdb);
   }
 }
 
