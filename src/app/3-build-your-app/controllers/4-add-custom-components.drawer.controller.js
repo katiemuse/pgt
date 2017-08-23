@@ -12,7 +12,7 @@ export default function AddCustomComponentsDrawerController($scope, WizardHandle
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Now, drag-and-drop the custom component we just built onto your lightning page canvas.'
+      title: 'Drag and drop the custom component we just built onto your lightning page canvas'
     });
 
     Hotspots.clear();

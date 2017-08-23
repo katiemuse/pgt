@@ -17,22 +17,22 @@ export default function CustomizeNavigationDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'two',
-      title: 'Next to the icon, click \'Change\' and select an icon to represent your app.'
+      title: 'Select and icon for your app.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Click on the \'Lightning Experience\' tab, then click \'Add page to Lightning Apps\'. This will allow your desktop users to access the app.'
+      title: 'Click on the &lsquo;Lightning Experience&rsquo; tab, then click &lsquo;Add page to app.&rsquo; This will allow your desktop users to access the app.'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click on the \'Salesforce1\' tab, then click \'Add page to App\'. This will allow your mobile users to access the app.'
+      title: 'Click on the &lsquo;Salesforce1&rsquo; tab, then click &lsquo;Add page to app&rsquo;. This will allow your mobile users to access the app.'
     });
 
     Steps.pop({
       number: 'five',
-      title: 'Drag-and-Drop your app to reorder how its displayed in the Salesforce1 dashboard, then click \'Save\''
+      title: 'Move the icon up so that your users can quickly see it on the Salesforce1 menu.'
     });
 
     Hotspots.clear();

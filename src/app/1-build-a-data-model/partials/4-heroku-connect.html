@@ -25,7 +25,8 @@
               <form class="form form-horizontal">
                 <div class="control-group">
                   <div class="controls">
-                    <input class="btn btn-success" ng-class="{active:button.clicked}" ng-show="button.clicked" wz-next li-autofocus="wizard.stateIndex == 5" type="submit" value="Continue">
+                    <input class="btn btn-success" ng-class="{active:button.clicked}" ng-show="button.clicked" ng-click="Next()" li-autofocus="wizard.stateIndex == 5"
+                      type="submit" value="Continue">
                   </div>
                 </div>
               </form>
@@ -35,14 +36,18 @@
             <div class="step success">
               <li-center>
                 <p>
-                  <img src="../../../assets/images/success.png"/>
+                  <img src="../../../assets/images/success.png" />
                 </p>
                 <h2>Success!</h2>
                 <p>
-                  That was easy. When it only takes a few clicks to integrate third party databases, we can put our records to work in no time.
+                  Just like that, with a simple mapping, data from your Heroku app can easily sync with Salesforce. That’s the magic of Heroku
+                  Connect!
                 </p>
                 <p>
-                  <a ui-sref="build-a-schema" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                  Now let’s add one more piece of customer insight.
+                </p>
+                <p>
+                  <a ui-sref="add-a-custom-field" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
                 </p>
               </li-center>
             </div>

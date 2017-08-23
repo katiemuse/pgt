@@ -12,22 +12,22 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'Add Criteria\''
+      title: 'Click &lsquo;Add Criteria&rsquo;'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Name your first criteria ’New Customer Idea’ and choose ‘conditions are met’ as the Criteria for Executing Action.'
+      title: 'Name criteria &lsquo;New Customer Idea&rsquo; and select &lsquo;conditions are met&rsquo;.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Choose ‘Customer Idea’ from the ‘Field’ dropdown'
+      title: 'Choose &lsquo;Customer Idea&rsquo; from the &lsquo;Field&rsquo; dropdown'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click ‘Save’'
+      title: 'Click &lsquo;Save&rsquo;'
     });
 
     $timeout(() => {

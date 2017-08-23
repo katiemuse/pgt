@@ -12,29 +12,27 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'From setup, search for \'external data sources\' and open it up'
+      title: 'From setup, search for &lsquo;External data sources&rsquo; and open it up'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click \'New External Data Source\''
+      title: 'Click &lsquo;New External Data Source&rsquo;'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Let’s label the data source‘SAP’ and select ‘Platform \n' +
-      'Connect: OData 2.0’ as the Type. Then, click ‘Save.’'
+      title: 'Name your data source and choose the Platform Connect type from the dropdown. Then, click &lsquo;Save.&rsquo;'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Now let\'s see all the data that is available to us from SAP by\n' +
-      'clicking \'validate & sync\'.'
+      title: 'Click &lsquo;Validate and sync&rsquo; to bring data in'
     });
 
     Steps.pop({
       number: 'five',
-      title: 'Here we see five different tables that are available for us to sync with Salesforce, one of which is Sales Orders. Check "Sales Order" and click \'Sync\''
+      title: 'Out of 5 SAP tables integrated, select the one we need: &lsquo;Sales Orders&rsquo; and click &lsquo;Sync&rsquo;'
     });
 
     Hotspots.clear();

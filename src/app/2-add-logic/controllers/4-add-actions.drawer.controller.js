@@ -12,7 +12,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click ‘Add Action’',
+      title: 'Click &lsquo;Add Action&rsquo;',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
@@ -21,7 +21,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'two',
-      title: 'From the Action Type dropdown select \'Send push notification\' ',
+      title: 'From the Action Type dropdown select &lsquo;Send Push Notification&rsquo; ',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
@@ -30,7 +30,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'three',
-      title: 'Name your action ‘Notify Product Team’',
+      title: 'Name your action &lsquo;Notify Product Team&rsquo;',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
@@ -39,7 +39,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'four',
-      title: 'Click ‘Save’',
+      title: 'Click &lsquo;Save&rsquo;',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
@@ -48,7 +48,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'five',
-      title: 'Click \'Activate\' to set your process in motion.',
+      title: 'Click &lsquo;Activate&rsquo; to set your process in motion',
       clickHandler() {
         // console.log('clicked step', step);
         return false;
