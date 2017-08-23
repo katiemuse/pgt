@@ -12,17 +12,17 @@ export default function ChooseAnObjectForTheProcessDrawerController($scope, Wiza
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on \'Add Object\''
+      title: 'Click on &lsquo;Add Object&rsquo;'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Choose \'Customer Insights\' from the dropdown choices.'
+      title: 'Choose &lsquo;Customer Insights&rsquo; from the dropdown choices'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'We want our process to be activated when we create a new piece of Customer Insights object so we\'ll leave the settings as they are. <br/> Click \'Save.\''
+      title: 'Our process starts when a new idea record is created. Click &lsquo;save&rsquo;.'
     });
 
     Hotspots.clear();

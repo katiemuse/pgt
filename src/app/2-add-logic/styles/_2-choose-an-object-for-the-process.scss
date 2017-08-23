@@ -76,36 +76,3 @@
   }
 
 }
-
-#step-container {
-
-  &.choose-an-object-for-the-process-steps {
-
-    top: 110px;
-
-    .step-one {
-      &.active {
-        height: 90px;
-      }
-    }
-
-    .step-two {
-      &.active {
-        height: 130px;
-      }
-    }
-
-    .step-three {
-      &.active {
-        height: 170px !important;
-      }
-    }
-
-    .step-four {
-      &.active {
-        height: 90px;
-      }
-    }
-
-  }
-}

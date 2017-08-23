@@ -12,7 +12,7 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'New\''
+      title: 'Click &lsquo;New&rsquo;'
     });
 
     Steps.pop({
@@ -22,12 +22,12 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
 
     Steps.pop({
       number: 'three',
-      title: 'Type your page label in the open field; let\'s call this ‘Customer 360’. Click ‘Next’'
+      title: 'Name your page &lsquo;Customer 360&rsquo;. Click &lsquo;Next&rsquo;'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'We will use the ‘Header and Right Sidebar’ layout choice. Click ‘Finish.’ '
+      title: 'We will use the &lsquo;Header and Right Sidebar&rsquo; layout. Click &lsquo;Finish.&rsquo; '
     });
 
     Hotspots.clear();

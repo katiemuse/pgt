@@ -20,6 +20,7 @@ export default function HerokuConnectController($scope, Steps, Hotspots, WizardH
 
   $scope.ToggleClicked = () => {
     $scope.button.clicked = !$scope.button.clicked;
+    Steps.activate('four');
   };
 
   $scope.toggleLabel = () => {
@@ -50,11 +51,12 @@ export default function HerokuConnectController($scope, Steps, Hotspots, WizardH
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
-      $scope.toggleLabel();
-      $timeout(() => {
-        WizardHandler.wizard('monitor').next();
-        Steps.activate('four');
-      }, 600);
+      WizardHandler.wizard('monitor').next();
+      Steps.activate('six');
+      // $scope.toggleLabel();
+      // $timeout(() => {
+      //   WizardHandler.wizard('monitor').next();
+      // }, 600);
     }
   };
 }

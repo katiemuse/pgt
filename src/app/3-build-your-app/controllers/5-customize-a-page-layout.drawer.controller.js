@@ -12,18 +12,13 @@ export default function CustomizeAPageLayoutDrawerController($scope, WizardHandl
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Open the screen display dropdown and choose \'Desktop\' view. Then, try the other screen sizes to see how your app comes to life across devices.'
+      title: 'Try looking at the desktop layout from the device type drop-down.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Once you\'ve made sure it looks great across multiple layouts click \'Save\''
+      title: 'Click \'save\''
     });
-
-    // Steps.pop({
-    //   number: 'three',
-    //   title: 'We\'re not ready to activate our app just yet, click "Not Yet"'
-    // });
 
     Hotspots.clear();
 

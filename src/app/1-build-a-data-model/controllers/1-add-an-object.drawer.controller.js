@@ -12,22 +12,22 @@ export default function AddAnObjectDrawerController($scope, WizardHandler, TopNa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on the \'Object Manager\' tab'
+      title: 'Click on the &lsquo;Object Manager&rsquo; tab'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click \'Create\' and select \'Custom Object\''
+      title: 'Click &lsquo;Create&rsquo; and select &lsquo;Custom Object&rsquo;'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Label your object, let\'s call it \'Customer Insights\''
+      title: 'Name your object &lsquo;Customer Insights&rsquo;'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click \'Save\''
+      title: 'Click &lsquo;Save&rsquo;'
     });
 
     Hotspots.clear();

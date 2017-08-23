@@ -12,22 +12,22 @@ export default function InstallAPreBuiltComponentFromAppexchangeDrawerController
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click ‘Get more on the AppExchange’ '
+      title: 'Click &lsquo;Get more on the App Exchange&rsquo; '
     });
 
     Steps.pop({
       number: 'two',
-      title: 'In the search bar, type ‘Ideas’ and hit enter'
+      title: 'In the search bar, type &lsquo;ideas&rsquo; and hit enter'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Select ‘Community Idea’ from search results'
+      title: 'Select &lsquo;Community Ideas&rsquo; from the search results'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click ‘Get It Now’'
+      title: 'Click &lsquo;Get It Now&rsquo;'
     });
 
     Hotspots.clear();

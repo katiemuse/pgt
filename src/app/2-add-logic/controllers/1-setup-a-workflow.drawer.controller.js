@@ -12,22 +12,22 @@ export default function SetupAWorkflowDrawerController($scope, WizardHandler, To
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'new\' to start building your first process'
+      title: 'Click &lsquo;New&rsquo; to create a process.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Start by giving your process a name and a trigger action. We suggest something like \'Add idea to backlog\'.'
+      title: 'Name your process &lsquo;Add idea to backlog&rsquo;.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Choose \'A Record Changes\' from the dropdown to tell the process when to begin.'
+      title: 'From the dropdown below, choose &lsquo;A record changes&rsquo; to tell the process when to begin'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click \'Save\''
+      title: 'Click &lsquo;Save&rsquo;'
     });
 
     Hotspots.clear();
