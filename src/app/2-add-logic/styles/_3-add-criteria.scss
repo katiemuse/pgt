@@ -9,17 +9,11 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 239px;
       left: 36px;
       width: 73px;
       height: 73px;
       transform: rotate(45deg);
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 

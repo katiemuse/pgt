@@ -1,0 +1,9 @@
+.drop-box {
+  display: none;
+  position: absolute;
+  border-radius: 5px;
+  &.active {
+    animation: borderActive 1.5s infinite;
+    display: block;
+  }
+}

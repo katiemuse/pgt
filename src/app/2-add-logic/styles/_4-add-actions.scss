@@ -8,16 +8,10 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 286px;
       left: 179px;
       width: 138px;
       height: 36px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 

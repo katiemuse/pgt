@@ -20,16 +20,10 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 451px;
       left: 10px;
       width: 188px;
       height: 30px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
@@ -63,31 +57,19 @@
 
   .step-3 {
     .click-box {
-      position: absolute;
       top: 211px;
       left: 95px;
       width: 134px;
       height: 75px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-4 {
     .click-box {
-      position: absolute;
       bottom: 34px;
       right: 84px;
       width: 109px;
       height: 31px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 

@@ -16,16 +16,10 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 48px;
       left: 218px;
       width: 148px;
       height: 27px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .step1-dropdown {
       position: absolute;
@@ -33,46 +27,30 @@
       left: 216px;
     }
     .click-box-1 {
-      position: absolute;
       top: 164px;
       left: 218px;
       width: 150px;
       height: 26px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       top: 49px;
       right: 136px;
       width: 49px;
       height: 26px;
       border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-3 {
     .click-box {
-      position: absolute;
       bottom: 113px;
       right: 207px;
       width: 64px;
       height: 28px;
       border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
    }
 

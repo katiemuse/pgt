@@ -13,16 +13,10 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 146px;
       left: 21px;
       width: 104px;
       height: 40px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 

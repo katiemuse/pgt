@@ -16,31 +16,19 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 33px;
       left: 181px;
       width: 142px;
       height: 36px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       top: 21px;
       left: 616px;
       width: 89px;
       height: 30px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .custom-object {
       position: absolute;
@@ -89,16 +77,10 @@
     height: 1040px !important;
     transform: translateY(-549px);
     .click-box {
-      position: absolute;
       bottom: 34px;
       left: 308px;
       width: 39px;
       height: 22px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 }

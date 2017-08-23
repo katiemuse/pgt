@@ -8,16 +8,10 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       bottom: 17px;
       right: 151px;
       width: 68px;
       height: 26px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
@@ -53,18 +47,11 @@
       }
     }
     .drop-box {
-      display: none;
-      position: absolute;
-      top: 193px;
+       top: 193px;
       left: 422px;
       width: 143px;
       height: 194px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        display: block;
-      }
-    }
+     }
 
   }
 
@@ -92,17 +79,10 @@
       }
     }
     .drop-box {
-      display: none;
-      position: absolute;
       top: 193px;
       left: 422px;
       width: 143px;
       height: 194px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        display: block;
-      }
     }
   }
   .step-4 {
@@ -120,16 +100,10 @@
       border-radius: 4px;
     }
     .click-box {
-      position: absolute;
       bottom: 49px;
       left: 552px;
       width: 35px;
       height: 21px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 

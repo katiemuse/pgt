@@ -58,68 +58,42 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 297px;
       left: 12px;
       width: 11px;
       height: 72px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       top: 204px;
       left: 366px;
       width: 125px;
       height: 176px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-3 {
     .click-box {
-      position: absolute;
       top: 171px;
       left: 12px;
       width: 69px;
       height: 23px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-4 {
     .click-box {
-      position: absolute;
       bottom: 99px;
       left: 7px;
       width: 198px;
       height: 19px;
-      border-radius: 5px;
-
       &.lookup {
         background-image:url('../app/1-build-a-data-model/assets/5-build-a-schema-lookup.png');
         width: 197px;
         height: 17px;
         background-size: cover;
-      }
-
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
       }
     }
 
@@ -158,16 +132,10 @@
       }
     }
     .click-box {
-      position: absolute;
       bottom: 31px;
       left: 407px;
       width: 40px;
       height: 21px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
   .step {

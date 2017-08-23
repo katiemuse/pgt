@@ -89,109 +89,61 @@
 
   .step-1 {
     .click-box {
-      position: absolute;
       top: 48px;
       right: 44px;
       width: 80px;
       height: 26px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-2 {
     .click-box {
-      position: absolute;
       top: 264px;
       left: 432px;
       width: 37px;
       height: 14px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       top: 180px;
       left: 184px;
       width: 39px;
       height: 37px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-3 {
     .click-box {
-      position: absolute;
       top: 146px;
       left: 219px;
       width: 130px;
       height: 29px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       top: 310px;
       left: 491px;
       width: 80px;
       height: 21px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-2 {
-      position: absolute;
       top: 426px;
       right: 110px;
       width: 37px;
       height: 20px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
   .step-4 {
     .click-box {
-      position: absolute;
       top: 146px;
       left: 363px;
       width: 89px;
       height: 29px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .click-box-1 {
-      position: absolute;
       top: 310px;
       left: 491px;
       width: 80px;
       height: 21px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 
@@ -264,16 +216,10 @@
       }
     }
     .click-box {
-      position: absolute;
       top: 426px;
       right: 110px;
       width: 37px;
       height: 20px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
   }
 }

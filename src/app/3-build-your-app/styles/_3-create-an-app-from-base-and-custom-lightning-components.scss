@@ -40,16 +40,10 @@
       }
     }
     .drop-box {
-      position: absolute;
       top: 107px;
       left: 262px;
       width: 237px;
       height: 115px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .report-chart {
       position: absolute;
@@ -95,16 +89,10 @@
       }
     }
     .drop-box {
-      position: absolute;
       top: 229px;
       left: 262px;
       width: 237px;
       height: 115px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .chatter-feed {
       position: absolute;
@@ -132,16 +120,10 @@
     }
 
     .drop-box {
-      position: absolute;
       top: 351px;
       left: 262px;
       width: 237px;
       height: 115px;
-      border-radius: 5px;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: pointer;
-      }
     }
     .customer-ideas {
       position: absolute;
