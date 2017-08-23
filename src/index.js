@@ -63,8 +63,8 @@ import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-
 import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
 import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/2-add-an-external-object.controller';
 import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/2-add-an-external-object.drawer.controller';
-import AddACustomFieldController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.controller';
-import AddACustomFieldDrawerController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.drawer.controller';
+// import AddACustomFieldController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.controller';
+// import AddACustomFieldDrawerController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.drawer.controller';
 import HerokuConnectController from './app/1-build-a-data-model/controllers/4-heroku-connect.controller';
 import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/4-heroku-connect.drawer.controller';
 import BuildASchemaController from './app/1-build-a-data-model/controllers/5-build-a-schema.controller';
@@ -94,17 +94,17 @@ import CreateACustomActionDrawerController from './app/4-customize-mobile/contro
 import CustomizeTheActionBarController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.controller';
 import CustomizeTheActionBarDrawerController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.drawer.controller';
 import EndController from './app/4-customize-mobile/controllers/3-end.controller';
-import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
-import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
-import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
-import EngagementStudioReportDrawerController from './app/5-in-the-field/controllers/engagement-studio-report.drawer.controller';
-import EngagementStudioRuleController from './app/5-in-the-field/controllers/engagement-studio-rule.controller';
-import EngagementStudioRuleDrawerController from './app/5-in-the-field/controllers/engagement-studio-rule.drawer.controller';
-import EngagementStudioTestController from './app/5-in-the-field/controllers/engagement-studio-test.controller';
-import EngagementStudioTestDrawerController from './app/5-in-the-field/controllers/engagement-studio-test.drawer.controller';
-import steplog from './app/5-in-the-field/factory/engagement-studio-test.factory';
-import EngagementStudioTriggerController from './app/5-in-the-field/controllers/engagement-studio-trigger.controller';
-import EngagementStudioTriggerDrawerController from './app/5-in-the-field/controllers/engagement-studio-trigger.drawer.controller';
+// import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
+// import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
+// import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
+// import EngagementStudioReportDrawerController from './app/5-in-the-field/controllers/engagement-studio-report.drawer.controller';
+// import EngagementStudioRuleController from './app/5-in-the-field/controllers/engagement-studio-rule.controller';
+// import EngagementStudioRuleDrawerController from './app/5-in-the-field/controllers/engagement-studio-rule.drawer.controller';
+// import EngagementStudioTestController from './app/5-in-the-field/controllers/engagement-studio-test.controller';
+// import EngagementStudioTestDrawerController from './app/5-in-the-field/controllers/engagement-studio-test.drawer.controller';
+// import steplog from './app/5-in-the-field/factory/engagement-studio-test.factory';
+// import EngagementStudioTriggerController from './app/5-in-the-field/controllers/engagement-studio-trigger.controller';
+// import EngagementStudioTriggerDrawerController from './app/5-in-the-field/controllers/engagement-studio-trigger.drawer.controller';
 
 import './app/vendor.scss';
 import './app/index.scss';
@@ -154,14 +154,14 @@ angular
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
-  .factory('steplog', steplog)
+  // .factory('steplog', steplog)
   .controller('IntroController', IntroController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('AddAnObjectController', AddAnObjectController)
   .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
-  .controller('AddACustomFieldController', AddACustomFieldController)
-  .controller('AddACustomFieldDrawerController', AddACustomFieldDrawerController)
+  // .controller('AddACustomFieldController', AddACustomFieldController)
+  // .controller('AddACustomFieldDrawerController', AddACustomFieldDrawerController)
   .controller('AddAnExternalObjectController', AddAnExternalObjectController)
   .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
   .controller('HerokuConnectController', HerokuConnectController)
@@ -193,16 +193,16 @@ angular
   .controller('CustomizeTheActionBarController', CustomizeTheActionBarController)
   .controller('CustomizeTheActionBarDrawerController', CustomizeTheActionBarDrawerController)
   .controller('EndController', EndController)
-  .controller('EngagementStudioController', EngagementStudioController)
-  .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
-  .controller('EngagementStudioReportController', EngagementStudioReportController)
-  .controller('EngagementStudioReportDrawerController', EngagementStudioReportDrawerController)
-  .controller('EngagementStudioRuleController', EngagementStudioRuleController)
-  .controller('EngagementStudioRuleDrawerController', EngagementStudioRuleDrawerController)
-  .controller('EngagementStudioTestController', EngagementStudioTestController)
-  .controller('EngagementStudioTestDrawerController', EngagementStudioTestDrawerController)
-  .controller('EngagementStudioTriggerController', EngagementStudioTriggerController)
-  .controller('EngagementStudioTriggerDrawerController', EngagementStudioTriggerDrawerController)
+  // .controller('EngagementStudioController', EngagementStudioController)
+  // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
+  // .controller('EngagementStudioReportController', EngagementStudioReportController)
+  // .controller('EngagementStudioReportDrawerController', EngagementStudioReportDrawerController)
+  // .controller('EngagementStudioRuleController', EngagementStudioRuleController)
+  // .controller('EngagementStudioRuleDrawerController', EngagementStudioRuleDrawerController)
+  // .controller('EngagementStudioTestController', EngagementStudioTestController)
+  // .controller('EngagementStudioTestDrawerController', EngagementStudioTestDrawerController)
+  // .controller('EngagementStudioTriggerController', EngagementStudioTriggerController)
+  // .controller('EngagementStudioTriggerDrawerController', EngagementStudioTriggerDrawerController)
   .service('Hotspots', Hotspots)
   .config(routerConfig)
   .run(run);

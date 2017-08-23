@@ -31,10 +31,9 @@ export default function run(
     0: ['intro'],
     1: [
       'add-an-object',
-      'add-an-external-object',
-      'add-a-custom-field',
       'heroku-connect',
-      'build-a-schema'
+      'add-an-external-object'
+      // ,'build-a-schema'
     ],
     2: [
       'setup-a-workflow',
