@@ -12,12 +12,12 @@ export default function AddAnObjectDrawerController($scope, WizardHandler, TopNa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'Object Manager\' tab'
+      title: 'Click on the \'Object Manager\' tab'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click \'Create\' and select \'Custom object\''
+      title: 'Click \'Create\' and select \'Custom Object\''
     });
 
     Steps.pop({

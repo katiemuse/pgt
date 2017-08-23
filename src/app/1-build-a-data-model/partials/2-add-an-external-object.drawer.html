@@ -1,9 +1,11 @@
 <div class="drawer-content add-an-external-object-drawer" ng-controller="AddAnObjectController">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
-    <h2>Add an External Object</h2>
-    <p>We want our Product team to have access to our company's Sales Order data so to give context to customer feedback. Salesforce Connect lets us pull in this data in a few simple steps. </p>
+    <h2>Integrate Customer Data from Heroku</h2>
+    <p>To control their thermostats, your customers use a mobile app that was built on Heroku. Through the app, they can also submit ideas to your company. </p>
+    <p>Let&rsquo;s bring those ideas from the app into Salesforce.</p>
+    <p>Because the app was built on Heroku, it is amazingly easy to integrate that data. </p>
     <p class="continue">
-        <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
+        <a class="btn btn-continue" ng-click="beginStory()">Let&rsquo;s Start by Creating a Mapping</a>
     </p>
   </div>
 
@@ -16,22 +18,6 @@
     </div>
 
     <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
-      <drawer-panel-tab heading="01">
-        <h2>About Tags</h2>
-        <img src="../../../assets/images/stories/1-build-a-data-model/1-drawer-hotspot-tabs.png">
-        <p>
-          You can add ‘tags’ to your marketing campaigns to help keep them organized. Tags are great for grouping
-          related campaigns together — and they make searching a breeze.</p>
-      </drawer-panel-tab>
-      <drawer-panel-tab heading="02">
-        <h2>Campaign ROI</h2>
-        <p>
-          Inputting your initial cost will help determine your campaign ROI at the end of this experience.
-        </p>
-        <p>
-          Campaign won't cost you anything? Just input "0" in the cost field.
-        </p>
-      </drawer-panel-tab>
     </drawer-panel>
   </div>
 

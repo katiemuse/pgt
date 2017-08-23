@@ -18,7 +18,7 @@ module.exports = {
         loader: 'url-loader?limit=100000'
       },
       {test: /\.png$/, loader: 'file-loader'},
-      {test: /\.svg$/, loader: 'svg-url-loader?stripdeclarations=1'},
+      {test: /\.svg$/, loader: 'file-loader'},
       {test: /\.gif$/, loader: 'file-loader'},
       {test: /\.jpg/, loader: 'file-loader'},
       {

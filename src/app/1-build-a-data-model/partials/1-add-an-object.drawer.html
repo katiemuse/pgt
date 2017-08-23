@@ -1,7 +1,8 @@
 <div class="drawer-content add-an-object-drawer" ng-controller="AddAnObjectController">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
-    <h2>Add an Object</h2>
-    <p>We can use existing data from our Salesforce instance, or bring in data from other databases to populate our app. We'll start by organizing our customer data into objects.</p>
+    <h2>Build Your App’s Data Model</h2>
+    <p>To build an app in Salesforce Platform, you start with a data model. &lsquo;Objects&rsquo; are the building blocks of that data model.</p>
+    <p>First, we will create a Customer Insights object to bring important information such as customer ideas, net promoter scores, and more right into your app. </p>
     <p class="continue">
         <a class="btn btn-continue" ng-click="beginStory()">Continue</a>
     </p>
@@ -16,22 +17,6 @@
     </div>
 
     <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
-      <drawer-panel-tab heading="01">
-        <h2>About Tags</h2>
-        <img src="../../../assets/images/stories/1-build-a-data-model/1-drawer-hotspot-tabs.png">
-        <p>
-          You can add ‘tags’ to your marketing campaigns to help keep them organized. Tags are great for grouping
-          related campaigns together — and they make searching a breeze.</p>
-      </drawer-panel-tab>
-      <drawer-panel-tab heading="02">
-        <h2>Campaign ROI</h2>
-        <p>
-          Inputting your initial cost will help determine your campaign ROI at the end of this experience.
-        </p>
-        <p>
-          Campaign won't cost you anything? Just input "0" in the cost field.
-        </p>
-      </drawer-panel-tab>
     </drawer-panel>
   </div>
 
