@@ -68,7 +68,7 @@ body {
     overflow: hidden;
     background-color: white;
     position:relative;
-    margin-top:100px;
+    margin-top: 58px;
 
     @media screen and (min-width: $screen-1080p) {
       position: absolute;
@@ -76,11 +76,10 @@ body {
       margin: 30px auto 0 auto;
       left: 50%;
       top: 50%;
-      margin-left: -383px;
-      margin-top: -242px;
+      margin-left: -396px;
+      margin-top: -260px;
     }
 
-    border-radius: 5px;
    }
 
   .monitor-height {
