@@ -6,6 +6,7 @@
     "/app/**": "/app/**",
     "/assets/**": "/assets/**",
     "/robots.txt": "robots.txt",
+    "/sf.analytics.js": "analytics.js",
     "/**": "index.html"
   }
 }
