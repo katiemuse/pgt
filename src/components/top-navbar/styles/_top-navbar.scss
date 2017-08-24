@@ -99,11 +99,13 @@ nav.top-navbar {
       color: white;
       font-family: $salesforcesans;
       font-weight: bold;
-      font-size: 15px;
+      font-size: 14px;
       line-height: 45px;
       display: inline-block;
       float: right;
       transition: all 0.2s ease-in-out;
+      text-transform: uppercase;
+      letter-spacing: .102em;
     }
     &:hover, &:focus {
       @media(min-width: $screen-md-min) {
@@ -167,12 +169,14 @@ nav.top-navbar {
         color: white;
         font-family: $salesforcesans;
         font-weight: bold;
-        font-size: 15px;
+        font-size: 14px;
         line-height: 45px;
         display: inline-block;
         float: right;
         margin-top: 12px;
         margin-right: 15px;
+        text-transform: uppercase;
+        letter-spacing: .102em;
         @media (min-width: $screen-sm-min) {
           margin-right: 0;
         }

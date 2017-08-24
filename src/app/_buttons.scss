@@ -1,6 +1,6 @@
 @import "base";
 
-$button-font-size: 12px;
+$button-font-size: 14px;
 $button-rounded-radius: 24px;
 
 button, a {
@@ -14,6 +14,8 @@ button, a {
   font-weight: bold;
   font-size: $button-font-size;
   padding: 4px 15px;
+  text-transform: uppercase;
+  letter-spacing: .102em;
   &:focus {
     outline: none !important;
   }
