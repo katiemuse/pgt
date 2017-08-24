@@ -44,10 +44,17 @@
   }
 
   .step-6,
+  .step-7 {
+    background-image: url('../app/0-intro/assets/outro-background-1.png');
+  }
+
+  .step-8 {
+    background-image: url('../app/0-intro/assets/outro-background-2.png');
+  }
+
+  .step-6,
   .step-7,
   .step-8 {
-    background-image: url('../app/0-intro/assets/intro-background.png');
-
     .outro-copy {
       text-align: center;
       color: white;
