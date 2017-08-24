@@ -124,8 +124,12 @@
       background-position: 100% 50%;
       background-repeat: no-repeat;
       -webkit-appearance: none;
+      -moz-appearance: none;
       padding-left: 10px;
       color: black;
+      &::-ms-expand {
+        display: none;
+      }
     }
     .click-box {
       bottom: 25px;

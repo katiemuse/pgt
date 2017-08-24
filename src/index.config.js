@@ -17,7 +17,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: '<div></div>'
         },
         mobile: {
-          template: require('./app/1-build-a-data-model/partials/1-add-an-object.mobile.html')
+          template: require('./mobile.html')
         },
         intro: {
           template: require('./app/0-intro/partials/intro.mobile.html'),
@@ -48,7 +48,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddAnObjectDrawerController'
         },
         mobile: {
-          template: require('./app/1-build-a-data-model/partials/1-add-an-object.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -70,7 +70,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddAnExternalObjectDrawerController'
         },
         mobile: {
-          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -92,7 +92,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
     //       controller: 'AddACustomFieldDrawerController'
     //     },
     //     mobile: {
-    //       template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.mobile.html')
+    //       template: require('./mobile.html')
     //     }
     //   },
     //   onEnter(TopNavbar) {
@@ -114,7 +114,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'HerokuConnectDrawerController'
         },
         mobile: {
-          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -136,7 +136,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'BuildASchemaDrawerController'
         },
         mobile: {
-          template: require('./app/1-build-a-data-model/partials/5-build-a-schema.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -158,7 +158,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'SetupAWorkflowDrawerController'
         },
         mobile: {
-          template: require('./app/2-add-logic/partials/1-setup-a-workflow.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -180,7 +180,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChooseAnObjectForTheProcessDrawerController'
         },
         mobile: {
-          template: require('./app/2-add-logic/partials/1-setup-a-workflow.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -200,7 +200,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddCriteriaDrawerController'
         },
         mobile: {
-          template: require('./app/2-add-logic/partials/1-setup-a-workflow.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -220,7 +220,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddActionsDrawerController'
         },
         mobile: {
-          template: require('./app/2-add-logic/partials/1-setup-a-workflow.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -240,7 +240,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateANewLightningPageDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -261,7 +261,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'InstallAPreBuiltComponentFromAppexchangeDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -282,7 +282,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateAnAppFromBaseAndCustomLightningComponentsDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -303,7 +303,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddCustomComponentsDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -324,7 +324,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CustomizeAPageLayoutDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -345,7 +345,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CustomizeNavigationDrawerController'
         },
         mobile: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -366,7 +366,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateACustomActionDrawerController'
         },
         mobile: {
-          template: require('./app/4-customize-mobile/partials/1-create-a-custom-action.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -387,7 +387,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CustomizeTheActionBarDrawerController'
         },
         mobile: {
-          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -404,7 +404,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'EndController'
         },
         mobile: {
-          template: require('./app/4-customize-mobile/partials/3-end.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -413,116 +413,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = true;
       }
     });
-    // .state('engagement-studio', {
-    //   url: '/engagement-studio',
-    //   views: {
-    //     monitor: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.html'),
-    //       controller: 'EngagementStudioController'
-
-    //     },
-    //     drawer: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.drawer.html'),
-    //       controller: 'EngagementStudioDrawerController'
-    //     },
-    //     mobile: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-    //     }
-    //   },
-    //   onEnter(TopNavbar) {
-    //     TopNavbar.DidYouKnowCount = 2;
-    //     TopNavbar.HotspotsCount = 0;
-    //     TopNavbar.HotspotsEnabled = false;
-    //   }
-    // })
-    // .state('engagement-studio-trigger', {
-    //   url: '/engagement-studio-trigger',
-    //   views: {
-    //     monitor: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-trigger.html'),
-    //       controller: 'EngagementStudioTriggerController'
-
-    //     },
-    //     drawer: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-trigger.drawer.html'),
-    //       controller: 'EngagementStudioTriggerDrawerController'
-    //     },
-    //     mobile: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-    //     }
-    //   },
-    //   onEnter(TopNavbar) {
-    //     TopNavbar.DidYouKnowCount = 2;
-    //     TopNavbar.HotspotsCount = 0;
-    //     TopNavbar.HotspotsEnabled = false;
-    //   }
-    // })
-    // .state('engagement-studio-rule', {
-    //   url: '/engagement-studio-rule',
-    //   views: {
-    //     monitor: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-rule.html'),
-    //       controller: 'EngagementStudioRuleController'
-
-    //     },
-    //     drawer: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-rule.drawer.html'),
-    //       controller: 'EngagementStudioRuleDrawerController'
-    //     },
-    //     mobile: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-    //     }
-    //   },
-    //   onEnter(TopNavbar) {
-    //     TopNavbar.DidYouKnowCount = 2;
-    //     TopNavbar.HotspotsCount = 1;
-    //     TopNavbar.HotspotsEnabled = false;
-    //   }
-    // })
-    // .state('engagement-studio-test', {
-    //   url: '/engagement-studio-test',
-    //   views: {
-    //     monitor: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-test.html'),
-    //       controller: 'EngagementStudioTestController'
-
-    //     },
-    //     drawer: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-test.drawer.html'),
-    //       controller: 'EngagementStudioTestDrawerController'
-    //     },
-    //     mobile: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-    //     }
-    //   },
-    //   onEnter(TopNavbar) {
-    //     TopNavbar.DidYouKnowCount = 2;
-    //     TopNavbar.HotspotsCount = 2;
-    //     TopNavbar.HotspotsEnabled = false;
-    //   }
-    // })
-    // .state('engagement-studio-report', {
-    //   url: '/engagement-studio-report',
-    //   views: {
-    //     monitor: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-report.html'),
-    //       controller: 'EngagementStudioReportController'
-
-    //     },
-    //     drawer: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio-report.drawer.html'),
-    //       controller: 'EngagementStudioReportDrawerController'
-    //     },
-    //     mobile: {
-    //       template: require('./app/5-in-the-field/partials/engagement-studio.mobile.html')
-    //     }
-    //   },
-    //   onEnter(TopNavbar) {
-    //     TopNavbar.DidYouKnowCount = 2;
-    //     TopNavbar.HotspotsCount = 1;
-    //     TopNavbar.HotspotsEnabled = false;
-    //   }
-    // });
 
   $urlRouterProvider.otherwise('/');
 }
