@@ -1,5 +1,7 @@
 import _ from 'lodash';
 
+/* global s:true */
+
 export default function run(
   $rootScope,
   $state,
@@ -49,20 +51,19 @@ export default function run(
       'customize-a-page-layout',
       'customize-navigation'
     ],
-    4: [
-      'create-a-custom-action',
-      'customize-the-action-bar'
-    ]
+    4: ['create-a-custom-action', 'customize-the-action-bar']
   };
 
   $rootScope.progressIndex = 0;
   $rootScope.taskIndex = 0;
 
-  $rootScope.getProgressIndex = function (stateName) {
-    const existingState = _.find(_.values($rootScope.progressStates),
+  $rootScope.getProgressIndex = function(stateName) {
+    const existingState = _.find(
+      _.values($rootScope.progressStates),
       stateArray => {
         return _.indexOf(stateArray, stateName) !== -1;
-      });
+      }
+    );
 
     if (existingState) {
       return _.indexOf(_.values($rootScope.progressStates), existingState);
@@ -70,22 +71,34 @@ export default function run(
     return -1;
   };
 
-  $rootScope.getTaskIndex = function (stateName) {
-    const existingStateIndex = _.findIndex(_.values($rootScope.progressStates),
+  $rootScope.getTaskIndex = function(stateName) {
+    const existingStateIndex = _.findIndex(
+      _.values($rootScope.progressStates),
       stateArray => {
         return _.indexOf(stateArray, stateName) !== -1;
-      });
+      }
+    );
 
     if (existingStateIndex > -1) {
-      return _.indexOf(_.values($rootScope.progressStates[existingStateIndex]), stateName);
+      return _.indexOf(
+        _.values($rootScope.progressStates[existingStateIndex]),
+        stateName
+      );
     }
     return -1;
   };
 
-  const z = $transitions.onSuccess({ }, trans => {
+  const z = $transitions.onSuccess({}, trans => {
+    if (s && s.t && trans.to().name !== '') {
+      s.pageName = `platformtour:` + trans.to().name;
+      s.t();
+    }
+
     $rootScope.progressIndex = $rootScope.getProgressIndex(trans.to().name);
     $rootScope.taskIndex = $rootScope.getTaskIndex(trans.to().name);
-    $rootScope.canSkip = $rootScope.taskIndex + 1 < _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
+    $rootScope.canSkip =
+      $rootScope.taskIndex + 1 <
+      _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
     $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
   });
 
