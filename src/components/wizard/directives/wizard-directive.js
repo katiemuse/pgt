@@ -20,7 +20,7 @@ export default function wizard() {
     template: require('../partials/wizard.html'),
 
     // controller for wizard directive, treat this just like an angular controller
-    controller($scope, WizardHandler, TopNavbar, Drawer) {
+    controller($scope, WizardHandler, TopNavbar, Drawer, Steps) {
       // this variable allows directive to load without having to pass any step validation
       let firstRun = true;
       // creating instance of wizard, passing this as second argument allows access to functions attached to this via Service
@@ -104,6 +104,10 @@ export default function wizard() {
           let thisStep;
           let exitallowed = false;
           let enterallowed = false;
+          const index = _.indexOf($scope.steps, $scope.selectedStep);
+          if (index === $scope.steps.length - 2 || index >= 5) {
+            Steps.clear();
+          }
           // getting data for step you are transitioning out of
           if ($scope.currentStepNumber() > 0) {
             thisStep = $scope.currentStepNumber() - 1;
