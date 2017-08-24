@@ -129,6 +129,12 @@ button, a {
 }
 
 
+.btn-interface {
+  text-transform: none;
+  font-size: 12px;
+  letter-spacing: normal;
+}
+
 .btn-intro {
   border-radius: $button-rounded-radius;
   background-color:#14315d;

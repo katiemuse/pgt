@@ -2,15 +2,16 @@
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
 
 
-    <wizard name="drawer" on-finish="beginStory()">
+    <wizard name="drawer">
       <wz-step>
         <h2>Integrate Customer Data from Heroku</h2>
         <p>To control their thermostats, your customers use a mobile app that was built on Heroku. Through the app, they can
           also submit ideas to your company. </p>
         <p>Let’s bring those ideas from the app into Salesforce.</p>
         <p>Because the app was built on Heroku, it is amazingly easy to integrate that data. </p>
+        <p>Let’s Start by Creating a Mapping</p>
         <p class="continue">
-          <a class="btn btn-continue" wz-next>Let’s Start by Creating a Mapping </a>
+          <a class="btn btn-continue" href="" wz-next>Next </a>
         </p>
       </wz-step>
       <wz-step>
@@ -18,7 +19,7 @@
           <p>This is Heroku. You see the list of all your objects here because of the connection between Heroku and Salesforce!
             </p>
           <p class="continue">
-            <a class="btn btn-continue" wz-next>Continue</a>
+            <a class="btn btn-continue" href="" ng-click="beginStory()">Next</a>
           </p>
       </wz-step>
     </wizard>
