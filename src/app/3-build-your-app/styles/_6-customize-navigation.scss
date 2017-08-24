@@ -74,13 +74,15 @@
       a {
         position: absolute;
         top: 360px;
-        left: 60px;
-        width: 200px;
+        left: 50%;
+        width: auto;
+        transform: translateX(-50%);
 
         &.start-a-trial,
         &.calculate-your-roi {
           position: relative;
           top: auto;
+          transform: none;
           left: auto;
         }
       }
