@@ -21,7 +21,7 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
 
     Steps.pop({
       number: 'two',
-      title: 'From the Action Type dropdown select &lsquo;Send Push Notification&rsquo; ',
+      title: 'From the &lsquo;Action Type&rsquo; dropdown select &lsquo;Send Push Notification&rsquo; ',
       clickHandler() {
         // console.log('clicked step', step);
         return false;

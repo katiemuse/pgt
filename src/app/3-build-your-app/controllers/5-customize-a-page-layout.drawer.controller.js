@@ -17,7 +17,7 @@ export default function CustomizeAPageLayoutDrawerController($scope, WizardHandl
 
     Steps.pop({
       number: 'two',
-      title: 'Click \'save\''
+      title: 'Click &lsquo;Save&rsquo;'
     });
 
     Hotspots.clear();

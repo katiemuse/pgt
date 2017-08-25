@@ -27,7 +27,7 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'four',
-      title: 'Click &lsquo;Validate and sync&rsquo; to bring data in'
+      title: 'Click &lsquo;Validate and Sync&rsquo; to bring data in'
     });
 
     Steps.pop({

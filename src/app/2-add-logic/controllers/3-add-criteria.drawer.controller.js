@@ -17,7 +17,7 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
 
     Steps.pop({
       number: 'two',
-      title: 'Name criteria &lsquo;New Customer Idea&rsquo; and select &lsquo;conditions are met&rsquo;.'
+      title: 'Name criteria &lsquo;New Customer Idea&rsquo; and select &lsquo;Conditions are met&rsquo;.'
     });
 
     Steps.pop({
