@@ -12,7 +12,7 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'From setup, search for &lsquo;External data sources&rsquo; and open it up'
+      title: 'From setup, search for ‘External data sources’ and click on it.'
     });
 
     Steps.pop({
@@ -22,7 +22,9 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'three',
-      title: 'Name your data source and choose the Platform Connect type from the dropdown. Then, click &lsquo;Save.&rsquo;'
+      title: 'Name your data source SAP and choose OData as the connection type. \n' +
+      '\n' +
+      'Click ‘Save.’'
     });
 
     Steps.pop({
