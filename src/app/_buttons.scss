@@ -169,6 +169,17 @@ button, a {
   }
 }
 
+.btn-solid-blue {
+  background-color: $color-salesforce-blue;
+  border-color: $color-salesforce-blue;
+  color: white;
+  &:hover, &:focus {
+    background-color: white;
+    border-color: $color-salesforce-blue;
+    color: $color-salesforce-blue;
+  }
+}
+
 .text-center {
   .btn-orange {
     float: none;
