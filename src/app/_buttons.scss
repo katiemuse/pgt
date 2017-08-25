@@ -80,11 +80,11 @@ button, a {
 
 .btn-continue {
   border-radius: $button-rounded-radius;
-  background-color: $color-green;
+  background-color: $color-continue;
   color: $color-button-white;
   transition: background .2s ease-in-out;
   &:hover {
-    background-color: darken($color-green, 5%);
+    background-color: $color-continue-hover;
     color: $color-button-white;
   }
 
