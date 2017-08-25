@@ -36,7 +36,12 @@
       }
     }
   }
-  &.active {
-    transform: translateX(0);
+}
+
+.current {
+  .flyout {
+    &.active {
+      transform: translateX(0);
+    }
   }
 }
