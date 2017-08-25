@@ -22,7 +22,7 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
 
     Steps.pop({
       number: 'three',
-      title: 'Name your page &lsquo;Customer 360&rsquo;. Click &lsquo;Next&rsquo;'
+      title: 'Name your page <br/>&lsquo;Customer 360&rsquo;. Click &lsquo;Next&rsquo;'
     });
 
     Steps.pop({
