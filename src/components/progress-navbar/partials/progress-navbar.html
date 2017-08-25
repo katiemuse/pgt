@@ -44,7 +44,7 @@
     <!--<li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-inverted-class="5"></span><span class="label">Customize Mobile</span></a></li>-->
     <li class="text-center"><a id="start-over" class="btn btn-rounded btn-blue" href="#" ng-click="progress.startOver($event)">Start Over</a></li>
     <li class="text-center">&nbsp;</li>
-    <li class="text-center skip-links"><a href="#" class="skip" ng-click="progress.skipToPreviousTask($event)" ng-show="$root.canSkipPrevious"><i class="fa fa-long-arrow-left" aria-hidden="true"></i> Go to Previous Task</a> <span ng-show="$root.canSkipPrevious && $root.canSkip"> | </span> <a href="#" class="skip" ng-click="progress.skipToNextTask($event)" ng-show="$root.canSkip">Skip to Next Task <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></li>
+    <li class="text-center skip-links"><a href="#" class="skip" ng-click="progress.skipToPreviousTask($event)" ng-show="$root.canSkipPrevious"><span class="salesforce-icon icon-sfdc-icon-right-arrow" aria-hidden="true"></span> Go to Previous Task</a> <span class="divider" ng-show="$root.canSkipPrevious && $root.canSkip"> | </span> <a href="#" class="skip" ng-click="progress.skipToNextTask($event)" ng-show="$root.canSkip">Skip to Next Task <span class="salesforce-icon icon-sfdc-icon-left-arrow" aria-hidden="true"></span></a></li>
 
   </ul>
 </div>
