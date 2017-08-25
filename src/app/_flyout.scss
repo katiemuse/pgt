@@ -1,0 +1,42 @@
+.flyout {
+  padding: 25px;
+  background: rgba($color-continue-hover, .8);
+  width: 400px;
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  transform: translateX(100%);
+  transition: transform 0.2s ease-in-out;
+  span {
+    font-size: 16px;
+    color: white;
+    margin-bottom: 20px;
+    display: block;
+  }
+  a {
+    text-transform: uppercase;
+    font-size: 11px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    &:hover {
+      text-decoration: underline;
+    }
+    i {
+      font-family: 'SalesforceIcons';
+      speak: none;
+      font-style: normal;
+      font-weight: normal;
+      font-variant: normal;
+      text-transform: none;
+      line-height: 1;
+      font-size: 9px;
+      &:after {
+        content: "\e924";
+      }
+    }
+  }
+  &.active {
+    transform: translateX(0);
+  }
+}
