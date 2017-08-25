@@ -1,6 +1,5 @@
 @import "../../../app/base";
 
-
 $progress-bg-z-index: 1998;
 $progress-z-index: 1999;
 $progress-transition-time: .2s;
@@ -31,7 +30,6 @@ $progress-top: 15px;
   }
 }
 
-
 .progress-navbar-container {
   width: $progress-width-inactive;
   display: block;
@@ -46,29 +44,28 @@ $progress-top: 15px;
   .progress-navbar-blocker {
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0.0);
+    background-color: rgba(0, 0, 0, 0.0);
     position: fixed;
     top: 0;
     left: 0;
     pointer-events: none;
-  } 
+  }
 
   &.active {
-    z-index:$z-index-progress-navbar-opened-active;
+    z-index: $z-index-progress-navbar-opened-active;
     width: $progress-width - $progress-left;
 
     .progress-navbar-blocker {
-      background-color: rgba(0,0,0,0.5);
+      background-color: rgba(0, 0, 0, 0.5);
       pointer-events: all;
-      cursor:pointer;
+      cursor: pointer;
     }
-
   }
 
   .nav.progress-navbar {
-    position:fixed;
-    left:0;
-    top:0;
+    position: fixed;
+    left: 0;
+    top: 0;
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
     padding-top: $progress-top;
@@ -89,7 +86,7 @@ $progress-top: 15px;
         background: transparent;
 
         &.disabled {
-          z-index:-1;
+          z-index: -1;
           pointer-events: none;
         }
 
@@ -114,7 +111,6 @@ $progress-top: 15px;
         &:hover {
           background: transparent;
         }
-
       }
 
       &.logo {
@@ -158,20 +154,40 @@ $progress-top: 15px;
       width: $progress-width;
 
       &.active {
-        clip: rect(0px,$progress-width + 3px, 1340px, 0px);
+        clip: rect(0px, $progress-width + 3px, 1340px, 0px);
         z-index: $z-index-progress-navbar-opened-active;
         opacity: 1;
-        box-shadow: 2px 0 3px rgba(50, 50, 50, 0.5)
+        box-shadow: 2px 0 3px rgba(50, 50, 50, 0.5);
       }
 
       li {
-
         &.skip-links {
-          margin-left: -15px;
+          margin-left: -15px; 
+
+          span.salesforce-icon {
+            font-family: 'SalesforceIcons';
+            line-height: 1;
+
+            &.icon-sfdc-icon-right-arrow {
+              &:before {
+                content: "\e943";
+              }
+            }
+            &.icon-sfdc-icon-left-arrow {
+              &:before {
+                content: "\e924";
+              }
+            }
+          }
+
+          > span.divider {
+            color: #222222;
+            padding: 10px 0px;
+            line-height: 15px;
+          }
         }
 
         > .animated-icon {
-
           &.circular {
             span {
               background-color: #929292;
@@ -182,24 +198,30 @@ $progress-top: 15px;
 
         > a {
           &.disabled {
-            z-index:-1;
+            z-index: -1;
             pointer-events: none;
           }
           width: 100%;
           &.skip {
             font-family: $salesforcesans;
+            text-transform: uppercase;
             height: auto;
             width: auto;
-            &:link, &:visited {
+            font-size: 11px;
+            line-height:1.3333333;
+
+            &:link,
+            &:visited {
               color: $color-salesforce-blue;
               text-decoration: none;
             }
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
               color: $color-salesforce-blue;
-              text-decoration: underline;
+              text-decoration: none;
             }
 
-            float:left;
+            float: left;
           }
           &.btn-blue {
             display: inline-block;
@@ -211,7 +233,8 @@ $progress-top: 15px;
             margin-top: 20px;
             margin-left: -50px;
             transition: all 0.2s ease-in-out;
-            &:hover, &:focus {
+            &:hover,
+            &:focus {
               text-decoration: none;
               border: 2px solid transparent;
               background-color: $color-salesforce-blue;
