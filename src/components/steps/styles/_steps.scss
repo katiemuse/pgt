@@ -87,6 +87,7 @@ button.step-close-button {
 }
 
 #step-container {
+  overflow: hidden;
   position: absolute;
   z-index: $z-index-step-container;
   pointer-events:none;
