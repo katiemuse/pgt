@@ -22,7 +22,7 @@ export default function ChooseAnObjectForTheProcessDrawerController($scope, Wiza
 
     Steps.pop({
       number: 'three',
-      title: 'Our process starts when a new idea record is created. Click &lsquo;save&rsquo;.'
+      title: 'Our process starts when a new idea record is created. Click &lsquo;Save&rsquo;.'
     });
 
     Hotspots.clear();
