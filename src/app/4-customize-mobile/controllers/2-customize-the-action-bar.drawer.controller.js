@@ -29,7 +29,7 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
 
     Steps.pop({
       number: 'four',
-      title: 'Click &lsquo;ok&rsquo;'
+      title: 'Click &lsquo;Ok&rsquo;'
     });
 
     Hotspots.clear();
