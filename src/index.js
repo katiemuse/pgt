@@ -4,12 +4,12 @@ import Pace from 'pace-progress';
 Pace.start();
 
 require('jquery');
-import 'jquery-ui/ui/core';
-import 'jquery-ui/ui/widgets/selectable';
-import 'jquery-ui/ui/widgets/sortable';
-import 'jquery-ui/ui/widgets/draggable';
-import 'jquery-ui/ui/widgets/droppable';
-import 'jquery-ui-touch-punch';
+require('jquery-ui/ui/core');
+require('jquery-ui/ui/widgets/selectable');
+require('jquery-ui/ui/widgets/sortable');
+require('jquery-ui/ui/widgets/draggable');
+require('jquery-ui/ui/widgets/droppable');
+require('jquery-ui-touch-punch');
 import angular from 'angular';
 import 'angular-animate';
 // import 'angular-cookies';
