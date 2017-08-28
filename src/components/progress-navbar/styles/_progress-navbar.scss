@@ -40,6 +40,10 @@ $progress-top: 15px;
   padding-top: $progress-top;
   padding-left: $progress-left;
   z-index: $z-index-progress-navbar-opened-inactive;
+  @media(max-width: $screen-md-max) {
+    width: 75px;
+    padding-left: 25px;
+  }
 
   .progress-navbar-blocker {
     width: 100%;
@@ -54,6 +58,10 @@ $progress-top: 15px;
   &.active {
     z-index: $z-index-progress-navbar-opened-active;
     width: $progress-width - $progress-left;
+
+    @media(max-width: $screen-md-max) {
+      width: 369px;
+    }
 
     .progress-navbar-blocker {
       background-color: rgba(0, 0, 0, 0.5);
@@ -75,7 +83,10 @@ $progress-top: 15px;
     width: $progress-width-inactive;
 
     transition: all $progress-transition-time ease-in-out;
-
+    @media(max-width: $screen-md-max) {
+      width: 75px;
+      padding-left: 25px;
+    }
     li {
       margin-bottom: 15px;
 
@@ -152,7 +163,9 @@ $progress-top: 15px;
       z-index: $z-index-progress-navbar-opened-inactive;
       opacity: 0;
       width: $progress-width;
-
+      @media(max-width: $screen-md-max) {
+        width: 369px;
+      }
       &.active {
         clip: rect(0px, $progress-width + 3px, 1340px, 0px);
         z-index: $z-index-progress-navbar-opened-active;
