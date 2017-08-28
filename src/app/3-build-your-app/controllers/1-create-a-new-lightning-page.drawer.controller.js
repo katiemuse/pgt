@@ -17,7 +17,7 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
 
     Steps.pop({
       number: 'two',
-      title: 'Click &lsquo;Next&rsquo; to create and App Page'
+      title: 'Click &lsquo;Next&rsquo; to create an App Page'
     });
 
     Steps.pop({
