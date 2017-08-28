@@ -25,11 +25,6 @@ export default function HerokuConnectDrawerController($scope, WizardHandler, Top
       title: 'Click ‘save’ and go to Salesforce to see the data integrated!'
     });
 
-    Steps.pop({
-      number: 'four',
-      title: 'This is Salesforce’s Object Manager. All the mobile data we just mapped from Heroku gets pushed directly to Salesforce.'
-    });
-
     Hotspots.clear();
     // Hotspots.pop({
     //   number: 1,
