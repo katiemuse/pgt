@@ -137,6 +137,9 @@
     left: 85px;
     padding-top: 30px;
     padding-left: 70px;
+    @media (max-width: $screen-md-max) {
+      top: 368px;
+    }
     p {
       width: 200px;
     }
