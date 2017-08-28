@@ -116,7 +116,7 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
       Steps.activate('four');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
       WizardHandler.wizard('monitor').next();
-      Steps.activate('five');
+      Steps.activate('');
     }
   };
 }

@@ -34,7 +34,7 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'five',
-      title: 'Out of 5 SAP tables integrated, select the one we need: &lsquo;Sales Orders&rsquo; and click &lsquo;Sync&rsquo;'
+      title: 'Out of 5 SAP tables integrated, select the one we need: &lsquo;SalesOrder&rsquo; and click &lsquo;Sync&rsquo;'
     });
 
     Hotspots.clear();

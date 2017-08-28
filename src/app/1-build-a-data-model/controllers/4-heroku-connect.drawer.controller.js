@@ -22,7 +22,7 @@ export default function HerokuConnectDrawerController($scope, WizardHandler, Top
 
     Steps.pop({
       number: 'three',
-      title: 'Click ‘save’ and go to Salesforce to see the data integrated!'
+      title: 'Click ‘Save’ and go to Salesforce to see the data integrated!'
     });
 
     Hotspots.clear();
