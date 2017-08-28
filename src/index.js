@@ -9,6 +9,7 @@ import 'jquery-ui/ui/widgets/selectable';
 import 'jquery-ui/ui/widgets/sortable';
 import 'jquery-ui/ui/widgets/draggable';
 import 'jquery-ui/ui/widgets/droppable';
+import 'jquery-ui-touch-punch';
 import angular from 'angular';
 import 'angular-animate';
 // import 'angular-cookies';

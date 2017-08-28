@@ -11,6 +11,7 @@
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",
+    "jquery-ui-touch-punch": "^0.2.3",
     "pace-progress": "^1.0.2"
   },
   "devDependencies": {
