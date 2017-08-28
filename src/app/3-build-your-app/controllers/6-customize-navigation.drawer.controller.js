@@ -17,7 +17,7 @@ export default function CustomizeNavigationDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'two',
-      title: 'Select and icon for your app.'
+      title: 'Select an icon for your app.'
     });
 
     Steps.pop({

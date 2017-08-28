@@ -24,17 +24,12 @@ export default function CreateACustomActionDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'three',
-      title: 'We want to move data from the &lsquo;Customer Ideas&rsquo; field into our backlog, drag and drop it into the active area'
+      title: 'We want to move data from the &lsquo;Customer Idea&rsquo; field into our backlog, drag and drop it into the active area'
     });
 
     Steps.pop({
       number: 'four',
       title: 'Click &lsquo;Save&rsquo;'
-    });
-
-    Steps.pop({
-      number: 'five',
-      title: 'Click &lsquo;Continue&rsquo;.'
     });
 
     Hotspots.clear();

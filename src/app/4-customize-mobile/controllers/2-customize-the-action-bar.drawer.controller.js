@@ -19,7 +19,7 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
 
     Steps.pop({
       number: 'two',
-      title: 'Add the action we just created. Drag &lsquo;New Customer Feedback&rsquo; from the left column to the right.'
+      title: 'Add the action we just created. Drag &lsquo;New Customer Insights&rsquo; from the left column to the right.'
     });
 
     Steps.pop({
