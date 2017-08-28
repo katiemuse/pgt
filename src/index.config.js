@@ -19,10 +19,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         mobile: {
           template: require('./mobile.html')
         },
-        intro: {
-          template: require('./app/0-intro/partials/intro.mobile.html'),
-          controller: 'IntroController'
-        },
         'getting-started': {
           template: require('./app/0-intro/partials/getting-started.html'),
           controller: 'IntroController'

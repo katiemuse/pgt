@@ -92,7 +92,7 @@
 
     </div>
 
-    <div class="container-fluid main mobile hidden-lg hidden-md" ng-hide="$state.current.name == 'intro'">
+    <div class="container-fluid main mobile hidden-lg hidden-md">
       <!--<div class="top-nav-container">-->
       <!--<div class="row">-->
       <!--<top-navbar-mobile></top-navbar-mobile>-->
@@ -107,10 +107,6 @@
       <div ui-view="mobile" autoscroll="true">
 
       </div>
-    </div>
-
-    <div class="hidden-lg hidden-md" ui-view="intro" autoscroll="true" ng-hide="$state.current.name != 'intro'">
-
     </div>
 
     <footer ng-hide="$state.current.name == 'intro'">
