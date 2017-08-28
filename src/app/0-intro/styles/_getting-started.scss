@@ -8,8 +8,13 @@
   position: fixed;
   width: 100%;
   margin-left: -15px;
-  background-color: rgba(0,0,0,0.3);
   z-index: 2500;
+
+  .background-splash {
+    background-color: rgba(0,0,0,0.3);
+    min-height: 100%;
+    min-width: 100%;
+  }
 
   .info-block {
     position: absolute;
