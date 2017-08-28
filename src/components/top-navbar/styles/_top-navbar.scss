@@ -93,10 +93,10 @@ nav.top-navbar {
       position: absolute;
       top: 15px;
       right: 35px;
-      background-color: $color-green;
+      background-color: #c2c2c2;
       border-radius: 22px;
       padding: 0 2%;
-      color: white;
+      color: #07b;
       font-family: $salesforcesans;
       font-weight: bold;
       font-size: 14px;
@@ -109,7 +109,7 @@ nav.top-navbar {
     }
     &:hover, &:focus {
       @media(min-width: $screen-md-min) {
-        background-color: darken($color-green, 5%);
+        background-color: darken(#c2c2c2, 5%);
         text-decoration: none;
       }
     }

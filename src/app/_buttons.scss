@@ -159,12 +159,12 @@ button, a {
 
 .btn-blue {
   background-color: transparent;
-  border-color: $color-salesforce-blue;
-  color: $color-salesforce-blue;
+  border-color: #07b;
+  color: #07b;
   &:hover, &:focus {
     background-color: transparent;
-    border-color: $color-salesforce-blue;
-    color: $color-salesforce-blue;
+    border-color: #07b;
+    color: #07b;
     text-decoration: underline;
   }
 }
