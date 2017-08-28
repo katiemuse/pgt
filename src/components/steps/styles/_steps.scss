@@ -108,6 +108,9 @@ button.step-close-button {
       -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
       filter: alpha(opacity = 80);
       transition: all 0.3s ease-in-out;
+      @media(max-width: $screen-md-max) {
+        padding: 10px;
+      }
     }
     :hover {
       cursor: default;
@@ -125,6 +128,12 @@ button.step-close-button {
     width: 174px;
     margin-left:119px;
     height:90px;
+    @media(max-width: $screen-md-max) {
+      width: 74px;
+      margin-left: 56px;
+      min-height: 70px;
+      height: 70px;
+    }
 
     .step-title {
       font-family: $salesforcesans;
@@ -132,6 +141,10 @@ button.step-close-button {
       font-size: 16px;
       line-height: 20px;
       opacity: 0;
+      @media(max-width: $screen-md-max) {
+        font-size: 12px;
+        line-height: 1.4;
+      }
     }
 
     .step-message {
@@ -155,8 +168,12 @@ button.step-close-button {
       font-family: $salesforcesans;
       font-weight: bold;
       font-size:46px;
-      line-space: 37px;
       float:left;
+      @media(max-width: $screen-md-max) {
+        left: 10px;
+        top: 9px;
+        font-size: 36px;
+      }
     }
 
     &.active {
@@ -165,11 +182,19 @@ button.step-close-button {
       max-height:500px;
       min-height: auto;
       height: auto !important;
+      @media(max-width: $screen-md-max) {
+        width: 130px;
+        margin-left: 0;
+        min-height: 70px;
+      }
 
       .step-title, .step-message {
         width: 235px;
         transition: all, 2.0s, ease-in-out;
         opacity: 1;
+        @media(max-width: $screen-md-max) {
+          width: 110px;
+        }
       }
 
       &:before {
