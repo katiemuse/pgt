@@ -10,7 +10,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/',
       views: {
         monitor: {
-          template: require('./app/0-intro/partials/intro.html')
+          template: require('./app/0-intro/partials/intro.html'),
+          controller: 'IntroController'
         },
         drawer: {
           controller: 'IntroDrawerController',
