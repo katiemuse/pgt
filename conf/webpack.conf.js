@@ -86,8 +86,10 @@ module.exports = {
       $: 'jquery',
       jquery: 'jquery',
       "window.jQuery": "jquery",
+      "root.jQuery": "jquery",
       Tether: 'tether',
-      'window.Tether': 'tether'
+      'window.Tether': 'tether',
+      "jquery-ui": "jquery-ui/ui/core"
     })
   ],
   devtool: 'source-map',

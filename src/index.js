@@ -3,13 +3,8 @@
 import Pace from 'pace-progress';
 Pace.start();
 
-require('jquery');
-require('jquery-ui/ui/core');
-require('jquery-ui/ui/widgets/selectable');
-require('jquery-ui/ui/widgets/sortable');
-require('jquery-ui/ui/widgets/draggable');
-require('jquery-ui/ui/widgets/droppable');
-require('jquery-ui-touch-punch');
+import 'jquery';
+import './assets/js/jquery-ui-with-touch-punch';
 import angular from 'angular';
 import 'angular-animate';
 // import 'angular-cookies';
@@ -19,7 +14,6 @@ import 'angular-resource';
 import 'angular-ui-router';
 // import 'angular-ui-sortable';
 import 'angular-dragdrop';
-
 // import 'textangular';
 // import 'textAngular/dist/textAngular-sanitize';
 import run from './index.run';
