@@ -23,6 +23,8 @@
       top: 193px;
       left: 215px;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: move;
@@ -37,6 +39,8 @@
       top: 303px;
       left: 215px;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: move;
@@ -63,12 +67,16 @@
       left: 423px !important;
       top: 192px !important;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
     }
     .new-note-drag {
       position: absolute;
       top: 303px;
       left: 215px;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: move;
@@ -92,12 +100,16 @@
       left: 423px !important;
       top: 192px !important;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
     }
     .new-note-drag {
       position: absolute;
       left: 423px !important;
       top: 230px !important;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
     }
     .click-box {
       bottom: 49px;

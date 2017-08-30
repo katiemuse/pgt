@@ -51,6 +51,8 @@
       bottom: 257px;
       left: 179px;
       border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: move;

@@ -177,6 +177,8 @@
         width: 272px;
         background-position: center;
         border: 1px solid #E4E8EE;
+        -webkit-user-select:none;
+        -webkit-touch-callout:none;
         &.chatter {
           background-image: url('../app/3-build-your-app/assets/6-customize-navigation-chatter.png');
         }
