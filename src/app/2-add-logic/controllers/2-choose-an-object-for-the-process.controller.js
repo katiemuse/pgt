@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChooseAnObjectForTheProcessController($scope, $timeout, Steps, WizardHandler, $log) {
+export default function ChooseAnObjectForTheProcessController($scope, $timeout, Steps, WizardHandler) {
   $scope.processOptions = [
     {label: 'Find an object...', value: 1},
     {label: 'Asset', value: 2},
@@ -35,7 +35,7 @@ export default function ChooseAnObjectForTheProcessController($scope, $timeout, 
   });
 
   $scope.Next = function () {
-    $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
+    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('one');
