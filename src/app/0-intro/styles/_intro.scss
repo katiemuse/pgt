@@ -536,6 +536,7 @@
       text-align: center;
       color: white;
       width: 333px;
+      height: 360px;
       left: 380px;
       position: absolute;
 
@@ -554,6 +555,16 @@
         width: auto;
         transform: translateX(-50%);
       }
+      .intro-copy-block {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+    }
+  }
+  .step-1 {
+    .intro-copy {
+
     }
   }
 }
