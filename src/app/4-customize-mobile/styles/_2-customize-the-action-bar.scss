@@ -119,6 +119,13 @@
     }
   }
 
+  .step {
+    &.success {
+      p {
+        padding: 0 21%;
+      }
+    }
+  }
 
 
 }
