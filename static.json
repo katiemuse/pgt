@@ -1,6 +1,6 @@
 {
   "root": "dist/",
-  "https_only": ${HTTPS_ONLY},
+  "https_only": "0",
   "routes": {
     "/fonts/**": "/fonts/**",
     "/app/**": "/app/**",
