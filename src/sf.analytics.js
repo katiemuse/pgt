@@ -2742,7 +2742,7 @@ var OmniConfig = {
       
     // PAGE VIEW EVENT / # OF PAGE VIEWS
     s.events=s.events?s.events:'';
-    s.events=s.apl(s.events,'event11',',',2);
+    s.events=s.apl(s.events,'',',',2);
     
     // VISITOR TYPE
     s.eVar14=vp.getType();
@@ -2848,6 +2848,7 @@ var OmniConfig = {
 
             s.cancelCustomOnClick = true;
             //all vars and events have been set, now create the page load beacon..
+
             s.t();
             //done calling omniture, remove flag
             s.cancelCustomOnClick = false;
@@ -2990,10 +2991,10 @@ Page.PixelManager.newPixel(
     ,mobile : true
     ,login : true
   }
-  
+
   ,function() {
     if (!Page.isTrackedOnLoad()) {
-      s.t();
+      //s.t();
     }
   }
 );
@@ -3815,7 +3816,7 @@ if(!curUserIsIE6){
 /* execute */
 var _curLocationQuery = window.location.search.toLowerCase();
 if (Page.isTrackedOnLoad() && !(_curLocationQuery.indexOf("un%3d") > -1 || _curLocationQuery.indexOf("pw%3d") > -1 || _curLocationQuery.indexOf("un=") > -1 || _curLocationQuery.indexOf("pw=") > -1)){
-  s.t();
+  // s.t();
 }
 ;
 
