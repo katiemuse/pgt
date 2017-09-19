@@ -1,7 +1,5 @@
 import _ from 'lodash';
 
-/* global s:true */
-
 export default function run(
   $rootScope,
   $state,
