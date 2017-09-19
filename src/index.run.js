@@ -89,10 +89,10 @@ export default function run(
   };
 
   const z = $transitions.onSuccess({}, trans => {
-    if (s && s.t && trans.to().name !== '') {
-      s.pageName = `platformtour:` + trans.to().name;
-      s.t();
-    }
+    // if (s && s.t && trans.to().name !== '') {
+    //   s.pageName = `platformtour:` + trans.to().name;
+    //   s.t();
+    // }
 
     $rootScope.progressIndex = $rootScope.getProgressIndex(trans.to().name);
     $rootScope.taskIndex = $rootScope.getTaskIndex(trans.to().name);
