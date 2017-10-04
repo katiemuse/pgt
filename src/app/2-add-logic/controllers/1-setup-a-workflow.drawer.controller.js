@@ -31,7 +31,8 @@ export default function SetupAWorkflowDrawerController($scope, WizardHandler, To
     });
 
     Hotspots.clear();
-
+    TopNavbar.DidYouKnowCount = 0;
+    TopNavbar.HotSpotCount = 1;
     $timeout(() => {
       Steps.activate('one');
     }, 100);

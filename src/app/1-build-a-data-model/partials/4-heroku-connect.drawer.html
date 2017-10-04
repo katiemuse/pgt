@@ -14,9 +14,8 @@
       </wz-step>
       <wz-step>
           <h2>Note</h2>
-          <p>You are now in Heroku. The list you see here is the data that make up your mobile app. 
-            Using bi-directional synchronization, Heroku Connect unifies the data in your Heroku mobile app with your Salesforce database - contacts, accounts and other custom objects, such as the Customer Insights object we just created. All with simple clicks.
-            </p>
+          <p>You are now in Heroku. The list you see here is the data that make up your mobile app.</p>
+          <p>Using bi-directional synchronization, Heroku Connect unifies the data in your Heroku mobile app with your Salesforce database - contacts, accounts and other custom objects, such as the Customer Insights object we just created. All with simple clicks.</p>
           <p class="continue">
             <a class="btn btn-continue" href="" ng-click="beginStory()">Next</a>
           </p>
@@ -24,33 +23,6 @@
     </wizard>
   </div>
 
-  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
-    <div class="clearfix">
-      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
-        <span class="first"></span>
-        <span class="second"></span>
-      </div>
-    </div>
-
-    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
-      <drawer-panel-tab heading="01">
-        <h2>About Tags</h2>
-        <img src="../../../assets/images/stories/1-build-a-data-model/1-drawer-hotspot-tabs.png">
-        <p>
-          You can add ‘tags’ to your marketing campaigns to help keep them organized. Tags are great for grouping related campaigns
-          together — and they make searching a breeze.</p>
-      </drawer-panel-tab>
-      <drawer-panel-tab heading="02">
-        <h2>Campaign ROI</h2>
-        <p>
-          Inputting your initial cost will help determine your campaign ROI at the end of this experience.
-        </p>
-        <p>
-          Campaign won't cost you anything? Just input "0" in the cost field.
-        </p>
-      </drawer-panel-tab>
-    </drawer-panel>
-  </div>
 
   <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
     <div class="clearfix">
@@ -61,6 +33,12 @@
     </div>
 
     <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>
+          Heroku Connect is a two-way integration of data between Salesforce Lightning and Heroku.
+        </p>
+      </drawer-panel-tab>
     </drawer-panel>
   </div>
 

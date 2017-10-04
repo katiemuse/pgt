@@ -51,8 +51,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('add-an-external-object', {
@@ -73,8 +73,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     // .state('add-a-custom-field', {
@@ -117,8 +117,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowActive = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('build-a-schema', {
@@ -139,8 +140,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('setup-a-workflow', {
@@ -161,8 +162,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('choose-an-object-for-the-process', {
@@ -181,8 +182,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 2;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('add-criteria', {
@@ -201,8 +204,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('add-actions', {
@@ -221,8 +226,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 4;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('create-a-new-lightning-page', {
@@ -241,7 +248,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 3;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;
         TopNavbar.HotspotsEnabled = false;
       }
@@ -262,7 +270,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;
         TopNavbar.HotspotsEnabled = false;
       }
@@ -283,7 +292,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;
         TopNavbar.HotspotsEnabled = false;
       }
@@ -304,9 +314,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('customize-a-page-layout', {
@@ -325,9 +336,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('customize-navigation', {
@@ -346,9 +358,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('create-a-custom-action', {
@@ -367,9 +380,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 3;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('customize-the-action-bar', {
@@ -388,9 +402,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 3;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('end', {
@@ -405,9 +420,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 3;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     });
 

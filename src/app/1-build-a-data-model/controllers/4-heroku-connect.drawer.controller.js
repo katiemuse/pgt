@@ -1,13 +1,16 @@
 'use strict';
 
 export default function HerokuConnectDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
-  TopNavbar.InfoActive = true;
   Drawer.openToIntro();
+
+  TopNavbar.DidYouKnowCount = 0;
+  TopNavbar.DidYouKnowEnabled = false;
 
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.InfoActive = false;
+    TopNavbar.DidYouKnowCount = 1;
+    TopNavbar.DidYouKnowEnabled = true;
 
     Steps.clear();
     Steps.pop({
@@ -33,7 +36,7 @@ export default function HerokuConnectDrawerController($scope, WizardHandler, Top
     //     top: '223px'
     //   }
     // });
-    //
+
     // Hotspots.pop({
     //   number: 2,
     //   position: {

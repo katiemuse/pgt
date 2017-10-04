@@ -1,6 +1,9 @@
 'use strict';
 
-export default function AddAnObjectController($scope, Steps, Hotspots, WizardHandler, $timeout) {
+export default function AddAnObjectController($scope, Steps, Hotspots, WizardHandler, $timeout, TopNavbar) {
+  let _timeout;
+  let _timeout2;
+
   $scope.customobj = {
     name: ''
   };
@@ -22,24 +25,37 @@ export default function AddAnObjectController($scope, Steps, Hotspots, WizardHan
   };
 
   $scope.$watch('customobj.name', (newValue, oldValue) => {
+    if (_timeout) { // if there is already a timeout in process cancel it
+      $timeout.cancel(_timeout);
+    }
+
+    if (_timeout2) {
+      $timeout.cancel(_timeout2);
+    }
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer insights') {
-        $scope.toggleLabel();
-        $timeout(() => {
-          WizardHandler.wizard('monitor').next();
-          Steps.activate('four');
-        }, 2000);
-      }
+      _timeout = $timeout(() => {
+        if (newValue.length > 3) {
+          $scope.toggleLabel();
+
+          _timeout2 = $timeout(() => {
+            WizardHandler.wizard('monitor').next();
+            Steps.activate('four');
+          }, 2000);
+        }
+      }, 500);
     }
   });
 
   $scope.Next = function () {
-    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
+  // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
+      Hotspots.clear();
+      TopNavbar.HotspotsCount = 0;
+      TopNavbar.HotspotsEnabled = false;
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();

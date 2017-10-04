@@ -9,6 +9,9 @@ export default function AddAnObjectDrawerController($scope, WizardHandler, TopNa
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
 
+    TopNavbar.HotspotsCount = 1;
+    TopNavbar.HotspotsEnabled = true;
+
     Steps.clear();
     Steps.pop({
       number: 'one',
@@ -31,14 +34,14 @@ export default function AddAnObjectDrawerController($scope, WizardHandler, TopNa
     });
 
     Hotspots.clear();
-    // Hotspots.pop({
-    //   number: 1,
-    //   position: {
-    //     left: '117px',
-    //     top: '223px'
-    //   }
-    // });
-    //
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '705px',
+        top: '33px'
+      }
+    });
+
     // Hotspots.pop({
     //   number: 2,
     //   position: {
