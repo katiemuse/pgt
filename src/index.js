@@ -56,14 +56,14 @@ import IntroController from './app/0-intro/controllers/intro.controller';
 import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
 import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-an-object.controller';
 import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
-import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/2-add-an-external-object.controller';
-import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/2-add-an-external-object.drawer.controller';
+import HerokuConnectController from './app/1-build-a-data-model/controllers/2-heroku-connect.controller';
+import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/2-heroku-connect.drawer.controller';
+import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/4-add-an-external-object.controller';
+import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/4-add-an-external-object.drawer.controller';
 // import AddACustomFieldController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.controller';
 // import AddACustomFieldDrawerController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.drawer.controller';
-import HerokuConnectController from './app/1-build-a-data-model/controllers/4-heroku-connect.controller';
-import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/4-heroku-connect.drawer.controller';
-import BuildASchemaController from './app/1-build-a-data-model/controllers/5-build-a-schema.controller';
-import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/5-build-a-schema.drawer.controller';
+// import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
+// import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
 import SetupAWorkflowController from './app/2-add-logic/controllers/1-setup-a-workflow.controller';
 import SetupAWorkflowDrawerController from './app/2-add-logic/controllers/1-setup-a-workflow.drawer.controller';
 import ChooseAnObjectForTheProcessController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.controller';
@@ -161,8 +161,8 @@ angular
   .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
   .controller('HerokuConnectController', HerokuConnectController)
   .controller('HerokuConnectDrawerController', HerokuConnectDrawerController)
-  .controller('BuildASchemaController', BuildASchemaController)
-  .controller('BuildASchemaDrawerController', BuildASchemaDrawerController)
+  // .controller('BuildASchemaController', BuildASchemaController)
+  // .controller('BuildASchemaDrawerController', BuildASchemaDrawerController)
   .controller('SetupAWorkflowController', SetupAWorkflowController)
   .controller('SetupAWorkflowDrawerController', SetupAWorkflowDrawerController)
   .controller('ChooseAnObjectForTheProcessController', ChooseAnObjectForTheProcessController)

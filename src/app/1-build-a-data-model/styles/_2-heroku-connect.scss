@@ -3,17 +3,17 @@
 .heroku-connect {
 
   .step-0, .step-1{
-    background: url('../app/1-build-a-data-model/assets/4-heroku-connect-screen-bkg-1.png') center center no-repeat;
+    background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-1.png') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../app/1-build-a-data-model/assets/4-heroku-connect-screen-bkg-2.png') center center no-repeat;
+    background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-2.png') center center no-repeat;
   }
 
   .step-3 {
-    background: url('../app/1-build-a-data-model/assets/4-heroku-connect-screen-bkg-3.png') center top no-repeat;
+    background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-3.png') center top no-repeat;
     &.active {
-      background: url('../app/1-build-a-data-model/assets/4-heroku-connect-screen-bkg-4.png') center top no-repeat;
+      background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-4.png') center top no-repeat;
     }
   }
 

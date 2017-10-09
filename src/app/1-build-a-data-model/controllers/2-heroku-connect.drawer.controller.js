@@ -11,6 +11,7 @@ export default function HerokuConnectDrawerController($scope, WizardHandler, Top
     WizardHandler.wizard('monitor').next();
     TopNavbar.DidYouKnowCount = 1;
     TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.MobileEnabled = true;
 
     Steps.clear();
     Steps.pop({

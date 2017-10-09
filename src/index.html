@@ -89,12 +89,15 @@
       <steps-container>
 
       </steps-container>
-
-      <div class="mobile-popout">
-        <div class="blocker">
+   
+      <div class="mobile-popout" ng-show="showMobilePopout">
+        <div class="blocker" ng-click="$root.closeMobilePopout()"> 
           <div class="phone">
-            
+              <div class="phone-view" ui-view="phone"></div>
           </div>
+
+          <a class="back-to-laptop" ng-click="$root.closeMobilePopout()">
+          </a>
         </div>
       </div>
 
@@ -151,7 +154,7 @@
 
   </div>
 
-  <!--<script type="text/javascript" src="./sf.analytics.js?v=2"></script>-->
+  <script type="text/javascript" src="./sf.analytics.js?v=2"></script>
 
 </body>
 

@@ -1,3 +1,5 @@
+@import 'base';
+ 
 .mobile-popout {
   .blocker {
     left: 0px;
@@ -6,7 +8,7 @@
     background-color: rgba(0,0,0,0.7);
     width: 100vw;
     height: 100vh;
-    z-index: 5000;
+    z-index: $z-index-mobile-popout-blocker;
   }
 
   .phone {
@@ -19,6 +21,17 @@
     bottom: 0;
     right: 0;
     margin: auto;
+
+
+    .phone-view {
+      position: relative;
+      top: 63px;
+      left: 14px;
+      width: 235px;
+      height: 418px;
+      z-index: $z-index-mobile-popout-blocker + 1;
+      background-color: rgba(0,255,0,0.5);
+    }
   }
 
   .back-to-laptop {
@@ -26,10 +39,11 @@
     background-image:url('../assets/images/back-to-laptop.png');
     width: 77px;
     height: 95px;
-    left:0;
-    top:0;
+    left: 0px;
+    top: -439px;
     bottom: 0;
-    right: 0;
+    right: -373px;
     margin: auto;
+    cursor:pointer;
   }
 }

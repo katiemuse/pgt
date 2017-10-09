@@ -11,6 +11,7 @@ export default function run(
 ) {
   $rootScope.$state = $state;
   $rootScope.allowJumpingStories = true;
+  $rootScope.showMobilePopout = false;
   $rootScope.wizard = {
     stateIndex: -1
   };
@@ -21,11 +22,17 @@ export default function run(
 
   // $rootScope.$on('$destroy', x);
 
-  const y = $rootScope.$on('wizard:stepChanged', (event, args) => {
+  const deregisterMobilePopoutToggle = $rootScope.$on('mobile-popout:toggle', () => {
+    $rootScope.showMobilePopout = !$rootScope.showMobilePopout;
+  });
+
+  const deregisterStepChanged = $rootScope.$on('wizard:stepChanged', (event, args) => {
     $rootScope.wizard.stateIndex = args.index;
   });
 
-  $rootScope.$on('$destroy', y);
+  $rootScope.closeMobilePopout = function() {
+    $rootScope.showMobilePopout = false;
+  };
 
   $rootScope.progressStates = {
     0: ['intro'],
@@ -86,7 +93,7 @@ export default function run(
     return -1;
   };
 
-  const z = $transitions.onSuccess({}, trans => {
+  const deregisterOnSuccess = $transitions.onSuccess({}, trans => {
     // if (s && s.t && trans.to().name !== '') {
     //   s.pageName = `platformtour:` + trans.to().name;
     //   s.t();
@@ -100,5 +107,9 @@ export default function run(
     $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
   });
 
-  $rootScope.$on('$destroy', z);
+  $rootScope.$on('$destroy', () => {
+    deregisterOnSuccess();
+    deregisterMobilePopoutToggle();
+    deregisterStepChanged();
+  });
 }

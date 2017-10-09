@@ -3,28 +3,28 @@
 .add-an-external-object {
 
   .step-0, .step-1{
-    background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-1.png') center center no-repeat;
+    background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-1.png') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-3.png') center center no-repeat;
+    background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-3.png') center center no-repeat;
   }
 
   .step-3 {
-    background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-4.png') center top no-repeat;
+    background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-4.png') center top no-repeat;
   }
 
   .step-4  {
-    background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-5.png') center top no-repeat;
+    background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-5.png') center top no-repeat;
   }
 
   .step-5  {
-    background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-8.png') center top no-repeat;
+    background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-8.png') center top no-repeat;
   }
 
   .step-0, .step-1 {
     &.active {
-      background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-2.png') center center no-repeat;
+      background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-2.png') center center no-repeat;
     }
     .form {
       &.form-horizontal {
@@ -36,7 +36,7 @@
             &.text {
               width: 181px;
               border-radius: 4px;
-              background-image: url("../app/1-build-a-data-model/assets/2-add-an-external-object-magnifying-glass.svg");
+              background-image: url("../app/1-build-a-data-model/assets/4-add-an-external-object-magnifying-glass.svg");
               background-size: 12px;
               background-position: 5% 50%;
               background-repeat: no-repeat;
@@ -141,10 +141,10 @@
 
   .step-4 {
     &.image1 {
-      background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-6.png') center top no-repeat;
+      background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-6.png') center top no-repeat;
     }
     &.image2 {
-      background: url('../app/1-build-a-data-model/assets/2-add-an-external-object-screen-bkg-7.png') center top no-repeat;
+      background: url('../app/1-build-a-data-model/assets/4-add-an-external-object-screen-bkg-7.png') center top no-repeat;
     }
     .click-box {
       top: 185px;

@@ -59,11 +59,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/add-an-external-object',
       views: {
         monitor: {
-          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.html'),
+          template: require('./app/1-build-a-data-model/partials/4-add-an-external-object.html'),
           controller: 'AddAnExternalObjectController'
         },
         drawer: {
-          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.drawer.html'),
+          template: require('./app/1-build-a-data-model/partials/4-add-an-external-object.drawer.html'),
           controller: 'AddAnExternalObjectDrawerController'
         },
         mobile: {
@@ -103,15 +103,18 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/heroku-connect',
       views: {
         monitor: {
-          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.html'),
+          template: require('./app/1-build-a-data-model/partials/2-heroku-connect.html'),
           controller: 'HerokuConnectController'
         },
         drawer: {
-          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.drawer.html'),
+          template: require('./app/1-build-a-data-model/partials/2-heroku-connect.drawer.html'),
           controller: 'HerokuConnectDrawerController'
         },
         mobile: {
           template: require('./mobile.html')
+        },
+        phone: {
+          template: require('./app/1-build-a-data-model/partials/2-heroku-connect.phone.html')
         }
       },
       onEnter(TopNavbar) {
@@ -122,28 +125,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('build-a-schema', {
-      url: '/build-a-schema',
-      views: {
-        monitor: {
-          template: require('./app/1-build-a-data-model/partials/5-build-a-schema.html'),
-          controller: 'BuildASchemaController'
-        },
-        drawer: {
-          template: require('./app/1-build-a-data-model/partials/5-build-a-schema.drawer.html'),
-          controller: 'BuildASchemaDrawerController'
-        },
-        mobile: {
-          template: require('./mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
-      }
-    })
+    // .state('build-a-schema', {
+    //   url: '/build-a-schema',
+    //   views: {
+    //     monitor: {
+    //       template: require('./app/1-build-a-data-model/partials/5-build-a-schema.html'),
+    //       controller: 'BuildASchemaController'
+    //     },
+    //     drawer: {
+    //       template: require('./app/1-build-a-data-model/partials/5-build-a-schema.drawer.html'),
+    //       controller: 'BuildASchemaDrawerController'
+    //     },
+    //     mobile: {
+    //       template: require('./mobile.html')
+    //     }
+    //   },
+    //   onEnter(TopNavbar) {
+    //     TopNavbar.DidYouKnowCount = 0;
+    //     TopNavbar.DidYouKnowEnabled = false;
+    //     TopNavbar.HotspotsCount = 0;
+    //     TopNavbar.HotspotsEnabled = false;
+    //   }
+    // })
     .state('setup-a-workflow', {
       url: '/setup-a-workflow',
       views: {
