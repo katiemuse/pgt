@@ -60,8 +60,8 @@ import HerokuConnectController from './app/1-build-a-data-model/controllers/2-he
 import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/2-heroku-connect.drawer.controller';
 import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/4-add-an-external-object.controller';
 import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/4-add-an-external-object.drawer.controller';
-// import AddACustomFieldController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.controller';
-// import AddACustomFieldDrawerController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.drawer.controller';
+import EinsteinBuilderController from './app/1-build-a-data-model/controllers/3-einstein-builder.controller';
+import EinsteinBuilderDrawerController from './app/1-build-a-data-model/controllers/3-einstein-builder.drawer.controller';
 // import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
 // import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
 import SetupAWorkflowController from './app/2-add-logic/controllers/1-setup-a-workflow.controller';
@@ -155,8 +155,8 @@ angular
   .controller('IntroDrawerController', IntroDrawerController)
   .controller('AddAnObjectController', AddAnObjectController)
   .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
-  // .controller('AddACustomFieldController', AddACustomFieldController)
-  // .controller('AddACustomFieldDrawerController', AddACustomFieldDrawerController)
+  .controller('EinsteinBuilderController', EinsteinBuilderController)
+  .controller('EinsteinBuilderDrawerController', EinsteinBuilderDrawerController)
   .controller('AddAnExternalObjectController', AddAnExternalObjectController)
   .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
   .controller('HerokuConnectController', HerokuConnectController)

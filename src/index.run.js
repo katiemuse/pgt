@@ -39,7 +39,7 @@ export default function run(
     1: [
       'add-an-object',
       'heroku-connect',
-      'add-an-external-object'
+      'einstein-builder'
       // ,'build-a-schema'
     ],
     2: [
