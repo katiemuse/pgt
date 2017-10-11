@@ -1,11 +1,17 @@
 'use strict';
 
-export default function AddCriteriaController($scope, $timeout, Steps, WizardHandler) {
+export default function AddCriteriaController(
+  $scope,
+  $timeout,
+  Steps,
+  Hotspots,
+  WizardHandler
+) {
   $scope.editor = {
     open: false
   };
 
-  $scope.ToggleEditor = function () {
+  $scope.ToggleEditor = function() {
     $scope.editor.open = !$scope.editor.open;
   };
 
@@ -34,7 +40,9 @@ export default function AddCriteriaController($scope, $timeout, Steps, WizardHan
     if (oldValue !== newValue) {
       $timeout.cancel(timeoutCriteriaName);
       timeoutCriteriaName = $timeout(() => {
-        if (newValue.length > 3 && newValue.toLowerCase() === 'new customer idea') {
+        if (
+          newValue.length > 3
+        ) {
           $scope.step1complete = true;
         }
       }, delayInMs);
@@ -53,25 +61,38 @@ export default function AddCriteriaController($scope, $timeout, Steps, WizardHan
       if (newValue.value === 3) {
         Steps.activate('four');
         if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+          Hotspots.clear();
           WizardHandler.wizard('monitor').next();
         }
       }
     }
   });
 
-  $scope.Next = function () {
+  $scope.Next = function() {
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       $scope.editor.open = !$scope.editor.open;
+      Hotspots.clear();
+      Hotspots.pop({
+        number: 1,
+        position: {
+          left: '79px',
+          top: '228px'
+        }
+      });
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
         Steps.activate('two');
       }, 300);
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      Hotspots.clear();
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
+    } else {
+      Hotspots.clear();
+      WizardHandler.wizard('monitor').next();
     }
   };
 }

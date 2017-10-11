@@ -7,7 +7,8 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.InfoActive = false;
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 2;
 
     Steps.clear();
     Steps.pop({
@@ -30,10 +31,23 @@ export default function AddCriteriaDrawerController($scope, WizardHandler, TopNa
       title: 'Click &lsquo;Save&rsquo;'
     });
 
+    Hotspots.clear();
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '79px',
+        top: '228px'
+      }
+    });
+    Hotspots.pop({
+      number: 2,
+      position: {
+        left: '299px',
+        top: '248px'
+      }
+    });
     $timeout(() => {
       Steps.activate('one');
     }, 1000);
-
-    Hotspots.clear();
   };
 }

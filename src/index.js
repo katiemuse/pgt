@@ -72,6 +72,8 @@ import AddCriteriaController from './app/2-add-logic/controllers/3-add-criteria.
 import AddCriteriaDrawerController from './app/2-add-logic/controllers/3-add-criteria.drawer.controller';
 import AddActionsController from './app/2-add-logic/controllers/4-add-actions.controller';
 import AddActionsDrawerController from './app/2-add-logic/controllers/4-add-actions.drawer.controller';
+import IotController from './app/2-add-logic/controllers/5-iot.controller';
+import IotDrawerController from './app/2-add-logic/controllers/5-iot.drawer.controller';
 import CreateANewLightningPageController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.controller';
 import CreateANewLightningPageDrawerController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.drawer.controller';
 import InstallAPreBuiltComponentFromAppexchangeController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.controller';
@@ -171,6 +173,8 @@ angular
   .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
   .controller('AddActionsController', AddActionsController)
   .controller('AddActionsDrawerController', AddActionsDrawerController)
+  .controller('IotController', IotController)
+  .controller('IotDrawerController', IotDrawerController)
   .controller('CreateANewLightningPageController', CreateANewLightningPageController)
   .controller('CreateANewLightningPageDrawerController', CreateANewLightningPageDrawerController)
   .controller('InstallAPreBuiltComponentFromAppexchangeController', InstallAPreBuiltComponentFromAppexchangeController)

@@ -1,13 +1,13 @@
 'use strict';
 
 export default function ChooseAnObjectForTheProcessDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
-  TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.InfoActive = false;
+    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.DidYouKnowCount = 1;
 
     Steps.clear();
     Steps.pop({

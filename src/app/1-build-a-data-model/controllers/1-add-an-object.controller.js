@@ -1,6 +1,6 @@
 'use strict';
 
-export default function AddAnObjectController($scope, Steps, Hotspots, WizardHandler, $timeout, TopNavbar) {
+export default function EinsteinBuilderController($scope, Steps, Hotspots, WizardHandler, $timeout, TopNavbar) {
   let _timeout;
   let _timeout2;
 

@@ -7,7 +7,10 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.InfoActive = false;
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 1;
+    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.DidYouKnowCount = 2;
 
     Steps.clear();
     Steps.pop({
@@ -56,6 +59,13 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
     });
 
     Hotspots.clear();
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '500px',
+        top: '248px'
+      }
+    });
 
     $timeout(() => {
       Steps.activate('one');

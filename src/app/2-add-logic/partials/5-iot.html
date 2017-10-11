@@ -1,31 +1,36 @@
-<div class="row monitor-height heroku-connect">
+<div class="row monitor-height iot">
   <div class="col-lg-12 monitor-height">
     <div class="row monitor-height">
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
             <div class="step step-0">
-
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="Next()"></div>
+              <div class="flyout active">
+                <span>&lsquo;Monitoring&rsqou; is the default state. When a device has an error, we see it change state.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="click-box" ng-class="{active:!button.show}" ng-click="Next()"></div>
+              <div class="flyout active">
+                <span>When a device changes state, different actions are triggered, based on the rules your team set up.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3" ng-class="{active:button.clicked}">
-              <div class="click-box" ng-class="{active:!button.clicked}" ng-click="ToggleClicked()"></div>
-              <div class="flyout" ng-class="{active:button.clicked}">
-                <span>This is Salesforce’s Object Manager. All the mobile data we just mapped from Heroku gets pushed directly
-                  to Salesforce. Now you can show this data inside the app you’ll build for Product Managers on the Salesforce
-                  Platform.
-                </span>
+            <div class="step step-3">
+              <div class="flyout active">
+                <span>For example, this system moved to the Delayed Operation state, so IOT bot created a new case.</span>
                 <a ng-click="Next()">continue
                   <i></i>
                 </a>
@@ -34,7 +39,18 @@
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <img src="../assets/2-heroku-connect-egg-mobile.gif" />
+              <div class="flyout active">
+                <span>Once the case is resolved, the system returns to its functioning state.
+                  <br/>
+                  <br/> IOT Bot can trigger alerts so customers (OR agents) can immediately take action.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
               <div class="intro-copy">
                 <div class="intro-copy-block">
                   <h2>2-way communication</h2>
@@ -47,24 +63,19 @@
               </div>
             </div>
           </wz-step>
-
-
           <wz-step success="true">
             <div class="step success">
               <li-center>
                 <p>
                   <img src="../../../assets/images/success.png" />
                 </p>
-                <h2>Success!</h2>
+                <h2>Success
+                  <br/>You Finished Chapter 2!</h2>
                 <p>
-                  Just like that, with a simple mapping, data from your Heroku app can easily sync with Salesforce. That’s the magic of Heroku
-                  Connect!
+                  You’re pulling system information in real time to help your product managers and your customers.
                 </p>
                 <p>
-                  Now let’s add one more piece of customer insight.
-                </p>
-                <p>
-                  <a ui-sref="einstein-builder" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                  <a ui-sref="create-a-new-lightning-page" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
                 </p>
               </li-center>
             </div>

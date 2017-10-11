@@ -17,6 +17,10 @@
     }
   }
 
+  .step-4 {
+    background: url('../assets/images/backgrounds/phone-screen-background.png') center top no-repeat;
+  }
+
   .step-1 {
     .click-box {
       bottom: 8px;
@@ -53,6 +57,20 @@
         bottom: 15px;
         left: 170px;
       }
+    }
+  }
+
+  .step-4 {
+    a {
+      top: 400px;
+      text-transform: none;
+    }
+
+    img {
+      width: 195px;
+      top: 70px;
+      left: 140px;
+      position: absolute;
     }
   }
 }

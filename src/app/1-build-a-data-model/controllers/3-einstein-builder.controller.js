@@ -2,20 +2,35 @@
 
 export default function AddACustomFieldController(
   $scope,
+  $timeout,
   Steps,
   Hotspots,
+  TopNavbar,
   WizardHandler
 ) {
   $scope.selected = {
     dataType: false,
     field: false,
     predictionFields: false,
+    object: false,
     fieldName: '',
-    fieldNameActive: true
+    fieldNameActive: true,
+    labelValue: '',
+    prediction: false,
+    predictionOptions: [
+      {label: 'Choose a field', value: 0},
+      {label: 'NPS Score', value: 1}
+    ]
   };
+
+  $scope.selected.predictionValue = $scope.selected.predictionOptions[0];
 
   $scope.selectDataType = () => {
     $scope.selected.dataType = true;
+  };
+
+  $scope.selectObject = () => {
+    $scope.selected.object = true;
   };
 
   $scope.selectField = () => {
@@ -26,11 +41,21 @@ export default function AddACustomFieldController(
     $scope.selected.predictionFields = true;
   };
 
+  $scope.selectPrediction = () => {
+    $scope.selected.prediction = true;
+  };
+
+  const delayInMs = 1000;
+  let timeoutFieldName;
   $scope.$watch('selected.fieldName', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'future nps score') {
-        $scope.selected.fieldNameActive = false;
-      }
+      $timeout.cancel(timeoutFieldName);
+      $scope.selected.labelValue = newValue.toLowerCase().replace(/ /g, '_');
+      timeoutFieldName = $timeout(() => {
+        if (newValue.length > 3) {
+          $scope.selected.fieldNameActive = false;
+        }
+      }, delayInMs);
     }
   });
 
@@ -50,11 +75,24 @@ export default function AddACustomFieldController(
       Steps.activate('four');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
       WizardHandler.wizard('monitor').next();
+      Hotspots.pop({
+        number: 1,
+        position: {
+          left: '79px',
+          top: '173px'
+        }
+      });
+      TopNavbar.HotspotsActive = true;
+      TopNavbar.HotspotsCount = 1;
       Steps.activate('five');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 6) {
       WizardHandler.wizard('monitor').next();
-      Steps.clear();
-      // Steps.activate('five');
+      Hotspots.clear();
+      TopNavbar.HotspotsActive = false;
+      TopNavbar.HotspotsCount = 0;
+      Steps.activate('six');
+    } else {
+      WizardHandler.wizard('monitor').next();
     }
   };
 }

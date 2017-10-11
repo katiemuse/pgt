@@ -95,8 +95,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
       }
     })
     .state('heroku-connect', {
@@ -223,6 +223,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         drawer: {
           template: require('./app/2-add-logic/partials/4-add-actions.drawer.html'),
           controller: 'AddActionsDrawerController'
+        },
+        mobile: {
+          template: require('./mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
+      }
+    })
+    .state('iot', {
+      url: '/iot',
+      views: {
+        monitor: {
+          template: require('./app/2-add-logic/partials/5-iot.html'),
+          controller: 'IotController'
+        },
+        drawer: {
+          template: require('./app/2-add-logic/partials/5-iot.drawer.html'),
+          controller: 'IotDrawerController'
         },
         mobile: {
           template: require('./mobile.html')

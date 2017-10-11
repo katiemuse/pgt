@@ -117,7 +117,7 @@
           <wz-step>
             <div class="step step-5">
               <div class="form-actions activate">
-                <input class="btn btn-primary btn-interface active" type="submit" value="Activate" wz-next li-autofocus="wizard.stateIndex == 5" />
+                <input class="btn btn-primary btn-interface active" type="submit" value="Activate" ng-click="Next()" li-autofocus="wizard.stateIndex == 5" />
               </div>
             </div>
           </wz-step>
@@ -135,7 +135,7 @@
                     Now, we are ready to build our app’s user interface.
                 </p>
                 <p>
-                  <a ui-sref="create-a-new-lightning-page" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
+                  <a ui-sref="iot" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
                 </p>
               </li-center>
             </div>

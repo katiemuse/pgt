@@ -7,10 +7,7 @@
   }
 
   .step-2 {
-    background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-2.png') center center no-repeat;
-    &.selected {
-      background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-2-selected.png') center top no-repeat;
-    }
+    background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-2.png') center top no-repeat;
   }
 
   .step-3 {
@@ -27,27 +24,143 @@
     }
   }
 
-
   .step-5 {
     background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-5.png') center top no-repeat;
+    &.selected {
+      background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-5-selected.png') center top no-repeat;
+    }
+  }
+
+  .step-6 {
+    background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-6.png') center top no-repeat;
+
+    select {
+      position: absolute;
+      left: 81px;
+      top: 216px;
+      width: 307px;
+      height: 29px;
+    }
+  }
+
+  .step-7 {
+    background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-7.png') center top no-repeat;
+  }
+
+  .step-8 {
+    background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-8.png') center top no-repeat;
+  }
+
+  .step-9 {
+    background: url('../app/1-build-a-data-model/assets/3-einstein-builder-bkg-9.png') center top no-repeat;
   }
 
   .step-1 {
     .click-box {
-      top: 85px;
-      left: 444px;
-      width: 57px;
-      height: 28px;
+      top: 414px;
+      left: 313px;
+      width: 160px;
+      height: 29px;
     }
   }
 
   .step-2 {
+
+    input {
+      position: absolute;
+      left: 96px;
+      top: 295px;
+      opacity: 0.5;
+      height: 32px !important;
+      width: 372px !important;
+    }
+
+
+    label.output {
+      position: absolute;
+      left: 96px;
+      top: 354px;
+      opacity: 0.5;
+      height: 32px !important;
+      width: 372px !important;
+      color: #2e4368;
+      font-family:inherit;
+      line-height:21.4286px;
+      font-size:15px;
+      font-weight:normal;
+      padding: 4px 6px;
+    }
+
+    .click-box {
+      top: 434px;
+      left: 628px;
+      width: 85px;
+      height: 25px;
+    }
+  }
+
+  .step-3 {
     .click-box {
       &.next {
-        top: 147px;
-        left: 652px;
-        width: 50px;
-        height: 25px;
+        top: 434px;
+        left: 662px;
+        width: 49px;
+        height: 24px;
+      }
+
+      &.select {
+        top: 270px;
+        left: 77px;
+        width: 413px;
+        height: 22px;
+      }
+    }
+  }
+
+
+  .step-4 {
+    .click-box {
+      &.next {
+        top: 434px;
+        left: 662px;
+        width: 49px;
+        height: 24px;
+      }
+
+      &.select {
+        top: 252px;
+        left: 77px;
+        width: 543px;
+        height: 22px;
+      }
+    }
+  }
+
+  .step-5 {
+    .click-box {
+      &.next {
+        top: 434px;
+        left: 661px;
+        width: 51px;
+        height: 24px;
+      }
+
+      &.select {
+        top: 209px;
+        left: 82px;
+        width: 19px;
+        height: 209px;
+      }
+    }
+  }
+
+  .step-6 {
+    .click-box {
+      &.next {
+        top: 435px;
+        left: 662px;
+        width: 49px;
+        height: 23px;
       }
       &.select {
         top: 255px;
@@ -56,67 +169,28 @@
         height: 28px;
       }
     }
-    .check {
-      position: absolute;
-      bottom: 90px;
-      left: 159px;
+  }
+
+  .step-7 {
+    .flyout {
+      top: 130px;
+      bottom: auto;
     }
   }
 
-  .step-3 {
-    .click-box {
-      &.next { 
-        top: 422px;
-        left: 665px;
-        width: 59px;
-        height: 21px;
-      }
-
-      &.select { 
-        top: 363px;
-        left: 87px;
-        width: 83px;
-        height: 22px;
-      }
+  .step-8 {
+    .flyout {
+      top: 120px;
+      bottom: auto;
+      width: 315px;
     }
   }
 
-  .step-4 {
-    .click-box {
-      &.next { 
-        top: 422px;
-        left: 665px;
-        width: 59px;
-        height: 21px;
-      }
-
-      &.select { 
-        top: 214px;
-        left: 83px;
-        width: 20px;
-        height: 62px;
-      }
+  .step-9 {
+    .flyout {
+      bottom: 5px;
+      padding: 19px 25px;
     }
   }
-
-  .step-5 {
-
-    input {
-      position: absolute;
-      left: 100px;
-      top: 153px;
-      opacity: 0.5;
-      height: 26px !important;
-      width: 201px !important;
-    }
-
-    .click-box {
-      top: 422px;
-      left: 666px;
-      width: 58px;
-      height: 21px;
-    }
-  }
-
 
 }

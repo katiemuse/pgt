@@ -57,6 +57,9 @@ export default function HerokuConnectController($scope, Steps, Hotspots, WizardH
       // $timeout(() => {
       //   WizardHandler.wizard('monitor').next();
       // }, 600);
+    } else {
+      debugger;
+      WizardHandler.wizard('monitor').next();
     }
   };
 }

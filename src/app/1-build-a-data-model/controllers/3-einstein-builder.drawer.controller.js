@@ -16,34 +16,41 @@ export default function AddACustomFieldDrawerController(
     Drawer.close();
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
+    TopNavbar.HotspotsEnabled = false;
 
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click \'New\' button'
+      title: 'Click on \'New Prediction\''
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Select the \'Prediction by Einstein\' data type and click \'Next\''
+      title: 'Name Your Predication \'Impact of Cases on NPS\' and click on \'Get Started\''
     });
 
     Steps.pop({
       number: 'three',
       title:
-        'Choose the field we\'d like to predict. We want to see how customer satisfaction might look in the future, so we\'ll choose \'NPS Score\' and Click  \'Next\''
+        'Select \'Cases\' and click  \'Next\''
     });
 
     Steps.pop({
       number: 'four',
       title:
-        'To inform our prediction, we\'ll choose the fields that will supply Einstein the best background data. For \'NPS Score,\' check the box next to \'Case Comments\', \'NPS Score (current),\' \'Order Date,\' and \'Device Crash Date,\' as well as some other standard fields. Click \'next\''
+        'Select \'Impact on NPS\' and click  \'Next\''
     });
 
     Steps.pop({
       number: 'five',
       title:
-        'Name our predictive field \'Future NPS Score\' and review the details, then click \'Next\''
+        'Select what fields should impact your prediction.'
+    });
+
+    Steps.pop({
+      number: 'six',
+      title:
+        'Select \'Predictive NPS Score\' as a field into which the Einstein models will push your prediction and will update it every hour.'
     });
 
     Hotspots.clear();

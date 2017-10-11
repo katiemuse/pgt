@@ -19,6 +19,7 @@ $stepTwo: #009cdb;
 $stepThree: #009cdb;
 $stepFour: #009cdb;
 $stepFive: #009cdb;
+$stepSix: #009cdb;
 
 $stepPositionFullWidthTop: 0;
 $stepPositionFullWidthBottom: 0;
@@ -227,7 +228,7 @@ button.step-close-button {
   }
 }
 
-.step-one, .step-two, .step-three, .step-four, .step-five {
+.step-one, .step-two, .step-three, .step-four, .step-five, .step-six {
   background-color: transparent;
   background-image: linear-gradient(to right, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
   &.active {
@@ -266,7 +267,11 @@ button.step-close-button {
   }
 }
 
-
+.step-six {
+  &:before {
+    content: '06'
+  }
+}
 
 :not(.no-enter)#step-container > div.ng-enter {
   transition: 150ms cubic-bezier(0.25, 0.25, 0.75, 0.75) all;
