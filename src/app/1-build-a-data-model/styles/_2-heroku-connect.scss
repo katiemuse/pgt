@@ -1,24 +1,34 @@
-@import '../../base';
+@import "../../base";
 
 .heroku-connect {
-
-  .step-0, .step-1{
-    background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-1.png') center center no-repeat;
+  .step-0,
+  .step-1 {
+    background: url("../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-1.png")
+      center center no-repeat;
   }
 
   .step-2 {
-    background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-2.png') center center no-repeat;
+    background: url("../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-2.png")
+      center center no-repeat;
   }
 
   .step-3 {
-    background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-3.png') center top no-repeat;
+    background: url("../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-3.png")
+      center top no-repeat;
     &.active {
-      background: url('../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-4.png') center top no-repeat;
+      background: url("../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-4.png")
+        center top no-repeat;
     }
   }
 
   .step-4 {
-    background: url('../assets/images/backgrounds/phone-screen-background.png') center top no-repeat;
+    background: url("../assets/images/backgrounds/phone-screen-background.png")
+      center top no-repeat;
+  }
+
+  .step-5 {
+    background: url("../app/1-build-a-data-model/assets/2-heroku-connect-screen-bkg-5.gif")
+      center top no-repeat;
   }
 
   .step-1 {
@@ -71,6 +81,13 @@
       top: 70px;
       left: 140px;
       position: absolute;
+    }
+  }
+
+  .step-5 {
+    a {
+      top: 400px;
+      text-transform: none;
     }
   }
 }
