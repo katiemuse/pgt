@@ -22,7 +22,44 @@
   }
 
   .step-5 {
-    background: url("../app/2-add-logic/assets/5-iot-bkg-5.gif")
-      center top no-repeat; 
+    background: url("../app/2-add-logic/assets/5-iot-bkg-5.png") center center
+      no-repeat;
+  }
+
+  .step-6 {
+    background: url("../app/2-add-logic/assets/5-iot-bkg-6.gif") center center
+      no-repeat;
+  }
+
+  .step-1 {
+    .flyout {
+      bottom: 310px;
+      width: 350px;
+    }
+  }
+
+  .step-2 {
+    .flyout {
+      bottom: 310px;
+    }
+  }
+
+  .step-3 {
+    .flyout {
+      bottom: 300px;
+      width: 346px;
+    }
+  }
+
+  .step-4 {
+    .flyout {
+      bottom: 20px;
+    }
+  }
+
+  .step-5 {
+    .flyout {
+      bottom: 200px;
+    }
   }
 }
