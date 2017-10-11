@@ -46,7 +46,8 @@ export default function run(
       'setup-a-workflow',
       'choose-an-object-for-the-process',
       'add-criteria',
-      'add-actions'
+      'add-actions',
+      'iot'
     ],
     3: [
       'create-a-new-lightning-page',
