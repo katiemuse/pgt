@@ -62,6 +62,7 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
     $scope.step4.box2 = true;
     $scope.step4.box3 = false;
     Steps.activate('five');
+    Hotspots.clear();
   };
 
   $scope.toggleBox3 = () => {
@@ -108,15 +109,25 @@ export default function AddAnExternalObjectController($scope, Steps, Hotspots, W
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('two');
+      Hotspots.clear();
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('four');
+      Hotspots.pop({
+        number: 2,
+        position: {
+          left: '256px',
+          top: '59px'
+        }
+      });
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('');
+    } else {
+      WizardHandler.wizard('monitor').next();
     }
   };
 }
