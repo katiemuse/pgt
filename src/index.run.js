@@ -57,7 +57,7 @@ export default function run(
       'customize-a-page-layout',
       'customize-navigation'
     ],
-    4: ['create-a-custom-action', 'customize-the-action-bar']
+    4: ['create-a-custom-action', 'customize-the-action-bar', 'create-a-lightning-app-from-your-page']
   };
 
   $rootScope.progressIndex = 0;
