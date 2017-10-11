@@ -12,6 +12,9 @@ export default function EinsteinBuilderDrawerController($scope, WizardHandler, T
     TopNavbar.HotspotsCount = 1;
     TopNavbar.HotspotsEnabled = true;
 
+    TopNavbar.DidYouKnowCount = 3;
+    TopNavbar.DidYouKnowEnabled = true;
+
     Steps.clear();
     Steps.pop({
       number: 'one',

@@ -53,12 +53,7 @@ export default function HerokuConnectController($scope, Steps, Hotspots, WizardH
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('six');
-      // $scope.toggleLabel();
-      // $timeout(() => {
-      //   WizardHandler.wizard('monitor').next();
-      // }, 600);
     } else {
-      debugger;
       WizardHandler.wizard('monitor').next();
     }
   };
