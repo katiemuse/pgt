@@ -10,6 +10,7 @@ export default function CreateACustomActionDrawerController($scope, WizardHandle
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
     TopNavbar.DidYouKnowCount = 1;
+    TopNavbar.DidYouKnowEnabled = true;
 
     Steps.clear();
     Steps.pop({
