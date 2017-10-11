@@ -5,6 +5,12 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
   Drawer.openToIntro();
 
   $scope.beginStory = function () {
+    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.DidYouKnowCount = 1;
+
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 1;
+
     Drawer.close();
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
@@ -38,13 +44,13 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
     });
 
     Hotspots.clear();
-    // Hotspots.pop({
-    //   number: 1,
-    //   position: {
-    //     left: '117px',
-    //     top: '223px'
-    //   }
-    // });
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '166px',
+        top: '59px'
+      }
+    });
     //
     // Hotspots.pop({
     //   number: 2,
