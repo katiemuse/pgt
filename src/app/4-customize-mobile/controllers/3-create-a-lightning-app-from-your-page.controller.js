@@ -6,7 +6,8 @@ export default function CreateALightningAppFromYourPageController($scope, Steps,
     step3: false,
     step4a: true,
     step4b: false,
-    step4c: false
+    step4c: false,
+    flyout: false
   };
 
   $scope.lightning = {
@@ -15,6 +16,10 @@ export default function CreateALightningAppFromYourPageController($scope, Steps,
 
   $scope.activatestep2 = () => {
     $scope.active.step2 = !$scope.active.step2;
+  };
+
+  $scope.activateflyout = () => {
+    $scope.active.flyout = !$scope.active.flyout;
   };
 
   $scope.activatestep3 = () => {

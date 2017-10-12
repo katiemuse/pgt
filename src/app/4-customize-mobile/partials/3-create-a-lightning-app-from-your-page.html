@@ -21,7 +21,11 @@
                   </div>
                 </div>
               </form>
-              <div class="click-box" ng-class="{active: active.step2}" ng-click="next()"></div>
+              <div class="click-box" ng-class="{active: active.step2 && !active.flyout}" ng-click="activateflyout()"></div>
+              <div class="flyout" ng-class="{active: active.flyout}">
+                <span>Next we'll choose the pages we want to add to our app. This is where our Customer Feedback Loop page comes in.</span>
+                <a ng-click="next()">continue <i></i></a>
+              </div>
             </div>
           </wz-step>
           <wz-step>
