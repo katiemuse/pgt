@@ -7,7 +7,8 @@ export default function CreateANewLightningPageDrawerController($scope, WizardHa
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.InfoActive = false;
+    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.DidYouKnowCount = 2;
 
     Steps.clear();
     Steps.pop({

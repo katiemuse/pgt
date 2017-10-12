@@ -71,6 +71,13 @@ export default function AddActionsController($scope, $timeout, Steps, WizardHand
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       $scope.editor.open = !$scope.editor.open;
       Hotspots.clear();
+      Hotspots.pop({
+        number: 2,
+        position: {
+          left: '568px',
+          top: '29px'
+        }
+      });
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
         Steps.activate('two');
@@ -80,14 +87,6 @@ export default function AddActionsController($scope, $timeout, Steps, WizardHand
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
       $scope.editor.open = !$scope.editor.open;
-      Hotspots.clear();
-      Hotspots.pop({
-        number: 1,
-        position: {
-          left: '500px',
-          top: '248px'
-        }
-      });
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
         Steps.activate('five');

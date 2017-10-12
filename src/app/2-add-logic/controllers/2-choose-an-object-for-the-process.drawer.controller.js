@@ -8,6 +8,8 @@ export default function ChooseAnObjectForTheProcessDrawerController($scope, Wiza
     WizardHandler.wizard('monitor').next();
     TopNavbar.DidYouKnowEnabled = true;
     TopNavbar.DidYouKnowCount = 1;
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 1;
 
     Steps.clear();
     Steps.pop({
@@ -26,6 +28,13 @@ export default function ChooseAnObjectForTheProcessDrawerController($scope, Wiza
     });
 
     Hotspots.clear();
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '500px',
+        top: '248px'
+      }
+    });
 
     $timeout(() => {
       Steps.activate('one');
