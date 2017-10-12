@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateALightningAppFromYourPageController($scope, Steps, WizardHandler, $timeout, $log) {
+export default function CreateALightningAppFromYourPageController($scope, Steps, WizardHandler, $timeout, $rootScope) {
   $scope.active = {
     step2: false,
     step3: false,
@@ -29,21 +29,14 @@ export default function CreateALightningAppFromYourPageController($scope, Steps,
   $scope.activatestep4a = () => {
     $scope.active.step4a = !$scope.active.step4a;
     $scope.active.step4b = !$scope.active.step4b;
-    $log.log('activate step 4b ', $scope.active.step4b);
-    $log.log('activate step 4a ', $scope.active.step4a);
   };
 
   $scope.activatestep4b = () => {
     $scope.active.step4b = !$scope.active.step4b;
-    $log.log('activate step 4a ', $scope.active.step4a);
-    $log.log('activate step 4b ', $scope.active.step4b);
   };
 
   $scope.activatestep4c = () => {
     $scope.active.step4c = !$scope.active.step4c;
-    $log.log('activate step 4a ', $scope.active.step4a);
-    $log.log('activate step 4b ', $scope.active.step4b);
-    $log.log('activate step 4c ', $scope.active.step4c);
   };
 
   const delayInMs = 1500;
@@ -53,9 +46,7 @@ export default function CreateALightningAppFromYourPageController($scope, Steps,
     if (oldValue !== newValue) {
       $timeout.cancel(timeoutLightningName);
       timeoutLightningName = $timeout(() => {
-        if (newValue === 'PM: 20/20') {
-          // WizardHandler.wizard('monitor').next();
-          // Steps.activate('four');
+        if (newValue.length > 3) {
           $scope.activatestep2();
         }
       }, delayInMs);
@@ -80,6 +71,7 @@ export default function CreateALightningAppFromYourPageController($scope, Steps,
       WizardHandler.wizard('monitor').next();
       Steps.activate('five');
     } else {
+      $rootScope.$emit('mobile-popout:toggle');
       WizardHandler.wizard('monitor').next();
     }
   };

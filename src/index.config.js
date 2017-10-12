@@ -444,6 +444,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/4-customize-mobile/partials/3-create-a-lightning-app-from-your-page.drawer.html'),
           controller: 'CreateALightningAppFromYourPageDrawerController'
         },
+        phone: {
+          template: require('./app/4-customize-mobile/partials/3-create-a-lightning-app-from-your-page.phone.html')
+        },
         mobile: {
           template: require('./mobile.html')
         }

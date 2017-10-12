@@ -7,7 +7,8 @@ export default function run(
   TopNavbar,
   $log,
   Drawer,
-  $transitions
+  $transitions,
+  WizardHandler
 ) {
   $rootScope.$state = $state;
   $rootScope.allowJumpingStories = true;
@@ -32,6 +33,7 @@ export default function run(
 
   $rootScope.closeMobilePopout = function() {
     $rootScope.showMobilePopout = false;
+    WizardHandler.wizard('monitor').next();
   };
 
   $rootScope.progressStates = {
