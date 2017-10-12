@@ -19,7 +19,7 @@ export default function CreateALightningAppFromYourPageDrawerController($scope, 
 
     Steps.pop({
       number: 'two',
-      title: 'Name your app. Let\'s call it "PM: 20/20." \n' +
+      title: 'Name your app. Let\'s call it "PM: 20/20". \n' +
       '\n' +
       '\'Click Next\''
     });
