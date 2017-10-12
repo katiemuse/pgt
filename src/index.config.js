@@ -433,6 +433,28 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
+    .state('create-a-lightning-app-from-your-page', {
+      url: '/create-a-lightning-app-from-your-page',
+      views: {
+        monitor: {
+          template: require('./app/4-customize-mobile/partials/3-create-a-lightning-app-from-your-page.html'),
+          controller: 'CreateALightningAppFromYourPageController'
+        },
+        drawer: {
+          template: require('./app/4-customize-mobile/partials/3-create-a-lightning-app-from-your-page.drawer.html'),
+          controller: 'CreateALightningAppFromYourPageDrawerController'
+        },
+        mobile: {
+          template: require('./mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
+        TopNavbar.HotspotsCount = 0;
+        TopNavbar.HotspotsEnabled = false;
+      }
+    })
     .state('end', {
       url: '/end',
       views: {

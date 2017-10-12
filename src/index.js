@@ -90,6 +90,8 @@ import CreateACustomActionController from './app/4-customize-mobile/controllers/
 import CreateACustomActionDrawerController from './app/4-customize-mobile/controllers/1-create-a-custom-action.drawer.controller';
 import CustomizeTheActionBarController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.controller';
 import CustomizeTheActionBarDrawerController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.drawer.controller';
+import CreateALightningAppFromYourPageController from './app/4-customize-mobile/controllers/3-create-a-lightning-app-from-your-page.controller';
+import CreateALightningAppFromYourPageDrawerController from './app/4-customize-mobile/controllers/3-create-a-lightning-app-from-your-page.drawer.controller';
 import EndController from './app/4-customize-mobile/controllers/3-end.controller';
 // import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 // import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
@@ -191,6 +193,8 @@ angular
   .controller('CreateACustomActionDrawerController', CreateACustomActionDrawerController)
   .controller('CustomizeTheActionBarController', CustomizeTheActionBarController)
   .controller('CustomizeTheActionBarDrawerController', CustomizeTheActionBarDrawerController)
+  .controller('CreateALightningAppFromYourPageController', CreateALightningAppFromYourPageController)
+  .controller('CreateALightningAppFromYourPageDrawerController', CreateALightningAppFromYourPageDrawerController)
   .controller('EndController', EndController)
   // .controller('EngagementStudioController', EngagementStudioController)
   // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
