@@ -51,8 +51,8 @@ export default function run(
     ],
     3: [
       'create-a-new-lightning-page',
-      'install-a-pre-built-component-from-appexchange',
       'create-an-app-from-base-and-custom-lightning-components',
+      'install-a-pre-built-component-from-appexchange',
       'add-custom-components',
       'customize-a-page-layout',
       'customize-navigation'

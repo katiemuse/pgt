@@ -283,11 +283,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/install-a-pre-built-component-from-appexchange',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.html'),
+          template: require('./app/3-build-your-app/partials/3-install-a-pre-built-component-from-appexchange.html'),
           controller: 'InstallAPreBuiltComponentFromAppexchangeController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.drawer.html'),
+          template: require('./app/3-build-your-app/partials/3-install-a-pre-built-component-from-appexchange.drawer.html'),
           controller: 'InstallAPreBuiltComponentFromAppexchangeDrawerController'
         },
         mobile: {
@@ -305,11 +305,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       url: '/create-an-app-from-base-and-custom-lightning-components',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.html'),
+          template: require('./app/3-build-your-app/partials/2-create-an-app-from-base-and-custom-lightning-components.html'),
           controller: 'CreateAnAppFromBaseAndCustomLightningComponentsController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.drawer.html'),
+          template: require('./app/3-build-your-app/partials/2-create-an-app-from-base-and-custom-lightning-components.drawer.html'),
           controller: 'CreateAnAppFromBaseAndCustomLightningComponentsDrawerController'
         },
         mobile: {

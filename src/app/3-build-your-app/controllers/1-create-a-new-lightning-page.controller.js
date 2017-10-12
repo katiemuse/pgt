@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateANewLightningPageController($scope, WizardHandler, Steps) {
+export default function CreateANewLightningPageController($scope, WizardHandler, Steps, Hotspots, TopNavbar, $timeout) {
   $scope.lightning = {
     input: ''
   };
@@ -9,11 +9,16 @@ export default function CreateANewLightningPageController($scope, WizardHandler,
     active: true
   };
 
+  const delayInMs = 1000;
+  let timeoutFieldName;
   $scope.$watch('lightning.input', (newValue, oldValue) => {
     if (newValue !== oldValue) {
-      if (newValue.toLowerCase() === 'customer 360') {
-        $scope.input.active = false;
-      }
+      $timeout.cancel(timeoutFieldName);
+      timeoutFieldName = $timeout(() => {
+        if (newValue.length > 3) {
+          $scope.input.active = false;
+        }
+      }, delayInMs);
     }
   });
 
@@ -24,8 +29,38 @@ export default function CreateANewLightningPageController($scope, WizardHandler,
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
+
+      TopNavbar.HotspotsEnable = true;
+      TopNavbar.HotspotsCount = 3;
+
+      Hotspots.clear();
+      Hotspots.pop({
+        number: 1,
+        position: {
+          left: '130px',
+          top: '144px'
+        }
+      });
+
+      Hotspots.pop({
+        number: 2,
+        position: {
+          left: '133px',
+          top: '170px'
+        }
+      });
+
+      Hotspots.pop({
+        number: 3,
+        position: {
+          left: '136px',
+          top: '196px'
+        }
+      });
+
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      Hotspots.clear();
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {

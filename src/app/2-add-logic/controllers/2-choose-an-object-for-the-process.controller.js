@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChooseAnObjectForTheProcessController($scope, $timeout, Steps, WizardHandler) {
+export default function ChooseAnObjectForTheProcessController($scope, $timeout, Steps, WizardHandler, Hotspots) {
   $scope.processOptions = [
     {label: 'Find an object...', value: 1},
     {label: 'Asset', value: 2},
@@ -41,6 +41,7 @@ export default function ChooseAnObjectForTheProcessController($scope, $timeout, 
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       $scope.editor.open = !$scope.editor.open;
+      Hotspots.clear();
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
         Steps.activate('two');
