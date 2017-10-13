@@ -7,6 +7,10 @@
     background-image:url('../app/5-outro/assets/outro-background.png');
   }
 
+  .intro-copy .intro-copy-block {
+    transform: translateY(-61%)
+  }
+
   .outro-mobile-gif {
     width: 194px;
     top: 69px;
@@ -17,7 +21,7 @@
 
   .outro-initial-screen {
     width: 194px;
-    top: 69px;
+    top: 66px;
     left: 123px;
     opacity: 1;
     position: absolute;
@@ -25,6 +29,13 @@
 
   .success {
     background-image:url('../app/5-outro/assets/outro-congrats-background.png');
+
+    .btn {
+      position:absolute;
+      bottom:20px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 
 }
