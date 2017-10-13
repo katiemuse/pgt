@@ -334,6 +334,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/3-build-your-app/partials/4-add-custom-components.drawer.html'),
           controller: 'AddCustomComponentsDrawerController'
         },
+        phone: {
+          template: require('./app/3-build-your-app/partials/4-add-custom-components.phone.html')
+        },
         mobile: {
           template: require('./mobile.html')
         }

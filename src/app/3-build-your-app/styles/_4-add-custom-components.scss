@@ -8,7 +8,7 @@
 
   .step-1 {
     .backlog-drag {
-      position: absolute;
+      position: absolute !important;
       bottom: 69px;
       left: 18px;
       border-radius: 4px;
@@ -20,14 +20,14 @@
       }
     }
     .drop-box {
-      top: 351px;
+      top: 362px;
       left: 262px;
       width: 237px;
       height: 115px;
     }
     .backlog {
       position: absolute;
-      top: 351px;
+      top: 85px;
       left: 262px;
     }
   }
