@@ -34,7 +34,7 @@ export default function CustomizeNavigationDrawerController($scope, WizardHandle
 
     Steps.pop({
       number: 'five',
-      title: 'Move the icon up so that your users can quickly see it on the Salesforce1 menu.'
+      title: 'Move the icon up so that your users can quickly see it on the Salesforce1 menu. Then click &lsquo;Save&rsquo;'
     });
 
     Hotspots.clear();
