@@ -9,6 +9,9 @@ export default function CustomizeAPageLayoutDrawerController($scope, WizardHandl
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
 
+    TopNavbar.HotspotsCount = 2;
+    TopNavbar.HotspotsEnabled = true;
+
     Steps.clear();
     Steps.pop({
       number: 'one',
@@ -21,6 +24,21 @@ export default function CustomizeAPageLayoutDrawerController($scope, WizardHandl
     });
 
     Hotspots.clear();
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '135px',
+        top: '48px'
+      }
+    });
+
+    Hotspots.pop({
+      number: 2,
+      position: {
+        left: '357px',
+        top: '33px'
+      }
+    });
 
     $timeout(() => {
       Steps.activate('one');
