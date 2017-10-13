@@ -8,6 +8,8 @@ export default function CustomizeNavigationDrawerController($scope, WizardHandle
     Drawer.close();
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
+    TopNavbar.DidYouKnowCount = 2;
+    TopNavbar.DidYouKnowEnabled = true;
 
     Steps.clear();
     Steps.pop({
