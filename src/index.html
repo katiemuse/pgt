@@ -91,12 +91,12 @@
       </steps-container>
    
       <div class="mobile-popout" ng-show="showMobilePopout">
-        <div class="blocker" ng-click="$root.closeMobilePopout()"> 
+        <div class="blocker" ng-click="$root.closeMobilePopout($event)">
           <div class="phone">
               <div class="phone-view" ui-view="phone"></div>
           </div>
 
-          <a class="back-to-laptop" ng-click="$root.closeMobilePopout()">
+          <a class="back-to-laptop" ng-click="$root.closeMobilePopout($event)">
           </a>
         </div>
       </div>

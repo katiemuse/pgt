@@ -12,7 +12,7 @@
             <div class="step step-1">
               <img src="../assets/4-add-custom-components-backlog-drag.png"
                    alt="backlog drag" class="backlog-drag active"  data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}">
-              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'next'}"></div>
+              <div class="drop-box" ng-class="{active: !customComponent.dropped}" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'next'}"></div>
               <img src="../assets/4-add-custom-components-backlog.png"
                      alt="backlog"
                      class="backlog" ng-show="customComponent.dropped">
