@@ -356,6 +356,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.drawer.html'),
           controller: 'CustomizeAPageLayoutDrawerController'
         },
+        phone: {
+          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.phone.html')
+        },
         mobile: {
           template: require('./mobile.html')
         }
@@ -377,6 +380,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         drawer: {
           template: require('./app/3-build-your-app/partials/6-customize-navigation.drawer.html'),
           controller: 'CustomizeNavigationDrawerController'
+        },
+        phone: {
+          template: require('./app/3-build-your-app/partials/6-customize-navigation.phone.html')
         },
         mobile: {
           template: require('./mobile.html')

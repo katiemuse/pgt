@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CustomizeNavigationController($scope, WizardHandler, Steps) {
+export default function CustomizeNavigationController($scope, WizardHandler, Steps, $rootScope) {
   $scope.active = {
     step2: false,
     step3: false,
@@ -37,6 +37,10 @@ export default function CustomizeNavigationController($scope, WizardHandler, Ste
 
   $scope.activatestep5 = () => {
     $scope.active.step5 = !$scope.active.step5;
+  };
+
+  $scope.mobileview = () => {
+    $rootScope.$emit('mobile-popout:toggle');
   };
 
   $scope.Next = function () {

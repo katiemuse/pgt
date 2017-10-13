@@ -31,9 +31,11 @@ export default function run(
     $rootScope.wizard.stateIndex = args.index;
   });
 
-  $rootScope.closeMobilePopout = function() {
+  $rootScope.closeMobilePopout = function(event) {
     $rootScope.showMobilePopout = false;
     WizardHandler.wizard('monitor').next();
+    event.stopPropagation();
+    return false;
   };
 
   $rootScope.progressStates = {

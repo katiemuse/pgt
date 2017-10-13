@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CustomizeAPageLayoutController($scope, WizardHandler, Steps) {
+export default function CustomizeAPageLayoutController($scope, WizardHandler, Steps, $rootScope) {
   $scope.lightning = {
     input: ''
   };
@@ -30,6 +30,7 @@ export default function CustomizeAPageLayoutController($scope, WizardHandler, St
       WizardHandler.wizard('monitor').next();
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      $rootScope.$emit('mobile-popout:toggle');
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
