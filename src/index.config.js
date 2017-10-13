@@ -458,12 +458,16 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('end', {
-      url: '/end',
+    .state('outro', {
+      url: '/outro',
       views: {
         monitor: {
-          template: require('./app/4-customize-mobile/partials/3-end.html'),
-          controller: 'EndController'
+          template: require('./app/5-outro/partials/1-outro.html'),
+          controller: 'OutroController'
+        },
+        drawer: {
+          template: require('./app/5-outro/partials/1-outro.drawer.html'),
+          controller: 'OutroDrawerController'
         },
         mobile: {
           template: require('./mobile.html')

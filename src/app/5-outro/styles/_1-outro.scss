@@ -1,0 +1,30 @@
+@import '../../base';
+
+
+.outro {
+
+  .step-0, .step-1, .step-2, .step-3, .step-4, .step-5, .step-6, .step-7, .step-8, .step-9 {
+    background-image:url('../app/5-outro/assets/outro-background.png');
+  }
+
+  .outro-mobile-gif {
+    width: 194px;
+    top: 69px;
+    left: 123px;
+    opacity: 1;
+    position: absolute;
+  }
+
+  .outro-initial-screen {
+    width: 194px;
+    top: 69px;
+    left: 123px;
+    opacity: 1;
+    position: absolute;
+  }
+
+  .success {
+    background-image:url('../app/5-outro/assets/outro-congrats-background.png');
+  }
+
+}
