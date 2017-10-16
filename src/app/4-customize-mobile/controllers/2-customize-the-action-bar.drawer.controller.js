@@ -10,6 +10,8 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
     TopNavbar.DidYouKnowCount = 1;
+    TopNavbar.HotspotsActive = true;
+    TopNavbar.HotspotsCount = 1;
 
     Steps.clear();
     Steps.pop({
@@ -33,6 +35,14 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
     });
 
     Hotspots.clear();
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '639px',
+        top: '438px'
+      }
+    });
+
     $timeout(() => {
       Steps.activate('one');
     }, 1000);

@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CustomizeTheActionBarController($scope, Steps, WizardHandler) {
+export default function CustomizeTheActionBarController($scope, Steps, WizardHandler, Hotspots) {
   $scope.active = {
     step2: false
   };
@@ -16,6 +16,7 @@ export default function CustomizeTheActionBarController($scope, Steps, WizardHan
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
+      Hotspots.clear();
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();
