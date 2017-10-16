@@ -8,6 +8,8 @@ export default function InstallAPreBuiltComponentFromAppexchangeDrawerController
     Drawer.close();
     WizardHandler.wizard('monitor').goTo(1);
     TopNavbar.InfoActive = false;
+    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.DidYouKnowCount = 1;
 
     Steps.clear();
     Steps.pop({
