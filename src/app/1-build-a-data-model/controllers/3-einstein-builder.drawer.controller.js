@@ -51,7 +51,7 @@ export default function AddACustomFieldDrawerController(
     Steps.pop({
       number: 'six',
       title:
-        'Select \'Predictive NPS Score\' as a field into which the Einstein models will push your prediction and will update it every hour.'
+        'Select \'Predicted NPS Score\' as a field into which the Einstein models will push your prediction and will update it every hour.'
     });
 
     Hotspots.clear();
