@@ -9,7 +9,7 @@ export default function AddAnExternalObjectDrawerController($scope, WizardHandle
     TopNavbar.DidYouKnowCount = 1;
 
     TopNavbar.HotspotsEnabled = true;
-    TopNavbar.HotspotsCount = 1;
+    TopNavbar.HotspotsCount = 2;
 
     Drawer.close();
     WizardHandler.wizard('monitor').next();
