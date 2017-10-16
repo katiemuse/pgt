@@ -33,7 +33,7 @@ export default function AddACustomFieldDrawerController(
     Steps.pop({
       number: 'three',
       title:
-        'Select \'Cases\' and click  \'Next\''
+        'Select \'Case\' and click  \'Next\''
     });
 
     Steps.pop({
