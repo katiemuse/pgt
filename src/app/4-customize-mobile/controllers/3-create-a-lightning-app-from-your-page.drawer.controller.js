@@ -11,6 +11,8 @@ export default function CreateALightningAppFromYourPageDrawerController($scope, 
     TopNavbar.InfoActive = false;
     TopNavbar.DidYouKnowCount = 1;
     TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 1;
 
     Steps.clear();
     Steps.pop({

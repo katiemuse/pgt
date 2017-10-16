@@ -1,6 +1,6 @@
 'use strict';
 
-export default function CreateALightningAppFromYourPageController($scope, Steps, WizardHandler, $timeout, $rootScope) {
+export default function CreateALightningAppFromYourPageController($scope, Steps, WizardHandler, Hotspots, $timeout, $rootScope) {
   $scope.active = {
     step2: false,
     step3: false,
@@ -60,8 +60,16 @@ export default function CreateALightningAppFromYourPageController($scope, Steps,
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
+      Hotspots.pop({
+        number: 1,
+        position: {
+          left: '465px',
+          top: '228px'
+        }
+      });
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      Hotspots.clear();
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
