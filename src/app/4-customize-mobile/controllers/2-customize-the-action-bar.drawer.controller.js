@@ -9,8 +9,9 @@ export default function CustomizeTheActionBarDrawerController($scope, WizardHand
     Drawer.close();
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
-    TopNavbar.DidYouKnowCount = 1;
-    TopNavbar.HotspotsActive = true;
+    TopNavbar.DidYouKnowEnabled = false;
+    TopNavbar.DidYouKnowCount = 0;
+    TopNavbar.HotspotsEnabled = true;
     TopNavbar.HotspotsCount = 1;
 
     Steps.clear();
