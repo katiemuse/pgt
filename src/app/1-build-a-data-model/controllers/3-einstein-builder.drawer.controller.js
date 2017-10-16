@@ -27,7 +27,7 @@ export default function AddACustomFieldDrawerController(
 
     Steps.pop({
       number: 'two',
-      title: 'Name Your Predication \'Impact of Cases on NPS\' and click on \'Get Started\''
+      title: 'Name Your Prediction \'Impact of Cases on NPS\' and click on \'Get Started\''
     });
 
     Steps.pop({
