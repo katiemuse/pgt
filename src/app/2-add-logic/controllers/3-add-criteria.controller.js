@@ -4,7 +4,6 @@ export default function AddCriteriaController(
   $scope,
   $timeout,
   Steps,
-  Hotspots,
   WizardHandler
 ) {
   $scope.editor = {
@@ -61,7 +60,6 @@ export default function AddCriteriaController(
       if (newValue.value === 3) {
         Steps.activate('four');
         if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
-          Hotspots.clear();
           WizardHandler.wizard('monitor').next();
         }
       }
@@ -74,24 +72,14 @@ export default function AddCriteriaController(
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       $scope.editor.open = !$scope.editor.open;
-      Hotspots.clear();
-      Hotspots.pop({
-        number: 1,
-        position: {
-          left: '79px',
-          top: '228px'
-        }
-      });
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
         Steps.activate('two');
       }, 300);
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
-      Hotspots.clear();
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else {
-      Hotspots.clear();
       WizardHandler.wizard('monitor').next();
     }
   };
