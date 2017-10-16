@@ -8,6 +8,7 @@ export default function SetupAWorkflowDrawerController($scope, WizardHandler, To
     Drawer.close();
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
+    TopNavbar.HotspotsEnabled = false;
 
     Steps.clear();
     Steps.pop({
