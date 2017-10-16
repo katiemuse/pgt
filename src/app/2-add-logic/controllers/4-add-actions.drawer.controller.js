@@ -7,8 +7,8 @@ export default function AddActionsDrawerController($scope, WizardHandler, TopNav
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.HotspotsEnabled = false;
-    TopNavbar.HotspotsCount = 0;
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 2;
     TopNavbar.DidYouKnowEnabled = true;
     TopNavbar.DidYouKnowCount = 2;
 
