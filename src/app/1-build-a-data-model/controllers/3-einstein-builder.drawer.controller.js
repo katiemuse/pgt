@@ -15,7 +15,7 @@ export default function AddACustomFieldDrawerController(
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.HotspotsEnabled = false;
+    TopNavbar.HotspotsEnabled = true;
     TopNavbar.DidYouKnowCount = 1;
     TopNavbar.DidYouKnowEnabled = true;
 
