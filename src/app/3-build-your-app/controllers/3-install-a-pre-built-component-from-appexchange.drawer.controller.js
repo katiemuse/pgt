@@ -9,7 +9,6 @@ export default function InstallAPreBuiltComponentFromAppexchangeDrawerController
   Drawer,
   $timeout
 ) {
-  TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
   $scope.beginStory = function() {
