@@ -1,6 +1,6 @@
 'use strict';
 
-export default function AddActionsController($scope, $timeout, Steps, WizardHandler, Hotspots) {
+export default function AddActionsController($scope, $rootScope, $timeout, Steps, WizardHandler, Hotspots) {
   $scope.editor = {
     open: false
   };
@@ -91,6 +91,9 @@ export default function AddActionsController($scope, $timeout, Steps, WizardHand
         WizardHandler.wizard('monitor').next();
         Steps.activate('five');
       }, 300);
+    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 6) {
+      Hotspots.clear();
+      $rootScope.$emit('mobile-popout:toggle');
     } else {
       WizardHandler.wizard('monitor').next();
       Hotspots.clear();

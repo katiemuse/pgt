@@ -226,6 +226,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./mobile.html')
+        },
+        phone: {
+          template: require('./app/2-add-logic/partials/4-add-actions.phone.html')
         }
       },
       onEnter(TopNavbar) {
@@ -433,6 +436,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./mobile.html')
+        },
+        phone: {
+          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.phone.html')
         }
       },
       onEnter(TopNavbar) {
