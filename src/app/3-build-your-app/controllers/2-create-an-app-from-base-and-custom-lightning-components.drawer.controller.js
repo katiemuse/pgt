@@ -7,7 +7,8 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.InfoActive = false;
+    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.DidYouKnowCount = 1;
 
     Steps.clear();
     Steps.pop({
@@ -17,22 +18,22 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
 
     Steps.pop({
       number: 'two',
-      title: 'Name your component &lsquo;Customer Service Cases&rsquo;'
+      title: 'Name your component &lsquo;Annual Sales Orders&rsquo;'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Choose the &lsquo;Case&rsquo; option from the &lsquo;Report&rsquo; dropdown.'
+      title: 'Choose the &lsquo;Sales Orders&rsquo; object we pulled in from SAP in the &lsquo;Report&rsquo; dropdown.'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Drag and drop the Chatter Feed Component into the middle section on the canvas'
+      title: 'Drag and drop the &lsquo;Filter List&rsquo; Component into the middle section on the canvas'
     });
 
     Steps.pop({
       number: 'five',
-      title: 'Drag and drop the Customer Ideas component from the AppExchange into the third section.'
+      title: 'Drag another &lsquo;Report Chart&rsquo; into the canvas to integrate Customer Support Cases from Service Cloud'
     });
 
     Hotspots.clear();

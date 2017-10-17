@@ -10,12 +10,12 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-report-chart-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}"
-                data-jqyoui-options="{revert: 'invalid'}" alt="report chart drag" class="report-chart-drag" ng-class="{active:!reportchart.active}">
+              <img src="../assets/2-create-an-app-from-base-and-custom-lightning-components-report-chart-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}"
+                   data-jqyoui-options="{revert: 'invalid'}" alt="report chart drag" class="report-chart-drag" ng-class="{active:!reportchart.active}">
               <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'next'}"></div>
             </div>
           </wz-step>
-          <wz-step>
+          <wz-step> 
             <div class="step step-2">
               <form class="form form-horizontal">
                 <div class="control-group">
@@ -34,7 +34,7 @@
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3">
+            <div class="step step-3" ng-class="{dropped: report.annualSalesDropped}">
               <form class="form form-horizontal">
                 <div class="control-group">
                   <div class="controls">
@@ -44,8 +44,8 @@
                 </div>
                 <div class="control-group">
                   <div class="controls">
-                    <select name="report-select" li-autofocus="wizard.stateIndex == 3" id="report-select" class="report-chart-dropdown active"
-                      ng-model="report.select" ng-options="opt as opt.label for opt in reportOptions"></select>
+                    <select name="report-select" li-autofocus="wizard.stateIndex == 3" id="report-select" class="report-chart-dropdown"
+                      ng-model="report.select" ng-class="{active: !report.annualSalesDropped}" ng-options="opt as opt.label for opt in reportOptions"></select>
                   </div>
                 </div>
               </form>
@@ -53,17 +53,17 @@
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-chatter-feed-drag.png" alt="chatter feed drag"
-                class="chatter-feed-drag active" data-drag="true" jqyoui-draggable="{index: 2, animate:true}" data-jqyoui-options="{revert: 'invalid'}">
+              <img src="../assets/2-create-an-app-from-base-and-custom-lightning-components-filter-list-drag.png" alt="filter list drag"
+                   class="filter-list-drag active" data-drag="true" jqyoui-draggable="{index: 2, animate:true}" data-jqyoui-options="{revert: 'invalid'}">
               <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 3 , onDrop:'next'}"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-5" ng-class="{dropped: report.dropped}">
-              <img src="../assets/3-create-an-app-from-base-and-custom-lightning-components-customer-ideas-drag.png" alt="customer ideas drag"
-                class="customer-ideas-drag" ng-class="{active: !report.dropped}" ng-show="!report.dropped" data-drag="true"
+                <img src="../assets/2-create-an-app-from-base-and-custom-lightning-components-report-chart-drag.png"  alt="customer support cases drag"
+                class="report-chart-drag" ng-class="{active: !report.dropped}" ng-show="!report.dropped" data-drag="true"
                 jqyoui-draggable="{index: 4, animate:true}" data-jqyoui-options="{revert: 'invalid'}">
-              <div class="drop-box" ng-show="!report.dropped" ng-class="{active: !report.dropped}" data-drop="true" jqyoui-droppable="{index: 5 , onDrop:'dropCustomerIdeas'}"></div>
+              <div class="drop-box" ng-show="!report.dropped" ng-class="{active: !report.dropped}" data-drop="true" jqyoui-droppable="{index: 5 , onDrop:'dropCustomerSupportCases'}"></div>
             </div>
           </wz-step>
           <wz-step success="true">
@@ -74,8 +74,7 @@
                 </p>
                 <h2>Success!</h2>
                 <p>
-                  Nice work! But it seems like your app is missing something. Nothing a little custom code can’t fix. Don’t worry, it’s not
-                  as complex as it sounds.
+                    We have our Standard Components in place, but we can access other no-code components in just a few clicks.                    
                 </p>
                 <p>
                   <a ui-sref="install-a-pre-built-component-from-appexchange" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active">Continue</a>
