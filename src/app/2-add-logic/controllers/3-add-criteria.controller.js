@@ -4,6 +4,7 @@ export default function AddCriteriaController(
   $scope,
   $timeout,
   Steps,
+  Hotspots,
   WizardHandler
 ) {
   $scope.editor = {
@@ -80,6 +81,7 @@ export default function AddCriteriaController(
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else {
+      Hotspots.clear();
       WizardHandler.wizard('monitor').next();
     }
   };
