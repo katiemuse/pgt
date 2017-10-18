@@ -14,8 +14,8 @@ export default function InstallAPreBuiltComponentFromAppexchangeDrawerController
   $scope.beginStory = function() {
     Drawer.close();
     WizardHandler.wizard("monitor").goTo(1);
-    TopNavbar.DidYouKnowEnabled = true;
-    TopNavbar.DidYouKnowCount = 1;
+    TopNavbar.DidYouKnowEnabled = false;
+    TopNavbar.DidYouKnowCount = 0;
     TopNavbar.HotspotsEnabled = true;
     TopNavbar.HotspotsCount = 1;
 
