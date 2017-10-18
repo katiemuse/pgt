@@ -5,6 +5,14 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
     };
   });
 
+  const resetState = (TopNavbar, Hotspots) => {
+    TopNavbar.DidYouKnowCount = 0;
+    TopNavbar.DidYouKnowEnabled = false;
+    TopNavbar.HotspotsCount = 0;
+    TopNavbar.HotspotsEnabled = false;
+    Hotspots.clear();
+  };
+
   $stateProvider
     .state('intro', {
       url: '/',
@@ -25,12 +33,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'IntroController'
         }
       },
-      onEnter(TopNavbar, Drawer) {
+      onEnter(TopNavbar, Drawer, Hotspots) {
         Drawer.close();
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('add-an-object', {
@@ -48,11 +53,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('add-an-external-object', {
@@ -92,11 +94,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('heroku-connect', {
@@ -117,12 +116,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/1-build-a-data-model/partials/2-heroku-connect.phone.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.DidYouKnowActive = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     // .state('build-a-schema', {
@@ -162,11 +157,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('choose-an-object-for-the-process', {
@@ -184,11 +176,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('add-criteria', {
@@ -231,11 +220,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/2-add-logic/partials/4-add-actions.phone.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('iot', {
@@ -253,11 +239,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('create-a-new-lightning-page', {
@@ -275,11 +258,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('install-a-pre-built-component-from-appexchange', {
@@ -297,11 +277,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('create-an-app-from-base-and-custom-lightning-components', {
@@ -319,11 +296,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('add-custom-components', {
@@ -344,11 +318,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('customize-a-page-layout', {
@@ -369,11 +340,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('customize-navigation', {
@@ -394,11 +362,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('create-a-custom-action', {
@@ -416,11 +381,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('customize-the-action-bar', {
@@ -441,11 +403,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.phone.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('create-a-lightning-app-from-your-page', {
@@ -466,11 +425,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('outro', {
@@ -488,11 +444,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     });
 
