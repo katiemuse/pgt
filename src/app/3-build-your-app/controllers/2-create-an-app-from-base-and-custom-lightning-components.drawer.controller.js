@@ -9,6 +9,8 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
     WizardHandler.wizard('monitor').next();
     TopNavbar.DidYouKnowEnabled = true;
     TopNavbar.DidYouKnowCount = 1;
+    TopNavbar.HotspotsEnabled = true;
+    TopNavbar.HotspotsCount = 1;
 
     Steps.clear();
     Steps.pop({
@@ -37,6 +39,13 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsDrawerCon
     });
 
     Hotspots.clear();
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '106px',
+        top: '166px'
+      }
+    });
 
     $timeout(() => {
       Steps.activate('one');

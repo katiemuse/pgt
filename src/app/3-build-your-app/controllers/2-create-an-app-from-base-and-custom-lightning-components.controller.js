@@ -4,7 +4,8 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
   $scope,
   WizardHandler,
   Steps,
-  $timeout
+  $timeout,
+  Hotspots
 ) {
   $scope.label = {
     input: ""
@@ -66,6 +67,7 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
     } else if (WizardHandler.wizard("monitor").currentStepNumber() === 5) {
       WizardHandler.wizard("monitor").next();
       Steps.activate("five");
+      Hotspots.clear();
     } else if (WizardHandler.wizard("monitor").currentStepNumber() === 6) {
       Steps.clear();
       WizardHandler.wizard("monitor").next();
