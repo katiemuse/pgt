@@ -110,6 +110,7 @@ export default function run(
       $rootScope.taskIndex + 1 <
       _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
     $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
+    $rootScope.showMobilePopout = false;
   });
 
   $rootScope.$on('$destroy', () => {
