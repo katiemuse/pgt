@@ -18,23 +18,6 @@
     </wizard>
   </div>
 
-  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
-    <div class="clearfix">
-      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
-        <span class="first"></span>
-        <span class="second"></span>
-      </div>
-    </div>
-
-    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
-      <drawer-panel-tab heading="01">
-        <h2>Email Sending Lists</h2>
-        <p>Email sending isn’t limited to a single list. You can select multiple lists to send your emails to, as shown here.
-          You also have the option to remove lists in Pardot by clicking &ldquo;x.&rdquo;</p>
-      </drawer-panel-tab>
-    </drawer-panel>
-  </div>
-
   <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
     <div class="clearfix">
       <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
