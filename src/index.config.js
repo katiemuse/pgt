@@ -275,6 +275,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./mobile.html')
+        },
+        phone: {
+          template: require('./app/3-build-your-app/partials/3-install-a-pre-built-component-from-appexchange.phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {

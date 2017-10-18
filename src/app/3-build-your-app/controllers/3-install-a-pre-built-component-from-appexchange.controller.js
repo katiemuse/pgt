@@ -5,6 +5,7 @@ export default function InstallAPreBuiltComponentFromAppexchangeController(
   WizardHandler,
   Steps,
   Hotspots,
+  $rootScope,
   $timeout
 ) {
   $scope.search = {
@@ -31,7 +32,7 @@ export default function InstallAPreBuiltComponentFromAppexchangeController(
   $scope.dropCustomerIdeas = function() {
     $scope.customerIdeas.dropped = true;
     $timeout(() => {
-      WizardHandler.wizard("monitor").next();
+      $rootScope.$emit('mobile-popout:toggle');
     }, 1000);
   };
 
