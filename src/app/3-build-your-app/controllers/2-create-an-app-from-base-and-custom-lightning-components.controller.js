@@ -5,6 +5,7 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
   WizardHandler,
   Steps,
   $timeout,
+  $rootScope,
   Hotspots
 ) {
   $scope.label = {
@@ -78,7 +79,7 @@ export default function CreateAnAppFromBaseAndCustomLightningComponentsControlle
     $scope.report.dropped = true;
     Steps.clear();
     $timeout(() => {
-      $scope.next();
-    }, 1500);
+      $rootScope.$emit('mobile-popout:toggle');
+    }, 500);
   };
 }

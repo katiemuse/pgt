@@ -294,6 +294,9 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./mobile.html')
+        },
+        phone: {
+          template: require('./app/3-build-your-app/partials/2-create-an-app-from-base-and-custom-lightning-components.phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
