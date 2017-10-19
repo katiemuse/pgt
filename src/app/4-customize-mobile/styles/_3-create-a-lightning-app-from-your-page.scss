@@ -43,8 +43,8 @@
               font-weight: 500;
             }
 
-            _:-ms-fullscreen,
-            :root & {
+            @media all and (-ms-high-contrast:none)
+            {
               line-height: 23px;
             }
           }
