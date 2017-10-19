@@ -35,7 +35,10 @@
             <div class="step step-5">
               <div class="drag-drop-list-wrapper">
                 <ul class="drag-drop-list">
-                  <li ng-repeat="item in draglist" class="{{item.classname}}" ng-class="{active:item.classname=='customer-360'&&!active.step5}" data-drop="true"  data-drag="true" ng-model="draglist" jqyoui-droppable="{index: {{$index}}, onDrop: 'activatestep5'}" jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}" data-direction="{{item.jqyouiDirection}}"></li>
+                  <li ng-repeat="item in draglist" class="{{item.classname}}" ng-class="{active:item.classname=='customer-360'&&!active.step5}"
+                    data-drop="true" data-drag="true" ng-model="draglist" jqyoui-droppable="{index: {{$index}}, onDrop: 'activatestep5'}"
+                    jqyoui-draggable="{index: {{$index}}, insertInline: true, direction:'jqyouiDirection'}" data-jqyoui-options="{revert: 'invalid'}"
+                    data-direction="{{item.jqyouiDirection}}"></li>
                 </ul>
               </div>
               <div class="click-box" ng-class="{active:active.step5}" ng-click="mobileview()"></div>
@@ -47,13 +50,15 @@
                 <p>
                   <img src="../../../assets/images/success.png" />
                 </p>
-                <h2>Success!</h2>
+                <h2>Success!
+                  <br/>You Finished Chapter 3!</h2>
+                </h2>
                 <p>
-                  We’re live! And our Product team can’t wait to get their hands on Customer 360. It’s about time we pass it along to the team,
-                  and see what it can do.
+                  You’ve built out a Lightning App page for your product team to start learning from your customers! Before we hand it off,
+                  let’s use a few more Salesforce Platform tools to make it even more powerful.
                 </p>
                 <p>
-                  <a ui-sref="create-a-custom-action"  href="" class="btn btn-rounded active">Continue</a>
+                  <a ui-sref="create-a-custom-action" href="" class="btn btn-rounded active">Continue</a>
                 </p>
               </li-center>
             </div>
