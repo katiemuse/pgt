@@ -52,6 +52,10 @@ export class Steps {
     this.$rootScope.$emit('steps-newStep');
   }
 
+  remove(number) {
+    this.$rootScope.$emit('steps-removeStep', number);
+  }
+
   activate(number) {
     this.$rootScope.$emit('steps-activate', number);
   }

@@ -91,6 +91,7 @@ export default function AddACustomFieldController(
       TopNavbar.HotspotsActive = false;
       TopNavbar.HotspotsCount = 0;
       Steps.activate('six');
+      Steps.remove(1);
     } else {
       WizardHandler.wizard('monitor').next();
     }
