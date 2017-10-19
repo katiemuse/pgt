@@ -1,9 +1,10 @@
-@import '../../base';
+@import "../../base";
 
 .create-a-lightning-app-from-your-page {
-
-  .step-0, .step-1 {
-    background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-1.png') center center no-repeat;
+  .step-0,
+  .step-1 {
+    background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-1.png")
+      center center no-repeat;
   }
 
   .step-1 {
@@ -16,9 +17,11 @@
   }
 
   .step-2 {
-    background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-2a.png') center center no-repeat;
+    background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-2a.png")
+      center center no-repeat;
     &.step2b {
-      background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-2b.png') center center no-repeat;
+      background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-2b.png")
+        center center no-repeat;
     }
 
     form {
@@ -33,11 +36,16 @@
             width: 232px;
             font-size: 10px;
             line-height: 25px;
-            color: #2B3D69;
+            color: #2b3d69;
             font-weight: 500;
             &::placeholder {
-              color: #2B3D69;
+              color: #2b3d69;
               font-weight: 500;
+            }
+
+            _:-ms-fullscreen,
+            :root & {
+              line-height: 23px;
             }
           }
         }
@@ -53,7 +61,8 @@
   }
 
   .step-3 {
-    background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-3.png') center center no-repeat;
+    background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-3.png")
+      center center no-repeat;
 
     .click-box {
       top: 268px;
@@ -69,9 +78,12 @@
     }
   }
   .step-4 {
-    background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-4a.png') center center no-repeat;
-    &.step4b, &.step4c {
-      background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-4b.png') center center no-repeat;
+    background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-4a.png")
+      center center no-repeat;
+    &.step4b,
+    &.step4c {
+      background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-4b.png")
+        center center no-repeat;
     }
     .click-box {
       top: 294px;
@@ -100,7 +112,8 @@
   }
 
   .step-5 {
-    background: url('../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-5.png') center center no-repeat;
+    background: url("../app/4-customize-mobile/assets/3-create-a-lightning-app-from-your-page-screen-bkg-5.png")
+      center center no-repeat;
 
     .click-box {
       top: 425px;
@@ -117,6 +130,4 @@
       }
     }
   }
-
-
 }
