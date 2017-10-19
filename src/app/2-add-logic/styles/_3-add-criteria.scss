@@ -29,7 +29,7 @@
       transform: translateX(559px);
       transition-duration: 0.25s;
       transition-delay: 0s;
-      z-index:2499;
+      z-index: $z-index-inner-drawer;
 
       &.open {
         transform: translateX(0px);
