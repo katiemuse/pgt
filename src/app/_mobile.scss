@@ -1,22 +1,741 @@
-.mobile {
-  background-color: #B8C8D1;
-  width: 100%;
+@import "base";
+
+@media(max-width: $screen-sm-max) {
+  .drawer-no-scroll {
+    overflow: visible !important;
+  }
+  .drawer-bg {
+    &.active {
+      display: none !important;
+    }
+  }
 }
 
-.mobile-view {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  background-color: #B8C8D1;
-  width: 240px;
-  text-align: center;
+.mobile {
+  h1 {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    line-height: 1;
+    @media(min-width: $screen-sm-min) {
+      font-size: 50px;
+      margin-top: 40px;
+    }
+    @media(max-width: 374px) {
+      font-size: 20px;
+    }
+  }
+  h2 {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-weight: bold;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
+    @media(min-width: $screen-sm-min) {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    color: $color-text-header;
+    font-family: $proximanova;
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding-top: 5px;
+    @media(min-width: $screen-sm-min) {
+      font-size: 38px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
   p {
-    color: #122B4E;
-    font-size: 18px;
-    &.title {
-      font-size: 30px;
-      font-weight: 300;
+    color: $color-text-header;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 0;
+    @media(min-width: $screen-sm-min) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    + p {
+      margin-top: 20px;
+      @media(min-width: $screen-sm-min) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .pb {
+    @media(max-width: $screen-xs-max) {
+      padding-bottom: 45px !important;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding-bottom: 90px !important;
+    }
+  }
+  .pt {
+    @media(max-width: $screen-xs-max) {
+      padding-top: 45px !important;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding-top: 90px !important;
+    }
+  }
+  .hotspots {
+    @media(max-width: $screen-xs-max) {
+      padding: 30px 10px 19px;
+      background-color: $color-background-gray-medium;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 60px 20px 38px;
+      background-color: $color-background-gray-medium;
+    }
+    h3 {
+      @media(max-width: $screen-xs-max) {
+        @include retina-image("../assets/images/icons/mobile-hotspot", 14px 22px);
+        background-repeat: no-repeat;
+        padding-left: 19px;
+      }
+      @media(min-width: $screen-sm-min) {
+        background-image: url(../assets/images/icons/mobile-hotspot_2x.png);
+        background-repeat: no-repeat;
+        padding-left: 38px;
+      }
+    }
+    p {
+      color: $mobile-text-color-gray;
+    }
+    .screen-shot {
+      @media(max-width: $screen-xs-max) {
+        margin: 21px -25px;
+      }
+      @media(min-width: $screen-sm-min) {
+        margin: 42px -35px;
+      }
+    }
+    .last {
+      @media(max-width: $screen-xs-max) {
+        padding-bottom: 30px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding-bottom: 60px;
+      }
+    }
+  }
+  .shadow {
+    @media(max-width: $screen-xs-max) {
+      @include retina-image("../assets/images/backgrounds/shadow", 375px 10px);
+      background-repeat: no-repeat;
+    }
+    @media(min-width: $screen-sm-min) {
+      background-image: url(../assets/images/backgrounds/shadow_2x.png);
+      background-repeat: no-repeat;
+    }
+  }
+  .did-you-know {
+    position: relative;
+    @media(max-width: $screen-xs-max) {
+      padding: 0px 10px 35px;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0px 20px 70px;
+    }
+    h2 {
+      color: $color-salesforce-blue;
+      font-family: $proximanova;
+      font-weight: normal;
+      @media(min-width: $screen-sm-min) {
+        font-size: 44px;
+      }
+    }
+    p {
+      color: $mobile-text-color-gray;
+    }
+    .did-you-know-icon {
+      position: absolute;
+      @media(max-width: $screen-xs-max) {
+        top: -32px;
+        left: 10px;
+        height: 64px;
+        width: 64px;
+        @include retina-image("../assets/images/icons/mobile-did-you-know", 64px 64px);
+      }
+      @media(min-width: $screen-sm-min) {
+        top: -64px;
+        left: 20px;
+        height: 128px;
+        width: 128px;
+        background-image: url(../assets/images/icons/mobile-did-you-know_2x.png);
+      }
+      + h2 {
+        @media(max-width: $screen-xs-max) {
+          margin-top: 50px;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-top: 100px;
+        }
+      }
+    }
+    .screen-shot {
+      @media(max-width: $screen-xs-max) {
+        margin: 21px -25px;
+      }
+      @media(min-width: $screen-sm-min) {
+        margin: 42px -35px;
+      }
+    }
+  }
+  .blue-container {
+    @media(max-width: $screen-xs-max) {
+      @include retina-image("../assets/images/backgrounds/mobile-blue-container-background", 375px 555px);
+      padding: 38px 11px;
+    }
+    @media(min-width: $screen-sm-min) {
+      background-image: url(../assets/images/backgrounds/mobile-blue-container-background_2x.png);
+      padding: 76px 22px;
+    }
+    h3 {
+      color: $text-color-white;
+      margin-top: 0;
+      padding-top: 0;
+      @media(max-width: $screen-xs-max) {
+        font-size: 23px;
+      }
+      @media(min-width: $screen-sm-min) {
+        font-size: 46px;
+      }
+    }
+    p {
+      color: $text-color-white;
+      text-align: center;
+    }
+    &.text-left {
+      p {
+        text-align: left;
+      }
+    }
+    &.next-page {
+      @media(max-width: $screen-xs-max) {
+        padding: 52px 11px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 52px 11px;
+      }
+      p {
+        @media(max-width: $screen-xs-max) {
+          margin-bottom: 20px;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-bottom: 40px;
+        }
+      }
+      .btn-orange {
+        float: none;
+        padding: 0 15%;
+      }
+      .icon {
+        height: 45px;
+        width: 45px;
+        background-repeat: no-repeat;
+        @media(max-width: $screen-xs-max) {
+          float: left;
+          height: 180px;
+          width: 45px;
+          margin-right: 15px;
+          margin-left: -10px;
+        }
+        @media(min-width: $screen-sm-min) {
+          float: left;
+          height: 360px;
+          width: 90px;
+          margin-right: 30px;
+          margin-left: -10px;
+        }
+        &.imc {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/icons/icon-intergrated-marketing-campaigns", 45px 45px);
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/icons/icon-intergrated-marketing-campaigns_2x.png);
+          }
+        }
+        &.ln {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/icons/icon-lead-nurturing", 45px 45px);
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/icons/icon-lead-nurturing_2x.png);
+          }
+        }
+        &.ssmr {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/icons/icon-simplified-sales-marketing-relationship", 45px 45px);
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/icons/icon-simplified-sales-marketing-relationship_2x.png);
+          }
+        }
+        &.ctr {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/icons/icon-campaign-tracking-and-reporting", 45px 45px);
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/icons/icon-campaign-tracking-and-reporting_2x.png);
+          }
+        }
+      }
+    }
+  }
+  .graphic {
+    h2 {
+      color: $text-color-white;
+    }
+    p {
+      color: $text-color-white;
+    }
+  }
+  .screen-shot-container {
+    background-color: $color-background-gray-medium;
+    @media(max-width: $screen-xs-max) {
+      padding: 35px 10px;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 70px 10px;
+    }
+    h2 {
+      @media(min-width: $screen-sm-min) {
+        font-size: 44px;
+      }
+    }
+    .screen-shot {
+      @media(max-width: $screen-xs-max) {
+        margin: 21px -25px;
+      }
+      @media(min-width: $screen-sm-min) {
+        margin: 42px -25px;
+      }
+    }
+    &.no-screen-shot {
+      @media(max-width: $screen-xs-max) {
+        border-bottom: 1px solid $text-color-white;
+      }
+      @media(min-width: $screen-sm-min) {
+        border-bottom: 2px solid $text-color-white;
+      }
+      h2 {
+        @media(max-width: $screen-xs-max) {
+          margin-bottom: 10px;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-bottom: 20px;
+          font-size: 22px;
+        }
+      }
+    }
+  }
+
+  /************************
+    Intro Page
+  ************************/
+  .intro-page {
+    .hero {
+      text-align: center;
+      @media(max-width: $screen-xs-max) {
+        padding: 10px 0 50px;
+        height: 323px;
+        @include retina-image("../assets/images/backgrounds/mobile-intro-hero", 375px 303px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 20px 0 100px;
+        height: 606px;
+        background-image: url(../assets/images/backgrounds/mobile-intro-hero_2x.jpg);
+      }
+      h1 {
+        color: $text-color-white;
+        @media(max-width: $screen-xs-max) {
+          font-size: 47px;
+          margin-top: 10px;
+          margin-bottom: 30px;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 94px;
+          margin-top: 20px;
+          margin-bottom: 60px;
+        }
+      }
+      h2 {
+        color: $text-color-white;
+        @media(max-width: $screen-xs-max) {
+          font-size: 18px;
+          margin-top: 45px;
+          margin-bottom: 0;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 36px;
+          margin-top: 90px;
+          margin-bottom: 0;
+        }
+      }
+      .logo {
+        @include retina-image("../assets/images/logos/logo-transparent", 143px 55px);
+        width: 143px;
+        height: 55px;
+        display: block;
+        margin: 0 auto;
+        background-repeat: no-repeat;
+      }
+    }
+    .did-you-know {
+      @media(max-width: $screen-xs-max) {
+        padding-top: 35px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding-top: 70px;
+      }
+      h2 {
+        @media(max-width: $screen-xs-max) {
+          margin-top: 0;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-top: 0;
+        }
+      }
+    }
+    .blue-container {
+      @media(max-width: $screen-xs-max) {
+        @include retina-image("../assets/images/backgrounds/mobile-blue-container-intro-page", 375px 848px, "jpg");
+        padding: 38px 11px;
+      }
+      @media(min-width: $screen-sm-min) {
+        background-image: url(../assets/images/backgrounds/mobile-blue-container-intro-page_2x.jpg);
+        padding: 76px 22px;
+      }
+      p {
+        @media(max-width: $screen-xs-max) {
+          font-size: 17px;
+          margin-bottom: 0;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 34px;
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+
+  /************************
+    Build a Data Model
+  ************************/
+  .build-a-data-model {
+    .campaign-container {
+      @media(max-width: $screen-xs-max) {
+        padding: 0 10px;
+        height: 602px;
+        @include retina-image("../assets/images/backgrounds/mobile-campaign-container-background", 375px 604px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 0 20px;
+        height: 1204px;
+        background-image: url(../assets/images/backgrounds/mobile-campaign-container-background_2x.jpg);
+      }
+      h1 {
+        color: $text-color-white;
+      }
+      p {
+        color: $text-color-white;
+      }
+    }
+    .hotspots {
+      .screen-shot {
+        &.tag {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-organizing-tags-background", 375px 47px);
+            height: 47px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-organizing-tags-background_2x.png);
+            height: 94px;
+          }
+        }
+      }
+    }
+  }
+
+  .add-logic {
+    .hero {
+      @media(max-width: $screen-xs-max) {
+        padding: 0 10px;
+        height: 526px;
+        @include retina-image("../assets/images/backgrounds/mobile-build-a-form-hero", 375px 526px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 0 20px;
+        height: 1052px;
+        background-image: url(../assets/images/backgrounds/mobile-build-a-form-hero_2x.jpg);
+      }
+    }
+    .hotspots {
+      @media(max-width: $screen-xs-max) {
+        padding-bottom: 30px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding-bottom: 60px;
+      }
+    }
+    .dyk {
+      @media(max-width: $screen-xs-max) {
+        padding: 84px 10px;
+        height: 438px;
+        @include retina-image("../assets/images/backgrounds/mobile-landing-page-background", 375px 438px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 168px 20px;
+        height: 876px;
+        background-image: url(../assets/images/backgrounds/mobile-landing-page-background_2x.jpg);
+      }
+      h2 {
+        margin-top: 0;
+      }
+    }
+    .lp {
+      @media(max-width: $screen-xs-max) {
+        padding: 25px 10px;
+        height: 690px;
+        @include retina-image("../assets/images/backgrounds/mobile-build-a-form-did-you-know", 375px 690px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 50px 20px;
+        height: 1380px;
+        background-image: url(../assets/images/backgrounds/mobile-build-a-form-did-you-know_2x.jpg);
+      }
+      h2 {
+        @media(max-width: $screen-xs-max) {
+          margin-top: 15px;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-top: 30px;
+        }
+      }
+      p {
+        @media(max-width: $screen-xs-max) {
+          font-size: 18px;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  /************************
+    Build a Data Model
+  ************************/
+
+  .build-your-app {
+    .hero {
+      @media(max-width: $screen-xs-max) {
+        padding: 0;
+        height: 525px;
+        @include retina-image("../assets/images/backgrounds/mobile-build-an-email-hero", 375px 525px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 0;
+        height: 1050px;
+        background-image: url(../assets/images/backgrounds/mobile-build-a-form-hero_2x.jpg);
+      }
+    }
+    .screen-shot-container {
+      .screen-shot {
+        &.content-editing {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-build-an-email-content-editing", 375px 439px, "jpg");
+            height: 439px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-build-an-email-content-editing_2x.jpg);
+            height: 878px;
+          }
+        }
+        &.email-builder {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-build-an-email-email-builder", 375px 439px, "jpg");
+            height: 439px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-build-an-email-email-builder_2x.jpg);
+            height: 878px;
+          }
+        }
+        &.email-rendering {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-build-an-email-email-rendering", 375px 439px, "jpg");
+            height: 439px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-build-an-email-email-rendering_2x.jpg);
+            height: 878px;
+          }
+        }
+      }
+    }
+  }
+
+  /************************
+    Customize Mobile
+  ************************/
+
+  .customize-mobile {
+    .hero {
+      @media(max-width: $screen-xs-max) {
+        padding: 0;
+        height: 564px;
+        @include retina-image("../assets/images/backgrounds/mobile-prospect-profile-hero", 375px 564px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 0;
+        height: 1128px;
+        background-image: url(../assets/images/backgrounds/mobile-prospect-profile-hero_2x.jpg);
+      }
+      h1 {
+        margin-bottom: 0;
+      }
+      p {
+        @media(max-width: $screen-xs-max) {
+          font-size: 18.5px;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 37px;
+        }
+      }
+    }
+    .hotspots {
+      .screen-shot {
+        &.data-table {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-prospect-profile-table", 375px 96px);
+            height: 96px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-prospect-profile-table_2x.png);
+            height: 192px;
+          }
+        }
+      }
+    }
+  }
+
+  .outro {
+    .hero {
+      @media(max-width: $screen-xs-max) {
+        padding: 0 9px;
+        height: 540px;
+        @include retina-image("../assets/images/backgrounds/mobile-pardot-reporting-hero", 375px 540px, "jpg");
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 0 18px;
+        height: 1080px;
+        background-image: url(../assets/images/backgrounds/mobile-pardot-reporting-hero_2x.jpg);
+      }
+      p {
+        @media(max-width: $screen-xs-max) {
+          font-size: 18.5px;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 37px;
+        }
+      }
+    }
+    .screen-shot-container {
+      .screen-shot {
+        &.overview {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-pardot-reporting-overview", 375px 444px, "jpg");
+            height: 444px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-pardot-reporting-overview_2x.jpg);
+            height: 888px;
+          }
+        }
+        &.advanced {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-pardot-reporting-advanced", 375px 444px, "jpg");
+            height: 444px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-pardot-reporting-advanced_2x.jpg);
+            height: 888px;
+          }
+        }
+        &.client-report {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-pardot-reporting-client-report", 375px 444px, "jpg");
+            height: 444px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-pardot-reporting-client-report_2x.jpg);
+            height: 888px;
+          }
+        }
+        &.click-through {
+          @media(max-width: $screen-xs-max) {
+            @include retina-image("../assets/images/backgrounds/mobile-pardot-reporting-click-through-rate", 375px 444px, "jpg");
+            height: 444px;
+          }
+          @media(min-width: $screen-sm-min) {
+            background-image: url(../assets/images/backgrounds/mobile-pardot-reporting-click-through-rate_2x.jpg);
+            height: 888px;
+          }
+        }
+      }
+    }
+    .blue-container {
+      &.next-page {
+        @media(max-width: $screen-xs-max) {
+          padding: 52px 0px;
+        }
+        @media(min-width: $screen-sm-min) {
+          padding: 52px 0px;
+        }
+        p {
+          margin: 0;
+        }
+      }
+    }
+    .screen-shot-container {
+      @media(max-width: $screen-xs-max) {
+        padding: 25px 10px 35px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 50px 20px 70px;
+      }
+      h2 {
+        @media(max-width: $screen-xs-max) {
+          font-size: 23px;
+          line-height: 1.25;
+        }
+        @media(min-width: $screen-sm-min) {
+          font-size: 46px;
+          line-height: 1.25;
+        }
+      }
+      &.no-screen-shot {
+        h2 {
+          @media(max-width: $screen-xs-max) {
+            margin-bottom: 10px;
+          }
+          @media(min-width: $screen-sm-min) {
+            margin-bottom: 20px;
+          }
+        }
+      }
     }
   }
 }
