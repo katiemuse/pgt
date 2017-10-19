@@ -170,7 +170,6 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
       };
 
       $scope.removeStep = function (id) {
-        debugger;
         let i = 0;
         for (i; i < $scope.steps.length; i++) {
           if ($scope.steps[i].id === id) {
