@@ -349,7 +349,7 @@
       text-align: center;
       @media(max-width: $screen-xs-max) {
         padding: 10px 0 50px;
-        height: 323px;
+        height: 606px;
         @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-hero", 375px 630px, "png");
       }
       @media(min-width: $screen-sm-min) {
