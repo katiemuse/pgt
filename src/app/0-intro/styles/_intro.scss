@@ -131,7 +131,7 @@
       }
     }
     .logo {
-      background-image: url(../assets/images/logos/logo-transparent.png);
+      background-image: url(../assets/images/logos/mobile-guided-tour-intro-logo.png);
       width: 155px;
       height: 60px;
       display: block;
@@ -141,7 +141,7 @@
         only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
         only screen and (min-resolution: 125dpi),
         only screen and (min-resolution: 1.3dppx) {
-        background-image: url(../assets/images/logos/logo-transparent_2x.png);
+        //background-image: url(../assets/images/logos/mobile-guided-tour-logo.png);
         background-size: 143px 55px;
       }
       @media (min-width: $screen-md-min) {
@@ -463,13 +463,15 @@
     }
   }
   .btn-orange {
-    background-color: $color-marketing-cloud-orange-medium;
-    border-radius: 25px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 51px;
+    width: 325px;
+    height: 100px;
     padding: 0 5%;
-    color: white;
+    color: rgb(0, 119, 187);
     font-family: $salesforcesans;
-    font-size: 18px;
-    line-height: 50px;
+    font-size: 22px;
+    //line-height: normal;
     display: inline-block;
     float: right;
     margin: 0;
@@ -478,7 +480,7 @@
   .text-center {
     .btn-orange {
       float: none;
-      padding: 0 15%;
+      padding-top: 28px;
     }
   }
 

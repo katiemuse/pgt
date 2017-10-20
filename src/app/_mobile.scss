@@ -238,7 +238,7 @@
       }
       .btn-orange {
         float: none;
-        padding: 0 15%;
+        //padding-top: 30px;
       }
       .icon {
         height: 45px;
@@ -350,12 +350,13 @@
       @media(max-width: $screen-xs-max) {
         padding: 10px 0 50px;
         height: 323px;
-        @include retina-image("../assets/images/backgrounds/mobile-intro-hero", 375px 303px, "jpg");
+        @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-hero", 375px 630px, "png");
       }
       @media(min-width: $screen-sm-min) {
         padding: 20px 0 100px;
         height: 606px;
-        background-image: url(../assets/images/backgrounds/mobile-intro-hero_2x.jpg);
+        background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-hero_2x.png);
+        background-position: bottom;
       }
       h1 {
         color: $text-color-white;
@@ -384,7 +385,7 @@
         }
       }
       .logo {
-        @include retina-image("../assets/images/logos/logo-transparent", 143px 55px);
+        //@include retina-image("../assets/images/logos/logo-gray-transparent_2x.png", 143px 55px);
         width: 143px;
         height: 55px;
         display: block;
