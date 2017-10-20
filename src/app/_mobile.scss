@@ -51,8 +51,9 @@
     margin-bottom: 10px;
     padding-top: 5px;
     @media(min-width: $screen-sm-min) {
-      font-size: 38px;
+      font-size: 36px;
       margin-bottom: 20px;
+      padding-right: 22px;
       padding-top: 10px;
     }
   }
@@ -238,7 +239,6 @@
       }
       .btn-orange {
         float: none;
-        //padding-top: 30px;
       }
       .icon {
         height: 45px;
@@ -354,27 +354,27 @@
       }
       @media(min-width: $screen-sm-min) {
         padding: 20px 0 100px;
-        height: 606px;
+        height: 832px;
         background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-hero_2x.png);
-        background-position: bottom;
+        background-position: bottom ;
       }
       h1 {
-        color: $text-color-white;
+        color: rgb(0, 49, 90);
         @media(max-width: $screen-xs-max) {
           font-size: 47px;
           margin-top: 10px;
           margin-bottom: 30px;
         }
         @media(min-width: $screen-sm-min) {
-          font-size: 94px;
+          font-size: 95px;
           margin-top: 20px;
           margin-bottom: 60px;
         }
       }
       h2 {
-        color: $text-color-white;
+        color: rgb(0, 49, 90);
         @media(max-width: $screen-xs-max) {
-          font-size: 18px;
+          font-size: 36px;
           margin-top: 45px;
           margin-bottom: 0;
         }
