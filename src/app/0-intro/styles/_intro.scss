@@ -516,6 +516,9 @@
     height: 444px;
     background: #c2c2c2;
     color: #444444;
+    @media (max-width: $screen-xs-max) {
+      height: 344px;
+    }
     #sub-floor {
       padding: 10px 0;
     }
@@ -524,9 +527,11 @@
     .phone-button {
       background: #c2c2c2;;
       font-size: 28px;
-      margin-top: 18px;
-      //width: 705px;
+      margin-top: 20px;
       color: #444444;
+      @media (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
     }
     h3,
     h4 {

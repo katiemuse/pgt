@@ -415,11 +415,11 @@
     }
     .blue-container {
       @media(max-width: $screen-xs-max) {
-        @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 848px, "png");
+        @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 836px, "png");
         padding: 38px 11px;
         background-repeat: no-repeat;
         background-size: cover;
-        height: 848px;
+        height: 836px;
       }
       @media(min-width: $screen-sm-min) {
         background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img.png);
