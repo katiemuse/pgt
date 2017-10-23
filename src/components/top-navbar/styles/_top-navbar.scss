@@ -87,6 +87,7 @@ nav.top-navbar {
       }
     }
   }
+
   .navbar-link {
     @media(min-width: $screen-md-min) {
       position: absolute;
@@ -142,16 +143,14 @@ nav.top-navbar {
       }
       .navbar-brand {
         padding: 10px 15px;
-        height: 70px;
         .logo {
-          background-image: url(../../../assets/images/logos/logo-mobile-gray-transparent.png);
-          width: 143px;
-          height: 55px;
+          background-image: url(../../../assets/images/logos/mobile-guided-tour-intro-logo2x.png);
+          width: 272px;
+          height: 95px;
           display: block;
           background-repeat: no-repeat;
           @media only screen and (-webkit-min-device-pixel-ratio: 1.3), only screen and (min--moz-device-pixel-ratio: 1.3), only screen and (-o-min-device-pixel-ratio: 1.3 / 1), only screen and (min-resolution: 125dpi), only screen and (min-resolution: 1.3dppx) {
-            background-image: url(../../../assets/images/logos/logo-mobile-gray-transparent_2x.png);
-            background-size: 143px 55px;
+            background-image: url(../../../assets/images/logos/mobile-guided-tour-intro-logo.png);
           }
           @media(max-width: 374px) {
             width: 90px;
@@ -159,23 +158,37 @@ nav.top-navbar {
             background-size: cover;
             margin-top: 9px;
           }
+          @media (min-width: $screen-sm-min){
+
+          }
         }
       }
       .navbar-link {
-        background-color: $color-marketing-cloud-orange-medium;
-        border-radius: 22px;
+        background-color: #89b117;
+        border-radius: 52px;
         padding: 0 5%;
+        padding-top: 26px;
         color: white;
         font-family: $salesforcesans;
         font-weight: bold;
-        font-size: 14px;
+        font-size: 22px;
         line-height: 45px;
         display: inline-block;
         float: right;
+        height: 103px;
+        width: 318px;
         margin-top: 12px;
+        margin-bottom: 12px;
         margin-right: 15px;
         text-transform: uppercase;
         letter-spacing: .102em;
+        @media (max-width: $screen-xs-max) {
+          height: 51px;
+          width: 158px;
+          font-size: 11px;
+          padding-top: 16px;
+          line-height: normal;
+        }
         @media (min-width: $screen-sm-min) {
           margin-right: 0;
         }
