@@ -411,11 +411,11 @@
     }
     .blue-container {
       @media(max-width: $screen-xs-max) {
-        @include retina-image("../assets/images/backgrounds/mobile-blue-container-intro-page", 375px 848px, "jpg");
+        @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 848px, "png");
         padding: 38px 11px;
       }
       @media(min-width: $screen-sm-min) {
-        background-image: url(../assets/images/backgrounds/mobile-blue-container-intro-page_2x.jpg);
+        background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
         padding: 76px 22px;
       }
       p {
