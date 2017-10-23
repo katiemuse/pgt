@@ -237,7 +237,11 @@
           margin-bottom: 40px;
         }
       }
-      .btn-orange {
+      .btn-white {
+        float: none;
+      }
+
+      .btn-white-bottom {
         float: none;
       }
       .icon {
@@ -413,7 +417,8 @@
       @media(max-width: $screen-xs-max) {
         @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 848px, "png");
         padding: 38px 11px;
-        width: 375px;
+        background-repeat: no-repeat;
+        background-size: cover;
         height: 848px;
       }
       @media(min-width: $screen-sm-min) {

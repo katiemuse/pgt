@@ -272,21 +272,21 @@
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
       background-size: 375px 848px;
     }
-    h3 {
-      color: $text-color-white;
-      margin-top: 0;
-      padding-top: 0;
-      @media (max-width: $screen-xs-max) {
-        font-size: 23px;
-      }
-      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-        font-size: 46px;
-      }
-      @media (min-width: $screen-md-min) {
-        text-align: center;
-        font-size: 32px;
-      }
-    }
+    //h3 {
+    //  color: $text-color-white;
+    //  margin-top: 0;
+    //  padding-top: 0;
+    //  @media (max-width: $screen-xs-max) {
+    //    font-size: 23px;
+    //  }
+    //  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    //    font-size: 46px;
+    //  }
+    //  @media (min-width: $screen-md-min) {
+    //    text-align: center;
+    //    font-size: 32px;
+    //  }
+    //}
     p {
       color: $text-color-white;
       @media (max-width: $screen-xs-max) {
@@ -462,7 +462,7 @@
       }
     }
   }
-  .btn-orange {
+  .btn-white {
     background-color: rgb(255, 255, 255);
     border-radius: 51px;
     width: 325px;
@@ -471,17 +471,40 @@
     color: rgb(0, 119, 187);
     font-family: $salesforcesans;
     font-size: 22px;
-    //line-height: normal;
     display: inline-block;
     float: right;
     margin: 0;
   }
 
+  .btn-white-bottom {
+    background-color: rgb(255, 255, 255);
+    border-radius: 51px;
+    width: 325px;
+    height: 100px;
+    padding: 0 5%;
+    color: rgb(0, 119, 187);
+    font-family: $salesforcesans;
+    font-size: 22px;
+    display: inline-block;
+    float: right;
+    margin: 0;
+
+  }
+
+
   .text-center {
-    .btn-orange {
+    .btn-white {
       float: none;
       padding-top: 28px;
       margin-top: 71px;
+    }
+    .btn-white-bottom {
+      float: none;
+      padding-top: 28px;
+      margin-top: 132%;
+      @media (max-width: $screen-xs-max) {
+        margin-top: 188%;
+      }
     }
   }
 
@@ -490,8 +513,8 @@
     img {
       padding: 50px;
     }
-    background: #f7f7f7;
-    font-size: 12px;
+    height: 444px;
+    background: #c2c2c2;
     color: #444444;
     #sub-floor {
       padding: 10px 0;
@@ -499,8 +522,10 @@
     #sub-floor,
     a,
     .phone-button {
-      background: #f7f7f7;
-      font-size: 12px;
+      background: #c2c2c2;;
+      font-size: 31px;
+      margin-top: 18px;
+      //width: 705px;
       color: #444444;
     }
     h3,
@@ -515,13 +540,18 @@
       float: left;
     }
     #credit {
-      float: right;
-      text-align: right;
+      float: none;
+      text-align: center;
+      width: 705px;
+      @media (max-width: $screen-xs-max) {
+        width: 330px;
+      }
     }
   }
 
   #sub-floor a {
     color: #444444;
+    display: block;
   }
 
   #footer {
