@@ -6,7 +6,8 @@
           <div class="logo"></div>
           <h2>Welcome to the Salesforce</h2>
           <h1 class="hidden-lg hidden-md">Platform Tour</h1>
-          <h3 class="hidden-lg hidden-md">In this tour, you will see how to extend the power of your CRM with the Salesforce Platform.</h3>
+          <h3 class="hidden-lg hidden-md">In this tour, you will see how to extend the power of your CRM with the
+            Salesforce Platform.</h3>
           <h1 class="hidden-sm hidden-xs">Interactive Guided Tour</h1>
           <div class="text-center hidden-lg hidden-md">
             <a ui-sref="add-an-object" class="btn-white">GET STARTED</a>
@@ -25,8 +26,8 @@
       <script>
         function trayClick() {
           var tray = document.getElementById("tray");
-          if ( (" " + tray.className + " ").replace(/[\n\t]/g, " ").indexOf(" active ") > -1 ) {
-            tray.className = tray.className.replace( /(?:^|\s)active(?!\S)/g , '' );
+          if ((" " + tray.className + " ").replace(/[\n\t]/g, " ").indexOf(" active ") > -1) {
+            tray.className = tray.className.replace(/(?:^|\s)active(?!\S)/g, '');
           }
           else {
             tray.className = "tray hidden-sm hidden-xs active";
@@ -40,9 +41,14 @@
       <div class="row">
         <div class="col-xs-12 col-xs-offset-0 col-md-10 col-md-offset-1">
           <h2>Your Mission</h2>
-          <p>We will show you how to build an app using Salesforce Platform. The company we're building for, Egg, sells smart thermostats. Its Product Managers fall behind on delivering innovations.</p>
-          <p class="hidden-lg hidden-md">To improve the product fast, the Product Managers need to better understand customers—their issues, ideas, and any other useful contextual data.</p>
-          <p class="hidden-sm hidden-xs">This interactive demo provides a simplified environment for you to walk through the Pardot tool, explore some of its most popular functionality, and try your hand at some common marketing automation tasks. Hover over the highlighted areas below to get a preview of what will be covered in this demo &mdash; or click ‘Get Started’ to begin the tour.</p>
+          <p>We will show you how to build an app using Salesforce Platform. The company we're building for, Egg, sells
+            smart thermostats. Its Product Managers fall behind on delivering innovations.</p>
+          <p class="hidden-lg hidden-md">To improve the product fast, the Product Managers need to better understand
+            customers—their issues, ideas, and any other useful contextual data.</p>
+          <p class="hidden-sm hidden-xs">This interactive demo provides a simplified environment for you to walk through
+            the Pardot tool, explore some of its most popular functionality, and try your hand at some common marketing
+            automation tasks. Hover over the highlighted areas below to get a preview of what will be covered in this
+            demo &mdash; or click ‘Get Started’ to begin the tour.</p>
         </div>
       </div>
     </div>
@@ -63,60 +69,15 @@
     <div id="sub-floor" class="clearfix">
       <div class="container">
         <div class="row-fluid">
-          <div class="span12">
-            <div id="footer-links">
-              <div class="menu-footer-nav-container navbar clearfix">
-                <!--<ul id="menu-main-navigation" class="nav menu">-->
-                  <!--<li id="menu-item-28083" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28083">-->
-                    <!--<a href="http://pardot.com/features">Features</a>-->
-                  <!--</li>-->
-                  <!--<li id="menu-item-28251" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-28251">-->
-                    <!--<a href="http://pardot.com/pricing">Pricing</a>-->
-                  <!--</li>-->
-                  <!--<li id="menu-item-28326" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28326">-->
-                    <!--<a href="http://www.pardot.com/testimonials/">Testimonials</a>-->
-                  <!--</li>-->
-                  <!--<li id="menu-item-12373" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-has-children menu-item-12373">-->
-                    <!--<a href="http://www.pardot.com/resources/">Resources</a>-->
-                  <!--</li>-->
-                  <!--<li id="menu-item-28334" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-28334">-->
-                    <!--<a href="http://www.pardot.com/about-pardot/">About Us</a>-->
-                  <!--</li>-->
-                <!--</ul>-->
-                <!--<div class="social-icons clearall">-->
-                  <!--<a href="http://pardot.com/feed" class="btn rss" target="_blank">-->
-                    <!--<i class="fa fa-rss"></i>-->
-                  <!--</a>-->
-                  <!--<a href="http://twitter.com/Pardot" class="btn twitter" target="_blank">-->
-                    <!--<i class="fa fa-twitter"></i>-->
-                  <!--</a>-->
-                  <!--<a href="http://www.facebook.com/pardot" class="btn facebook" target="_blank">-->
-                    <!--<i class="fa fa-facebook"></i>-->
-                  <!--</a>-->
-                  <!--<a href="https://plus.google.com/104192535924822511888/posts" class="btn google-plus" target="_blank">-->
-                    <!--<i class="fa fa-google-plus"></i>-->
-                  <!--</a>-->
-                  <!--<a href="http://www.linkedin.com/company/pardot" class="btn linkedin" target="_blank">-->
-                    <!--<i class="fa fa-linkedin"></i>-->
-                  <!--</a>-->
-                  <!--<a href="http://pinterest.com/pardot/" class="btn pinterest" target="_blank">-->
-                    <!--<i class="fa fa-pinterest"></i>-->
-                  <!--</a>-->
-                  <!--<p class="btn phone-button hidden-desktop hidden-tablet" target="_blank">1-855-426-9213</p>-->
-                </div>
-              </div>
-            </div>
-            <div id="credit">
-              &#169; 2017 <a href="#">Salesforce All Rights Reserved.</a>
-              <strong><a href="#">Contact Us</a></strong>
-              <strong><a href="#">Privacy Policy</a></strong>
-              <strong><a href="#">Permission Based Marketing Policy</a></strong>
-              <strong><a href="#">Website Terms of Use</a></strong>
-            </div>
+          <div id="credit">
+            <span><a style="color: #444444" href="#">&#169; 2017 Salesforce All Rights Reserved.</a></span>
+            <a href="#">Terms of Service</a>
+            <a href="#">Privacy</a>
+            <a href="#">Responsible Disclosure</a>
+            <a href="#">Trust</a>
+            <a href="#">Contact</a>
           </div>
         </div>
       </div>
     </div>
-  </div>
-
-</div>
+    </div>
