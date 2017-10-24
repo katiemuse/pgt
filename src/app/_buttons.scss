@@ -183,7 +183,8 @@ button, a {
 .text-center {
   .btn-orange {
     float: none;
-    padding: 0 15%;
+    padding: 12px 15%;
+    border-radius: 38px;
     @media(max-width: $screen-xs-max) {
       margin-top: 154%;
       background-color: #0077bb;
