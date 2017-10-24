@@ -150,7 +150,7 @@
       padding: 0px 20px 70px;
     }
     h2 {
-      color: $color-salesforce-blue;
+      color: #89b117;
       font-family: $proximanova;
       font-weight: normal;
       @media(min-width: $screen-sm-min) {
@@ -235,9 +235,11 @@
       + h2 {
         @media(max-width: $screen-xs-max) {
           margin-top: 50px;
+          color: #89b117;
         }
         @media(min-width: $screen-sm-min) {
           margin-top: 100px;
+          color: #89b117;
         }
       }
     }
