@@ -131,8 +131,8 @@
       }
     }
     .logo {
-      background-image: url(../assets/images/logos/mobile-guided-tour-intro-logo2x.png);
-      width: 272px;
+      background-image: url(../assets/images/logos/salesforce-platform-logo.svg);
+      width: 275px;
       height: 95px;
       display: block;
       margin: 0 auto;
@@ -142,7 +142,7 @@
         only screen and (min-resolution: 125dpi),
         only screen and (min-resolution: 1.3dppx) {
         //background-image: url(../assets/images/logos/mobile-guided-tour-logo.png);
-        background-size: 272px 95px;
+        background-size: 275px 95px;
       }
       @media (min-width: $screen-md-min) {
         margin: 20px 0;
