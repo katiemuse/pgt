@@ -415,7 +415,7 @@
     }
     .blue-container {
       @media(max-width: $screen-xs-max) {
-        @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 836px, "png");
+        @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 627px, "png");
         padding: 38px 11px;
         background-repeat: no-repeat;
         background-size: cover;
