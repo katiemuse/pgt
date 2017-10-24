@@ -391,7 +391,7 @@
       .logo {
         //@include retina-image("../assets/images/logos/logo-gray-transparent_2x.png", 143px 55px);
         width: 275px;
-        height: 95px;
+        height: 55px;
         display: block;
         margin: 0 auto;
         background-repeat: no-repeat;
@@ -450,18 +450,18 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-campaign-container-background", 375px 604px, "jpg");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg", 375px 604px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1204px;
-      background-image: url(../assets/images/backgrounds/mobile-campaign-container-background_2x.jpg);
+      height: 1550px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg_2x.png);
     }
     h1 {
-      color: $text-color-white;
+      color: #00a1e0;
     }
     p {
-      color: $text-color-white;
+      color: #333333;
     }
   }
   .hotspots {
