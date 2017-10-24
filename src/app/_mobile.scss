@@ -167,14 +167,14 @@
         left: 10px;
         height: 64px;
         width: 64px;
-        @include retina-image("../assets/images/icons/mobile-did-you-know", 64px 64px);
+        @include retina-image("../assets/images/icons/mobile-guided-tour-DYK-icon", 64px 64px);
       }
       @media(min-width: $screen-sm-min) {
         top: -64px;
         left: 20px;
         height: 128px;
         width: 128px;
-        background-image: url(../assets/images/icons/mobile-did-you-know_2x.png);
+        background-image: url(../assets/images/icons/mobile-guided-tour-DYK-icon_2x.png);
       }
       + h2 {
         @media(max-width: $screen-xs-max) {
@@ -223,14 +223,14 @@
         left: 10px;
         height: 64px;
         width: 64px;
-        @include retina-image("../assets/images/icons/mobile-did-you-know", 64px 64px);
+        @include retina-image("../assets/images/icons/mobile-guided-tour-DYK-icon", 64px 64px);
       }
       @media(min-width: $screen-sm-min) {
         top: -64px;
         left: 20px;
         height: 128px;
         width: 128px;
-        background-image: url(../assets/images/icons/mobile-did-you-know_2x.png);
+        background-image: url(../assets/images/icons/mobile-guided-tour-DYK-icon_2x.png);
       }
       + h2 {
         @media(max-width: $screen-xs-max) {
@@ -671,12 +671,15 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 526px;
-      @include retina-image("../assets/images/backgrounds/mobile-build-a-form-hero", 375px 526px, "jpg");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 526px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1052px;
-      background-image: url(../assets/images/backgrounds/mobile-build-a-form-hero_2x.jpg);
+      height: 1428px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
     }
   }
   .hotspots {
