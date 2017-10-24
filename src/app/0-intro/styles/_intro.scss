@@ -131,7 +131,7 @@
       }
     }
     .logo {
-      background-image: url(../assets/images/logos/logo-transparent.png);
+      background-image: url(../assets/images/logos/mobile-guided-tour-intro-logo.png);
       width: 155px;
       height: 60px;
       display: block;
@@ -141,7 +141,7 @@
         only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
         only screen and (min-resolution: 125dpi),
         only screen and (min-resolution: 1.3dppx) {
-        background-image: url(../assets/images/logos/logo-transparent_2x.png);
+        //background-image: url(../assets/images/logos/mobile-guided-tour-logo.png);
         background-size: 143px 55px;
       }
       @media (min-width: $screen-md-min) {
@@ -250,16 +250,12 @@
   }
   .blue-container {
     @media (max-width: $screen-xs-max) {
-      background-image: url(../assets/images/backgrounds/mobile-blue-container-intro-page.jpg);
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img.png);
       background-size: cover;
       padding: 38px 11px;
     }
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-<<<<<<< Updated upstream
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img.png);
-=======
-      background-image: url(../assets/images/backgrounds/mobile-blue-container-intro-page_2x.jpg);
->>>>>>> Stashed changes
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
       background-size: cover;
       padding: 76px 22px;
     }
@@ -273,24 +269,24 @@
       only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
       only screen and (min-resolution: 125dpi),
       only screen and (min-resolution: 1.3dppx) {
-      background-image: url(../assets/images/backgrounds/mobile-blue-container-intro-page_2x.jpg);
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
       background-size: 375px 848px;
     }
-    h3 {
-      color: $text-color-white;
-      margin-top: 0;
-      padding-top: 0;
-      @media (max-width: $screen-xs-max) {
-        font-size: 23px;
-      }
-      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-        font-size: 46px;
-      }
-      @media (min-width: $screen-md-min) {
-        text-align: center;
-        font-size: 32px;
-      }
-    }
+    //h3 {
+    //  color: $text-color-white;
+    //  margin-top: 0;
+    //  padding-top: 0;
+    //  @media (max-width: $screen-xs-max) {
+    //    font-size: 23px;
+    //  }
+    //  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    //    font-size: 46px;
+    //  }
+    //  @media (min-width: $screen-md-min) {
+    //    text-align: center;
+    //    font-size: 32px;
+    //  }
+    //}
     p {
       color: $text-color-white;
       @media (max-width: $screen-xs-max) {
@@ -466,23 +462,49 @@
       }
     }
   }
-  .btn-orange {
-    background-color: white;
-    border-radius: 25px;
+  .btn-white {
+    background-color: rgb(255, 255, 255);
+    border-radius: 51px;
+    width: 325px;
+    height: 100px;
     padding: 0 5%;
-    color: #0077bb;
+    color: rgb(0, 119, 187);
     font-family: $salesforcesans;
-    font-size: 18px;
-    line-height: 50px;
+    font-size: 22px;
     display: inline-block;
     float: right;
     margin: 0;
   }
 
+  .btn-white-bottom {
+    background-color: rgb(255, 255, 255);
+    border-radius: 51px;
+    width: 325px;
+    height: 100px;
+    padding: 0 5%;
+    color: rgb(0, 119, 187);
+    font-family: $salesforcesans;
+    font-size: 22px;
+    display: inline-block;
+    float: right;
+    margin: 0;
+
+  }
+
+
   .text-center {
-    .btn-orange {
+    .btn-white {
       float: none;
-      padding: 0 15%;
+      padding-top: 28px;
+      margin-top: 71px;
+    }
+    .btn-white-bottom {
+      float: none;
+      padding-top: 28px;
+      margin-top: 132%;
+      @media (max-width: $screen-xs-max) {
+        margin-top: 188%;
+      }
     }
   }
 
@@ -491,18 +513,25 @@
     img {
       padding: 50px;
     }
-    background: #f7f7f7;
-    font-size: 12px;
+    height: 444px;
+    background: #c2c2c2;
     color: #444444;
+    @media (max-width: $screen-xs-max) {
+      height: 344px;
+    }
     #sub-floor {
       padding: 10px 0;
     }
     #sub-floor,
     a,
     .phone-button {
-      background: #f7f7f7;
-      font-size: 12px;
+      background: #c2c2c2;;
+      font-size: 28px;
+      margin-top: 20px;
       color: #444444;
+      @media (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
     }
     h3,
     h4 {
@@ -516,19 +545,24 @@
       float: left;
     }
     #credit {
-      float: right;
-      text-align: right;
+      float: none;
+      text-align: center;
+      width: 705px;
+      @media (max-width: $screen-xs-max) {
+        width: 330px;
+      }
     }
   }
 
   #sub-floor a {
-    color: #444444;
+    color: #005290;
+    display: block;
   }
 
   #footer {
     #sub-floor #credit a,
     .phone-button {
-      color: #444444;
+      color: #005290;
     }
     .span12 {
       padding: 0 20px;
@@ -577,7 +611,7 @@
 
 .intro-copy {
   text-align: center;
-  color: #00315a;
+  color: white;
   width: 273px;
   height: 360px;
   left: 470px;
