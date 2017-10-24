@@ -205,7 +205,7 @@
       padding: 0px 20px 70px;
       background-color: #00315a;
     }
-    h2 {
+    h1 {
       color: $text-color-white;
       font-family: $proximanova;
       font-weight: normal;
@@ -609,15 +609,51 @@
     }
   }
   .campaign-container-4 {
+   @media(max-width: $screen-xs-max) {
+     padding: 0 10px;
+     height: 602px;
+     @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 620px, "png");
+   }
+   @media(min-width: $screen-sm-min) {
+     padding: 0 20px;
+     height: 1550px;
+     background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
+   }
+   h1 {
+     color: #00a1e0;
+   }
+   p {
+     color: #444444;
+   }
+ }
+  .campaign-container-5 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 620px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 620px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1550px;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
+      height: 1358px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+    }
+  }
+  .campaign-container-6 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-6", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1052px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-6_2x.png);
     }
     h1 {
       color: #00a1e0;
@@ -627,6 +663,8 @@
     }
   }
 }
+
+
 
 .add-logic {
   .hero {

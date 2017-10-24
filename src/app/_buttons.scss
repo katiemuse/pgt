@@ -184,5 +184,13 @@ button, a {
   .btn-orange {
     float: none;
     padding: 0 15%;
+    @media(max-width: $screen-xs-max) {
+      margin-top: 154%;
+      background-color: #0077bb;
+    }
+    @media(min-width: $screen-sm-min) {
+      margin-top: 124%;
+      background-color: #0077bb;
+    }
   }
 }
