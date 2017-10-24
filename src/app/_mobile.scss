@@ -100,14 +100,15 @@
     }
     h3 {
       @media(max-width: $screen-xs-max) {
-        @include retina-image("../assets/images/icons/mobile-hotspot", 14px 22px);
+        @include retina-image("../assets/images/icons/mobile-guided-tour-hotspot", 14px 22px);
         background-repeat: no-repeat;
         padding-left: 19px;
       }
       @media(min-width: $screen-sm-min) {
-        background-image: url(../assets/images/icons/mobile-hotspot_2x.png);
+        background-image: url(../assets/images/icons/mobile-guided-tour-hotspot_2x.png);
         background-repeat: no-repeat;
-        padding-left: 38px;
+        padding-left: 66px;
+        height: 86px;
       }
     }
     p {
@@ -132,12 +133,12 @@
   }
   .shadow {
     @media(max-width: $screen-xs-max) {
-      @include retina-image("../assets/images/backgrounds/shadow", 375px 10px);
-      background-repeat: no-repeat;
+      //@include retina-image("../assets/images/backgrounds/shadow", 375px 10px);
+      //background-repeat: no-repeat;
     }
     @media(min-width: $screen-sm-min) {
-      background-image: url(../assets/images/backgrounds/shadow_2x.png);
-      background-repeat: no-repeat;
+      //background-image: url(../assets/images/backgrounds/shadow_2x.png);
+      //background-repeat: no-repeat;
     }
   }
   .did-you-know {
@@ -190,6 +191,99 @@
       }
       @media(min-width: $screen-sm-min) {
         margin: 42px -35px;
+      }
+    }
+  }
+
+  .did-you-know-2 {
+    position: relative;
+    @media(max-width: $screen-xs-max) {
+      padding: 0px 10px 35px;
+      background-color: #00315a;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0px 20px 70px;
+      background-color: #00315a;
+    }
+    h2 {
+      color: $text-color-white;
+      font-family: $proximanova;
+      font-weight: normal;
+      @media(min-width: $screen-sm-min) {
+        font-size: 44px;
+      }
+    }
+    p {
+      color: $text-color-white;
+    }
+    .did-you-know-icon {
+      position: absolute;
+      @media(max-width: $screen-xs-max) {
+        top: -32px;
+        left: 10px;
+        height: 64px;
+        width: 64px;
+        @include retina-image("../assets/images/icons/mobile-did-you-know", 64px 64px);
+      }
+      @media(min-width: $screen-sm-min) {
+        top: -64px;
+        left: 20px;
+        height: 128px;
+        width: 128px;
+        background-image: url(../assets/images/icons/mobile-did-you-know_2x.png);
+      }
+      + h2 {
+        @media(max-width: $screen-xs-max) {
+          margin-top: 50px;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-top: 100px;
+        }
+      }
+    }
+  }
+  .did-you-know-3 {
+    position: relative;
+    @media(max-width: $screen-xs-max) {
+      padding: 0px 10px 35px;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0px 20px 70px;
+    }
+    h2 {
+      color: #89b117;
+      font-family: $proximanova;
+      font-weight: normal;
+      @media(min-width: $screen-sm-min) {
+        font-size: 44px;
+      }
+    }
+    p {
+      color: #444444;
+    }
+    .did-you-know-icon {
+      position: absolute;
+      @media(max-width: $screen-xs-max) {
+        top: -32px;
+        left: 10px;
+        height: 64px;
+        width: 64px;
+        @include retina-image("../assets/images/icons/mobile-guided-tour-DYK-icon", 64px 64px);
+      }
+      @media(min-width: $screen-sm-min) {
+        top: -64px;
+        left: 20px;
+        height: 128px;
+        width: 128px;
+        background-image: url(../assets/images/icons/mobile-guided-tour-DYK-icon_2x.png);
+      }
+      + h2 {
+        @media(max-width: $screen-xs-max) {
+          margin-top: 50px;
+        }
+        @media(min-width: $screen-sm-min) {
+          margin-top: 100px;
+        }
       }
     }
   }
@@ -450,7 +544,7 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg", 375px 604px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg", 375px 620px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -461,21 +555,75 @@
       color: #00a1e0;
     }
     p {
-      color: #333333;
+      color: #444444;
     }
   }
-  .hotspots {
-    .screen-shot {
-      &.tag {
-        @media(max-width: $screen-xs-max) {
-          @include retina-image("../assets/images/backgrounds/mobile-organizing-tags-background", 375px 47px);
-          height: 47px;
-        }
-        @media(min-width: $screen-sm-min) {
-          background-image: url(../assets/images/backgrounds/mobile-organizing-tags-background_2x.png);
-          height: 94px;
-        }
-      }
+  //.hotspots {
+  //  .screen-shot {
+  //    &.tag {
+  //      @media(max-width: $screen-xs-max) {
+  //        @include retina-image("../assets/images/backgrounds/mobile-organizing-tags-background", 375px 47px);
+  //        height: 47px;
+  //      }
+  //      @media(min-width: $screen-sm-min) {
+  //        background-image: url(../assets/images/backgrounds/mobile-organizing-tags-background_2x.png);
+  //        height: 94px;
+  //      }
+  //    }
+  //  }
+  //}
+  .campaign-container-2 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2", 375px 623px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 928px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+    }
+  }
+  .campaign-container-3 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-3", 375px 623px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 928px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-3_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+    }
+  }
+  .campaign-container-4 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1550px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
     }
   }
 }
