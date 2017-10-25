@@ -836,6 +836,30 @@
     }
   }
 
+  .mobile-app-instruction {
+    @media(min-width: $screen-sm-min) {
+      height: 398px;
+    }
+
+    @media(max-width: $screen-xs-max) {
+      height: 186px;
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+   }
+
 
   .mobile-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
