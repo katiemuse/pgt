@@ -202,7 +202,7 @@
       background-color: #00315a;
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0px 20px 70px;
+      padding: 80px 20px 70px;
       background-color: #00315a;
     }
     h1 {
@@ -550,7 +550,7 @@
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1550px;
+      height: 1530px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg_2x.png);
     }
     h1 {
@@ -586,7 +586,7 @@
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 928px;
+      height: 897px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2_2x.png);
     }
     h1 {
@@ -622,7 +622,7 @@
    }
    @media(min-width: $screen-sm-min) {
      padding: 0 20px;
-     height: 1550px;
+     height: 1540px;
      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
    }
    h1 {
@@ -694,6 +694,7 @@
     }
     h1 {
       color: #00a1e0;
+      padding-bottom: 5px;
     }
     p {
       @media(max-width: $screen-xs-max) {
