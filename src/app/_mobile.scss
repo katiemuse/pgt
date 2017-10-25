@@ -752,13 +752,100 @@
   .mobile-app-bkg-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
+      height: 603px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 608px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1428px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .mobile-app-bkg-4 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 603px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 608px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1576px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .mobile-app-bkg-5 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 603px;
+      background-repeat: no-repeat;
+      //@include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 608px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 897px;
+      background-repeat: no-repeat;
+      //background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_x2.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .mobile-app-bkg-6 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
       height: 598px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 598px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 598px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 1070px;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3_2x.png);
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6_2x.png);
     }
     h1 {
       color: #00a1e0;
@@ -830,14 +917,56 @@
 .build-your-app {
   .hero {
     @media(max-width: $screen-xs-max) {
-      padding: 0;
-      height: 525px;
-      @include retina-image("../assets/images/backgrounds/mobile-build-an-email-hero", 375px 525px, "jpg");
+      padding: 0 10px;
+      height: 602px;
+      //@include retina-image("../assets/images/backgrounds/mobile-guided-tour-add-component-hero", 375px 602px, "png");
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0;
-      height: 1050px;
-      background-image: url(../assets/images/backgrounds/mobile-build-a-form-hero_2x.jpg);
+      padding: 0 20px;
+      height: 1486px;
+      //background-image: url(../assets/images/backgrounds/mobile-guided-tour-add-component-hero_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding-bottom: 5px;
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 12px 0;
+      }
+    }
+  }
+
+  .add-component-bkg-2 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 603px;
+      background-repeat: no-repeat;
+      //@include retina-image("../assets/images/backgrounds/mobile-guided-tour-add-component-bkg-2", 375px 608px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1575px;
+      background-repeat: no-repeat;
+      //background-image: url(../assets/images/backgrounds/mobile-guided-tour-add-component-bkg-2_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
     }
   }
   .screen-shot-container {
