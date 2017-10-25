@@ -812,13 +812,13 @@
       padding: 0 10px;
       height: 603px;
       background-repeat: no-repeat;
-      //@include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 608px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 608px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 897px;
       background-repeat: no-repeat;
-      //background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_x2.png);
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_2x.png);
     }
     h1 {
       color: #00a1e0;
@@ -835,6 +835,7 @@
       }
     }
   }
+
 
   .mobile-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
