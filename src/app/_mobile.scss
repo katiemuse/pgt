@@ -672,8 +672,8 @@
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 526px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 526px, "png");
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 602px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -683,30 +683,55 @@
     h1 {
       color: #00a1e0;
     }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 12px 0;
+      }
+    }
   }
 
   .mobile-app-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 526px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 526px, "png");
+      height: 603px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 608px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1843px;
+      height: 1830px;
+      background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2_2x.png);
     }
     h1 {
       color: #00a1e0;
+      padding: 8px 0;
     }
 
-    li {
+    ul {
       font-size: 36px;
       @media(max-width: $screen-xs-max) {
         color: #444444;
-        font-size: 19px;
-        line-height: 24px;
+        font-size: 14px;
+        line-height: 14px;
         margin: 0;
+        padding: 10px 36px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 22px 66px;
+      }
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
       }
     }
   }
@@ -714,8 +739,8 @@
   .mobile-app-bkg-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 602px, "png");
+      height: 598px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 598px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
