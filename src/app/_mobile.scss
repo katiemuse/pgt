@@ -684,6 +684,27 @@
       color: #00a1e0;
     }
   }
+
+  .mobile-app-bkg-2 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 526px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 526px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1843px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+
+    li {
+      font-size: 36px;
+
+    }
+  }
   .hotspots {
     @media(max-width: $screen-xs-max) {
       padding-bottom: 30px;
