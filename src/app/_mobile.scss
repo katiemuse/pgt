@@ -717,6 +717,7 @@
     }
   }
 
+
   .mobile-app-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
@@ -764,7 +765,7 @@
       padding: 0 10px;
       height: 619px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 608px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 633px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -793,7 +794,7 @@
       padding: 0 10px;
       height: 596px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 596px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 608px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -905,10 +906,10 @@
 
   .hotspots {
     @media(max-width: $screen-xs-max) {
-      padding-bottom: 30px;
+      padding-bottom: 44px;
     }
     @media(min-width: $screen-sm-min) {
-      padding-bottom: 60px;
+      padding-bottom: 100px;
     }
   }
   .dyk {
@@ -1148,8 +1149,8 @@
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 579px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 599px, "png");
+      height: 616px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 636px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1290,7 +1291,7 @@
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
-      height: 942px;
+      height: 1013px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-6_2x.png);
     }
     p {

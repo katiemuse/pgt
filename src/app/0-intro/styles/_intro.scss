@@ -464,32 +464,57 @@
     }
   }
   .btn-white {
-    background-color: rgb(255, 255, 255);
-    border-radius: 51px;
-    width: 325px;
-    height: 100px;
-    padding: 0 5%;
-    color: rgb(0, 119, 187);
-    font-family: $salesforcesans;
-    font-size: 22px;
-    display: inline-block;
-    float: right;
-    margin: 0;
+    @media (max-width: $screen-xs-max) {
+      margin-top: 18%;
+      width: 211px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 16px;
+      display: inline-block;
+      float: right;
+    }
+    @media (min-width: $screen-sm-min) {
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      width: 325px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 22px;
+      display: inline-block;
+      float: right;
+      margin: 0;
+    }
   }
 
   .btn-white-bottom {
-    background-color: rgb(255, 255, 255);
-    border-radius: 51px;
-    width: 325px;
-    height: 100px;
-    padding: 0 5%;
-    color: rgb(0, 119, 187);
-    font-family: $salesforcesans;
-    font-size: 22px;
-    display: inline-block;
-    float: right;
-    margin: 0;
-
+    @media (min-width: $screen-sm-min) {
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      width: 325px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 22px;
+      display: inline-block;
+      float: right;
+      margin: 0;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin-top: 18%;
+      width: 211px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 16px;
+      display: inline-block;
+      float: right;
+    }
   }
 
 
@@ -498,11 +523,13 @@
       float: none;
       padding-top: 28px;
       margin-top: 71px;
+      text-decoration: none;
     }
     .btn-white-bottom {
       float: none;
       padding-top: 28px;
       margin-top: 132%;
+      text-decoration: none;
       @media (max-width: $screen-xs-max) {
         margin-top: 133%;
       }

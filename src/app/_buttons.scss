@@ -123,6 +123,7 @@ button, a {
   display: inline-block;
   float: right;
   margin: 0;
+  text-decoration: none;
   &:hover, &:focus {
     color: white;
   }
@@ -188,10 +189,12 @@ button, a {
     @media(max-width: $screen-xs-max) {
       margin-top: 154%;
       background-color: #0077bb;
+      text-decoration: none;
     }
     @media(min-width: $screen-sm-min) {
       margin-top: 124%;
       background-color: #0077bb;
+      text-decoration: none;
     }
   }
 }
