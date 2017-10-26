@@ -965,12 +965,12 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
-      //@include retina-image("../assets/images/backgrounds/mobile-guided-tour-add-component-hero", 375px 602px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-hero", 375px 602px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1486px;
-      //background-image: url(../assets/images/backgrounds/mobile-guided-tour-add-component-hero_2x.png);
+      height: 1373px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-customize-hero_2x.png);
     }
     h1 {
       color: #00a1e0;
@@ -987,18 +987,18 @@
     }
   }
 
-  .add-component-bkg-2 {
+  .customize-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 608px;
       background-repeat: no-repeat;
-      //@include retina-image("../assets/images/backgrounds/mobile-guided-tour-add-component-bkg-2", 375px 608px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2", 375px 622px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1575px;
+      height: 1366px;
       background-repeat: no-repeat;
-      //background-image: url(../assets/images/backgrounds/mobile-guided-tour-add-component-bkg-2_2x.png);
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2_2x.png);
     }
     h1 {
       color: #00a1e0;
@@ -1015,6 +1015,54 @@
       }
     }
   }
+
+  .customize-bkg-3 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 603px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-3", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1170px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-customize-bkg-3_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .btn-orange {
+    @media(max-width: $screen-xs-max) {
+      margin-top: 13%;
+    }
+    @media(min-width: $screen-sm-min) {
+      margin-top: 13%;
+    }
+  }
+
+  .hotspots {
+    @media(min-width: $screen-sm-min) {
+      padding-bottom: 105px;
+    }
+    @media(max-width: $screen-xs-max) {
+      padding-bottom: 105px;
+    }
+  }
+
   .screen-shot-container {
     .screen-shot {
       &.content-editing {
