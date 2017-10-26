@@ -1103,57 +1103,58 @@
   Customize Mobile
 ************************/
 
-.customize-mobile {
-  .hero {
-    @media(max-width: $screen-xs-max) {
-      padding: 0;
-      height: 564px;
-      @include retina-image("../assets/images/backgrounds/mobile-prospect-profile-hero", 375px 564px, "jpg");
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0;
-      height: 1128px;
-      background-image: url(../assets/images/backgrounds/mobile-prospect-profile-hero_2x.jpg);
-    }
-    h1 {
-      margin-bottom: 0;
-    }
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-      }
-    }
-  }
-  .hotspots {
-    .screen-shot {
-      &.data-table {
-        @media(max-width: $screen-xs-max) {
-          @include retina-image("../assets/images/backgrounds/mobile-prospect-profile-table", 375px 96px);
-          height: 96px;
-        }
-        @media(min-width: $screen-sm-min) {
-          background-image: url(../assets/images/backgrounds/mobile-prospect-profile-table_2x.png);
-          height: 192px;
-        }
-      }
-    }
-  }
-}
+//.customize-mobile {
+//  .hero {
+//    @media(max-width: $screen-xs-max) {
+//      padding: 0;
+//      height: 564px;
+//      @include retina-image("../assets/images/backgrounds/mobile-prospect-profile-hero", 375px 564px, "jpg");
+//    }
+//    @media(min-width: $screen-sm-min) {
+//      padding: 0;
+//      height: 1128px;
+//      background-image: url(../assets/images/backgrounds/mobile-prospect-profile-hero_2x.jpg);
+//    }
+//    h1 {
+//      color: #00a1e0;
+//      padding: 8px 0;
+//    }
+//    p {
+//      @media(max-width: $screen-xs-max) {
+//        font-size: 18.5px;
+//      }
+//      @media(min-width: $screen-sm-min) {
+//        font-size: 37px;
+//      }
+//    }
+//  }
+//  .hotspots {
+//    .screen-shot {
+//      &.data-table {
+//        @media(max-width: $screen-xs-max) {
+//          @include retina-image("../assets/images/backgrounds/mobile-prospect-profile-table", 375px 96px);
+//          height: 96px;
+//        }
+//        @media(min-width: $screen-sm-min) {
+//          background-image: url(../assets/images/backgrounds/mobile-prospect-profile-table_2x.png);
+//          height: 192px;
+//        }
+//      }
+//    }
+//  }
+//}
 
 .outro {
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
       height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-pardot-reporting-hero", 375px 540px, "jpg");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 540px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
-      height: 1080px;
-      background-image: url(../assets/images/backgrounds/mobile-pardot-reporting-hero_2x.jpg);
+      height: 1380px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-hero_2x.png);
     }
     p {
       @media(max-width: $screen-xs-max) {
@@ -1163,7 +1164,95 @@
         font-size: 37px;
       }
     }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
   }
+
+  .your-app-bkg-2 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 9px;
+      height: 540px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-2", 375px 540px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 18px;
+      height: 942px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-2_2x.png);
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18.5px;
+        color: $text-color-white;
+        padding-top: 70px;
+      }
+      @media(min-width: $screen-sm-min) {
+        font-size: 37px;
+        color: $text-color-white;
+        padding-top: 70px;
+      }
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+  }
+
+  .your-app-bkg-3 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 9px;
+      height: 540px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-3", 375px 540px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 18px;
+      height: 942px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-3_2x.png);
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18.5px;
+        padding-top: 56px;
+      }
+      @media(min-width: $screen-sm-min) {
+        font-size: 37px;
+        padding-top: 70px;
+      }
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+  }
+
+  .your-app-bkg-4 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 9px;
+      height: 540px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-4", 375px 540px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 18px;
+      height: 942px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-4_2x.png);
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18.5px;
+        padding-top: 56px;
+      }
+      @media(min-width: $screen-sm-min) {
+        font-size: 37px;
+        padding-top: 70px;
+      }
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+  }
+
   .screen-shot-container {
     .screen-shot {
       &.overview {
