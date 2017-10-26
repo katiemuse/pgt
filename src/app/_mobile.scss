@@ -762,7 +762,7 @@
   .mobile-app-bkg-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 619px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 608px, "png");
     }
@@ -791,9 +791,9 @@
   .mobile-app-bkg-4 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 596px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 608px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 596px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -820,9 +820,9 @@
   .mobile-app-bkg-5 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 558px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 608px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -874,8 +874,8 @@
   .mobile-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 598px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 598px, "png");
+      height: 583px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 583px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -885,10 +885,21 @@
     h1 {
       color: #00a1e0;
     }
+  }
 
-    li {
-      font-size: 36px;
-
+  .mobile-app-bkg-7 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 558px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7", 375px 558px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 885px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
     }
   }
 
