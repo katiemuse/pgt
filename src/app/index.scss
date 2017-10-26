@@ -135,15 +135,14 @@ footer {
     li {
       float: left;
       color:$text-color-white;
-      padding:15px 0;
+      padding: 15px 0;
       font-family: $salesforcesans;
-      font-weight: bold;
       font-size: $footnotes-font-size;
       line-height: 1;
       @media(max-width: $screen-sm-max) {
         color: $color-text-header;
         font-family: $salesforcesans;
-        font-size: 16px;
+        font-size: 24px;
       }
       a {
         &:link, &:visited {
@@ -173,12 +172,12 @@ footer {
         }
         &:first-child {
           @media(max-width: $screen-sm-max) {
-            padding-top: 0;
+            padding-top: 10px;
           }
         }
         &:last-child {
           @media(max-width: $screen-sm-max) {
-            padding-bottom: 20px;
+            padding-bottom: 30px;
           }
         }
       }
@@ -197,7 +196,7 @@ footer {
           float: none;
           text-align: center;
           padding-top: 0;
-          padding-bottom: 14px;
+          padding-bottom: 24px;
         }
         a {
           border-right: 1px solid white;
@@ -211,8 +210,9 @@ footer {
           &:link, &:visited {
             color: $text-color-white;
             @media(max-width: $screen-sm-max) {
-              color: $color-salesforce-blue;
-              font-size: 16px;
+              color: #005290;
+              font-size: 28px;
+              text-decoration: none;
             }
           }
         }
