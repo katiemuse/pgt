@@ -250,15 +250,15 @@
   }
   .blue-container {
     @media (max-width: $screen-xs-max) {
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img.png);
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 627px, "png");
       background-size: cover;
       padding: 38px 11px;
-      background-size: 375px 627px;
+      //background-size: 375px 627px;
     }
-    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img.png);
+    @media (min-width: $screen-sm-min) {
       background-size: cover;
       padding: 76px 22px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
     }
     @media (min-width: $screen-md-min) {
       background-color: #ebecec;
@@ -271,7 +271,6 @@
       only screen and (min-resolution: 125dpi),
       only screen and (min-resolution: 1.3dppx) {
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
-      background-size: 375px 848px;
     }
     //h3 {
     //  color: $text-color-white;
