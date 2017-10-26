@@ -160,6 +160,16 @@
     p {
       color: $mobile-text-color-gray;
     }
+
+    .btn-orange {
+      @media(min-width: $screen-sm-min) {
+        margin-top: 10%;
+      }
+      @media(max-width: $screen-xs-max) {
+        margin-top: 10%;
+      }
+    }
+
     .did-you-know-icon {
       position: absolute;
       @media(max-width: $screen-xs-max) {
