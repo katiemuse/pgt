@@ -747,7 +747,7 @@
       padding-bottom: 5px;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         font-size: 20px;
-        line-height: 18px;
+        line-height: 20px;
       }
     }
     p {
@@ -756,7 +756,7 @@
         line-height: 16px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 18px;
+          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -798,7 +798,7 @@
         padding: 10px 36px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 18px;
+          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -811,7 +811,7 @@
         line-height: 16px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 18px;
+          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -841,7 +841,7 @@
       padding: 8px 0;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         font-size: 20px;
-        line-height: 18px;
+        line-height: 20px;
       }
     }
 
@@ -851,7 +851,7 @@
         line-height: 16px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 18px;
+          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -881,7 +881,7 @@
       padding: 8px 0;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         font-size: 20px;
-        line-height: 18px;
+        line-height: 20px;
       }
     }
 
@@ -891,7 +891,7 @@
         line-height: 16px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 18px;
+          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -906,6 +906,9 @@
       height: 558px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 914px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -916,12 +919,16 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
-    }
+      }
 
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 16px;
         line-height: 16px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 20px;
+        }
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
