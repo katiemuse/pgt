@@ -1248,6 +1248,9 @@
       padding: 0 9px;
       height: 616px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 636px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 690px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1273,6 +1276,10 @@
       padding: 0 9px;
       height: 540px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-2", 375px 540px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 470px;
+      }
+
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1302,6 +1309,9 @@
       padding: 0 9px;
       height: 540px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-3", 375px 540px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 470px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1329,6 +1339,9 @@
       padding: 0 9px;
       height: 540px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-4", 375px 540px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 505px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1356,6 +1369,9 @@
       padding: 0 9px;
       height: 540px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-5", 375px 540px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 470px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1385,6 +1401,9 @@
       padding: 0 9px;
       height: 540px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-6", 375px 540px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 470px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
@@ -1412,6 +1431,9 @@
       padding: 0 9px;
       height: 540px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-7", 375px 540px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 470px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 18px;
