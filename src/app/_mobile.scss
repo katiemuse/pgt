@@ -659,6 +659,11 @@
        line-height: 16px;
      }
    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 760px;
+      }
+    }
  }
   .campaign-container-5 {
     @media(max-width: $screen-xs-max) {
