@@ -103,6 +103,9 @@
         @include retina-image("../assets/images/icons/mobile-guided-tour-hotspot", 14px 22px);
         background-repeat: no-repeat;
         padding-left: 19px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+            padding-left: 42px;
+          }
       }
       @media(min-width: $screen-sm-min) {
         background-image: url(../assets/images/icons/mobile-guided-tour-hotspot_2x.png);
@@ -110,6 +113,7 @@
         padding-left: 66px;
         height: 86px;
       }
+
     }
     p {
       color: $mobile-text-color-gray;
