@@ -741,14 +741,13 @@
       padding: 0 20px;
       height: 1428px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero_2x.png);
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 1404px;
+      }
     }
     h1 {
       color: #00a1e0;
       padding-bottom: 5px;
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        font-size: 20px;
-        line-height: 20px;
-      }
     }
     p {
       @media(max-width: $screen-xs-max) {
