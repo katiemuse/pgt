@@ -672,19 +672,36 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
+      background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-6", 375px 620px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 1052px;
+      background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-6_2x.png);
     }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 525px;
+      }
+    }
+
     h1 {
       color: #00a1e0;
     }
     p {
       color: #444444;
     }
+  }
+  .btn-orange {
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        margin-top: 134%;
+      }
+    }
+
   }
 }
 
