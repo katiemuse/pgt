@@ -592,11 +592,13 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
+      background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2", 375px 623px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 897px;
+      background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2_2x.png);
     }
     h1 {
@@ -605,16 +607,23 @@
     p {
       color: #444444;
     }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 448px;
+      }
+    }
   }
   .campaign-container-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
+      background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-3", 375px 623px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 928px;
+      background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-3_2x.png);
     }
     h1 {
@@ -622,6 +631,11 @@
     }
     p {
       color: #444444;
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 466px;
+      }
     }
   }
   .campaign-container-4 {
