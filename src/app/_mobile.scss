@@ -745,11 +745,19 @@
     h1 {
       color: #00a1e0;
       padding-bottom: 5px;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        font-size: 20px;
+        line-height: 18px;
+      }
     }
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 16px;
         line-height: 16px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 18px;
+        }
       }
       @media(min-width: $screen-sm-min) {
         padding: 12px 0;
@@ -818,6 +826,9 @@
       height: 619px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 633px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 722px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -828,12 +839,20 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        font-size: 20px;
+        line-height: 18px;
+      }
     }
 
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 16px;
         line-height: 16px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 18px;
+        }
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
@@ -847,6 +866,9 @@
       height: 596px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 608px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 760px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -857,12 +879,20 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        font-size: 20px;
+        line-height: 18px;
+      }
     }
 
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 16px;
         line-height: 16px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 18px;
+        }
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
@@ -929,6 +959,9 @@
       padding: 0 10px;
       height: 583px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 583px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 534px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -944,11 +977,16 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 558px;
+      background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7", 375px 558px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 443px;
+      }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 885px;
+      background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7_2x.png);
     }
     h1 {
