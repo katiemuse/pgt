@@ -578,20 +578,7 @@
       }
     }
   }
-  //.hotspots {
-  //  .screen-shot {
-  //    &.tag {
-  //      @media(max-width: $screen-xs-max) {
-  //        @include retina-image("../assets/images/backgrounds/mobile-organizing-tags-background", 375px 47px);
-  //        height: 47px;
-  //      }
-  //      @media(min-width: $screen-sm-min) {
-  //        background-image: url(../assets/images/backgrounds/mobile-organizing-tags-background_2x.png);
-  //        height: 94px;
-  //      }
-  //    }
-  //  }
-  //}
+
   .campaign-container-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
