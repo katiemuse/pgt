@@ -757,7 +757,7 @@
       padding: 0 10px;
       height: 603px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 608px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 636px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 874px;
         padding: 15px 10px;
