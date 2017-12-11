@@ -1,0 +1,69 @@
+@import '../base';
+
+.customize-a-page-layout {
+
+  .step-0, .step-1 {
+    background: url('../assets/images/chapters/customize-a-page-layout/screen-bkg-1.png') center center no-repeat;
+  }
+
+  .step-2 {
+    background: url('../assets/images/chapters/customize-a-page-layout/screen-bkg-2.png') center center no-repeat;
+  }
+
+  .step-3 {
+    background: url('../assets/images/chapters/customize-a-page-layout/screen-bkg-3.png') center center no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
+      top: 48px;
+      left: 218px;
+      width: 148px;
+      height: 27px;
+    }
+    .step1-dropdown {
+      position: absolute;
+      top: 80px;
+      left: 216px;
+    }
+    .click-box-1 {
+      top: 164px;
+      left: 218px;
+      width: 150px;
+      height: 26px;
+    }
+  }
+
+  .step-2 {
+    .click-box {
+      top: 49px;
+      right: 136px;
+      width: 49px;
+      height: 26px;
+      border-radius: 5px;
+    }
+  }
+
+  .step-3 {
+    .click-box {
+      bottom: 113px;
+      right: 207px;
+      width: 64px;
+      height: 28px;
+      border-radius: 5px;
+    }
+   }
+
+}
+
+.customize-a-page-layout-drawer {
+
+  .btn.next {
+    padding: 10px 80px;
+  }
+
+  p.continue {
+    text-align: center;
+    margin-top: 40px;
+  }
+}

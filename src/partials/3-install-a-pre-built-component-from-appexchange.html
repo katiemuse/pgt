@@ -1,0 +1,76 @@
+<div class="row monitor-height build-an-email">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="search.input" class="text search active" maxlength="80"
+                      li-autofocus="wizard.stateIndex == 2">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="search.input" class="text search" maxlength="80" disabled>
+                  </div>
+                </div>
+              </form>
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5" ng-class="{dropped: customerIdeas.dropped}">
+                <img src="../assets/images/chapters/install-a-pre-built-component-from-appexchange/customer-ideas-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}"
+                data-jqyoui-options="{revert: 'invalid'}" alt="report chart drag" class="report-chart-drag" ng-class="{active:!reportchart.active}">
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'dropCustomerIdeas'}"></div>
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="../assets/images/success.png" />
+                </p>
+                <h2>Success!</h2>
+                <p>
+                  You have installed a component from AppExchange to collect and display customer ideas.
+                </p>
+                <p>
+                    But it seems like your app is missing something. Nothing a little custom code can’t fix. Don’t worry, it’s not as complex as it sounds.                    
+                </p>
+                <p>
+                  <a ui-sref="add-custom-components" li-autofocus="wizard.stateIndex == 3" class="btn btn-rounded active">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>
