@@ -1,0 +1,212 @@
+<div class="row monitor-height add-criteria">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <div class="click-box active" ng-click="Next()"></div>
+              <div class="inner-drawer" ng-class="{open:editor.open}">
+                <img src="../../assets/images/chapters/add-criteria/slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input autocomplete="off" type="text" name="name" id="name" ng-model="criteria.name" class="text" maxlength="80" disabled>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" value="1">
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" value="1">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" value="1">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" ng-options="opt as opt.label for opt in criteriaOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary btn-interface" type="submit" value="Save" disabled/>
+                </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <div class="inner-drawer open">
+                <img src="../../assets/images/chapters/add-criteria/slideout-1.png" alt="">
+                <div class="highlight" ng-class="{active:step1complete}"></div>
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input autocomplete="off" type="text" name="name" id="name" ng-model="criteria.name" class="text active" ng-class="{active:!step1complete}" maxlength="80" li-autofocus="wizard.stateIndex == 2">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" ng-model="criteria.radio" value="1">
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" ng-model="criteria.radio" value="2">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" ng-model="criteria.radio" value="3">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" ng-options="opt as opt.label for opt in criteriaOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary btn-interface" type="submit" value="Save" disabled/>
+                </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <div class="inner-drawer open">
+                <img src="../../assets/images/chapters/add-criteria/slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group required">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input autocomplete="off" type="text" name="name" id="name" ng-model="criteria.name" class="text" maxlength="80" disabled>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" value="1" checked>
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" value="1">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" value="1">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" li-autofocus="wizard.stateIndex == 3" ng-options="opt as opt.label for opt in criteriaOptions" class="active"></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary btn-interface" type="submit" value="Save" disabled/>
+                </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="inner-drawer open">
+                <img src="../../assets/images/chapters/add-criteria/slideout-1.png" alt="">
+                <form class="form form-horizontal">
+                  <div class="control-group">
+                    <label for="name" class="control-label">Criteria Name </label>
+                    <div class="controls">
+                      <input autocomplete="off" type="text" name="name" id="name" ng-model="criteria.name" class="text" maxlength="80">
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <div class="radio">
+                        <label for="radio-1">
+                          <input type="radio" name="criteria-radios" id="radio-1" value="1" checked>
+                          Conditions are met
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-2">
+                          <input type="radio" name="criteria-radios" id="radio-2" value="1">
+                          Formula evaluates to true
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label for="radio-3">
+                          <input type="radio" name="criteria-radios" id="radio-3" value="1">
+                          No criteria-just execute the actions!
+                        </label>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="control-group">
+                    <div class="controls">
+                      <select name="criteria-starts" id="criteria-starts" ng-model="criteria.starts" li-autofocus="wizard.stateIndex == 3" ng-options="opt as opt.label for opt in criteriaOptions" disabled></select>
+                    </div>
+                  </div>
+                </form>
+                <div class="form-actions">
+                  <input class="btn btn-primary btn-interface active" type="submit" value="Save" value="Save" ng-click="Next()" li-autofocus="wizard.stateIndex == 4" />
+                </div>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="../../assets/images/badge.png"/>
+                </p>
+                <h2>Success!</h2>
+                <p>
+                  You just set criteria for your process. Now let’s decide on the type of notification and complete our process.
+                </p>
+                <p>
+                  <a ui-sref="add-actions" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

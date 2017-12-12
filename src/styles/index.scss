@@ -1,12 +1,12 @@
-@import 'fonts';
-@import 'base';
-@import 'animated-icons';
-@import 'buttons';
-@import 'forms';
-@import 'sprites';
-@import 'click-box';
-@import 'drop-box';
-@import 'flyout';
+@import '_fonts';
+@import '_base';
+@import '_animated-icons';
+@import '_buttons';
+@import '_forms';
+@import '_sprites';
+@import '_click-box';
+@import '_drop-box';
+@import '_flyout';
 
 * {
   user-select: none;
@@ -117,19 +117,15 @@ footer {
   background-color:rgba($color-background-black, 0.8);
   position:fixed;
   bottom:0px;
-  width: 750px;
-  margin: 0 auto;
+  width: 100%;
   z-index: $z-index-footer;
   @media(max-width: $screen-sm-max) {
     padding: 28px 0 20px;
     background-color: #c2c2c2;
     position: static;
+    max-width: 750px;
+    margin: 0 auto;
   }
-
-  @media(max-width: $screen-xs-max) {
-    width: 375px;
-  }
-
   ul {
     margin: 0;
     padding: 0;

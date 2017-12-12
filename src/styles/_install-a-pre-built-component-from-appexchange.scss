@@ -1,0 +1,121 @@
+@import '_base';
+
+.build-an-email {
+
+  .step-0, .step-1 {
+    background: url('../assets/images/chapters/install-a-pre-built-component-from-appexchange/bkg-1.png') center center no-repeat;
+  }
+
+  .step-2 {
+    background: url('../assets/images/chapters/install-a-pre-built-component-from-appexchange/bkg-2.png') left center no-repeat;
+  }
+
+  .step-3 {
+    background: url('../assets/images/chapters/install-a-pre-built-component-from-appexchange/bkg-3.png') center center no-repeat;
+  }
+
+  .step-4 {
+    background: url('../assets/images/chapters/install-a-pre-built-component-from-appexchange/bkg-4.png') center center no-repeat;
+  }
+
+  .step-5 {
+    background: url('../assets/images/chapters/install-a-pre-built-component-from-appexchange/bkg-5.png') center center no-repeat;
+
+    &.dropped {
+      background: url('../assets/images/chapters/install-a-pre-built-component-from-appexchange/bkg-5-dropped.png') center center no-repeat;
+
+      > div, img {
+        display: none;
+      }
+    }
+  }
+
+  .step-1 {
+    .click-box {
+      top: 451px;
+      left: 10px;
+      width: 188px;
+      height: 30px;
+    }
+  }
+
+  .step-2, .step-3 {
+    .form {
+      &.form-horizontal {
+        position: absolute;
+        top: 58px;
+        left: 246px;
+        .controls {
+          input {
+            &.text {
+              width: 292px;
+              border-radius: 4px;
+              background-image: url("../assets/images/chapters/add-an-external-object/magnifying-glass.svg");
+              background-size: 12px;
+              background-position: 5% 50%;
+              background-repeat: no-repeat;
+              padding-left: 45px;
+              font-size: 12px;
+              height: 32px;
+              &::placeholder {
+                color: black;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .step-3 {
+    .click-box {
+      top: 211px;
+      left: 95px;
+      width: 134px;
+      height: 75px;
+    }
+  }
+
+  .step-4 {
+    .click-box {
+      bottom: 34px;
+      right: 84px;
+      width: 109px;
+      height: 31px;
+    }
+  }
+
+  .step-5 {
+    .report-chart-drag {
+      position: absolute !important;
+      bottom: 69px;
+      left: 17px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+    }
+    .drop-box {
+      top: 311px;
+      left: 262px;
+      width: 237px;
+      height: 115px;
+    }
+  }
+
+}
+
+.build-an-email-drawer {
+
+  .btn.next {
+    padding: 10px 80px;
+  }
+
+  p.continue {
+    text-align: center;
+    margin-top: 40px;
+  }
+}

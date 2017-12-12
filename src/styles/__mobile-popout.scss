@@ -1,0 +1,49 @@
+@import '_base';
+ 
+.mobile-popout {
+  .blocker {
+    left: 0px;
+    top:0px;
+    position: fixed;
+    background-color: rgba(0,0,0,0.7);
+    width: 100vw;
+    height: 100vh;
+    z-index: $z-index-mobile-popout-blocker;
+  }
+
+  .phone {
+    position: absolute;
+    background-image:url('../assets/images/iphone-vertical.png');
+    width: 263px;
+    height: 547px;
+    left:0;
+    top:0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+
+
+    .phone-view {
+      position: relative;
+      top: 63px;
+      left: 14px;
+      width: 235px;
+      height: 418px;
+      z-index: $z-index-mobile-popout-blocker + 1;
+      background-color: rgba(0,255,0,0.5);
+    }
+  }
+
+  .back-to-laptop {
+    position: absolute;
+    background-image:url('../assets/images/back-to-laptop.png');
+    width: 77px;
+    height: 95px;
+    left: 0px;
+    top: -439px;
+    bottom: 0;
+    right: -373px;
+    margin: auto;
+    cursor:pointer;
+  }
+}

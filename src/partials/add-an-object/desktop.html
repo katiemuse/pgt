@@ -1,0 +1,59 @@
+<div class="row monitor-height add-an-object">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <div class="click-box active" ng-click="Next()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <div class="click-box" ng-class="{active:!button.show}" ng-click="ToggleButton()"></div>
+              <img src="../../assets/images/chapters/add-an-object/button.png" alt="custom object" class="custom-object" ng-class="{active:button.show}" ng-click="Next()">
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3" ng-class="{active:!label.active}">
+              <form class="form form-horizontal">
+                <div class="control-group">
+                  <label for="name" class="control-label">Label </label>
+                  <div class="controls">
+                    <input autocomplete="off" type="text" name="name" id="name" ng-model="customobj.name" class="text" maxlength="80" ng-class="{active:label.active}" li-autofocus="wizard.stateIndex == 3">
+                  </div>
+                </div>
+              </form>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="click-box active" wz-next></div>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="../../assets/images/success.png"/>
+                </p>
+                <h2>Success!</h2>
+                <p>
+                  You just created your first object! Now let’s integrate some useful customer data into your object.
+                </p>
+                <p>
+                  <a ui-sref="heroku-connect" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>

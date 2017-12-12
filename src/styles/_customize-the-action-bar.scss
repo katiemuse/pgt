@@ -1,0 +1,143 @@
+@import '_base';
+
+.customize-the-action-bar {
+
+  .step-0, .step-1 {
+    background: url('../assets/images/chapters/customize-the-action-bar/screen-bkg-1.png') center center no-repeat;
+  }
+
+  .step-1 {
+    .click-box {
+      bottom: 17px;
+      right: 151px;
+      width: 68px;
+      height: 26px;
+    }
+  }
+
+  .step-2 {
+    background: url('../assets/images/chapters/customize-the-action-bar/screen-bkg-2.png') center center no-repeat;
+
+    .new-customer-feedback-drag {
+      position: absolute;
+      top: 193px;
+      left: 215px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+      &.done {
+        left: 423px !important;
+        top: 192px !important;
+      }
+    }
+    .new-note-drag {
+      position: absolute;
+      top: 303px;
+      left: 215px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+      &.done {
+        left: 423px !important;
+        top: 230px !important;
+      }
+    }
+    .drop-box {
+       top: 193px;
+      left: 422px;
+      width: 143px;
+      height: 194px;
+     }
+
+  }
+
+  .step-3 {
+    background: url('../assets/images/chapters/customize-the-action-bar/screen-bkg-3.png') center center no-repeat;
+
+    .new-customer-feedback-drag {
+      position: absolute; 
+      left: 423px !important;
+      top: 192px !important;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+    }
+    .new-note-drag {
+      position: absolute;
+      top: 303px;
+      left: 215px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+      &.done {
+        left: 423px !important;
+        top: 230px !important;
+      }
+    }
+    .drop-box {
+      top: 193px;
+      left: 422px;
+      width: 143px;
+      height: 194px;
+    }
+  }
+  .step-4 {
+    background: url('../assets/images/chapters/customize-the-action-bar/screen-bkg-4.png') center center no-repeat;
+    .new-customer-feedback-drag {
+      position: absolute;
+      left: 423px !important;
+      top: 192px !important;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+    }
+    .new-note-drag {
+      position: absolute;
+      left: 423px !important;
+      top: 230px !important;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+    }
+    .click-box {
+      bottom: 49px;
+      left: 552px;
+      width: 35px;
+      height: 21px;
+    }
+  }
+
+  .step {
+    &.success {
+      p {
+        padding: 0 21%;
+      }
+    }
+  }
+
+
+}
+
+.customize-the-action-bar-drawer {
+
+  p.continue {
+    text-align: center;
+
+    a.btn-continue {
+      margin:30px auto;
+    }
+  }
+
+}
