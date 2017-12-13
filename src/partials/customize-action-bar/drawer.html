@@ -1,0 +1,28 @@
+<div class="drawer-content customize-action-bar-drawer">
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <h2>Customize the Action Bar</h2>
+    <p>Once we enter the Lightning App Builder, we can add actions straight from the drag and drop screen - the push notification we just created is already there.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Next</a>
+    </p>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+        <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+          <span class="first"></span>
+          <span class="second"></span>
+        </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Actions Area</h2>
+        <p>
+          When you build on Heroku and Salesforce platform, you open up internal communication AND communication with your customers. Use custom actions to make interactions seamless.
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+</div>

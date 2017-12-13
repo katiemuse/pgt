@@ -458,7 +458,7 @@
   /************************
     Intro Page
   ************************/
-  .intro-page {
+  .welcome-page {
     .hero {
       text-align: center;
       @media(max-width: $screen-xs-max) {
@@ -1228,7 +1228,7 @@
 //  }
 //}
 
-.outro {
+.app-in-action {
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;

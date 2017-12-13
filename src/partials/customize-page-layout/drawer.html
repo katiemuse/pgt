@@ -1,0 +1,29 @@
+<div class="drawer-content customize-page-layout-drawer" ng-controller="CustomizePageLayoutDrawerController">
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+      <h2>Pick your Desired App Layout</h2>
+      <p>You can change the screen size to visualize how it will look on different devices. Give it a try!</p>
+      <p class="continue">
+        <a class="btn btn-continue" ng-click="beginStory()">Next</a>
+      </p>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+        <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+          <span class="first"></span>
+          <span class="second"></span>
+        </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>Copy and Paste Toolbar</h2>
+        <p>Use the buttons in the toolbar to cut (Cut), copy (Copy), and paste (Paste) page content; and to undo (Undo), redo (Redo), save, or activate your Lightning page. You can also view your page in different formats, refresh the canvas, or adjust the canvas size to fit your view.</p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Display Dropdown</h2>
+        <p>When you build apps in Lightning App Builder, they're ready to be deployed across all of your devices. You can use this dropdown to check how it will look on various screen sizes.</p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+</div>

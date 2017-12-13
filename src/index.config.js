@@ -14,23 +14,23 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
   };
 
   $stateProvider
-    .state('intro', {
+    .state('welcome', {
       url: '/',
       views: {
         monitor: {
-          template: require('./partials/intro/desktop.html'),
-          controller: 'IntroController'
+          template: require('./partials/welcome/desktop.html'),
+          controller: 'WelcomeController'
         },
         drawer: {
-          controller: 'IntroDrawerController',
+          controller: 'WelcomeDrawerController',
           template: '<div></div>'
         },
         mobile: {
-          template: require('./partials/intro/mobile.html')
+          template: require('./partials/welcome/mobile.html')
         },
         'getting-started': {
-          template: require('./partials/intro/getting-started.html'),
-          controller: 'IntroController'
+          template: require('./partials/welcome/getting-started.html'),
+          controller: 'WelcomeController'
         }
       },
       onEnter(TopNavbar, Drawer, Hotspots) {
@@ -38,38 +38,38 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('add-an-object', {
-      url: '/add-an-object',
+    .state('custom-objects', {
+      url: '/custom-objects',
       views: {
         monitor: {
-          template: require('./partials/add-an-object/desktop.html'),
-          controller: 'AddAnObjectController'
+          template: require('./partials/custom-objects/desktop.html'),
+          controller: 'CustomObjectsController'
         },
         drawer: {
-          template: require('./partials/add-an-object/drawer.html'),
-          controller: 'AddAnObjectDrawerController'
+          template: require('./partials/custom-objects/drawer.html'),
+          controller: 'CustomObjectsDrawerController'
         },
         mobile: {
-          template: require('./partials/add-an-object/mobile.html')
+          template: require('./partials/custom-objects/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('add-an-external-object', {
-      url: '/add-an-external-object',
+    .state('salesforce-connect', {
+      url: '/salesforce-connect',
       views: {
         monitor: {
-          template: require('./partials/add-an-external-object/desktop.html'),
-          controller: 'AddAnExternalObjectController'
+          template: require('./partials/salesforce-connect/desktop.html'),
+          controller: 'SalesforceConnectController'
         },
         drawer: {
-          template: require('./partials/add-an-external-object/drawer.html'),
-          controller: 'AddAnExternalObjectDrawerController'
+          template: require('./partials/salesforce-connect/drawer.html'),
+          controller: 'SalesforceConnectDrawerController'
         },
         mobile: {
-          template: require('./partials/add-an-object/mobile.html')
+          template: require('./partials/custom-objects/mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -79,19 +79,19 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('einstein-builder', {
-      url: '/einstein-builder',
+    .state('einstein-prediction-builder', {
+      url: '/einstein-prediction-builder',
       views: {
         monitor: {
-          template: require('./partials/einstein-builder/desktop.html'),
-          controller: 'EinsteinBuilderController'
+          template: require('./partials/einstein-prediction-builder/desktop.html'),
+          controller: 'EinsteinPredictionBuilderController'
         },
         drawer: {
-          template: require('./partials/einstein-builder/drawer.html'),
-          controller: 'EinsteinBuilderDrawerController'
+          template: require('./partials/einstein-prediction-builder/drawer.html'),
+          controller: 'EinsteinPredictionBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/add-an-object/mobile.html')
+          template: require('./partials/custom-objects/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -110,7 +110,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'HerokuConnectDrawerController'
         },
         mobile: {
-          template: require('./partials/add-an-object/mobile.html')
+          template: require('./partials/custom-objects/mobile.html')
         },
         phone: {
           template: require('./partials/heroku-connect/phone.html')
@@ -142,57 +142,57 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
     //     TopNavbar.HotspotsEnabled = false;
     //   }
     // })
-    .state('setup-a-workflow', {
-      url: '/setup-a-workflow',
+    .state('process-builder', {
+      url: '/process-builder',
       views: {
         monitor: {
-          template: require('./partials/setup-a-workflow/desktop.html'),
-          controller: 'SetupAWorkflowController'
+          template: require('./partials/process-builder/desktop.html'),
+          controller: 'ProcessBuilderController'
         },
         drawer: {
-          template: require('./partials/setup-a-workflow/drawer.html'),
-          controller: 'SetupAWorkflowDrawerController'
+          template: require('./partials/process-builder/drawer.html'),
+          controller: 'ProcessBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/setup-a-workflow/mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('choose-an-object-for-the-process', {
-      url: '/choose-an-object-for-the-process',
+    .state('choose-process-object', {
+      url: '/choose-process-object',
       views: {
         monitor: {
-          template: require('./partials/choose-an-object-for-the-process/desktop.html'),
-          controller: 'ChooseAnObjectForTheProcessController'
+          template: require('./partials/choose-process-object/desktop.html'),
+          controller: 'ChooseProcessObjectController'
         },
         drawer: {
-          template: require('./partials/choose-an-object-for-the-process/drawer.html'),
-          controller: 'ChooseAnObjectForTheProcessDrawerController'
+          template: require('./partials/choose-process-object/drawer.html'),
+          controller: 'ChooseProcessObjectDrawerController'
         },
         mobile: {
-          template: require('./partials/setup-a-workflow/mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('add-criteria', {
-      url: '/add-criteria',
+    .state('add-process-criteria', {
+      url: '/add-process-criteria',
       views: {
         monitor: {
-          template: require('./partials/add-criteria/desktop.html'),
+          template: require('./partials/add-process-criteria/desktop.html'),
           controller: 'AddCriteriaController'
         },
         drawer: {
-          template: require('./partials/add-criteria/drawer.html'),
+          template: require('./partials/add-process-criteria/drawer.html'),
           controller: 'AddCriteriaDrawerController'
         },
         mobile: {
-          template: require('./partials/setup-a-workflow/mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -202,104 +202,104 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('add-actions', {
-      url: '/add-actions',
+    .state('create-process-action', {
+      url: '/create-process-action',
       views: {
         monitor: {
-          template: require('./partials/add-actions/desktop.html'),
-          controller: 'AddActionsController'
+          template: require('./partials/create-process-action/desktop.html'),
+          controller: 'CreateProcessActionController'
         },
         drawer: {
-          template: require('./partials/add-actions/drawer.html'),
-          controller: 'AddActionsDrawerController'
+          template: require('./partials/create-process-action/drawer.html'),
+          controller: 'CreateProcessActionDrawerController'
         },
         mobile: {
-          template: require('./partials/setup-a-workflow/mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         },
         phone: {
-          template: require('./partials/add-actions/phone.html')
+          template: require('./partials/create-process-action/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('iot', {
-      url: '/iot',
+    .state('iot-explorer', {
+      url: '/iot-explorer',
       views: {
         monitor: {
-          template: require('./partials/iot/desktop.html'),
-          controller: 'IotController'
+          template: require('./partials/iot-explorer/desktop.html'),
+          controller: 'IotExplorerController'
         },
         drawer: {
-          template: require('./partials/iot/drawer.html'),
-          controller: 'IotDrawerController'
+          template: require('./partials/iot-explorer/drawer.html'),
+          controller: 'IotExplorerDrawerController'
         },
         mobile: {
-          template: require('./partials/setup-a-workflow/mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('create-a-new-lightning-page', {
-      url: '/create-a-new-lightning-page',
+    .state('new-lightning-page', {
+      url: '/new-lightning-page',
       views: {
         monitor: {
-          template: require('./partials/create-a-new-lightning-page/desktop.html'),
-          controller: 'CreateANewLightningPageController'
+          template: require('./partials/new-lightning-page/desktop.html'),
+          controller: 'NewLightningPageController'
         },
         drawer: {
-          template: require('./partials/create-a-new-lightning-page/drawer.html'),
-          controller: 'CreateANewLightningPageDrawerController'
+          template: require('./partials/new-lightning-page/drawer.html'),
+          controller: 'NewLightningPageDrawerController'
         },
         mobile: {
-          template: require('./partials/create-a-new-lightning-page/mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('install-a-pre-built-component-from-appexchange', {
-      url: '/install-a-pre-built-component-from-appexchange',
+    .state('add-appexchange-components', {
+      url: '/add-appexchange-components',
       views: {
         monitor: {
-          template: require('./partials/install-a-pre-built-component-from-appexchange/desktop.html'),
-          controller: 'InstallAPreBuiltComponentFromAppexchangeController'
+          template: require('./partials/add-appexchange-components/desktop.html'),
+          controller: 'AddAppexchangeComponentsController'
         },
         drawer: {
-          template: require('./partials/install-a-pre-built-component-from-appexchange/drawer.html'),
-          controller: 'InstallAPreBuiltComponentFromAppexchangeDrawerController'
+          template: require('./partials/add-appexchange-components/drawer.html'),
+          controller: 'AddAppexchangeComponentsDrawerController'
         },
         mobile: {
-          template: require('./partials/create-a-new-lightning-page/mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         },
         phone: {
-          template: require('./partials/install-a-pre-built-component-from-appexchange/phone.html')
+          template: require('./partials/add-appexchange-components/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('create-an-app-from-base-and-custom-lightning-components', {
-      url: '/create-an-app-from-base-and-custom-lightning-components',
+    .state('add-base-lightning-components', {
+      url: '/add-base-lightning-components',
       views: {
         monitor: {
-          template: require('./partials/create-an-app-from-base-and-custom-lightning-components/desktop.html'),
-          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsController'
+          template: require('./partials/add-base-lightning-components/desktop.html'),
+          controller: 'AddBaseLightningComponentsController'
         },
         drawer: {
-          template: require('./partials/create-an-app-from-base-and-custom-lightning-components/drawer.html'),
-          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsDrawerController'
+          template: require('./partials/add-base-lightning-components/drawer.html'),
+          controller: 'AddBaseLightningComponentsDrawerController'
         },
         mobile: {
-          template: require('./partials/create-a-new-lightning-page/mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         },
         phone: {
-          template: require('./partials/create-an-app-from-base-and-custom-lightning-components/phone.html')
+          template: require('./partials/add-base-lightning-components/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -321,133 +321,133 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/add-custom-components/phone.html')
         },
         mobile: {
-          template: require('./partials/create-a-new-lightning-page/mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('customize-a-page-layout', {
-      url: '/customize-a-page-layout',
+    .state('customize-page-layout', {
+      url: '/customize-page-layout',
       views: {
         monitor: {
-          template: require('./partials/customize-a-page-layout/desktop.html'),
-          controller: 'CustomizeAPageLayoutController'
+          template: require('./partials/customize-page-layout/desktop.html'),
+          controller: 'CustomizePageLayoutController'
         },
         drawer: {
-          template: require('./partials/customize-a-page-layout/drawer.html'),
-          controller: 'CustomizeAPageLayoutDrawerController'
+          template: require('./partials/customize-page-layout/drawer.html'),
+          controller: 'CustomizePageLayoutDrawerController'
         },
         phone: {
-          template: require('./partials/customize-a-page-layout/phone.html')
+          template: require('./partials/customize-page-layout/phone.html')
         },
         mobile: {
-          template: require('./partials/create-a-new-lightning-page/mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('customize-navigation', {
-      url: '/customize-navigation',
+    .state('deploy-your-app', {
+      url: '/deploy-your-app',
       views: {
         monitor: {
-          template: require('./partials/customize-navigation/desktop.html'),
-          controller: 'CustomizeNavigationController'
+          template: require('./partials/deploy-your-app/desktop.html'),
+          controller: 'DeployYourAppController'
         },
         drawer: {
-          template: require('./partials/customize-navigation/drawer.html'),
-          controller: 'CustomizeNavigationDrawerController'
+          template: require('./partials/deploy-your-app/drawer.html'),
+          controller: 'DeployYourAppDrawerController'
         },
         phone: {
-          template: require('./partials/customize-navigation/phone.html')
+          template: require('./partials/deploy-your-app/phone.html')
         },
         mobile: {
-          template: require('./partials/create-a-new-lightning-page/mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('create-a-custom-action', {
-      url: '/create-a-custom-action',
+    .state('create-custom-actions', {
+      url: '/create-custom-actions',
       views: {
         monitor: {
-          template: require('./partials/create-a-custom-action/desktop.html'),
-          controller: 'CreateACustomActionController'
+          template: require('./partials/create-custom-actions/desktop.html'),
+          controller: 'CreateCustomActionsController'
         },
         drawer: {
-          template: require('./partials/create-a-custom-action/drawer.html'),
-          controller: 'CreateACustomActionDrawerController'
+          template: require('./partials/create-custom-actions/drawer.html'),
+          controller: 'CreateCustomActionsDrawerController'
         },
         mobile: {
-          template: require('./partials/create-a-custom-action/mobile.html')
+          template: require('./partials/create-custom-actions/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('customize-the-action-bar', {
-      url: '/customize-the-action-bar',
+    .state('customize-action-bar', {
+      url: '/customize-action-bar',
       views: {
         monitor: {
-          template: require('./partials/customize-the-action-bar/desktop.html'),
-          controller: 'CustomizeTheActionBarController'
+          template: require('./partials/customize-action-bar/desktop.html'),
+          controller: 'CustomizeActionBarController'
         },
         drawer: {
-          template: require('./partials/customize-the-action-bar/drawer.html'),
-          controller: 'CustomizeTheActionBarDrawerController'
+          template: require('./partials/customize-action-bar/drawer.html'),
+          controller: 'CustomizeActionBarDrawerController'
         },
         mobile: {
-          template: require('./partials/create-a-custom-action/mobile.html')
+          template: require('./partials/create-custom-actions/mobile.html')
         },
         phone: {
-          template: require('./partials/customize-the-action-bar/phone.html')
+          template: require('./partials/customize-action-bar/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('create-a-lightning-app-from-your-page', {
-      url: '/create-a-lightning-app-from-your-page',
+    .state('build-lightning-app', {
+      url: '/build-lightning-app',
       views: {
         monitor: {
-          template: require('./partials/create-a-lightning-app-from-your-page/desktop.html'),
-          controller: 'CreateALightningAppFromYourPageController'
+          template: require('./partials/build-lightning-app/desktop.html'),
+          controller: 'BuildLightningAppController'
         },
         drawer: {
-          template: require('./partials/create-a-lightning-app-from-your-page/drawer.html'),
-          controller: 'CreateALightningAppFromYourPageDrawerController'
+          template: require('./partials/build-lightning-app/drawer.html'),
+          controller: 'BuildLightningAppDrawerController'
         },
         phone: {
-          template: require('./partials/create-a-lightning-app-from-your-page/phone.html')
+          template: require('./partials/build-lightning-app/phone.html')
         },
         mobile: {
-          template: require('./partials/create-a-custom-action/mobile.html')
+          template: require('./partials/create-custom-actions/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('outro', {
-      url: '/outro',
+    .state('app-in-action', {
+      url: '/app-in-action',
       views: {
         monitor: {
-          template: require('./partials/outro/desktop.html'),
+          template: require('./partials/app-in-action/desktop.html'),
           controller: 'OutroController'
         },
         drawer: {
-          template: require('./partials/outro/drawer.html'),
+          template: require('./partials/app-in-action/drawer.html'),
           controller: 'OutroDrawerController'
         },
         mobile: {
-          template: require('./partials/outro/mobile.html')
+          template: require('./partials/app-in-action/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {

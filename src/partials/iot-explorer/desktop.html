@@ -1,0 +1,95 @@
+<div class="row monitor-height iot-explorer">
+  <div class="col-lg-12 monitor-height">
+    <div class="row monitor-height">
+      <hotspots-container>
+        <wizard name="monitor" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step step-0">
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <div class="flyout active">
+                <span>This orchestration shows the &lsquo;state&rsquo; of all Egg Thermostats in use.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+
+              <div class="flyout active">
+                <span>&lsquo;Monitoring&rsquo; is the default state. When a device has an error, we see it change state.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <div class="flyout active">
+                <span>When a device changes state, different actions are triggered, based on the rules your team set up.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="flyout active">
+                <span>For example, this system moved to the Delayed Operation state, so IoT bot created a new case.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
+              <div class="flyout active">
+                <span>Once the case is resolved, the system returns to its functioning state.</span>
+                <a ng-click="Next()">continue
+                  <i></i>
+                </a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-6">
+              <div class="welcome-copy">
+                <div class="welcome-copy-block">
+                  <p>IoT Bot can trigger alerts so customers, or agents, can immediately take action.</p>
+                </div>
+                <a href="" ng-click="Next()" class="btn btn-intro active">Next</a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step success="true">
+            <div class="step success">
+              <li-center>
+                <p>
+                  <img src="../../assets/images/success.png" />
+                </p>
+                <h2>Success
+                  <br/>You Finished Chapter 2!</h2>
+                <p>
+                  You’re pulling system information in real time to help your product managers and your customers.
+                </p>
+                <p>
+                  Next we’ll get to work building our app.
+                </p>
+                <p>
+                  <a ui-sref="einstein-prediction-builder" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
+                </p>
+              </li-center>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
+    </div>
+  </div>
+</div>
