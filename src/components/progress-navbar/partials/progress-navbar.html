@@ -3,7 +3,7 @@
   </div>
   <ul class="nav nav-stacked progress-navbar standard">
     <li class="logo">
-      <a ui-sref="intro" href="#/">
+      <a ui-sref="welcome" href="#/">
         <span class="logo"></span>
       </a>
     </li>
@@ -16,15 +16,18 @@
         <span class="second"></span>
       </div>
     </li>
-    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="add-an-object"><span progress-state-class="1"></span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="setup-a-workflow"><span  progress-state-class="2"></span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="create-a-new-lightning-page"><span progress-state-class="3"></span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="create-a-custom-action"><span progress-state-class="4"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="custom-objects"><span progress-state-class="1"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="salesforce-connect"><span  progress-state-class="2"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="heroku-connect"><span progress-state-class="3"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="iot-explorer"><span progress-state-class="4"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="einstein-prediction-builder"><span  progress-state-class="5"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="new-lightning-page"><span progress-state-class="6"></span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="process-builder"><span progress-state-class="7"></span></a></li>
     <!--<li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-class="5"></span></a></li>-->
   </ul>
   <ul class="nav nav-stacked progress-navbar inverted" ng-class="{'active':progress.open}">
     <li class="logo">
-      <a ui-sref="intro" href="#/">
+      <a ui-sref="welcome" href="#/">
         <span class="logo"></span>
       </a>
     </li>
@@ -37,11 +40,13 @@
         <span class="second"></span>
       </div>
     </li>
-    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="add-an-object"><span progress-state-inverted-class="1"></span><span class="label">Build a Data Model</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="setup-a-workflow"><span progress-state-inverted-class="2"></span><span class="label">Add Logic</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="create-a-new-lightning-page"><span progress-state-inverted-class="3"></span><span class="label">Build &amp; Deploy Your App</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="create-a-custom-action"><span progress-state-inverted-class="4"></span><span class="label">Customize the Action Bar</span></a></li>
-    <!--<li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-inverted-class="5"></span><span class="label">Customize Mobile</span></a></li>-->
+    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="custom-objects"><span progress-state-inverted-class="1"></span><span class="label">Custom Objects</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="salesforce-connect"><span progress-state-inverted-class="2"></span><span class="label">Salesforce Connect</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="heroku-connect"><span progress-state-inverted-class="3"></span><span class="label">Heroku Connect</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="iot-explorer"><span progress-state-inverted-class="4"></span><span class="label">IoT</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="einstein-prediction-builder"><span progress-state-inverted-class="5"></span><span class="label">Einstein Prediction Builder</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="new-lightning-page"><span progress-state-inverted-class="6"></span><span class="label">Lightning App Builder</span></a></li>
+    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="process-builder"><span progress-state-inverted-class="7"></span><span class="label">Process Builder</span></a></li>
     <li class="text-center"><a id="start-over" class="btn btn-rounded btn-blue" href="#" ng-click="progress.startOver($event)">Start Over</a></li>
     <li class="text-center">&nbsp;</li>
     <li class="text-center skip-links"><a href="#" class="skip" ng-click="progress.skipToPreviousTask($event)" ng-show="$root.canSkipPrevious"><span class="salesforce-icon icon-sfdc-icon-right-arrow" aria-hidden="true"></span> Go to Previous Task</a> <span class="divider" ng-show="$root.canSkipPrevious && $root.canSkip"> | </span> <a href="#" class="skip" ng-click="progress.skipToNextTask($event)" ng-show="$root.canSkip">Skip to Next Task <span class="salesforce-icon icon-sfdc-icon-left-arrow" aria-hidden="true"></span></a></li>

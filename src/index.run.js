@@ -39,29 +39,29 @@ export default function run(
   };
 
   $rootScope.progressStates = {
-    0: ['intro'],
-    1: [
-      'add-an-object',
-      'heroku-connect',
-      'einstein-builder',
-      'add-an-external-object'
-    ],
-    2: [
-      'setup-a-workflow',
-      'choose-an-object-for-the-process',
-      'add-criteria',
-      'add-actions',
-      'iot'
-    ],
-    3: [
-      'create-a-new-lightning-page',
-      'create-an-app-from-base-and-custom-lightning-components',
-      'install-a-pre-built-component-from-appexchange',
+    0: ['welcome'],
+    1: ['custom-objects'],
+    2: ['salesforce-connect'],
+    3: ['heroku-connect'],
+    4: ['iot-explorer'],
+    5: ['einstein-prediction-builder'],
+    6: [
+      'new-lightning-page',
+      'add-base-lightning-components',
+      'add-appexchange-components',
       'add-custom-components',
-      'customize-a-page-layout',
-      'customize-navigation'
+      'customize-page-layout',
+      'deploy-your-app'
     ],
-    4: ['create-a-custom-action', 'customize-the-action-bar', 'create-a-lightning-app-from-your-page']
+    7: [
+      'process-builder',
+      'choose-process-object',
+      'add-process-criteria',
+      'create-process-action',
+      'create-custom-actions',
+      'customize-action-bar',
+      'build-lightning-app'
+    ]
   };
 
   $rootScope.progressIndex = 0;

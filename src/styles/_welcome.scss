@@ -1,0 +1,668 @@
+@import "_base";
+
+.main {
+  .monitor {
+    .welcome {
+      background: url("../assets/images/backgrounds/intro-screen.jpg") center
+        center repeat;
+    }
+  }
+}
+
+.welcome-page {
+  h1 {
+    color: $color-text-header;
+    font-family: $salesforcesans;
+    font-weight: bold;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 7px;
+    line-height: 1;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 50px;
+      margin-top: 40px;
+    }
+  }
+  h2 {
+    color: $color-text-header;
+    font-family: $salesforcesans;
+    font-size: 21px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    line-height: 1;
+    font-weight: bold;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 22px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+  }
+  h3 {
+    color: $color-text-header;
+    font-family: $salesforcesans;
+    font-size: 19px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-weight: normal;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 38px;
+      margin-bottom: 20px;
+      padding-top: 10px;
+    }
+  }
+  p {
+    color: $color-text-header;
+    font-size: 19px;
+    line-height: 24px;
+    margin: 0;
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      font-size: 38px;
+      line-height: 48px;
+    }
+    + p {
+      margin-top: 20px;
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        margin-top: 20px;
+      }
+    }
+  }
+  .hero {
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    @media (max-width: $screen-xs-max) {
+      padding: 10px 0 50px;
+      height: 323px;
+      background-image: url(../assets/images/backgrounds/mobile-intro-hero.jpg);
+      background-size: cover;
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+        only screen and (min--moz-device-pixel-ratio: 1.3),
+        only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+        only screen and (min-resolution: 125dpi),
+        only screen and (min-resolution: 1.3dppx) {
+        background-image: url(../assets/images/backgrounds/mobile-intro-hero_2x.jpg);
+        background-size: 375px 303px;
+      }
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      padding: 20px 0 100px;
+      height: 606px;
+      background-image: url(../assets/images/backgrounds/mobile-intro-hero_2x.jpg);
+      background-size: cover;
+    }
+    @media (min-width: $screen-md-min) {
+      height: 475px;
+      background-image: url(../assets/images/backgrounds/desktop-intro-hero.jpg);
+      background-position: center top;
+    }
+    h1 {
+      color: $text-color-white;
+      @media (max-width: $screen-xs-max) {
+        font-size: 47px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 94px;
+        margin-top: 20px;
+        margin-bottom: 60px;
+      }
+      @media (min-width: $screen-md-min) {
+        font-size: 74px;
+        margin-top: 0;
+      }
+    }
+    h2 {
+      color: $text-color-white;
+      @media (max-width: $screen-xs-max) {
+        font-size: 18px;
+        margin-top: 45px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 36px;
+        margin-top: 90px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $screen-md-min) {
+        font-size: 33px;
+        margin-top: 100px;
+      }
+    }
+    .logo {
+      background-image: url(../assets/images/logos/salesforce-platform-logo.svg);
+      width: 275px;
+      height: 95px;
+      display: block;
+      margin: 0 auto;
+      @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+        only screen and (min--moz-device-pixel-ratio: 1.3),
+        only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+        only screen and (min-resolution: 125dpi),
+        only screen and (min-resolution: 1.3dppx) {
+        //background-image: url(../assets/images/logos/mobile-guided-tour-logo.png);
+        background-size: 275px 95px;
+      }
+      @media (min-width: $screen-md-min) {
+        margin: 20px 0;
+      }
+    }
+    .tray {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      top: 390px;
+      transition: top 0.3s ease-in-out;
+      &.active {
+        top: 0;
+        .tray-btn {
+          transform: translateY(40px);
+          span {
+            transform: rotate(-270deg);
+          }
+          p {
+            margin-top: 30px;
+            opacity: 0;
+            visibility: hidden;
+          }
+        }
+      }
+      .tray-btn {
+        position: relative;
+        z-index: 1;
+        background-color: $color-salesforce-blue;
+        height: 85px;
+        width: 165px;
+        margin: 0 auto;
+        padding-top: 10px;
+        cursor: pointer;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        transition: transform 0.3s ease-in-out;
+        span {
+          display: block;
+          color: $text-color-white;
+          font-size: 36px;
+          font-family: $salesforcesans;
+          font-weight: bold;
+          line-height: 1;
+          transform: rotate(-90deg);
+          transition: transform 0.3s ease-in-out;
+        }
+        p {
+          color: $text-color-white;
+          font-size: 18px;
+          font-family: $salesforcesans;
+          font-weight: bold;
+          line-height: 1;
+          margin-top: 0;
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+      .tray-container {
+        position: relative;
+        z-index: 2;
+        background-color: $color-salesforce-blue;
+        height: 400px;
+        width: 800px;
+        margin: 0 auto;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+      }
+    }
+  }
+  .did-you-know {
+    position: relative;
+    @media (max-width: $screen-xs-max) {
+      padding: 35px 10px 35px;
+    }
+    @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+      padding: 70px 20px 70px;
+    }
+    @media (min-width: $screen-md-min) {
+      padding: 60px 0px 60px;
+    }
+    h2 {
+      color: $color-salesforce-blue;
+      font-family: $salesforcesans;
+      @media (max-width: $screen-xs-max) {
+        margin-top: 0;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        margin-top: 0;
+        font-size: 42px;
+      }
+      @media (min-width: $screen-md-min) {
+        text-align: center;
+        margin-top: 0;
+        font-size: 42px;
+      }
+    }
+    p {
+      color: $mobile-text-color-gray;
+      @media (min-width: $screen-md-min) {
+        font-size: 22px;
+      }
+    }
+  }
+  .blue-container {
+    @media (max-width: $screen-xs-max) {
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 627px, "png");
+      background-size: cover;
+      padding: 38px 11px;
+      //background-size: 375px 627px;
+    }
+    @media (min-width: $screen-sm-min) {
+      background-size: cover;
+      padding: 76px 22px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
+    }
+    @media (min-width: $screen-md-min) {
+      background-color: #ebecec;
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+      only screen and (min--moz-device-pixel-ratio: 1.3),
+      only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+      only screen and (min-resolution: 125dpi),
+      only screen and (min-resolution: 1.3dppx) {
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img_2x.png);
+    }
+    //h3 {
+    //  color: $text-color-white;
+    //  margin-top: 0;
+    //  padding-top: 0;
+    //  @media (max-width: $screen-xs-max) {
+    //    font-size: 23px;
+    //  }
+    //  @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+    //    font-size: 46px;
+    //  }
+    //  @media (min-width: $screen-md-min) {
+    //    text-align: center;
+    //    font-size: 32px;
+    //  }
+    //}
+    p {
+      color: $text-color-white;
+      @media (max-width: $screen-xs-max) {
+        font-size: 17px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        font-size: 34px;
+        margin-bottom: 0;
+      }
+      @media (min-width: $screen-md-min) {
+        text-align: center;
+      }
+    }
+    .row {
+      @media (min-width: $screen-md-min) {
+        margin-bottom: 30px;
+      }
+      &.last {
+        @media (min-width: $screen-md-min) {
+          margin-bottom: 0;
+        }
+      }
+    }
+    .icon-container {
+      @media (min-width: $screen-md-min) {
+        position: relative;
+        padding: 60px 40px;
+        height: 273px;
+      }
+      &.imc {
+        @media (min-width: $screen-md-min) {
+          background-image: url(../assets/images/backgrounds/desktop-intro-icon-container-01.jpg);
+          background-size: cover;
+        }
+      }
+      &.ln {
+        @media (min-width: $screen-md-min) {
+          background-image: url(../assets/images/backgrounds/desktop-intro-icon-container-02.jpg);
+          background-size: cover;
+        }
+      }
+      &.ssmr {
+        @media (min-width: $screen-md-min) {
+          background-image: url(../assets/images/backgrounds/desktop-intro-icon-container-03.jpg);
+          background-size: cover;
+        }
+      }
+      &.ctr {
+        @media (min-width: $screen-md-min) {
+          background-image: url(../assets/images/backgrounds/desktop-intro-icon-container-04.jpg);
+          background-size: cover;
+        }
+      }
+      .hover {
+        @media (min-width: $screen-md-min) {
+          display: none;
+          position: absolute;
+          top: 0;
+          right: 0;
+          bottom: 0;
+          left: 0;
+          background-color: #002882;
+        }
+        p {
+          @media (min-width: $screen-md-min) {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            padding: 0 60px;
+          }
+        }
+      }
+      &:hover,
+      &:focus {
+        .hover {
+          @media (min-width: $screen-md-min) {
+            display: block;
+          }
+        }
+      }
+    }
+    .icon {
+      height: 45px;
+      width: 45px;
+      background-repeat: no-repeat;
+      @media (max-width: $screen-xs-max) {
+        float: left;
+        height: 180px;
+        width: 45px;
+        margin-right: 15px;
+        margin-left: -10px;
+      }
+      @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
+        float: left;
+        height: 360px;
+        width: 90px;
+        margin-right: 30px;
+        margin-left: -10px;
+      }
+      @media (min-width: $screen-md-min) {
+        margin: 0 auto 15px;
+        height: 70px;
+        width: 70px;
+      }
+      &.imc {
+        @media (max-width: $screen-xs-max) {
+          background-image: url(../assets/images/icons/icon-intergrated-marketing-campaigns.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (min--moz-device-pixel-ratio: 1.3),
+            only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+            only screen and (min-resolution: 125dpi),
+            only screen and (min-resolution: 1.3dppx) {
+            background-image: url(../assets/images/icons/icon-intergrated-marketing-campaigns.png);
+            background-size: 45px 45px;
+          }
+        }
+        @media (min-width: $screen-sm-min) {
+          background-image: url(../assets/images/icons/icon-intergrated-marketing-campaigns_2x.png);
+          background-size: contain;
+        }
+      }
+      &.ln {
+        @media (max-width: $screen-xs-max) {
+          background-image: url(../assets/images/icons/icon-lead-nurturing.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (min--moz-device-pixel-ratio: 1.3),
+            only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+            only screen and (min-resolution: 125dpi),
+            only screen and (min-resolution: 1.3dppx) {
+            background-image: url(../assets/images/icons/icon-lead-nurturing_2x.png);
+            background-size: 45px 45px;
+          }
+        }
+        @media (min-width: $screen-sm-min) {
+          background-image: url(../assets/images/icons/icon-lead-nurturing_2x.png);
+          background-size: contain;
+        }
+      }
+      &.ssmr {
+        @media (max-width: $screen-xs-max) {
+          background-image: url(../assets/images/icons/icon-simplified-sales-marketing-relationship.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (min--moz-device-pixel-ratio: 1.3),
+            only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+            only screen and (min-resolution: 125dpi),
+            only screen and (min-resolution: 1.3dppx) {
+            background-image: url(../assets/images/icons/icon-simplified-sales-marketing-relationship_2x.png);
+            background-size: 45px 45px;
+          }
+        }
+        @media (min-width: $screen-sm-min) {
+          background-image: url(../assets/images/icons/icon-simplified-sales-marketing-relationship_2x.png);
+          background-size: contain;
+        }
+      }
+      &.ctr {
+        @media (max-width: $screen-xs-max) {
+          background-image: url(../assets/images/icons/icon-campaign-tracking-and-reporting.png);
+          @media only screen and (-webkit-min-device-pixel-ratio: 1.3),
+            only screen and (min--moz-device-pixel-ratio: 1.3),
+            only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
+            only screen and (min-resolution: 125dpi),
+            only screen and (min-resolution: 1.3dppx) {
+            background-image: url(../assets/images/icons/icon-campaign-tracking-and-reporting_2x.png);
+            background-size: 45px 45px;
+          }
+        }
+        @media (min-width: $screen-sm-min) {
+          background-image: url(../assets/images/icons/icon-campaign-tracking-and-reporting_2x.png);
+          background-size: contain;
+        }
+      }
+    }
+  }
+  .btn-white {
+    @media (max-width: $screen-xs-max) {
+      margin-top: 18%;
+      width: 211px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 16px;
+      display: inline-block;
+      float: right;
+    }
+    @media (min-width: $screen-sm-min) {
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      width: 325px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 22px;
+      display: inline-block;
+      float: right;
+      margin: 0;
+    }
+  }
+
+  .btn-white-bottom {
+    @media (min-width: $screen-sm-min) {
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      width: 325px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 22px;
+      display: inline-block;
+      float: right;
+      margin: 0;
+    }
+    @media (max-width: $screen-xs-max) {
+      margin-top: 18%;
+      width: 211px;
+      background-color: rgb(255, 255, 255);
+      border-radius: 51px;
+      padding: 23px 0px;
+      color: rgb(0, 119, 187);
+      font-family: $salesforcesans;
+      font-size: 16px;
+      display: inline-block;
+      float: right;
+    }
+  }
+
+
+  .text-center {
+    .btn-white {
+      float: none;
+      padding-top: 28px;
+      margin-top: 71px;
+      text-decoration: none;
+    }
+    .btn-white-bottom {
+      float: none;
+      padding-top: 28px;
+      margin-top: 132%;
+      text-decoration: none;
+      @media (max-width: $screen-xs-max) {
+        margin-top: 133%;
+      }
+    }
+  }
+
+  #footer {
+    padding-top: 10px;
+    img {
+      padding: 50px;
+    }
+    height: 444px;
+    background: #c2c2c2;
+    color: #444444;
+    @media (max-width: $screen-xs-max) {
+      height: 344px;
+    }
+    #sub-floor {
+      padding: 10px 0;
+    }
+    #sub-floor,
+    a,
+    .phone-button {
+      background: #c2c2c2;;
+      font-size: 28px;
+      margin-top: 20px;
+      color: #444444;
+      @media (max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
+    }
+    h3,
+    h4 {
+      color: #444444;
+    }
+    #sub-floor #credit {
+      padding: 0px;
+      color: #444444;
+    }
+    #footer-links {
+      float: left;
+    }
+    #credit {
+      float: none;
+      text-align: center;
+      width: 705px;
+      @media (max-width: $screen-xs-max) {
+        width: 330px;
+      }
+    }
+  }
+
+  #sub-floor a {
+    color: #005290;
+    display: block;
+  }
+
+  #footer {
+    #sub-floor #credit a,
+    .phone-button {
+      color: #005290;
+    }
+    .span12 {
+      padding: 0 20px;
+    }
+    .social-icons {
+      float: left;
+      .btn {
+        border: 0px;
+      }
+    }
+    #menu-main-navigation {
+      padding-top: 0px;
+      padding-bottom: 0px;
+      margin-top: 0px;
+    }
+    #sub-floor #credit a:hover {
+      color: inherit;
+    }
+    .navbar .nav > li > a {
+      padding: 0px 10px 0px;
+    }
+  }
+
+  .clearall {
+    clear: both;
+  }
+
+  #footer {
+    .navbar .nav > li {
+      float: left;
+    }
+  }
+}
+
+.welcome {
+  .step-1,
+  .step-2 {
+    background-image: url("../assets/images/chapters/welcome/intro-background.png");
+  }
+
+  .step-3 {
+    background-image: url("../assets/images/chapters/welcome/intro.gif");
+    background-size: cover;
+  }
+}
+
+.welcome-copy {
+  text-align: center;
+  color: white;
+  width: 273px;
+  height: 360px;
+  left: 470px;
+  position: absolute;
+  top: 17px;
+
+  h2 {
+    font-size: 26px;
+  }
+
+  p {
+    font-size: 18px;
+  }
+
+  a {
+    position: absolute;
+    top: 360px;
+    left: 50%;
+    width: auto;
+    transform: translateX(-50%);
+  }
+  .welcome-copy-block {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
