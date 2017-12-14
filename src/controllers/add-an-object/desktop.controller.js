@@ -42,7 +42,7 @@ export default function EinsteinBuilderController($scope, Steps, Hotspots, Wizar
             Steps.activate('four');
           }, 2000);
         }
-      }, 500);
+      }, 800);
     }
   });
 
