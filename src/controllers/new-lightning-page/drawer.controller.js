@@ -28,7 +28,7 @@ export default function NewLightningPageDrawerController($scope, WizardHandler, 
 
     Steps.pop({
       number: 'four',
-      title: 'We will use the &lsquo;Header and Right Sidebar&rsquo; layout. Click &lsquo;Finish.&rsquo; '
+      title: 'We will use the &lsquo;Two Columns&rsquo; layout. Click &lsquo;Finish.&rsquo; '
     });
 
     Hotspots.clear();
