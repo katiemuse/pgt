@@ -117,6 +117,13 @@ export default function stepsContainer($parse, $rootScope, $interval, $sce, step
         });
       }
 
+      if (!stepsRegisterEvents.isRegisteredRemoveStepEvent()) {
+        stepsRegisterEvents.registerRemoveStepEvent();
+        scope.deregRemoveStep = $rootScope.$on('steps-removeStep', (event, number) => {
+          scope.removeStep(number);
+        });
+      }
+
       if (!stepsRegisterEvents.isRegisteredStepActivatedEvent()) {
         stepsRegisterEvents.registerStepActivatedEvent();
         scope.deregStepActivated = $rootScope.$on('steps-activate', (event, number) => {

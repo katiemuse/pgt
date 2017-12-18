@@ -1,4 +1,4 @@
-@import "../../../app/base";
+@import "../../../styles/_base";
 
 .monitor {
   .steps {
@@ -15,7 +15,7 @@
         width: $monitor-width;
 
         &.success {
-            //background: url('../../../assets/images/backgrounds/intro-screen.jpg') center center repeat;
+            //background: url('../../../assets/images/backgrounds/welcome-screen.jpg') center center repeat;
             background-color: #1A437F;
 
             img {

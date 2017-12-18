@@ -14,7 +14,8 @@ export default {
     two: 'step-two',
     three: 'step-three',
     four: 'step-four',
-    five: 'step-five'
+    five: 'step-five',
+    six: 'step-six'
   },
   'body-output-type': 'trustedHtml', // Options: '', 'trustedHtml', 'template', 'templateWithData'
   'body-template': 'stepsBodyTmpl.html',

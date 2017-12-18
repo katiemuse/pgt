@@ -1,0 +1,237 @@
+@import '_fonts';
+@import '_base';
+@import '_animated-icons';
+@import '_buttons';
+@import '_forms';
+@import '_sprites';
+@import '_click-box';
+@import '_drop-box';
+@import '_flyout';
+
+* {
+  user-select: none;
+  input, .html-editor *, .headline-modal {
+    user-select: auto;
+  }
+}
+
+.atlwdg-trigger {
+  z-index: 99999;
+}
+
+h2 {
+  font-size: $header2-font-size;
+  line-height: $header2-line-space;
+  font-family: $header2-font-family;
+  font-color: $color-text-header;
+  font-weight: $header2-font-weight;
+}
+
+p {
+  font-family: $salesforcesans;
+  font-size: 20px;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  > iframe {
+    height: 0;
+  }
+}
+
+
+.main {
+  min-height: 100%;
+  &.background {
+    background-image: url('../assets/images/backgrounds/monitor.jpg');
+    background-position: top center;
+    background-repeat: repeat;
+    @media screen and (min-width: $screen-1080p) {
+      background-image: url('../assets/images/backgrounds/monitor-big.jpg');
+      background-position: center center;
+      background-repeat: repeat;
+    }
+  }
+
+  .monitor {
+
+    width: $monitor-width;
+    height: $monitor-height;
+    overflow: hidden;
+    background-color: white;
+    position:relative;
+    margin-top: 58px;
+
+    @media screen and (min-width: $screen-1080p) {
+      position: absolute;
+      z-index: $z-index-monitor;
+      margin: 30px auto 0 auto;
+      left: 50%;
+      top: 50%;
+      margin-left: -396px;
+      margin-top: -260px;
+    }
+
+   }
+
+  .monitor-height {
+    height:$monitor-height;
+    position:relative;
+  }
+
+  .top-nav-container {
+    height:70px;
+  }
+
+  &.mobile {
+    .top-nav-container {
+      height: auto;
+      .product-tour {
+        padding-left: 25px;
+        padding-right: 10px;
+        background-color: #00315a;
+        background-size: 375px 56px;
+      }
+      h1 {
+        font-family: $salesforcesans;
+        font-size: 40px;
+        font-weight: bold;
+        color: $text-color-white;
+        margin: 0;
+        line-height: 56px;
+        @media(max-width: $screen-xs-max) {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+
+
+footer {
+  background-color:rgba($color-background-black, 0.8);
+  position:fixed;
+  bottom:0px;
+  width: 100%;
+  z-index: $z-index-footer;
+  @media(max-width: $screen-sm-max) {
+    padding: 28px 0 20px;
+    background-color: #c2c2c2;
+    position: static;
+    max-width: 750px;
+    margin: 0 auto;
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    li {
+      float: left;
+      color:$text-color-white;
+      padding: 15px 0;
+      font-family: $salesforcesans;
+      font-size: $footnotes-font-size;
+      line-height: 1;
+      @media(max-width: $screen-sm-max) {
+        color: $color-text-header;
+        font-family: $salesforcesans;
+        font-size: 24px;
+      }
+      a {
+        &:link, &:visited {
+          color: $text-color-white;
+          @media(max-width: $screen-sm-max) {
+            color: $color-text-header;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+  .copyright {
+    float: left;
+    margin-left: 55px;
+    @media(max-width: $screen-sm-max) {
+      float: none;
+      margin-left: 0;
+    }
+    ul {
+      li {
+        @media(max-width: $screen-sm-max) {
+          float: none;
+          text-align: center;
+          padding-top: 0;
+          padding-bottom: 4px;
+        }
+        &:first-child {
+          @media(max-width: $screen-sm-max) {
+            padding-top: 10px;
+          }
+        }
+        &:last-child {
+          @media(max-width: $screen-sm-max) {
+            padding-bottom: 30px;
+          }
+          @media(max-width: $screen-xs-max)  {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+  .links {
+    float: right;
+    margin-right: 55px;
+    @media(max-width: $screen-sm-max) {
+      float: none;
+      margin-right: 0;
+    }
+    ul {
+      li {
+        @media(max-width: $screen-sm-max) {
+          float: none;
+          text-align: center;
+          padding-top: 0;
+          padding-bottom: 24px;
+        }
+        a {
+          border-right: 1px solid white;
+          padding-right: 4px;
+          margin-right: 4px;
+          @media(max-width: $screen-sm-max) {
+            border-right: 0;
+            padding-right: 0;
+            margin-right: 0;
+          }
+          &:link, &:visited {
+            color: $text-color-white;
+            @media(max-width: $screen-sm-max) {
+              color: #005290;
+              font-size: 28px;
+              text-decoration: none;
+            }
+            @media(max-width: $screen-xs-max)  {
+              font-size: 18px;
+            }
+          }
+        }
+        &:last-child {
+          @media(max-width: $screen-sm-max) {
+            padding-bottom: 0;
+          }
+
+          a {
+            border: 0;
+            padding-right: 0;
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+}

@@ -52,43 +52,48 @@ import wizardStep from './components/wizard/directives/step-directive';
 import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
-import IntroController from './app/0-intro/controllers/intro.controller';
-import IntroDrawerController from './app/0-intro/controllers/intro.drawer.controller';
-import AddAnObjectController from './app/1-build-a-data-model/controllers/1-add-an-object.controller';
-import AddAnObjectDrawerController from './app/1-build-a-data-model/controllers/1-add-an-object.drawer.controller';
-import AddAnExternalObjectController from './app/1-build-a-data-model/controllers/2-add-an-external-object.controller';
-import AddAnExternalObjectDrawerController from './app/1-build-a-data-model/controllers/2-add-an-external-object.drawer.controller';
-// import AddACustomFieldController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.controller';
-// import AddACustomFieldDrawerController from './app/1-build-a-data-model/controllers/3-add-a-custom-field.drawer.controller';
-import HerokuConnectController from './app/1-build-a-data-model/controllers/4-heroku-connect.controller';
-import HerokuConnectDrawerController from './app/1-build-a-data-model/controllers/4-heroku-connect.drawer.controller';
-import BuildASchemaController from './app/1-build-a-data-model/controllers/5-build-a-schema.controller';
-import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/5-build-a-schema.drawer.controller';
-import SetupAWorkflowController from './app/2-add-logic/controllers/1-setup-a-workflow.controller';
-import SetupAWorkflowDrawerController from './app/2-add-logic/controllers/1-setup-a-workflow.drawer.controller';
-import ChooseAnObjectForTheProcessController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.controller';
-import ChooseAnObjectForTheProcessDrawerController from './app/2-add-logic/controllers/2-choose-an-object-for-the-process.drawer.controller';
-import AddCriteriaController from './app/2-add-logic/controllers/3-add-criteria.controller';
-import AddCriteriaDrawerController from './app/2-add-logic/controllers/3-add-criteria.drawer.controller';
-import AddActionsController from './app/2-add-logic/controllers/4-add-actions.controller';
-import AddActionsDrawerController from './app/2-add-logic/controllers/4-add-actions.drawer.controller';
-import CreateANewLightningPageController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.controller';
-import CreateANewLightningPageDrawerController from './app/3-build-your-app/controllers/1-create-a-new-lightning-page.drawer.controller';
-import InstallAPreBuiltComponentFromAppexchangeController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.controller';
-import InstallAPreBuiltComponentFromAppexchangeDrawerController from './app/3-build-your-app/controllers/2-install-a-pre-built-component-from-appexchange.drawer.controller';
-import CreateAnAppFromBaseAndCustomLightningComponentsController from './app/3-build-your-app/controllers/3-create-an-app-from-base-and-custom-lightning-components.controller';
-import CreateAnAppFromBaseAndCustomLightningComponentsDrawerController from './app/3-build-your-app/controllers/3-create-an-app-from-base-and-custom-lightning-components.drawer.controller';
-import AddCustomComponentsController from './app/3-build-your-app/controllers/4-add-custom-components.controller';
-import AddCustomComponentsDrawerController from './app/3-build-your-app/controllers/4-add-custom-components.drawer.controller';
-import CustomizeAPageLayoutController from './app/3-build-your-app/controllers/5-customize-a-page-layout.controller';
-import CustomizeAPageLayoutDrawerController from './app/3-build-your-app/controllers/5-customize-a-page-layout.drawer.controller';
-import CustomizeNavigationController from './app/3-build-your-app/controllers/6-customize-navigation.controller';
-import CustomizeNavigationDrawerController from './app/3-build-your-app/controllers/6-customize-navigation.drawer.controller';
-import CreateACustomActionController from './app/4-customize-mobile/controllers/1-create-a-custom-action.controller';
-import CreateACustomActionDrawerController from './app/4-customize-mobile/controllers/1-create-a-custom-action.drawer.controller';
-import CustomizeTheActionBarController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.controller';
-import CustomizeTheActionBarDrawerController from './app/4-customize-mobile/controllers/2-customize-the-action-bar.drawer.controller';
-import EndController from './app/4-customize-mobile/controllers/3-end.controller';
+import WelcomeController from './controllers/welcome/desktop.controller';
+import WelcomeDrawerController from './controllers/welcome/drawer.controller';
+import CustomObjectsController from './controllers/custom-objects/desktop.controller';
+import CustomObjectsDrawerController from './controllers/custom-objects/drawer.controller';
+import HerokuConnectController from './controllers/heroku-connect/desktop.controller';
+import HerokuConnectDrawerController from './controllers/heroku-connect/drawer.controller';
+import SalesforceConnectController from './controllers/salesforce-connect/desktop.controller';
+import SalesforceConnectDrawerController from './controllers/salesforce-connect/drawer.controller';
+import EinsteinPredictionBuilderController from './controllers/einstein-prediction-builder/desktop.controller';
+import EinsteinPredictionBuilderDrawerController from './controllers/einstein-prediction-builder/drawer.controller';
+// import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
+// import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
+import ProcessBuilderController from './controllers/process-builder/desktop.controller';
+import ProcessBuilderDrawerController from './controllers/process-builder/drawer.controller';
+import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
+import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
+import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
+import AddCriteriaDrawerController from './controllers/add-process-criteria/drawer.controller';
+import CreateProcessActionController from './controllers/create-process-action/desktop.controller';
+import CreateProcessActionDrawerController from './controllers/create-process-action/drawer.controller';
+import IotExplorerController from './controllers/iot-explorer/desktop.controller';
+import IotExplorerDrawerController from './controllers/iot-explorer/drawer.controller';
+import NewLightningPageController from './controllers/new-lightning-page/desktop.controller';
+import NewLightningPageDrawerController from './controllers/new-lightning-page/drawer.controller';
+import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
+import AddAppexchangeComponentsDrawerController from './controllers/add-appexchange-components/drawer.controller';
+import AddBaseLightningComponentsController from './controllers/add-base-lightning-components/desktop.controller';
+import AddBaseLightningComponentsDrawerController from './controllers/add-base-lightning-components/drawer.controller';
+import AddCustomComponentsController from './controllers/add-custom-components/desktop.controller';
+import AddCustomComponentsDrawerController from './controllers/add-custom-components/drawer.controller';
+import CustomizePageLayoutController from './controllers/customize-page-layout/desktop.controller';
+import CustomizePageLayoutDrawerController from './controllers/customize-page-layout/drawer.controller';
+import DeployYourAppController from './controllers/deploy-your-app/desktop.controller';
+import DeployYourAppDrawerController from './controllers/deploy-your-app/drawer.controller';
+import CreateCustomActionsController from './controllers/create-custom-actions/desktop.controller';
+import CreateCustomActionsDrawerController from './controllers/create-custom-actions/drawer.controller';
+import CustomizeActionBarController from './controllers/customize-action-bar/desktop.controller';
+import CustomizeActionBarDrawerController from './controllers/customize-action-bar/drawer.controller';
+import BuildLightningAppController from './controllers/build-lightning-app/desktop.controller';
+import BuildLightningAppDrawerController from './controllers/build-lightning-app/drawer.controller';
+import OutroController from './controllers/app-in-action/desktop.controller';
+import OutroDrawerController from './controllers/app-in-action/drawer.controller';
 // import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 // import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
 // import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
@@ -101,9 +106,9 @@ import EndController from './app/4-customize-mobile/controllers/3-end.controller
 // import EngagementStudioTriggerController from './app/5-in-the-field/controllers/engagement-studio-trigger.controller';
 // import EngagementStudioTriggerDrawerController from './app/5-in-the-field/controllers/engagement-studio-trigger.drawer.controller';
 
-import './app/vendor.scss';
-import './app/index.scss';
-import './app/app.scss';
+import './styles/vendor.scss';
+import './styles/index.scss';
+import './styles/app.scss';
 
 angular
   .module('pardotInteractiveGuidedTour', [
@@ -150,44 +155,49 @@ angular
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   // .factory('steplog', steplog)
-  .controller('IntroController', IntroController)
+  .controller('WelcomeController', WelcomeController)
   .controller('DrawerPanelController', drawerPanelController)
-  .controller('IntroDrawerController', IntroDrawerController)
-  .controller('AddAnObjectController', AddAnObjectController)
-  .controller('AddAnObjectDrawerController', AddAnObjectDrawerController)
-  // .controller('AddACustomFieldController', AddACustomFieldController)
-  // .controller('AddACustomFieldDrawerController', AddACustomFieldDrawerController)
-  .controller('AddAnExternalObjectController', AddAnExternalObjectController)
-  .controller('AddAnExternalObjectDrawerController', AddAnExternalObjectDrawerController)
+  .controller('WelcomeDrawerController', WelcomeDrawerController)
+  .controller('CustomObjectsController', CustomObjectsController)
+  .controller('CustomObjectsDrawerController', CustomObjectsDrawerController)
+  .controller('EinsteinPredictionBuilderController', EinsteinPredictionBuilderController)
+  .controller('EinsteinPredictionBuilderDrawerController', EinsteinPredictionBuilderDrawerController)
+  .controller('SalesforceConnectController', SalesforceConnectController)
+  .controller('SalesforceConnectDrawerController', SalesforceConnectDrawerController)
   .controller('HerokuConnectController', HerokuConnectController)
   .controller('HerokuConnectDrawerController', HerokuConnectDrawerController)
-  .controller('BuildASchemaController', BuildASchemaController)
-  .controller('BuildASchemaDrawerController', BuildASchemaDrawerController)
-  .controller('SetupAWorkflowController', SetupAWorkflowController)
-  .controller('SetupAWorkflowDrawerController', SetupAWorkflowDrawerController)
-  .controller('ChooseAnObjectForTheProcessController', ChooseAnObjectForTheProcessController)
-  .controller('ChooseAnObjectForTheProcessDrawerController', ChooseAnObjectForTheProcessDrawerController)
+  // .controller('BuildASchemaController', BuildASchemaController)
+  // .controller('BuildASchemaDrawerController', BuildASchemaDrawerController)
+  .controller('ProcessBuilderController', ProcessBuilderController)
+  .controller('ProcessBuilderDrawerController', ProcessBuilderDrawerController)
+  .controller('ChooseProcessObjectController', ChooseProcessObjectController)
+  .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
   .controller('AddCriteriaController', AddCriteriaController)
   .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
-  .controller('AddActionsController', AddActionsController)
-  .controller('AddActionsDrawerController', AddActionsDrawerController)
-  .controller('CreateANewLightningPageController', CreateANewLightningPageController)
-  .controller('CreateANewLightningPageDrawerController', CreateANewLightningPageDrawerController)
-  .controller('InstallAPreBuiltComponentFromAppexchangeController', InstallAPreBuiltComponentFromAppexchangeController)
-  .controller('InstallAPreBuiltComponentFromAppexchangeDrawerController', InstallAPreBuiltComponentFromAppexchangeDrawerController)
-  .controller('CreateAnAppFromBaseAndCustomLightningComponentsController', CreateAnAppFromBaseAndCustomLightningComponentsController)
-  .controller('CreateAnAppFromBaseAndCustomLightningComponentsDrawerController', CreateAnAppFromBaseAndCustomLightningComponentsDrawerController)
+  .controller('CreateProcessActionController', CreateProcessActionController)
+  .controller('CreateProcessActionDrawerController', CreateProcessActionDrawerController)
+  .controller('IotExplorerController', IotExplorerController)
+  .controller('IotExplorerDrawerController', IotExplorerDrawerController)
+  .controller('NewLightningPageController', NewLightningPageController)
+  .controller('NewLightningPageDrawerController', NewLightningPageDrawerController)
+  .controller('AddAppexchangeComponentsController', AddAppexchangeComponentsController)
+  .controller('AddAppexchangeComponentsDrawerController', AddAppexchangeComponentsDrawerController)
+  .controller('AddBaseLightningComponentsController', AddBaseLightningComponentsController)
+  .controller('AddBaseLightningComponentsDrawerController', AddBaseLightningComponentsDrawerController)
   .controller('AddCustomComponentsController', AddCustomComponentsController)
   .controller('AddCustomComponentsDrawerController', AddCustomComponentsDrawerController)
-  .controller('CustomizeAPageLayoutController', CustomizeAPageLayoutController)
-  .controller('CustomizeAPageLayoutDrawerController', CustomizeAPageLayoutDrawerController)
-  .controller('CustomizeNavigationController', CustomizeNavigationController)
-  .controller('CustomizeNavigationDrawerController', CustomizeNavigationDrawerController)
-  .controller('CreateACustomActionController', CreateACustomActionController)
-  .controller('CreateACustomActionDrawerController', CreateACustomActionDrawerController)
-  .controller('CustomizeTheActionBarController', CustomizeTheActionBarController)
-  .controller('CustomizeTheActionBarDrawerController', CustomizeTheActionBarDrawerController)
-  .controller('EndController', EndController)
+  .controller('CustomizePageLayoutController', CustomizePageLayoutController)
+  .controller('CustomizePageLayoutDrawerController', CustomizePageLayoutDrawerController)
+  .controller('DeployYourAppController', DeployYourAppController)
+  .controller('DeployYourAppDrawerController', DeployYourAppDrawerController)
+  .controller('CreateCustomActionsController', CreateCustomActionsController)
+  .controller('CreateCustomActionsDrawerController', CreateCustomActionsDrawerController)
+  .controller('CustomizeActionBarController', CustomizeActionBarController)
+  .controller('CustomizeActionBarDrawerController', CustomizeActionBarDrawerController)
+  .controller('BuildLightningAppController', BuildLightningAppController)
+  .controller('BuildLightningAppDrawerController', BuildLightningAppDrawerController)
+  .controller('OutroController', OutroController)
+  .controller('OutroDrawerController', OutroDrawerController)
   // .controller('EngagementStudioController', EngagementStudioController)
   // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
   // .controller('EngagementStudioReportController', EngagementStudioReportController)

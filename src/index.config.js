@@ -5,88 +5,131 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
     };
   });
 
+  const resetState = (TopNavbar, Hotspots) => {
+    TopNavbar.DidYouKnowCount = 0;
+    TopNavbar.DidYouKnowEnabled = false;
+    TopNavbar.HotspotsCount = 0;
+    TopNavbar.HotspotsEnabled = false;
+    Hotspots.clear();
+  };
+
   $stateProvider
-    .state('intro', {
+    .state('welcome', {
       url: '/',
       views: {
         monitor: {
-          template: require('./app/0-intro/partials/intro.html'),
-          controller: 'IntroController'
+          template: require('./partials/welcome/desktop.html'),
+          controller: 'WelcomeController'
         },
         drawer: {
-          controller: 'IntroDrawerController',
+          controller: 'WelcomeDrawerController',
           template: '<div></div>'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/welcome/mobile.html')
         },
         'getting-started': {
-          template: require('./app/0-intro/partials/getting-started.html'),
-          controller: 'IntroController'
+          template: require('./partials/welcome/getting-started.html'),
+          controller: 'WelcomeController'
         }
       },
-      onEnter(TopNavbar, Drawer) {
+      onEnter(TopNavbar, Drawer, Hotspots) {
         Drawer.close();
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('custom-objects', {
+      url: '/custom-objects',
+      views: {
+        monitor: {
+          template: require('./partials/custom-objects/desktop.html'),
+          controller: 'CustomObjectsController'
+        },
+        drawer: {
+          template: require('./partials/custom-objects/drawer.html'),
+          controller: 'CustomObjectsDrawerController'
+        },
+        mobile: {
+          template: require('./partials/custom-objects/mobile.html')
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('salesforce-connect', {
+      url: '/salesforce-connect',
+      views: {
+        monitor: {
+          template: require('./partials/salesforce-connect/desktop.html'),
+          controller: 'SalesforceConnectController'
+        },
+        drawer: {
+          template: require('./partials/salesforce-connect/drawer.html'),
+          controller: 'SalesforceConnectDrawerController'
+        },
+        mobile: {
+          template: require('./partials/custom-objects/mobile.html')
+        }
+      },
+      onEnter(TopNavbar) {
         TopNavbar.DidYouKnowCount = 0;
         TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('add-an-object', {
-      url: '/add-an-object',
+    .state('einstein-prediction-builder', {
+      url: '/einstein-prediction-builder',
       views: {
         monitor: {
-          template: require('./app/1-build-a-data-model/partials/1-add-an-object.html'),
-          controller: 'AddAnObjectController'
+          template: require('./partials/einstein-prediction-builder/desktop.html'),
+          controller: 'EinsteinPredictionBuilderController'
         },
         drawer: {
-          template: require('./app/1-build-a-data-model/partials/1-add-an-object.drawer.html'),
-          controller: 'AddAnObjectDrawerController'
+          template: require('./partials/einstein-prediction-builder/drawer.html'),
+          controller: 'EinsteinPredictionBuilderDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/custom-objects/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('add-an-external-object', {
-      url: '/add-an-external-object',
+    .state('heroku-connect', {
+      url: '/heroku-connect',
       views: {
         monitor: {
-          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.html'),
-          controller: 'AddAnExternalObjectController'
+          template: require('./partials/heroku-connect/desktop.html'),
+          controller: 'HerokuConnectController'
         },
         drawer: {
-          template: require('./app/1-build-a-data-model/partials/2-add-an-external-object.drawer.html'),
-          controller: 'AddAnExternalObjectDrawerController'
+          template: require('./partials/heroku-connect/drawer.html'),
+          controller: 'HerokuConnectDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/custom-objects/mobile.html')
+        },
+        phone: {
+          template: require('./partials/heroku-connect/phone.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    // .state('add-a-custom-field', {
-    //   url: '/add-a-custom-field',
+    // .state('build-a-schema', {
+    //   url: '/build-a-schema',
     //   views: {
     //     monitor: {
-    //       template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.html'),
-    //       controller: 'AddACustomFieldController'
+    //       template: require('./app/1-build-a-data-model/partials/5-build-a-schema.html'),
+    //       controller: 'BuildASchemaController'
     //     },
     //     drawer: {
-    //       template: require('./app/1-build-a-data-model/partials/3-add-a-custom-field.drawer.html'),
-    //       controller: 'AddACustomFieldDrawerController'
+    //       template: require('./app/1-build-a-data-model/partials/5-build-a-schema.drawer.html'),
+    //       controller: 'BuildASchemaDrawerController'
     //     },
     //     mobile: {
     //       template: require('./mobile.html')
@@ -95,319 +138,320 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
     //   onEnter(TopNavbar) {
     //     TopNavbar.DidYouKnowCount = 0;
     //     TopNavbar.DidYouKnowEnabled = false;
-    //     TopNavbar.HotspotsCount = 2;
-    //     TopNavbar.HotspotsEnabled = true;
+    //     TopNavbar.HotspotsCount = 0;
+    //     TopNavbar.HotspotsEnabled = false;
     //   }
     // })
-    .state('heroku-connect', {
-      url: '/heroku-connect',
+    .state('process-builder', {
+      url: '/process-builder',
       views: {
         monitor: {
-          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.html'),
-          controller: 'HerokuConnectController'
+          template: require('./partials/process-builder/desktop.html'),
+          controller: 'ProcessBuilderController'
         },
         drawer: {
-          template: require('./app/1-build-a-data-model/partials/4-heroku-connect.drawer.html'),
-          controller: 'HerokuConnectDrawerController'
+          template: require('./partials/process-builder/drawer.html'),
+          controller: 'ProcessBuilderDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('build-a-schema', {
-      url: '/build-a-schema',
+    .state('choose-process-object', {
+      url: '/choose-process-object',
       views: {
         monitor: {
-          template: require('./app/1-build-a-data-model/partials/5-build-a-schema.html'),
-          controller: 'BuildASchemaController'
+          template: require('./partials/choose-process-object/desktop.html'),
+          controller: 'ChooseProcessObjectController'
         },
         drawer: {
-          template: require('./app/1-build-a-data-model/partials/5-build-a-schema.drawer.html'),
-          controller: 'BuildASchemaDrawerController'
+          template: require('./partials/choose-process-object/drawer.html'),
+          controller: 'ChooseProcessObjectDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('setup-a-workflow', {
-      url: '/setup-a-workflow',
+    .state('add-process-criteria', {
+      url: '/add-process-criteria',
       views: {
         monitor: {
-          template: require('./app/2-add-logic/partials/1-setup-a-workflow.html'),
-          controller: 'SetupAWorkflowController'
-        },
-        drawer: {
-          template: require('./app/2-add-logic/partials/1-setup-a-workflow.drawer.html'),
-          controller: 'SetupAWorkflowDrawerController'
-        },
-        mobile: {
-          template: require('./mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 0;
-        TopNavbar.DidYouKnowEnabled = false;
-        TopNavbar.HotspotsCount = 2;
-        TopNavbar.HotspotsEnabled = true;
-      }
-    })
-    .state('choose-an-object-for-the-process', {
-      url: '/choose-an-object-for-the-process',
-      views: {
-        monitor: {
-          template: require('./app/2-add-logic/partials/2-choose-an-object-for-the-process.html'),
-          controller: 'ChooseAnObjectForTheProcessController'
-        },
-        drawer: {
-          template: require('./app/2-add-logic/partials/2-choose-an-object-for-the-process.drawer.html'),
-          controller: 'ChooseAnObjectForTheProcessDrawerController'
-        },
-        mobile: {
-          template: require('./mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 2;
-      }
-    })
-    .state('add-criteria', {
-      url: '/add-criteria',
-      views: {
-        monitor: {
-          template: require('./app/2-add-logic/partials/3-add-criteria.html'),
+          template: require('./partials/add-process-criteria/desktop.html'),
           controller: 'AddCriteriaController'
         },
         drawer: {
-          template: require('./app/2-add-logic/partials/3-add-criteria.drawer.html'),
+          template: require('./partials/add-process-criteria/drawer.html'),
           controller: 'AddCriteriaDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
       onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-      }
-    })
-    .state('add-actions', {
-      url: '/add-actions',
-      views: {
-        monitor: {
-          template: require('./app/2-add-logic/partials/4-add-actions.html'),
-          controller: 'AddActionsController'
-        },
-        drawer: {
-          template: require('./app/2-add-logic/partials/4-add-actions.drawer.html'),
-          controller: 'AddActionsDrawerController'
-        },
-        mobile: {
-          template: require('./mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 4;
-        TopNavbar.HotspotsCount = 0;
-      }
-    })
-    .state('create-a-new-lightning-page', {
-      url: '/create-a-new-lightning-page',
-      views: {
-        monitor: {
-          template: require('./app/3-build-your-app/partials/1-create-a-new-lightning-page.html'),
-          controller: 'CreateANewLightningPageController'
-        },
-        drawer: {
-          template: require('./app/3-build-your-app/partials/1-create-a-new-lightning-page.drawer.html'),
-          controller: 'CreateANewLightningPageDrawerController'
-        },
-        mobile: {
-          template: require('./mobile.html')
-        }
-      },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 3;
+        TopNavbar.DidYouKnowCount = 0;
+        TopNavbar.DidYouKnowEnabled = false;
         TopNavbar.HotspotsCount = 0;
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('install-a-pre-built-component-from-appexchange', {
-      url: '/install-a-pre-built-component-from-appexchange',
+    .state('create-process-action', {
+      url: '/create-process-action',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.html'),
-          controller: 'InstallAPreBuiltComponentFromAppexchangeController'
+          template: require('./partials/create-process-action/desktop.html'),
+          controller: 'CreateProcessActionController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/2-install-a-pre-built-component-from-appexchange.drawer.html'),
-          controller: 'InstallAPreBuiltComponentFromAppexchangeDrawerController'
+          template: require('./partials/create-process-action/drawer.html'),
+          controller: 'CreateProcessActionDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/process-builder/mobile.html')
+        },
+        phone: {
+          template: require('./partials/create-process-action/phone.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 2;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('create-an-app-from-base-and-custom-lightning-components', {
-      url: '/create-an-app-from-base-and-custom-lightning-components',
+    .state('iot-explorer', {
+      url: '/iot-explorer',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.html'),
-          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsController'
+          template: require('./partials/iot-explorer/desktop.html'),
+          controller: 'IotExplorerController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/3-create-an-app-from-base-and-custom-lightning-components.drawer.html'),
-          controller: 'CreateAnAppFromBaseAndCustomLightningComponentsDrawerController'
+          template: require('./partials/iot-explorer/drawer.html'),
+          controller: 'IotExplorerDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/process-builder/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 0;
-        TopNavbar.HotspotsEnabled = false;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('new-lightning-page', {
+      url: '/new-lightning-page',
+      views: {
+        monitor: {
+          template: require('./partials/new-lightning-page/desktop.html'),
+          controller: 'NewLightningPageController'
+        },
+        drawer: {
+          template: require('./partials/new-lightning-page/drawer.html'),
+          controller: 'NewLightningPageDrawerController'
+        },
+        mobile: {
+          template: require('./partials/new-lightning-page/mobile.html')
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('add-appexchange-components', {
+      url: '/add-appexchange-components',
+      views: {
+        monitor: {
+          template: require('./partials/add-appexchange-components/desktop.html'),
+          controller: 'AddAppexchangeComponentsController'
+        },
+        drawer: {
+          template: require('./partials/add-appexchange-components/drawer.html'),
+          controller: 'AddAppexchangeComponentsDrawerController'
+        },
+        mobile: {
+          template: require('./partials/new-lightning-page/mobile.html')
+        },
+        phone: {
+          template: require('./partials/add-appexchange-components/phone.html')
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('add-base-lightning-components', {
+      url: '/add-base-lightning-components',
+      views: {
+        monitor: {
+          template: require('./partials/add-base-lightning-components/desktop.html'),
+          controller: 'AddBaseLightningComponentsController'
+        },
+        drawer: {
+          template: require('./partials/add-base-lightning-components/drawer.html'),
+          controller: 'AddBaseLightningComponentsDrawerController'
+        },
+        mobile: {
+          template: require('./partials/new-lightning-page/mobile.html')
+        },
+        phone: {
+          template: require('./partials/add-base-lightning-components/phone.html')
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
     .state('add-custom-components', {
       url: '/add-custom-components',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/4-add-custom-components.html'),
+          template: require('./partials/add-custom-components/desktop.html'),
           controller: 'AddCustomComponentsController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/4-add-custom-components.drawer.html'),
+          template: require('./partials/add-custom-components/drawer.html'),
           controller: 'AddCustomComponentsDrawerController'
         },
+        phone: {
+          template: require('./partials/add-custom-components/phone.html')
+        },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('customize-a-page-layout', {
-      url: '/customize-a-page-layout',
+    .state('customize-page-layout', {
+      url: '/customize-page-layout',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.html'),
-          controller: 'CustomizeAPageLayoutController'
+          template: require('./partials/customize-page-layout/desktop.html'),
+          controller: 'CustomizePageLayoutController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/5-customize-a-page-layout.drawer.html'),
-          controller: 'CustomizeAPageLayoutDrawerController'
+          template: require('./partials/customize-page-layout/drawer.html'),
+          controller: 'CustomizePageLayoutDrawerController'
+        },
+        phone: {
+          template: require('./partials/customize-page-layout/phone.html')
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('customize-navigation', {
-      url: '/customize-navigation',
+    .state('deploy-your-app', {
+      url: '/deploy-your-app',
       views: {
         monitor: {
-          template: require('./app/3-build-your-app/partials/6-customize-navigation.html'),
-          controller: 'CustomizeNavigationController'
+          template: require('./partials/deploy-your-app/desktop.html'),
+          controller: 'DeployYourAppController'
         },
         drawer: {
-          template: require('./app/3-build-your-app/partials/6-customize-navigation.drawer.html'),
-          controller: 'CustomizeNavigationDrawerController'
+          template: require('./partials/deploy-your-app/drawer.html'),
+          controller: 'DeployYourAppDrawerController'
+        },
+        phone: {
+          template: require('./partials/deploy-your-app/phone.html')
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/new-lightning-page/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 1;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('create-a-custom-action', {
-      url: '/create-a-custom-action',
+    .state('create-custom-actions', {
+      url: '/create-custom-actions',
       views: {
         monitor: {
-          template: require('./app/4-customize-mobile/partials/1-create-a-custom-action.html'),
-          controller: 'CreateACustomActionController'
+          template: require('./partials/create-custom-actions/desktop.html'),
+          controller: 'CreateCustomActionsController'
         },
         drawer: {
-          template: require('./app/4-customize-mobile/partials/1-create-a-custom-action.drawer.html'),
-          controller: 'CreateACustomActionDrawerController'
+          template: require('./partials/create-custom-actions/drawer.html'),
+          controller: 'CreateCustomActionsDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/create-custom-actions/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 3;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('customize-the-action-bar', {
-      url: '/customize-the-action-bar',
+    .state('customize-action-bar', {
+      url: '/customize-action-bar',
       views: {
         monitor: {
-          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.html'),
-          controller: 'CustomizeTheActionBarController'
+          template: require('./partials/customize-action-bar/desktop.html'),
+          controller: 'CustomizeActionBarController'
         },
         drawer: {
-          template: require('./app/4-customize-mobile/partials/2-customize-the-action-bar.drawer.html'),
-          controller: 'CustomizeTheActionBarDrawerController'
+          template: require('./partials/customize-action-bar/drawer.html'),
+          controller: 'CustomizeActionBarDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/create-custom-actions/mobile.html')
+        },
+        phone: {
+          template: require('./partials/customize-action-bar/phone.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 3;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     })
-    .state('end', {
-      url: '/end',
+    .state('build-lightning-app', {
+      url: '/build-lightning-app',
       views: {
         monitor: {
-          template: require('./app/4-customize-mobile/partials/3-end.html'),
-          controller: 'EndController'
+          template: require('./partials/build-lightning-app/desktop.html'),
+          controller: 'BuildLightningAppController'
+        },
+        drawer: {
+          template: require('./partials/build-lightning-app/drawer.html'),
+          controller: 'BuildLightningAppDrawerController'
+        },
+        phone: {
+          template: require('./partials/build-lightning-app/phone.html')
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/create-custom-actions/mobile.html')
         }
       },
-      onEnter(TopNavbar) {
-        TopNavbar.DidYouKnowCount = 1;
-        TopNavbar.HotspotsCount = 3;
-        TopNavbar.HotspotsEnabled = true;
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('app-in-action', {
+      url: '/app-in-action',
+      views: {
+        monitor: {
+          template: require('./partials/app-in-action/desktop.html'),
+          controller: 'OutroController'
+        },
+        drawer: {
+          template: require('./partials/app-in-action/drawer.html'),
+          controller: 'OutroDrawerController'
+        },
+        mobile: {
+          template: require('./partials/app-in-action/mobile.html')
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
       }
     });
 

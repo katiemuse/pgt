@@ -6,7 +6,8 @@ export class TopNavbar {
     this.HotspotsActive = false;
     this.HotspotsCount = 0;
     this.HotspotsEnabled = false;
-    this.InfoActive = false;
+    // this.MobileActive = false;
+    // this.MobileEnabled = false;
   }
 }
 

@@ -7,10 +7,12 @@ export default function run(
   TopNavbar,
   $log,
   Drawer,
-  $transitions
+  $transitions,
+  WizardHandler
 ) {
   $rootScope.$state = $state;
   $rootScope.allowJumpingStories = true;
+  $rootScope.showMobilePopout = false;
   $rootScope.wizard = {
     stateIndex: -1
   };
@@ -21,35 +23,45 @@ export default function run(
 
   // $rootScope.$on('$destroy', x);
 
-  const y = $rootScope.$on('wizard:stepChanged', (event, args) => {
+  const deregisterMobilePopoutToggle = $rootScope.$on('mobile-popout:toggle', () => {
+    $rootScope.showMobilePopout = !$rootScope.showMobilePopout;
+  });
+
+  const deregisterStepChanged = $rootScope.$on('wizard:stepChanged', (event, args) => {
     $rootScope.wizard.stateIndex = args.index;
   });
 
-  $rootScope.$on('$destroy', y);
+  $rootScope.closeMobilePopout = function(event) {
+    $rootScope.showMobilePopout = false;
+    WizardHandler.wizard('monitor').next();
+    event.stopPropagation();
+    return false;
+  };
 
   $rootScope.progressStates = {
-    0: ['intro'],
-    1: [
-      'add-an-object',
-      'heroku-connect',
-      'add-an-external-object'
-      // ,'build-a-schema'
-    ],
-    2: [
-      'setup-a-workflow',
-      'choose-an-object-for-the-process',
-      'add-criteria',
-      'add-actions'
-    ],
-    3: [
-      'create-a-new-lightning-page',
-      'install-a-pre-built-component-from-appexchange',
-      'create-an-app-from-base-and-custom-lightning-components',
+    0: ['welcome'],
+    1: ['custom-objects'],
+    2: ['salesforce-connect'],
+    3: ['heroku-connect'],
+    4: ['iot-explorer'],
+    5: ['einstein-prediction-builder'],
+    6: [
+      'new-lightning-page',
+      'add-base-lightning-components',
+      'add-appexchange-components',
       'add-custom-components',
-      'customize-a-page-layout',
-      'customize-navigation'
+      'customize-page-layout',
+      'deploy-your-app'
     ],
-    4: ['create-a-custom-action', 'customize-the-action-bar']
+    7: [
+      'process-builder',
+      'choose-process-object',
+      'add-process-criteria',
+      'create-process-action',
+      'create-custom-actions',
+      'customize-action-bar',
+      'build-lightning-app'
+    ]
   };
 
   $rootScope.progressIndex = 0;
@@ -86,7 +98,7 @@ export default function run(
     return -1;
   };
 
-  const z = $transitions.onSuccess({}, trans => {
+  const deregisterOnSuccess = $transitions.onSuccess({}, trans => {
     // if (s && s.t && trans.to().name !== '') {
     //   s.pageName = `platformtour:` + trans.to().name;
     //   s.t();
@@ -98,7 +110,12 @@ export default function run(
       $rootScope.taskIndex + 1 <
       _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
     $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
+    $rootScope.showMobilePopout = false;
   });
 
-  $rootScope.$on('$destroy', z);
+  $rootScope.$on('$destroy', () => {
+    deregisterOnSuccess();
+    deregisterMobilePopoutToggle();
+    deregisterStepChanged();
+  });
 }

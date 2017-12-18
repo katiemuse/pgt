@@ -105,7 +105,7 @@ export default function wizard() {
           let exitallowed = false;
           let enterallowed = false;
           const index = _.indexOf($scope.steps, $scope.selectedStep);
-          if (index === $scope.steps.length - 2 || index >= 5) {
+          if (index === $scope.steps.length - 2 || index >= 6) {
             Steps.clear();
           }
           // getting data for step you are transitioning out of

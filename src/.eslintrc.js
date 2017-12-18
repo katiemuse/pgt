@@ -8,6 +8,8 @@ module.exports = {
     'guard-for-in' : 0,
     'no-debugger' : 0,
     'angular/window-service' : 0,
-    'space-before-function-paren' : 0
+    'space-before-function-paren' : 0,
+    'object-curly-spacing': 0,
+    'quotes': 0
   }
 }

@@ -1,5 +1,5 @@
 <div id="hotspots-container">
-  <div ng-repeat="hotspot in hotspots" ng-style="hotspot.position"  ng-animate class="hotspot icon-hotspot {{hotspot.active?'active':''}} hotspot-{{hotspot.number}}"  ng-click="click(hotspot)">
+  <div ng-repeat="hotspot in hotspots" ng-style="hotspot.position"  ng-animate class="hotspot {{hotspot.active?'active':''}} hotspot-{{hotspot.number}}"  ng-click="click(hotspot)">
   </div>
 
   <ng-transclude></ng-transclude>

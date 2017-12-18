@@ -15,8 +15,8 @@ export class TopNavbarController {
       hotspotsActive: false,
       hotspotsEnabled: false,
       hotspotsCount: 0,
-      infoActive: false,
-      infoEnabled: false
+      mobileActive: false,
+      mobileEnabled: false
     };
 
     this.$scope.topNavbar.didYouKnowClicked = () => {
@@ -33,6 +33,13 @@ export class TopNavbarController {
         this.TopNavbar.HotspotsCount = 0;
         this.Hotspots.activate(1);
         this.Drawer.openToHotspot({number: 1});
+      }
+    };
+
+    this.$scope.topNavbar.mobileClicked = () => {
+      if (this.$scope.topNavbar.mobileEnabled) {
+        this.TopNavbar.mobileActive = true;
+        this.$rootScope.$emit('mobile-popout:toggle');
       }
     };
 
@@ -106,10 +113,19 @@ export class TopNavbarController {
 
     this.$scope.$watch(
       () => {
-        return this.TopNavbar.InfoActive;
+        return this.TopNavbar.MobileEnabled;
       },
       newValue => {
-        this.$scope.topNavbar.infoActive = newValue;
+        this.$scope.topNavbar.mobileEnabled = newValue;
+      }
+    );
+
+    this.$scope.$watch(
+      () => {
+        return this.TopNavbar.MobileActive;
+      },
+      newValue => {
+        this.$scope.topNavbar.mobileActive = newValue;
       }
     );
   }

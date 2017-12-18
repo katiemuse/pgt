@@ -55,7 +55,7 @@
       }
       .drawer-no-scroll {overflow: visible;}
       .drawer-bg.active {display: none !important;}
-      #intro-container {display: block;}
+      #welcome-container {display: block;}
     </style>
     <![endif]-->
 </head>
@@ -90,19 +90,30 @@
 
       </steps-container>
 
+      <div class="mobile-popout" ng-show="showMobilePopout">
+        <div class="blocker" ng-click="$root.closeMobilePopout($event)">
+          <div class="phone">
+            <div class="phone-view" ui-view="phone"></div>
+          </div>
+
+          <a class="back-to-laptop" ng-click="$root.closeMobilePopout($event)">
+          </a>
+        </div>
+      </div>
+
     </div>
 
     <div class="container-fluid main mobile hidden-lg hidden-md">
-      <!--<div class="top-nav-container">-->
-      <!--<div class="row">-->
-      <!--<top-navbar-mobile></top-navbar-mobile>-->
-      <!--</div>-->
-      <!--<div class="row product-tour">-->
-      <!--<div class="col-xs-12">-->
-      <!--<h2>Product Tour</h2>-->
-      <!--</div>-->
-      <!--</div>-->
-      <!--</div>-->
+      <div class="top-nav-container" ng-hide="$state.current.name == 'intro'">
+        <div class="row">
+          <top-navbar-mobile></top-navbar-mobile>
+        </div>
+        <div class="row product-tour">
+          <div class="col-xs-12">
+            <h1>Pardot Tour</h1>
+          </div>
+        </div>
+      </div>
 
       <div ui-view="mobile" autoscroll="true">
 
@@ -113,10 +124,7 @@
       <div class="copyright">
         <ul>
           <li>
-            &copy; 2017 Salesforce.&nbsp;
-          </li>
-          <li>
-            All Rights Reserved
+            &copy; 2017 Salesforce All Rights Reserved.
           </li>
         </ul>
       </div>
@@ -143,7 +151,7 @@
 
   </div>
 
-  <script type="text/javascript" src="./sf.analytics.js?v=3"></script>
+  <script type="text/javascript" src="./sf.analytics.js?v=2"></script>
 
 </body>
 

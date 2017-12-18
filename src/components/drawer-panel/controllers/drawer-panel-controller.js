@@ -62,7 +62,7 @@ export default function DrawerPanelController($scope, Hotspots, TopNavbar) {
     }
 
     if ($scope.type && $scope.type === 'did-you-know') {
-      TopNavbar.DidYouKnowEnabled = true;
+      TopNavbar.DidYouKnowEnabled = false;
     }
   };
 
@@ -87,6 +87,7 @@ export default function DrawerPanelController($scope, Hotspots, TopNavbar) {
 
     if ($scope.type && $scope.type === 'did-you-know') {
       TopNavbar.DidYouKnowActive = false;
+      TopNavbar.DidYouKnowEnabled = false;
     }
   });
 
