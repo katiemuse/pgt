@@ -34,7 +34,9 @@
         .controls {
           input {
             &.text {
-              width: 181px;
+              width: 153px;
+              margin-left: 6px;
+              margin-top: -4px;
               border-radius: 4px;
               background-image: url("../assets/images/chapters/salesforce-connect/magnifying-glass.svg");
               background-size: 12px;
@@ -42,7 +44,7 @@
               background-repeat: no-repeat;
               padding-left: 25px;
               font-size: 12px;
-              height: 31px;
+              height: 33px;
               &::placeholder {
                 color: black;
               }
@@ -57,10 +59,10 @@
       }
     }
     .click-box {
-      top: 196px;
-      left: 15px;
-      width: 165px;
-      height: 25px;
+      top: 175px;
+      left: 3px;
+      width: 159px;
+      height: 27px;
     }
   }
 
