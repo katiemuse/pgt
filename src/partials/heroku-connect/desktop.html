@@ -22,9 +22,7 @@
             <div class="step step-3" ng-class="{active:button.clicked}">
               <div class="click-box" ng-class="{active:!button.clicked}" ng-click="ToggleClicked()"></div>
               <div class="flyout" ng-class="{active:button.clicked}">
-                <span>This is Salesforce’s Object Manager. All the mobile data we just mapped from Heroku gets pushed directly
-                  to Salesforce. Now you can show this data inside the app you’ll build for Product Managers on the Salesforce
-                  Platform.
+                <span>Customer Feedback from the Heroku App is immediately synced to our customer's profile. The power of Heroku Connect!
                 </span>
                 <a ng-click="Next()">continue
                   <i></i>
@@ -45,19 +43,19 @@
               </div>
             </div>
           </wz-step>
-          <wz-step>
-            <div class="step step-5">
-              <div class="welcome-copy">
-                <div class="welcome-copy-block">
-                  <h2>2-way communication</h2>
-                  <p>Heroku works in real-time to bring customer data straight to your dashboard. For example, a customer just
-                    submitted an idea on her Egg mobile app. Her profile in Salesforce was automatically updated with the
-                    new feedback.</p>
-                </div>
-                <a href="" ng-click="Next()" class="btn btn-intro active">Next</a>
-              </div>
-            </div>
-          </wz-step>
+          <!--<wz-step>-->
+            <!--<div class="step step-5">-->
+              <!--<div class="welcome-copy">-->
+                <!--<div class="welcome-copy-block">-->
+                  <!--<h2>2-way communication</h2>-->
+                  <!--<p>Heroku works in real-time to bring customer data straight to your dashboard. For example, a customer just-->
+                    <!--submitted an idea on her Egg mobile app. Her profile in Salesforce was automatically updated with the-->
+                    <!--new feedback.</p>-->
+                <!--</div>-->
+                <!--<a href="" ng-click="Next()" class="btn btn-intro active">Next</a>-->
+              <!--</div>-->
+            <!--</div>-->
+          <!--</wz-step>-->
 
 
           <wz-step success="true">
