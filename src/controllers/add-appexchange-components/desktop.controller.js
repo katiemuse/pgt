@@ -32,7 +32,7 @@ export default function AddAppexchangeComponentsController(
   $scope.dropCustomerIdeas = function() {
     $scope.customerIdeas.dropped = true;
     $timeout(() => {
-      $rootScope.$emit('mobile-popout:toggle');
+      WizardHandler.wizard("monitor").next();
     }, 1000);
   };
 
