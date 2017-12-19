@@ -18,21 +18,16 @@ export default function CustomObjectsDrawerController($scope, WizardHandler, Top
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on the &lsquo;Object Manager&rsquo; tab'
+      title: 'Click on the &lsquo;Create&rsquo; drop down'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click &lsquo;Create&rsquo; and select &lsquo;Custom Object&rsquo;'
-    });
-
-    Steps.pop({
-      number: 'three',
       title: 'Name your object &lsquo;Customer Insights&rsquo;'
     });
 
     Steps.pop({
-      number: 'four',
+      number: 'three',
       title: 'Click &lsquo;Save&rsquo;'
     });
 
