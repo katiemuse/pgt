@@ -2597,7 +2597,7 @@ jQuery.extend(Page, {
   }
   
   ,isValidServer: function(server) {
-    var validServers = ['QUIP'];
+    var validServers = ['SFDC:products:platform:interactive'];
     for (var i=0; i<validServers.length; i++) {
       if (server == validServers[i]) {
         return true;
@@ -2647,7 +2647,7 @@ jQuery.extend(Page, {
       this.server = srv;
       return this.server;
     }
-    this.server = 'QUIP';
+    this.server = 'SFDC:products:platform:interactive';
     return this.server;
   }
   
