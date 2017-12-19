@@ -39,10 +39,10 @@ export default function CustomObjectsController($scope, Steps, Hotspots, WizardH
 
           _timeout2 = $timeout(() => {
             WizardHandler.wizard('monitor').next();
-            Steps.activate('four');
+            Steps.activate('three');
           }, 2000);
         }
-      }, 800);
+      }, 1000);
     }
   });
 

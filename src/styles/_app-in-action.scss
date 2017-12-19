@@ -33,10 +33,23 @@
     .btn {
       position:absolute;
       padding: 10px 30px;
-      bottom:85px;
+      bottom: 85px;
       left: 50%;
       transform: translateX(-50%);
     }
+    .next-link {
+      position: absolute;
+      padding: 10px 30px;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: $color-continue-hover;
+      text-decoration: none;
+      &:hover {
+        color: white;
+      }
+    }
+
   }
 
 }
