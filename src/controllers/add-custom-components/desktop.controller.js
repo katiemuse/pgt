@@ -1,6 +1,6 @@
 'use strict';
 
-export default function AddCustomComponentsController($scope, WizardHandler, Steps, $timeout, $rootScope) {
+export default function AddCustomComponentsController($scope, WizardHandler, Steps, $timeout) {
   $scope.customComponent = {
     dropped: false
   };
@@ -13,7 +13,6 @@ export default function AddCustomComponentsController($scope, WizardHandler, Ste
       $scope.customComponent.dropped = true;
       $timeout(() => {
         WizardHandler.wizard('monitor').next();
-        $rootScope.$emit('mobile-popout:toggle');
       }, 1000);
     }
   };
