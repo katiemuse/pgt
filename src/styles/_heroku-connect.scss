@@ -15,10 +15,6 @@
   .step-3 {
     background: url("../assets/images/chapters/heroku-connect/screen-bkg-3.png")
       center top no-repeat;
-    &.active {
-      background: url("../assets/images/chapters/heroku-connect/screen-bkg-4.png")
-        center top no-repeat;
-    }
   }
 
   .step-4 {
@@ -27,7 +23,7 @@
   }
 
   .step-5 {
-    background: url("../assets/images/chapters/heroku-connect/screen-bkg-5.gif")
+    background: url("../assets/images/chapters/heroku-connect/screen-bkg-5.png")
       center top no-repeat;
   }
 
@@ -84,10 +80,4 @@
     }
   }
 
-  .step-5 {
-    a {
-      top: 400px;
-      text-transform: none;
-    }
-  }
 }
