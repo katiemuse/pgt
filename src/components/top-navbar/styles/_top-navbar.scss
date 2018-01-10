@@ -122,13 +122,15 @@ nav.top-navbar {
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 100px;
   }
   @media (min-width: $screen-sm-min) {
-    width: 750px;
+    width: 375px;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    margin-top: 100px;
   }
   nav {
     &.top-navbar {
