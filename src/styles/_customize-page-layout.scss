@@ -38,20 +38,30 @@
 
   .step-2 {
     .click-box {
-      top: 49px;
-      right: 136px;
-      width: 49px;
+      top: 48px;
+      left: 218px;
+      width: 148px;
+      height: 27px;
+    }
+    .step2-dropdown {
+      position: absolute;
+      top: 80px;
+      left: 216px;
+    }
+    .click-box-1 {
+      top: 89px;
+      left: 218px;
+      width: 157px;
       height: 26px;
-      border-radius: 5px;
     }
   }
 
   .step-3 {
     .click-box {
-      bottom: 113px;
-      right: 207px;
-      width: 64px;
-      height: 28px;
+      top: 49px;
+      right: 136px;
+      width: 49px;
+      height: 26px;
       border-radius: 5px;
     }
    }

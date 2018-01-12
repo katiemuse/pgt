@@ -15,12 +15,17 @@ export default function CustomizePageLayoutDrawerController($scope, WizardHandle
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Try looking at the desktop layout from the device type drop-down.'
+      title: 'Try looking at the tablet-portrait layout from the device type drop-down.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click &lsquo;Save&rsquo;'
+      title: 'Now lets go back to the phone layout from the device type drop-down.'
+    });
+
+    Steps.pop({
+      number: 'three',
+      title: 'Click &lsquo;Save&rsquo; to see the phone preview.'
     });
 
     Hotspots.clear();
