@@ -9,8 +9,16 @@ export default function CustomizePageLayoutController($scope, WizardHandler, Ste
     active: false
   };
 
+  $scope.dropdown2 = {
+    active: false
+  };
+
   $scope.activatedropdown = () => {
     $scope.dropdown.active = !$scope.dropdown.active;
+  };
+
+  $scope.activatedropdown2 = () => {
+    $scope.dropdown2.active = !$scope.dropdown2.active;
   };
 
   $scope.$watch('lightning.input', (newValue, oldValue) => {
@@ -31,10 +39,10 @@ export default function CustomizePageLayoutController($scope, WizardHandler, Ste
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       Hotspots.clear();
-      $rootScope.$emit('mobile-popout:toggle');
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
+      $rootScope.$emit('mobile-popout:toggle');
       WizardHandler.wizard('monitor').next();
       Steps.activate('four');
     }
