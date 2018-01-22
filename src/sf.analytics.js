@@ -1289,13 +1289,13 @@ var Server = {
 */
 Server.productionAccount = 'salesforcemarketing';
 Server.stagingAccount = 'salesforce';
-Server.productionDomains = ['quip.com'];
+Server.productionDomains = ['platformtour.salesforce.com'];
 Server.stagingDomains = [];
-Server.internalDomains = ['quip.com'];
-Server.externalDomains = [ 'www.salesforce.com' ];
+Server.internalDomains = ['platformtour.salesforce.com'];
+Server.externalDomains = [];
 
 Server.getCookieDomain = function() {
-  return '.quip.com';
+  return '.salesforce.com';
 };
 
 
@@ -2508,12 +2508,13 @@ Page = {
    --------------------------------------------------------------------------------
 */
 jQuery.extend(Page, {
-  errorName:  'QUIP:error_404'
+  errorName:  'platformtour:error_404'
   ,leadCaptureForm: null
 
 
   ,calculateName: function(name, hostname) {
-    return "platformtour";
+    const pathName = window.location.pathname.replace('/', '');
+    return "platformtour:us:" + (pathName || 'homepage');
   }
 
   
@@ -2647,7 +2648,7 @@ jQuery.extend(Page, {
       this.server = srv;
       return this.server;
     }
-    this.server = 'SFDC:products:platform:interactive';
+    this.server = 'platformtour';
     return this.server;
   }
   

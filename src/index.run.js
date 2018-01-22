@@ -1,5 +1,7 @@
 import _ from 'lodash';
 
+/* global s:true */
+
 export default function run(
   $rootScope,
   $state,
@@ -99,10 +101,10 @@ export default function run(
   };
 
   const deregisterOnSuccess = $transitions.onSuccess({}, trans => {
-    // if (s && s.t && trans.to().name !== '') {
-    //   s.pageName = `platformtour:` + trans.to().name;
-    //   s.t();
-    // }
+    if (s && s.t && trans.to().name !== '') {
+      s.pageName = `platformtour:us:` + trans.to().name;
+      s.t();
+    }
 
     $rootScope.progressIndex = $rootScope.getProgressIndex(trans.to().name);
     $rootScope.taskIndex = $rootScope.getTaskIndex(trans.to().name);
