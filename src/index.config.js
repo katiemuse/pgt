@@ -69,7 +69,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'SalesforceConnectDrawerController'
         },
         mobile: {
-          template: require('./partials/custom-objects/mobile.html')
+          template: require('./partials/salesforce-connect/mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -274,7 +274,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddAppexchangeComponentsDrawerController'
         },
         mobile: {
-          template: require('./partials/new-lightning-page/mobile.html')
+          template: require('./partials/add-appexchange-components/mobile.html')
         },
         phone: {
           template: require('./partials/add-appexchange-components/phone.html')
@@ -403,7 +403,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CustomizeActionBarDrawerController'
         },
         mobile: {
-          template: require('./partials/create-custom-actions/mobile.html')
+          template: require('./partials/customize-action-bar/mobile.html')
         },
         phone: {
           template: require('./partials/customize-action-bar/phone.html')

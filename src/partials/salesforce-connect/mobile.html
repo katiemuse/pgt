@@ -1,35 +1,98 @@
-<section class="salesforce-connect">
+<section class="build-a-data-model">
   <div class="row campaign-container">
     <div class="col-xs-12">
-      <h1>Create a Campaign</h1>
-      <p>Let's start by looking at Pardot's campaign builder. Creating a campaign is simple — all you have to do to launch your very own marketing campaign is input a name and cost.</p>
+      <br>
+      <h1>Build a Process</h1>
+      <br>
+      <p>Remember the customer ideas we integrated earlier? Now let’s make sure Product Managers get real-time notifications on their mobile phone as customers submit new ideas.</p>
+      <br><br>
+      <p>Process Builder's point-and-click tools make it easy to automate tasks, like notifying product managers of a new</p>
     </div>
   </div>
-  <div class="row did-you-know">
-    <div class="col-xs-12">
-      <h2>Did You Know?</h2>
-      <p>A “campaign” is used to determine the first touch that a prospect has with your marketing programs. That could be a marketing email, a white paper, a Google advertisement, or any other marketing channel!</p>
-    </div>
   </div>
   <div class="row hotspots shadow">
     <div class="col-xs-12">
-      <h3>Organizing with Tags</h3>
+      <h3>Criteria</h3>
       <div class="screen-shot tag"></div>
-      <p>You can add ‘tags’ to your marketing campaigns to help keep them organized. Tags are great for grouping related campaigns together &mdash; and they make searching a breeze.</p>
+      <p>Criteria determine when to execute action groups.</p>
     </div>
   </div>
   <div class="row hotspots shadow last">
     <div class="col-xs-12">
-      <h3>ROI</h3>
-      <p>Inputting your initial cost will help determine your campaign ROI at the end of this experience.</p>
+      <h3>Actions</h3>
+      <p>Actions are executed when criteria are met.</p>
     </div>
   </div>
-  <div class="row blue-container next-page">
+  <div class="row did-you-know">
     <div class="col-xs-12">
-      <p>After creating a campaign in Pardot, you can move on to create forms and landing pages. Click "continue" to see what this process looks like.</p>
+      <br><br>
+      <h2><strong>Add Your Object</strong></h2>
+      <p>The first step in building a process is choosing the object. For this notification, we'll choose Customer Ideas from the Customer Insights Object.</p>
+    </div>
+  </div>
+  <div class="row campaign-container-2">
+    <div class="col-xs-12">
+    </div>
+  </div>
+  <div class="row did-you-know-2">
+    <div class="col-xs-12">
+      <br>
+      <h1><strong>Decide When the Process Should Trigger</strong></h1>
+      <br>
+      <p>We want the process to trigger (a push notification to be sent) every time a customer submits a new idea so we set that as a criteria.</p>
+    </div>
+  </div>
+  <div class="row campaign-container-3">
+    <div class="col-xs-12">
+    </div>
+  </div>
+  <div class="row campaign-container-4">
+    <div class="col-xs-12">
+      <br>
+      <h1>Set Up a Push Notification</h1>
+      <br>
+      <p>Finally, choose the action that our criteria trigger. In this case Every time there’s a new idea, we want our Product Managers to get real-time push notifications on their phones.</p>
+      <br><br>
+      <p>Using the same point and click capabilities you can build a process for any use case in your business.</p>
+    </div>
+  </div>
+  <div class="row did-you-know-3">
+    <div class="col-xs-12">
+      <div class="did-you-know-icon"></div>
+      <h2>Did You Know?</h2>
+      <p>You can use the “Approval Process” tool to create approval processes for particular objects/records. An approval process specifies each step of approval, including from whom to request approval and what to do at each point of the process.</p>
+    </div>
+  </div>
+  <div class="row campaign-container-5">
+    <div class="col-xs-12">
+      <br><br>
+      <h1>The Process</h1>
+      <br>
+      <p>Just like that, with a few clicks, you can create a whole process to notify product managers, real-time, of any ideas that customers submit.</p>
+      <br><br>
+      <p>Next comes the app's interface.</p>
+    </div>
+  </div>
+  <div class="row did-you-know-2">
+    <div class="col-xs-12">
+      <br>
+      <h1><strong>Real-time Service with IoT</strong></h1>
+      <br>
+      <p>IOT Explorer lets you monitor real-time data feeds from your customers’ connected products. The data can trigger device reboots, maintenance calls, and support knowledge emails, all without involving customer service teams.</p>
+    </div>
+  </div>
+  <div class="row campaign-container-6">
+    <div class="col-xs-12">
       <div class="text-center">
-        <a ui-sref="heroku-connect" class="btn-orange">Continue</a>
+        <a ui-sref="process-builder" class="btn-orange">CONTINUE</a>
       </div>
     </div>
   </div>
+  <!--<div class="row">-->
+  <!--<div class="col-xs-12">-->
+  <!--<div class="text-center">-->
+  <!--<a ui-sref="process-builder" class="btn-orange">CONTINUE</a>-->
+  <!--</div>  -->
+  <!--</div>-->
+  <!--</div>-->
 </section>
