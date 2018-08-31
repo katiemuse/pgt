@@ -12,9 +12,8 @@
 }
 
 .mobile {
-
   h1 {
-    color: $color-text-header;
+   color: #00a1e0;;
     font-family: $proximanova;
     font-weight: bold;
     font-size: 25px;
@@ -60,12 +59,12 @@
   }
   p {
     color: $color-text-header;
-    font-size: 19px;
-    line-height: 24px;
+    font-size: 18px;
+    line-height: 18px;
     margin: 0;
     @media(min-width: $screen-sm-min) {
-      //font-size: 38px;
-      //line-height: 48px;
+      font-size: 38px;
+      line-height: 48px;
     }
     + p {
       margin-top: 20px;
@@ -213,11 +212,11 @@
   .did-you-know-2 {
     position: relative;
     @media(max-width: $screen-xs-max) {
-      padding: 20px 10px 35px;
+      padding: 20px 10px 65px;
       background-color: #00315a;
     }
     @media(min-width: $screen-sm-min) {
-      padding: 40px 20px 70px;
+      padding: 40px 20px 90px;
       background-color: #00315a;
     }
     h1 {
@@ -561,37 +560,38 @@
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg", 375px 620px, "png");
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 620px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1530px;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg_2x.png);
+      height: 1453px;
+      background-image: url(../assets/images/mobile/data-model/data-model-bg-1_2x.png);
+      background-repeat: no-repeat;
     }
-    h1 {
-      color: #00a1e0;
-    }
-    p {
-      color: #444444;
-      @media(max-width: $screen-xs-max) {
-        font-size: 18px;
-        line-height: 18px;
-      }
-    }
+    //h1 {
+    //  color: #00a1e0;
+    //}
+    //p {
+    //  color: #444444;
+    //  @media(max-width: $screen-xs-max) {
+    //    font-size: 18px;
+    //    line-height: 18px;
+    //  }
+    //}
   }
 
   .campaign-container-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
+      height: 600px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2", 375px 623px, "png");
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-2", 375px 623px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 897px;
+      height: 870px;
       background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-2_2x.png);
+      background-image: url(../assets/images/mobile/data-model/data-model-bg-2_2x.png);
     }
     h1 {
       color: #00a1e0;
@@ -606,31 +606,6 @@
     }
   }
   .campaign-container-3 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 602px;
-      background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-3", 375px 623px, "png");
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 928px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-3_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-    }
-    p {
-      color: #444444;
-    }
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      @media(max-width: $screen-xs-max) {
-        height: 466px;
-      }
-    }
-  }
-  .campaign-container-4 {
    @media(max-width: $screen-xs-max) {
      padding: 0 10px;
      height: 602px;
@@ -657,40 +632,65 @@
       }
     }
  }
-  .campaign-container-5 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 620px, "png");
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 1358px;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-    }
-    p {
-      color: #444444;
-      @media(max-width: $screen-xs-max) {
-        font-size: 18px;
-        line-height: 18px;
-      }
-    }
-  }
-  .campaign-container-6 {
+  //.campaign-container-4 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 602px;
+  //    background-repeat: no-repeat;
+  //    @include retina-image("../assets/images/mobile/data-model/data-model-bg-3", 375px 623px, "png");
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 928px;
+  //    background-repeat: no-repeat;
+  //    background-image: url(../assets/images/mobile/data-model/data-model-bg-3_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //  }
+  //  p {
+  //    color: #444444;
+  //  }
+  //  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //    @media(max-width: $screen-xs-max) {
+  //      height: 466px;
+  //    }
+  //  }
+  //}
+  //.campaign-container-5 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 602px;
+  //    @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 620px, "png");
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 1358px;
+  //    background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //  }
+  //  p {
+  //    color: #444444;
+  //    @media(max-width: $screen-xs-max) {
+  //      font-size: 18px;
+  //      line-height: 18px;
+  //    }
+  //  }
+  //}
+  .campaign-container-4 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 602px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-6", 375px 620px, "png");
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-4", 375px 620px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1052px;
+      height: 906px;
       background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-6_2x.png);
+      background-image: url(../assets/images/mobile/data-model/data-model-bg-4_2x.png);
     }
 
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -706,14 +706,14 @@
       color: #444444;
     }
   }
-  .btn-orange {
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      @media(max-width: $screen-xs-max) {
-        margin-top: 134%;
-      }
-    }
-
-  }
+  //.btn-orange {
+  //  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //    @media(max-width: $screen-xs-max) {
+  //      margin-top: 60px;
+  //    }
+  //  }
+  //
+  //}
 }
 
 
@@ -1130,14 +1130,14 @@
     }
   }
 
-  .btn-orange {
-    @media(max-width: $screen-xs-max) {
-      margin-top: 13%;
-    }
-    @media(min-width: $screen-sm-min) {
-      margin-top: 13%;
-    }
-  }
+  //.btn-orange {
+  //  @media(max-width: $screen-xs-max) {
+  //    margin-top: 13%;
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    margin-top: 13%;
+  //  }
+  //}
 
   .hotspots {
     @media(min-width: $screen-sm-min) {
@@ -1443,14 +1443,14 @@
     }
   }
 
-  .btn-orange {
-    @media(max-width: $screen-xs-max) {
-      margin-top: 18%;
-    }
-    @media(min-width: $screen-sm-min) {
-      margin-top: 18%;
-    }
-  }
+  //.btn-orange {
+  //  @media(max-width: $screen-xs-max) {
+  //    margin-top: 18%;
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    margin-top: 18%;
+  //  }
+  //}
 
   .did-you-know-2 p {
     @media(max-width: $screen-xs-max) {
