@@ -154,7 +154,7 @@
       padding: 0px 20px 70px;
     }
     h2 {
-      color: #89b117;
+      color: #00a1e0;
       font-family: $proximanova;
       font-weight: normal;
       @media(min-width: $screen-sm-min) {
@@ -568,16 +568,6 @@
       background-image: url(../assets/images/mobile/data-model/data-model-bg-1_2x.png);
       background-repeat: no-repeat;
     }
-    //h1 {
-    //  color: #00a1e0;
-    //}
-    //p {
-    //  color: #444444;
-    //  @media(max-width: $screen-xs-max) {
-    //    font-size: 18px;
-    //    line-height: 18px;
-    //  }
-    //}
   }
 
   .campaign-container-2 {
@@ -715,6 +705,162 @@
   //
   //}
 }
+
+/************************
+  Build a Process
+************************/
+.build-a-process {
+  .campaign-container {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-1", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1453px;
+      background-image: url(../assets/images/mobile/build-a-process/build-process-bg-1_2x.png);
+      background-repeat: no-repeat;
+    }
+  }
+
+  .campaign-container-2 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 600px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-2", 375px 623px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 870px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/mobile/build-a-process/build-process-bg-2_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 448px;
+      }
+    }
+  }
+  .campaign-container-3 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-3", 375px 623px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 928px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/mobile/build-a-process/build-process-bg-3_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 466px;
+      }
+    }
+  }
+  .campaign-container-4 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1540px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 760px;
+      }
+    }
+  }
+  .campaign-container-5 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1358px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        line-height: 18px;
+      }
+    }
+  }
+  .campaign-container-6 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 602px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-6", 375px 620px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1034px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/mobile/build-a-process/build-process-bg-6_2x.png);
+    }
+
+    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+      @media(max-width: $screen-xs-max) {
+        height: 525px;
+      }
+    }
+
+    h1 {
+      color: #00a1e0;
+    }
+    p {
+      color: #444444;
+    }
+  }
+  .text-center {
+    .btn-orange {
+      margin-top: 150%;
+      @media(min-width: $screen-sm-min) {
+        margin-top: 130%;
+      }
+    }
+  }
+}
+
+
 
 
 
