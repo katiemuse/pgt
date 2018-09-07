@@ -222,13 +222,14 @@
     h1 {
       color: $text-color-white;
       font-family: $proximanova;
-      font-weight: normal;
+      font-weight: bold;
       @media(min-width: $screen-sm-min) {
         font-size: 44px;
       }
     }
     p {
       color: $text-color-white;
+      margin-top: 32px;
     }
     .did-you-know-icon {
       position: absolute;
@@ -1186,6 +1187,276 @@
   }
 }
 
+.add-app-exchange {
+  .hero {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 623px;
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-1", 375px 648px, "png");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1496px;
+      background-image: url(../assets/images/mobile/add-app-exchange/add-app-exchange-bg-1_2x.png);
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 1404px;
+      }
+    }
+    h1 {
+      color: #00a1e0;
+      padding-bottom: 5px;
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        line-height: 18px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 12px 0;
+      }
+    }
+  }
+
+  .mobile-app-bkg-2 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 603px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2", 375px 636px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 874px;
+        padding: 15px 10px;
+      }
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1570px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    ul {
+      font-size: 36px;
+      @media(max-width: $screen-xs-max) {
+        color: #444444;
+        font-size: 14px;
+        line-height: 14px;
+        margin: 0;
+        padding: 10px 36px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 22px 66px;
+      }
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .mobile-app-bkg-3 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 477px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-3", 375px 469px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 760px;
+      }
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 900px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/mobile/add-app-exchange/add-app-exchange-bg-3_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        font-size: 20px;
+        line-height: 20px;
+      }
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        line-height: 18px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .mobile-app-bkg-5 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 558px;
+      background-repeat: no-repeat;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 914px;
+      }
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 897px;
+      background-repeat: no-repeat;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 16px;
+        line-height: 16px;
+        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+          font-size: 20px;
+          line-height: 20px;
+        }
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+  .text-center {
+    .btn-orange {
+      margin-top: 20%;
+      @media(min-width: $screen-sm-min) {
+        margin-top: 10%;
+      }
+    }
+  }
+
+  .mobile-app-instruction {
+    @media(min-width: $screen-sm-min) {
+      height: 398px;
+    }
+
+    @media(max-width: $screen-xs-max) {
+      height: 186px;
+    }
+    h1 {
+      color: #00a1e0;
+      padding: 8px 0;
+    }
+
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+        line-height: 18px;
+      }
+      @media(min-width: $screen-sm-min) {
+        padding: 8px 0;
+      }
+    }
+  }
+
+
+  .mobile-app-bkg-6 {
+    @media(max-width: $screen-xs-max) {
+      padding: 0 10px;
+      height: 583px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 583px, "png");
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        height: 534px;
+      }
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 0 20px;
+      height: 1070px;
+      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6_2x.png);
+    }
+    h1 {
+      color: #00a1e0;
+    }
+  }
+
+  .hotspots {
+    @media(max-width: $screen-xs-max) {
+      padding-bottom: 44px;
+    }
+    @media(min-width: $screen-sm-min) {
+      padding-bottom: 100px;
+    }
+  }
+  .dyk {
+    @media(max-width: $screen-xs-max) {
+      padding: 84px 10px;
+      height: 438px;
+      @include retina-image("../assets/images/backgrounds/mobile-landing-page-background", 375px 438px, "jpg");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 168px 20px;
+      height: 876px;
+      background-image: url(../assets/images/backgrounds/mobile-landing-page-background_2x.jpg);
+    }
+    h2 {
+      margin-top: 0;
+    }
+  }
+  .lp {
+    @media(max-width: $screen-xs-max) {
+      padding: 25px 10px;
+      height: 690px;
+      @include retina-image("../assets/images/backgrounds/mobile-build-a-form-did-you-know", 375px 690px, "jpg");
+    }
+    @media(min-width: $screen-sm-min) {
+      padding: 50px 20px;
+      height: 1380px;
+      background-image: url(../assets/images/backgrounds/mobile-build-a-form-did-you-know_2x.jpg);
+    }
+    h2 {
+      @media(max-width: $screen-xs-max) {
+        margin-top: 15px;
+      }
+      @media(min-width: $screen-sm-min) {
+        margin-top: 30px;
+      }
+    }
+    p {
+      @media(max-width: $screen-xs-max) {
+        font-size: 18px;
+      }
+      @media(min-width: $screen-sm-min) {
+        font-size: 36px;
+      }
+    }
+  }
+}
+
 /************************
   Build a Data Model
 ************************/
@@ -1599,7 +1870,7 @@
 
   .did-you-know-2 p {
     @media(max-width: $screen-xs-max) {
-      margin-top: 32px;
+      margin-top: 28px;
     }
 
     @media(min-width: $screen-sm-min) {
