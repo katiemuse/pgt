@@ -1458,10 +1458,10 @@
 }
 
 /************************
-  Build a Data Model
+ Customize the Action Bar
 ************************/
 
-.build-your-app {
+.customize-action-bar {
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
@@ -1546,14 +1546,14 @@
     }
   }
 
-  //.btn-orange {
-  //  @media(max-width: $screen-xs-max) {
-  //    margin-top: 13%;
-  //  }
-  //  @media(min-width: $screen-sm-min) {
-  //    margin-top: 13%;
-  //  }
-  //}
+  .btn-orange {
+    @media(max-width: $screen-xs-max) {
+      margin-top: 13%;
+    }
+    @media(min-width: $screen-sm-min) {
+      margin-top: 13%;
+    }
+  }
 
   .hotspots {
     @media(min-width: $screen-sm-min) {
