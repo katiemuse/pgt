@@ -1859,14 +1859,14 @@
     }
   }
 
-  //.btn-orange {
-  //  @media(max-width: $screen-xs-max) {
-  //    margin-top: 18%;
-  //  }
-  //  @media(min-width: $screen-sm-min) {
-  //    margin-top: 18%;
-  //  }
-  //}
+  .text-center {
+    .btn-orange {
+      margin-top: 20%;
+      @media(min-width: $screen-sm-min) {
+        margin-top: 10%;
+      }
+    }
+  }
 
   .did-you-know-2 p {
     @media(max-width: $screen-xs-max) {
