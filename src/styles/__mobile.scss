@@ -697,14 +697,14 @@
       color: #444444;
     }
   }
-  //.btn-orange {
-  //  @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-  //    @media(max-width: $screen-xs-max) {
-  //      margin-top: 60px;
-  //    }
-  //  }
-  //
-  //}
+  .text-center {
+    .btn-orange {
+      margin-top: 10%;
+      @media(min-width: $screen-sm-min) {
+        margin-top: 10%;
+      }
+    }
+  }
 }
 
 /************************
