@@ -560,8 +560,8 @@
   .campaign-container {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 620px, "png");
+      height: 700px;
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 716px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -574,9 +574,9 @@
   .campaign-container-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 600px;
+      height: 420px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/data-model/data-model-bg-2", 375px 623px, "png");
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-2", 375px 435px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -599,8 +599,8 @@
   .campaign-container-3 {
    @media(max-width: $screen-xs-max) {
      padding: 0 10px;
-     height: 602px;
-     @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 620px, "png");
+     height: 770px;
+     @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 770px, "png");
    }
    @media(min-width: $screen-sm-min) {
      padding: 0 20px;
@@ -673,9 +673,9 @@
   .campaign-container-4 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
+      height: 435px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/data-model/data-model-bg-4", 375px 620px, "png");
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-4", 375px 435px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -714,8 +714,8 @@
   .campaign-container {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-1", 375px 620px, "png");
+      height: 716px;
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-1", 375px 726px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -728,9 +728,9 @@
   .campaign-container-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 600px;
+      height: 420px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-2", 375px 623px, "png");
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-2", 375px 435px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -753,9 +753,9 @@
   .campaign-container-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
+      height: 464px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-3", 375px 623px, "png");
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-3", 375px 464px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -778,8 +778,8 @@
   .campaign-container-4 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 620px, "png");
+      height: 770px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 770px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -805,8 +805,8 @@
   .campaign-container-5 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 620px, "png");
+      height: 679px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 679px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -827,9 +827,9 @@
   .campaign-container-6 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
+      height: 517px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-6", 375px 620px, "png");
+      @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-6", 375px 517px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -853,7 +853,7 @@
   }
   .text-center {
     .btn-orange {
-      margin-top: 150%;
+      margin-top: 130%;
       @media(min-width: $screen-sm-min) {
         margin-top: 130%;
       }
@@ -869,8 +869,8 @@
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 602px, "png");
+      height: 701px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 701px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -902,9 +902,9 @@
   .mobile-app-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 908px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 636px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 915px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 874px;
         padding: 15px 10px;
@@ -953,121 +953,121 @@
     }
   }
 
-  .mobile-app-bkg-3 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 619px;
-      background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 633px, "png");
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 722px;
-      }
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 1428px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-      padding: 8px 0;
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        font-size: 20px;
-        line-height: 20px;
-      }
-    }
+  //.mobile-app-bkg-3 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 619px;
+  //    background-repeat: no-repeat;
+  //    @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3", 375px 633px, "png");
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      height: 722px;
+  //    }
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 1428px;
+  //    background-repeat: no-repeat;
+  //    background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-3_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //    padding: 8px 0;
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      font-size: 20px;
+  //      line-height: 20px;
+  //    }
+  //  }
+  //
+  //  p {
+  //    @media(max-width: $screen-xs-max) {
+  //      font-size: 18px;
+  //      line-height: 18px;
+  //      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //        font-size: 20px;
+  //        line-height: 20px;
+  //      }
+  //    }
+  //    @media(min-width: $screen-sm-min) {
+  //      padding: 8px 0;
+  //    }
+  //  }
+  //}
 
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18px;
-        line-height: 18px;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          font-size: 20px;
-          line-height: 20px;
-        }
-      }
-      @media(min-width: $screen-sm-min) {
-        padding: 8px 0;
-      }
-    }
-  }
+  //.mobile-app-bkg-4 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 596px;
+  //    background-repeat: no-repeat;
+  //    @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 608px, "png");
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      height: 760px;
+  //    }
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 1576px;
+  //    background-repeat: no-repeat;
+  //    background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //    padding: 8px 0;
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      font-size: 20px;
+  //      line-height: 20px;
+  //    }
+  //  }
+  //
+  //  p {
+  //    @media(max-width: $screen-xs-max) {
+  //      font-size: 18px;
+  //      line-height: 18px;
+  //      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //        font-size: 20px;
+  //        line-height: 20px;
+  //      }
+  //    }
+  //    @media(min-width: $screen-sm-min) {
+  //      padding: 8px 0;
+  //    }
+  //  }
+  //}
 
-  .mobile-app-bkg-4 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 596px;
-      background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4", 375px 608px, "png");
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 760px;
-      }
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 1576px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-4_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-      padding: 8px 0;
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        font-size: 20px;
-        line-height: 20px;
-      }
-    }
-
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18px;
-        line-height: 18px;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          font-size: 20px;
-          line-height: 20px;
-        }
-      }
-      @media(min-width: $screen-sm-min) {
-        padding: 8px 0;
-      }
-    }
-  }
-
-  .mobile-app-bkg-5 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 558px;
-      background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 914px;
-      }
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 897px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-      padding: 8px 0;
-      }
-
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 16px;
-        line-height: 16px;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          font-size: 20px;
-          line-height: 20px;
-        }
-      }
-      @media(min-width: $screen-sm-min) {
-        padding: 8px 0;
-      }
-    }
-  }
+  //.mobile-app-bkg-5 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 558px;
+  //    background-repeat: no-repeat;
+  //    @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      height: 914px;
+  //    }
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 897px;
+  //    background-repeat: no-repeat;
+  //    background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //    padding: 8px 0;
+  //    }
+  //
+  //  p {
+  //    @media(max-width: $screen-xs-max) {
+  //      font-size: 16px;
+  //      line-height: 16px;
+  //      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //        font-size: 20px;
+  //        line-height: 20px;
+  //      }
+  //    }
+  //    @media(min-width: $screen-sm-min) {
+  //      padding: 8px 0;
+  //    }
+  //  }
+  //}
 
   .mobile-app-instruction {
     @media(min-width: $screen-sm-min) {
@@ -1097,8 +1097,8 @@
   .mobile-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 583px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 583px, "png");
+      height: 535px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 535px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 534px;
       }
@@ -1113,26 +1113,26 @@
     }
   }
 
-  .mobile-app-bkg-7 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 558px;
-      background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7", 375px 558px, "png");
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 443px;
-      }
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 885px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-    }
-  }
+  //.mobile-app-bkg-7 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 558px;
+  //    background-repeat: no-repeat;
+  //    @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7", 375px 558px, "png");
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      height: 443px;
+  //    }
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 885px;
+  //    background-repeat: no-repeat;
+  //    background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-7_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //  }
+  //}
 
   .hotspots {
     @media(max-width: $screen-xs-max) {
@@ -1191,8 +1191,8 @@
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 623px;
-      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-1", 375px 648px, "png");
+      height: 718px;
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-1", 375px 734px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -1224,9 +1224,9 @@
   .mobile-app-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 770px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2", 375px 636px, "png");
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2", 375px 785px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 874px;
         padding: 15px 10px;
@@ -1278,9 +1278,9 @@
   .mobile-app-bkg-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 477px;
+      height: 450px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-3", 375px 469px, "png");
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-3", 375px 450px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 760px;
       }
@@ -1315,41 +1315,41 @@
     }
   }
 
-  .mobile-app-bkg-5 {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
-      height: 558px;
-      background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 914px;
-      }
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
-      height: 897px;
-      background-repeat: no-repeat;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_2x.png);
-    }
-    h1 {
-      color: #00a1e0;
-      padding: 8px 0;
-    }
-
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 16px;
-        line-height: 16px;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          font-size: 20px;
-          line-height: 20px;
-        }
-      }
-      @media(min-width: $screen-sm-min) {
-        padding: 8px 0;
-      }
-    }
-  }
+  //.mobile-app-bkg-5 {
+  //  @media(max-width: $screen-xs-max) {
+  //    padding: 0 10px;
+  //    height: 558px;
+  //    background-repeat: no-repeat;
+  //    @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5", 375px 558px, "png");
+  //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //      height: 914px;
+  //    }
+  //  }
+  //  @media(min-width: $screen-sm-min) {
+  //    padding: 0 20px;
+  //    height: 897px;
+  //    background-repeat: no-repeat;
+  //    background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-5_2x.png);
+  //  }
+  //  h1 {
+  //    color: #00a1e0;
+  //    padding: 8px 0;
+  //  }
+  //
+  //  p {
+  //    @media(max-width: $screen-xs-max) {
+  //      font-size: 16px;
+  //      line-height: 16px;
+  //      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  //        font-size: 20px;
+  //        line-height: 20px;
+  //      }
+  //    }
+  //    @media(min-width: $screen-sm-min) {
+  //      padding: 8px 0;
+  //    }
+  //  }
+  //}
 
   .text-center {
     .btn-orange {
@@ -1388,8 +1388,8 @@
   .mobile-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 583px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 583px, "png");
+      height: 535px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 535px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 534px;
       }
@@ -1465,8 +1465,8 @@
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 602px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-hero", 375px 602px, "png");
+      height: 686px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-hero", 375px 686px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -1491,9 +1491,9 @@
   .customize-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 608px;
+      height: 660px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2", 375px 622px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2", 375px 683px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -1520,9 +1520,9 @@
   .customize-bkg-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 603px;
+      height: 568px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-3", 375px 620px, "png");
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-3", 375px 585px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
@@ -1560,7 +1560,7 @@
       padding-bottom: 105px;
     }
     @media(max-width: $screen-xs-max) {
-      padding-bottom: 105px;
+      padding-bottom: 48px;
     }
   }
 
@@ -1649,8 +1649,8 @@
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 616px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 636px, "png");
+      height: 667px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 690px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 690px;
       }
@@ -1677,8 +1677,8 @@
   .your-app-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-2", 375px 540px, "png");
+      height: 471px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-2", 375px 471px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 470px;
       }
@@ -1710,8 +1710,8 @@
   .your-app-bkg-3 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-3", 375px 540px, "png");
+      height: 471px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-3", 375px 471px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 470px;
       }
@@ -1740,8 +1740,8 @@
   .your-app-bkg-4 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-4", 375px 540px, "png");
+      height: 471px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-4", 375px 471px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 505px;
       }
@@ -1770,8 +1770,8 @@
   .your-app-bkg-5 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-5", 375px 540px, "png");
+      height: 471px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-5", 375px 471px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 470px;
       }
@@ -1802,8 +1802,8 @@
   .your-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-6", 375px 540px, "png");
+      height: 506px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-6", 375px 506px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 470px;
       }
@@ -1832,8 +1832,8 @@
   .your-app-bkg-7 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
-      height: 540px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-7", 375px 540px, "png");
+      height: 471px;
+      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-7", 375px 471px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 470px;
       }
