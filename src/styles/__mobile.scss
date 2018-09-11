@@ -524,7 +524,7 @@
         }
       }
     }
-    .blue-container {
+    .welcome-container-2 {
       @media(max-width: $screen-xs-max) {
         @include retina-image("../assets/images/backgrounds/mobile-guided-tour-intro-astro-cody-img", 375px 627logopx, "png");
         padding: 38px 11px;
