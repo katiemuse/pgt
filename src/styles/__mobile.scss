@@ -1388,16 +1388,16 @@
   .mobile-app-bkg-6 {
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 535px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6", 375px 535px, "png");
+      height: 443px;
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-6-bg", 375px 443px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 534px;
       }
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1070px;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-6_2x.png);
+      height: 887px;
+      background-image: url(../assets/images/mobile/add-app-exchange/add-app-exchange-6-bg_2x.png);
     }
     h1 {
       color: #00a1e0;
