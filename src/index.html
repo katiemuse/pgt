@@ -104,11 +104,11 @@
     </div>
 
     <div class="container-fluid main mobile hidden-lg hidden-md">
-      <div class="top-nav-container" ng-hide="$state.current.name == 'intro'">
+      <div class="top-nav-container" ng-hide="$state.current.name == 'welcome'">
         <div class="row">
           <top-navbar-mobile></top-navbar-mobile>
         </div>
-        <div class="row product-tour">
+        <div class="row product-tour" ng-hide="$state.current.name == 'welcome'">
           <div class="col-xs-12">
             <h1>Product Tour</h1>
           </div>
