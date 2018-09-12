@@ -599,13 +599,13 @@
   .campaign-container-3 {
    @media(max-width: $screen-xs-max) {
      padding: 0 10px;
-     height: 770px;
-     @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 770px, "png");
+     height: 746px;
+     @include retina-image("../assets/images/mobile/data-model/data-model-bg-3", 375px 763px, "png");
    }
    @media(min-width: $screen-sm-min) {
      padding: 0 20px;
-     height: 1540px;
-     background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
+     height: 1526px;
+     background-image: url(../assets/images/mobile/data-model/data-model-bg-3_2x.png);
    }
    h1 {
      color: #00a1e0;
