@@ -858,14 +858,15 @@
 .add-logic {
   .hero {
     @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
+      padding: 20px 10px;
       height: 701px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 701px, "png");
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
+      padding: 30px 20px;
       height: 1402px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero_2x.png);
+      background-position: bottom;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 1404px;
       }
