@@ -60,7 +60,7 @@
   p {
     color: $color-text-header;
     font-size: 18px;
-    line-height: 18px;
+    line-height: 22px;
     margin: 0;
     @media(min-width: $screen-sm-min) {
       font-size: 38px;
@@ -614,7 +614,7 @@
      color: #444444;
      @media(max-width: $screen-xs-max) {
        font-size: 18px;
-       line-height: 18px;
+       line-height: 22px;
      }
    }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -738,17 +738,6 @@
       background-repeat: no-repeat;
       background-image: url(../assets/images/mobile/build-a-process/build-process-bg-2_2x.png);
     }
-    h1 {
-      color: #00a1e0;
-    }
-    p {
-      color: #444444;
-    }
-    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-      @media(max-width: $screen-xs-max) {
-        height: 448px;
-      }
-    }
   }
   .campaign-container-3 {
     @media(max-width: $screen-xs-max) {
@@ -793,7 +782,7 @@
       color: #444444;
       @media(max-width: $screen-xs-max) {
         font-size: 18px;
-        line-height: 18px;
+        line-height: 22px;
       }
     }
     @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -820,7 +809,7 @@
       color: #444444;
       @media(max-width: $screen-xs-max) {
         font-size: 18px;
-        line-height: 18px;
+        line-height: 22px;
       }
     }
   }
@@ -884,19 +873,18 @@
       color: #00a1e0;
       padding-bottom: 5px;
     }
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18px;
-        line-height: 18px;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          font-size: 20px;
-          line-height: 20px;
-        }
-      }
-      @media(min-width: $screen-sm-min) {
-        padding: 12px 0;
-      }
-    }
+    //p {
+    //  @media(max-width: $screen-xs-max) {
+    //    font-size: 18px;
+    //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    //      font-size: 20px;
+    //    }
+    //  }
+    //
+    //  @media(min-width: $screen-sm-min) {
+    //    padding: 12px 0;
+    //  }
+    //}
   }
 
   .mobile-app-bkg-2 {
@@ -925,13 +913,11 @@
       font-size: 36px;
       @media(max-width: $screen-xs-max) {
         color: #444444;
-        font-size: 14px;
-        line-height: 14px;
+        font-size: 16px;
         margin: 0;
         padding: 10px 36px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -941,7 +927,6 @@
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 16px;
-        line-height: 16px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
           line-height: 20px;
@@ -1085,7 +1070,6 @@
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 18px;
-        line-height: 18px;
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
@@ -1209,7 +1193,7 @@
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 18px;
-        line-height: 18px;
+        line-height: 22px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
           line-height: 20px;
@@ -1233,7 +1217,7 @@
       }
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
+      padding: 20px 20px;
       height: 1570px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2_2x.png);
@@ -1243,30 +1227,11 @@
       padding: 8px 0;
     }
 
-    ul {
-      font-size: 36px;
-      @media(max-width: $screen-xs-max) {
-        color: #444444;
-        font-size: 14px;
-        line-height: 14px;
-        margin: 0;
-        padding: 10px 36px;
-        @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-          font-size: 20px;
-          line-height: 20px;
-        }
-      }
-      @media(min-width: $screen-sm-min) {
-        padding: 22px 66px;
-      }
-    }
     p {
       @media(max-width: $screen-xs-max) {
-        font-size: 16px;
-        line-height: 16px;
+        font-size: 18px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
-          line-height: 20px;
         }
       }
       @media(min-width: $screen-sm-min) {
@@ -1480,7 +1445,6 @@
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 18px;
-        line-height: 18px;
       }
       @media(min-width: $screen-sm-min) {
         padding: 12px 0;
@@ -1509,7 +1473,6 @@
     p {
       @media(max-width: $screen-xs-max) {
         font-size: 18px;
-        line-height: 18px;
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
