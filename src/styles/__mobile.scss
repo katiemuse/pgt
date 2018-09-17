@@ -890,8 +890,9 @@
   }
 
   .mobile-app-bkg-2 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
+      padding: 20px 10px;
       height: 908px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 915px, "png");
@@ -901,7 +902,7 @@
       }
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
+      padding: 30px 20px;
       height: 1830px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2_2x.png);
@@ -915,7 +916,7 @@
       font-size: 36px;
       @media(max-width: $screen-xs-max) {
         color: #444444;
-        font-size: 16px;
+        font-size: 18px;
         margin: 0;
         padding: 10px 36px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -928,7 +929,7 @@
     }
     p {
       @media(max-width: $screen-xs-max) {
-        font-size: 16px;
+        font-size: 18px;
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
           line-height: 20px;
