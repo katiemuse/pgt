@@ -843,8 +843,8 @@
   }
   .text-center {
     .btn-orange {
-      margin-top: 130%;
-      @media(min-width: $screen-sm-min) {
+      margin-top: 405px;
+      @media(min-width: $screen-xs-max) {
         margin-top: 130%;
       }
     }
