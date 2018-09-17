@@ -1432,12 +1432,12 @@
 .customize-action-bar {
   .hero {
     @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
+      padding: 20px 10px;
       height: 686px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-hero", 375px 686px, "png");
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
+      padding: 30px 20px;
       height: 1373px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-customize-hero_2x.png);
     }
