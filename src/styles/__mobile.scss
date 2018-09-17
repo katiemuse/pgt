@@ -1100,6 +1100,14 @@
     }
   }
 
+  .btn-orange {
+    margin-top: 420px;
+    @media(min-width: $screen-xs-max) {
+      margin-top: 130%;
+    }
+  }
+
+
   //.mobile-app-bkg-7 {
   //  @media(max-width: $screen-xs-max) {
   //    padding: 0 10px;
