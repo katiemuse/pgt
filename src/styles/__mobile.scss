@@ -1611,6 +1611,18 @@
 //}
 
 .app-in-action {
+  p {
+    @media(max-width: $screen-xs-max) {
+      font-size: 18.5px;
+      color: $text-color-white;
+      padding-top: 44px;
+    }
+    @media(min-width: $screen-sm-min) {
+      font-size: 37px;
+      color: $text-color-white;
+      padding-top: 70px;
+    }
+  }
   .hero {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;
@@ -1626,8 +1638,10 @@
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-hero_2x.png);
     }
     p {
+      color: $text-color;
       @media(max-width: $screen-xs-max) {
         font-size: 18.5px;
+        padding-top: 10px;
       }
       @media(min-width: $screen-sm-min) {
         font-size: 37px;
@@ -1654,18 +1668,7 @@
       height: 942px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-2_2x.png);
     }
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        color: $text-color-white;
-        padding-top: 70px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        color: $text-color-white;
-        padding-top: 70px;
-      }
-    }
+
     h1 {
       color: #00a1e0;
       padding: 8px 0;
@@ -1687,14 +1690,7 @@
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-3_2x.png);
     }
     p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        padding-top: 56px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        padding-top: 70px;
-      }
+      color: $text-color;
     }
     h1 {
       color: #00a1e0;
@@ -1717,14 +1713,7 @@
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-4_2x.png);
     }
     p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        padding-top: 56px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        padding-top: 70px;
-      }
+      color: $text-color;
     }
     h1 {
       color: #00a1e0;
@@ -1746,18 +1735,7 @@
       height: 942px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-5_2x.png);
     }
-    p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        color: $text-color-white;
-        padding-top: 56px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        color: $text-color-white;
-        padding-top: 70px;
-      }
-    }
+
     h1 {
       color: #00a1e0;
       padding: 8px 0;
@@ -1779,14 +1757,7 @@
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-6_2x.png);
     }
     p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        padding-top: 56px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        padding-top: 70px;
-      }
+      color: $text-color;
     }
     h1 {
       color: #00a1e0;
@@ -1809,14 +1780,7 @@
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-bkg-7_2x.png);
     }
     p {
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        padding-top: 56px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        padding-top: 70px;
-      }
+      color: $text-color;
     }
     h1 {
       color: #00a1e0;
@@ -1830,16 +1794,6 @@
       @media(min-width: $screen-sm-min) {
         margin-top: 10%;
       }
-    }
-  }
-
-  .did-you-know-2 p {
-    @media(max-width: $screen-xs-max) {
-      margin-top: 28px;
-    }
-
-    @media(min-width: $screen-sm-min) {
-      margin-top: 32px;
     }
   }
 
