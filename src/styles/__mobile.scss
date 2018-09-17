@@ -603,7 +603,7 @@
      @include retina-image("../assets/images/mobile/data-model/data-model-bg-3", 375px 763px, "png");
    }
    @media(min-width: $screen-sm-min) {
-     padding: 0 20px;
+     padding: 20px 20px;
      height: 1526px;
      background-image: url(../assets/images/mobile/data-model/data-model-bg-3_2x.png);
    }
