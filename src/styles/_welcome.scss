@@ -10,6 +10,7 @@
 }
 
 .welcome-page {
+  overflow: hidden;
   h1 {
     color: $color-text-header;
     font-family: $salesforcesans;
