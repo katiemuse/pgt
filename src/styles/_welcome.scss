@@ -10,6 +10,7 @@
 }
 
 .welcome-page {
+  overflow: hidden;
   h1 {
     color: $color-text-header;
     font-family: $salesforcesans;
@@ -106,7 +107,7 @@
       @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
         font-size: 94px;
         margin-top: 20px;
-        margin-bottom: 60px;
+        margin-bottom: 24px;
       }
       @media (min-width: $screen-md-min) {
         font-size: 74px;
@@ -530,7 +531,7 @@
       margin-top: 132%;
       text-decoration: none;
       @media (max-width: $screen-xs-max) {
-        margin-top: 133%;
+        margin-top: 140%;
       }
     }
   }
