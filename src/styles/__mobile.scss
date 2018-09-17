@@ -718,7 +718,7 @@
       @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-1", 375px 726px, "png");
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
+      padding:  20px;
       height: 1453px;
       background-image: url(../assets/images/mobile/build-a-process/build-process-bg-1_2x.png);
       background-repeat: no-repeat;
@@ -766,12 +766,12 @@
   }
   .campaign-container-4 {
     @media(max-width: $screen-xs-max) {
-      padding: 0 10px;
+      padding: 10px 10px;
       height: 770px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 770px, "png");
     }
     @media(min-width: $screen-sm-min) {
-      padding: 0 20px;
+      padding: 20px 20px;
       height: 1540px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4_2x.png);
     }
