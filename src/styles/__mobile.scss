@@ -1689,6 +1689,11 @@
       color: #00a1e0;
       padding: 8px 0;
     }
+    p {
+      @media(max-width: 321px) {
+        padding-top: 40px;
+      }
+    }
   }
 
   .your-app-bkg-3 {
@@ -1707,6 +1712,9 @@
     }
     p {
       color: $text-color;
+      @media(max-width: 321px) {
+        padding-top: 40px;
+      }
     }
     h1 {
       color: #00a1e0;
@@ -1755,6 +1763,11 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
+    }
+    p {
+      @media(max-width: 321px) {
+        padding-top: 40px;
+      }
     }
   }
 
