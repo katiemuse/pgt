@@ -1449,6 +1449,9 @@
       height: 686px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-hero", 375px 686px, "png");
     }
+    @media(max-width: 331px) {
+      padding: 0 10px;
+    }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
       height: 1373px;
