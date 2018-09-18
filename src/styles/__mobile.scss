@@ -1236,6 +1236,9 @@
         padding: 15px 10px;
       }
     }
+    @media(max-width: 360px) {
+      height: 700px;
+    }
     @media(min-width: $screen-sm-min) {
       padding: 20px 20px;
       height: 1400px;
@@ -1253,9 +1256,6 @@
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
         }
-      }
-      @media(max-width: 360px) {
-        font-size: 16px;
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
