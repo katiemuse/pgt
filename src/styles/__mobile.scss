@@ -856,16 +856,19 @@
 
 .add-logic {
   .hero {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 20px 10px;
-      height: 701px;
+      height: 680px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 701px, "png");
+    }
+    @media(max-width: 331px) {
+      height: 700px;
     }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
-      height: 1402px;
+      height: 1360px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero_2x.png);
-      background-position: bottom;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 1404px;
       }
@@ -875,15 +878,11 @@
       padding-bottom: 5px;
     }
     //p {
-    //  @media(max-width: $screen-xs-max) {
-    //    font-size: 18px;
+    //  @media(max-width: 331px) {
+    //    font-size: 16px;
     //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     //      font-size: 20px;
     //    }
-    //  }
-    //
-    //  @media(min-width: $screen-sm-min) {
-    //    padding: 12px 0;
     //  }
     //}
   }
