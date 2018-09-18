@@ -891,7 +891,7 @@
     background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 20px 10px;
-      height: 908px;
+      height: 884px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 915px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -899,9 +899,12 @@
         padding: 15px 10px;
       }
     }
+    @media(max-width: 331px) {
+      height: 924px;
+    }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
-      height: 1830px;
+      height: 1780px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2_2x.png);
     }
