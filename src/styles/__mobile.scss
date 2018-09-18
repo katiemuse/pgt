@@ -1183,7 +1183,7 @@
 .add-app-exchange {
   .hero {
     @media(max-width: $screen-xs-max) {
-      padding: 0 22px;
+      padding: 0 10px;
       height: 718px;
       @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-1", 375px 734px, "png");
     }
@@ -1217,8 +1217,8 @@
   .mobile-app-bkg-2 {
     background-position: bottom;
     @media(max-width: $screen-xs-max) {
-      padding: 0 22px;
-      height: 700px;
+      padding: 0 10px;
+      height: 662px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2", 375px 727px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -1243,6 +1243,9 @@
         @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
           font-size: 20px;
         }
+      }
+      @media(max-width: 360px) {
+        font-size: 16px;
       }
       @media(min-width: $screen-sm-min) {
         padding: 8px 0;
