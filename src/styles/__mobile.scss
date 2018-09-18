@@ -1216,6 +1216,7 @@
   }
 
   .mobile-app-bkg-2 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
       height: 770px;
