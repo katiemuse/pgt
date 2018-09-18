@@ -230,6 +230,7 @@
     p {
       color: $text-color-white;
       margin-top: 5px;
+      margin-bottom: 15px;
     }
     .did-you-know-icon {
       position: absolute;
@@ -480,6 +481,9 @@
           margin-top: 10px;
           margin-bottom: 30px;
         }
+        @media(max-width: 340px) {
+          font-size: 40px;
+        }
         @media(min-width: $screen-sm-min) {
           font-size: 95px;
           margin-top: 20px;
@@ -491,6 +495,9 @@
           font-size: 36px;
           margin-top: 45px;
           margin-bottom: 0;
+        }
+        @media(max-width: 340px) {
+          font-size: 30px;
         }
         @media(min-width: $screen-sm-min) {
           font-size: 36px;
@@ -721,7 +728,6 @@
       height: 1453px;
       background-image: url(../assets/images/mobile/build-a-process/build-process-bg-1_2x.png);
       background-repeat: no-repeat;
-      background-position: bottom;
     }
   }
 
@@ -792,14 +798,15 @@
     }
   }
   .campaign-container-5 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 679px;
+      height: 624px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5", 375px 679px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
-      height: 1358px;
+      height: 1240px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-5_2x.png);
     }
     h1 {
@@ -856,16 +863,19 @@
 
 .add-logic {
   .hero {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 20px 10px;
-      height: 701px;
+      height: 680px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero", 375px 701px, "png");
+    }
+    @media(max-width: 331px) {
+      height: 700px;
     }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
-      height: 1402px;
+      height: 1360px;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-a-mobile-app-hero_2x.png);
-      background-position: bottom;
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 1404px;
       }
@@ -875,15 +885,11 @@
       padding-bottom: 5px;
     }
     //p {
-    //  @media(max-width: $screen-xs-max) {
-    //    font-size: 18px;
+    //  @media(max-width: 331px) {
+    //    font-size: 16px;
     //    @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
     //      font-size: 20px;
     //    }
-    //  }
-    //
-    //  @media(min-width: $screen-sm-min) {
-    //    padding: 12px 0;
     //  }
     //}
   }
@@ -892,7 +898,7 @@
     background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 20px 10px;
-      height: 908px;
+      height: 884px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2", 375px 915px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
@@ -900,9 +906,12 @@
         padding: 15px 10px;
       }
     }
+    @media(max-width: 331px) {
+      height: 924px;
+    }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
-      height: 1830px;
+      height: 1780px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-build-an-app-bkg-2_2x.png);
     }
@@ -1216,19 +1225,23 @@
   }
 
   .mobile-app-bkg-2 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 770px;
+      height: 662px;
       background-repeat: no-repeat;
-      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2", 375px 785px, "png");
+      @include retina-image("../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2", 375px 727px, "png");
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         height: 874px;
         padding: 15px 10px;
       }
     }
+    @media(max-width: 360px) {
+      height: 700px;
+    }
     @media(min-width: $screen-sm-min) {
       padding: 20px 20px;
-      height: 1570px;
+      height: 1400px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/mobile/add-app-exchange/add-app-exchange-bg-2_2x.png);
     }
@@ -1443,6 +1456,9 @@
       height: 686px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-hero", 375px 686px, "png");
     }
+    @media(max-width: 331px) {
+      padding: 0 10px;
+    }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
       height: 1373px;
@@ -1652,6 +1668,7 @@
       }
       @media(min-width: $screen-sm-min) {
         font-size: 37px;
+        padding-top: 34px;
       }
     }
     h1 {
@@ -1680,6 +1697,11 @@
       color: #00a1e0;
       padding: 8px 0;
     }
+    p {
+      @media(max-width: 321px) {
+        padding-top: 40px;
+      }
+    }
   }
 
   .your-app-bkg-3 {
@@ -1698,6 +1720,9 @@
     }
     p {
       color: $text-color;
+      @media(max-width: 321px) {
+        padding-top: 40px;
+      }
     }
     h1 {
       color: #00a1e0;
@@ -1746,6 +1771,11 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
+    }
+    p {
+      @media(max-width: 321px) {
+        padding-top: 40px;
+      }
     }
   }
 
