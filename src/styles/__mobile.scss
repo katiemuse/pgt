@@ -480,6 +480,9 @@
           margin-top: 10px;
           margin-bottom: 30px;
         }
+        @media(max-width: 340px) {
+          font-size: 40px;
+        }
         @media(min-width: $screen-sm-min) {
           font-size: 95px;
           margin-top: 20px;
@@ -491,6 +494,9 @@
           font-size: 36px;
           margin-top: 45px;
           margin-bottom: 0;
+        }
+        @media(max-width: 340px) {
+          font-size: 30px;
         }
         @media(min-width: $screen-sm-min) {
           font-size: 36px;
