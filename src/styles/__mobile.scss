@@ -1479,15 +1479,16 @@
   }
 
   .customize-bkg-2 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 660px;
+      height: 630px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2", 375px 683px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 20px 20px;
-      height: 1366px;
+      height: 1300px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2_2x.png);
     }
