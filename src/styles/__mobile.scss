@@ -569,6 +569,16 @@
       height: 700px;
       @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 716px, "png");
     }
+    @media(max-width: 377px) {
+      background-position: top;
+      background-repeat: no-repeat;
+      height: 717px;
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 733px, "png");
+    }
+    @media(max-width: 322px) {
+      height: 730px;
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 744px, "png");
+    }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 1453px;
@@ -1671,6 +1681,9 @@
         font-size: 18.5px;
         padding-top: 10px;
       }
+      @media(max-width: 321px) {
+        padding-top: 0px;
+      }
       @media(min-width: $screen-sm-min) {
         font-size: 37px;
         padding-top: 34px;
@@ -1679,6 +1692,9 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
+      @media(max-width: 321px) {
+        padding-top: 5px 0;
+      }
     }
   }
 
@@ -1726,7 +1742,7 @@
     p {
       color: $text-color;
       @media(max-width: 321px) {
-        padding-top: 40px;
+        padding-top: 28px;
       }
     }
     h1 {
@@ -1779,7 +1795,7 @@
     }
     p {
       @media(max-width: 321px) {
-        padding-top: 40px;
+        padding-top: 28px;
       }
     }
   }
