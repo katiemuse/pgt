@@ -229,7 +229,7 @@
     }
     p {
       color: $text-color-white;
-      margin-top: 5px;
+      margin-top: 40px;
       margin-bottom: 15px;
     }
     .did-you-know-icon {
@@ -569,6 +569,16 @@
       height: 700px;
       @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 716px, "png");
     }
+    @media(max-width: 377px) {
+      background-position: top;
+      background-repeat: no-repeat;
+      height: 717px;
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 733px, "png");
+    }
+    @media(max-width: 322px) {
+      height: 730px;
+      @include retina-image("../assets/images/mobile/data-model/data-model-bg-1", 375px 744px, "png");
+    }
     @media(min-width: $screen-sm-min) {
       padding: 0 20px;
       height: 1453px;
@@ -718,10 +728,14 @@
 ************************/
 .build-a-process {
   .campaign-container {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 716px;
+      height: 700px;
       @include retina-image("../assets/images/mobile/build-a-process/build-process-bg-1", 375px 726px, "png");
+    }
+    @media(max-width: 352px) {
+      height: 720px;
     }
     @media(min-width: $screen-sm-min) {
       padding:  20px;
@@ -908,6 +922,9 @@
     }
     @media(max-width: 331px) {
       height: 924px;
+    }
+    @media(max-width: 321px) {
+      height: 950px;
     }
     @media(min-width: $screen-sm-min) {
       padding: 30px 20px;
@@ -1479,15 +1496,16 @@
   }
 
   .customize-bkg-2 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 0 10px;
-      height: 660px;
+      height: 630px;
       background-repeat: no-repeat;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2", 375px 683px, "png");
     }
     @media(min-width: $screen-sm-min) {
       padding: 20px 20px;
-      height: 1366px;
+      height: 1300px;
       background-repeat: no-repeat;
       background-image: url(../assets/images/backgrounds/mobile-guided-tour-customize-bkg-2_2x.png);
     }
@@ -1666,6 +1684,9 @@
         font-size: 18.5px;
         padding-top: 10px;
       }
+      @media(max-width: 321px) {
+        padding-top: 0px;
+      }
       @media(min-width: $screen-sm-min) {
         font-size: 37px;
         padding-top: 34px;
@@ -1674,6 +1695,9 @@
     h1 {
       color: #00a1e0;
       padding: 8px 0;
+      @media(max-width: 321px) {
+        padding-top: 5px 0;
+      }
     }
   }
 
@@ -1721,7 +1745,7 @@
     p {
       color: $text-color;
       @media(max-width: 321px) {
-        padding-top: 40px;
+        padding-top: 28px;
       }
     }
     h1 {
@@ -1774,7 +1798,7 @@
     }
     p {
       @media(max-width: 321px) {
-        padding-top: 40px;
+        padding-top: 28px;
       }
     }
   }
