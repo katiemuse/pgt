@@ -785,9 +785,10 @@
     }
   }
   .campaign-container-4 {
+    background-position: bottom;
     @media(max-width: $screen-xs-max) {
       padding: 10px 10px;
-      height: 770px;
+      height: 728px;
       @include retina-image("../assets/images/backgrounds/mobile-guided-tour-build-a-process-bkg-4", 375px 770px, "png");
     }
     @media(min-width: $screen-sm-min) {
