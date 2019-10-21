@@ -8,16 +8,6 @@ $progress-width-inactive: 100px;
 $progress-left: 50px;
 $progress-top: 15px;
 
-// .logo {
-//   width: 173px;
-//   height: 48px;
-//   display: block;
-//   background-image: url(../../../assets/images/logos/salesforce-customer-360-platform.png);
-//   background-size: 173px 48px;
-//   background-repeat: no-repeat;
-//   background-size: contain;
-// }
-
 .progress-no-scroll {
   position: relative;
   overflow: hidden;
@@ -84,7 +74,6 @@ $progress-top: 15px;
     position: fixed;
     left: 0;
     top: 0;
-    // transform: translateY(-50%);
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
     padding-top: $progress-top;
