@@ -22,7 +22,7 @@ $stepFive: #009cdb;
 $stepSix: #009cdb;
 
 $stepPositionFullWidthTop: 0;
-$stepPositionFullWidthBottom: 0;
+$stepPositionFullWidthBottom: 20px;
 
 $stepPositionTop: 126px;
 $stepPositionRight: 0px;
@@ -165,7 +165,7 @@ button.step-close-button {
       position:absolute;
       left:20px;
       top:13px;
-      color: $text-step-number-color;
+      color: $text-color-white;
       font-family: $salesforcesans;
       font-weight: bold;
       font-size:46px;
@@ -230,7 +230,7 @@ button.step-close-button {
 
 .step-one, .step-two, .step-three, .step-four, .step-five, .step-six {
   background-color: transparent;
-  background-image: linear-gradient(to right, white 0%, rgba(246, 246, 246, 0.8) 47%, rgba(237, 237, 237, 0.3) 100%);
+  background-image: linear-gradient(to right, rgba(0, 161, 224, 1) 0%, rgba(0, 161, 224, 0.8) 47%, rgba(0, 161, 224, 0.3) 100%);
   &.active {
     background-image: linear-gradient(to left, rgba(120,120,120,.5), #009cdb);
   }

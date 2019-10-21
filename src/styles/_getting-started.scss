@@ -135,7 +135,7 @@
     padding-bottom: 20px;
     padding-right: 25px;
     p {
-      width: 170px;
+      width: 245px;
     }
     .info-block-arrow {
       bottom: 10px;
@@ -262,32 +262,35 @@
 }
 
 #begin-the-tour {
-  background-image:url('../assets/images/begin.png');
+  // background-image:url('../assets/images/begin.png');
   background-repeat: no-repeat;
-  animation: beginButton 700ms 1s forwards, heartbeat 1300ms ease infinite normal;
-  font-size: 38px;
-  font-weight: 700;
+  // animation: beginButton 700ms 1s forwards, heartbeat 1300ms ease infinite normal;
+  font-size: 24px;
+  font-weight: bold;
   opacity: 1;
   display: inline-block;
   position: relative;
-  height: 70px;
-  line-height: 70px;
-  padding: 0 60px;
+  height: 64px;
+  line-height: 64px;
+  padding: 0 42px;
   text-align: center;
   text-decoration: none;
   transition: color .2s ease-in-out, background .2s ease-in-out;
   transform: translate(1px);
   backface-visibility: hidden;
+  background-color: #fff;
+  border-radius: 10px;
+
   &:hover {
   }
 
   a {
-    height: 70px;
-    line-height: 70px;
+    height: 64px;
+    line-height: 64px;
     text-decoration:none;
 
     > text {    
-      fill: #174181;
+      fill: #00a1e0;
     }
 
     &:hover {

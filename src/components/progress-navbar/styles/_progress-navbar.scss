@@ -8,6 +8,16 @@ $progress-width-inactive: 100px;
 $progress-left: 50px;
 $progress-top: 15px;
 
+// .logo {
+//   width: 173px;
+//   height: 48px;
+//   display: block;
+//   background-image: url(../../../assets/images/logos/salesforce-customer-360-platform.png);
+//   background-size: 173px 48px;
+//   background-repeat: no-repeat;
+//   background-size: contain;
+// }
+
 .progress-no-scroll {
   position: relative;
   overflow: hidden;
@@ -74,6 +84,7 @@ $progress-top: 15px;
     position: fixed;
     left: 0;
     top: 0;
+    // transform: translateY(-50%);
     height: 100%;
     background-color: rgba(255, 255, 255, 0);
     padding-top: $progress-top;
@@ -88,13 +99,15 @@ $progress-top: 15px;
       padding-left: 25px;
     }
     li {
-      margin-bottom: 15px;
+      margin-bottom: 20px;
 
       > a {
-        width: 20px;
+        width: 200px;
         display: block;
         height: 20px;
         background: transparent;
+        color: $text-color-white;
+        font-size: 16px;
 
         &.disabled {
           z-index: -1;
@@ -102,34 +115,36 @@ $progress-top: 15px;
         }
 
         span {
-          &.icon-indicator-white,
-          &.icon-indicator-gray,
-          &.icon-indicator-complete,
-          &.icon-indicator-complete-inverse,
-          &.label {
-            display: block;
-            float: left;
-          }
+          // &.icon-indicator-white,
+          // &.icon-indicator-gray,
+          // &.icon-indicator-complete,
+          // &.icon-indicator-complete-inverse,
+          // &.label {
+          //   display: block;
+          //   float: left;
+          // }
 
-          &.label {
-            font-size: $text-link-font-size;
-            font-family: $salesforcesans;
-            font-weight: bold;
-            display: none;
-          }
+          // &.label {
+          //   font-size: $text-link-font-size;
+          //   font-family: $salesforcesans;
+          //   font-weight: bold;
+          //   display: none;
+          // }
         }
 
         &:hover {
-          background: transparent;
+          text-decoration: underline;
         }
       }
 
       &.logo {
         width: 173px;
-        height: 60px;
+        height: 48px;
         display: block;
-        background-image: url(../../../assets/images/logos/salesforce-platform-logo.svg);
-        background-size: 173px 60px;
+        background-image: url(../../../assets/images/logos/salesforce-customer-360-platform.png);
+        background-size: 173px 48px;
+        background-repeat: no-repeat;
+        background-size: contain;
       }
 
       &.title {
@@ -274,38 +289,38 @@ $progress-top: 15px;
   }
 }
 
-.icon-indicator-white,
-.icon-indicator-gray,
-.icon-indicator-complete,
-.icon-indicator-complete-inverse {
-  width: 15px;
-  height: 15px;
-  border: 2px solid transparent;
-  background-color: transparent;
-  transition: border .2s ease-in-out, background .2s ease-in-out;
-  border-radius: 50%;
-}
+// .icon-indicator-white,
+// .icon-indicator-gray,
+// .icon-indicator-complete,
+// .icon-indicator-complete-inverse {
+//   width: 15px;
+//   height: 15px;
+//   border: 2px solid transparent;
+//   background-color: transparent;
+//   transition: border .2s ease-in-out, background .2s ease-in-out;
+//   border-radius: 50%;
+// }
 
-.icon-indicator-white {
-  border-color: $icon-indicator-white;
-  &.active {
-    border-color: $icon-indicator-white-active;
-  }
-}
+// .icon-indicator-white {
+//   border-color: $icon-indicator-white;
+//   &.active {
+//     border-color: $icon-indicator-white-active;
+//   }
+// }
 
-.icon-indicator-gray {
-  border-color: $icon-indicator-gray;
-  &.active {
-    border-color: $icon-indicator-gray-active;
-  }
-}
+// .icon-indicator-gray {
+//   border-color: $icon-indicator-gray;
+//   &.active {
+//     border-color: $icon-indicator-gray-active;
+//   }
+// }
 
-.icon-indicator-complete {
-  border-color: $icon-indicator-complete-border;
-  background-color: $icon-indicator-complete-bkg;
-}
+// .icon-indicator-complete {
+//   border-color: $icon-indicator-complete-border;
+//   background-color: $icon-indicator-complete-bkg;
+// }
 
-.icon-indicator-complete-inverse {
-  border-color: $icon-indicator-complete-inverse-border;
-  background-color: $icon-indicator-complete-inverse-bkg;
-}
+// .icon-indicator-complete-inverse {
+//   border-color: $icon-indicator-complete-inverse-border;
+//   background-color: $icon-indicator-complete-inverse-bkg;
+// }

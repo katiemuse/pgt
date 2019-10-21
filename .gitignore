@@ -338,6 +338,7 @@ fabric.properties
 !.vscode/extensions.json
 .history
 .history/*
+.code-workspace
 
 ### macOS template
 # General

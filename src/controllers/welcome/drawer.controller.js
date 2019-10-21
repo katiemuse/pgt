@@ -16,4 +16,14 @@ export default function WelcomeDrawerController($scope, WizardHandler, TopNavbar
     number: 'three',
     title: ''
   });
+
+  Steps.pop({
+    number: 'four',
+    title: ''
+  });
+
+  Steps.pop({
+    number: 'five',
+    title: ''
+  });
 }

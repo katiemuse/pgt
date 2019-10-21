@@ -3,8 +3,9 @@
 .main {
   .monitor {
     .welcome {
-      background: url("../assets/images/backgrounds/intro-screen.jpg") center
-        center repeat;
+      // background: url("../assets/images/backgrounds/intro-screen.jpg") center
+      //   center repeat;
+      background-color: #032e61;
     }
   }
 }
@@ -638,7 +639,7 @@
 }
 
 .welcome-copy {
-  text-align: center;
+  text-align: left;
   color: white;
   width: 273px;
   height: 360px;
