@@ -16,3 +16,16 @@ Some notes:
     * some child SCSS files do not trigger a reload upon save for some odd reason
 * Most of the `Welcome` section is completed outside of some remaining CSS items
 * I had setup a test chapter to work through to figure out some of the more complicated interactions used but deleted all of that out to prevent confusion
+=======
+```bash
+nvm use v8.15.1
+npm install gulp-cli -g
+npm install gulp -D
+npm install
+gulp serve
+```
+
+http://localhost:3000/#!/
+
+
+[![Build Status](http://jenkins.pendinglaunch.com:8080/buildStatus/icon?job=salesforce-platform-guided-tour)](http://jenkins.pendinglaunch.com:8080/job/salesforce-platform-guided-tour/) 
