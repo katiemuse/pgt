@@ -103,24 +103,6 @@ $progress-top: 15px;
           pointer-events: none;
         }
 
-        span {
-          // &.icon-indicator-white,
-          // &.icon-indicator-gray,
-          // &.icon-indicator-complete,
-          // &.icon-indicator-complete-inverse,
-          // &.label {
-          //   display: block;
-          //   float: left;
-          // }
-
-          // &.label {
-          //   font-size: $text-link-font-size;
-          //   font-family: $salesforcesans;
-          //   font-weight: bold;
-          //   display: none;
-          // }
-        }
-
         &:hover {
           text-decoration: underline;
         }
@@ -179,7 +161,7 @@ $progress-top: 15px;
 
       li {
         &.skip-links {
-          margin-left: -15px; 
+          margin-left: -15px;
 
           span.salesforce-icon {
             font-family: 'SalesforceIcons';
@@ -277,39 +259,3 @@ $progress-top: 15px;
     }
   }
 }
-
-// .icon-indicator-white,
-// .icon-indicator-gray,
-// .icon-indicator-complete,
-// .icon-indicator-complete-inverse {
-//   width: 15px;
-//   height: 15px;
-//   border: 2px solid transparent;
-//   background-color: transparent;
-//   transition: border .2s ease-in-out, background .2s ease-in-out;
-//   border-radius: 50%;
-// }
-
-// .icon-indicator-white {
-//   border-color: $icon-indicator-white;
-//   &.active {
-//     border-color: $icon-indicator-white-active;
-//   }
-// }
-
-// .icon-indicator-gray {
-//   border-color: $icon-indicator-gray;
-//   &.active {
-//     border-color: $icon-indicator-gray-active;
-//   }
-// }
-
-// .icon-indicator-complete {
-//   border-color: $icon-indicator-complete-border;
-//   background-color: $icon-indicator-complete-bkg;
-// }
-
-// .icon-indicator-complete-inverse {
-//   border-color: $icon-indicator-complete-inverse-border;
-//   background-color: $icon-indicator-complete-inverse-bkg;
-// }
