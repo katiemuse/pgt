@@ -5,9 +5,11 @@
   .step-0, .step-1{
     background: url('../assets/images/chapters/chapter-data/screen-bkg-1.png') center center no-repeat;
   }
-
-  .step-2, .step-3 {
+  .step-2 {
     background: url('../assets/images/chapters/chapter-data/screen-bkg-2.png') center top no-repeat;
+  }
+  .step-2a, .step-3 {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-3.png') center top no-repeat;
   }
 
   .step-1 {
@@ -29,41 +31,11 @@
   }
 
   .step-3 {
-    height: 1010px !important;
-    transform: translateY(-549px);
     .click-box {
-      bottom: 34px;
-      left: 308px;
-      width: 39px;
-      height: 22px;
-    }
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        top: 166px;
-        left: 1px;
-        .control-label {
-          width: 155px;
-          padding-top: 7px;
-          color: #000;
-        }
-        .controls {
-          input {
-            &.text {
-              width: 316px;
-            }
-            &.plural-label {
-              margin-top: 17px;
-            }
-            &.object-name {
-              margin-top: 104px;
-            }
-            &.record-name {
-              margin-top: 301px;
-            }
-          }
-        }
-      }
+      top: 455px;
+      left: 728px;
+      width: 50px;
+      height: 30px;
     }
   }
 }

@@ -54,7 +54,27 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('two');
-    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+    }
+  };
+
+  $scope.HalfSlideAfter2 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToSlide3 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("three");
+  };
+
+  $scope.GoToSlide4 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("four");
+  };
+}
+
+/*
+    else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
@@ -64,5 +84,4 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
         Steps.activate('four');
       }, 2600);
     }
-  };
-}
+*/
