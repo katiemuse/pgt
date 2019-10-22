@@ -27,5 +27,25 @@ gulp serve
 
 http://localhost:3000/#!/
 
+## How Chapters Are Configured
+* `progress-navbar.html` defines a list of bullets shown in the menu on the left rail
+* `ui-sref` tags such as `ui-sref="custom-objects"` (as found in `progress-navbar.html` and elsewhere) are how these chapters are linked to (ex: from a continue button)
+* these names and tags (ex: `custom-objects`) correspond to folder names within `src/partials`
+
+### V2 Chapter Refactor
+All of the chapters for the experience were changed as part of V2. These largely consisted of mass renames, and then reworking of chapters, except that there were 7 chapters in V1, and there are 8 chapters in V2. The approach taken was to make the following mass-renames, and then duplicate the last chapter for the extra 8th chapter.
+
+Mass-renames done for V2 were as follows:
+* `ui-sref="custom-objects"` => `ui-sref="data-chapter"`
+* `ui-sref="salesforce-connect"` => `ui-sref="flow-chapter"`
+* `ui-sref="heroku-connect"` => `ui-sref="builder-chapter"`
+* `ui-sref="iot-explorer"` => `ui-sref="mobile-chapter"`
+* `ui-sref="einstein-prediction-builder"` => `ui-sref="ai-chapter"`
+* `ui-sref="new-lightning-page"` => `ui-sref="voice-chapter"`
+* `ui-sref="process-builder"` => `ui-sref="customer-app-chapter"`
+* `ui-sref="process-builder"` => `ui-sref="blockchain-chapter"` (copied, not renamed)
+
+
+
 
 [![Build Status](http://jenkins.pendinglaunch.com:8080/buildStatus/icon?job=salesforce-platform-guided-tour)](http://jenkins.pendinglaunch.com:8080/job/salesforce-platform-guided-tour/) 
