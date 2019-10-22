@@ -42,13 +42,13 @@ export default function run(
 
   $rootScope.progressStates = {
     0: ['welcome'],
-    1: ['custom-objects'],
-    2: ['salesforce-connect'],
-    3: ['heroku-connect'],
-    4: ['iot-explorer'],
-    5: ['einstein-prediction-builder'],
+    1: ['chapter-data'],
+    2: ['chapter-flow'],
+    3: ['chapter-builder'],
+    4: ['chapter-mobile'],
+    5: ['chapter-ai'],
     6: [
-      'new-lightning-page',
+      'chapter-voice',
       'add-base-lightning-components',
       'add-appexchange-components',
       'add-custom-components',
@@ -56,7 +56,16 @@ export default function run(
       'deploy-your-app'
     ],
     7: [
-      'process-builder',
+      'chapter-customer-app',
+      'choose-process-object',
+      'add-process-criteria',
+      'create-process-action',
+      'create-custom-actions',
+      'customize-action-bar',
+      'build-lightning-app'
+    ],
+    8: [
+      'chapter-blockchain',
       'choose-process-object',
       'add-process-criteria',
       'create-process-action',

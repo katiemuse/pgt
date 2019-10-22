@@ -1,0 +1,67 @@
+<div class="drawer-content chapter-voice-drawer" ng-controller="ChapterVoiceDrawerController">
+  <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
+    <h2>Build a Mobile App for Product Managers</h2>
+    <p>Using Lightning App Builder, our drag and drop development environment, we will build a mobile app for our Product Managers
+      that surfaces all that customer data, processes, and actions you created earlier.</p>
+    <p>Salesforce Platform lets you build apps that are mobile-first and automatically connected to your CRM data.</p>
+    <p class="continue">
+      <a class="btn btn-continue" ng-click="beginStory()">Next</a>
+    </p>
+  </div>
+
+  <div class="col-lg-12 drawer-hotspots" ng-show="drawer.mode == 'hotspots'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-hotspots" selected="drawer.currentHotspot" type="hotspots">
+      <drawer-panel-tab heading="01">
+        <h2>App Page</h2>
+        <p>Use an app page to create a home page for a third-party app that you can add directly into the Salesforce Mobile and Lightning
+          Experience navigation menus. Your users then have an app home page where they can quickly access the most important
+          objects and items.</p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Home Page</h2>
+        <p>Create Home pages with features relevant to specific types of users, and assign the customized pages to different
+          user profiles. Custom Home pages are supported in Lightning Experience only.</p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="03">
+        <h2>Record Page</h2>
+        <p>With a record page, you can create a customized version of an object’s record page, tailoring it to your users’ needs.
+          Custom record pages are supported in Lightning Experience only.</p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+
+  <div class="col-lg-12 drawer-did-you-know" ng-show="drawer.mode == 'did-you-know'">
+    <div class="clearfix">
+      <div class="animated-icon animated circular x" ng-click="drawer.close()" data-icon="close">
+        <span class="first"></span>
+        <span class="second"></span>
+      </div>
+    </div>
+
+    <drawer-panel class="panel-did-you-know" type="did-you-know">
+      <drawer-panel-tab heading="01">
+        <h2>Did You Know?</h2>
+        <p>
+          We call them 'pages' in Lightning, but these pages are just as powerful as any app, and your users can access them through
+          Salesforce Mobile or Salesforce Lightning.
+        </p>
+      </drawer-panel-tab>
+      <drawer-panel-tab heading="02">
+        <h2>Did You Know?</h2>
+        <p>
+          Base components come standard with Lightning, but you can add Third Party components from the AppExchange or even add custom
+          components built by your development team.
+        </p>
+      </drawer-panel-tab>
+    </drawer-panel>
+  </div>
+
+</div>
