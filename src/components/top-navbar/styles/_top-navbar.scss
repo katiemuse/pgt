@@ -23,6 +23,9 @@ nav.top-navbar {
     margin:15px auto 0 auto;
     width: 170px;
 
+    /* RFP: did you know and hot spot icons are no longer shown */
+    display: none;
+
     ul.tips-icons {
       padding: 0;
       li {
