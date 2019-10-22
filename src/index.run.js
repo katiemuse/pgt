@@ -72,7 +72,7 @@ export default function run(
       'create-custom-actions',
       'customize-action-bar',
       'build-lightning-app'
-    ]    
+    ]
   };
 
   $rootScope.progressIndex = 0;

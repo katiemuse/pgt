@@ -110,7 +110,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-builder/mobile.html')
+          template: require('./partials/chapter-data/mobile.html')
         },
         phone: {
           template: require('./partials/chapter-builder/phone.html')

@@ -173,7 +173,7 @@ angular
   .controller('ChapterCustomerAppController', ChapterCustomerAppController)
   .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
   .controller('ChapterBlockchainController', ChapterBlockchainController)
-  .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)  
+  .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)
   .controller('ChooseProcessObjectController', ChooseProcessObjectController)
   .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
   .controller('AddCriteriaController', AddCriteriaController)
