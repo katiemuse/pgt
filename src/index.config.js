@@ -38,38 +38,38 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('custom-objects', {
-      url: '/custom-objects',
+    .state('chapter-data', {
+      url: '/chapter-data',
       views: {
         monitor: {
-          template: require('./partials/custom-objects/desktop.html'),
-          controller: 'CustomObjectsController'
+          template: require('./partials/chapter-data/desktop.html'),
+          controller: 'ChapterDataController'
         },
         drawer: {
-          template: require('./partials/custom-objects/drawer.html'),
+          template: require('./partials/chapter-data/drawer.html'),
           controller: 'CustomObjectsDrawerController'
         },
         mobile: {
-          template: require('./partials/custom-objects/mobile.html')
+          template: require('./partials/chapter-data/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('salesforce-connect', {
-      url: '/salesforce-connect',
+    .state('chapter-flow', {
+      url: '/chapter-flow',
       views: {
         monitor: {
-          template: require('./partials/salesforce-connect/desktop.html'),
+          template: require('./partials/chapter-flow/desktop.html'),
           controller: 'SalesforceConnectController'
         },
         drawer: {
-          template: require('./partials/salesforce-connect/drawer.html'),
+          template: require('./partials/chapter-flow/drawer.html'),
           controller: 'SalesforceConnectDrawerController'
         },
         mobile: {
-          template: require('./partials/salesforce-connect/mobile.html')
+          template: require('./partials/chapter-flow/mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -79,41 +79,41 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         TopNavbar.HotspotsEnabled = false;
       }
     })
-    .state('einstein-prediction-builder', {
-      url: '/einstein-prediction-builder',
+    .state('chapter-ai', {
+      url: '/chapter-ai',
       views: {
         monitor: {
-          template: require('./partials/einstein-prediction-builder/desktop.html'),
+          template: require('./partials/chapter-ai/desktop.html'),
           controller: 'EinsteinPredictionBuilderController'
         },
         drawer: {
-          template: require('./partials/einstein-prediction-builder/drawer.html'),
+          template: require('./partials/chapter-ai/drawer.html'),
           controller: 'EinsteinPredictionBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/custom-objects/mobile.html')
+          template: require('./partials/chapter-data/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('heroku-connect', {
-      url: '/heroku-connect',
+    .state('chapter-builder', {
+      url: '/chapter-builder',
       views: {
         monitor: {
-          template: require('./partials/heroku-connect/desktop.html'),
+          template: require('./partials/chapter-builder/desktop.html'),
           controller: 'HerokuConnectController'
         },
         drawer: {
-          template: require('./partials/heroku-connect/drawer.html'),
+          template: require('./partials/chapter-builder/drawer.html'),
           controller: 'HerokuConnectDrawerController'
         },
         mobile: {
-          template: require('./partials/custom-objects/mobile.html')
+          template: require('./partials/chapter-builder/mobile.html')
         },
         phone: {
-          template: require('./partials/heroku-connect/phone.html')
+          template: require('./partials/chapter-builder/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -142,19 +142,38 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
     //     TopNavbar.HotspotsEnabled = false;
     //   }
     // })
-    .state('process-builder', {
-      url: '/process-builder',
+    .state('chapter-customer-app', {
+      url: '/chapter-customer-app',
       views: {
         monitor: {
-          template: require('./partials/process-builder/desktop.html'),
+          template: require('./partials/chapter-customer-app/desktop.html'),
           controller: 'ProcessBuilderController'
         },
         drawer: {
-          template: require('./partials/process-builder/drawer.html'),
+          template: require('./partials/chapter-customer-app/drawer.html'),
           controller: 'ProcessBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/process-builder/mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html')
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
+    .state('chapter-blockchain', {
+      url: '/chapter-blockchain',
+      views: {
+        monitor: {
+          template: require('./partials/chapter-blockchain/desktop.html'),
+          controller: 'ProcessBuilderController'
+        },
+        drawer: {
+          template: require('./partials/chapter-blockchain/drawer.html'),
+          controller: 'ProcessBuilderDrawerController'
+        },
+        mobile: {
+          template: require('./partials/chapter-blockchain/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -173,7 +192,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChooseProcessObjectDrawerController'
         },
         mobile: {
-          template: require('./partials/process-builder/mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -192,7 +211,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddCriteriaDrawerController'
         },
         mobile: {
-          template: require('./partials/process-builder/mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -214,7 +233,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateProcessActionDrawerController'
         },
         mobile: {
-          template: require('./partials/process-builder/mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html')
         },
         phone: {
           template: require('./partials/create-process-action/phone.html')
@@ -224,38 +243,38 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('iot-explorer', {
-      url: '/iot-explorer',
+    .state('chapter-mobile', {
+      url: '/chapter-mobile',
       views: {
         monitor: {
-          template: require('./partials/iot-explorer/desktop.html'),
+          template: require('./partials/chapter-mobile/desktop.html'),
           controller: 'IotExplorerController'
         },
         drawer: {
-          template: require('./partials/iot-explorer/drawer.html'),
+          template: require('./partials/chapter-mobile/drawer.html'),
           controller: 'IotExplorerDrawerController'
         },
         mobile: {
-          template: require('./partials/process-builder/mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('new-lightning-page', {
-      url: '/new-lightning-page',
+    .state('chapter-voice', {
+      url: '/chapter-voice',
       views: {
         monitor: {
-          template: require('./partials/new-lightning-page/desktop.html'),
+          template: require('./partials/chapter-voice/desktop.html'),
           controller: 'NewLightningPageController'
         },
         drawer: {
-          template: require('./partials/new-lightning-page/drawer.html'),
+          template: require('./partials/chapter-voice/drawer.html'),
           controller: 'NewLightningPageDrawerController'
         },
         mobile: {
-          template: require('./partials/new-lightning-page/mobile.html')
+          template: require('./partials/chapter-voice/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -296,7 +315,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddBaseLightningComponentsDrawerController'
         },
         mobile: {
-          template: require('./partials/new-lightning-page/mobile.html')
+          template: require('./partials/chapter-voice/mobile.html')
         },
         phone: {
           template: require('./partials/add-base-lightning-components/phone.html')
@@ -321,7 +340,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/add-custom-components/phone.html')
         },
         mobile: {
-          template: require('./partials/new-lightning-page/mobile.html')
+          template: require('./partials/chapter-voice/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -343,7 +362,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/customize-page-layout/phone.html')
         },
         mobile: {
-          template: require('./partials/new-lightning-page/mobile.html')
+          template: require('./partials/chapter-voice/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -365,7 +384,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/deploy-your-app/phone.html')
         },
         mobile: {
-          template: require('./partials/new-lightning-page/mobile.html')
+          template: require('./partials/chapter-voice/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {

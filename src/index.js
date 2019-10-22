@@ -54,28 +54,28 @@ import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import WelcomeController from './controllers/welcome/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
-import CustomObjectsController from './controllers/custom-objects/desktop.controller';
-import CustomObjectsDrawerController from './controllers/custom-objects/drawer.controller';
-import HerokuConnectController from './controllers/heroku-connect/desktop.controller';
-import HerokuConnectDrawerController from './controllers/heroku-connect/drawer.controller';
-import SalesforceConnectController from './controllers/salesforce-connect/desktop.controller';
-import SalesforceConnectDrawerController from './controllers/salesforce-connect/drawer.controller';
-import EinsteinPredictionBuilderController from './controllers/einstein-prediction-builder/desktop.controller';
-import EinsteinPredictionBuilderDrawerController from './controllers/einstein-prediction-builder/drawer.controller';
+import ChapterDataController from './controllers/chapter-data/desktop.controller';
+import CustomObjectsDrawerController from './controllers/chapter-data/drawer.controller';
+import HerokuConnectController from './controllers/chapter-builder/desktop.controller';
+import HerokuConnectDrawerController from './controllers/chapter-builder/drawer.controller';
+import SalesforceConnectController from './controllers/chapter-flow/desktop.controller';
+import SalesforceConnectDrawerController from './controllers/chapter-flow/drawer.controller';
+import EinsteinPredictionBuilderController from './controllers/chapter-ai/desktop.controller';
+import EinsteinPredictionBuilderDrawerController from './controllers/chapter-ai/drawer.controller';
 // import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
 // import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
-import ProcessBuilderController from './controllers/process-builder/desktop.controller';
-import ProcessBuilderDrawerController from './controllers/process-builder/drawer.controller';
+import ProcessBuilderController from './controllers/chapter-customer-app/desktop.controller';
+import ProcessBuilderDrawerController from './controllers/chapter-customer-app/drawer.controller';
 import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
 import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
 import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
 import AddCriteriaDrawerController from './controllers/add-process-criteria/drawer.controller';
 import CreateProcessActionController from './controllers/create-process-action/desktop.controller';
 import CreateProcessActionDrawerController from './controllers/create-process-action/drawer.controller';
-import IotExplorerController from './controllers/iot-explorer/desktop.controller';
-import IotExplorerDrawerController from './controllers/iot-explorer/drawer.controller';
-import NewLightningPageController from './controllers/new-lightning-page/desktop.controller';
-import NewLightningPageDrawerController from './controllers/new-lightning-page/drawer.controller';
+import IotExplorerController from './controllers/chapter-mobile/desktop.controller';
+import IotExplorerDrawerController from './controllers/chapter-mobile/drawer.controller';
+import NewLightningPageController from './controllers/chapter-voice/desktop.controller';
+import NewLightningPageDrawerController from './controllers/chapter-voice/drawer.controller';
 import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
 import AddAppexchangeComponentsDrawerController from './controllers/add-appexchange-components/drawer.controller';
 import AddBaseLightningComponentsController from './controllers/add-base-lightning-components/desktop.controller';
@@ -158,7 +158,7 @@ angular
   .controller('WelcomeController', WelcomeController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
-  .controller('CustomObjectsController', CustomObjectsController)
+  .controller('ChapterDataController', ChapterDataController)
   .controller('CustomObjectsDrawerController', CustomObjectsDrawerController)
   .controller('EinsteinPredictionBuilderController', EinsteinPredictionBuilderController)
   .controller('EinsteinPredictionBuilderDrawerController', EinsteinPredictionBuilderDrawerController)
