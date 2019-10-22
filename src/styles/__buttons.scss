@@ -11,7 +11,7 @@ button, a {
 
 .btn {
   font-family: $salesforcesans;
-  font-weight: bold;
+  font-weight: normal;
   font-size: $button-font-size;
   padding: 4px 15px;
   text-transform: uppercase;
@@ -137,7 +137,6 @@ button, a {
 }
 
 .btn-intro {
-  border-radius: $button-rounded-radius;
   background-color:#14315d;
   color: $color-button-white;
   padding: 10px 40px;
