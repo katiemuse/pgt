@@ -36,14 +36,14 @@ http://localhost:3000/#!/
 All of the chapters for the experience were changed as part of V2. These largely consisted of mass renames, and then reworking of chapters, except that there were 7 chapters in V1, and there are 8 chapters in V2. The approach taken was to make the following mass-renames, and then duplicate the last chapter for the extra 8th chapter.
 
 Mass-renames done for V2 were as follows:
-* `ui-sref="custom-objects"` => `ui-sref="data-chapter"`
-* `ui-sref="salesforce-connect"` => `ui-sref="flow-chapter"`
-* `ui-sref="heroku-connect"` => `ui-sref="builder-chapter"`
-* `ui-sref="iot-explorer"` => `ui-sref="mobile-chapter"`
-* `ui-sref="einstein-prediction-builder"` => `ui-sref="ai-chapter"`
-* `ui-sref="new-lightning-page"` => `ui-sref="voice-chapter"`
-* `ui-sref="process-builder"` => `ui-sref="customer-app-chapter"`
-* `ui-sref="process-builder"` => `ui-sref="blockchain-chapter"` (copied, not renamed)
+* `ui-sref="custom-objects"` => `ui-sref="chapter-data"`
+* `ui-sref="salesforce-connect"` => `ui-sref="chapter-flow"`
+* `ui-sref="heroku-connect"` => `ui-sref="chapter-builder"`
+* `ui-sref="iot-explorer"` => `ui-sref="chapter-mobile"`
+* `ui-sref="einstein-prediction-builder"` => `ui-sref="chapter-ai"`
+* `ui-sref="new-lightning-page"` => `ui-sref="chapter-voice"`
+* `ui-sref="process-builder"` => `ui-sref="chapter-customer-app"`
+* `ui-sref="process-builder"` => `ui-sref="chapter-blockchain"` (copied, not renamed)
 
 
 
