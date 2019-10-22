@@ -12,72 +12,19 @@
 
   .step-1 {
     .click-box {
-      top: 81px;
-      left: 676px;
-      width: 90px;
-      height: 32px;
-    }
-    .click-box-1 {
-      top: 218px;
-      left: 620px;
-      width: 148px;
-      height: 30px;
-      opacity: 0;
-      pointer-events: none;
-      &.active {
-        opacity: 1;
-        cursor: pointer;
-        pointer-events: all;
-      }
-    }
-    .custom-object {
-      position: absolute;
-      top: 117px;
-      left: 618px;
-      opacity: 0;
-      pointer-events: none;
-      border-radius: 5px;
-      &.active {
-        opacity: 1;
-        cursor: pointer;
-        pointer-events: all;
-      }
+      top: 210px;
+      left: 139px;
+      width: 80px;
+      height: 22px;
     }
   }
 
   .step-2 {
-    height: 1040px !important;
-    transition: transform 1.7s linear 0.3s;
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        top: 166px;
-        left: 1px;
-        .control-label {
-          width: 155px;
-          padding-top: 7px;
-          color: #000;
-        }
-        .controls {
-          input {
-            &.text {
-              width: 316px;
-            }
-            &.plural-label {
-              margin-top: 17px;
-            }
-            &.object-name {
-              margin-top: 104px;
-            }
-            &.record-name {
-              margin-top: 301px;
-            }
-          }
-        }
-      }
-    }
-    &.active {
-      transform: translateY(-549px);
+    .click-box {
+      top: 48px;
+      left: 210px;
+      width: 480px;
+      height: 30px;
     }
   }
 

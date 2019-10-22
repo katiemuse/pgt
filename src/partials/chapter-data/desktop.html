@@ -10,40 +10,17 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="ToggleButton()"></div>
-              <img src="../../assets/images/chapters/chapter-data/button.png" alt="custom object" class="custom-object" ng-class="{active:button.show}">
-              <div class="click-box-1" ng-class="{active:button.show}" ng-click="Next()"></div>
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-2" ng-class="{active:!label.active}">
-              <form class="form form-horizontal">
-                <div class="control-group">
-                  <label for="name" class="control-label">Label </label>
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="customobj.name" class="text" maxlength="80" ng-class="{active:label.active}" li-autofocus="wizard.stateIndex == 2">
-                    <input autocomplete="off" type="text" name="plural-label" id="plural-label" ng-model="customobj.name" class="text plural-label" disabled>
-                    <input autocomplete="off" type="text" name="object-name" id="object-name" ng-model="customobj.name" class="text object-name" disabled>
-                    <input autocomplete="off" type="text" name="object-name" id="object-name" ng-model="customobj.name" class="text record-name" disabled>
-                  </div>
-                </div>
-              </form>
+            <div class="step step-2">
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <form class="form form-horizontal">
-                <div class="control-group">
-                  <label for="name" class="control-label">Label </label>
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="customobj.name" class="text" disabled>
-                    <input autocomplete="off" type="text" name="plural-label" id="plural-label" ng-model="customobj.name" class="text plural-label" disabled>
-                    <input autocomplete="off" type="text" name="object-name" id="object-name" ng-model="customobj.name" class="text object-name" disabled>
-                    <input autocomplete="off" type="text" name="object-name" id="object-name" ng-model="customobj.name" class="text record-name" disabled>
-                  </div>
-                </div>
-              </form>
-              <div class="click-box active" wz-next></div>
+              <div class="click-box active" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step success="true">

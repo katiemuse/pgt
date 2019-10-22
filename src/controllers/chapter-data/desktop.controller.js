@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler, $timeout, TopNavbar) {
+export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler, $timeout) {
   let _timeout;
   let _timeout2;
 
@@ -53,9 +53,6 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
-      Hotspots.clear();
-      TopNavbar.HotspotsCount = 0;
-      TopNavbar.HotspotsEnabled = false;
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();

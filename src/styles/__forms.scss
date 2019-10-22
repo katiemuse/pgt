@@ -18,13 +18,13 @@
 
 @keyframes borderActive {
   0% {
-    box-shadow: 0 0 0 0 rgba(#00ffff, .2);
+    box-shadow: 0 0 0 0 rgba($color-marketing-cloud-orange, .2);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba($color-salesforce-blue, .3);
+    box-shadow: 0 0 0 8px rgba($color-marketing-cloud-orange, 1);
   }
   100% {
-    box-shadow: 0 0 0 0 rgba(#00ffff, .2);
+    box-shadow: 0 0 0 0 rgba($color-marketing-cloud-orange, .2);
   }
 }
 
