@@ -1,6 +1,6 @@
 'use strict';
 
-export default function HerokuConnectController($scope, Steps, Hotspots, WizardHandler, $timeout) {
+export default function ChapterBuilderController($scope, Steps, Hotspots, WizardHandler, $timeout) {
   $scope.customobj = {
     name: ''
   };

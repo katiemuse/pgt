@@ -1,6 +1,6 @@
 'use strict';
 
-export default function NewLightningPageController($scope, WizardHandler, Steps, Hotspots, TopNavbar, $timeout) {
+export default function ChapterVoiceController($scope, WizardHandler, Steps, Hotspots, TopNavbar, $timeout) {
   $scope.lightning = {
     input: ''
   };

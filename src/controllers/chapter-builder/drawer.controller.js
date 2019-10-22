@@ -1,6 +1,6 @@
 'use strict';
 
-export default function HerokuConnectDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function ChapterBuilderDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   Drawer.openToIntro();
 
   TopNavbar.DidYouKnowCount = 0;

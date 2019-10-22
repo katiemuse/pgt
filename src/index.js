@@ -55,17 +55,19 @@ import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/direct
 import WelcomeController from './controllers/welcome/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
-import CustomObjectsDrawerController from './controllers/chapter-data/drawer.controller';
-import HerokuConnectController from './controllers/chapter-builder/desktop.controller';
-import HerokuConnectDrawerController from './controllers/chapter-builder/drawer.controller';
-import SalesforceConnectController from './controllers/chapter-flow/desktop.controller';
-import SalesforceConnectDrawerController from './controllers/chapter-flow/drawer.controller';
-import EinsteinPredictionBuilderController from './controllers/chapter-ai/desktop.controller';
-import EinsteinPredictionBuilderDrawerController from './controllers/chapter-ai/drawer.controller';
+import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
+import ChapterBuilderController from './controllers/chapter-builder/desktop.controller';
+import ChapterBuilderDrawerController from './controllers/chapter-builder/drawer.controller';
+import ChapterFlowController from './controllers/chapter-flow/desktop.controller';
+import ChapterFlowDrawerController from './controllers/chapter-flow/drawer.controller';
+import ChapterAIController from './controllers/chapter-ai/desktop.controller';
+import ChapterAIDrawerController from './controllers/chapter-ai/drawer.controller';
 // import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
 // import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
-import ProcessBuilderController from './controllers/chapter-customer-app/desktop.controller';
-import ProcessBuilderDrawerController from './controllers/chapter-customer-app/drawer.controller';
+import ChapterCustomerAppController from './controllers/chapter-customer-app/desktop.controller';
+import ChapterCustomerAppDrawerController from './controllers/chapter-customer-app/drawer.controller';
+import ChapterBlockchainController from './controllers/chapter-blockchain/desktop.controller';
+import ChapterBlockchainDrawerController from './controllers/chapter-blockchain/drawer.controller';
 import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
 import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
 import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
@@ -74,8 +76,8 @@ import CreateProcessActionController from './controllers/create-process-action/d
 import CreateProcessActionDrawerController from './controllers/create-process-action/drawer.controller';
 import IotExplorerController from './controllers/chapter-mobile/desktop.controller';
 import IotExplorerDrawerController from './controllers/chapter-mobile/drawer.controller';
-import NewLightningPageController from './controllers/chapter-voice/desktop.controller';
-import NewLightningPageDrawerController from './controllers/chapter-voice/drawer.controller';
+import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
+import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
 import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
 import AddAppexchangeComponentsDrawerController from './controllers/add-appexchange-components/drawer.controller';
 import AddBaseLightningComponentsController from './controllers/add-base-lightning-components/desktop.controller';
@@ -159,17 +161,19 @@ angular
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)
-  .controller('CustomObjectsDrawerController', CustomObjectsDrawerController)
-  .controller('EinsteinPredictionBuilderController', EinsteinPredictionBuilderController)
-  .controller('EinsteinPredictionBuilderDrawerController', EinsteinPredictionBuilderDrawerController)
-  .controller('SalesforceConnectController', SalesforceConnectController)
-  .controller('SalesforceConnectDrawerController', SalesforceConnectDrawerController)
-  .controller('HerokuConnectController', HerokuConnectController)
-  .controller('HerokuConnectDrawerController', HerokuConnectDrawerController)
+  .controller('ChapterDataDrawerController', ChapterDataDrawerController)
+  .controller('ChapterAIController', ChapterAIController)
+  .controller('ChapterAIDrawerController', ChapterAIDrawerController)
+  .controller('ChapterFlowController', ChapterFlowController)
+  .controller('ChapterFlowDrawerController', ChapterFlowDrawerController)
+  .controller('ChapterBuilderController', ChapterBuilderController)
+  .controller('ChapterBuilderDrawerController', ChapterBuilderDrawerController)
   // .controller('BuildASchemaController', BuildASchemaController)
   // .controller('BuildASchemaDrawerController', BuildASchemaDrawerController)
-  .controller('ProcessBuilderController', ProcessBuilderController)
-  .controller('ProcessBuilderDrawerController', ProcessBuilderDrawerController)
+  .controller('ChapterCustomerAppController', ChapterCustomerAppController)
+  .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
+  .controller('ChapterBlockchainController', ChapterBlockchainController)
+  .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)  
   .controller('ChooseProcessObjectController', ChooseProcessObjectController)
   .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
   .controller('AddCriteriaController', AddCriteriaController)
@@ -178,8 +182,8 @@ angular
   .controller('CreateProcessActionDrawerController', CreateProcessActionDrawerController)
   .controller('IotExplorerController', IotExplorerController)
   .controller('IotExplorerDrawerController', IotExplorerDrawerController)
-  .controller('NewLightningPageController', NewLightningPageController)
-  .controller('NewLightningPageDrawerController', NewLightningPageDrawerController)
+  .controller('ChapterVoiceController', ChapterVoiceController)
+  .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
   .controller('AddAppexchangeComponentsController', AddAppexchangeComponentsController)
   .controller('AddAppexchangeComponentsDrawerController', AddAppexchangeComponentsDrawerController)
   .controller('AddBaseLightningComponentsController', AddBaseLightningComponentsController)

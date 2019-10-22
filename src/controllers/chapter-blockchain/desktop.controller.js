@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ProcessBuilderController($scope, $timeout, Steps, WizardHandler, $state, UserProfile) {
+export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile) {
   $scope.processOptions = [
     {label: 'Select one', value: 1},
     {label: 'A record changes', value: 2},

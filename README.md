@@ -53,10 +53,26 @@ Renames done in folders (follows same pattern as above for all chapters):
 
 The following files had to be touched to make renames (ex: `custom-objects` to `chapter-data`):
 * `src/index.config.js`
-* `src/index.js` 
-    (NOTE: Need to rename relative controllers (ex: `CustomObjectsController` to `ChapterDataController` and `CustomObjectsDrawerController` to `ChapterDataDrawerController`) throughout codebase)
+* `src/index.js` (NOTE: see further comment on `src/index.js` below)
 * `src/index.run.js`
 * `src/styles/app.scss`
+
+The `src/index.js` needed updating of controller names (and throughout codebase):
+* `CustomObjectsController` => `ChapterDataController`
+* `CustomObjectsDrawerController` => `ChapterDataDrawerController`
+* `SalesforceConnectController` => `ChapterFlowController`
+* `SalesforceConnectDrawerController` => `ChapterFlowDrawerController`
+* `HerokuConnectController` => `ChapterBuilderController`
+* `HerokuConnectDrawerController` => `ChapterBuilderDrawerController`
+* `EinsteinPredictionBuilderController` => `ChapterAIController`
+* `EinsteinPredictionBuilderDrawerController` => `ChapterAIDrawerController`
+* `NewLightningPageController` => `ChapterVoiceController`
+* `NewLightningPageDrawerController` => `ChapterVoiceDrawerController`
+* `ProcessBuilderController` => `ChapterCustomerAppController`
+* `ProcessBuilderDrawerController` => `ChapterCustomerAppDrawerController`
+* `[new]` => `ChapterBlockchainController`
+* `[new]` => `ChapterBlockchainDrawerController`
+
 
 Finally, searched all source for previous names (e: `custom-objects`) and updated references to new chapter names (ex: `chapter-data`).
 

@@ -1,6 +1,6 @@
 'use strict';
 
-export default function SalesforceConnectController($scope, Steps, Hotspots, WizardHandler, $timeout) {
+export default function ChapterFlowController($scope, Steps, Hotspots, WizardHandler, $timeout) {
   $scope.customobj = {
     name: ''
   };

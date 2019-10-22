@@ -47,7 +47,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         drawer: {
           template: require('./partials/chapter-data/drawer.html'),
-          controller: 'CustomObjectsDrawerController'
+          controller: 'ChapterDataDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-data/mobile.html')
@@ -62,11 +62,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-flow/desktop.html'),
-          controller: 'SalesforceConnectController'
+          controller: 'ChapterFlowController'
         },
         drawer: {
           template: require('./partials/chapter-flow/drawer.html'),
-          controller: 'SalesforceConnectDrawerController'
+          controller: 'ChapterFlowDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-flow/mobile.html')
@@ -84,11 +84,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-ai/desktop.html'),
-          controller: 'EinsteinPredictionBuilderController'
+          controller: 'ChapterAIController'
         },
         drawer: {
           template: require('./partials/chapter-ai/drawer.html'),
-          controller: 'EinsteinPredictionBuilderDrawerController'
+          controller: 'ChapterAIDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-data/mobile.html')
@@ -103,11 +103,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-builder/desktop.html'),
-          controller: 'HerokuConnectController'
+          controller: 'ChapterBuilderController'
         },
         drawer: {
           template: require('./partials/chapter-builder/drawer.html'),
-          controller: 'HerokuConnectDrawerController'
+          controller: 'ChapterBuilderDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-builder/mobile.html')
@@ -147,11 +147,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-customer-app/desktop.html'),
-          controller: 'ProcessBuilderController'
+          controller: 'ChapterCustomerAppController'
         },
         drawer: {
           template: require('./partials/chapter-customer-app/drawer.html'),
-          controller: 'ProcessBuilderDrawerController'
+          controller: 'ChapterCustomerAppDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-customer-app/mobile.html')
@@ -166,11 +166,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-blockchain/desktop.html'),
-          controller: 'ProcessBuilderController'
+          controller: 'ChapterBlockchainController'
         },
         drawer: {
           template: require('./partials/chapter-blockchain/drawer.html'),
-          controller: 'ProcessBuilderDrawerController'
+          controller: 'ChapterBlockchainDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-blockchain/mobile.html')
@@ -267,11 +267,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-voice/desktop.html'),
-          controller: 'NewLightningPageController'
+          controller: 'ChapterVoiceController'
         },
         drawer: {
           template: require('./partials/chapter-voice/drawer.html'),
-          controller: 'NewLightningPageDrawerController'
+          controller: 'ChapterVoiceDrawerController'
         },
         mobile: {
           template: require('./partials/chapter-voice/mobile.html')
