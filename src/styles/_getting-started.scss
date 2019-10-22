@@ -11,7 +11,7 @@
   z-index: 2500;
 
   .background-splash {
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.5);
     min-height: 100%;
     min-width: 100%;
   }
@@ -89,25 +89,25 @@
   }
 
   #steps {
-    top: 360px;
-    right: 150px;
+    top: 275px;
+    right: 155px;
     padding-top: 90px;
     p {
-      width: 193px;
+      width: 175px;
     }
     .info-block-arrow {
       top: 0;
       right: 27px;
       width: 92px;
-      height: 104px;
+      height: 100px;
       background-image: url(../assets/images/icons/info-block-arrow-steps.png);
       background-repeat: no-repeat;
     }
   }
 
   #timeline {
-    top: 328px;
-    left: 85px;
+    top: 215px;
+    left: 120px;
     padding-top: 30px;
     padding-left: 70px;
     @media (max-width: $screen-md-max) {
@@ -135,7 +135,7 @@
     padding-bottom: 20px;
     padding-right: 25px;
     p {
-      width: 245px;
+      width: 175px;
     }
     .info-block-arrow {
       bottom: 10px;
@@ -279,7 +279,8 @@
   transform: translate(1px);
   backface-visibility: hidden;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 4px;
+  color: #00a1e0;
 
   &:hover {
   }

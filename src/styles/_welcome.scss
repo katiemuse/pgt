@@ -658,10 +658,13 @@
   a {
     position: absolute;
     top: 360px;
-    left: 50%;
+    left: 0px;
     width: auto;
-    transform: translateX(-50%);
   }
+  a.continue-button-1 {
+    top: 310px;
+  }
+
   .welcome-copy-block {
     position: absolute;
     top: 50%;
