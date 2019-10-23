@@ -34,9 +34,6 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
     Hotspots.clear();
     TopNavbar.DidYouKnowCount = 0;
     TopNavbar.HotSpotCount = 1;
-    // $timeout(() => {
-    //   Steps.activate('');
-    // }, 100);  not needed
   };
 
   $scope.beginForBuilderStory = function () {
