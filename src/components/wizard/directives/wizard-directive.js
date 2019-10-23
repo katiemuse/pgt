@@ -104,10 +104,13 @@ export default function wizard() {
           let thisStep;
           let exitallowed = false;
           let enterallowed = false;
-          const index = _.indexOf($scope.steps, $scope.selectedStep);
-          if (index === $scope.steps.length - 2 || index >= 6) {
-            Steps.clear();
-          }
+
+          // NOTE:: This check is forcing the right rail steps to dissapear early on controllers with more than 6 steps (ex: chapter-data, chapter-blockchain) - removing for now (will review in meeting on 10/23)
+          // const index = _.indexOf($scope.steps, $scope.selectedStep);
+          // if (index >= 600) {
+          //   Steps.clear();
+          // }
+
           // getting data for step you are transitioning out of
           if ($scope.currentStepNumber() > 0) {
             thisStep = $scope.currentStepNumber() - 1;
