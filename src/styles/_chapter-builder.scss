@@ -1,8 +1,7 @@
-@import "_base";
+@import '_base';
 
 .chapter-builder {
-  .step-0,
-  .step-1 {
+  .step-0, .step-1, .step-1a {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.png")
       center center no-repeat;
   }
@@ -12,36 +11,33 @@
       center center no-repeat;
   }
 
-  .step-3 {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-3.png")
-      center top no-repeat;
-  }
-
-  .step-4 {
-    background: url("../assets/images/backgrounds/phone-screen-background.png")
-      center top no-repeat;
-  }
-
-  .step-5 {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-5.png")
-      center top no-repeat;
-  }
-
   .step-1 {
-    .click-box {
-      bottom: 8px;
-      left: 50px;
-      width: 687px;
-      height: 28px;
+    .price-quote-drag {
+      position: absolute !important;
+      bottom: 141px;
+      left: 2px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+    }
+    .drop-box {
+      top: 398px;
+      left: 288px;
+      width: 200px;
+      height: 13px;
     }
   }
 
   .step-2 {
     .click-box {
-      bottom: 83px;
-      left: 148px;
-      width: 37px;
-      height: 28px;
+      bottom: 430px;
+      left: 709px;
+      width: 73px;
+      height: 29px;
     }
     .check {
       position: absolute;
@@ -49,35 +45,4 @@
       left: 159px;
     }
   }
-
-  .step-3 {
-    .click-box {
-      top: 53px;
-      right: 44px;
-      width: 63px;
-      height: 28px;
-    }
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        bottom: 15px;
-        left: 170px;
-      }
-    }
-  }
-
-  .step-4 {
-    a {
-      top: 400px;
-      text-transform: none;
-    }
-
-    img {
-      width: 195px;
-      top: 70px;
-      left: 140px;
-      position: absolute;
-    }
-  }
-
 }
