@@ -4,15 +4,7 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step step-0">
-              <!-- <div class="form-actions">
-                <input
-                  class="btn btn-primary btn-interface"
-                  type="submit"
-                  value="New"
-                />
-              </div> -->
-            </div>
+            <div class="step step-0"></div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
@@ -23,9 +15,6 @@
                 >
                 <a ng-click="GoToFirstStep()">continue <i></i></a>
               </div>
-              <!-- <div class="form-actions">
-                <input class="btn btn-primary btn-interface active" li-autofocus="wizard.stateIndex == 1" ng-click="Next()" type="submit" value="New"/>
-              </div> -->
             </div>
           </wz-step>
           <wz-step>
@@ -79,33 +68,33 @@
             </div>
           </wz-step>
           <wz-step>
-              <div class="step step-4a">
-                <div class="flyout active">
-                  <span
-                    >Adding that selection increased the price by $3,000</span
-                  >
-                  <a ng-click="GoToStep4()">continue <i></i></a>
-                </div>
+            <div class="step step-4a">
+              <div class="flyout active">
+                <span>Adding that selection increased the price by $3,000</span>
+                <a ng-click="GoToStep4()">continue <i></i></a>
               </div>
-            </wz-step>
+            </div>
+          </wz-step>
           <wz-step>
             <div class="step step-4">
-                <div class="form-actions">
-                    <input
-                      class="btn btn-warning btn-interface active"
-                      li-autofocus="wizard.stateIndex == 1"
-                      ng-click="NextSLideNoTab()"
-                      type="submit"
-                      value=""
-                    />
-                  </div>
+              <div class="form-actions">
+                <input
+                  class="btn btn-warning btn-interface active"
+                  li-autofocus="wizard.stateIndex == 1"
+                  ng-click="NextSLideNoTab()"
+                  type="submit"
+                  value=""
+                />
+              </div>
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
               <li-center>
                 <p>
-                  Your customers have all the tools they need to make any updates in one engaging app. Let's see how we can make the experience even better by adding transparency with blockchain.
+                  Your customers have all the tools they need to make any
+                  updates in one engaging app. Let's see how we can make the
+                  experience even better by adding transparency with blockchain.
                 </p>
                 <p>
                   <a
