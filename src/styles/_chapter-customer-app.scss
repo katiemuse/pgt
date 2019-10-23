@@ -28,6 +28,23 @@
     }
   }
 
+  .step-1a {
+    .form-actions {
+      position: absolute;
+      top: 42px;
+      right: 10px;
+      .btn-primary,
+      .btn-warning {
+        width: 45px;
+        height: 23px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
+
   .step-2,
   .step-3,
   .step-4 {

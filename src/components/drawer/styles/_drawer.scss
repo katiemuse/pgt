@@ -95,6 +95,9 @@ $drawer-width: 410px;
         p {
           font-size: 18px;
           line-height: 22px;
+          &.continue {
+            width: 0;
+          }
         }
       }
     }
