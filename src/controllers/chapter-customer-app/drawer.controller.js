@@ -13,7 +13,7 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click &lsquo;New&rsquo; to create a process.'
+      title: 'Click &quot;Save&quot; to deploy.'
     });
 
     Steps.pop({
@@ -35,7 +35,7 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
     TopNavbar.DidYouKnowCount = 0;
     TopNavbar.HotSpotCount = 1;
     $timeout(() => {
-      Steps.activate('one');
+      Steps.activate('');
     }, 100);
   };
 
