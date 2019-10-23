@@ -18,17 +18,27 @@ export default function ChapterDataDrawerController($scope, WizardHandler, TopNa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on the &lsquo;Create&rsquo; drop down'
+      title: 'Click &ldquo;Upload&rdquo; to bring your vehicle order data to the app.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Name your object &lsquo;Customer Insights&rsquo;'
+      title: 'Select the &ldquo;Vehicles.xlsx&rdquo; file.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Click &lsquo;Save&rsquo;'
+      title: 'Click &ldquo;Next&rdquo; to finish uploading.'
+    });
+
+    Steps.pop({
+      number: 'four',
+      title: 'Click row 1 to select the first vehicle and view the order details.'
+    });
+
+    Steps.pop({
+      number: 'five',
+      title: 'Click &ldquo;Add Sources&rdquo; to easily add data from another system.'
     });
 
     Hotspots.clear();

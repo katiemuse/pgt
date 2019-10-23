@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler, $timeout, TopNavbar) {
+export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler, $timeout) {
   let _timeout;
   let _timeout2;
 
@@ -53,11 +53,59 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
       Steps.activate('one');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
-      Hotspots.clear();
-      TopNavbar.HotspotsCount = 0;
-      TopNavbar.HotspotsEnabled = false;
       Steps.activate('two');
-    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+    }
+  };
+
+  $scope.GoToStep2A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep3 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("three");
+  };
+
+  $scope.GoToStep3A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep4 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("four");
+  };
+
+  $scope.GoToStep4A = function() {
+    /* this is where the right rail of steps dissapears */
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep4B = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep5 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("five");
+  };
+
+  $scope.GoToStep5A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToSuccess = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("six");
+  };
+}
+
+/*
+    else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('three');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
@@ -67,5 +115,4 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
         Steps.activate('four');
       }, 2600);
     }
-  };
-}
+*/
