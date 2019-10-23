@@ -5,118 +5,70 @@
   .step-0, .step-1{
     background: url('../assets/images/chapters/chapter-data/screen-bkg-1.png') center center no-repeat;
   }
-
-  .step-2, .step-3 {
+  .step-2 {
     background: url('../assets/images/chapters/chapter-data/screen-bkg-2.png') center top no-repeat;
+  }
+  .step-2a, .step-3 {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-2a.png') center top no-repeat;
+  }
+  .step-3a {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-3a.png') center top no-repeat;
+  }
+  .step-4 {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4.png') center top no-repeat;
+  }
+  .step-4a {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4a.png') center top no-repeat;
+  }
+  .step-4b, .step-5 {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4b.png') center top no-repeat;
+  }
+  .step-5a {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-5a.png') center top no-repeat;
   }
 
   .step-1 {
     .click-box {
-      top: 81px;
-      left: 676px;
-      width: 90px;
-      height: 32px;
-    }
-    .click-box-1 {
-      top: 218px;
-      left: 620px;
-      width: 148px;
-      height: 30px;
-      opacity: 0;
-      pointer-events: none;
-      &.active {
-        opacity: 1;
-        cursor: pointer;
-        pointer-events: all;
-      }
-    }
-    .custom-object {
-      position: absolute;
-      top: 117px;
-      left: 618px;
-      opacity: 0;
-      pointer-events: none;
-      border-radius: 5px;
-      &.active {
-        opacity: 1;
-        cursor: pointer;
-        pointer-events: all;
-      }
+      top: 210px;
+      left: 139px;
+      width: 80px;
+      height: 22px;
     }
   }
 
   .step-2 {
-    height: 1040px !important;
-    transition: transform 1.7s linear 0.3s;
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        top: 166px;
-        left: 1px;
-        .control-label {
-          width: 155px;
-          padding-top: 7px;
-          color: #000;
-        }
-        .controls {
-          input {
-            &.text {
-              width: 316px;
-            }
-            &.plural-label {
-              margin-top: 17px;
-            }
-            &.object-name {
-              margin-top: 104px;
-            }
-            &.record-name {
-              margin-top: 301px;
-            }
-          }
-        }
-      }
-    }
-    &.active {
-      transform: translateY(-549px);
+    .click-box {
+      top: 48px;
+      left: 210px;
+      width: 480px;
+      height: 30px;
     }
   }
 
   .step-3 {
-    height: 1010px !important;
-    transform: translateY(-549px);
     .click-box {
-      bottom: 34px;
-      left: 308px;
-      width: 39px;
-      height: 22px;
+      top: 455px;
+      left: 728px;
+      width: 50px;
+      height: 30px;
     }
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        top: 166px;
-        left: 1px;
-        .control-label {
-          width: 155px;
-          padding-top: 7px;
-          color: #000;
-        }
-        .controls {
-          input {
-            &.text {
-              width: 316px;
-            }
-            &.plural-label {
-              margin-top: 17px;
-            }
-            &.object-name {
-              margin-top: 104px;
-            }
-            &.record-name {
-              margin-top: 301px;
-            }
-          }
-        }
-      }
+  }
+
+  .step-4 {
+    .click-box {
+      top: 148px;
+      left: 8px;
+      width: 770px;
+      height: 19px;
+    }
+  }
+
+  .step-5 {
+    .click-box {
+      top: 371px;
+      left: 483px;
+      width: 77px;
+      height: 26px;
     }
   }
 }

@@ -18,29 +18,22 @@ export default function ChapterFlowDrawerController($scope, WizardHandler, TopNa
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'From setup, search for ‘External data sources’ and click on it.'
+      title: 'Click “Select Payment Type” to update the payment flow.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click &lsquo;New External Data Source&rsquo;'
+      title: 'Drag and drop the “Currency” component from the Input menu to above the “Payment Type” component.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'Name your data source SAP and choose OData as the connection type. \n' +
-      '\n' +
-      'Click ‘Save.’'
+      title: 'Name the label “Price Quotes.”'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click &lsquo;Validate and Sync&rsquo; to bring data in'
-    });
-
-    Steps.pop({
-      number: 'five',
-      title: 'Out of 5 SAP tables integrated, select the one we need: &lsquo;SalesOrder&rsquo; and click &lsquo;Sync&rsquo;'
+      title: 'Click “Done” to complete your flow.'
     });
 
     Hotspots.clear();
