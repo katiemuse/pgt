@@ -57,19 +57,49 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
     }
   };
 
-  $scope.HalfSlideAfter2 = function() {
+  $scope.GoToStep2A = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
   };
 
-  $scope.GoToSlide3 = function() {
+  $scope.GoToStep3 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("three");
   };
 
-  $scope.GoToSlide4 = function() {
+  $scope.GoToStep3A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep4 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("four");
+  };
+
+  $scope.GoToStep4A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep4B = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep5 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("five");
+  };
+
+  $scope.GoToStep5A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToSuccess = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("six");
   };
 }
 

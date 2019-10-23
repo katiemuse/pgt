@@ -9,7 +9,22 @@
     background: url('../assets/images/chapters/chapter-data/screen-bkg-2.png') center top no-repeat;
   }
   .step-2a, .step-3 {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-3.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-2a.png') center top no-repeat;
+  }
+  .step-3a {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-3a.png') center top no-repeat;
+  }
+  .step-4 {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4.png') center top no-repeat;
+  }
+  .step-4a {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4a.png') center top no-repeat;
+  }
+  .step-4b, .step-5 {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4b.png') center top no-repeat;
+  }
+  .step-5a {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-5a.png') center top no-repeat;
   }
 
   .step-1 {
@@ -36,6 +51,24 @@
       left: 728px;
       width: 50px;
       height: 30px;
+    }
+  }
+
+  .step-4 {
+    .click-box {
+      top: 148px;
+      left: 8px;
+      width: 770px;
+      height: 19px;
+    }
+  }
+
+  .step-5 {
+    .click-box {
+      top: 371px;
+      left: 483px;
+      width: 77px;
+      height: 26px;
     }
   }
 }

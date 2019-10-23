@@ -15,34 +15,73 @@
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="click-box active" ng-click="HalfSlideAfter2()"></div>
+              <div class="click-box active" ng-click="GoToStep2A()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2a">
               <div class="flyout active">
                 <span>Object Creator imported the vehicle data and automatically sorted it into editable columns and fields.</span>
-                <a ng-click="GoToSlide3()">continue <i></i></a>
+                <a ng-click="GoToStep3()">continue <i></i></a>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <div class="click-box active" ng-click="GoToSlide4()"></div>
+              <div class="click-box active" ng-click="GoToStep3A()"></div>
             </div>
-          </wz-step>          
+          </wz-step>
+          <wz-step>
+            <div class="step step-3a">
+              <div class="flyout active">
+                <span>Congratulations! Your data has been added to a Salesforce app that was created just for you. Let’s see your data in action.</span>
+                <a ng-click="GoToStep4()">continue <i></i></a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <div class="click-box active" ng-click="GoToStep4A()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4a">
+              <div class="flyout active">
+                <span>Your team can now access real-time order updates right in the app.</span>
+                <a ng-click="GoToStep4B()">continue <i></i></a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4b">
+              <div class="flyout active">
+                <span>But, it doesn’t stop there. You can get a 360° view of your customer using different data sources that are consolidated into a unified profile.</span>
+                <a ng-click="GoToStep5()">continue <i></i></a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
+              <div class="click-box active" ng-click="GoToStep5A()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5a">
+              <div class="flyout active">
+                <span>Now, you can speed up innovation by empowering your teams to deliver connected and personalized customer experiences — with clicks, not code.</span>
+                <a ng-click="GoToSuccess()">continue <i></i></a>
+              </div>
+            </div>
+          </wz-step>
           <wz-step success="true">
             <div class="step success">
               <li-center>
                 <p>
-                  <img src="../../assets/images/success.png"/>
-                </p>
-                <h2>Success!</h2>
-                <p>
-                  You just created your first object! Now let’s integrate some useful customer data into your object.
+                  Now that your data's imported, your business can operate faster and with greater agility. Next, let's learn about using Flow to automate the buying process.
                 </p>
                 <p>
                   <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                  <a href="#" class="success-text-link">Learn more about data &gt;</a>
                 </p>
               </li-center>
             </div>
