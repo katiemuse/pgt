@@ -70,11 +70,15 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
   };
   $scope.NextHalfSlide5 = function() {
     WizardHandler.wizard("monitor").next();
-    Steps.activate("five");
+    Steps.activate("");
   };
   $scope.NextHalfSlide5b = function() {
     WizardHandler.wizard("monitor").next();
-    Steps.activate("five");
+    Steps.activate("");
+  };
+  $scope.NextStep = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
   };
 
   $scope.CreateForm = function() {
