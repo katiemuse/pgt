@@ -73,12 +73,17 @@
                   You and your customers now have full transparency into vehicle repairs, which builds trust and simplifies decision-making. Ready to discover more about what Customer 360 Platform can do for you?
                 </p>
                 <p>
-                  <a ui-sref="choose-process-object"  li-autofocus="wizard.stateIndex == 5"   class="btn">Continue</a>
-                  <a ui-sref="choose-process-object" >Learn More About BlockChain<i></i></a>
+                  <a ng-click="NextStep()" class="btn">continue <i></i></a>
+                  <a ui-sref="chapter-data" >Learn More About BlockChain<i></i></a>
                 </p>
               </li-center>
             </div>
           </wz-step>
+          <wz-step>
+              <div class="step recap">
+                <p>recap pic here</p>
+              </div>
+            </wz-step>
         </wizard>
       </hotspots-container>
     </div>
