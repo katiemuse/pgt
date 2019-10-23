@@ -78,6 +78,7 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
   };
 
   $scope.GoToStep4A = function() {
+    /* this is where the right rail of steps dissapears */
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
   };
