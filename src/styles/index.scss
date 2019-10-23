@@ -23,7 +23,7 @@ h2 {
   font-size: $header2-font-size;
   line-height: $header2-line-space;
   font-family: $header2-font-family;
-  font-color: $color-text-header;
+  color: $color-text-header;
   font-weight: $header2-font-weight;
 }
 
@@ -74,6 +74,9 @@ body {
       top: 50%;
       margin-left: -396px;
       margin-top: -260px;
+      #chapter-blockchain & {
+        overflow: visible;
+      }
     }
 
    }

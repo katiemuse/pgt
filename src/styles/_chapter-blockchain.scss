@@ -1,68 +1,267 @@
-@import '_base';
+@import "_base";
 
 .chapter-blockchain {
-
-
-  .step-0, .step-1 {
-    background: url('../assets/images/chapters/chapter-blockchain/screen-bkg-1.png') center center no-repeat;
+  .step-0 {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-0.png")
+      center center no-repeat;
   }
 
-  .step-2,
-  .step-3,
+  .step-1 {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-1.png")
+      center center no-repeat;
+  }
+
+  .step-2 {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-2.png")
+      center center no-repeat;
+  }
+
+  .step-2a,
+  .step-3 {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-3.png")
+      center center no-repeat;
+  }
+
   .step-4 {
-    background: url('../assets/images/chapters/chapter-blockchain/screen-bkg-2.png') center center no-repeat;
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-4.png")
+      center center no-repeat;
   }
 
-  .step-0, .step-1 {
+  .step-5 {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-5.png")
+      center center no-repeat;
+  }
+  .step-5a {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-5a.png")
+      center center no-repeat;
+  }
+  .step-5b {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-5b2.png")
+      center center no-repeat;
+    height: 612px !important;
+    position: absolute;
+    top: -40px;
+  }
+
+  .recap-0 {
+    background: url("../assets/images/chapters/chapter-blockchain/recap-0.png")
+      center center no-repeat;
+    position: relative;
+  }
+
+  .recap-1 {
+    background: url("../assets/images/chapters/chapter-blockchain/recap-1.png")
+      center center no-repeat;
+  }
+  .step-1 {
     .form-actions {
       position: absolute;
-      top: 50px;
-      right: 86px;
-      .btn-primary {
+      top: 157px;
+      left: 8px;
+      .btn-primary,
+      .btn-warning {
+        width: 160px;
+        height: 67px;
         padding: 5px 12px 6px;
         font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
       }
     }
   }
 
-  .step-2,
-  .step-3,
-  .step-4 {
-    .form {
-      position: absolute;
-      top: 173px;
-      left: -10px;
-      #name {
-        width: 227px;
-      }
-      #api {
-        position: absolute;
-        top: 0;
-        left: 412px;
-        width: 229px;
-      }
-      #process-starts {
-        margin-top: 82px;
-        width: 473px;
-      }
-    }
+  .step-2 {
     .form-actions {
       position: absolute;
-      bottom: 79px;
-      right: 148px;
+      top: 114px;
+      right: 183px;
+      .btn-primary,
+      .btn-warning {
+        width: 40px;
+        height: 20px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
     }
   }
 
-}
-
-.chapter-blockchain-drawer {
-
-  p.continue {
-    text-align: center;
-
-    a.btn-continue {
-      margin:30px auto;
+  .step-2a {
+    .flyout {
+      width: 295px;
+      height: 127px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+  }
+  .step-3 {
+    .form-actions {
+      position: absolute;
+      bottom: 71px;
+      right: 198px;
+      .btn-primary,
+      .btn-warning {
+        width: 40px;
+        height: 21px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
     }
   }
 
+  .step-4 {
+    .form-actions {
+      position: absolute;
+      top: 81px;
+      left: 8px;
+      .btn-primary,
+      .btn-warning {
+        width: 160px;
+        height: 67px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
+
+  .step-5 {
+    .form-actions {
+      position: absolute;
+      bottom: 167px;
+      left: 370px;
+      .btn-primary,
+      .btn-warning {
+        width: 60px;
+        height: 20px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
+
+  .step-5a {
+    .flyout {
+      width: 295px;
+      height: 107px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+  }
+
+  .step-5b {
+    .flyout {
+      bottom: 120px;
+      width: 260px;
+      height: 150px;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+    }
+  }
+
+  .flyout {
+    background: $color-marketing-cloud-orange;
+  }
+
+  .success {
+    .centered {
+      p {
+        &:first-of-type {
+          font-weight: bold;
+          font-size: 22px;
+          line-height: 32px;
+          padding: 0 20%;
+        }
+        &:last-of-type {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 30px;
+          a {
+            &:nth-child(1) {
+              background: #e67300;
+              color: #ffffff;
+              padding: 10px 30px;
+              margin-top: 0;
+              margin-right: 25px;
+            }
+            &:nth-child(2) {
+              color: #fff;
+              text-transform: uppercase;
+              font-weight: normal;
+              font-size: 14px;
+              i {
+                font-family: "SalesforceIcons";
+                font-style: normal;
+                font-weight: normal;
+                font-variant: normal;
+                text-transform: none;
+                line-height: 1;
+                font-size: 9px;
+                display: inline-block;
+                vertical-align: middle;
+                &:after {
+                  content: "\E924";
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .recap-0,
+  .recap-1 {
+    .recap-buttons {
+      display: flex;
+      position: absolute;
+      bottom: 190px;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      .btn {
+        background: #e67300;
+        color: #ffffff;
+        padding: 10px 30px;
+        margin-top: 0;
+        margin-right: 25px;
+      }
+    }
+  }
+  .recap-0 {
+    .recap-buttons {
+      .text {
+        color: #000000;
+        i {
+          font-family: "SalesforceIcons";
+          font-style: normal;
+          font-weight: normal;
+          font-variant: normal;
+          text-transform: none;
+          line-height: 1;
+          font-size: 9px;
+          display: inline-block;
+          vertical-align: middle;
+          &:after {
+            content: "\E924";
+          }
+        }
+      }
+    }
+  }
+  .recap-1 {
+    .recap-buttons {
+      bottom: 100px;
+    }
+  }
 }

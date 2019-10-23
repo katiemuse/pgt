@@ -55,6 +55,9 @@ $drawer-width: 410px;
         animation: borderActive 2s infinite;
       }
     }
+    > div {
+      height: inherit;
+    }
   }
 
   &.drawer-left.active,
@@ -63,15 +66,37 @@ $drawer-width: 410px;
   }
 
   .drawer-content {
-
+    height: inherit;
     .drawer-intro {
       padding: 80px 46px 0;
 
       p.continue {
         text-align: left;
 
-        a.btn-continue {
-          margin-top:20px;
+      }
+      a.btn-continue {
+        margin-top:20px;
+        width: 120px;
+        height: 43px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      #chapter-blockchain & {
+        @media screen and (min-width: $screen-1080p) {
+          display: flex;
+          flex-flow: column;
+          justify-content: start;
+          height: 100%;
+          padding: 200px 80px 0;
+          h2 {
+            font-size: 28px;
+            line-height: 32px;
+          }
+          p {
+            font-size: 18px;
+            line-height: 22px;
+          }
         }
       }
     }

@@ -13,22 +13,27 @@ export default function ChapterBlockchainDrawerController($scope, WizardHandler,
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click &lsquo;New&rsquo; to create a process.'
+      title: 'Click &quot;Partners&quot; to open your list of current partners'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Name your process &lsquo;Add idea to backlog&rsquo;.'
+      title: 'Click &quot;New&quot; to add a partner'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'From the dropdown below, choose &lsquo;A record changes&rsquo; to tell the process when to begin'
+      title: 'Click &quot;Save.&quot;'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click &lsquo;Save&rsquo;'
+      title: 'Click &quot;Details&quot; to start deploying your network.'
+    });
+
+    Steps.pop({
+      number: 'five',
+      title: 'Click &quot;Deploy.&quot;'
     });
 
     Hotspots.clear();
