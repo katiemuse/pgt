@@ -138,7 +138,7 @@ button.step-close-button {
 
     .step-title {
       font-family: $salesforcesans;
-      font-weight: bold;
+      font-weight: normal;
       font-size: 16px;
       line-height: 20px;
       opacity: 0;
@@ -216,9 +216,9 @@ button.step-close-button {
     }
 
     p {
-      font-size:22px;
+      font-size: 22px;
       padding: 0 12%;
-      font-weight: bold;      
+      font-weight: bold;
     }
 
     .btn {
