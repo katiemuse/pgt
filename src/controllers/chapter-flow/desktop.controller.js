@@ -131,6 +131,16 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
     }
   };
 
+  $scope.GoToStep1A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep2 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("two");
+  };
+
   $scope.GoToStep3 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("three");
@@ -139,5 +149,10 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   $scope.GoToStep4 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("four");
+  };
+
+  $scope.GoToSuccess = function() {
+    Steps.clear();
+    WizardHandler.wizard("monitor").next();
   };
 }

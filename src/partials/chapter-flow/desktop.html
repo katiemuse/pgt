@@ -10,20 +10,22 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="Next()"></div>
+              <div class="click-box active" ng-click="GoToStep1A()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1a">
               <div class="flyout active">
                 <span>Let's add price quote logic to your flow so that sales reps see automatic payment terms.</span>
-                <a ng-click="GoToStep3()">continue <i></i></a>
+                <a ng-click="GoToStep2()">continue <i></i></a>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="click-box active" ng-click="GoToStep3()"></div>
+              <img src="../../assets/images/chapters/chapter-flow/currency-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}"
+                   data-jqyoui-options="{revert: 'invalid'}" alt="currency drag" class="currency-drag" ng-class="{active:!reportchart.active}">
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'GoToStep3'}"></div>
             </div>
           </wz-step>
           <wz-step>
@@ -43,7 +45,7 @@
                   Automating these actions will save you time and decrease errors. Ready to learn how to add this logic to your app with clicks, not code.
                 </p>
                 <p>
-                  <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
+                  <a ui-sref="chapter-builder" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
                   <a href="#" class="success-text-link">Learn more about automation &gt;</a>
                 </p>
               </li-center>
