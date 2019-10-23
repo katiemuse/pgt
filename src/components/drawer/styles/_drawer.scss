@@ -1,6 +1,6 @@
-@import '../../../styles/_base';
+@import "../../../styles/_base";
 
-$drawer-transition-time: .3s;
+$drawer-transition-time: 0.3s;
 $drawer-width: 410px;
 
 @mixin long-text() {
@@ -51,7 +51,8 @@ $drawer-width: 410px;
     box-shadow: -1px 0 3px rgba(50, 50, 50, 0.5);
     transform: translateZ(0px) translateX($drawer-width + 5) translateY(0px);
     &.active {
-      .btn-continue, .btn-rounded {
+      .btn-continue,
+      .btn-rounded {
         animation: borderActive 2s infinite;
       }
     }
@@ -72,44 +73,39 @@ $drawer-width: 410px;
 
       p.continue {
         text-align: left;
-
       }
       a.btn-continue {
-        margin-top:20px;
+        margin-top: 20px;
         width: 120px;
         height: 43px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
       }
-      #chapter-blockchain & {
-        @media screen and (min-width: $screen-1080p) {
-          display: flex;
-          flex-flow: column;
-          justify-content: start;
-          height: 100%;
-          padding: 200px 80px 0;
-          h2 {
-            font-size: 28px;
-            line-height: 32px;
-          }
-          p {
-            font-size: 18px;
-            line-height: 22px;
+      @media screen and (min-width: $screen-1080p) {
+        display: flex;
+        flex-flow: column;
+        justify-content: start;
+        height: 100%;
+        padding: 200px 80px 0;
+        h2 {
+          font-size: 28px;
+          line-height: 32px;
+        }
+        p {
+          font-size: 18px;
+          line-height: 22px;
+          &.continue {
+            width: 0;
           }
         }
       }
     }
 
-    .drawer-hotspots, .drawer-did-you-know {
-
+    .drawer-hotspots,
+    .drawer-did-you-know {
       .x {
-        float:left;
-        margin:20px 0 0 10px;
-        cursor:pointer;
+        float: left;
+        margin: 20px 0 0 10px;
+        cursor: pointer;
       }
-
     }
-
   }
 }
