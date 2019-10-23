@@ -4,9 +4,7 @@ export default function ChapterCustomerAppController(
   $scope,
   $timeout,
   Steps,
-  WizardHandler,
-  $state,
-  UserProfile
+  WizardHandler
 ) {
   $scope.processOptions = [
     { label: "Select one", value: 1 },
@@ -49,22 +47,6 @@ export default function ChapterCustomerAppController(
     }
   });
 
-  $scope.Next = function() {
-    if (WizardHandler.wizard("monitor").currentStepNumber() === 1) {
-      WizardHandler.wizard("monitor").next();
-      Steps.activate("one");
-    } else if (WizardHandler.wizard("monitor").currentStepNumber() === 2) {
-      WizardHandler.wizard("monitor").next();
-      Steps.activate("two");
-    } else if (WizardHandler.wizard("monitor").currentStepNumber() === 3) {
-      WizardHandler.wizard("monitor").next();
-      Steps.activate("three");
-    } else if (WizardHandler.wizard("monitor").currentStepNumber() === 4) {
-      WizardHandler.wizard("monitor").next();
-      Steps.activate("four");
-    }
-  };
-
   $scope.NextSLideNoTab = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
@@ -74,10 +56,7 @@ export default function ChapterCustomerAppController(
     WizardHandler.wizard("monitor").next();
     Steps.activate("one");
   };
-  $scope.GoToSlide1b = function() {
-    WizardHandler.wizard("monitor").next();
-    Steps.activate("");
-  };
+
   $scope.GoToStep2 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("two");
@@ -89,12 +68,5 @@ export default function ChapterCustomerAppController(
   $scope.GoToStep4 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("four");
-  };
-
-  $scope.CreateForm = function() {
-    if (WizardHandler.wizard("monitor").currentStepNumber() === 2) {
-      UserProfile.FormName = $scope.form.name;
-      $state.go("choose-process-object");
-    }
   };
 }
