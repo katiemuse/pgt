@@ -12,7 +12,9 @@
   }
 
   
-  .step-3 {
+  .step-3,
+  .step-4a,
+  .step-4 {
     background: url('../assets/images/chapters/chapter-customer-app/customer-app-3.png') center center no-repeat;
   }
 
@@ -67,33 +69,39 @@
     }
   }
 
-  // .step-2,
-  // .step-3,
-  // .step-4 {
-  //   .form {
-  //     position: absolute;
-  //     top: 173px;
-  //     left: -10px;
-  //     #name {
-  //       width: 227px;
-  //     }
-  //     #api {
-  //       position: absolute;
-  //       top: 0;
-  //       left: 412px;
-  //       width: 229px;
-  //     }
-  //     #process-starts {
-  //       margin-top: 82px;
-  //       width: 473px;
-  //     }
-  //   }
-  //   .form-actions {
-  //     position: absolute;
-  //     bottom: 79px;
-  //     right: 148px;
-  //   }
-  // }
+  .step-3 {
+    .form-actions {
+      position: absolute;
+      bottom: 72px;
+      left: 183px;
+      .btn-primary,
+      .btn-warning {
+        width: 90px;
+        height: 15px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
+  
+  .step-4 {
+    .form-actions {
+      position: absolute;
+      bottom: 46px;
+      right: 179px;
+      .btn-primary,
+      .btn-warning {
+        width: 70px;
+        height: 21px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
 
 }
 

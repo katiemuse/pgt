@@ -58,7 +58,7 @@
                 <input
                   class="btn btn-warning btn-interface active"
                   li-autofocus="wizard.stateIndex == 1"
-                  ng-click="GoToSlide1b()"
+                  ng-click="GoToStep3()"
                   type="submit"
                   value=""
                 />
@@ -71,7 +71,7 @@
                 <input
                   class="btn btn-warning btn-interface active"
                   li-autofocus="wizard.stateIndex == 1"
-                  ng-click="GoToSlide4()"
+                  ng-click="NextSLideNoTab()"
                   type="submit"
                   value=""
                 />
@@ -79,76 +79,47 @@
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-4">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="name"
-                      id="name"
-                      ng-model="process.name"
-                      class="text"
-                      maxlength="80"
-                      disabled
-                    />
-                  </div>
+              <div class="step step-4a">
+                <div class="flyout active">
+                  <span
+                    >Adding that selection increased the price by $3,000</span
+                  >
+                  <a ng-click="GoToStep4()">continue <i></i></a>
                 </div>
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="api"
-                      id="api"
-                      ng-model="process.api"
-                      class="text"
-                      maxlength="80"
-                      disabled
-                    />
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="controls">
-                    <select
-                      name="process-starts"
-                      id="process-starts"
-                      ng-model="process.starts"
-                      ng-options="opt as opt.label for opt in processOptions"
-                      disabled
-                    ></select>
-                  </div>
-                </div>
-              </form>
-              <div class="form-actions">
-                <input
-                  class="btn btn-primary btn-interface active"
-                  li-autofocus="wizard.stateIndex == 4"
-                  wz-next
-                  type="submit"
-                  value="Save"
-                />
               </div>
+            </wz-step>
+          <wz-step>
+            <div class="step step-4">
+                <div class="form-actions">
+                    <input
+                      class="btn btn-warning btn-interface active"
+                      li-autofocus="wizard.stateIndex == 1"
+                      ng-click="NextSLideNoTab()"
+                      type="submit"
+                      value=""
+                    />
+                  </div>
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
               <li-center>
-                <p>
+                <!-- <p>
                   <img src="../../assets/images/success.png" />
-                </p>
-                <h2>Success!</h2>
+                </p> -->
                 <p>
-                  Your process has been created. Now add logic to it.
+                  Your customers have all the tools they need to make any updates in one engaging app. Let's see how we can make the experience even better by adding transparency with blockchain.
                 </p>
                 <p>
                   <a
-                    ui-sref="choose-process-object"
+                    ui-sref="chapter-blockchain"
                     li-autofocus="wizard.stateIndex == 5"
-                    class="btn btn-rounded active"
+                    class="btn btn-rounded"
                     >Continue</a
                   >
+                  <a ui-sref="chapter-customer-app" class="success-text-link"
+                    >Learn More About BlockChain<i></i
+                  ></a>
                 </p>
               </li-center>
             </div>

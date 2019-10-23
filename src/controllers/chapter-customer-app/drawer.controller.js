@@ -23,12 +23,12 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
 
     Steps.pop({
       number: 'three',
-      title: 'From the dropdown below, choose &lsquo;A record changes&rsquo; to tell the process when to begin'
+      title: 'Select the option for &quot;Self Driving Capabilith&quot;.'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click &lsquo;Save&rsquo;'
+      title: 'Click  &quot;Purchase.&quot;'
     });
 
     Hotspots.clear();

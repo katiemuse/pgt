@@ -82,6 +82,14 @@ export default function ChapterCustomerAppController(
     WizardHandler.wizard("monitor").next();
     Steps.activate("two");
   };
+  $scope.GoToStep3 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("three");
+  };
+  $scope.GoToStep4 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("four");
+  };
 
   $scope.CreateForm = function() {
     if (WizardHandler.wizard("monitor").currentStepNumber() === 2) {
