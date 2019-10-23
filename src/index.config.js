@@ -26,7 +26,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: '<div></div>'
         },
         mobile: {
-          template: require('./partials/welcome/mobile.html')
+          template: require('./mobile.html')
         },
         'getting-started': {
           template: require('./partials/welcome/getting-started.html'),
@@ -50,7 +50,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterDataDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-data/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -69,7 +69,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterFlowDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-flow/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -91,7 +91,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterAIDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-data/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -110,7 +110,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-data/mobile.html')
+          template: require('./mobile.html')
         },
         phone: {
           template: require('./partials/chapter-builder/phone.html')
@@ -154,7 +154,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterCustomerAppDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-customer-app/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -173,7 +173,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBlockchainDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-blockchain/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -192,7 +192,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChooseProcessObjectDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-customer-app/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -211,7 +211,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddCriteriaDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-customer-app/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -233,7 +233,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateProcessActionDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-customer-app/mobile.html')
+          template: require('./mobile.html')
         },
         phone: {
           template: require('./partials/create-process-action/phone.html')
@@ -255,7 +255,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'IotExplorerDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-customer-app/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -274,7 +274,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterVoiceDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-voice/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -293,7 +293,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddAppexchangeComponentsDrawerController'
         },
         mobile: {
-          template: require('./partials/add-appexchange-components/mobile.html')
+          template: require('./mobile.html')
         },
         phone: {
           template: require('./partials/add-appexchange-components/phone.html')
@@ -315,7 +315,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'AddBaseLightningComponentsDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-voice/mobile.html')
+          template: require('./mobile.html')
         },
         phone: {
           template: require('./partials/add-base-lightning-components/phone.html')
@@ -340,7 +340,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/add-custom-components/phone.html')
         },
         mobile: {
-          template: require('./partials/chapter-voice/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -362,7 +362,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/customize-page-layout/phone.html')
         },
         mobile: {
-          template: require('./partials/chapter-voice/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -384,7 +384,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/deploy-your-app/phone.html')
         },
         mobile: {
-          template: require('./partials/chapter-voice/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -403,7 +403,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CreateCustomActionsDrawerController'
         },
         mobile: {
-          template: require('./partials/create-custom-actions/mobile.html')
+          template: require('./mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -422,7 +422,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'CustomizeActionBarDrawerController'
         },
         mobile: {
-          template: require('./partials/customize-action-bar/mobile.html')
+          template: require('./mobile.html')
         },
         phone: {
           template: require('./partials/customize-action-bar/phone.html')
@@ -444,7 +444,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'BuildLightningAppDrawerController'
         },
         phone: {
-          template: require('./partials/build-lightning-app/phone.html')
+          template: require('./mobile.html')
         },
         mobile: {
           template: require('./partials/create-custom-actions/mobile.html')
