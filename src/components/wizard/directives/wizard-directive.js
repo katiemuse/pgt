@@ -20,11 +20,7 @@ export default function wizard() {
     template: require('../partials/wizard.html'),
 
     // controller for wizard directive, treat this just like an angular controller
-<<<<<<< HEAD
-    controller($scope, WizardHandler, TopNavbar, Drawer, /* Steps */) {
-=======
     controller($scope, WizardHandler, TopNavbar, Drawer) {
->>>>>>> 3f54e9c621c6c5ccf783cefb91f11e912fc3bc1b
       // this variable allows directive to load without having to pass any step validation
       let firstRun = true;
       // creating instance of wizard, passing this as second argument allows access to functions attached to this via Service
