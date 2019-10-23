@@ -18,7 +18,8 @@
             <div class="step step-1">
               <div class="flyout active">
                 <span
-                  >All the data from Salesforce will be synced to the customer app.</span
+                  >All the data from Salesforce will be synced to the customer
+                  app.</span
                 >
                 <a ng-click="GoToFirstStep()">continue <i></i></a>
               </div>
@@ -28,79 +29,51 @@
             </div>
           </wz-step>
           <wz-step>
-              <div class="step step-1a">
-                <div class="form-actions">
-                  <input
-                    class="btn btn-warning btn-interface active"
-                    li-autofocus="wizard.stateIndex == 1"
-                    ng-click="GoToSlide1b()"
-                    type="submit"
-                    value=""
-                  />
-                </div>
-              </div>
-            </wz-step>
-          <wz-step>
-              <div class="step step-1b">
-                <!-- <div class="form-actions">
-                  <input
-                    class="btn btn-primary btn-interface"
-                    type="submit"
-                    value="New"
-                  />
-                </div> -->
-              </div>
-            </wz-step>
-          <wz-step>
-            <div class="step step-3">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="name"
-                      id="name"
-                      ng-model="process.name"
-                      class="text"
-                      maxlength="80"
-                      disabled
-                    />
-                  </div>
-                </div>
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="api"
-                      id="api"
-                      ng-model="process.api"
-                      class="text"
-                      maxlength="80"
-                      disabled
-                    />
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="controls">
-                    <select
-                      name="process-starts"
-                      id="process-starts"
-                      ng-model="process.starts"
-                      li-autofocus="wizard.stateIndex == 3"
-                      ng-options="opt as opt.label for opt in processOptions"
-                      class="active"
-                    ></select>
-                  </div>
-                </div>
-              </form>
+            <div class="step step-1a">
               <div class="form-actions">
                 <input
-                  class="btn btn-primary btn-interface"
+                  class="btn btn-warning btn-interface active"
+                  li-autofocus="wizard.stateIndex == 1"
+                  ng-click="GoToSlide1b()"
                   type="submit"
-                  value="Save"
-                  disabled
+                  value=""
+                />
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1b">
+              <div class="flyout active">
+                <span
+                  >Our customer, Mike, can now buy or customize his car on an
+                  engaging app built on Heroku.</span
+                >
+                <a ng-click="GoToStep2()">continue <i></i></a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <div class="form-actions">
+                <input
+                  class="btn btn-warning btn-interface active"
+                  li-autofocus="wizard.stateIndex == 1"
+                  ng-click="GoToSlide1b()"
+                  type="submit"
+                  value=""
+                />
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3">
+              <div class="form-actions">
+                <input
+                  class="btn btn-warning btn-interface active"
+                  li-autofocus="wizard.stateIndex == 1"
+                  ng-click="GoToSlide4()"
+                  type="submit"
+                  value=""
                 />
               </div>
             </div>

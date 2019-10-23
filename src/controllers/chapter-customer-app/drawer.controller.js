@@ -18,7 +18,7 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
 
     Steps.pop({
       number: 'two',
-      title: 'Name your process &lsquo;Add idea to backlog&rsquo;.'
+      title: 'Click &quot;Customize&quot; to get started.'
     });
 
     Steps.pop({
@@ -34,9 +34,9 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
     Hotspots.clear();
     TopNavbar.DidYouKnowCount = 0;
     TopNavbar.HotSpotCount = 1;
-    $timeout(() => {
-      Steps.activate('');
-    }, 100);
+    // $timeout(() => {
+    //   Steps.activate('');
+    // }, 100);  not needed
   };
 
   $scope.beginForBuilderStory = function () {
