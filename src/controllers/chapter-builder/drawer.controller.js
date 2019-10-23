@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChapterBuilderDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function ChapterBuilderDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer) {
   Drawer.openToIntro();
 
   TopNavbar.DidYouKnowCount = 0;
@@ -16,38 +16,18 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Select the &lsquo;Customer Insights&rsquo; object.'
+      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Check the ‘Customer Idea’ field to map and bring it to your  Salesforce app.'
-    });
-
-    Steps.pop({
-      number: 'three',
-      title: 'Click ‘Save’ and go to Salesforce to see the data integrated!'
+      title: 'Click &ldquo;Activation&rdquo; to see your app live.'
     });
 
     Hotspots.clear();
-    // Hotspots.pop({
-    //   number: 1,
-    //   position: {
-    //     left: '117px',
-    //     top: '223px'
-    //   }
-    // });
 
-    // Hotspots.pop({
-    //   number: 2,
-    //   position: {
-    //     left: '117px',
-    //     top: '273px'
-    //   }
-    // });
-
-    $timeout(() => {
-      Steps.activate('one');
-    }, 1000);
+    // $timeout(() => {
+    //   Steps.activate('one');
+    // }, 1000);
   };
 }
