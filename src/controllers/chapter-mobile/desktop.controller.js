@@ -1,12 +1,6 @@
 'use strict';
 
-export default function IotExplorerController(
-  $scope,
-  $timeout,
-  Steps,
-  WizardHandler,
-  Hotspots
-) {
+export default function ChapterMobileController($scope, $timeout, Steps, WizardHandler, Hotspots) {
   $scope.Next = function() {
     WizardHandler.wizard('monitor').next();
     Hotspots.clear();

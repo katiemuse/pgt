@@ -91,13 +91,13 @@
       </steps-container>
 
       <div class="mobile-popout" ng-show="showMobilePopout">
-        <div class="blocker" ng-click="$root.closeMobilePopout($event)">
+        <div class="blocker">
           <div class="phone">
+            <div class="phone-backdrop">
+              <img src="./assets/images/backgrounds/iphone_chrome.png" />
+            </div>
             <div class="phone-view" ui-view="phone"></div>
           </div>
-
-          <a class="back-to-laptop" ng-click="$root.closeMobilePopout($event)">
-          </a>
         </div>
       </div>
 

@@ -74,8 +74,9 @@ import AddCriteriaController from './controllers/add-process-criteria/desktop.co
 import AddCriteriaDrawerController from './controllers/add-process-criteria/drawer.controller';
 import CreateProcessActionController from './controllers/create-process-action/desktop.controller';
 import CreateProcessActionDrawerController from './controllers/create-process-action/drawer.controller';
-import IotExplorerController from './controllers/chapter-mobile/desktop.controller';
-import IotExplorerDrawerController from './controllers/chapter-mobile/drawer.controller';
+import ChapterMobileController from './controllers/chapter-mobile/desktop.controller';
+import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.controller';
+import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
 import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
 import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
 import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
@@ -180,8 +181,9 @@ angular
   .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
   .controller('CreateProcessActionController', CreateProcessActionController)
   .controller('CreateProcessActionDrawerController', CreateProcessActionDrawerController)
-  .controller('IotExplorerController', IotExplorerController)
-  .controller('IotExplorerDrawerController', IotExplorerDrawerController)
+  .controller('ChapterMobileController', ChapterMobileController)
+  .controller('ChapterMobileDrawerController', ChapterMobileDrawerController)
+  .controller('ChapterMobilePhoneController', ChapterMobilePhoneController)
   .controller('ChapterVoiceController', ChapterVoiceController)
   .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
   .controller('AddAppexchangeComponentsController', AddAppexchangeComponentsController)
