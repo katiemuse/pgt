@@ -1,6 +1,6 @@
 'use strict';
 
-export default function IotExplorerDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function ChapterMobileDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 

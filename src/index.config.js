@@ -248,11 +248,11 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-mobile/desktop.html'),
-          controller: 'IotExplorerController'
+          controller: 'ChapterMobileController'
         },
         drawer: {
           template: require('./partials/chapter-mobile/drawer.html'),
-          controller: 'IotExplorerDrawerController'
+          controller: 'ChapterMobileDrawerController'
         },
         mobile: {
           template: require('./mobile.html')

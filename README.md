@@ -64,6 +64,8 @@ The `src/index.js` needed updating of controller names (and throughout codebase)
 * `SalesforceConnectDrawerController` => `ChapterFlowDrawerController`
 * `HerokuConnectController` => `ChapterBuilderController`
 * `HerokuConnectDrawerController` => `ChapterBuilderDrawerController`
+* `IotExplorerController` => `ChapterMobileController`
+* `IotExplorerDrawerController` => `ChapterMobileDrawerController`
 * `EinsteinPredictionBuilderController` => `ChapterAIController`
 * `EinsteinPredictionBuilderDrawerController` => `ChapterAIDrawerController`
 * `NewLightningPageController` => `ChapterVoiceController`

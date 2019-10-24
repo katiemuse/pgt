@@ -1,6 +1,6 @@
 'use strict';
 
-export default function IotExplorerController(
+export default function ChapterMobileController(
   $scope,
   $timeout,
   Steps,
