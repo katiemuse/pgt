@@ -3,26 +3,39 @@
 .chapter-mobile {
 
   .phone-step-0, .phone-step-1 {
-    background: url("../assets/images/phone_hack_bg.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg.png") center center no-repeat;
   }
 
   .phone-step-2 {
-    background: url("../assets/images/phone_hack_bg_2.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg_2.png") center center no-repeat;
   }
 
   .phone-step-3 {
-    background: url("../assets/images/phone_hack_bg_3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg_3.png") center center no-repeat;
   }
 
   .phone-step-4 {
-    background: url("../assets/images/phone_hack_bg_4.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg_4.png") center center no-repeat;
   }
 
   .step-0,
   .step-1 {
-    background: url("../assets/images/generic-phone-backdrop.png") center center
+    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center
       no-repeat;
   }
+  .step-2 {
+    background: url("../assets/images/chapters/chapter-mobile/bkg-1.png") center center
+      no-repeat;
+  }
+  .step-3 {
+    background: url("../assets/images/chapters/chapter-mobile/bkg-2.png") center center
+      no-repeat;
+  }
+  .step-4 {
+    background: url("../assets/images/chapters/chapter-mobile/bkg-3.png") center center
+      no-repeat;
+  }
+
 
   .phone-step-1 {
     .flyout {

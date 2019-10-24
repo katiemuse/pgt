@@ -11,11 +11,12 @@
     z-index: $z-index-mobile-popout-blocker;
   }
 
+  /* RFP: HACK: use real heights and widths */
   .phone {
     position: absolute;
     background-image:url('../assets/images/iphone-vertical.png');
-    width: 263px;
-    height: 547px;
+    width: 663px;
+    height: 747px;
     left:0;
     top:0;
     bottom: 0;
