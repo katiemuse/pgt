@@ -6,7 +6,7 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
 
   $scope.beginStory = function () {
     Drawer.close();
-    WizardHandler.wizard('monitor').next();
+    WizardHandler.wizard('phone').next();
 
     Steps.clear();
 

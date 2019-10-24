@@ -254,6 +254,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/chapter-mobile/drawer.html'),
           controller: 'ChapterMobileDrawerController'
         },
+        phone: {
+          template: require('./partials/chapter-mobile/phone.html'),
+          controller: 'ChapterMobilePhoneController'
+        },
         mobile: {
           template: require('./mobile.html')
         }

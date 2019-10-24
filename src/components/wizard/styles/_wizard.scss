@@ -34,6 +34,40 @@
   }
 }
 
+.phone {
+  .steps {
+
+    height: $phone-height;
+    width: $phone-width;
+
+    > section {
+      height: $phone-height;
+      width: $phone-width;
+
+      > .step {
+        height: $phone-height;
+        width: $phone-width;
+
+        &.success {
+            //background: url('../../../assets/images/backgrounds/welcome-screen.jpg') center center repeat;
+            background-color: #1A437F;
+
+            img {
+              margin-bottom: 0;
+            }
+
+            a, a:visited {
+              &.content {
+                color: white;
+                text-decoration:underline;
+              }
+            }
+        }
+      }
+    }
+  }
+}
+
 
 .drawer {
   .steps {
