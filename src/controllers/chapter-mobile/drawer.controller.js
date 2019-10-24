@@ -4,10 +4,10 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
-  $timeout(() => {
-    // show the phone overlay after a slight delay
+  angular.element(document).ready(() => {
+    // show the phone overlay after the page finishes loading
     $rootScope.showMobilePopout = true;
-  }, 250);
+  });
 
   $scope.beginStory = function () {
     Drawer.close();
