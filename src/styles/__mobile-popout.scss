@@ -14,23 +14,33 @@
   /* RFP: HACK: use real heights and widths */
   .phone {
     position: absolute;
+    box-sizing: border-box;
     // background-image:url('../assets/images/iphone-vertical.png');
     background-color: rgba(0, 0, 255, 0.25);
-    width: 663px;
-    height: 747px;
+    width: 920px;
+    height: 580px;
     left:0;
     top:0;
     bottom: 0;
     right: 0;
     margin: auto;
 
+    .phone-backdrop {
+      position: absolute;
+      width: 292px;
+      height: 581px;
+      left: 310px;
+      top: 0px;
+      margin: auto;
+      z-index: $z-index-mobile-popout-blocker + 2;
+    }
 
     .phone-view {
-      position: relative;
-      top: 63px;
-      left: 14px;
-      width: 235px;
-      height: 418px;
+      position: absolute;
+      top: 12px;
+      left: 331px;
+      width: 257px;
+      height: 556px;
       z-index: $z-index-mobile-popout-blocker + 1;
       background-color: rgba(0,255,0,0.5);
     }
@@ -47,40 +57,5 @@
     right: -373px;
     margin: auto;
     cursor:pointer;
-  }
-}
-
-/* HACK: RFP: Tried putting this in its own file, but isn't being picked up */
-.phone-layover {
-  .blocker {
-    left: 0px;
-    top:0px;
-    position: fixed;
-    background-color: rgba(0,0,0,0.7);
-    width: 100vw;
-    height: 100vh;
-    z-index: $z-index-mobile-popout-blocker;
-  }
-
-  .phone {
-    position: absolute;
-    background-image:url('../assets/images/iphone-vertical.png');
-    width: 263px;
-    height: 547px;
-    left:0;
-    top:0;
-    bottom: 0;
-    right: 0;
-    margin: auto;
-
-    .phone-view {
-      position: relative;
-      top: 63px;
-      left: 14px;
-      width: 235px;
-      height: 418px;
-      z-index: $z-index-mobile-popout-blocker + 1;
-      background-color: rgba(0,255,0,0.5);
-    }
   }
 }
