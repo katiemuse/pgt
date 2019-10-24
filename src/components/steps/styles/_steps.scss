@@ -206,8 +206,6 @@ button.step-close-button {
 
 }
 .step {
-  //background-color: $step;
-
   &.success {
 
 
@@ -227,9 +225,6 @@ button.step-close-button {
     }
 
     .success-text-link {
-      color: $text-color-white;
-      vertical-align: middle;
-      margin-left: 30px;
       font-weight: normal;
       font-size: 14px;
       text-transform: uppercase;
