@@ -1,19 +1,27 @@
-@import '_base';
+@import "_base";
 
 .chapter-customer-app {
-
-
-  .step-0, .step-1 {
-    background: url('../assets/images/chapters/chapter-customer-app/screen-bkg-1.png') center center no-repeat;
+  .step-0,
+  .step-1,
+  .step-1a {
+    background: url("../assets/images/chapters/chapter-customer-app/customer-app-0.png")
+      center center no-repeat;
+  }
+  .step-1b,
+  .step-2 {
+    background: url("../assets/images/chapters/chapter-customer-app/customer-app-1b.png")
+      center center no-repeat;
   }
 
-  .step-2,
   .step-3,
+  .step-4a,
   .step-4 {
-    background: url('../assets/images/chapters/chapter-customer-app/screen-bkg-2.png') center center no-repeat;
+    background: url("../assets/images/chapters/chapter-customer-app/customer-app-3.png")
+      center center no-repeat;
   }
 
-  .step-0, .step-1 {
+  .step-0,
+  .step-1 {
     .form-actions {
       position: absolute;
       top: 50px;
@@ -25,44 +33,80 @@
     }
   }
 
-  .step-2,
-  .step-3,
-  .step-4 {
-    .form {
-      position: absolute;
-      top: 173px;
-      left: -10px;
-      #name {
-        width: 227px;
-      }
-      #api {
-        position: absolute;
-        top: 0;
-        left: 412px;
-        width: 229px;
-      }
-      #process-starts {
-        margin-top: 82px;
-        width: 473px;
-      }
-    }
+  .step-1a {
     .form-actions {
       position: absolute;
-      bottom: 79px;
-      right: 148px;
+      top: 42px;
+      right: 10px;
+      .btn-primary,
+      .btn-warning {
+        width: 45px;
+        height: 23px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
+  .step-2 {
+    .form-actions {
+      position: absolute;
+      bottom: 135px;
+      right: 240px;
+      .btn-primary,
+      .btn-warning {
+        width: 153px;
+        height: 23px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
     }
   }
 
+  .step-3 {
+    .form-actions {
+      position: absolute;
+      bottom: 72px;
+      left: 183px;
+      .btn-primary,
+      .btn-warning {
+        width: 90px;
+        height: 15px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
+
+  .step-4 {
+    .form-actions {
+      position: absolute;
+      bottom: 46px;
+      right: 179px;
+      .btn-primary,
+      .btn-warning {
+        width: 70px;
+        height: 21px;
+        padding: 5px 12px 6px;
+        font-size: 10px;
+        background-color: transparent;
+        border: 1px solid $color-marketing-cloud-orange;
+      }
+    }
+  }
 }
 
 .chapter-customer-app-drawer {
-
   p.continue {
     text-align: center;
 
     a.btn-continue {
-      margin:30px auto;
+      margin: 30px auto;
     }
   }
-
 }
