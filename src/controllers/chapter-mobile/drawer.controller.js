@@ -4,6 +4,11 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
+  $timeout(() => {
+    // show the phone overlay after a slight delay
+    $rootScope.showMobilePopout = true;
+  }, 1000);
+
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard("phone").goTo(1);
@@ -13,7 +18,5 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
       number: "one",
       title: "Click &rdquo;100 kWh&ldquo; to upgrade the battery."
     });
-
-    $rootScope.showMobilePopout = true;
   };
 }
