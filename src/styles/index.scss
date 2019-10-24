@@ -58,7 +58,6 @@ body {
   }
 
   .monitor {
-
     width: $monitor-width;
     height: $monitor-height;
     overflow: hidden;
@@ -78,12 +77,16 @@ body {
         overflow: visible;
       }
     }
-
-   }
+  }
 
   .monitor-height {
     height:$monitor-height;
     position:relative;
+  }
+
+  .phone-height {
+    height: $phone-height;
+    position: relative;
   }
 
   .top-nav-container {

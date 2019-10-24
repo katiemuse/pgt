@@ -114,6 +114,10 @@ $footnotes-color: $color-text-black;
 $monitor-width: 786px;
 $monitor-height: 492px;
 
+/* Phone Display */
+$phone-width: 257px;
+$phone-height: 556px;
+
 /* Drawer Display */
 $drawer-width: 410px;
 $drawer-height: 610px;
@@ -133,27 +137,17 @@ $icon-indicator-complete-inverse-border: $color-green;
 $icon-indicator-complete-inverse-bkg: $color-green;
 
 /* Z-indexes */
-
-$z-index-mobile-popout-blocker: 2501;
-
-$z-index-drawer: 2500;
-$z-index-drawer-blocker: 2490;
-
-$z-index-progress-navbar-opened-active: 2503;
-$z-index-progress-navbar-opened-inactive: 2502;
-$z-index-progress-navbar-blocker: 2503;
-
-$z-index-progress-navbar-opened: 2502;
-$z-index-progress-navbar-closed: 2501;
-
-$z-index-inner-drawer: 2001;
-
-$z-index-step-container: 2002;
-
-$z-index-footer: 2000;
-
-$z-index-hotspot: 2000;
-
-$z-index-centered-content: 2000;
-
 $z-index-monitor: 1999;
+$z-index-footer: 2000;
+$z-index-hotspot: 2000;
+$z-index-centered-content: 2000;
+$z-index-inner-drawer: 2001;
+$z-index-mobile-popout-blocker: 2501;
+$z-index-progress-navbar-closed: 2501;
+$z-index-progress-navbar-opened: 2502;
+$z-index-progress-navbar-opened-inactive: 2502;
+$z-index-progress-navbar-opened-active: 2503;
+$z-index-progress-navbar-blocker: 2503;
+$z-index-step-container: 2550;
+$z-index-drawer-blocker: 2600;
+$z-index-drawer: 2610;
