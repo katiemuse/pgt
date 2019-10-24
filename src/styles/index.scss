@@ -84,34 +84,6 @@ body {
     position:relative;
   }
 
-  .phone {
-    width: $phone-width;
-    height: $phone-height;
-    overflow: hidden;
-    position: relative;
-    margin-top: 48px;
-
-    // TODO: RFP: Revisit to add phone chrome?
-    // &.background {
-    //   background-image: url('../assets/images/phone_hack_bg.png');
-    //   background-position: top center;
-    //   background-repeat: repeat;    
-    // }
-
-    @media screen and (min-width: $screen-1080p) {
-      position: absolute;
-      z-index: $z-index-monitor;
-      margin: 20px auto 0 auto;
-      left: 50%;
-      top: 50%;
-      margin-left: -396px; /* TODO: RFP: what are these relative to? */
-      margin-top: -260px;  /* TODO: RFP: what are these relative to? */
-      #chapter-blockchain & {
-        overflow: visible;
-      }
-    }
-  }
-
   .phone-height {
     height: $phone-height;
     position: relative;

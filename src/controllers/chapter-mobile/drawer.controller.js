@@ -6,7 +6,6 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
 
   $scope.beginStory = function () {
     Drawer.close();
-    // WizardHandler.wizard('monitor').next();
     WizardHandler.wizard("phone").goTo(1);
 
     Steps.clear();
@@ -14,8 +13,6 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
       number: "one",
       title: "Click &rdquo;100 kWh&ldquo; to upgrade the battery."
     });
-
-    // Hotspots.clear();
 
     $rootScope.showMobilePopout = true;
   };

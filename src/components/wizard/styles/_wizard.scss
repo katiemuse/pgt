@@ -15,7 +15,6 @@
         width: $monitor-width;
 
         &.success {
-            //background: url('../../../assets/images/backgrounds/welcome-screen.jpg') center center repeat;
             background-color: #1A437F;
 
             img {
@@ -48,22 +47,6 @@
       > .step {
         height: $phone-height;
         width: $phone-width;
-
-        &.success {
-            //background: url('../../../assets/images/backgrounds/welcome-screen.jpg') center center repeat;
-            background-color: #1A437F;
-
-            img {
-              margin-bottom: 0;
-            }
-
-            a, a:visited {
-              &.content {
-                color: white;
-                text-decoration:underline;
-              }
-            }
-        }
       }
     }
   }
