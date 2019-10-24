@@ -19,7 +19,6 @@
 
   .phone-step-1 {
     .flyout {
-      // bottom: 310px;
       width: 240px;
       left: 280px;
       bottom: 100px;
@@ -27,13 +26,9 @@
   }
 
   .phone-step-2 {
-    .flyout {
-      bottom: 310px;
-    }
-
     .click-box {
-      top: 331px;
-      left: 264px;
+      top: 333px;
+      left: 104px;
       width: 79px;
       height: 32px;
     }    
@@ -41,9 +36,9 @@
 
   .phone-step-3 {
     .flyout {
-      // bottom: 300px;
-      width: 346px;
-      left: 300px;
+      width: 380px;
+      left: 280px;
+      bottom: 80px;
     }
   }
 }
