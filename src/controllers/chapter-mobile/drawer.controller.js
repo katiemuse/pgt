@@ -7,7 +7,7 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
   $timeout(() => {
     // show the phone overlay after a slight delay
     $rootScope.showMobilePopout = true;
-  }, 1000);
+  }, 250);
 
   $scope.beginStory = function () {
     Drawer.close();
