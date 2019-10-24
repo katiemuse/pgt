@@ -15,12 +15,10 @@
   .phone {
     position: absolute;
     box-sizing: border-box;
-    // background-image:url('../assets/images/iphone-vertical.png');
-    background-color: rgba(0, 0, 255, 0.25);
     width: 920px;
     height: 580px;
     left:0;
-    top:0;
+    top:-200px;
     bottom: 0;
     right: 0;
     margin: auto;
@@ -33,6 +31,7 @@
       top: 0px;
       margin: auto;
       z-index: $z-index-mobile-popout-blocker + 2;
+      pointer-events: none;
     }
 
     .phone-view {
