@@ -14,7 +14,8 @@
   /* RFP: HACK: use real heights and widths */
   .phone {
     position: absolute;
-    background-image:url('../assets/images/iphone-vertical.png');
+    // background-image:url('../assets/images/iphone-vertical.png');
+    background-color: rgba(0, 0, 255, 0.25);
     width: 663px;
     height: 747px;
     left:0;

@@ -15,11 +15,6 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
       title: "Click &rdquo;100 kWh&ldquo; to upgrade the battery."
     });
 
-    Steps.pop({
-      number: "two",
-      title: "Step 2 for chapter-mobile"
-    });
-
     // Hotspots.clear();
 
     $rootScope.showMobilePopout = true;

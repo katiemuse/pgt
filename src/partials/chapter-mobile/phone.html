@@ -18,35 +18,15 @@
             </wz-step>
             <wz-step>
               <div class="step phone-step-2">
-
+                <div class="click-box active" ng-click="GoToStep3()"></div>
               </div>
             </wz-step>
             <wz-step>
               <div class="step phone-step-3">
                 <div class="flyout active">
                     <span>Notice how the price quote increases $5,000 when you upgraded the battery. Now your sales reps can generate automatic price quotes based on the car options they select.</span>
-                    <a ng-click="Next()">continue<i></i></a>    
+                    <a ng-click="GoToSuccess()">continue<i></i></a>    
                 </div>
-              </div>
-            </wz-step>
-            <wz-step success="true">
-              <div class="step success">
-                <li-center>
-                  <p>
-                    <img src="../../assets/images/success.png" />
-                  </p>
-                  <h2>Success
-                    <br/>You Finished Chapter 4!</h2>
-                  <p>
-                    You integrated IoT data with clicks to help your product managers and customers.
-                  </p>
-                  <p>
-                    Now let's bring the power of AI to your app.
-                  </p>
-                  <p>
-                    <a ui-sref="chapter-ai" class="btn btn-rounded active" li-autofocus="wizard.stateIndex == 6">Continue</a>
-                  </p>
-                </li-center>
               </div>
             </wz-step>
           </wizard>

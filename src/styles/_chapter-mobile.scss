@@ -2,45 +2,26 @@
 
 .chapter-mobile {
 
-  .phone-step-0, .phone-step-1 {
-    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg.png") center center no-repeat;
-  }
-
-  .phone-step-2 {
-    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg_2.png") center center no-repeat;
+  .phone-step-0, .phone-step-1, .phone-step-2 {
+    background: url("../assets/images/chapters/chapter-mobile/ch4-img1.png") center center no-repeat;
   }
 
   .phone-step-3 {
-    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg_3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-mobile/ch4-img2.png") center center no-repeat;
   }
 
-  .phone-step-4 {
-    background: url("../assets/images/chapters/chapter-mobile/phone_hack_bg_4.png") center center no-repeat;
-  }
-
+  /* RFP: cleanup */
   .step-0,
   .step-1 {
     background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center
       no-repeat;
   }
-  .step-2 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-1.png") center center
-      no-repeat;
-  }
-  .step-3 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-2.png") center center
-      no-repeat;
-  }
-  .step-4 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-3.png") center center
-      no-repeat;
-  }
-
 
   .phone-step-1 {
     .flyout {
-      bottom: 310px;
+      // bottom: 310px;
       width: 350px;
+      left: 300px;
     }
   }
 
@@ -48,24 +29,20 @@
     .flyout {
       bottom: 310px;
     }
+
+    .click-box {
+      top: 331px;
+      left: 264px;
+      width: 79px;
+      height: 32px;
+    }    
   }
 
   .phone-step-3 {
     .flyout {
-      bottom: 300px;
+      // bottom: 300px;
       width: 346px;
-    }
-  }
-
-  .phone-step-4 {
-    .flyout {
-      bottom: 20px;
-    }
-  }
-
-  .phone-step-5 {
-    .flyout {
-      bottom: 310px;
+      left: 300px;
     }
   }
 }
