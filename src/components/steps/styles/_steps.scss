@@ -206,8 +206,6 @@ button.step-close-button {
 
 }
 .step {
-  //background-color: $step;
-
   &.success {
 
 
@@ -219,11 +217,28 @@ button.step-close-button {
       font-size: 22px;
       padding: 0 12%;
       font-weight: bold;
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+      }
     }
 
     .btn {
-      padding: 10px 70px;
-      margin-top: 30px;
+      background: $color-marketing-cloud-orange;
+      width: 144px;
+      height: 43px;
+      display: flex;
+      padding: 0;
+      justify-content: center;
+      align-items: center;
+      border: none;
+      &:hover {
+        background: #d26b03;
+        color: #ffffff;
+      }
+
     }
 
     .success-text-link {
@@ -233,6 +248,20 @@ button.step-close-button {
       font-weight: normal;
       font-size: 14px;
       text-transform: uppercase;
+      i {
+        font-family: "SalesforceIcons";
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        font-size: 9px;
+        display: inline-block;
+        vertical-align: middle;
+        &:after {
+          content: "\E924";
+        }
+      }
     }
   }
 }
