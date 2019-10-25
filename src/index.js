@@ -62,6 +62,7 @@ import ChapterFlowController from './controllers/chapter-flow/desktop.controller
 import ChapterFlowDrawerController from './controllers/chapter-flow/drawer.controller';
 import ChapterAIController from './controllers/chapter-ai/desktop.controller';
 import ChapterAIDrawerController from './controllers/chapter-ai/drawer.controller';
+import ChapterAIPhoneController from './controllers/chapter-ai/phone.controller';
 // import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
 // import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
 import ChapterCustomerAppController from './controllers/chapter-customer-app/desktop.controller';
@@ -165,6 +166,7 @@ angular
   .controller('ChapterDataDrawerController', ChapterDataDrawerController)
   .controller('ChapterAIController', ChapterAIController)
   .controller('ChapterAIDrawerController', ChapterAIDrawerController)
+  .controller('ChapterAIPhoneController', ChapterAIPhoneController)
   .controller('ChapterFlowController', ChapterFlowController)
   .controller('ChapterFlowDrawerController', ChapterFlowDrawerController)
   .controller('ChapterBuilderController', ChapterBuilderController)
