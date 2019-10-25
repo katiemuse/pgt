@@ -25,6 +25,6 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
     // after 8 seconds of video, we want to move on to next step
     $timeout(() => {
       WizardHandler.wizard("phone").goTo(2);
-    }, 9500); /* extra pause before going to next step to ensure video completes */
+    }, 9000); /* extra pause before going to next step to ensure video completes */
   };
 }
