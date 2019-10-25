@@ -217,17 +217,60 @@ button.step-close-button {
       font-size: 22px;
       padding: 0 12%;
       font-weight: bold;
+      &:nth-child(2) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 30px;
+        a {
+          &:nth-child(1) {
+            background: #e67300;
+            color: #ffffff;
+            padding: 10px 30px;
+            margin-top: 0;
+            margin-right: 25px;
+          }
+          &:nth-child(2) {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 14px;
+            i {
+              font-family: "SalesforceIcons";
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              font-size: 9px;
+              display: inline-block;
+              vertical-align: middle;
+              &:after {
+                content: "\E924";
+              }
+            }
+          }
+      }
+      }
     }
 
     .btn {
       padding: 10px 70px;
-      margin-top: 30px;
+      margin-top: 0px;
+      border: none;
+      background: $color-marketing-cloud-orange;
+      color: #ffffff;
+      &:hover {
+        background: #d26b03;
+        color: #ffffff;
+      }
     }
 
     .success-text-link {
       font-weight: normal;
       font-size: 14px;
       text-transform: uppercase;
+      color: #ffffff;
     }
   }
 }
