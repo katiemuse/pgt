@@ -46,6 +46,7 @@ import hotspotsDirective from './components/hotspots/directives/hotspots-directi
 import hotspotsContainer from './components/hotspots/directives/hotspots-container-directive';
 import stepsDirective from './components/steps/directives/steps-directive';
 import stepsFactory from './components/steps/factories/steps-factory';
+import renderConfetti from './components/steps/services/render-confetti-service';
 import stripTags from './components/stip-tags/filters/stip-tags-filter';
 import userProfile from './components/user-profile/factories/user-profile-factory';
 import wizardStep from './components/wizard/directives/step-directive';
@@ -154,6 +155,7 @@ angular
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
+  .service('renderConfetti', renderConfetti)
   .factory('stepsRegisterEvents', stepsFactory)
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)
