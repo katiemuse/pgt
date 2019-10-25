@@ -3,15 +3,13 @@
 export default function ChapterBuilderDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer) {
   Drawer.openToIntro();
 
-  TopNavbar.DidYouKnowCount = 0;
   TopNavbar.DidYouKnowEnabled = false;
 
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.DidYouKnowCount = 1;
-    TopNavbar.DidYouKnowEnabled = true;
-    TopNavbar.MobileEnabled = true;
+    TopNavbar.DidYouKnowEnabled = false;
+    TopNavbar.MobileEnabled = false;
 
     Steps.clear();
     Steps.pop({
@@ -25,9 +23,5 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
     });
 
     Hotspots.clear();
-
-    // $timeout(() => {
-    //   Steps.activate('one');
-    // }, 1000);
   };
 }
