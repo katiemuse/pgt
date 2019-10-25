@@ -12,7 +12,8 @@
     "jquery": "^3.2.1",
     "jquery-ui": "^1.12.1",
     "jquery-ui-touch-punch": "^0.2.3",
-    "pace-progress": "^1.0.2"
+    "pace-progress": "^1.0.2",
+    "prettier": "^1.18.2"
   },
   "devDependencies": {
     "@types/angular": "^1.6.6",
@@ -83,6 +84,7 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
+    "format": "prettier --write src/**/*.{js,scss}",
     "postinstall": "gulp"
   },
   "eslintConfig": {
