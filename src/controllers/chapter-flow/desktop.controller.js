@@ -1,21 +1,6 @@
 "use strict";
 
-export default function ChapterFlowController(
-  $scope,
-  Steps,
-  Hotspots,
-  WizardHandler,
-  $timeout,
-  $document
-) {
-  $scope.customobj = {
-    name: ""
-  };
-
-  $scope.button = {
-    show: false
-  };
-
+export default function ChapterFlowController($scope, Steps, Hotspots, WizardHandler, $timeout, $document) {
   $scope.label = {
     active: true
   };
@@ -30,8 +15,6 @@ export default function ChapterFlowController(
       }
     }, delayInMs);
   });
-
-  $scope.Next = function() {};
 
   $scope.goToStep1A = function() {
     WizardHandler.wizard("monitor").next();

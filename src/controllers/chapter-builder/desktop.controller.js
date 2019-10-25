@@ -1,19 +1,6 @@
 'use strict';
 
 export default function ChapterBuilderController($scope, Steps, Hotspots, WizardHandler, $document) {
-  $scope.customobj = {
-    name: ''
-  };
-
-  $scope.button = {
-    show: false,
-    save: false
-  };
-
-  $scope.label = {
-    active: true
-  };
-
   $scope.Next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {

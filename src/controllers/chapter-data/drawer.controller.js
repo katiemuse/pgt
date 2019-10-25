@@ -8,12 +8,8 @@ export default function ChapterDataDrawerController($scope, WizardHandler, TopNa
     Drawer.close();
     WizardHandler.wizard('monitor').next();
     TopNavbar.InfoActive = false;
-
-    TopNavbar.HotspotsCount = 1;
-    TopNavbar.HotspotsEnabled = true;
-
-    TopNavbar.DidYouKnowCount = 4;
-    TopNavbar.DidYouKnowEnabled = true;
+    TopNavbar.HotspotsEnabled = false;
+    TopNavbar.DidYouKnowEnabled = false;
 
     Steps.clear();
     Steps.pop({
@@ -50,16 +46,8 @@ export default function ChapterDataDrawerController($scope, WizardHandler, TopNa
       }
     });
 
-    // Hotspots.pop({
-    //   number: 2,
-    //   position: {
-    //     left: '117px',
-    //     top: '273px'
-    //   }
-    // });
-
     $timeout(() => {
       Steps.activate('one');
-    }, 1000);
+    }, 250);
   };
 }
