@@ -7,7 +7,7 @@ export default function ChapterMobilePhoneController($scope, $timeout, Steps, Wi
     Steps.activate('one');
   };
 
-  $scope.GoToStep3 = function() {
+  $scope.GoToStep4 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("");
   };

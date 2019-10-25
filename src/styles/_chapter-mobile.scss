@@ -2,11 +2,11 @@
 
 .chapter-mobile {
 
-  .phone-step-0, .phone-step-1, .phone-step-2 {
+  .phone-step-0, .phone-step-1, .phone-step-2, .phone-step-3 {
     background: url("../assets/images/chapters/chapter-mobile/ch4-img1.png") center center no-repeat;
   }
 
-  .phone-step-3 {
+  .phone-step-4 {
     background: url("../assets/images/chapters/chapter-mobile/ch4-img2.png") center center no-repeat;
   }
 
@@ -15,7 +15,7 @@
       no-repeat;
   }
 
-  .phone-step-1 {
+  .phone-step-2 {
     .flyout {
       width: 240px;
       left: 280px;
@@ -23,7 +23,7 @@
     }
   }
 
-  .phone-step-2 {
+  .phone-step-3 {
     .click-box {
       top: 333px;
       left: 104px;
@@ -32,7 +32,7 @@
     }    
   }
 
-  .phone-step-3 {
+  .phone-step-4 {
     .flyout {
       width: 380px;
       left: 280px;
