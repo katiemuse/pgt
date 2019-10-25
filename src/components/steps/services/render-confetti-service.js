@@ -7,7 +7,6 @@ export default function renderCofetti($document, $log, $timeout) {
     const ctx = canvas.getContext("2d");
     canvas.width = window.innerWidth;
     canvas.height = window.innerHeight;
-    
 
     const confetti = [];
     const confettiCount = 300;
@@ -24,7 +23,7 @@ export default function renderCofetti($document, $log, $timeout) {
       { front: "purple", back: "darkpurple" },
       { front: "turquoise", back: "darkturquoise" }
     ];
-    
+
     const randomRange = (min, max) => Math.random() * (max - min + min);
 
     const initConfetti = () => {
