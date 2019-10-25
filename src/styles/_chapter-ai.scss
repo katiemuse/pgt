@@ -3,205 +3,77 @@
 .chapter-ai {
 
   .step-0, .step-1{
-    background: url('../assets/images/chapters/chapter-ai/bkg-1.png') center center no-repeat;
+    background: url('../assets/images/chapters/chapter-ai/step1.png') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-2.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-ai/step2.png') center top no-repeat;
   }
 
   .step-3 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-3.png') center top no-repeat;
-    &.selected {
-      background: url('../assets/images/chapters/chapter-ai/bkg-3-selected.png') center top no-repeat;
+    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center no-repeat;
+  }
+
+  .phone-step-2a  {
+    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.png") center center no-repeat;
+
+    .flyout {
+      width: 309px;
+      left: 280px;
+      bottom: 70px;
     }
   }
 
-  .step-4 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-4.png') center top no-repeat;
-    &.selected {
-      background: url('../assets/images/chapters/chapter-ai/bkg-4-selected.png') center top no-repeat;
-    }
+  .phone-step-3  {
+    background: url("../assets/images/chapters/chapter-ai/step3-mobile.png") center center no-repeat;
   }
 
-  .step-5 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-5.png') center top no-repeat;
-    &.selected {
-      background: url('../assets/images/chapters/chapter-ai/bkg-5-selected.png') center top no-repeat;
-    }
-  }
+  .phone-step-4  {
+    background: url("../assets/images/chapters/chapter-ai/step4-mobile.png") center center no-repeat;
 
-  .step-6 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-6.png') center top no-repeat;
-
-    select {
-      position: absolute;
-      left: 81px;
-      top: 216px;
-      width: 307px;
-      height: 29px;
-      border: 2px solid #e7e8ec;
-      background-color: #fff;
-      line-height: 29px;
-      -webkit-appearance: none;
-      border-radius: 0px;
-      background: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' width='24' height='24' viewBox='0 0 24 24'><path fill='#444' d='M7.406 7.828l4.594 4.594 4.594-4.594 1.406 1.406-6 6-6-6z'></path></svg>");
-      background-position: 100% 50%;
-      background-repeat: no-repeat;
-      background-color: white;
-      color: #2e4368;
-      padding-left: 10px;
-    }
-  }
-
-  .step-7 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-7.png') center top no-repeat;
-  }
-
-  .step-8 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-8.png') center top no-repeat;
-  }
-
-  .step-9 {
-    background: url('../assets/images/chapters/chapter-ai/bkg-9.png') center top no-repeat;
+    .flyout {
+      width: 309px;
+      left: 280px;
+      bottom: 70px;
+    }    
   }
 
   .step-1 {
+    .prediction-drag {
+      position: absolute !important;
+      bottom: 158px;
+      left: 2px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+    }
+    .drop-box {
+      top: 190px;
+      left: 288px;
+      width: 200px;
+      height: 13px;
+    }
+  }  
+
+  .step-2 {
     .click-box {
-      top: 414px;
-      left: 313px;
-      width: 160px;
+      bottom: 430px;
+      left: 709px;
+      width: 73px;
       height: 29px;
     }
   }
 
-  .step-2 {
-
-    input {
-      position: absolute;
-      left: 96px;
-      top: 295px;
-      opacity: 0.5;
-      height: 32px !important;
-      width: 372px !important;
-    }
-
-
-    label.output {
-      position: absolute;
-      left: 96px;
-      top: 354px;
-      opacity: 0.5;
-      height: 32px !important;
-      width: 372px !important;
-      color: #2e4368;
-      font-family:inherit;
-      line-height:21.4286px;
-      font-size:15px;
-      font-weight:normal;
-      padding: 4px 6px;
-    }
-
+  .phone-step-3 {
     .click-box {
-      top: 434px;
-      left: 628px;
-      width: 85px;
-      height: 25px;
-    }
-  }
-
-  .step-3 {
-    .click-box {
-      &.next {
-        top: 434px;
-        left: 662px;
-        width: 49px;
-        height: 24px;
-      }
-
-      &.select {
-        top: 270px;
-        left: 77px;
-        width: 413px;
-        height: 22px;
-      }
-    }
-  }
-
-
-  .step-4 {
-    .click-box {
-      &.next {
-        top: 434px;
-        left: 662px;
-        width: 49px;
-        height: 24px;
-      }
-
-      &.select {
-        top: 252px;
-        left: 77px;
-        width: 543px;
-        height: 22px;
-      }
-    }
-  }
-
-  .step-5 {
-    .click-box {
-      &.next {
-        top: 434px;
-        left: 661px;
-        width: 51px;
-        height: 24px;
-      }
-
-      &.select {
-        top: 209px;
-        left: 82px;
-        width: 19px;
-        height: 209px;
-      }
-    }
-  }
-
-  .step-6 {
-    .click-box {
-      &.next {
-        top: 435px;
-        left: 662px;
-        width: 49px;
-        height: 23px;
-      }
-      &.select {
-        top: 255px;
-        left: 15px;
-        width: 747px;
-        height: 28px;
-      }
-    }
-  }
-
-  .step-7 {
-    .flyout {
-      top: 130px;
-      bottom: auto;
-    }
-  }
-
-  .step-8 {
-    .flyout {
-      top: 120px;
-      bottom: auto;
-      width: 315px;
-    }
-  }
-
-  .step-9 {
-    .flyout {
-      bottom: 5px;
-      padding: 19px 25px;
-    }
-  }
-
+      top: 454px;
+      left: 25px;
+      width: 79px;
+      height: 32px;
+    }    
+  }  
 }

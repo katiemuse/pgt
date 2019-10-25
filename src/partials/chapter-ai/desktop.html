@@ -4,93 +4,60 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step step-0">
-
-            </div>
+            <div class="step step-0"></div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="Next()"></div>
+              <img
+                src="../../assets/images/chapters/chapter-ai/prediction-drag.png"
+                data-drag="true"
+                jqyoui-draggable="{index: 0, animate:true}"
+                data-jqyoui-options="{revert: 'invalid'}"
+                alt="einstein prediction drag"
+                class="prediction-drag"
+                ng-class="{active:!prediction.active}"
+              />
+              <div
+                class="drop-box active"
+                data-drop="true"
+                jqyoui-droppable="{index: 1 , onDrop:'Next'}"
+              ></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <form class="form form-horizontal">
-                <div class="">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="selected.fieldName" class="text" maxlength="80" ng-class="{active:selected.fieldNameActive}"
-                           li-autofocus="wizard.stateIndex == 2">
-                    <label class="output">{{selected.labelValue}}</label>
-                  </div>
-                </div>
-              </form>
-              <a class="click-box next" href="" ng-click="Next()" li-autofocus="wizard.stateIndex == 5 && !selected.fieldNameActive" ng-class="{active: !selected.fieldNameActive}"></a>
+              <div
+                class="click-box"
+                ng-class="{active:!button.show}"
+                ng-click="Next()"
+              ></div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3" ng-class="{selected: selected.object}">
-              <div class="click-box select active" ng-class="{active: !selected.object}" ng-click="selectObject()"></div>
-              <div class="click-box next" ng-click="Next()" ng-class="{active: selected.object}"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-          <div class="step step-4" ng-class="{selected: selected.field}">
-            <div class="click-box select active" ng-class="{active: !selected.field}" ng-click="selectField()"></div>
-            <div class="click-box next" ng-click="Next()" ng-class="{active: selected.field}"></div>
-          </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-5" ng-class="{selected: selected.predictionFields}">
-              <div class="click-box select active" ng-class="{active: !selected.predictionFields}" ng-click="selectPredictionFields()"></div>
-              <div class="click-box next" ng-click="Next()" ng-class="{active: selected.predictionFields}"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-6" ng-class="{selected: selected.prediction}">
-              <select name="select" ng-model="selected.predictionValue" ng-class="{active: !selected.prediction}" ng-change="selectPrediction()" ng-options="opt as opt.label for opt in selected.predictionOptions">
-              </select>
-              <div class="click-box next" ng-click="Next()" ng-class="{active: selected.prediction}"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-7">
-              <div class="flyout active">
-                <span>Confirm your prediction's settings before pushing it live.</span>
-                <a ng-click="Next()">continue <i></i></a>
-              </div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-8" ng-class="{selected: selected.prediction}">
-              <div class="flyout active">
-                <span>Now let’s take a look at your prediction <accuracy></accuracy>.</span>
-                <a ng-click="Next()">continue <i></i></a>
-              </div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-9" ng-class="{selected: selected.prediction}">
-              <div class="flyout active">
-                <a ng-click="Next()">continue <i></i></a>
-              </div>
+            <div class="step step-3">
+              <!-- filler backdrop while phone is up -->
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
+              <canvas id="success-confetti" ng-open="RenderConfetti()"></canvas>
               <li-center>
                 <p>
-                  <img src="../../assets/images/success.png" />
-                </p>
-                <h2>Success!</h2>
-                <p>
-                  You just added the power of Artificial Intelligence to your app with a few simple clicks. Now Product Managers can see predictive net promoter scores and understand which types of product related cases are likely to affect the score!
-                </p>
-                <p>
-
-                  Finally, let's get to building our app.
+                  Now your reps are equipped with the tools they need to win
+                  more deals and increase customer satisfaction. Let’s take a
+                  look at how a voice-enabled virtual assistant can help
+                  increase reps’ productivity.
                 </p>
                 <p>
-                  <a ui-sref="chapter-voice" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active">Continue</a>
+                  <a
+                    ui-sref="chapter-voice"
+                    li-autofocus="wizard.stateIndex == 6"
+                    class="btn btn-rounded active"
+                    >Continue</a
+                  >
+                  <a href="#" class="success-text-link"
+                    >Learn more about AI &gt;</a
+                  >
                 </p>
               </li-center>
             </div>

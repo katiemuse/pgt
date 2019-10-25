@@ -91,11 +91,7 @@
           </wz-step>
           <wz-step success="true">
             <div class="step success">
-              <canvas
-                id="success-confetti"
-                ng-hide="RenderConfetti()"
-                ng-show="RenderConfetti()"
-              ></canvas>
+              <canvas id="success-confetti" ng-open="RenderConfetti()"></canvas>
               <li-center>
                 <p>
                   Now that your data's imported, your business can operate
@@ -106,7 +102,7 @@
                   <a
                     ui-sref="chapter-flow"
                     li-autofocus="wizard.stateIndex == 5"
-                    class="btn btn-rounded active"
+                    class="btn active"
                     >Continue</a
                   >
                   <a href="#" class="success-text-link"

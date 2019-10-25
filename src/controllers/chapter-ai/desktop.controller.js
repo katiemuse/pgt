@@ -6,61 +6,13 @@ export default function AddACustomFieldController(
   Steps,
   Hotspots,
   TopNavbar,
-  WizardHandler
+  WizardHandler,
+  $rootScope,
+  $log,
+  $document
 ) {
-  $scope.selected = {
-    dataType: false,
-    field: false,
-    predictionFields: false,
-    object: false,
-    fieldName: '',
-    fieldNameActive: true,
-    labelValue: '',
-    prediction: false,
-    predictionOptions: [
-      {label: 'Choose a field', value: 0},
-      {label: 'NPS Score', value: 1}
-    ]
-  };
-
-  $scope.selected.predictionValue = $scope.selected.predictionOptions[0];
-
-  $scope.selectDataType = () => {
-    $scope.selected.dataType = true;
-  };
-
-  $scope.selectObject = () => {
-    $scope.selected.object = true;
-  };
-
-  $scope.selectField = () => {
-    $scope.selected.field = true;
-  };
-
-  $scope.selectPredictionFields = () => {
-    $scope.selected.predictionFields = true;
-  };
-
-  $scope.selectPrediction = () => {
-    $scope.selected.prediction = true;
-  };
-
-  const delayInMs = 1000;
-  let timeoutFieldName;
-  $scope.$watch('selected.fieldName', (newValue, oldValue) => {
-    if (newValue !== oldValue) {
-      $timeout.cancel(timeoutFieldName);
-      $scope.selected.labelValue = newValue.toLowerCase().replace(/ /g, '_');
-      timeoutFieldName = $timeout(() => {
-        if (newValue.length > 3) {
-          $scope.selected.fieldNameActive = false;
-        }
-      }, delayInMs);
-    }
-  });
-
   $scope.Next = function() {
-    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
+    $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('one');
@@ -68,32 +20,127 @@ export default function AddACustomFieldController(
       WizardHandler.wizard('monitor').next();
       Steps.activate('two');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
+      /* this is where the phone is shown */
       WizardHandler.wizard('monitor').next();
-      Steps.activate('three');
+      $rootScope.showMobilePopout = true; // show the phone view
+      Steps.activate('');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('four');
-    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 5) {
-      WizardHandler.wizard('monitor').next();
-      Hotspots.pop({
-        number: 1,
-        position: {
-          left: '79px',
-          top: '173px'
-        }
-      });
-      TopNavbar.HotspotsActive = true;
-      TopNavbar.HotspotsCount = 1;
-      Steps.activate('five');
-    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 6) {
-      WizardHandler.wizard('monitor').next();
-      Hotspots.clear();
-      TopNavbar.HotspotsActive = false;
-      TopNavbar.HotspotsCount = 0;
-      Steps.activate('six');
-      Steps.remove(1);
     } else {
       WizardHandler.wizard('monitor').next();
     }
+  };
+
+  $scope.goToSuccess = function() {
+    Steps.clear();
+    WizardHandler.wizard("monitor").next();
+  };
+
+  $scope.RenderConfetti = function() {
+    const canvas = $document[0].getElementById("success-confetti");
+    const ctx = canvas.getContext("2d");
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const confetti = [];
+    const confettiCount = 300;
+    const gravity = 0.5;
+    const terminalVelocity = 5;
+    const drag = 0.075;
+    const colors = [
+      { front: "red", back: "darkred" },
+      { front: "green", back: "darkgreen" },
+      { front: "blue", back: "darkblue" },
+      { front: "yellow", back: "darkyellow" },
+      { front: "orange", back: "darkorange" },
+      { front: "pink", back: "darkpink" },
+      { front: "purple", back: "darkpurple" },
+      { front: "turquoise", back: "darkturquoise" }
+    ];
+    const randomRange = (min, max) => Math.random() * (max - min + min);
+
+    const initConfetti = () => {
+      for (let i = 0; i < confettiCount; i++) {
+        confetti.push({
+          color: colors[Math.floor(randomRange(0, colors.length))],
+          dimensions: {
+            x: randomRange(10, 20),
+            y: randomRange(10, 30)
+          },
+          position: {
+            x: randomRange(0, canvas.width),
+            y: canvas.height - 1
+          },
+          rotation: randomRange(0, 2 * Math.PI),
+          scale: {
+            x: 1,
+            y: 1
+          },
+          velocity: {
+            x: randomRange(-25, 25),
+            y: randomRange(0, -50)
+          }
+        });
+      }
+    };
+    const render = () => {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+      confetti.forEach((confetto, index) => {
+        const width = confetto.dimensions.x * confetto.scale.x;
+        const height = confetto.dimensions.y * confetto.scale.y;
+
+        // Move canvas to position and rotate
+        ctx.translate(confetto.position.x, confetto.position.y);
+        ctx.rotate(confetto.rotation);
+
+        // Apply forces to velocity
+        confetto.velocity.x -= confetto.velocity.x * drag;
+        confetto.velocity.y = Math.min(
+          confetto.velocity.y + gravity,
+          terminalVelocity
+        );
+        confetto.velocity.x +=
+          Math.random() > 0.5 ? Math.random() : -Math.random();
+
+        // Set position
+        confetto.position.x += confetto.velocity.x;
+        confetto.position.y += confetto.velocity.y;
+
+        // Delete confetti when out of frame
+        if (confetto.position.y >= canvas.height) {
+          confetti.splice(index, 1);
+        }
+
+        // Loop confetto x position
+        if (confetto.position.x > canvas.width) {
+          confetto.position.x = 0;
+        }
+        if (confetto.position.x < 0) {
+          confetto.position.x = canvas.width;
+        }
+
+        // Spin confetto by scaling y
+        confetto.scale.y = Math.cos(confetto.position.y * 0.1);
+        ctx.fillStyle =
+          confetto.scale.y > 0 ? confetto.color.front : confetto.color.back;
+
+        // Draw confetto
+        ctx.fillRect(-width / 2, -height / 2, width, height);
+
+        // Reset transform matrix
+        ctx.setTransform(1, 0, 0, 1, 0, 0);
+      });
+
+      // Fire off another round of confetti
+      if (confetti.length <= 10) {
+        initConfetti();
+      }
+
+      window.requestAnimationFrame(render);
+    };
+    initConfetti();
+    render();
   };
 }
