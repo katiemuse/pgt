@@ -102,9 +102,21 @@ $progress-top: 15px;
           z-index: -1;
           pointer-events: none;
         }
+        span {
+          font-weight: normal;
+          &.active {
+            font-weight: bold;
+            padding-bottom: 3px;
+            border-bottom: 4px solid #00a1e0;
+          }
+        }
 
         &:hover {
-          text-decoration: underline;
+          text-decoration: none;
+          span {
+            padding-bottom: 3px;
+            border-bottom: 4px solid #00a1e0;
+          }
         }
       }
 
