@@ -90,6 +90,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/chapter-ai/drawer.html'),
           controller: 'ChapterAIDrawerController'
         },
+        phone: {
+          template: require('./partials/chapter-ai/phone.html'),
+          controller: 'ChapterAIPhoneController'
+        },
         mobile: {
           template: require('./mobile.html')
         }

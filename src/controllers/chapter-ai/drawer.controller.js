@@ -13,63 +13,37 @@ export default function AddACustomFieldDrawerController(
   Drawer.openToIntro();
 
   $scope.beginStory = function () {
+    TopNavbar.HotspotsEnabled = false;
+    TopNavbar.DidYouKnowEnabled = false;
+
     Drawer.close();
     WizardHandler.wizard('monitor').next();
-    TopNavbar.HotspotsEnabled = true;
-    TopNavbar.DidYouKnowCount = 1;
-    TopNavbar.DidYouKnowEnabled = true;
 
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click on \'New Prediction\''
+      title: 'Drag and drop the &ldquo;Einstein Prediction&rdquo; component right above the Car Configurator component.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Name Your Prediction \'Impact of Cases on NPS\' and click on \'Get Started\''
+      title: 'Click &ldquo;Activation&rdquo; to update your mobile app.'
     });
 
     Steps.pop({
       number: 'three',
       title:
-        'Select \'Case\' and click  \'Next\''
-    });
-
-    Steps.pop({
-      number: 'four',
-      title:
-        'Select \'Impact on NPS\' and click  \'Next\''
-    });
-
-    Steps.pop({
-      number: 'five',
-      title:
-        'Select what fields should impact your prediction. Click  \'Next\'.'
-    });
-
-    Steps.pop({
-      number: 'six',
-      title:
-        'Select \'NPS Score\' as a field into which the Einstein models will push your prediction and will update it every hour. Click  \'Next\'.'
+        'Click the &ldquo;75 kWh&rdquo; battery option.'
     });
 
     Hotspots.clear();
-    // Hotspots.pop({
-    //   number: 1,
-    //   position: {
-    //     left: '117px',
-    //     top: '223px'
-    //   }
-    // });
-    //
-    // Hotspots.pop({
-    //   number: 2,
-    //   position: {
-    //     left: '117px',
-    //     top: '273px'
-    //   }
-    // });
+    Hotspots.pop({
+      number: 1,
+      position: {
+        left: '705px',
+        top: '33px'
+      }
+    });
 
     $timeout(() => {
       Steps.activate('one');
