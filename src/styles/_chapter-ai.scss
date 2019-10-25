@@ -16,6 +16,12 @@
 
   .phone-step-2a  {
     background: url("../assets/images/chapters/chapter-ai/step2a-mobile.png") center center no-repeat;
+
+    .flyout {
+      width: 309px;
+      left: 280px;
+      bottom: 70px;
+    }
   }
 
   .phone-step-3  {
@@ -24,6 +30,12 @@
 
   .phone-step-4  {
     background: url("../assets/images/chapters/chapter-ai/step4-mobile.png") center center no-repeat;
+
+    .flyout {
+      width: 309px;
+      left: 280px;
+      bottom: 70px;
+    }    
   }
 
   .step-1 {
@@ -47,29 +59,12 @@
     }
   }  
 
-  .step-1 {
-    .click-box {
-      top: 414px;
-      left: 313px;
-      width: 160px;
-      height: 29px;
-    }
-  }
-
   .step-2 {
     .click-box {
       bottom: 430px;
       left: 709px;
       width: 73px;
       height: 29px;
-    }
-  }
-
-  .phone-step-2a {
-    .flyout {
-      width: 240px;
-      left: 280px;
-      bottom: 100px;
     }
   }
 
