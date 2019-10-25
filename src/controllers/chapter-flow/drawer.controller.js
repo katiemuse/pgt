@@ -5,11 +5,8 @@ export default function ChapterFlowDrawerController($scope, WizardHandler, TopNa
   Drawer.openToIntro();
 
   $scope.beginStory = function () {
-    TopNavbar.DidYouKnowEnabled = true;
-    TopNavbar.DidYouKnowCount = 1;
-
-    TopNavbar.HotspotsEnabled = true;
-    TopNavbar.HotspotsCount = 2;
+    TopNavbar.DidYouKnowEnabled = false;
+    TopNavbar.HotspotsEnabled = false;
 
     Drawer.close();
     WizardHandler.wizard('monitor').next();
@@ -35,23 +32,6 @@ export default function ChapterFlowDrawerController($scope, WizardHandler, TopNa
       number: 'four',
       title: 'Click “Done” to complete your flow.'
     });
-
-    Hotspots.clear();
-    Hotspots.pop({
-      number: 1,
-      position: {
-        left: '166px',
-        top: '59px'
-      }
-    });
-    //
-    // Hotspots.pop({
-    //   number: 2,
-    //   position: {
-    //     left: '117px',
-    //     top: '273px'
-    //   }
-    // });
 
     $timeout(() => {
       Steps.activate('one');

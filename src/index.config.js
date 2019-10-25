@@ -115,9 +115,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./mobile.html')
-        },
-        phone: {
-          template: require('./partials/chapter-builder/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
