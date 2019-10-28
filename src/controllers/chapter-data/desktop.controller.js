@@ -6,7 +6,6 @@ export default function ChapterDataController(
   Hotspots,
   WizardHandler,
   $timeout,
-  $document,
   renderConfetti,
   $log
 ) {
@@ -67,7 +66,10 @@ export default function ChapterDataController(
   };
 
   $scope.ShowConfetti = function() {
-    $log.info("ShowConfetti running");
-    // renderConfetti.renderFunc();
+    $log.info("ShowConfetti running now");
+    $log.info("renderConfetti.renderFunc", renderConfetti);
+    $log.info("renderConfetti.renderFunc", renderConfetti.renderFunc);
+    // renderConfetti.renderFunc.initConfetti();
+    // renderConfetti.renderFunc.render();
   };
 }
