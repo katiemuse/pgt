@@ -23,18 +23,29 @@
   }
 
   .phone-step-1 {
-    .flyout {
-      width: 240px;
+    .astro-click-area {
+      width: 150px;
+      height: 280px;
       left: 280px;
-      bottom: 100px;
+      bottom: -10px;
+      cursor: pointer;
+      background-color: rgba($color: #ff0000, $alpha: 0.0);
     }
   }
 
   .phone-step-2 {
     .flyout {
-      width: 240px;
+      width: 380px;
       left: 280px;
-      bottom: 100px;
+      bottom: 70px;
+    }
+  }
+
+  .phone-step-3 {
+    .flyout {
+      width: 330px;
+      left: 280px;
+      bottom: 70px;
     }
   }
 }

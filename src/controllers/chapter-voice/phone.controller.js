@@ -8,11 +8,21 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
   };
 
   $scope.AstroClicked = function() {
+    // hide astro
+    const astro = angular.element('#astroPeeking');
+    astro.removeClass('astro-peeking-visible');
+    astro.addClass('astro-peeking-hidden');
+
     WizardHandler.wizard("phone").next();
     Steps.activate("");
   };
 
-  $scope.GoToStep4 = function() {
+  $scope.GoToSlide2 = function() {
+    WizardHandler.wizard("phone").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToSlide3 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("");
   };

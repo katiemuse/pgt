@@ -9,14 +9,16 @@
             </div>
           </wz-step>
           <wz-step>
-            <div class="step phone-step-1">              
+            <div class="step phone-step-1">
+              <div class="flyout active astro-click-area" ng-click="GoToSlide2()">
+              </div>
             </div>
-          </wz-step>          
+          </wz-step>   
           <wz-step>
             <div class="step phone-step-2">
               <div class="flyout active">
                 <span>To complete the task, Einstein will use AI and Natural Language Processing (NLP) to understand and perform the sales rep’s voice command in the context of Mike’s order data.</span>
-                <a ng-click="GoToSuccess()">continue<i></i></a>
+                <a ng-click="GoToSlide3()">continue<i></i></a>
               </div>
             </div>
           </wz-step>
@@ -24,7 +26,7 @@
             <div class="step phone-step-3">
               <div class="flyout active">
                 <span>Einstein automatically saves updates from voice commands — all without a single click.</span>
-                <a ng-click="Next()">continue<i></i></a>
+                <a ng-click="GoToSuccess()">continue<i></i></a>
               </div>
             </div>
           </wz-step>

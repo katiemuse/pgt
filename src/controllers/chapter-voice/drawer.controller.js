@@ -10,11 +10,6 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
     title: 'Click on Astro to start the voice command.'
   });
 
-  Steps.pop({
-    number: 'two',
-    title: 'Dummy step'
-  });
-
   Hotspots.clear();
   Drawer.openToIntro();
 
@@ -28,25 +23,9 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
     WizardHandler.wizard('phone').next();
     Steps.activate('one');
 
+    // show astro (re-hiding, and click handling is done by transparent flyout in phone.html and phone.controller.js)
     const astro = angular.element('#astroPeeking');
     astro.removeClass('astro-peeking-hidden');
     astro.addClass('astro-peeking-visible');
-
-    astro.on('click', e => {
-      $log.log('click fired!!!!!!!!!!!!!!!!!!!');
-
-      // hide astro
-      astro.removeClass('astro-peeking-visible');
-      astro.addClass('astro-peeking-hidden');
-
-      // go to next slide and close the step
-      WizardHandler.wizard('phone').next();
-      Steps.activate('ontwoe');
-
-      $log.log('click fired - reached end!!!!!!!!!!!!!!!!!!!');
-
-      e.preventDefault();
-      return false;
-    });
   };
 }
