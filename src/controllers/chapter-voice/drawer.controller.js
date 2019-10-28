@@ -1,7 +1,21 @@
 'use strict';
 
-export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $rootScope, $timeout) {
-  TopNavbar.InfoActive = true;
+export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $rootScope, $log) {
+  TopNavbar.InfoActive = false;
+  TopNavbar.DidYouKnowEnabled = false;
+
+  Steps.clear();
+  Steps.pop({
+    number: 'one',
+    title: 'Click on Astro to start the voice command.'
+  });
+
+  Steps.pop({
+    number: 'two',
+    title: 'Dummy step'
+  });
+
+  Hotspots.clear();
   Drawer.openToIntro();
 
   angular.element(document).ready(() => {
@@ -11,20 +25,28 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
 
   $scope.beginStory = function () {
     Drawer.close();
-    WizardHandler.wizard('monitor').next();
-    TopNavbar.DidYouKnowEnabled = true;
-    TopNavbar.DidYouKnowCount = 2;
+    WizardHandler.wizard('phone').next();
+    Steps.activate('one');
 
-    Steps.clear();
-    Steps.pop({
-      number: 'one',
-      title: 'Click on Astro to start the voice command.'
+    const astro = angular.element('#astroPeeking');
+    astro.removeClass('astro-peeking-hidden');
+    astro.addClass('astro-peeking-visible');
+
+    astro.on('click', e => {
+      $log.log('click fired!!!!!!!!!!!!!!!!!!!');
+
+      // hide astro
+      astro.removeClass('astro-peeking-visible');
+      astro.addClass('astro-peeking-hidden');
+
+      // go to next slide and close the step
+      WizardHandler.wizard('phone').next();
+      Steps.activate('ontwoe');
+
+      $log.log('click fired - reached end!!!!!!!!!!!!!!!!!!!');
+
+      e.preventDefault();
+      return false;
     });
-
-    Hotspots.clear();
-
-    $timeout(() => {
-      Steps.activate('one');
-    }, 1000);
   };
 }
