@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $rootScope, $log) {
+export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $rootScope) {
   TopNavbar.InfoActive = false;
   TopNavbar.DidYouKnowEnabled = false;
 
