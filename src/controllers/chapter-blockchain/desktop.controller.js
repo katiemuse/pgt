@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile) {
+export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile, $rootScope) {
   $scope.processOptions = [
     { label: "Select one", value: 1 },
     { label: "A record changes", value: 2 },
@@ -70,6 +70,8 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
   };
   $scope.NextHalfSlide5 = function() {
     WizardHandler.wizard("monitor").next();
+    /* show phone */
+    $rootScope.showMobilePopout = true;
     Steps.activate("");
   };
   $scope.NextHalfSlide5b = function() {
