@@ -278,6 +278,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/chapter-voice/drawer.html'),
           controller: 'ChapterVoiceDrawerController'
         },
+        phone: {
+          template: require('./partials/chapter-voice/phone.html'),
+          controller: 'ChapterVoicePhoneController'
+        },
         mobile: {
           template: require('./mobile.html')
         }
