@@ -1,8 +1,13 @@
 'use strict';
 
-export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
+export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $rootScope, $timeout) {
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
+
+  angular.element(document).ready(() => {
+    // show the phone overlay after the page finishes loading
+    $rootScope.showMobilePopout = true;
+  });
 
   $scope.beginStory = function () {
     Drawer.close();
@@ -13,22 +18,7 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click &lsquo;New&rsquo;'
-    });
-
-    Steps.pop({
-      number: 'two',
-      title: 'Click &lsquo;Next&rsquo; to create an App Page'
-    });
-
-    Steps.pop({
-      number: 'three',
-      title: 'Name your page <br/>&lsquo;Customer 360&rsquo;. Click &lsquo;Next&rsquo;'
-    });
-
-    Steps.pop({
-      number: 'four',
-      title: 'We will use the &lsquo;Two Columns&rsquo; layout. Click &lsquo;Finish.&rsquo; '
+      title: 'Click on Astro to start the voice command.'
     });
 
     Hotspots.clear();
