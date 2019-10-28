@@ -1652,56 +1652,6 @@
 //  }
 //}
 
-.app-in-action {
-  p {
-    @media(max-width: $screen-xs-max) {
-      font-size: 18.5px;
-      color: $text-color-white;
-      padding-top: 44px;
-    }
-    @media(min-width: $screen-sm-min) {
-      font-size: 37px;
-      color: $text-color-white;
-      padding-top: 70px;
-    }
-  }
-  .hero {
-    @media(max-width: $screen-xs-max) {
-      padding: 0 9px;
-      height: 667px;
-      @include retina-image("../assets/images/backgrounds/mobile-guided-tour-your-app-hero", 375px 690px, "png");
-      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
-        height: 690px;
-      }
-    }
-    @media(min-width: $screen-sm-min) {
-      padding: 0 18px;
-      height: 1380px;
-      background-image: url(../assets/images/backgrounds/mobile-guided-tour-your-app-hero_2x.png);
-    }
-    p {
-      color: $text-color;
-      @media(max-width: $screen-xs-max) {
-        font-size: 18.5px;
-        padding-top: 10px;
-      }
-      @media(max-width: 321px) {
-        padding-top: 0px;
-      }
-      @media(min-width: $screen-sm-min) {
-        font-size: 37px;
-        padding-top: 34px;
-      }
-    }
-    h1 {
-      color: #00a1e0;
-      padding: 8px 0;
-      @media(max-width: 321px) {
-        padding-top: 5px 0;
-      }
-    }
-  }
-
   .your-app-bkg-2 {
     @media(max-width: $screen-xs-max) {
       padding: 0 9px;

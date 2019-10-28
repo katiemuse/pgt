@@ -38,12 +38,12 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('summary', {
-      url: '/summary',
+    .state('outro', {
+      url: '/outro',
       views: {
         monitor: {
-          template: require('./partials/summary/desktop.html'),
-          controller: 'SummaryController'
+          template: require('./partials/outro/desktop.html'),
+          controller: 'OutroController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -473,25 +473,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./partials/create-custom-actions/mobile.html')
-        }
-      },
-      onEnter(TopNavbar, Hotspots) {
-        resetState(TopNavbar, Hotspots);
-      }
-    })
-    .state('app-in-action', {
-      url: '/app-in-action',
-      views: {
-        monitor: {
-          template: require('./partials/app-in-action/desktop.html'),
-          controller: 'OutroController'
-        },
-        drawer: {
-          template: require('./partials/app-in-action/drawer.html'),
-          controller: 'OutroDrawerController'
-        },
-        mobile: {
-          template: require('./partials/app-in-action/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {

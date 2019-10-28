@@ -1,8 +1,9 @@
 'use strict';
 
-export default function SummaryController($scope, WizardHandler, Steps) {
+export default function OutroController($scope, WizardHandler, Steps, Drawer) {
   angular.element(document).ready(() => {
     Steps.clear();
+    Drawer.close();
   });
 
   $scope.NextStep = function() {

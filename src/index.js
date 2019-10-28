@@ -53,7 +53,7 @@ import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import WelcomeController from './controllers/welcome/desktop.controller';
-import SummaryController from './controllers/summary/desktop.controller';
+import OutroController from './controllers/outro/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
@@ -99,8 +99,6 @@ import CustomizeActionBarController from './controllers/customize-action-bar/des
 import CustomizeActionBarDrawerController from './controllers/customize-action-bar/drawer.controller';
 import BuildLightningAppController from './controllers/build-lightning-app/desktop.controller';
 import BuildLightningAppDrawerController from './controllers/build-lightning-app/drawer.controller';
-import OutroController from './controllers/app-in-action/desktop.controller';
-import OutroDrawerController from './controllers/app-in-action/drawer.controller';
 // import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 // import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
 // import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
@@ -163,7 +161,7 @@ angular
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   // .factory('steplog', steplog)
   .controller('WelcomeController', WelcomeController)
-  .controller('SummaryController', SummaryController)
+  .controller('OutroController', OutroController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)
@@ -210,8 +208,6 @@ angular
   .controller('CustomizeActionBarDrawerController', CustomizeActionBarDrawerController)
   .controller('BuildLightningAppController', BuildLightningAppController)
   .controller('BuildLightningAppDrawerController', BuildLightningAppDrawerController)
-  .controller('OutroController', OutroController)
-  .controller('OutroDrawerController', OutroDrawerController)
   // .controller('EngagementStudioController', EngagementStudioController)
   // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
   // .controller('EngagementStudioReportController', EngagementStudioReportController)
