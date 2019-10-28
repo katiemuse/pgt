@@ -69,6 +69,7 @@ import ChapterCustomerAppController from './controllers/chapter-customer-app/des
 import ChapterCustomerAppDrawerController from './controllers/chapter-customer-app/drawer.controller';
 import ChapterBlockchainController from './controllers/chapter-blockchain/desktop.controller';
 import ChapterBlockchainDrawerController from './controllers/chapter-blockchain/drawer.controller';
+import ChapterBlockchainPhoneController from './controllers/chapter-blockchain/phone.controller';
 import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
 import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
 import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
@@ -178,6 +179,7 @@ angular
   .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
   .controller('ChapterBlockchainController', ChapterBlockchainController)
   .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)
+  .controller('ChapterBlockchainPhoneController', ChapterBlockchainPhoneController)
   .controller('ChooseProcessObjectController', ChooseProcessObjectController)
   .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
   .controller('AddCriteriaController', AddCriteriaController)

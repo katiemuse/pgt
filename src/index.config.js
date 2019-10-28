@@ -173,6 +173,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/chapter-blockchain/drawer.html'),
           controller: 'ChapterBlockchainDrawerController'
         },
+        phone: {
+          template: require('./partials/chapter-blockchain/phone.html'),
+          controller: 'ChapterBlockchainPhoneController'
+        },
         mobile: {
           template: require('./mobile.html')
         }

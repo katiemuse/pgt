@@ -35,14 +35,7 @@
     background: url("../assets/images/chapters/chapter-blockchain/blockchain-5a.png")
       center center no-repeat;
   }
-  .step-5b {
-    background: url("../assets/images/chapters/chapter-blockchain/blockchain-5b2.png")
-      center center no-repeat;
-    height: 612px !important;
-    position: absolute;
-    top: -40px;
-  }
-
+  
   .recap-0 {
     background: url("../assets/images/chapters/chapter-blockchain/recap-0.png")
       center center no-repeat;
@@ -118,15 +111,18 @@
   }
 
   .step-5b {
-    .flyout {
-      bottom: 120px;
-      width: 260px;
-      height: 150px;
-      display: flex;
-      flex-flow: column;
-      justify-content: center;
-    }
+    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center no-repeat;
   }
+
+  .phone-step-1  {
+    background: url("../assets/images/chapters/chapter-blockchain/blockchain-mobile-5b2.png") center center no-repeat;
+
+    .flyout {
+      width: 242px;
+      left: 280px;
+      bottom: 92px;
+    }
+  }  
 
   .flyout {
     background: $color-marketing-cloud-orange;
