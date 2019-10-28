@@ -54,37 +54,21 @@
       center center no-repeat;
   }
   .step-1 {
-    .form-actions {
-      position: absolute;
+    .click-box {
       top: 157px;
       left: 8px;
-      .btn-primary,
-      .btn-warning {
-        width: 160px;
-        height: 67px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
+      width: 160px;
+      height: 67px;
     }
   }
 
   .step-2 {
-    .form-actions {
-      position: absolute;
-      top: 114px;
+    .click-box {
+      top: 113px;
       right: 183px;
-      .btn-primary,
-      .btn-warning {
-        width: 40px;
-        height: 20px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+      width: 40px;
+      height: 23px;
+    }    
   }
 
   .step-2a {
@@ -97,54 +81,30 @@
     }
   }
   .step-3 {
-    .form-actions {
-      position: absolute;
-      bottom: 71px;
-      right: 198px;
-      .btn-primary,
-      .btn-warning {
-        width: 40px;
-        height: 21px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+    .click-box {
+      bottom: 69px;
+      right: 196px;
+      width: 43px;
+      height: 24px;
+    }    
   }
 
   .step-4 {
-    .form-actions {
-      position: absolute;
+    .click-box {
       top: 81px;
       left: 8px;
-      .btn-primary,
-      .btn-warning {
-        width: 160px;
-        height: 67px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
+      width: 160px;
+      height: 67px;
     }
   }
 
   .step-5 {
-    .form-actions {
-      position: absolute;
-      bottom: 167px;
-      left: 370px;
-      .btn-primary,
-      .btn-warning {
-        width: 60px;
-        height: 20px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+    .click-box {
+      bottom: 165px;
+      left: 368px;
+      width: 64px;
+      height: 24px;
+    }    
   }
 
   .step-5a {

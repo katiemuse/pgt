@@ -13,12 +13,12 @@ export default function ChapterBlockchainDrawerController($scope, WizardHandler,
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click &quot;Partners&quot; to open your list of current partners'
+      title: 'Click &quot;Partners&quot; to open your list of current partners.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Click &quot;New&quot; to add a partner'
+      title: 'Click &quot;New&quot; to add a partner.'
     });
 
     Steps.pop({
