@@ -36,16 +36,6 @@
       center center no-repeat;
   }
   
-  .recap-0 {
-    background: url("../assets/images/chapters/chapter-blockchain/recap-0.png")
-      center center no-repeat;
-    position: relative;
-  }
-
-  .recap-1 {
-    background: url("../assets/images/chapters/chapter-blockchain/recap-1.png")
-      center center no-repeat;
-  }
   .step-1 {
     .click-box {
       top: 157px;
@@ -123,53 +113,4 @@
       bottom: 92px;
     }
   }  
-
-  .flyout {
-    background: $color-marketing-cloud-orange;
-  }
-
-  .recap-0,
-  .recap-1 {
-    .recap-buttons {
-      display: flex;
-      position: absolute;
-      bottom: 190px;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      .btn {
-        background: #e67300;
-        color: #ffffff;
-        padding: 10px 30px;
-        margin-top: 0;
-        margin-right: 25px;
-      }
-    }
-  }
-  .recap-0 {
-    .recap-buttons {
-      .text {
-        color: #000000;
-        i {
-          font-family: "SalesforceIcons";
-          font-style: normal;
-          font-weight: normal;
-          font-variant: normal;
-          text-transform: none;
-          line-height: 1;
-          font-size: 9px;
-          display: inline-block;
-          vertical-align: middle;
-          &:after {
-            content: "\E924";
-          }
-        }
-      }
-    }
-  }
-  .recap-1 {
-    .recap-buttons {
-      bottom: 100px;
-    }
-  }
 }

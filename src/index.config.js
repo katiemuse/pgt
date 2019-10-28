@@ -38,6 +38,18 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
+    .state('summary', {
+      url: '/summary',
+      views: {
+        monitor: {
+          template: require('./partials/summary/desktop.html'),
+          controller: 'SummaryController'
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
     .state('chapter-data', {
       url: '/chapter-data',
       views: {

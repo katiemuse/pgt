@@ -53,6 +53,7 @@ import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import WelcomeController from './controllers/welcome/desktop.controller';
+import SummaryController from './controllers/summary/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
@@ -162,6 +163,7 @@ angular
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   // .factory('steplog', steplog)
   .controller('WelcomeController', WelcomeController)
+  .controller('SummaryController', SummaryController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)
