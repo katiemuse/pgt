@@ -19,8 +19,6 @@
       position: absolute;
       bottom: 190px;
       align-items: center;
-      justify-content: center;
-      width: 100%;
       .btn {
         background: #e67300;
         color: #ffffff;
@@ -32,6 +30,7 @@
   }
   .recap-0 {
     .recap-buttons {
+      left: 414px;      
       .text {
         color: #000000;
         i {
@@ -54,6 +53,8 @@
   .recap-1 {
     .recap-buttons {
       bottom: 100px;
+      justify-content: center;
+      width: 100%;
     }
   }
 }
