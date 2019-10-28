@@ -29,7 +29,7 @@
       left: 250px;
       top: 0px;
       margin: auto;
-      z-index: $z-index-mobile-popout-blocker + 2;
+      z-index: $z-index-mobile-popout-blocker + 3;
       pointer-events: none;
     }
 
@@ -39,8 +39,28 @@
       left: 271px;
       width: 257px;
       height: 556px;
-      z-index: $z-index-mobile-popout-blocker + 1;
+      z-index: $z-index-mobile-popout-blocker + 2;
       // background-color: rgba(0,255,0,0.5);
+    }
+
+    .astro-peeking {
+      position: absolute;
+      width: 234px;
+      height: 275px;
+      left: 448px;
+      top: 300px;
+      margin: auto;
+      z-index: $z-index-mobile-popout-blocker + 1;
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .astro-peeking-hidden {
+      visibility: hidden;
+    }
+
+    .astro-peeking-visible {
+      visibility: visible;
     }
   }
 

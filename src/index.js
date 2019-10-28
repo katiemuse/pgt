@@ -81,6 +81,7 @@ import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.c
 import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
 import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
 import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
+import ChapterVoicePhoneController from './controllers/chapter-voice/phone.controller';
 import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
 import AddAppexchangeComponentsDrawerController from './controllers/add-appexchange-components/drawer.controller';
 import AddBaseLightningComponentsController from './controllers/add-base-lightning-components/desktop.controller';
@@ -190,6 +191,7 @@ angular
   .controller('ChapterMobilePhoneController', ChapterMobilePhoneController)
   .controller('ChapterVoiceController', ChapterVoiceController)
   .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
+  .controller('ChapterVoicePhoneController', ChapterVoicePhoneController)
   .controller('AddAppexchangeComponentsController', AddAppexchangeComponentsController)
   .controller('AddAppexchangeComponentsDrawerController', AddAppexchangeComponentsDrawerController)
   .controller('AddBaseLightningComponentsController', AddBaseLightningComponentsController)

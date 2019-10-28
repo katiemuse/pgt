@@ -6,65 +6,17 @@
           <wz-step>
             <div class="step step-0"></div>
           </wz-step>
-          <wz-step>
-            <div class="step step-1">
-              <div class="click-box active" ng-click="Next()"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-2">
-              <div class="click-box active" ng-click="Next()"></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-3">
-              <form class="form form-horizontal">
-                <div class="control-group">
-                  <div class="controls">
-                    <input
-                      autocomplete="off"
-                      type="text"
-                      name="name"
-                      id="name"
-                      ng-model="lightning.input"
-                      class="text"
-                      maxlength="80"
-                      ng-disabled="!input.active"
-                      ng-class="{active:input.active}"
-                      li-autofocus="wizard.stateIndex == 3"
-                    />
-                  </div>
-                </div>
-              </form>
-              <div
-                class="click-box"
-                ng-click="Next()"
-                ng-class="{active:!input.active}"
-              ></div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-4">
-              <div class="click-box active" wz-next></div>
-            </div>
-          </wz-step>
           <wz-step success="true">
             <div class="step success">
               <canvas id="success-confetti" ng-open="RenderConfetti()"></canvas>
               <li-center>
                 <p>
-                  You just created a responsive design for a mobile app with 2
-                  columns. Wasn’t that easy? Now let’s start building the user
-                  interface of your app.
+                  Now your reps can save time and check off their to-do lists faster with intelligent voice commands. Want to see how Heroku can provide a seamless, connected experience for you and your customers?
                 </p>
                 <p>
-                  <a
-                    ui-sref="add-base-lightning-components"
-                    class="btn btn-rounded active"
-                    li-autofocus="wizard.stateIndex == 3"
-                    >Next</a
-                  >
-                </p>
+                  <a ui-sref="chapter-customer-app" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active">Continue</a>
+                  <a href="https://www.salesforce.com/products/platform/einstein/einstein-voice/" class="success-text-link">Learn more about voice &gt;</a>
+                </p>                
               </li-center>
             </div>
           </wz-step>
