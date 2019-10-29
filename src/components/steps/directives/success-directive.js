@@ -1,11 +1,15 @@
 "use strict";
 
-export default function successConfetti($document) {
+export default function successConfetti($document, $timeout) {
   return {
     restrict: "E",
     template: require("../partials/success-confetti.html"),
     renderConfetti: () => {
-      const canvas = $document[0].getElementById("success-confetti");
+      // setTimeout(() => getCanvas, 1000);
+      $timeout(() => {
+        getCanvas();
+      }, 1000);
+      const canvas = getCanvas() !== null ? getCanvas() : $document[0].getElementById("success-confetti");
       const ctx = canvas.getContext("2d");
       canvas.width = window.innerWidth;
       canvas.height = window.innerHeight;
@@ -34,6 +38,13 @@ export default function successConfetti($document) {
       //   let cy = ctx.canvas.height / 2;
       // };
       const randomRange = (min, max) => Math.random() * (max - min + min);
+
+      function getCanvas() {
+        const canvas = $document[0].getElementById("success-confetti");
+        if (canvas !== null) {
+          return canvas;
+        }
+      }
 
       function initConfetti() {
         for (let i = 0; i < confettiCount; i++) {

@@ -158,7 +158,7 @@ angular
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
-  // .service('renderConfetti', renderConfetti)
+  .service('successConfetti', successConfetti)
   .factory('stepsRegisterEvents', stepsFactory)
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)

@@ -74,9 +74,10 @@
           confetto.velocity.y + gravity,
           terminalVelocity
         );
+        // console.log("confetti velocity", confetto.velocity.y);
         confetto.velocity.x +=
           Math.random() > 0.5 ? Math.random() : -Math.random();
-
+        // console.log("confetti velocity", confetto.velocity.x, confetto.velocity.y);
         // Set position
         confetto.position.x += confetto.velocity.x;
         confetto.position.y += confetto.velocity.y;
