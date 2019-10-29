@@ -48,7 +48,7 @@ export default function ChapterCustomerAppController(
     }
   });
 
-  $scope.NextSLideNoTab = function() {
+  $scope.NextSlideNoTab = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
   };
