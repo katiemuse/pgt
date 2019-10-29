@@ -4,11 +4,13 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step step-0">
-            </div>
+            <div class="step step-0"></div>
           </wz-step>
           <wz-step success="true">
               <div class="step success">
+                  <div class="confetti-container" ng-open="renderConfetti()">
+                    <canvas id="success-confetti"></canvas>
+                  </div>
                 <li-center>
                   <p>
                       With your mobile app, your users can access the information they need at any time from anywhere. Want to see the difference AI can make?
