@@ -1,14 +1,6 @@
 "use strict";
 
-export default function ChapterDataController(
-  $scope,
-  Steps,
-  Hotspots,
-  WizardHandler,
-  successConfetti,
-  $log
-) {
-  $log.info("successConfetti", successConfetti);
+export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler, successConfetti) {
   $scope.Next = function() {
     if (WizardHandler.wizard("monitor").currentStepNumber() === 1) {
       WizardHandler.wizard("monitor").next();
@@ -66,6 +58,5 @@ export default function ChapterDataController(
 
   $scope.renderConfetti = function() {
     successConfetti.renderConfetti();
-    // successConfetti.render();
   };
 }

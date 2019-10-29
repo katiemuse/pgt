@@ -8,9 +8,9 @@
           </wz-step>
           <wz-step success="true">
             <div class="step success">
-                <div class="confetti-container">
-                    <success-confetti/>
-                </div>
+                <div class="confetti-container" ng-open="renderConfetti()">
+                    <canvas id="success-confetti"></canvas>
+                  </div>
               <li-center>
                 <p>
                   Now your reps can save time and check off their to-do lists faster with intelligent voice commands. Want to see how Heroku can provide a seamless, connected experience for you and your customers?
