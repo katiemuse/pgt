@@ -38,6 +38,18 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
+    .state('outro', {
+      url: '/outro',
+      views: {
+        monitor: {
+          template: require('./partials/outro/desktop.html'),
+          controller: 'OutroController'
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
     .state('chapter-data', {
       url: '/chapter-data',
       views: {
@@ -172,6 +184,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         drawer: {
           template: require('./partials/chapter-blockchain/drawer.html'),
           controller: 'ChapterBlockchainDrawerController'
+        },
+        phone: {
+          template: require('./partials/chapter-blockchain/phone.html'),
+          controller: 'ChapterBlockchainPhoneController'
         },
         mobile: {
           template: require('./mobile.html')
@@ -457,25 +473,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./partials/create-custom-actions/mobile.html')
-        }
-      },
-      onEnter(TopNavbar, Hotspots) {
-        resetState(TopNavbar, Hotspots);
-      }
-    })
-    .state('app-in-action', {
-      url: '/app-in-action',
-      views: {
-        monitor: {
-          template: require('./partials/app-in-action/desktop.html'),
-          controller: 'OutroController'
-        },
-        drawer: {
-          template: require('./partials/app-in-action/drawer.html'),
-          controller: 'OutroDrawerController'
-        },
-        mobile: {
-          template: require('./partials/app-in-action/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {

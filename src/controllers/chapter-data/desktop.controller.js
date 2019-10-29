@@ -5,12 +5,8 @@ export default function ChapterDataController(
   Steps,
   Hotspots,
   WizardHandler,
-  $timeout,
-  renderConfetti,
-  $log
 ) {
   $scope.Next = function() {
-    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard("monitor").currentStepNumber() === 1) {
       WizardHandler.wizard("monitor").next();
       Steps.activate("one");
@@ -65,11 +61,8 @@ export default function ChapterDataController(
     Steps.activate("six");
   };
 
-  $scope.ShowConfetti = function() {
-    $log.info("ShowConfetti running now");
-    $log.info("renderConfetti.renderFunc", renderConfetti);
-    $log.info("renderConfetti.renderFunc", renderConfetti.renderFunc);
-    // renderConfetti.renderFunc.initConfetti();
-    // renderConfetti.renderFunc.render();
-  };
+  // $scope.successConfetti = function() {
+  //   successConfetti.renderConfetti.initConfetti();
+  //   successConfetti.renderConfetti.render();
+  // };
 }
