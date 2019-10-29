@@ -14,30 +14,15 @@
           <wz-step>
             <div class="step step-1a">
               <div class="flyout active">
-                <span
-                  >Let's add price quote logic to your flow so that sales reps
-                  see automatic payment terms.</span
-                >
+                <span>Let's add price quote logic to your flow so that sales reps see automatic payment terms.</span>
                 <a ng-click="goToStep2()">continue <i></i></a>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <img
-                src="../../assets/images/chapters/chapter-flow/currency-drag.png"
-                data-drag="true"
-                jqyoui-draggable="{index: 0, animate:true}"
-                data-jqyoui-options="{revert: 'invalid'}"
-                alt="currency drag"
-                class="currency-drag"
-                ng-class="{active:!currency.active}"
-              />
-              <div
-                class="drop-box active"
-                data-drop="true"
-                jqyoui-droppable="{index: 1 , onDrop:'goToStep3'}"
-              ></div>
+              <img src="../../assets/images/chapters/chapter-flow/currency-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}" alt="currency drag" class="currency-drag" ng-class="{active:!currency.active}"/>
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep3'}"></div>
             </div>
           </wz-step>
           <wz-step>
@@ -45,16 +30,7 @@
               <form class="form form-horizontal">
                 <div class="control-group">
                   <div class="controls">
-                    <input
-                      autocomplete="off"
-                      li-autofocus="wizard.stateIndex == 3"
-                      type="text"
-                      name="name"
-                      id="name"
-                      ng-model="label.input"
-                      class="text currency-label active"
-                      maxlength="80"
-                    />
+                    <input autocomplete="off" li-autofocus="wizard.stateIndex == 3" type="text" name="name" id="name" ng-model="label.input" class="text currency-label active" maxlength="80"/>
                   </div>
                 </div>
               </form>
@@ -72,9 +48,7 @@
                 </div>
               <li-center>
                 <p>
-                  Automating these actions will save you time and decrease
-                  errors. Ready to learn how to add this logic to your app with
-                  clicks, not code.
+                  Automating these actions will save you time and decrease errors. Ready to learn how to add this logic to your app with clicks, not code.
                 </p>
                 <p>
                   <a ui-sref="chapter-builder" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>

@@ -8,29 +8,13 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <img
-                src="../../assets/images/chapters/chapter-ai/prediction-drag.png"
-                data-drag="true"
-                jqyoui-draggable="{index: 0, animate:true}"
-                data-jqyoui-options="{revert: 'invalid'}"
-                alt="einstein prediction drag"
-                class="prediction-drag"
-                ng-class="{active:!prediction.active}"
-              />
-              <div
-                class="drop-box active"
-                data-drop="true"
-                jqyoui-droppable="{index: 1 , onDrop:'Next'}"
-              ></div>
+              <img src="../../assets/images/chapters/chapter-ai/prediction-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}" alt="einstein prediction drag" class="prediction-drag" ng-class="{active:!prediction.active}" />
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'Next'}"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div
-                class="click-box"
-                ng-class="{active:!button.show}"
-                ng-click="Next()"
-              ></div>
+              <div class="click-box" ng-class="{active:!button.show}" ng-click="Next()"></div>
             </div>
           </wz-step>
           <wz-step>
@@ -45,10 +29,7 @@
                 </div>
               <li-center>
                 <p>
-                  Now your reps are equipped with the tools they need to win
-                  more deals and increase customer satisfaction. Let’s take a
-                  look at how a voice-enabled virtual assistant can help
-                  increase reps’ productivity.
+                  Now your reps are equipped with the tools they need to win more deals and increase customer satisfaction. Let’s take a look at how a voice-enabled virtual assistant can help increase reps’ productivity.
                 </p>
                 <p>
                   <a ui-sref="chapter-voice" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active">Continue</a>

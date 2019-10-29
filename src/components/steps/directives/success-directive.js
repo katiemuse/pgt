@@ -1,10 +1,8 @@
 "use strict";
-// import angular from 'angular';
 
 export default function successConfetti($document) {
   return {
     restrict: "E",
-    template: require("../partials/success-confetti.html"),
     renderConfetti: () => {
       angular.element($document).ready(() => {
         // $document[0].getElementById("msg").innerHTML = "Hello";

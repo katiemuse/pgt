@@ -6,7 +6,7 @@ $textColorHover: #cccccc;
 $closeButton: #ffffff;
 $closeButtonHover: #000000;
 
-$text-step-number-color: #7c868d;
+$text-step-number-color:#7c868d;
 
 $fontSize: 20px;
 
@@ -43,8 +43,7 @@ $stepContainerShadowColorHover: #000000;
   opacity: 0.8;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: alpha(opacity = 80);
-  &:hover,
-  &:focus {
+  &:hover, &:focus {
     color: $closeButtonHover;
     text-decoration: none;
     cursor: pointer;
@@ -91,7 +90,7 @@ button.step-close-button {
   overflow: hidden;
   position: absolute;
   z-index: $z-index-step-container;
-  pointer-events: none;
+  pointer-events:none;
 
   * {
     -moz-box-sizing: border-box;
@@ -109,7 +108,7 @@ button.step-close-button {
       -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
       filter: alpha(opacity = 80);
       transition: all 0.3s ease-in-out;
-      @media (max-width: $screen-md-max) {
+      @media(max-width: $screen-md-max) {
         padding: 10px;
       }
     }
@@ -117,22 +116,18 @@ button.step-close-button {
       cursor: default;
     }
 
-    .step-one,
-    .step-two,
-    .step-three,
-    .step-four,
-    .step-five {
+    .step-one, .step-two, .step-three, .step-four, .step-five {
       //background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
     }
   }
 
   .step {
-    min-height: 90px;
+    min-height:90px;
     position: relative;
     width: 174px;
-    margin-left: 119px;
-    height: 90px;
-    @media (max-width: $screen-md-max) {
+    margin-left:119px;
+    height:90px;
+    @media(max-width: $screen-md-max) {
       width: 74px;
       margin-left: 56px;
       min-height: 70px;
@@ -145,7 +140,7 @@ button.step-close-button {
       font-size: 16px;
       line-height: 20px;
       opacity: 0;
-      @media (max-width: $screen-md-max) {
+      @media(max-width: $screen-md-max) {
         font-size: 12px;
         line-height: 1.4;
       }
@@ -155,8 +150,7 @@ button.step-close-button {
       -ms-word-wrap: break-word;
       word-wrap: break-word;
       opacity: 0;
-      a,
-      label {
+      a, label {
         color: $textColor;
       }
       a:hover {
@@ -166,15 +160,15 @@ button.step-close-button {
     }
 
     &:before {
-      position: absolute;
-      left: 20px;
-      top: 13px;
+      position:absolute;
+      left:20px;
+      top:13px;
       color: $text-color-white;
       font-family: $salesforcesans;
       font-weight: bold;
-      font-size: 46px;
-      float: left;
-      @media (max-width: $screen-md-max) {
+      font-size:46px;
+      float:left;
+      @media(max-width: $screen-md-max) {
         left: 10px;
         top: 9px;
         font-size: 36px;
@@ -183,11 +177,11 @@ button.step-close-button {
 
     &.active {
       width: 280px;
-      margin-left: 13px;
-      max-height: 500px;
+      margin-left:13px;
+      max-height:500px;
       min-height: auto;
       height: auto !important;
-      @media (max-width: $screen-md-max) {
+      @media(max-width: $screen-md-max) {
         width: 130px;
         margin-left: 0;
         min-height: 70px;
@@ -196,15 +190,15 @@ button.step-close-button {
       .step-title,
       .step-message {
         width: 235px;
-        transition: all, 2s, ease-in-out;
+        transition: all, 2.0s, ease-in-out;
         opacity: 1;
-        @media (max-width: $screen-md-max) {
+        @media(max-width: $screen-md-max) {
           width: 110px;
         }
       }
 
       &:before {
-        content: "";
+        content: '';
       }
     }
   }
@@ -289,19 +283,9 @@ button.step-close-button {
   }
 }
 
-.step-one,
-.step-two,
-.step-three,
-.step-four,
-.step-five,
-.step-six {
+.step-one, .step-two, .step-three, .step-four, .step-five, .step-six {
   background-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 161, 224, 1) 0%,
-    rgba(0, 161, 224, 0.8) 47%,
-    rgba(0, 161, 224, 0.3) 100%
-  );
+  background-image: linear-gradient(to right, rgba(0, 161, 224, 1) 0%, rgba(0, 161, 224, 0.8) 47%, rgba(0, 161, 224, 0.3) 100%);
   &.active {
     background-image: linear-gradient(
       to left,
@@ -313,37 +297,37 @@ button.step-close-button {
 
 .step-one {
   &:before {
-    content: "01";
+    content: '01';
   }
 }
 
 .step-two {
   &:before {
-    content: "02";
+    content: '02';
   }
 }
 
 .step-three {
   &:before {
-    content: "03";
+    content: '03';
   }
 }
 
 .step-four {
   &:before {
-    content: "04";
+    content: '04';
   }
 }
 
 .step-five {
   &:before {
-    content: "05";
+    content: '05';
   }
 }
 
 .step-six {
   &:before {
-    content: "06";
+    content: '06';
   }
 }
 

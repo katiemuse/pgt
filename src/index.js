@@ -47,7 +47,6 @@ import hotspotsContainer from './components/hotspots/directives/hotspots-contain
 import stepsDirective from './components/steps/directives/steps-directive';
 import successConfetti from './components/steps/directives/success-directive';
 import stepsFactory from './components/steps/factories/steps-factory';
-// import renderConfetti from './components/steps/services/render-confetti-service';
 import stripTags from './components/stip-tags/filters/stip-tags-filter';
 import userProfile from './components/user-profile/factories/user-profile-factory';
 import wizardStep from './components/wizard/directives/step-directive';
