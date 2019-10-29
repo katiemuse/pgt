@@ -1,14 +1,13 @@
-'use strict';
+"use strict";
 
-export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler) {
-  $scope.Next = function () {
-    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
-    if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
-      WizardHandler.wizard('monitor').next();
-      Steps.activate('one');
-    } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
-      WizardHandler.wizard('monitor').next();
-      Steps.activate('two');
+export default function ChapterDataController($scope, Steps, Hotspots, WizardHandler, successConfetti) {
+  $scope.Next = function() {
+    if (WizardHandler.wizard("monitor").currentStepNumber() === 1) {
+      WizardHandler.wizard("monitor").next();
+      Steps.activate("one");
+    } else if (WizardHandler.wizard("monitor").currentStepNumber() === 2) {
+      WizardHandler.wizard("monitor").next();
+      Steps.activate("two");
     }
   };
 
@@ -55,5 +54,9 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
   $scope.GoToSuccess = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("six");
+  };
+
+  $scope.renderConfetti = function() {
+    successConfetti.renderConfetti();
   };
 }
