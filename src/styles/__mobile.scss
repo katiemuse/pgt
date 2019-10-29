@@ -1,8 +1,11 @@
 @import "_base";
 
+body > div ~ div {
+  background: #c2e8ff;
+}
+
 .container-fluid {
   &.mobile {
-    background: #c2e8ff;
     .top-nav-container,
     .product-tour {
       display: none;
@@ -13,6 +16,9 @@
     }
     .mobile-view {
       padding-top: 20px;
+      img {
+        margin: 0 auto;
+      }
     }
   }
 }
