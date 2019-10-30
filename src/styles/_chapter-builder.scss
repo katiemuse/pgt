@@ -11,6 +11,10 @@
       center center no-repeat;
   }
 
+  .step {
+    background-size: contain;
+  }
+
   .step-1 {
     .price-quote-drag {
       position: absolute !important;
@@ -34,10 +38,10 @@
 
   .step-2 {
     .click-box {
-      bottom: 430px;
+      bottom: 431px;
       left: 709px;
-      width: 73px;
-      height: 29px;
+      width: 69px;
+      height: 24px;
     }
     .check {
       position: absolute;

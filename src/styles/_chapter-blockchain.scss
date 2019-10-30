@@ -1,13 +1,8 @@
 @import "_base";
 
 .chapter-blockchain {
-  .step-0 {
+  .step-0, .step-1 {
     background: url("../assets/images/chapters/chapter-blockchain/blockchain-0.png")
-      center center no-repeat;
-  }
-
-  .step-1 {
-    background: url("../assets/images/chapters/chapter-blockchain/blockchain-1.png")
       center center no-repeat;
   }
 
@@ -35,22 +30,26 @@
     background: url("../assets/images/chapters/chapter-blockchain/blockchain-5a.png")
       center center no-repeat;
   }
+
+  .step {
+    background-size: contain;
+  }
   
   .step-1 {
     .click-box {
-      top: 157px;
+      top: 158px;
       left: 8px;
       width: 160px;
-      height: 67px;
+      height: 66px;
     }
   }
 
   .step-2 {
     .click-box {
-      top: 113px;
-      right: 183px;
-      width: 40px;
-      height: 23px;
+      top: 116px;
+      right: 184px;
+      width: 37px;
+      height: 19px;
     }    
   }
 
@@ -73,19 +72,19 @@
 
   .step-4 {
     .click-box {
-      top: 81px;
+      top: 82px;
       left: 8px;
       width: 160px;
-      height: 67px;
+      height: 66px;
     }
   }
 
   .step-5 {
     .click-box {
-      bottom: 165px;
-      left: 368px;
-      width: 64px;
-      height: 24px;
+      bottom: 166px;
+      left: 371px;
+      width: 59px;
+      height: 20px;
     }    
   }
 

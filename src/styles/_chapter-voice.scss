@@ -22,6 +22,10 @@
     background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
   }
 
+  .step {
+    background-size: contain;
+  }
+
   .phone-step-1 {
     .astro-click-area {
       width: 150px;
