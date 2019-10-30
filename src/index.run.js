@@ -19,12 +19,6 @@ export default function run(
     stateIndex: -1
   };
 
-  // const x = $transitions.onSuccess({ }, () => {
-  //   Drawer.close();
-  // });
-
-  // $rootScope.$on('$destroy', x);
-
   const deregisterMobilePopoutToggle = $rootScope.$on('mobile-popout:toggle', () => {
     $rootScope.showMobilePopout = !$rootScope.showMobilePopout;
   });

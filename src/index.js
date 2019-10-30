@@ -7,15 +7,11 @@ import 'jquery';
 import './assets/js/jquery-ui-with-touch-punch';
 import angular from 'angular';
 import 'angular-animate';
-// import 'angular-cookies';
 import 'angular-touch';
 import 'angular-sanitize';
 import 'angular-resource';
 import 'angular-ui-router';
-// import 'angular-ui-sortable';
 import 'angular-dragdrop';
-// import 'textangular';
-// import 'textAngular/dist/textAngular-sanitize';
 import run from './index.run';
 import routerConfig from './index.config';
 import {Steps} from './components/steps/services/steps-service';
@@ -54,8 +50,8 @@ import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import WelcomeController from './controllers/welcome/desktop.controller';
-import OutroController from './controllers/outro/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
+import OutroController from './controllers/outro/desktop.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
 import ChapterBuilderController from './controllers/chapter-builder/desktop.controller';
@@ -65,52 +61,17 @@ import ChapterFlowDrawerController from './controllers/chapter-flow/drawer.contr
 import ChapterAIController from './controllers/chapter-ai/desktop.controller';
 import ChapterAIDrawerController from './controllers/chapter-ai/drawer.controller';
 import ChapterAIPhoneController from './controllers/chapter-ai/phone.controller';
-// import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
-// import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
 import ChapterCustomerAppController from './controllers/chapter-customer-app/desktop.controller';
 import ChapterCustomerAppDrawerController from './controllers/chapter-customer-app/drawer.controller';
 import ChapterBlockchainController from './controllers/chapter-blockchain/desktop.controller';
 import ChapterBlockchainDrawerController from './controllers/chapter-blockchain/drawer.controller';
 import ChapterBlockchainPhoneController from './controllers/chapter-blockchain/phone.controller';
-import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
-import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
-import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
-import AddCriteriaDrawerController from './controllers/add-process-criteria/drawer.controller';
-import CreateProcessActionController from './controllers/create-process-action/desktop.controller';
-import CreateProcessActionDrawerController from './controllers/create-process-action/drawer.controller';
 import ChapterMobileController from './controllers/chapter-mobile/desktop.controller';
 import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.controller';
 import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
 import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
 import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
 import ChapterVoicePhoneController from './controllers/chapter-voice/phone.controller';
-import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
-import AddAppexchangeComponentsDrawerController from './controllers/add-appexchange-components/drawer.controller';
-import AddBaseLightningComponentsController from './controllers/add-base-lightning-components/desktop.controller';
-import AddBaseLightningComponentsDrawerController from './controllers/add-base-lightning-components/drawer.controller';
-import AddCustomComponentsController from './controllers/add-custom-components/desktop.controller';
-import AddCustomComponentsDrawerController from './controllers/add-custom-components/drawer.controller';
-import CustomizePageLayoutController from './controllers/customize-page-layout/desktop.controller';
-import CustomizePageLayoutDrawerController from './controllers/customize-page-layout/drawer.controller';
-import DeployYourAppController from './controllers/deploy-your-app/desktop.controller';
-import DeployYourAppDrawerController from './controllers/deploy-your-app/drawer.controller';
-import CreateCustomActionsController from './controllers/create-custom-actions/desktop.controller';
-import CreateCustomActionsDrawerController from './controllers/create-custom-actions/drawer.controller';
-import CustomizeActionBarController from './controllers/customize-action-bar/desktop.controller';
-import CustomizeActionBarDrawerController from './controllers/customize-action-bar/drawer.controller';
-import BuildLightningAppController from './controllers/build-lightning-app/desktop.controller';
-import BuildLightningAppDrawerController from './controllers/build-lightning-app/drawer.controller';
-// import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
-// import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
-// import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
-// import EngagementStudioReportDrawerController from './app/5-in-the-field/controllers/engagement-studio-report.drawer.controller';
-// import EngagementStudioRuleController from './app/5-in-the-field/controllers/engagement-studio-rule.controller';
-// import EngagementStudioRuleDrawerController from './app/5-in-the-field/controllers/engagement-studio-rule.drawer.controller';
-// import EngagementStudioTestController from './app/5-in-the-field/controllers/engagement-studio-test.controller';
-// import EngagementStudioTestDrawerController from './app/5-in-the-field/controllers/engagement-studio-test.drawer.controller';
-// import steplog from './app/5-in-the-field/factory/engagement-studio-test.factory';
-// import EngagementStudioTriggerController from './app/5-in-the-field/controllers/engagement-studio-trigger.controller';
-// import EngagementStudioTriggerDrawerController from './app/5-in-the-field/controllers/engagement-studio-trigger.drawer.controller';
 
 import './styles/vendor.scss';
 import './styles/index.scss';
@@ -162,7 +123,6 @@ angular
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
-  // .factory('steplog', steplog)
   .controller('WelcomeController', WelcomeController)
   .controller('OutroController', OutroController)
   .controller('DrawerPanelController', drawerPanelController)
@@ -176,51 +136,17 @@ angular
   .controller('ChapterFlowDrawerController', ChapterFlowDrawerController)
   .controller('ChapterBuilderController', ChapterBuilderController)
   .controller('ChapterBuilderDrawerController', ChapterBuilderDrawerController)
-  // .controller('BuildASchemaController', BuildASchemaController)
-  // .controller('BuildASchemaDrawerController', BuildASchemaDrawerController)
   .controller('ChapterCustomerAppController', ChapterCustomerAppController)
   .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
   .controller('ChapterBlockchainController', ChapterBlockchainController)
   .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)
   .controller('ChapterBlockchainPhoneController', ChapterBlockchainPhoneController)
-  .controller('ChooseProcessObjectController', ChooseProcessObjectController)
-  .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
-  .controller('AddCriteriaController', AddCriteriaController)
-  .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
-  .controller('CreateProcessActionController', CreateProcessActionController)
-  .controller('CreateProcessActionDrawerController', CreateProcessActionDrawerController)
   .controller('ChapterMobileController', ChapterMobileController)
   .controller('ChapterMobileDrawerController', ChapterMobileDrawerController)
   .controller('ChapterMobilePhoneController', ChapterMobilePhoneController)
   .controller('ChapterVoiceController', ChapterVoiceController)
   .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
   .controller('ChapterVoicePhoneController', ChapterVoicePhoneController)
-  .controller('AddAppexchangeComponentsController', AddAppexchangeComponentsController)
-  .controller('AddAppexchangeComponentsDrawerController', AddAppexchangeComponentsDrawerController)
-  .controller('AddBaseLightningComponentsController', AddBaseLightningComponentsController)
-  .controller('AddBaseLightningComponentsDrawerController', AddBaseLightningComponentsDrawerController)
-  .controller('AddCustomComponentsController', AddCustomComponentsController)
-  .controller('AddCustomComponentsDrawerController', AddCustomComponentsDrawerController)
-  .controller('CustomizePageLayoutController', CustomizePageLayoutController)
-  .controller('CustomizePageLayoutDrawerController', CustomizePageLayoutDrawerController)
-  .controller('DeployYourAppController', DeployYourAppController)
-  .controller('DeployYourAppDrawerController', DeployYourAppDrawerController)
-  .controller('CreateCustomActionsController', CreateCustomActionsController)
-  .controller('CreateCustomActionsDrawerController', CreateCustomActionsDrawerController)
-  .controller('CustomizeActionBarController', CustomizeActionBarController)
-  .controller('CustomizeActionBarDrawerController', CustomizeActionBarDrawerController)
-  .controller('BuildLightningAppController', BuildLightningAppController)
-  .controller('BuildLightningAppDrawerController', BuildLightningAppDrawerController)
-  // .controller('EngagementStudioController', EngagementStudioController)
-  // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
-  // .controller('EngagementStudioReportController', EngagementStudioReportController)
-  // .controller('EngagementStudioReportDrawerController', EngagementStudioReportDrawerController)
-  // .controller('EngagementStudioRuleController', EngagementStudioRuleController)
-  // .controller('EngagementStudioRuleDrawerController', EngagementStudioRuleDrawerController)
-  // .controller('EngagementStudioTestController', EngagementStudioTestController)
-  // .controller('EngagementStudioTestDrawerController', EngagementStudioTestDrawerController)
-  // .controller('EngagementStudioTriggerController', EngagementStudioTriggerController)
-  // .controller('EngagementStudioTriggerDrawerController', EngagementStudioTriggerDrawerController)
   .service('Hotspots', Hotspots)
   .config(routerConfig)
   .run(run);
