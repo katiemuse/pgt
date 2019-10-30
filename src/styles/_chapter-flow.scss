@@ -1,19 +1,17 @@
-@import "_base";
+@import '_base';
 
 .chapter-flow {
-  .step-0,
-  .step-1 {
-    background: url("../assets/images/chapters/chapter-flow/screen-bkg-1.png") center center no-repeat;
+  .step-0, .step-1 {
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-1.png') center center no-repeat;
   }
-  .step-1a,
-  .step-2 {
-    background: url("../assets/images/chapters/chapter-flow/screen-bkg-1a.png") center top no-repeat;
+  .step-1a, .step-2 {
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-1a.png') center top no-repeat;
   }
   .step-3 {
-    background: url("../assets/images/chapters/chapter-flow/screen-bkg-3.png") center top no-repeat;
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-3.png') center top no-repeat;
   }
   .step-4 {
-    background: url("../assets/images/chapters/chapter-flow/screen-bkg-4.png") center top no-repeat;
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-4.png') center top no-repeat;
   }
 
   .step {
@@ -66,6 +64,7 @@
       height: 26px !important;
     }
   }
+  
   .step-4 {
     .click-box {
       top: 388px;
