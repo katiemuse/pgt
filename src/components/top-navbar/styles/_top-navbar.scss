@@ -119,16 +119,18 @@ nav.top-navbar {
 }
 
 .mobile {
+  padding-top: 20px;
   @media (min-width: 376px) and (max-width: $screen-xs-max) {
-    width: 375px;
+    width: auto;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
-
+    
   }
   @media (min-width: $screen-sm-min) {
-    width: 750px;
+    padding-top: 40px;
+    width: auto;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
