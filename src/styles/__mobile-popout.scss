@@ -13,24 +13,54 @@
 
   .phone {
     position: absolute;
-    background-image:url('../assets/images/iphone-vertical.png');
-    width: 263px;
-    height: 547px;
+    box-sizing: border-box;
+    width: 920px;
+    height: 580px;
     left:0;
     top:0;
     bottom: 0;
     right: 0;
     margin: auto;
 
+    .phone-backdrop {
+      position: absolute;
+      width: 292px;
+      height: 581px;
+      left: 250px;
+      top: 0px;
+      margin: auto;
+      z-index: $z-index-mobile-popout-blocker + 3;
+      pointer-events: none;
+    }
 
     .phone-view {
-      position: relative;
-      top: 63px;
-      left: 14px;
-      width: 235px;
-      height: 418px;
+      position: absolute;
+      top: 12px;
+      left: 271px;
+      width: 257px;
+      height: 556px;
+      z-index: $z-index-mobile-popout-blocker + 2;
+      // background-color: rgba(0,255,0,0.5);
+    }
+
+    .astro-peeking {
+      position: absolute;
+      width: 234px;
+      height: 275px;
+      left: 448px;
+      top: 300px;
+      margin: auto;
       z-index: $z-index-mobile-popout-blocker + 1;
-      background-color: rgba(0,255,0,0.5);
+      pointer-events: auto;
+      cursor: pointer;
+    }
+
+    .astro-peeking-hidden {
+      visibility: hidden;
+    }
+
+    .astro-peeking-visible {
+      visibility: visible;
     }
   }
 

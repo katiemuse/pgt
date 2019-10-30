@@ -38,6 +38,18 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
+    .state('outro', {
+      url: '/outro',
+      views: {
+        monitor: {
+          template: require('./partials/outro/desktop.html'),
+          controller: 'OutroController'
+        }
+      },
+      onEnter(TopNavbar, Hotspots) {
+        resetState(TopNavbar, Hotspots);
+      }
+    })
     .state('chapter-data', {
       url: '/chapter-data',
       views: {
@@ -90,6 +102,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: require('./partials/chapter-ai/drawer.html'),
           controller: 'ChapterAIDrawerController'
         },
+        phone: {
+          template: require('./partials/chapter-ai/phone.html'),
+          controller: 'ChapterAIPhoneController'
+        },
         mobile: {
           template: require('./mobile.html')
         }
@@ -111,9 +127,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./mobile.html')
-        },
-        phone: {
-          template: require('./partials/chapter-builder/phone.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -171,6 +184,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         drawer: {
           template: require('./partials/chapter-blockchain/drawer.html'),
           controller: 'ChapterBlockchainDrawerController'
+        },
+        phone: {
+          template: require('./partials/chapter-blockchain/phone.html'),
+          controller: 'ChapterBlockchainPhoneController'
         },
         mobile: {
           template: require('./mobile.html')
@@ -248,11 +265,15 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
       views: {
         monitor: {
           template: require('./partials/chapter-mobile/desktop.html'),
-          controller: 'IotExplorerController'
+          controller: 'ChapterMobileController'
         },
         drawer: {
           template: require('./partials/chapter-mobile/drawer.html'),
-          controller: 'IotExplorerDrawerController'
+          controller: 'ChapterMobileDrawerController'
+        },
+        phone: {
+          template: require('./partials/chapter-mobile/phone.html'),
+          controller: 'ChapterMobilePhoneController'
         },
         mobile: {
           template: require('./mobile.html')
@@ -272,6 +293,10 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         drawer: {
           template: require('./partials/chapter-voice/drawer.html'),
           controller: 'ChapterVoiceDrawerController'
+        },
+        phone: {
+          template: require('./partials/chapter-voice/phone.html'),
+          controller: 'ChapterVoicePhoneController'
         },
         mobile: {
           template: require('./mobile.html')
@@ -448,25 +473,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         },
         mobile: {
           template: require('./partials/create-custom-actions/mobile.html')
-        }
-      },
-      onEnter(TopNavbar, Hotspots) {
-        resetState(TopNavbar, Hotspots);
-      }
-    })
-    .state('app-in-action', {
-      url: '/app-in-action',
-      views: {
-        monitor: {
-          template: require('./partials/app-in-action/desktop.html'),
-          controller: 'OutroController'
-        },
-        drawer: {
-          template: require('./partials/app-in-action/drawer.html'),
-          controller: 'OutroDrawerController'
-        },
-        mobile: {
-          template: require('./partials/app-in-action/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {

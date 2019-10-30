@@ -45,6 +45,7 @@ import drawerPanel from './components/drawer-panel/directives/drawer-panel-direc
 import hotspotsDirective from './components/hotspots/directives/hotspots-directive';
 import hotspotsContainer from './components/hotspots/directives/hotspots-container-directive';
 import stepsDirective from './components/steps/directives/steps-directive';
+import successConfetti from './components/steps/directives/success-directive';
 import stepsFactory from './components/steps/factories/steps-factory';
 import stripTags from './components/stip-tags/filters/stip-tags-filter';
 import userProfile from './components/user-profile/factories/user-profile-factory';
@@ -53,6 +54,7 @@ import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import WelcomeController from './controllers/welcome/desktop.controller';
+import OutroController from './controllers/outro/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
@@ -62,22 +64,26 @@ import ChapterFlowController from './controllers/chapter-flow/desktop.controller
 import ChapterFlowDrawerController from './controllers/chapter-flow/drawer.controller';
 import ChapterAIController from './controllers/chapter-ai/desktop.controller';
 import ChapterAIDrawerController from './controllers/chapter-ai/drawer.controller';
+import ChapterAIPhoneController from './controllers/chapter-ai/phone.controller';
 // import BuildASchemaController from './app/1-build-a-data-model/controllers/6-build-a-schema.controller';
 // import BuildASchemaDrawerController from './app/1-build-a-data-model/controllers/6-build-a-schema.drawer.controller';
 import ChapterCustomerAppController from './controllers/chapter-customer-app/desktop.controller';
 import ChapterCustomerAppDrawerController from './controllers/chapter-customer-app/drawer.controller';
 import ChapterBlockchainController from './controllers/chapter-blockchain/desktop.controller';
 import ChapterBlockchainDrawerController from './controllers/chapter-blockchain/drawer.controller';
+import ChapterBlockchainPhoneController from './controllers/chapter-blockchain/phone.controller';
 import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
 import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
 import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
 import AddCriteriaDrawerController from './controllers/add-process-criteria/drawer.controller';
 import CreateProcessActionController from './controllers/create-process-action/desktop.controller';
 import CreateProcessActionDrawerController from './controllers/create-process-action/drawer.controller';
-import IotExplorerController from './controllers/chapter-mobile/desktop.controller';
-import IotExplorerDrawerController from './controllers/chapter-mobile/drawer.controller';
+import ChapterMobileController from './controllers/chapter-mobile/desktop.controller';
+import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.controller';
+import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
 import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
 import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
+import ChapterVoicePhoneController from './controllers/chapter-voice/phone.controller';
 import AddAppexchangeComponentsController from './controllers/add-appexchange-components/desktop.controller';
 import AddAppexchangeComponentsDrawerController from './controllers/add-appexchange-components/drawer.controller';
 import AddBaseLightningComponentsController from './controllers/add-base-lightning-components/desktop.controller';
@@ -94,8 +100,6 @@ import CustomizeActionBarController from './controllers/customize-action-bar/des
 import CustomizeActionBarDrawerController from './controllers/customize-action-bar/drawer.controller';
 import BuildLightningAppController from './controllers/build-lightning-app/desktop.controller';
 import BuildLightningAppDrawerController from './controllers/build-lightning-app/drawer.controller';
-import OutroController from './controllers/app-in-action/desktop.controller';
-import OutroDrawerController from './controllers/app-in-action/drawer.controller';
 // import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 // import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
 // import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
@@ -141,6 +145,7 @@ angular
   .directive('hotspotsContainer', hotspotsContainer)
   .directive('hotspot', hotspotsDirective)
   .directive('stepsContainer', stepsDirective)
+  .directive('successConfetti', successConfetti)
   .directive('wizard', wizardDirective)
   .directive('wzStep', wizardStep)
   .directive('wzNext', wzNext)
@@ -152,18 +157,21 @@ angular
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
+  .service('successConfetti', successConfetti)
   .factory('stepsRegisterEvents', stepsFactory)
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   // .factory('steplog', steplog)
   .controller('WelcomeController', WelcomeController)
+  .controller('OutroController', OutroController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)
   .controller('ChapterDataDrawerController', ChapterDataDrawerController)
   .controller('ChapterAIController', ChapterAIController)
   .controller('ChapterAIDrawerController', ChapterAIDrawerController)
+  .controller('ChapterAIPhoneController', ChapterAIPhoneController)
   .controller('ChapterFlowController', ChapterFlowController)
   .controller('ChapterFlowDrawerController', ChapterFlowDrawerController)
   .controller('ChapterBuilderController', ChapterBuilderController)
@@ -174,16 +182,19 @@ angular
   .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
   .controller('ChapterBlockchainController', ChapterBlockchainController)
   .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)
+  .controller('ChapterBlockchainPhoneController', ChapterBlockchainPhoneController)
   .controller('ChooseProcessObjectController', ChooseProcessObjectController)
   .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
   .controller('AddCriteriaController', AddCriteriaController)
   .controller('AddCriteriaDrawerController', AddCriteriaDrawerController)
   .controller('CreateProcessActionController', CreateProcessActionController)
   .controller('CreateProcessActionDrawerController', CreateProcessActionDrawerController)
-  .controller('IotExplorerController', IotExplorerController)
-  .controller('IotExplorerDrawerController', IotExplorerDrawerController)
+  .controller('ChapterMobileController', ChapterMobileController)
+  .controller('ChapterMobileDrawerController', ChapterMobileDrawerController)
+  .controller('ChapterMobilePhoneController', ChapterMobilePhoneController)
   .controller('ChapterVoiceController', ChapterVoiceController)
   .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
+  .controller('ChapterVoicePhoneController', ChapterVoicePhoneController)
   .controller('AddAppexchangeComponentsController', AddAppexchangeComponentsController)
   .controller('AddAppexchangeComponentsDrawerController', AddAppexchangeComponentsDrawerController)
   .controller('AddBaseLightningComponentsController', AddBaseLightningComponentsController)
@@ -200,8 +211,6 @@ angular
   .controller('CustomizeActionBarDrawerController', CustomizeActionBarDrawerController)
   .controller('BuildLightningAppController', BuildLightningAppController)
   .controller('BuildLightningAppDrawerController', BuildLightningAppDrawerController)
-  .controller('OutroController', OutroController)
-  .controller('OutroDrawerController', OutroDrawerController)
   // .controller('EngagementStudioController', EngagementStudioController)
   // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
   // .controller('EngagementStudioReportController', EngagementStudioReportController)

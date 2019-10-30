@@ -3,69 +3,51 @@
 .chapter-voice {
 
   .step-0, .step-1 {
-    background: url('../assets/images/chapters/chapter-voice/screen-bkg-1.png') center center no-repeat;
+    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center no-repeat;
   }
 
-  .step-2 {
-    background: url('../assets/images/chapters/chapter-voice/screen-bkg-2.png') center center no-repeat;
+  .phone-step-0 {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-0.png") center center no-repeat;
   }
 
-  .step-3 {
-    background: url('../assets/images/chapters/chapter-voice/screen-bkg-3.png') center center no-repeat;
+  .phone-step-1 {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-1.png") center center no-repeat;
   }
 
-  .step-4 {
-    background: url('../assets/images/chapters/chapter-voice/screen-bkg-4.png') center center no-repeat;
+  .phone-step-2 {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-2.png") center center no-repeat;
   }
 
-  .step-1 {
-    .click-box {
-      top: 175px;
-      left: 172px;
-      width: 45px;
-      height: 25px;
+  .phone-step-3 {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
+  }
+
+  .phone-step-1 {
+    .astro-click-area {
+      width: 150px;
+      height: 280px;
+      left: 280px;
+      bottom: -10px;
+      cursor: pointer;
+      background-color: rgba($color: #ff0000, $alpha: 0.0);
     }
   }
 
-  .step-2 {
-    .click-box {
-      bottom: 72px;
-      right: 85px;
-      width: 58px;
-      height: 31px;
+  .phone-step-2 {
+    .flyout {
+      width: 380px;
+      left: 280px;
+      bottom: 70px;
     }
   }
 
-  .step-3 {
-    .click-box {
-      bottom: 72px;
-      right: 85px;
-      width: 58px;
-      height: 31px;
-    }
-    .form {
-      &.form-horizontal {
-        position: absolute;
-        top: 237px;
-        left: 63px;
-        .controls {
-          input {
-            width: 316px;
-          }
-        }
-      }
+  .phone-step-3 {
+    .flyout {
+      width: 330px;
+      left: 280px;
+      bottom: 70px;
     }
   }
-
-  .step-4 {
-    .click-box {
-      bottom: 72px;
-      right: 85px;
-      width: 58px;
-      height: 31px;
-    }
-  }
-
 }
 
 .chapter-voice-drawer {

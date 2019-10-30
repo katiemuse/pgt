@@ -1,21 +1,13 @@
-'use strict';
+"use strict";
 
-export default function ChapterFlowController($scope, Steps, Hotspots, WizardHandler, $timeout) {
-  $scope.customobj = {
-    name: ''
-  };
-
-  $scope.button = {
-    show: false
-  };
-
+export default function ChapterFlowController($scope, Steps, Hotspots, WizardHandler, $timeout, successConfetti) {
   $scope.label = {
     active: true
   };
 
   const delayInMs = 1000;
   let timeoutExtdsName;
-  $scope.$watch('label.input', newValue => {
+  $scope.$watch("label.input", newValue => {
     $timeout.cancel(timeoutExtdsName);
     timeoutExtdsName = $timeout(() => {
       if (newValue.length > 2) {
@@ -23,10 +15,6 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
       }
     }, delayInMs);
   });
-
-  $scope.Next = function () {
-
-  };
 
   $scope.goToStep1A = function() {
     WizardHandler.wizard("monitor").next();
@@ -51,5 +39,8 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   $scope.goToSuccess = function() {
     Steps.clear();
     WizardHandler.wizard("monitor").next();
+  };
+  $scope.renderConfetti = function() {
+    successConfetti.renderConfetti();
   };
 }

@@ -1,19 +1,6 @@
 'use strict';
 
-export default function ChapterBuilderController($scope, Steps, Hotspots, WizardHandler) {
-  $scope.customobj = {
-    name: ''
-  };
-
-  $scope.button = {
-    show: false,
-    save: false
-  };
-
-  $scope.label = {
-    active: true
-  };
-
+export default function ChapterBuilderController($scope, Steps, Hotspots, WizardHandler, successConfetti) {
   $scope.Next = function () {
     // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
@@ -35,5 +22,8 @@ export default function ChapterBuilderController($scope, Steps, Hotspots, Wizard
   $scope.goToSuccess = function() {
     Steps.clear();
     WizardHandler.wizard("monitor").next();
+  };
+  $scope.renderConfetti = function() {
+    successConfetti.renderConfetti();
   };
 }

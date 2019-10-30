@@ -4,103 +4,79 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step step-0">
-              <div class="form-actions">
-                <input class="btn btn-primary btn-interface" type="submit" value="New" />
+            <div class="step step-0"></div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-1">
+              <div class="flyout active">
+                <span
+                  >All the data from Salesforce will be synced to the customer
+                  app.</span
+                >
+                <a ng-click="GoToFirstStep()">continue <i></i></a>
               </div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-1">
-              <div class="form-actions">
-                <input class="btn btn-primary btn-interface active" li-autofocus="wizard.stateIndex == 1" ng-click="Next()" type="submit" value="New"/>
+            <div class="step step-1a">
+              <div class="click-box active" ng-click="NextSlideNoTab()"></div>
+            </div>
+          </wz-step>          
+          <wz-step>
+            <div class="step step-1b">
+              <div class="flyout active">
+                <span
+                  >Our customer, Mike, can now buy or customize his car on an
+                  engaging app built on Heroku.</span
+                >
+                <a ng-click="GoToStep2()">continue <i></i></a>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="process.name" class="text active" maxlength="80" li-autofocus="wizard.stateIndex == 2">
-                  </div>
-                </div>
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="api" id="api" ng-model="process.api" class="text" maxlength="80" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="controls">
-                    <select name="process-starts" id="process-starts" ng-model="process.starts" ng-options="opt as opt.label for opt in processOptions" disabled></select>
-                  </div>
-                </div>
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary btn-interface" type="submit" value="Save" disabled/>
-              </div>
+              <div class="click-box active" ng-click="GoToStep3()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="process.name" class="text" maxlength="80" disabled>
-                  </div>
-                </div>
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="api" id="api" ng-model="process.api" class="text" maxlength="80" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="controls">
-                    <select name="process-starts" id="process-starts" ng-model="process.starts" li-autofocus="wizard.stateIndex == 3" ng-options="opt as opt.label for opt in processOptions" class="active"></select>
-                  </div>
-                </div>
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary btn-interface" type="submit" value="Save" disabled/>
+              <div class="click-box active" ng-click="NextSlideNoTab()"></div>
+            </div>
+          </wz-step>          
+          <wz-step>
+            <div class="step step-4a">
+              <div class="flyout active">
+                <span>Adding that selection increased the price by $3,000</span>
+                <a ng-click="GoToStep4()">continue <i></i></a>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <form class="form form-horizontal">
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="name" id="name" ng-model="process.name" class="text" maxlength="80" disabled>
-                  </div>
-                </div>
-                <div class="control-group required ">
-                  <div class="controls">
-                    <input autocomplete="off" type="text" name="api" id="api" ng-model="process.api" class="text" maxlength="80" disabled>
-                  </div>
-                </div>
-                <div class="control-group">
-                  <div class="controls">
-                    <select name="process-starts" id="process-starts" ng-model="process.starts" ng-options="opt as opt.label for opt in processOptions" disabled></select>
-                  </div>
-                </div>
-              </form>
-              <div class="form-actions">
-                <input class="btn btn-primary btn-interface active" li-autofocus="wizard.stateIndex == 4" wz-next type="submit" value="Save" />
-              </div>
+              <div class="click-box active" ng-click="NextSlideNoTab()"></div>
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
+                <div class="confetti-container" ng-open="renderConfetti()">
+                  <canvas id="success-confetti"></canvas>
+                </div>
               <li-center>
                 <p>
-                  <img src="../../assets/images/success.png"/>
-                </p>
-                <h2>Success!</h2>
-                <p>
-                  Your process has been created. Now add logic to it.
+                  Your customers have all the tools they need to make any
+                  updates in one engaging app. Let's see how we can make the
+                  experience even better by adding transparency with blockchain.
                 </p>
                 <p>
-                  <a ui-sref="choose-process-object"  li-autofocus="wizard.stateIndex == 5"   class="btn btn-rounded active">Continue</a>
+                  <a
+                    ui-sref="chapter-blockchain"
+                    li-autofocus="wizard.stateIndex == 5"
+                    class="btn btn-rounded active"
+                    >Continue</a
+                  >
+                  <a href="https://www.salesforce.com/products/heroku/overview" class="success-text-link"
+                    >Learn More About BlockChain<i></i
+                  ></a>
                 </p>
               </li-center>
             </div>

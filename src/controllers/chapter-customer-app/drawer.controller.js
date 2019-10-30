@@ -13,30 +13,27 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Click &lsquo;New&rsquo; to create a process.'
+      title: 'Click &quot;Save&quot; to deploy.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Name your process &lsquo;Add idea to backlog&rsquo;.'
+      title: 'Click &quot;Customize&quot; to get started.'
     });
 
     Steps.pop({
       number: 'three',
-      title: 'From the dropdown below, choose &lsquo;A record changes&rsquo; to tell the process when to begin'
+      title: 'Select the option for &quot;Self Driving Capabilith&quot;.'
     });
 
     Steps.pop({
       number: 'four',
-      title: 'Click &lsquo;Save&rsquo;'
+      title: 'Click  &quot;Purchase.&quot;'
     });
 
     Hotspots.clear();
     TopNavbar.DidYouKnowCount = 0;
     TopNavbar.HotSpotCount = 1;
-    $timeout(() => {
-      Steps.activate('one');
-    }, 100);
   };
 
   $scope.beginForBuilderStory = function () {

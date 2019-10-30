@@ -4,10 +4,8 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step step-0">
-
-            </div>
-          </wz-step>          
+            <div class="step step-0"></div>
+          </wz-step>
           <wz-step>
             <div class="step step-1a">
               <div class="flyout active">
@@ -18,8 +16,7 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}"
-                    data-jqyoui-options="{revert: 'invalid'}" alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}">
+              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}" alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}"/>
               <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep2'}"></div>
             </div>
           </wz-step>
@@ -31,13 +28,15 @@
 
           <wz-step success="true">
             <div class="step success">
+                <div class="confetti-container" ng-open="renderConfetti()">
+                  <canvas id="success-confetti"></canvas>
+                </div>
               <li-center>
                 <p>
-                    You gave your employees and customers have the information they need at their fingertips, without having to write a single line of code. Let’s see what that looks like in a mobile experience.
-                </p>
+                  You gave your employees and customers have the information they need at their fingertips, without having to write a single line of code. Let’s see what that looks like in a mobile experience.</p>
                 <p>
                   <a ui-sref="chapter-mobile" li-autofocus="wizard.stateIndex == 5" class="btn btn-rounded active">Continue</a>
-                  <a href="#" class="success-text-link">Learn more about customizing apps &gt;</a>
+                  <a href="https://www.salesforce.com/products/platform/features/mobile-app-builder/" class="success-text-link">Learn more about customizing apps &gt;</a>
                 </p>
               </li-center>
             </div>

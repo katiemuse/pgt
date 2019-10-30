@@ -1,40 +1,31 @@
 'use strict';
 
-export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
-  TopNavbar.InfoActive = true;
+export default function ChapterVoiceDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $rootScope) {
+  TopNavbar.InfoActive = false;
+  TopNavbar.DidYouKnowEnabled = false;
+
+  Steps.clear();
+  Steps.pop({
+    number: 'one',
+    title: 'Click on Astro to start the voice command.'
+  });
+
+  Hotspots.clear();
   Drawer.openToIntro();
+
+  angular.element(document).ready(() => {
+    // show the phone overlay after the page finishes loading
+    $rootScope.showMobilePopout = true;
+  });
 
   $scope.beginStory = function () {
     Drawer.close();
-    WizardHandler.wizard('monitor').next();
-    TopNavbar.DidYouKnowEnabled = true;
-    TopNavbar.DidYouKnowCount = 2;
+    WizardHandler.wizard('phone').next();
+    Steps.activate('one');
 
-    Steps.clear();
-    Steps.pop({
-      number: 'one',
-      title: 'Click &lsquo;New&rsquo;'
-    });
-
-    Steps.pop({
-      number: 'two',
-      title: 'Click &lsquo;Next&rsquo; to create an App Page'
-    });
-
-    Steps.pop({
-      number: 'three',
-      title: 'Name your page <br/>&lsquo;Customer 360&rsquo;. Click &lsquo;Next&rsquo;'
-    });
-
-    Steps.pop({
-      number: 'four',
-      title: 'We will use the &lsquo;Two Columns&rsquo; layout. Click &lsquo;Finish.&rsquo; '
-    });
-
-    Hotspots.clear();
-
-    $timeout(() => {
-      Steps.activate('one');
-    }, 1000);
+    // show astro (re-hiding, and click handling is done by transparent flyout in phone.html and phone.controller.js)
+    const astro = angular.element('#astroPeeking');
+    astro.removeClass('astro-peeking-hidden');
+    astro.addClass('astro-peeking-visible');
   };
 }

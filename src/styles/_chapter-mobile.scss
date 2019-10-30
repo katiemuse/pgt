@@ -1,65 +1,42 @@
 @import "_base";
 
 .chapter-mobile {
-  .step-0,
-  .step-1 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-1.png") center center
+
+  .phone-step-0, .phone-step-1, .phone-step-2, .phone-step-3 {
+    background: url("../assets/images/chapters/chapter-mobile/ch4-img1.png") center center no-repeat;
+  }
+
+  .phone-step-4 {
+    background: url("../assets/images/chapters/chapter-mobile/ch4-img2.png") center center no-repeat;
+  }
+
+  .step-0 {
+    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center
       no-repeat;
   }
 
-  .step-2 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-2.png") center center
-      no-repeat;
-  }
-  .step-3 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-3.png") center center
-      no-repeat;
-  }
-
-  .step-4 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-4.png") center center
-      no-repeat;
-  }
-
-  .step-5 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-5.png") center center
-      no-repeat;
-  }
-
-  .step-6 {
-    background: url("../assets/images/chapters/chapter-mobile/bkg-6.gif") center center
-      no-repeat;
-  }
-
-  .step-1 {
+  .phone-step-2 {
     .flyout {
-      bottom: 310px;
-      width: 350px;
+      width: 240px;
+      left: 280px;
+      bottom: 100px;
     }
   }
 
-  .step-2 {
-    .flyout {
-      bottom: 310px;
-    }
+  .phone-step-3 {
+    .click-box {
+      top: 333px;
+      left: 104px;
+      width: 79px;
+      height: 32px;
+    }    
   }
 
-  .step-3 {
+  .phone-step-4 {
     .flyout {
-      bottom: 300px;
-      width: 346px;
-    }
-  }
-
-  .step-4 {
-    .flyout {
-      bottom: 20px;
-    }
-  }
-
-  .step-5 {
-    .flyout {
-      bottom: 310px;
+      width: 380px;
+      left: 280px;
+      bottom: 80px;
     }
   }
 }
