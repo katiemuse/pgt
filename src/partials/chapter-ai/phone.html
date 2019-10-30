@@ -1,33 +1,32 @@
-<!-- RFP:: TODO:: format as 2 space tabs -->
 <div class="row phone-height chapter-ai">
-    <div class="col-lg-12 phone-height">
-        <div class="row phone-height">
-        <hotspots-container>
-            <wizard name="phone" on-finish="finishedWizard()">
-                <wz-step>
-                    <div class="step phone-step-2a">
-                    <div class="flyout active">
-                        <span>This order currently has no cancellation risk.</span>
-                        <span>What happens if you modify this order in a way that increases the risk of cancellation?</span>
-                        <a ng-click="GoToStep3()">continue<i></i></a>
-                    </div>                  
-                    </div>
-                </wz-step>
-                <wz-step>
-                    <div class="step phone-step-3">
-                        <div class="click-box active" ng-click="GoToStep4()"></div>
-                    </div>
-                </wz-step>
-                <wz-step>
-                    <div class="step phone-step-4">
-                    <div class="flyout active">
-                        <span>Right away, Einstein predicts that there is a high risk of order cancellation, based on the top factors provided, and alerts the sales rep.</span>
-                        <a ng-click="GoToSuccess()">continue<i></i></a>    
-                    </div>
-                    </div>
-                </wz-step>
-            </wizard>
-        </hotspots-container>
-        </div>
+  <div class="col-lg-12 phone-height">
+    <div class="row phone-height">
+      <hotspots-container>
+        <wizard name="phone" on-finish="finishedWizard()">
+          <wz-step>
+            <div class="step phone-step-2a">
+              <div class="flyout active">
+                <span>This order currently has no cancellation risk.</span>
+                <span>What happens if you modify this order in a way that increases the risk of cancellation?</span>
+                <a ng-click="GoToStep3()">continue<i></i></a>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step phone-step-3">
+              <div class="click-box active" ng-click="GoToStep4()"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step phone-step-4">
+              <div class="flyout active">
+                <span>Right away, Einstein predicts that there is a high risk of order cancellation, based on the top factors provided, and alerts the sales rep.</span>
+                <a ng-click="GoToSuccess()">continue<i></i></a>
+              </div>
+            </div>
+          </wz-step>
+        </wizard>
+      </hotspots-container>
     </div>
+  </div>
 </div>
