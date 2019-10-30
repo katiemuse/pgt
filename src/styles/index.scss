@@ -149,7 +149,7 @@ footer {
     li {
       float: left;
       color:$text-color-white;
-      padding: 15px 0;
+      padding: 15px 5px;
       font-family: $salesforcesans;
       font-size: $footnotes-font-size;
       line-height: 1;
@@ -172,6 +172,9 @@ footer {
   .copyright {
     float: left;
     margin-left: 55px;
+    margin-top: -5px;
+    margin-bottom: -5px;
+    max-width: 42%;
     @media(max-width: $screen-sm-max) {
       float: none;
       margin-left: 0;
@@ -215,12 +218,10 @@ footer {
           padding-top: 0;
           padding-bottom: 24px;
         }
-        a {
-          border-right: 1px solid white;
+        a {          
           padding-right: 4px;
           margin-right: 4px;
-          @media(max-width: $screen-sm-max) {
-            border-right: 0;
+          @media(max-width: $screen-sm-max) {           
             padding-right: 0;
             margin-right: 0;
           }

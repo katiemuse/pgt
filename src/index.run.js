@@ -47,32 +47,9 @@ export default function run(
     3: ['chapter-builder'],
     4: ['chapter-mobile'],
     5: ['chapter-ai'],
-    6: [
-      'chapter-voice',
-      'add-base-lightning-components',
-      'add-appexchange-components',
-      'add-custom-components',
-      'customize-page-layout',
-      'deploy-your-app'
-    ],
-    7: [
-      'chapter-customer-app',
-      'choose-process-object',
-      'add-process-criteria',
-      'create-process-action',
-      'create-custom-actions',
-      'customize-action-bar',
-      'build-lightning-app'
-    ],
-    8: [
-      'chapter-blockchain',
-      'choose-process-object',
-      'add-process-criteria',
-      'create-process-action',
-      'create-custom-actions',
-      'customize-action-bar',
-      'build-lightning-app'
-    ]
+    6: ['chapter-voice'],
+    7: ['chapter-customer-app'],
+    8: ['chapter-blockchain']
   };
 
   $rootScope.progressIndex = 0;

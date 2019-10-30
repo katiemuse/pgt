@@ -1,5 +1,29 @@
 @import "_base";
 
+body > div ~ div {
+  background: #c2e8ff;
+}
+
+.container-fluid {
+  &.mobile {
+    .top-nav-container,
+    .product-tour {
+      display: none;
+    }
+    .btn {
+      background: #215ca0;
+      border: none;
+    }
+    .mobile-view {
+      padding-top: 20px;
+      img {
+        margin: 0 auto;
+      }
+    }
+  }
+}
+
+
 @media(max-width: $screen-sm-max) {
   .drawer-no-scroll {
     overflow: visible !important;

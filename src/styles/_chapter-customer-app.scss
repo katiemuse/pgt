@@ -13,91 +13,49 @@
       center center no-repeat;
   }
 
-  .step-3,
-  .step-4a,
-  .step-4 {
+  .step-3 {
     background: url("../assets/images/chapters/chapter-customer-app/customer-app-3.png")
       center center no-repeat;
   }
-
-  .step-0,
-  .step-1 {
-    .form-actions {
-      position: absolute;
-      top: 50px;
-      right: 86px;
-      .btn-primary {
-        padding: 5px 12px 6px;
-        font-size: 10px;
-      }
-    }
+  .step-4a,
+  .step-4 {
+    background: url("../assets/images/chapters/chapter-customer-app/customer-app-3a.png")
+      center center no-repeat;
   }
 
   .step-1a {
-    .form-actions {
-      position: absolute;
-      top: 42px;
-      right: 10px;
-      .btn-primary,
-      .btn-warning {
-        width: 45px;
-        height: 23px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+    .click-box {
+      top: 41px;
+      right: 9px;
+      width: 47px;
+      height: 26px;
+    }    
   }
   .step-2 {
-    .form-actions {
-      position: absolute;
-      bottom: 135px;
-      right: 240px;
-      .btn-primary,
-      .btn-warning {
-        width: 153px;
-        height: 23px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+    .click-box {
+      bottom: 134px;
+      right: 239px;
+      width: 155px;
+      height: 26px;
+    }    
   }
 
   .step-3 {
-    .form-actions {
-      position: absolute;
+    .click-box {
       bottom: 72px;
       left: 183px;
-      .btn-primary,
-      .btn-warning {
-        width: 90px;
-        height: 15px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+      width: 90px;
+      height: 15px;
+    }    
   }
 
   .step-4 {
-    .form-actions {
-      position: absolute;
+    .click-box {
       bottom: 46px;
       right: 179px;
-      .btn-primary,
-      .btn-warning {
-        width: 70px;
-        height: 21px;
-        padding: 5px 12px 6px;
-        font-size: 10px;
-        background-color: transparent;
-        border: 1px solid $color-marketing-cloud-orange;
-      }
-    }
+      width: 69px;
+      height: 20px;
+    }    
   }
 }
 

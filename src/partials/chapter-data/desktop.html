@@ -4,9 +4,7 @@
       <hotspots-container>
         <wizard name="monitor" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step step-0">
-
-            </div>
+            <div class="step step-0"></div>
           </wz-step>
           <wz-step>
             <div class="step step-1">
@@ -75,6 +73,9 @@
           </wz-step>
           <wz-step success="true">
             <div class="step success">
+              <div class="confetti-container" ng-open="renderConfetti()">
+                <canvas id="success-confetti"></canvas>
+              </div>
               <li-center>
                 <p>
                   Now that your data's imported, your business can operate faster and with greater agility. Next, let's learn about using Flow to automate the buying process.

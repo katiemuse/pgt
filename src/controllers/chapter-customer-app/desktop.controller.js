@@ -1,11 +1,6 @@
 "use strict";
 
-export default function ChapterCustomerAppController(
-  $scope,
-  $timeout,
-  Steps,
-  WizardHandler
-) {
+export default function ChapterCustomerAppController($scope, $timeout, Steps, WizardHandler, successConfetti) {
   $scope.processOptions = [
     { label: "Select one", value: 1 },
     { label: "A record changes", value: 2 },
@@ -47,7 +42,7 @@ export default function ChapterCustomerAppController(
     }
   });
 
-  $scope.NextSLideNoTab = function() {
+  $scope.NextSlideNoTab = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
   };
@@ -68,5 +63,9 @@ export default function ChapterCustomerAppController(
   $scope.GoToStep4 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("four");
+  };
+
+  $scope.renderConfetti = function() {
+    successConfetti.renderConfetti();
   };
 }

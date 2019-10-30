@@ -45,6 +45,7 @@ import drawerPanel from './components/drawer-panel/directives/drawer-panel-direc
 import hotspotsDirective from './components/hotspots/directives/hotspots-directive';
 import hotspotsContainer from './components/hotspots/directives/hotspots-container-directive';
 import stepsDirective from './components/steps/directives/steps-directive';
+import successConfetti from './components/steps/directives/success-directive';
 import stepsFactory from './components/steps/factories/steps-factory';
 import stripTags from './components/stip-tags/filters/stip-tags-filter';
 import userProfile from './components/user-profile/factories/user-profile-factory';
@@ -53,6 +54,7 @@ import wizardDirective from './components/wizard/directives/wizard-directive';
 import WizardHandler from './components/wizard/factories/wizard-factory';
 import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/directives/buttons-directive';
 import WelcomeController from './controllers/welcome/desktop.controller';
+import OutroController from './controllers/outro/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
@@ -69,6 +71,7 @@ import ChapterCustomerAppController from './controllers/chapter-customer-app/des
 import ChapterCustomerAppDrawerController from './controllers/chapter-customer-app/drawer.controller';
 import ChapterBlockchainController from './controllers/chapter-blockchain/desktop.controller';
 import ChapterBlockchainDrawerController from './controllers/chapter-blockchain/drawer.controller';
+import ChapterBlockchainPhoneController from './controllers/chapter-blockchain/phone.controller';
 import ChooseProcessObjectController from './controllers/choose-process-object/desktop.controller';
 import ChooseProcessObjectDrawerController from './controllers/choose-process-object/drawer.controller';
 import AddCriteriaController from './controllers/add-process-criteria/desktop.controller';
@@ -97,8 +100,6 @@ import CustomizeActionBarController from './controllers/customize-action-bar/des
 import CustomizeActionBarDrawerController from './controllers/customize-action-bar/drawer.controller';
 import BuildLightningAppController from './controllers/build-lightning-app/desktop.controller';
 import BuildLightningAppDrawerController from './controllers/build-lightning-app/drawer.controller';
-import OutroController from './controllers/app-in-action/desktop.controller';
-import OutroDrawerController from './controllers/app-in-action/drawer.controller';
 // import EngagementStudioController from './app/5-in-the-field/controllers/engagement-studio.controller';
 // import EngagementStudioDrawerController from './app/5-in-the-field/controllers/engagement-studio.drawer.controller';
 // import EngagementStudioReportController from './app/5-in-the-field/controllers/engagement-studio-report.controller';
@@ -144,6 +145,7 @@ angular
   .directive('hotspotsContainer', hotspotsContainer)
   .directive('hotspot', hotspotsDirective)
   .directive('stepsContainer', stepsDirective)
+  .directive('successConfetti', successConfetti)
   .directive('wizard', wizardDirective)
   .directive('wzStep', wizardStep)
   .directive('wzNext', wzNext)
@@ -155,12 +157,14 @@ angular
   .service('Steps', Steps)
   .service('TopNavbar', TopNavbar)
   .service('Drawer', Drawer)
+  .service('successConfetti', successConfetti)
   .factory('stepsRegisterEvents', stepsFactory)
   .factory('UserProfile', userProfile)
   .factory('WizardHandler', WizardHandler)
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   // .factory('steplog', steplog)
   .controller('WelcomeController', WelcomeController)
+  .controller('OutroController', OutroController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)
@@ -178,6 +182,7 @@ angular
   .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
   .controller('ChapterBlockchainController', ChapterBlockchainController)
   .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)
+  .controller('ChapterBlockchainPhoneController', ChapterBlockchainPhoneController)
   .controller('ChooseProcessObjectController', ChooseProcessObjectController)
   .controller('ChooseProcessObjectDrawerController', ChooseProcessObjectDrawerController)
   .controller('AddCriteriaController', AddCriteriaController)
@@ -206,8 +211,6 @@ angular
   .controller('CustomizeActionBarDrawerController', CustomizeActionBarDrawerController)
   .controller('BuildLightningAppController', BuildLightningAppController)
   .controller('BuildLightningAppDrawerController', BuildLightningAppDrawerController)
-  .controller('OutroController', OutroController)
-  .controller('OutroDrawerController', OutroDrawerController)
   // .controller('EngagementStudioController', EngagementStudioController)
   // .controller('EngagementStudioDrawerController', EngagementStudioDrawerController)
   // .controller('EngagementStudioReportController', EngagementStudioReportController)

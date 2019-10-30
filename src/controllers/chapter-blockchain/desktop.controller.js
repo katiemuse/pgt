@@ -1,6 +1,6 @@
-'use strict';
+"use strict";
 
-export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile) {
+export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile, $rootScope, successConfetti) {
   $scope.processOptions = [
     { label: "Select one", value: 1 },
     { label: "A record changes", value: 2 },
@@ -70,6 +70,8 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
   };
   $scope.NextHalfSlide5 = function() {
     WizardHandler.wizard("monitor").next();
+    /* show phone */
+    $rootScope.showMobilePopout = true;
     Steps.activate("");
   };
   $scope.NextHalfSlide5b = function() {
@@ -81,10 +83,7 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
     Steps.activate("");
   };
 
-  $scope.CreateForm = function() {
-    if (WizardHandler.wizard("monitor").currentStepNumber() === 2) {
-      UserProfile.FormName = $scope.form.name;
-      $state.go("choose-process-object");
-    }
+  $scope.renderConfetti = function() {
+    successConfetti.renderConfetti();
   };
 }
