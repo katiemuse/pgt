@@ -113,8 +113,11 @@ export default function successConfetti($document) {
           if (confetti.length <= 10) {
             initConfetti();
           }
-
-          window.requestAnimationFrame(render);
+          if (angular.isDefined(window.confettiId)) {
+            window.cancelAnimationFrame(window.confettiId);
+          }
+          window.confettiId = window.requestAnimationFrame(render);
+          // window.requestAnimationFrame(render);
         }
         initConfetti();
         render();
