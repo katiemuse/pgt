@@ -113,6 +113,7 @@ export default function successConfetti($document) {
           if (confetti.length <= 10) {
             initConfetti();
           }
+          // If the animation is running cancel the animation frame so it only runs when needed
           if (angular.isDefined(window.confettiId)) {
             window.cancelAnimationFrame(window.confettiId);
           }
