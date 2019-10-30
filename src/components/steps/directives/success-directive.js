@@ -117,7 +117,6 @@ export default function successConfetti($document) {
             window.cancelAnimationFrame(window.confettiId);
           }
           window.confettiId = window.requestAnimationFrame(render);
-          // window.requestAnimationFrame(render);
         }
         initConfetti();
         render();
