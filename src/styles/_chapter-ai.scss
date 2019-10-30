@@ -37,7 +37,9 @@
       bottom: 70px;
     }    
   }
-
+  .step {
+    background-size: contain;
+  }
   .step-1 {
     .prediction-drag {
       position: absolute !important;

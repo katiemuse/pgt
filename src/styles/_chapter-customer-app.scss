@@ -23,9 +23,13 @@
       center center no-repeat;
   }
 
+  .step {
+    background-size: contain;
+  }
+
   .step-1a {
     .click-box {
-      top: 41px;
+      top: 40px;
       right: 9px;
       width: 47px;
       height: 26px;
@@ -33,16 +37,16 @@
   }
   .step-2 {
     .click-box {
-      bottom: 134px;
-      right: 239px;
-      width: 155px;
-      height: 26px;
+      bottom: 131px;
+      right: 238px;
+      width: 159px;
+      height: 29px;
     }    
   }
 
   .step-3 {
     .click-box {
-      bottom: 72px;
+      bottom: 75px;
       left: 183px;
       width: 90px;
       height: 15px;
