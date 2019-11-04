@@ -136,6 +136,9 @@ nav.top-navbar {
     padding-left: 15px;
     padding-right: 15px;
   }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    padding-top: 15px;
+  }
   nav {
     &.top-navbar {
       height: 70px;
