@@ -154,6 +154,9 @@ footer {
     display: flex;
     flex-direction: column;
   }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    background-color: #c2c2c2;
+  }
   ul {
     margin: 0;
     padding: 0;
@@ -201,6 +204,9 @@ footer {
           padding-top: 0;
           padding-bottom: 4px;
         }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          color: #000000;
+        }
         &:first-child {
           @media(max-width: $screen-sm-max) {
             padding-top: 10px;
@@ -237,6 +243,9 @@ footer {
           display: flex;
           font-size: 34px;
         }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          color: #000000;
+        }
         @media(max-device-width: 767px) {
           font-size: 24px;
         }
@@ -256,6 +265,9 @@ footer {
               color: #005290;
               font-size: 22px;
               text-decoration: none;
+            }
+            @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+              color: #005290;
             }
             @media(max-width: $screen-xs-max)  {
               font-size: 12px;
