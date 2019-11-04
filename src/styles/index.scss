@@ -56,6 +56,11 @@ body {
       background-repeat: repeat;
     }
   }
+  &.desktop {
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      display: none !important;
+    }
+  }
 
   .monitor {
     width: $monitor-width;
@@ -122,6 +127,11 @@ body {
         @media(max-width: $screen-xs-min) {
           font-size: 23px;
         }
+      }
+    }
+    &.hidden-md {
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        display: block !important;
       }
     }
   }
