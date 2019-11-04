@@ -23,7 +23,7 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
 
     Steps.pop({
       number: 'three',
-      title: 'Select the option for &quot;Self Driving Capabilith&quot;.'
+      title: 'Select the option for &quot;Self Driving Capability.&quot;'
     });
 
     Steps.pop({
