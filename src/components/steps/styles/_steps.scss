@@ -222,8 +222,11 @@ button.step-close-button {
 
     p {
       font-size: 22px;
-      padding: 0 12%;
+      padding: 0 10%;
       font-weight: bold;
+      &.customer-app {
+        padding: 0 12%;
+      }
       &:nth-child(2) {
         display: flex;
         justify-content: center;
@@ -236,6 +239,10 @@ button.step-close-button {
             padding: 10px 30px;
             margin-top: 0;
             margin-right: 25px;
+            &:hover {
+              background: #d26b03;
+              color: #ffffff;
+            }
           }
           &:nth-child(2) {
             color: #fff;
@@ -268,10 +275,6 @@ button.step-close-button {
       background: $color-marketing-cloud-orange;
       color: #ffffff;
       font-weight: bold;
-      &:hover {
-        background: #d26b03;
-        color: #ffffff;
-      }
     }
 
     .success-text-link {
