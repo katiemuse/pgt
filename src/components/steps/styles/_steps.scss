@@ -222,8 +222,11 @@ button.step-close-button {
 
     p {
       font-size: 22px;
-      padding: 0 12%;
+      padding: 0 10%;
       font-weight: bold;
+      &.customer-app {
+        padding: 0 12%;
+      }
       &:nth-child(2) {
         display: flex;
         justify-content: center;
