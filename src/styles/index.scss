@@ -149,7 +149,6 @@ footer {
     padding: 28px 15px 20px;
     background-color: #c2c2c2;
     position: static;
-    max-width: 750px;
     margin: 0;
     max-width: 100%;
     display: flex;
@@ -265,7 +264,6 @@ footer {
         }
         &:last-child {
           @media(max-width: $screen-sm-max) {
-            // padding-bottom: 0;
           }
 
           a {
