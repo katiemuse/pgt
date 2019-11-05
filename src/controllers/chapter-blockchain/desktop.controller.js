@@ -76,6 +76,8 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
   };
   $scope.NextHalfSlide5b = function() {
     WizardHandler.wizard("monitor").next();
+    /* hide phone */
+    $rootScope.showMobilePopout = false;
     Steps.activate("");
   };
   $scope.NextStep = function() {
