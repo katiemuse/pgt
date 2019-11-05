@@ -1,6 +1,6 @@
 "use strict";
 
-export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile, $rootScope, successConfetti) {
+export default function ChapterBlockchainController($scope, $timeout, Steps, WizardHandler, $state, UserProfile, $rootScope, successConfetti, $log) {
   $scope.processOptions = [
     { label: "Select one", value: 1 },
     { label: "A record changes", value: 2 },
@@ -65,10 +65,12 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
     Steps.activate("four");
   };
   $scope.GoToSlide5 = function() {
+    $log.info("GoToSlide5");
     WizardHandler.wizard("monitor").next();
     Steps.activate("five");
   };
   $scope.NextHalfSlide5 = function() {
+    $log.info("NextHalfSlide5");
     WizardHandler.wizard("monitor").next();
     /* show phone */
     $rootScope.showMobilePopout = true;
@@ -76,6 +78,8 @@ export default function ChapterBlockchainController($scope, $timeout, Steps, Wiz
   };
   $scope.NextHalfSlide5b = function() {
     WizardHandler.wizard("monitor").next();
+    /* hide phone */
+    $rootScope.showMobilePopout = false;
     Steps.activate("");
   };
   $scope.NextStep = function() {
