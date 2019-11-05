@@ -8,7 +8,7 @@ export default function ChapterAIPhoneController($scope, $timeout, Steps, Wizard
 
   $scope.GoToStep4 = function() {
     WizardHandler.wizard("phone").next();
-    Steps.activate("three");
+    Steps.activate("");
   };
 
   $scope.GoToSuccess = function() {
