@@ -283,6 +283,11 @@
   color: #00a1e0;
   animation: borderActive 1.5s infinite;
   text-transform: uppercase;
+  &:after {
+    box-shadow: none;
+    display: block;
+    content: '';
+  }
 
   &:hover {
   }

@@ -30,7 +30,6 @@ h2 {
 .intro-text {
   color: #ffffff;
   font-size: 24px;
-  width: 262px;
   margin: 0 auto 40px;
   line-height: 30px;
 }
@@ -54,6 +53,7 @@ body {
 
 .main {
   min-height: 100%;
+  overflow-x: hidden;
   &.background {
     background-image: url('../assets/images/backgrounds/monitor.jpg');
     background-position: top center;
