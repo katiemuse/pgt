@@ -47,6 +47,9 @@
       width: 240px;
       height: 45px;
       cursor: default;
+      &.highlight{
+        animation: highlightPrice 1.5s 3;
+      }
     }
     .flyout {
       width: 380px;
