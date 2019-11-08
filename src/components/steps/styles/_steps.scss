@@ -186,6 +186,16 @@ button.step-close-button {
         margin-left: 0;
         min-height: 70px;
       }
+      @media(min-width: 1200px) and (max-width: 1279px) {
+        width: 207px;
+        margin-left:86px;
+        padding: 25px 15px;
+      }
+      @media(min-width: 1280px) and (max-width: 1400px) {
+        width: 237px;
+        margin-left:57px;
+        padding: 25px 5px;
+      }
 
       .step-title,
       .step-message {
@@ -194,6 +204,13 @@ button.step-close-button {
         opacity: 1;
         @media(max-width: $screen-md-max) {
           width: 110px;
+        }
+        @media(min-width: 1200px) and (max-width: 1280px) {
+          max-width: 200px;
+          padding-right: 20px;
+        }
+        @media(min-width: 1280px) and (max-width: 1399px) {
+          padding: 0 10px;
         }
       }
 
@@ -206,6 +223,23 @@ button.step-close-button {
 .step {
   &.success {
     position: relative;
+    .carat {
+      display: flex;
+      margin-left: 3px;
+      i {
+        font-family: 'SalesforceIcons';
+        speak: none;
+        font-style: normal;
+        font-weight: normal;
+        font-variant: normal;
+        text-transform: none;
+        line-height: 1;
+        font-size: 9px;
+        &:after {
+          content: "\e924";
+        }
+      }
+    }
 
     #success-confetti {
       position: absolute;
@@ -222,8 +256,11 @@ button.step-close-button {
 
     p {
       font-size: 22px;
-      padding: 0 12%;
+      padding: 0 10%;
       font-weight: bold;
+      &.customer-app {
+        padding: 0 12%;
+      }
       &:nth-child(2) {
         display: flex;
         justify-content: center;
@@ -236,6 +273,10 @@ button.step-close-button {
             padding: 10px 30px;
             margin-top: 0;
             margin-right: 25px;
+            &:hover {
+              background: #d26b03;
+              color: #ffffff;
+            }
           }
           &:nth-child(2) {
             color: #fff;
@@ -268,10 +309,6 @@ button.step-close-button {
       background: $color-marketing-cloud-orange;
       color: #ffffff;
       font-weight: bold;
-      &:hover {
-        background: #d26b03;
-        color: #ffffff;
-      }
     }
 
     .success-text-link {

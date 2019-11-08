@@ -27,6 +27,13 @@ h2 {
   font-weight: $header2-font-weight;
 }
 
+.intro-text {
+  color: #ffffff;
+  font-size: 24px;
+  margin: 0 auto 40px;
+  line-height: 30px;
+}
+
 p {
   font-family: $salesforcesans;
   font-size: 20px;
@@ -46,6 +53,7 @@ body {
 
 .main {
   min-height: 100%;
+  overflow-x: hidden;
   &.background {
     background-image: url('../assets/images/backgrounds/monitor.jpg');
     background-position: top center;
@@ -54,6 +62,11 @@ body {
       background-image: url('../assets/images/backgrounds/monitor-big.jpg');
       background-position: center center;
       background-repeat: repeat;
+    }
+  }
+  &.desktop {
+    @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+      display: none !important;
     }
   }
 
@@ -124,6 +137,11 @@ body {
         }
       }
     }
+    &.hidden-md {
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        display: block !important;
+      }
+    }
   }
 }
 
@@ -136,11 +154,18 @@ footer {
   width: 100%;
   z-index: $z-index-footer;
   @media(max-width: $screen-sm-max) {
-    padding: 28px 0 20px;
+    padding: 28px 15px 20px;
     background-color: #c2c2c2;
     position: static;
-    max-width: 750px;
-    margin: 0 auto;
+    margin: 0;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    display: none;
+  }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    display: none;
+
   }
   ul {
     margin: 0;
@@ -178,14 +203,19 @@ footer {
     @media(max-width: $screen-sm-max) {
       float: none;
       margin-left: 0;
+      order: 2;
+      max-width: 100%;
     }
     ul {
       li {
         @media(max-width: $screen-sm-max) {
           float: none;
-          text-align: center;
+          text-align: left;
           padding-top: 0;
           padding-bottom: 4px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          color: #000000;
         }
         &:first-child {
           @media(max-width: $screen-sm-max) {
@@ -209,14 +239,25 @@ footer {
     @media(max-width: $screen-sm-max) {
       float: none;
       margin-right: 0;
+      order: 1;
     }
     ul {
+      @media(max-width: $screen-sm-max) {
+        display: flex;
+      }
       li {
         @media(max-width: $screen-sm-max) {
           float: none;
           text-align: center;
           padding-top: 0;
-          padding-bottom: 24px;
+          display: flex;
+          font-size: 34px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          color: #000000;
+        }
+        @media(max-device-width: 767px) {
+          font-size: 24px;
         }
         a {          
           padding-right: 4px;
@@ -224,22 +265,27 @@ footer {
           @media(max-width: $screen-sm-max) {           
             padding-right: 0;
             margin-right: 0;
+            font-size: 12px;
+            display: flex;
+            align-items: center;
           }
           &:link, &:visited {
             color: $text-color-white;
             @media(max-width: $screen-sm-max) {
               color: #005290;
-              font-size: 28px;
+              font-size: 22px;
               text-decoration: none;
             }
+            @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+              color: #005290;
+            }
             @media(max-width: $screen-xs-max)  {
-              font-size: 18px;
+              font-size: 12px;
             }
           }
         }
         &:last-child {
           @media(max-width: $screen-sm-max) {
-            padding-bottom: 0;
           }
 
           a {

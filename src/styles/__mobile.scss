@@ -15,7 +15,12 @@ body > div ~ div {
       border: none;
     }
     .mobile-view {
-      padding-top: 20px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      
       img {
         margin: 0 auto;
       }
