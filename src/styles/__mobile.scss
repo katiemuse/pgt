@@ -16,8 +16,13 @@ body > div ~ div {
     }
     .mobile-view {
       padding-top: 20px;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        padding-top: 10px;
+        // padding-top: 10px;
       }
       img {
         margin: 0 auto;
