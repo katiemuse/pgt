@@ -54,6 +54,11 @@ $drawer-width: 410px;
       .btn-continue,
       .btn-rounded {
         animation: borderActive 2s infinite;
+        &:after {
+          box-shadow: none;
+          display: block;
+          content: '';
+        }
       }
     }
     > div {
@@ -85,6 +90,7 @@ $drawer-width: 410px;
         justify-content: start;
         height: 100%;
         padding: 100px 80px 0;
+        overflow: hidden;
         h2 {
           font-size: 28px;
           line-height: 32px;
