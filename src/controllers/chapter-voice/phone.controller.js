@@ -19,7 +19,6 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
     const step2ImageDiv = $document[0].querySelector('.phone-step-2 img');
     const randomCacheNumber = Math.round(Math.random() * 1000);
     const newAnimategGifUrl = animatedGifURL + "?x=" + randomCacheNumber;
-    // step2ImageDiv.src = "";
     step2ImageDiv.src = newAnimategGifUrl;
   };
 
