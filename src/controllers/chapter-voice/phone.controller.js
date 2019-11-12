@@ -15,6 +15,11 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
 
     WizardHandler.wizard("phone").next();
     Steps.activate("");
+    const animatedGifURL = "../../assets/images/chapters/chapter-voice/ch6-img2-animated2.gif";
+    const step2ImageDiv = $document[0].querySelector('.phone-step-2 img');
+    const randomCacheNumber = Math.round(Math.random() * 1000);
+    const newAnimategGifUrl = animatedGifURL + "?x=" + randomCacheNumber;
+    step2ImageDiv.src = newAnimategGifUrl;
   };
 
   $scope.GoToSlide3 = function() {

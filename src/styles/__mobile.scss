@@ -15,10 +15,12 @@ body > div ~ div {
       border: none;
     }
     .mobile-view {
-      padding-top: 20px;
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        padding-top: 10px;
-      }
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      transform: translateY(-50%);
+      
       img {
         margin: 0 auto;
       }

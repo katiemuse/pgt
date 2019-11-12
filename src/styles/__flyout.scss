@@ -22,6 +22,10 @@
     &:hover {
       text-decoration: underline;
     }
+  }
+  .carat {
+    display: inline-flex;
+    margin-bottom: 0;
     i {
       font-family: 'SalesforceIcons';
       speak: none;

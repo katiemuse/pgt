@@ -1,7 +1,6 @@
 @import "_base";
 
 .chapter-mobile {
-
   .phone-step-0, .phone-step-1, .phone-step-2, .phone-step-3 {
     background: url("../assets/images/chapters/chapter-mobile/ch4-img1.png") center center no-repeat;
   }
@@ -11,8 +10,7 @@
   }
 
   .step-0 {
-    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center
-      no-repeat;
+    background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center no-repeat;
   }
 
   .step {
@@ -33,10 +31,20 @@
       left: 104px;
       width: 79px;
       height: 32px;
-    }    
+    }
   }
 
   .phone-step-4 {
+    .click-box {
+      bottom: 112px;
+      left: 22px;
+      width: 240px;
+      height: 45px;
+      cursor: default;
+      &.highlight{
+        animation: highlightPrice 1.5s 3;
+      }
+    }
     .flyout {
       width: 380px;
       left: 280px;
