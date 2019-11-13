@@ -99,6 +99,10 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
         $event.preventDefault();
       };
 
+      scope.resetStep = route => {
+        $state.go(route, $state.params, { reload: true });
+      };
+
       // when navigating, close the drawer
       const unregisterStateChangeStart = $rootScope.$on('$stateChangeStart', () => {
         scope.progress.open = false;
