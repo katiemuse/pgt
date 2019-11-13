@@ -2,14 +2,16 @@
 
 .outro {
   .recap-0 {
-    background: url("../assets/images/chapters/outro/recap-0.png")
+    background: url("../assets/images/chapters/outro/recap-0-new.jpg")
       center center no-repeat;
     position: relative;
+    background-size: contain;
   }
 
   .recap-1 {
-    background: url("../assets/images/chapters/outro/recap-1.png")
+    background: url("../assets/images/chapters/outro/recap-1-new.jpg")
       center center no-repeat;
+    background-size: contain;
   }
 
   .recap-0,
