@@ -1,8 +1,7 @@
 'use strict';
 
-export default function ChapterVoicePhoneController($scope, $timeout, Steps, WizardHandler, $rootScope, $document, $log) {
+export default function ChapterVoicePhoneController($scope, $timeout, Steps, WizardHandler, $rootScope, $document) {
   $scope.Next = function () {
-    $log.log('Current wizard step: ' + WizardHandler.wizard('phone').currentStepNumber());
     WizardHandler.wizard('phone').next();
     Steps.activate('one');
   };

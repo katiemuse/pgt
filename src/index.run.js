@@ -1,7 +1,5 @@
 import _ from 'lodash';
 
-/* global s:true */
-
 export default function run(
   $rootScope,
   $state,
@@ -10,7 +8,9 @@ export default function run(
   $log,
   Drawer,
   $transitions,
-  WizardHandler
+  WizardHandler,
+  $window,
+  $location
 ) {
   $rootScope.$state = $state;
   $rootScope.allowJumpingStories = true;
@@ -81,11 +81,6 @@ export default function run(
   };
 
   const deregisterOnSuccess = $transitions.onSuccess({}, trans => {
-    if (s && s.t && trans.to().name !== '') {
-      s.pageName = `platformtour:us:` + trans.to().name;
-      s.t();
-    }
-
     $rootScope.progressIndex = $rootScope.getProgressIndex(trans.to().name);
     $rootScope.taskIndex = $rootScope.getTaskIndex(trans.to().name);
     $rootScope.canSkip =
@@ -93,6 +88,7 @@ export default function run(
       _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
     $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
     $rootScope.showMobilePopout = false;
+    $window.gtag('event', 'page_view', { sendTo: 'UA-142664671-2', location: $location.url() });
   });
 
   $rootScope.$on('$destroy', () => {
