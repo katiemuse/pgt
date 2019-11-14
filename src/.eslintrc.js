@@ -10,6 +10,7 @@ module.exports = {
     'angular/window-service' : 0,
     'space-before-function-paren' : 0,
     'object-curly-spacing': 0,
-    'quotes': 0
+    'quotes': 0,
+    "camelcase": [2, {"properties": "never"}]
   }
 }
