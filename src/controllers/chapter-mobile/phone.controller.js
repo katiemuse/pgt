@@ -1,8 +1,7 @@
 'use strict';
 
-export default function ChapterMobilePhoneController($scope, $timeout, Steps, WizardHandler, $rootScope, $log) {
+export default function ChapterMobilePhoneController($scope, $timeout, Steps, WizardHandler, $rootScope) {
   $scope.Next = function () {
-    $log.log('Current wizard step: ' + WizardHandler.wizard('phone').currentStepNumber());
     WizardHandler.wizard('phone').next();
     Steps.activate('one');
   };
