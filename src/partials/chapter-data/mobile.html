@@ -1,144 +1,170 @@
-<div class="row monitor-height chapter-data mobile">
-    <div class="col-lg-12 monitor-height">
-      <div class="row monitor-height">
-        <div class="slides slide-0">
-          <div class="slide-image">
+<section success="true">
+
+  <div class="row monitor-height chapter-data mobile">
+      <div class="col-lg-12 monitor-height">
+        <div class="row monitor-height">
+          <div class="slides slide-0">
+            <div class="slide-image">
+            </div>
+            <div class="slide-container">
+              <div class="slide-header">
+                <h1>Import your data.</h1>
+              </div>
+              <div class="slide-copy">
+                <p>To start, we can import all of last year’s vehicle sales data, which is currently stored in a spreadsheet.</p>
+              </div>
+              <div class="transition-copy">
+                <p>
+                  Next, we'll upload the “Vehicles.xlsx” file to bring our vehicle sales data to the app.
+                </p>
+              </div>
+            </div>
           </div>
-          <div class="slide-container">
-            <div class="slide-header">
-              <h1>Import your data.</h1>
-            </div>
-            <div class="slide-copy">
-              <p>To start, we can import all of last year’s vehicle sales data, which is currently stored in a spreadsheet.</p>
-            </div>
+          <div class="slides slide-1">
+            <div class="slide-image"></div>
             <div class="transition-copy">
               <p>
-                Next, we'll upload the “Vehicles.xlsx” file to bring our vehicle sales data to the app.
+                  Good news! When you import data, Object Creator automatically sorts it into editable columns and fields.
               </p>
             </div>
           </div>
-        </div>
-        <div class="slides slide-1">
-          <div class="slide-image"></div>
-          <div class="transition-copy">
-            <p>
-                Good news! When you import data, Object Creator automatically sorts it into editable columns and fields.
-            </p>
+          <div class="slides slide-2">
+            <div class="slide-image"></div>
+            <div class="transition-copy">
+              <p>
+                Now, you can access updates as they’re happening, all from the app.
+                <br><br>
+                But, it doesn’t stop there. You can get a 360º view of your customer using different data sources that are consolidated into a unified profile.                
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="slides slide-2">
-          <div class="slide-image"></div>
-          <div class="transition-copy">
-            <p>
-              Now, you can access updates as they’re happening, all from the app.
-              <br><br>
-              But, it doesn’t stop there. You can get a 360º view of your customer using different data sources that are consolidated into a unified profile.                
-            </p>
+          <div class="slides slide-3">
+            <div class="slide-image"></div>
+            <div class="transition-copy">
+              <p>
+                Here, you can view order details for all of your vehicles and easily add data from another system.
+              </p>
+            </div>
           </div>
-        </div>
-        <div class="slides slide-3">
-          <div class="slide-image"></div>
-          <div class="transition-copy">
-            <p>
-              Here, you can view order details for all of your vehicles and easily add data from another system.
-            </p>
-          </div>
-        </div>
-        <!-- <hotspots-container>
-          <wizard name="monitor" on-finish="finishedWizard()">
-            <wz-step>
-              <div class="step step-0"></div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-1">
-                <div class="click-box active" ng-click="Next()"></div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-2">
-                <div class="click-box active" ng-click="GoToStep2A()"></div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-2a">
-                <div class="flyout active">
-                  <span>Object Creator imported the vehicle data and automatically sorted it into editable columns and fields.</span>
-                  <a ng-click="GoToStep3()">continue</a>
-                  <span class="carat"><i></i></span>
+          <div class="slides success" success="true">
+              <div class="confetti-container" ng-open="renderConfetti()">
+                <div class="confettii-still"></div>
+                <div class="content-container">
+                  <div class="success-text">
+                    
+                      <h2>Success!</h2>
+                    <p>
+                        Now, you can speed up innovation by empowering your teams to deliver connected and personalized customer experiences — with clicks, not code.
+                        <br><br>
+                        With all customer data in one place, your business can operate faster and with greater agility. Next, let’s learn about adding automation to the buying process.                  
+                    </p>
+                  </div>
+                  <div class="mobile-success-ctas">
+                    <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded">Continue</a>
+                    <div class="text-link">
+                      <a href="https://www.salesforce.com/products/platform/features/customer-360-truth/" class="success-text-link" target="_blank" rel="noopener noreferrer">Learn more about data</a>
+                      <span class="carat"><i></i></span>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-3">
-                <div class="click-box active" ng-click="GoToStep3A()"></div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-3a">
-                <div class="flyout active">
-                  <span>Congratulations! Your data has been added to a Salesforce app that was created just for you. Let’s see your data in action.</span>
-                  <a ng-click="GoToStep4()">continue</a>
-                  <span class="carat"><i></i></span>
                 </div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-4">
-                <div class="click-box active" ng-click="GoToStep4A()"></div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-4a">
-                <div class="flyout active">
-                  <span>Your team can now access real-time order updates right in the app.</span>
-                  <a ng-click="GoToStep4B()">continue</a>
-                  <span class="carat"><i></i></span>
+            </div>
+          <!-- <hotspots-container>
+            <wizard name="monitor" on-finish="finishedWizard()">
+              <wz-step>
+                <div class="step step-0"></div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-1">
+                  <div class="click-box active" ng-click="Next()"></div>
                 </div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-4b">
-                <div class="flyout active">
-                  <span>But, it doesn’t stop there. You can get a 360° view of your customer using different data sources that are consolidated into a unified profile.</span>
-                  <a ng-click="GoToStep5()">continue</a>
-                  <span class="carat"><i></i></span>
+              </wz-step>
+              <wz-step>
+                <div class="step step-2">
+                  <div class="click-box active" ng-click="GoToStep2A()"></div>
                 </div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-5">
-                <div class="click-box active" ng-click="GoToStep5A()"></div>
-              </div>
-            </wz-step>
-            <wz-step>
-              <div class="step step-5a">
-                <div class="flyout active">
-                  <span>Now, you can speed up innovation by empowering your teams to deliver connected and personalized customer experiences — with clicks, not code.</span>
-                  <a ng-click="GoToSuccess()">continue</a>
-                  <span class="carat"><i></i></span>
-                </div>
-              </div>
-            </wz-step>
-            <wz-step success="true">
-              <div class="step success">
-                <div class="confetti-container" ng-open="renderConfetti()">
-                  <canvas id="success-confetti"></canvas>
-                </div>
-                <li-center>
-                  <p>
-                    With all customer data in one place, your business can operate faster and with greater agility. Next, let’s learn about adding automation to the buying process.
-                  </p>
-                  <p>
-                    <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded active">Continue</a>
-                    <a href="https://www.salesforce.com/products/platform/features/customer-360-truth/" class="success-text-link" target="_blank" rel="noopener noreferrer">Learn more about data</a>
+              </wz-step>
+              <wz-step>
+                <div class="step step-2a">
+                  <div class="flyout active">
+                    <span>Object Creator imported the vehicle data and automatically sorted it into editable columns and fields.</span>
+                    <a ng-click="GoToStep3()">continue</a>
                     <span class="carat"><i></i></span>
-                  </p>
-                </li-center>
-              </div>
-            </wz-step>
-          </wizard>
-        </hotspots-container> -->
+                  </div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-3">
+                  <div class="click-box active" ng-click="GoToStep3A()"></div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-3a">
+                  <div class="flyout active">
+                    <span>Congratulations! Your data has been added to a Salesforce app that was created just for you. Let’s see your data in action.</span>
+                    <a ng-click="GoToStep4()">continue</a>
+                    <span class="carat"><i></i></span>
+                  </div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-4">
+                  <div class="click-box active" ng-click="GoToStep4A()"></div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-4a">
+                  <div class="flyout active">
+                    <span>Your team can now access real-time order updates right in the app.</span>
+                    <a ng-click="GoToStep4B()">continue</a>
+                    <span class="carat"><i></i></span>
+                  </div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-4b">
+                  <div class="flyout active">
+                    <span>But, it doesn’t stop there. You can get a 360° view of your customer using different data sources that are consolidated into a unified profile.</span>
+                    <a ng-click="GoToStep5()">continue</a>
+                    <span class="carat"><i></i></span>
+                  </div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-5">
+                  <div class="click-box active" ng-click="GoToStep5A()"></div>
+                </div>
+              </wz-step>
+              <wz-step>
+                <div class="step step-5a">
+                  <div class="flyout active">
+                    <span>Now, you can speed up innovation by empowering your teams to deliver connected and personalized customer experiences — with clicks, not code.</span>
+                    <a ng-click="GoToSuccess()">continue</a>
+                    <span class="carat"><i></i></span>
+                  </div>
+                </div>
+              </wz-step>
+              <wz-step success="true">
+                <div class="step success">
+                  <div class="confetti-container" ng-open="renderConfetti()">
+                    <canvas id="success-confetti"></canvas>
+                  </div>
+                  <li-center>
+                    <p>
+                      With all customer data in one place, your business can operate faster and with greater agility. Next, let’s learn about adding automation to the buying process.
+                    </p>
+                    <p>
+                      <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded active">Continue</a>
+                      <a href="https://www.salesforce.com/products/platform/features/customer-360-truth/" class="success-text-link" target="_blank" rel="noopener noreferrer">Learn more about data</a>
+                      <span class="carat"><i></i></span>
+                    </p>
+                  </li-center>
+                </div>
+              </wz-step>
+            </wizard>
+          </hotspots-container> -->
+        </div>
       </div>
     </div>
-  </div>
+</section>
   

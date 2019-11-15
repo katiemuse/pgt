@@ -62,7 +62,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterDataDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-data/mobile.html')
+          template: require('./partials/chapter-data/mobile.html'),
+          controller: 'ChapterDataMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {

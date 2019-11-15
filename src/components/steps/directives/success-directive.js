@@ -1,17 +1,15 @@
 "use strict";
 
-export default function successConfetti($document) {
+export default function successConfetti($document, $log) {
   return {
     restrict: "E",
     renderConfetti: () => {
       angular.element($document).ready(() => {
-        // $document[0].getElementById("msg").innerHTML = "Hello";
+        $log.info("in confetti directivce");
         const canvas = $document[0].getElementById("success-confetti");
         const ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth;
         canvas.height = window.innerHeight;
-        // const cx = ctx.canvas.width / 2;
-        // const cy = ctx.canvas.height / 2;
 
         const confetti = [];
         const confettiCount = 300;
@@ -28,12 +26,7 @@ export default function successConfetti($document) {
           { front: "purple", back: "darkpurple" },
           { front: "turquoise", back: "darkturquoise" }
         ];
-        // resizeCanvas = () => {
-        //   canvas.width = window.innerWidth;
-        //   canvas.height = window.innerHeight;
-        //   let cx = ctx.canvas.width / 2;
-        //   let cy = ctx.canvas.height / 2;
-        // };
+
         const randomRange = (min, max) => Math.random() * (max - min + min);
 
         function initConfetti() {
