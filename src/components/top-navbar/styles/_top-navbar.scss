@@ -128,12 +128,13 @@ nav.top-navbar {
     
   }
   @media (min-width: $screen-sm-min) {
-    padding-top: 40px;
+    // padding-top: 40px;
     width: auto;
     margin-right: auto;
     margin-left: auto;
     padding-left: 15px;
     padding-right: 15px;
+    // background: #ffffff;
   }
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
     padding-top: 15px;
@@ -142,6 +143,7 @@ nav.top-navbar {
     &.top-navbar {
       height: 70px;
       margin-bottom: 0;
+      background: #ffffff;
       .navbar-header {
         @media (min-width: $screen-sm-min){
           width: 100%;
@@ -170,8 +172,8 @@ nav.top-navbar {
         }
       }
       .navbar-link {
-        background-color: rgb(137, 177, 23);
-        border-radius: 22px;
+        background-color: rgb(42, 136, 33);
+        border-radius: 4px;
         padding: 0 5%;
         color: white;
         font-family: $salesforcesans;
