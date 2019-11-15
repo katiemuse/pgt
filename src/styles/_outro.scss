@@ -2,7 +2,7 @@
 
 .outro {
   .recap-0 {
-    background: url("../assets/images/chapters/outro/recap-0-new.jpg")
+    background: url("../assets/images/chapters/outro/recap-0-new-new.jpg")
       center center no-repeat;
     position: relative;
     background-size: contain;
@@ -36,7 +36,9 @@
   }
   .recap-0 {
     .recap-buttons {
-      left: 414px;      
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 330px;   
       .text {
         color: #000000;
         text-transform: uppercase;
