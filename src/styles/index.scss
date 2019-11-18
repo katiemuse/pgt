@@ -198,8 +198,11 @@ footer {
         &:link, &:visited {
           color: #00a1e0;
           font-size: 14px;
-          @media(min-width: $screen-sm-min) {
+          @media(min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
             color:  #00a1e0;
+            font-size: 24px;
+          }
+          @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
             font-size: 24px;
           }
         }
@@ -261,6 +264,10 @@ footer {
       margin-right: 0;
       margin-left: 0;
     }
+    @media(min-width: $screen-md-min) {
+      float: right;
+      margin-right: 55px;
+    }
     ul {
       @media(max-width: $screen-sm-max) {
         display: flex;
@@ -297,8 +304,16 @@ footer {
               font-size: 24px;
               text-decoration: none;
             }
+            @media(min-width: $screen-md-min) {
+              font-size: 12px;
+              color: #ffffff;
+              &:hover {
+                text-decoration: underline;
+              }
+          }
             @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
               color: #00a1e0;
+              font-size: 24px;
             }
             @media(max-width: $screen-xs-max)  {
               font-size: 12px;
