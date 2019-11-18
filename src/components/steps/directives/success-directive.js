@@ -1,11 +1,10 @@
 "use strict";
 
-export default function successConfetti($document, $log) {
+export default function successConfetti($document) {
   return {
     restrict: "E",
     renderConfetti: () => {
       angular.element($document).ready(() => {
-        $log.info("in confetti directivce");
         const canvas = $document[0].getElementById("success-confetti");
         const ctx = canvas.getContext("2d");
         canvas.width = window.innerWidth;
