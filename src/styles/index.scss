@@ -107,6 +107,8 @@ body {
   }
 
   &.mobile {
+    padding-left: 0px;
+    padding-right: 0px;
     .top-nav-container {
       height: auto;
       .product-tour {
@@ -150,20 +152,20 @@ body {
 
 
 footer {
-  background-color:rgba($color-background-black, 0.8);
+  background-color:#333333;
   position:fixed;
   bottom:0px;
   width: 100%;
   z-index: $z-index-footer;
   @media(max-width: $screen-sm-max) {
     padding: 28px 15px 20px;
-    background-color: #c2c2c2;
+    background-color: #000000;
     position: static;
     margin: 0;
     max-width: 100%;
     display: flex;
     flex-direction: column;
-    display: none;
+    // display: none;
   }
   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
     display: none;
@@ -187,10 +189,10 @@ footer {
       }
       a {
         &:link, &:visited {
-          color: $text-color-white;
+          color: #00a1e0;
           @media(max-width: $screen-sm-max) {
-            color: $color-text-header;
-            font-size: 16px;
+            color:  #00a1e0;
+            font-size: 14px;
           }
         }
       }
@@ -205,7 +207,7 @@ footer {
     @media(max-width: $screen-sm-max) {
       float: none;
       margin-left: 0;
-      order: 2;
+      order: 1;
       max-width: 100%;
     }
     ul {
@@ -215,6 +217,7 @@ footer {
           text-align: left;
           padding-top: 0;
           padding-bottom: 4px;
+          color: #ffffff;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           color: #000000;
@@ -229,7 +232,7 @@ footer {
             padding-bottom: 30px;
           }
           @media(max-width: $screen-xs-max)  {
-            font-size: 18px;
+            font-size: 14px;
           }
         }
       }
@@ -241,7 +244,8 @@ footer {
     @media(max-width: $screen-sm-max) {
       float: none;
       margin-right: 0;
-      order: 1;
+      order: 2;
+      margin-left: -15px;
     }
     ul {
       @media(max-width: $screen-sm-max) {
@@ -272,14 +276,14 @@ footer {
             align-items: center;
           }
           &:link, &:visited {
-            color: $text-color-white;
+            color: #00a1e0;
             @media(max-width: $screen-sm-max) {
-              color: #005290;
-              font-size: 22px;
+              color: #00a1e0;
+              font-size: 14px;
               text-decoration: none;
             }
             @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-              color: #005290;
+              color: #00a1e0;
             }
             @media(max-width: $screen-xs-max)  {
               font-size: 12px;
@@ -294,6 +298,11 @@ footer {
             border: 0;
             padding-right: 0;
             margin-right: 0;
+          }
+        }
+        &:nth-child(even) {
+          @media(max-width: $screen-sm-max) {
+            display: none;
           }
         }
       }

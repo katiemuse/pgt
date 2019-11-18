@@ -26,7 +26,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: '<div></div>'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/welcome/mobile.html')
         },
         'getting-started': {
           template: require('./partials/welcome/getting-started.html'),
