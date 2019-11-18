@@ -26,7 +26,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           template: '<div></div>'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/welcome/mobile.html')
         },
         'getting-started': {
           template: require('./partials/welcome/getting-started.html'),
@@ -62,7 +62,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterDataDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-data/mobile.html'),
+          controller: 'ChapterDataMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {

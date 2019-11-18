@@ -74,4 +74,95 @@
       height: 22px;
     }
   }
+  &.mobile {
+    height: 100%;
+   .slides {
+      min-height: 592px;
+      margin-top: 50px;
+    }
+    .slide-image {
+      height: 560px;
+      position: relative;
+    }
+    .slide-0 {
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-data/chapter-data-1.png) center center no-repeat;        
+        background-size: cover;
+      }
+      .slide-intro {
+        position: absolute;
+        padding: 0 15px 0 30px;
+        top: 20px;
+        width: 100%;
+        .slide-header {
+          margin-bottom: 30px;
+          h1 {
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 0;
+            @media (min-width: $screen-sm-min) {
+              font-size: 40px;
+              line-height: 38px;
+            }
+          }
+        }
+        .slide-copy {
+          
+          p {
+            color: #000000;
+            font-size: 18px;
+            line-height: 26px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 32px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+    }
+    .slide-1 {
+      .slide-image {
+        background: url(https://via.placeholder.com/375x600.png?text=Placeholder)
+      }
+    }
+    .slide-2 {
+      .slide-image {
+        background: url(https://via.placeholder.com/375x600.png?text=Placeholder)
+      }
+    }
+    .slide-3 {
+      .slide-image {
+        background: url(https://via.placeholder.com/375x600.png?text=Placeholder)
+      }
+    }
+    .transition-copy {
+      background-color: #00315a;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
+      padding: 30px;
+      position: relative;
+      bottom: 0;
+      p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      .transition-arrow {
+        width: 0; 
+        height: 0; 
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #00315a;
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
 }

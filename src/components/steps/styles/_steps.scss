@@ -390,3 +390,66 @@ button.step-close-button {
 :not(.no-enter)#step-container > div.ng-enter {
   opacity: 0;
 }
+
+// mobile version
+.slides {
+  &.success{
+    background-color: #00315a;
+    .confetti-container{ 
+      position: relative;
+      .confettii-still {
+        background: url('../../../assets/images/backgrounds/mobile-confetti.png') center top no-repeat;
+        background-size: cover;
+        min-height: 500px;
+      }
+      .content-container{
+        position: absolute;
+        top: 70px;
+        padding: 0 40px;
+        .success-text{
+          h2,
+          p {
+            color: #ffffff;
+          }
+        }
+        .mobile-success-ctas {
+          padding-top: 30px;
+          display: flex;
+          flex-flow: column;
+          .btn {
+            background-color: rgb(227,115, 36);
+          }
+          .success-text-link {
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: normal;
+            font-size: 14px;
+          }
+          .text-link {
+            display: flex;
+            align-items: center;
+            margin-top: 30px;
+          }
+          .carat {
+            display: flex;
+            margin-left: 3px;
+            color: #ffffff;
+            i {
+              font-family: 'SalesforceIcons';
+              speak: none;
+              font-style: normal;
+              font-weight: normal;
+              font-variant: normal;
+              text-transform: none;
+              line-height: 1;
+              font-size: 9px;
+              &:after {
+                content: "\e924";
+              }
+            }
+          }
+        }
+      }
+    }      
+  }
+}
