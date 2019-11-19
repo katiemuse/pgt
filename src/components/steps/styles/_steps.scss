@@ -1,4 +1,4 @@
-@import "../../../styles/_base";
+@import '../../../styles/_base';
 
 /* Variables */
 $textColor: #ffffff;
@@ -6,7 +6,7 @@ $textColorHover: #cccccc;
 $closeButton: #ffffff;
 $closeButtonHover: #000000;
 
-$text-step-number-color:#7c868d;
+$text-step-number-color: #7c868d;
 
 $fontSize: 20px;
 
@@ -43,7 +43,8 @@ $stepContainerShadowColorHover: #000000;
   opacity: 0.8;
   -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
   filter: alpha(opacity = 80);
-  &:hover, &:focus {
+  &:hover,
+  &:focus {
     color: $closeButtonHover;
     text-decoration: none;
     cursor: pointer;
@@ -90,7 +91,7 @@ button.step-close-button {
   overflow: hidden;
   position: absolute;
   z-index: $z-index-step-container;
-  pointer-events:none;
+  pointer-events: none;
 
   * {
     -moz-box-sizing: border-box;
@@ -108,7 +109,7 @@ button.step-close-button {
       -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=80);
       filter: alpha(opacity = 80);
       transition: all 0.3s ease-in-out;
-      @media(max-width: $screen-md-max) {
+      @media (max-width: $screen-md-max) {
         padding: 10px;
       }
     }
@@ -116,18 +117,22 @@ button.step-close-button {
       cursor: default;
     }
 
-    .step-one, .step-two, .step-three, .step-four, .step-five {
+    .step-one,
+    .step-two,
+    .step-three,
+    .step-four,
+    .step-five {
       //background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGwSURBVEhLtZa9SgNBEMc9sUxxRcoUKSzSWIhXpFMhhYWFhaBg4yPYiWCXZxBLERsLRS3EQkEfwCKdjWJAwSKCgoKCcudv4O5YLrt7EzgXhiU3/4+b2ckmwVjJSpKkQ6wAi4gwhT+z3wRBcEz0yjSseUTrcRyfsHsXmD0AmbHOC9Ii8VImnuXBPglHpQ5wwSVM7sNnTG7Za4JwDdCjxyAiH3nyA2mtaTJufiDZ5dCaqlItILh1NHatfN5skvjx9Z38m69CgzuXmZgVrPIGE763Jx9qKsRozWYw6xOHdER+nn2KkO+Bb+UV5CBN6WC6QtBgbRVozrahAbmm6HtUsgtPC19tFdxXZYBOfkbmFJ1VaHA1VAHjd0pp70oTZzvR+EVrx2Ygfdsq6eu55BHYR8hlcki+n+kERUFG8BrA0BwjeAv2M8WLQBtcy+SD6fNsmnB3AlBLrgTtVW1c2QN4bVWLATaIS60J2Du5y1TiJgjSBvFVZgTmwCU+dAZFoPxGEEs8nyHC9Bwe2GvEJv2WXZb0vjdyFT4Cxk3e/kIqlOGoVLwwPevpYHT+00T+hWwXDf4AJAOUqWcDhbwAAAAASUVORK5CYII=") !important;
     }
   }
 
   .step {
-    min-height:90px;
+    min-height: 90px;
     position: relative;
     width: 174px;
-    margin-left:119px;
-    height:90px;
-    @media(max-width: $screen-md-max) {
+    margin-left: 119px;
+    height: 90px;
+    @media (max-width: $screen-md-max) {
       width: 74px;
       margin-left: 56px;
       min-height: 70px;
@@ -140,7 +145,7 @@ button.step-close-button {
       font-size: 16px;
       line-height: 20px;
       opacity: 0;
-      @media(max-width: $screen-md-max) {
+      @media (max-width: $screen-md-max) {
         font-size: 12px;
         line-height: 1.4;
       }
@@ -150,7 +155,8 @@ button.step-close-button {
       -ms-word-wrap: break-word;
       word-wrap: break-word;
       opacity: 0;
-      a, label {
+      a,
+      label {
         color: $textColor;
       }
       a:hover {
@@ -160,15 +166,15 @@ button.step-close-button {
     }
 
     &:before {
-      position:absolute;
-      left:20px;
-      top:13px;
+      position: absolute;
+      left: 20px;
+      top: 13px;
       color: $text-color-white;
       font-family: $salesforcesans;
       font-weight: bold;
-      font-size:46px;
-      float:left;
-      @media(max-width: $screen-md-max) {
+      font-size: 46px;
+      float: left;
+      @media (max-width: $screen-md-max) {
         left: 10px;
         top: 9px;
         font-size: 36px;
@@ -177,39 +183,39 @@ button.step-close-button {
 
     &.active {
       width: 280px;
-      margin-left:13px;
-      max-height:500px;
+      margin-left: 13px;
+      max-height: 500px;
       min-height: auto;
       height: auto !important;
-      @media(max-width: $screen-md-max) {
+      @media (max-width: $screen-md-max) {
         width: 130px;
         margin-left: 0;
         min-height: 70px;
       }
-      @media(min-width: 1200px) and (max-width: 1279px) {
+      @media (min-width: 1200px) and (max-width: 1279px) {
         width: 207px;
-        margin-left:86px;
+        margin-left: 86px;
         padding: 25px 15px;
       }
-      @media(min-width: 1280px) and (max-width: 1400px) {
+      @media (min-width: 1280px) and (max-width: 1400px) {
         width: 237px;
-        margin-left:57px;
+        margin-left: 57px;
         padding: 25px 5px;
       }
 
       .step-title,
       .step-message {
         width: 235px;
-        transition: all, 2.0s, ease-in-out;
+        transition: all, 2s, ease-in-out;
         opacity: 1;
-        @media(max-width: $screen-md-max) {
+        @media (max-width: $screen-md-max) {
           width: 110px;
         }
-        @media(min-width: 1200px) and (max-width: 1280px) {
+        @media (min-width: 1200px) and (max-width: 1280px) {
           max-width: 200px;
           padding-right: 20px;
         }
-        @media(min-width: 1280px) and (max-width: 1399px) {
+        @media (min-width: 1280px) and (max-width: 1399px) {
           padding: 0 10px;
         }
       }
@@ -236,7 +242,7 @@ button.step-close-button {
         line-height: 1;
         font-size: 9px;
         &:after {
-          content: "\e924";
+          content: '\e924';
         }
       }
     }
@@ -284,7 +290,7 @@ button.step-close-button {
             font-weight: normal;
             font-size: 14px;
             i {
-              font-family: "SalesforceIcons";
+              font-family: 'SalesforceIcons';
               font-style: normal;
               font-weight: normal;
               font-variant: normal;
@@ -294,7 +300,7 @@ button.step-close-button {
               display: inline-block;
               vertical-align: middle;
               &:after {
-                content: "\E924";
+                content: '\E924';
               }
             }
           }
@@ -320,15 +326,21 @@ button.step-close-button {
   }
 }
 
-.step-one, .step-two, .step-three, .step-four, .step-five, .step-six {
+.step-one,
+.step-two,
+.step-three,
+.step-four,
+.step-five,
+.step-six {
   background-color: transparent;
-  background-image: linear-gradient(to right, rgba(0, 161, 224, 1) 0%, rgba(0, 161, 224, 0.8) 47%, rgba(0, 161, 224, 0.3) 100%);
+  background-image: linear-gradient(
+    to right,
+    rgba(0, 161, 224, 1) 0%,
+    rgba(0, 161, 224, 0.8) 47%,
+    rgba(0, 161, 224, 0.3) 100%
+  );
   &.active {
-    background-image: linear-gradient(
-      to left,
-      rgba(120, 120, 120, 0.5),
-      #009cdb
-    );
+    background-image: linear-gradient(to left, rgba(120, 120, 120, 0.5), #009cdb);
   }
 }
 
@@ -393,37 +405,61 @@ button.step-close-button {
 
 // mobile version
 .slides {
-  &.success{
+  &.success {
     background-color: #00315a;
-    .confetti-container{ 
+    .confetti-container {
       position: relative;
       .confettii-still {
-        background: url('../../../assets/images/backgrounds/mobile-confetti.png') center top no-repeat;
-        background-size: cover;
+        background: url('../../../assets/images/backgrounds/mobile-confetti.png') center top;
+        background-size: contain;
         min-height: 500px;
+        @media (min-width: $screen-sm-min) {
+          min-height: 650px;
+        }
+        
+        background-repeat: repeat-y;
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          min-height: 570px;
+        }
       }
-      .content-container{
+      .content-container {
         position: absolute;
         top: 70px;
         padding: 0 40px;
-        .success-text{
+        .success-text {
           h2,
           p {
             color: #ffffff;
+          }
+          h2 {
+            @media (min-width: $screen-sm-min) {
+              font-size: 44px;
+            }
           }
         }
         .mobile-success-ctas {
           padding-top: 30px;
           display: flex;
           flex-flow: column;
+          @media (min-width: $screen-sm-min) {
+            padding-top: 50px;
+          }
           .btn {
-            background-color: rgb(227,115, 36);
+            background-color: rgb(227, 115, 36);
+            @media (min-width: $screen-sm-min) {
+              padding: 20px 30px;
+              font-size: 18px;
+              max-width: 325px;
+            }
           }
           .success-text-link {
             color: #fff;
             text-transform: uppercase;
             font-weight: normal;
             font-size: 14px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 18px;
+            }
           }
           .text-link {
             display: flex;
@@ -444,12 +480,12 @@ button.step-close-button {
               line-height: 1;
               font-size: 9px;
               &:after {
-                content: "\e924";
+                content: '\e924';
               }
             }
           }
         }
       }
-    }      
+    }
   }
 }

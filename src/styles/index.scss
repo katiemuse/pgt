@@ -124,6 +124,10 @@ body {
           padding-top: 0;
           padding-bottom: 0;
         }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+          position: relative;
+          top: -15px;
+        }
       }
       h1 {
         font-family: $salesforcesans;
