@@ -50,4 +50,174 @@
       left: 159px;
     }
   }
+  &.mobile {
+    height: 100%;
+    .slides {
+      min-height: 600px;
+    }
+    .slide-image {
+      height: 560px;
+      position: relative;
+      background-size: cover;
+      @media (min-width: $screen-sm-min) {
+        height: 1152px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        height: 1158px;
+      }
+    }
+    .slide-0 {
+      margin-top: 50px;
+      @media (min-width: $screen-sm-min) {
+        margin-top: 0px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -260px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-builder/builder-slide-0.png) center center no-repeat;
+        background-size: cover;
+        height: 679px;
+        @media (min-width: $screen-sm-min) {
+          background-position: center bottom;
+          background: url(../assets/images/chapters/chapter-builder/builder-slide-0-2x.png) center bottom no-repeat;
+          background-size: cover;
+          height: 1270px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          background-size: cover;
+          height: 1780px;
+        }
+      }
+      .slide-intro {
+        position: absolute;
+        padding: 0 15px 0 30px;
+        top: 20px;
+        width: 100%;
+        @media (min-width: $screen-sm-min) {
+          padding: 0 15px 0 60px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: -5px;
+          padding: 0 15px 0 90px;
+        }
+        .slide-header {
+          margin-bottom: 30px;
+          h1 {
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 0;
+            @media (min-width: $screen-sm-min) {
+              font-size: 40px;
+              line-height: 38px;
+            }
+          }
+        }
+        .slide-copy {
+          max-width: 330px;
+          @media (min-width: $screen-sm-min) {
+            max-width: 650px;
+          }
+          @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+            max-width: 640px;
+          }
+          p {
+            color: #000000;
+            font-size: 18px;
+            line-height: 26px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 32px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+      .transition-copy {
+        @media (min-width: $screen-sm-min) {
+          bottom: 103px;
+        }
+      }
+    }
+    .slide-1 {
+      margin-top: 20px;
+      @media (min-width: $screen-sm-min) {
+        margin-top: -100px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-builder/builder-slide-1.png) center top no-repeat;
+        background-size: contain;
+        height: 700px;
+        @media (min-width: $screen-sm-min) {
+          background-position: center bottom;
+          background: url(../assets/images/chapters/chapter-builder/builder-slide-1-2x.png) center center no-repeat;
+          background-size: contain;
+          height: 935px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1125px;
+          background-size: cover;
+        }
+      }
+      .transition-copy {
+        bottom: 103px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 285px;
+        }
+      }
+    }
+    
+    .success {
+      position: relative;
+      top: -242px;
+      min-height: 380px;
+      @media (min-width: $screen-sm-min) {
+        top: -65px;
+        min-height: 520px;
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          min-height: 470px;
+        }
+      }
+      .confetti-container {
+        .content-container{
+          top: 50px;
+        }
+        .confettii-still {
+          min-height: 380px;
+          @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+            min-height: 470px;
+          }
+        }
+      }
+    }
+    .transition-copy {
+      background-color: #00315a;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+      bottom: 0;
+      p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      .transition-arrow {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #00315a;
+        position: absolute;
+        bottom: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+    }
+  }
 }

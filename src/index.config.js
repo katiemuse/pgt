@@ -62,8 +62,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterDataDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-data/mobile.html'),
-          controller: 'ChapterDataMobileController'
+          template: require('./partials/chapter-data/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -82,7 +81,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterFlowDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-flow/mobile.html')
         }
       },
       onEnter(TopNavbar) {
@@ -127,7 +126,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBuilderDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-builder/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -192,7 +191,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterMobilePhoneController'
         },
         mobile: {
-          template: require('./partials/chapter-mobile/mobile.html')
+          template: require('./partials/chapter-mobile/mobile.html'),
+          controller: 'ChapterMobileMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -225,3 +225,4 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
 
   $urlRouterProvider.otherwise('/');
 }
+
