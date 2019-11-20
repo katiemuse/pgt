@@ -126,7 +126,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBuilderDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-builder/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -224,3 +224,4 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
 
   $urlRouterProvider.otherwise('/');
 }
+
