@@ -93,16 +93,23 @@
     .slide-0 {
       margin-top: 50px;
       @media (min-width: $screen-sm-min) {
-        margin-top: 0px;
+        margin-top: 230px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: 220px;
       }
       .slide-image {
-        background: url(https://via.placeholder.com/375x600.png?text=Placeholder) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0.png) center center no-repeat;
         background-size: cover;
+        height: 733px;
         @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-flow/chapter-flow-silde-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
+          background-size: cover;
+          height: 1154px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1360px;
         }
       }
       .slide-intro {
@@ -152,15 +159,21 @@
       }
     }
     .slide-1 {
-      margin-top: 20px;
+      margin-top: -180px;
       @media (min-width: $screen-sm-min) {
         margin-top: -90px;
       }
       .slide-image {
-        background: url(https://via.placeholder.com/375x600.png?text=Placeholder) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1.png) center center no-repeat;
         background-size: contain;
+        height: 899px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-2x.png) center top no-repeat;
+          background-size: contain;
+          height: 934px;
+        }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
+          height: 1240px;
         }
       }
       .transition-copy {
@@ -229,13 +242,22 @@
     }
     .success {
       position: relative;
-      top: -413px;
-      min-height: 500px;
+      top: -237px;
+      min-height: 300px;
       @media (min-width: $screen-sm-min) {
-        top: -1126px;
-        min-height: 860px;
+        top: -66px;
+        min-height: 430px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          min-height: 800px;
+          top: -83px;
+          min-height: 430px;
+        }
+      }
+      .confetti-container {
+        .content-container{
+          top: 50px;
+        }
+        .confettii-still {
+          min-height: 330px;
         }
       }
     }
