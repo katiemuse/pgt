@@ -54,7 +54,6 @@ import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import OutroController from './controllers/outro/desktop.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
-import ChapterDataMobileController from './controllers/chapter-data/mobile.controller';
 import ChapterBuilderController from './controllers/chapter-builder/desktop.controller';
 import ChapterBuilderDrawerController from './controllers/chapter-builder/drawer.controller';
 import ChapterFlowController from './controllers/chapter-flow/desktop.controller';
@@ -130,7 +129,6 @@ angular
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)
   .controller('ChapterDataDrawerController', ChapterDataDrawerController)
-  .controller('ChapterDataMobileController', ChapterDataMobileController)
   .controller('ChapterAIController', ChapterAIController)
   .controller('ChapterAIDrawerController', ChapterAIDrawerController)
   .controller('ChapterAIPhoneController', ChapterAIPhoneController)
