@@ -107,7 +107,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterAIPhoneController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-ai/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
