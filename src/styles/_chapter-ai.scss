@@ -112,6 +112,9 @@
           height: 1450px;
           background-size: contain;
         }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          background-size: cover;
+        }
       }
       .slide-intro {
         position: absolute;
@@ -244,13 +247,17 @@
         top: -696px;
         min-height: 560px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          min-height: 800px;
+          min-height: 560px;
+          top: -795px;
         }
       }
       .confetti-container{
         .confettii-still {
           min-height: 400px;
           @media (min-width: $screen-sm-min) {
+            min-height: 560px;
+          }
+          @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
             min-height: 560px;
           }
         }
