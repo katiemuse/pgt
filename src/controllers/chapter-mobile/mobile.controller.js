@@ -3,6 +3,8 @@ export default function ChapterMobileMobileController($scope, TopNavbar, Steps, 
   $scope.startVideo = function() {
     const phonePlaceholder = $document[0].querySelector('.phone-placeholder');
     phonePlaceholder.classList.add('hide');
+    const playButton = $document[0].querySelector('.play-button');
+    playButton.classList.add('hide');
     const vidSource = $document[0].querySelector('source');
     const videoElem = $document[0].querySelector('#step-1-video');
     videoElem.play();

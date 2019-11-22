@@ -6,6 +6,9 @@
             <div class="slide-image"></div>
             <div class="phone-background"></div>
             <div class="phone-placeholder"></div>
+            <div class="play-button" ng-click="startVideo()">
+              <img src="../../assets/images/icons/play-button.svg" alt="play video">
+            </div>
             <video id="step-1-video" width="256" height="556">
                 <source src="../../assets/images/chapters/chapter-mobile/ch4-mobile-cut@60fps.mp4" type="video/mp4">
                 No video support
@@ -13,13 +16,12 @@
             <div class="slide-container">
               <div class="slide-intro">
                 <div class="slide-header">
-                  <h1>I'm chapter mobile.</h1>
+                  <h1>Delight with a smart mobile app.</h1>
                 </div>
                 <div class="slide-copy">
                   <p>
                         Every app you build in Salesforce is instantly mobile. Push the updates automatically and empower your users on the go. Watch the video below to see how it works.
                   </p>
-                  <button ng-click="startVideo()">Watch Video</button>
                 </div>
               </div>
               <div class="transition-copy">
@@ -32,6 +34,8 @@
           </div>
           <div class="slides slide-1">
             <div class="slide-image"></div>
+            <div class="phone-background"></div>
+            <div class="phone-placeholder"></div>
           </div>
           <div class="slides success" success="true">
             <div class="confetti-container" ng-open="renderConfetti()">
@@ -45,7 +49,7 @@
                   </p>
                 </div>
                 <div class="mobile-success-ctas">
-                  <a ui-sref="chapter-builder" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded">Continue</a>
+                  <a ui-sref="chapter-ai" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded">Continue</a>
                   <div class="text-link">
                     <a
                       href="https://www.salesforce.com/products/platform/features/mobile-app-builder/"
