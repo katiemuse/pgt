@@ -410,14 +410,13 @@ button.step-close-button {
     .confetti-container {
       position: relative;
       .confettii-still {
-        background: url('../../../assets/images/backgrounds/mobile-confetti.png') center top;
+        background: url('../../../assets/images/backgrounds/mobile-confetti.png') no-repeat;
+        background-position: center bottom;
         background-size: contain;
         min-height: 500px;
         @media (min-width: $screen-sm-min) {
           min-height: 650px;
         }
-        
-        background-repeat: repeat-y;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           min-height: 570px;
         }
