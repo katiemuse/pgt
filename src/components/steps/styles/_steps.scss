@@ -440,6 +440,11 @@ button.step-close-button {
               font-size: 44px;
             }
           }
+          h2 {
+            @media (min-width: $screen-sm-min) {
+              font-size: 44px;
+            }
+          }
         }
         .mobile-success-ctas {
           padding-top: 30px;

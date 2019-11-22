@@ -69,6 +69,7 @@ import ChapterBlockchainPhoneController from './controllers/chapter-blockchain/p
 import ChapterMobileController from './controllers/chapter-mobile/desktop.controller';
 import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.controller';
 import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
+import ChapterMobileMobileController from './controllers/chapter-mobile/mobile.controller';
 import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
 import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
 import ChapterVoicePhoneController from './controllers/chapter-voice/phone.controller';
@@ -144,6 +145,7 @@ angular
   .controller('ChapterMobileController', ChapterMobileController)
   .controller('ChapterMobileDrawerController', ChapterMobileDrawerController)
   .controller('ChapterMobilePhoneController', ChapterMobilePhoneController)
+  .controller('ChapterMobileMobileController', ChapterMobileMobileController)
   .controller('ChapterVoiceController', ChapterVoiceController)
   .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
   .controller('ChapterVoicePhoneController', ChapterVoicePhoneController)

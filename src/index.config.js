@@ -191,7 +191,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterMobilePhoneController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-mobile/mobile.html'),
+          controller: 'ChapterMobileMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
