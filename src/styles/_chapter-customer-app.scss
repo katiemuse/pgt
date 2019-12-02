@@ -96,7 +96,7 @@
           height: 1074px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1360px;
+          height: 1290px;
         }
       }
       .slide-intro {
@@ -150,6 +150,9 @@
       @media (min-width: $screen-sm-min) {
         margin-top: -90px;
       }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -150px;
+      } 
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-1.png) center center no-repeat;
         background-size: contain;
@@ -168,12 +171,16 @@
         @media (min-width: $screen-sm-min) {
           bottom: 80px;
         }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+           bottom: 84px;
+        }
       }
     }
     .slide-2 {
       position: relative;
       top: -90px;
-      @media (min-width: $screen-sm-min) {
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -120px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-2.png) center top no-repeat;
@@ -201,6 +208,9 @@
       @media (min-width: $screen-sm-min) {
         top: -385px;
       }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -452px;
+      }      
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
@@ -211,13 +221,16 @@
           height: 1162px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
+          height: 1245px;
         }
       }
       .transition-copy {
         bottom: 103px;
         @media (min-width: $screen-sm-min) {
           bottom: 295px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 88px;
         }
       }
     }
@@ -226,6 +239,9 @@
       top: -270px;
       @media (min-width: $screen-sm-min) {
         top: -700px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -587px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-4.png) center top no-repeat;
@@ -237,7 +253,7 @@
           height: 934px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
+          height: 1242px;
         }
       }
       .transition-copy {
@@ -252,7 +268,7 @@
         top: -767px;
         min-height: 530px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -83px;
+          top: -673px;
           min-height: 430px;
         }
       }
