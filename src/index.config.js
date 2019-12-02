@@ -168,7 +168,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBlockchainPhoneController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-blockchain/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
