@@ -145,7 +145,7 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterCustomerAppDrawerController'
         },
         mobile: {
-          template: require('./mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html')
         }
       },
       onEnter(TopNavbar, Hotspots) {
