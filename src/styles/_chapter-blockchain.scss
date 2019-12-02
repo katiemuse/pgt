@@ -121,22 +121,22 @@
       }
     }
     .slide-0 {
-      margin-top: 80px;
+      margin-top: 100px;
       @media (min-width: $screen-sm-min) {
         margin-top: 230px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: 220px;
+        margin-top: 450px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-0.png) center center no-repeat;
         background-size: cover;
-        height: 694px;
+        height: 823px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0-2x.png) center bottom no-repeat;
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
           background-size: cover;
-          height: 1074px;
+          height: 1274px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           height: 1290px;
@@ -197,11 +197,11 @@
         margin-top: -150px;
       } 
       .slide-image {
-        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-1.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-1.png) center center no-repeat;
         background-size: contain;
         height: 630px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-1-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-1-2x.png) center top no-repeat;
           background-size: contain;
           height: 934px;
         }
@@ -226,11 +226,11 @@
         top: -120px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-2.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-2.png) center top no-repeat;
         background-size: contain;
         height: 560px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-2-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-2-2x.png) center top no-repeat;
           background-size: contain;
           height: 1152px;
         }
@@ -255,11 +255,11 @@
         top: -452px;
       }      
       .slide-image {
-        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-3.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
         height: 560px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-3-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-3-2x.png) center top no-repeat;
           background-size: contain;
           height: 1162px;
         }
@@ -287,16 +287,16 @@
         top: -587px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-4.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-4.png) center top no-repeat;
         background-size: contain;
-        height: 500px;
+        height: 521px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-4-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-4-2x.png) center top no-repeat;
           background-size: contain;
-          height: 934px;
+          height: 1044px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1242px;
+          height: 1380px;
         }
       }
       .transition-copy {
@@ -308,10 +308,10 @@
       top: -415px;
       min-height: 300px;
       @media (min-width: $screen-sm-min) {
-        top: -767px;
+        top: -840px;
         min-height: 530px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -673px;
+          top: -763px;
           min-height: 430px;
         }
       }
