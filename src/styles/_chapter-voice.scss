@@ -52,4 +52,335 @@
       bottom: 70px;
     }
   }
+  &.mobile {
+    height: 100%;
+    .slides {
+      min-height: 600px;
+    }
+    .slide-image {
+      height: 560px;
+      position: relative;
+      background-size: cover;
+      @media (min-width: $screen-sm-min) {
+        height: 1152px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        height: 1158px;
+      }
+    }
+    .slide-0 {
+      margin-top: 10px;
+      @media (min-width: $screen-sm-min) {
+        margin-top: 230px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: 150px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-voice/mobile-slide-0.png) center center no-repeat;
+        background-size: cover;
+        height: 733px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-voice/mobile-slide-0-2x.png) center bottom no-repeat;
+          background-position: center bottom;
+          background-size: cover;
+          height: 1000px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1360px;
+        }
+      }
+      .slide-intro {
+        position: absolute;
+        padding: 0 40px 0 40px;
+        top: 20px;
+        width: 100%;
+        @media (min-width: $screen-sm-min) {
+          padding: 0 15px 0 60px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: -30px;
+          padding: 0 15px 0 90px;
+        }
+        .slide-header {
+          margin-bottom: 30px;
+          h1 {
+            color: #000000;
+            font-size: 28px;
+            margin-bottom: 0;
+            @media (min-width: $screen-sm-min) {
+              font-size: 40px;
+              line-height: 38px;
+            }
+          }
+        }
+        .slide-copy {
+          max-width: 330px;
+          @media (min-width: $screen-sm-min) {
+            max-width: 650px;
+          }
+          p {
+            color: #000000;
+            font-size: 18px;
+            line-height: 26px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 32px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+      .transition-copy {
+        bottom: 71px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 132px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 176px;
+        }
+      }
+    }
+    .slide-1 {
+      margin-top: -170px;
+      position: relative;
+      @media (min-width: $screen-sm-min) {
+        margin-top: -165px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -205px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-voice/mobile-slide-1-bckg-sky.png) center center no-repeat;
+        background-size: contain;
+        height: 973px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-voice/mobile-slide-1-bckgd-sky-2x.png) center top no-repeat;
+          background-size: cover;
+          height: 1000px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1240px;
+        }
+      }
+      .phone-background {
+        background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-phone.png) center center no-repeat;
+        background-size: contain;
+        width: 100%;
+        height: 570px;
+        position: absolute;
+        top: 140px;
+        z-index: 2;
+        pointer-events: none;
+        @media (min-width: $screen-sm-min) {
+          bottom: -517px;
+          height: 68%;
+          top: 100px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 80%;
+        }
+      }
+      .phone-placeholder {
+        background: url(../assets/images/chapters/chapter-voice/mobile-slide-1-bckgd.png) center center no-repeat;
+        background-size: contain;
+        height: 559px;
+        top: 145px;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+        left: 50.8%;
+        transform: translateX(-50%);
+        border-radius: 25%;
+        @media (min-width: $screen-sm-min) {
+          top: -94px;
+          height: 100%;
+          left: 50.8%;
+          transform: translateX(-50%);
+          width: 50%;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: -50px;
+          border-radius: 10%;
+        }
+      }
+      .play-button {
+        position: absolute;
+        top: 213px;
+        left: 52%;
+        transform: translateX(-52%);
+        z-index: 1;
+        @media (min-width: $screen-sm-min) {
+          top: 253px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: 333px;
+        }
+      }
+      .gif-holder {
+        position: absolute;
+        top: 145px;
+        left: 50.8%;
+        transform: translateX(-50%);
+        z-index: 1;
+        width: 64%;
+        img {
+          width: 100%;
+          border-radius: 4%;
+        }
+        @media (min-width: $screen-sm-min) {
+          top: 112px;
+          width: 50%;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: 115px;
+        }
+      }
+      .transition-copy {
+        bottom: 283px;
+        z-index: 2;
+        @media (min-width: $screen-sm-min) {
+          bottom: 96px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 36px;
+        }
+      }
+    }
+    .slide-2 {
+      position: relative;
+      top: -280px;
+      @media (min-width: $screen-sm-min) {
+        top: -110px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: 30px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-voice/mobile-slide-2.png) center top no-repeat;
+        background-size: contain;
+        height: 579px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-voice/mobile-slide-2-2x.png) center top no-repeat;
+          background-size: contain;
+          height: 1189px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1441px;
+        }
+      }
+      .transition-copy {
+        bottom: 102px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 284px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 234px;
+        }
+      }
+    }
+    .slide-3 {
+      position: relative;
+      top: -375px;
+      @media (min-width: $screen-sm-min) {
+        top: -420px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: -380px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-voice/mobile-slide-3.png) center top no-repeat;
+        background-size: contain;
+        height: 550px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-voice/mobile-slide-3-2x.png) center top no-repeat;
+          background-size: contain;
+          height: 1040px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1385px;
+        }
+      }
+      .transition-copy {
+        bottom: 103px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 286px;
+        }
+      }
+    }
+    .slide-4 {
+      position: relative;
+      top: -270px;
+      @media (min-width: $screen-sm-min) {
+        top: -840px;
+      }
+      .slide-image {
+        background: url(https://via.placeholder.com/375x600.png?text=Placeholder) center top no-repeat;
+        background-size: contain;
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1441px;
+        }
+      }
+      .transition-copy {
+        bottom: 103px;
+      }
+    }
+    .success {
+      position: relative;
+      top: -498px;
+      min-height: 370px;
+      @media (min-width: $screen-sm-min) {
+        top: -555px;
+        min-height: 605px;
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          top: -558px;
+          min-height: 525px;
+        }
+      }
+      .confetti-container {
+        .content-container{
+          top: 50px;
+        }
+        .confettii-still {
+          min-height: 330px;
+          @media (min-width: $screen-sm-min) {
+            min-height: 605px;
+          }
+          @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+            min-height: 525px;
+          }
+        }
+      }
+    }
+    .transition-copy {
+      background-color: #00315a;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+      bottom: 0;
+      z-index: 1;
+      p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      .transition-arrow {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #00315a;
+        position: absolute;
+        bottom: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+    }
+  }
 }

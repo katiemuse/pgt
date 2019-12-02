@@ -73,6 +73,7 @@ import ChapterMobileMobileController from './controllers/chapter-mobile/mobile.c
 import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
 import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
 import ChapterVoicePhoneController from './controllers/chapter-voice/phone.controller';
+import ChapterVoiceMobileController from './controllers/chapter-voice/mobile.controller';
 
 import './styles/vendor.scss';
 import './styles/index.scss';
@@ -149,6 +150,7 @@ angular
   .controller('ChapterVoiceController', ChapterVoiceController)
   .controller('ChapterVoiceDrawerController', ChapterVoiceDrawerController)
   .controller('ChapterVoicePhoneController', ChapterVoicePhoneController)
+  .controller('ChapterVoiceMobileController', ChapterVoiceMobileController)
   .service('Hotspots', Hotspots)
   .config(routerConfig)
   .run(run);
