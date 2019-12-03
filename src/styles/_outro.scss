@@ -85,10 +85,10 @@
     .slide-0 {
       position: relative;
       @media (min-width: $screen-sm-min) {
-        margin-top: 230px;
+      
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: 450px;
+        margin-top: -30px;
       }
       .slide-image {
         background: url(../assets/images/chapters/outro/mobile-outro-0.png) center bottom no-repeat;
@@ -98,16 +98,19 @@
           background: url(../assets/images/chapters/outro/mobile-outro-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
           background-size: cover;
-          height: 1274px;
+          height: 935px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1290px;
+          height: 1100px;
         }
       }
       .slide-container {
         position: absolute;
         top: 33px;
         left: 45px;
+        @media (min-width: $screen-sm-min) {
+          top: 73px;
+        }
         .slide-copy {
           max-width: 330px;
           @media (min-width: $screen-sm-min) {
@@ -138,6 +141,11 @@
           color: #ffffff;
           padding: 10px 30px;
           margin-bottom: 20px;
+          @media (min-width: $screen-sm-min) {
+            padding: 24px 75px;
+            font-size: 28px;
+            margin-bottom: 33px;
+          }
         }
         .text {
           color: #000000;
@@ -151,9 +159,14 @@
             line-height: 1;
             font-size: 9px;
             display: inline-block;
-            vertical-align: middle;
             &:after {
               content: "\E924";
+            }
+          }
+          @media (min-width: $screen-sm-min) {
+            font-size: 28px;
+            i {
+              font-size: 22px;
             }
           }
         }
@@ -162,10 +175,10 @@
     .slide-1 {
       position: relative;
       @media (min-width: $screen-sm-min) {
-        margin-top: -90px;
+        // margin-top: -90px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: -150px;
+        margin-top: -30px;
       } 
       .slide-image {
         background: url(../assets/images/chapters/outro/mobile-outro-1.png) center center no-repeat;
@@ -174,10 +187,10 @@
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/outro/mobile-outro-1-2x.png) center top no-repeat;
           background-size: contain;
-          height: 934px;
+          height: 1815px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1240px;
+          height: 2420px;
         }
       }
       .recap-buttons {
@@ -188,6 +201,19 @@
           background: #e67300;
           color: #ffffff;
           padding: 10px 30px;
+        }
+        @media (min-width: $screen-sm-min) {
+          bottom: 410px;
+          left: 65px;
+          .btn {
+            font-size: 28px;
+            padding: 21px 33px;
+          }
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 515px;
+          left: 85px;
+
         }
       }
       
