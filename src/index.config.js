@@ -46,7 +46,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'OutroController'
         },
         mobile: {
-          template: require('./partials/outro/mobile.html')
+          template: require('./partials/outro/mobile.html'),
+          controller: 'OutroMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {

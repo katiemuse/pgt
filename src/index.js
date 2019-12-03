@@ -52,6 +52,7 @@ import {wzNext, wzPrevious, wzFinish, wzCancel} from './components/wizard/direct
 import WelcomeController from './controllers/welcome/desktop.controller';
 import WelcomeDrawerController from './controllers/welcome/drawer.controller';
 import OutroController from './controllers/outro/desktop.controller';
+import OutroMobileController from './controllers/outro/mobile.controller';
 import ChapterDataController from './controllers/chapter-data/desktop.controller';
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
 import ChapterBuilderController from './controllers/chapter-builder/desktop.controller';
@@ -127,6 +128,7 @@ angular
   .factory('drawerRegisterEvents', drawerRegisterEvents)
   .controller('WelcomeController', WelcomeController)
   .controller('OutroController', OutroController)
+  .controller('OutroMobileController', OutroMobileController)
   .controller('DrawerPanelController', drawerPanelController)
   .controller('WelcomeDrawerController', WelcomeDrawerController)
   .controller('ChapterDataController', ChapterDataController)

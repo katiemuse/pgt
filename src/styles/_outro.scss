@@ -68,21 +68,22 @@
   }
   &.mobile {
     height: 100%;
-    .slides {
-      min-height: 600px;
-    }
-    .slide-image {
-      height: 560px;
-      position: relative;
-      background-size: cover;
-      @media (min-width: $screen-sm-min) {
-        height: 1152px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        height: 1158px;
-      }
-    }
+    // .slides {
+    //   min-height: 600px;
+    // }
+    // .slide-image {
+    //   height: 560px;
+    //   position: relative;
+    //   background-size: cover;
+    //   @media (min-width: $screen-sm-min) {
+    //     height: 1152px;
+    //   }
+    //   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    //     height: 1158px;
+    //   }
+    // }
     .slide-0 {
+      position: relative;
       @media (min-width: $screen-sm-min) {
         margin-top: 230px;
       }
@@ -90,11 +91,11 @@
         margin-top: 450px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/outro/mobile-outro-0-text.png) center center no-repeat;
+        background: url(../assets/images/chapters/outro/mobile-outro-0.png) center bottom no-repeat;
         background-size: contain;
         height: 500px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/outro/mobile-outro-0-text-2x.png) center bottom no-repeat;
+          background: url(../assets/images/chapters/outro/mobile-outro-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
           background-size: cover;
           height: 1274px;
@@ -103,59 +104,63 @@
           height: 1290px;
         }
       }
-      .mobile-success-ctas {
+      .slide-container {
+        position: absolute;
+        top: 33px;
+        left: 45px;
+        .slide-copy {
+          max-width: 330px;
+          @media (min-width: $screen-sm-min) {
+            max-width: 650px;
+          }
+          p {
+            color: #000000;
+            font-size: 18px;
+            line-height: 26px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 32px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+      .recap-buttons {
         display: flex;
         flex-flow: column;
         position: absolute;
-        top: 260px;
-        left: 30px;
+        top: 110px;
+        left: 0px;
         @media (min-width: $screen-sm-min) {
           padding-top: 50px;
         }
         .btn {
-          background-color: rgb(227, 115, 36);
-          @media (min-width: $screen-sm-min) {
-            padding: 20px 30px;
-            font-size: 18px;
-            max-width: 325px;
-          }
+          background: #e67300;
+          color: #ffffff;
+          padding: 10px 30px;
+          margin-bottom: 20px;
         }
-        .success-text-link {
-          color: #333333;
+        .text {
+          color: #000000;
           text-transform: uppercase;
-          font-weight: normal;
-          font-size: 14px;
-          @media (min-width: $screen-sm-min) {
-            font-size: 18px;
-          }
-        }
-        .text-link {
-          display: flex;
-          align-items: center;
-          margin-top: 30px;
-        }
-        .carat {
-          display: flex;
-          margin-left: 3px;
-          color: #333333;
           i {
-            font-family: 'SalesforceIcons';
-            speak: none;
+            font-family: "SalesforceIcons";
             font-style: normal;
             font-weight: normal;
             font-variant: normal;
             text-transform: none;
             line-height: 1;
             font-size: 9px;
+            display: inline-block;
+            vertical-align: middle;
             &:after {
-              content: '\e924';
+              content: "\E924";
             }
           }
         }
       }
     }
     .slide-1 {
-      margin-top: -70px;
+      position: relative;
       @media (min-width: $screen-sm-min) {
         margin-top: -90px;
       }
@@ -163,11 +168,11 @@
         margin-top: -150px;
       } 
       .slide-image {
-        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-1.png) center center no-repeat;
+        background: url(../assets/images/chapters/outro/mobile-outro-1.png) center center no-repeat;
         background-size: contain;
-        height: 630px;
+        height: 888px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-1-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/outro/mobile-outro-1-2x.png) center top no-repeat;
           background-size: contain;
           height: 934px;
         }
@@ -175,154 +180,18 @@
           height: 1240px;
         }
       }
-      .transition-copy {
-        bottom: 103px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 80px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-           bottom: 84px;
-        }
-      }
-    }
-    .slide-2 {
-      position: relative;
-      top: -90px;
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        top: -120px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-2.png) center top no-repeat;
-        background-size: contain;
-        height: 560px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-2-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 1152px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
-        }
-      }
-      .transition-copy {
-        bottom: 102px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 284px;
-        }
-      }
-    }
-    .slide-3 {
-      position: relative;
-      top: -180px;
-      @media (min-width: $screen-sm-min) {
-        top: -385px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        top: -452px;
-      }      
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-3.png) center top no-repeat;
-        background-size: contain;
-        height: 560px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-3-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 1162px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1245px;
-        }
-      }
-      .transition-copy {
-        bottom: 103px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 295px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 88px;
-        }
-      }
-    }
-    .slide-4 {
-      position: relative;
-      top: -270px;
-      @media (min-width: $screen-sm-min) {
-        top: -700px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        top: -587px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-4.png) center top no-repeat;
-        background-size: contain;
-        height: 521px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-4-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 1044px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1380px;
-        }
-      }
-      .transition-copy {
-        bottom: 103px;
-      }
-    }
-    .success {
-      position: relative;
-      top: -415px;
-      min-height: 300px;
-      @media (min-width: $screen-sm-min) {
-        top: -840px;
-        min-height: 530px;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -763px;
-          min-height: 430px;
-        }
-      }
-      .confetti-container {
-        .content-container{
-          top: 50px;
-        }
-        .confettii-still {
-          min-height: 330px;
-          @media (min-width: $screen-sm-min) {
-            min-height: 530px;
-          }
-        }
-      }
-    }
-    .transition-copy {
-      background-color: #00315a;
-      min-height: 115px;
-      display: flex;
-      align-items: center;
-      padding: 40px;
-      position: relative;
-      bottom: 0;
-      z-index: 1;
-      p {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 24px;
-        @media (min-width: $screen-sm-min) {
-          font-size: 32px;
-          line-height: 40px;
-        }
-      }
-      .transition-arrow {
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #00315a;
+      .recap-buttons {
         position: absolute;
-        bottom: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
+        bottom: 190px;
+        left: 45px;
+        .btn {
+          background: #e67300;
+          color: #ffffff;
+          padding: 10px 30px;
+        }
       }
+      
     }
+    
   }
 }
