@@ -41,6 +41,9 @@ body > div ~ div {
 }
 
 .mobile {
+  #outro & {
+    min-height: initial;
+  }
   h1 {
    color: #00a1e0;;
     font-family: $proximanova;

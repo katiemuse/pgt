@@ -66,4 +66,138 @@
       width: 100%;
     }
   }
+  &.mobile {
+    height: 100%;
+    .slide-0 {
+      position: relative;
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -30px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/outro/mobile-outro-0.png) center bottom no-repeat;
+        background-size: contain;
+        height: 500px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/outro/mobile-outro-0-2x.png) center bottom no-repeat;
+          background-position: center bottom;
+          background-size: cover;
+          height: 935px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1100px;
+        }
+      }
+      .slide-container {
+        position: absolute;
+        top: 33px;
+        left: 45px;
+        @media (min-width: $screen-sm-min) {
+          top: 73px;
+        }
+        .slide-copy {
+          max-width: 330px;
+          @media (min-width: $screen-sm-min) {
+            max-width: 650px;
+          }
+          p {
+            color: #000000;
+            font-size: 18px;
+            line-height: 26px;
+            @media (min-width: $screen-sm-min) {
+              font-size: 32px;
+              line-height: 40px;
+            }
+          }
+        }
+      }
+      .recap-buttons {
+        display: flex;
+        flex-flow: column;
+        position: absolute;
+        top: 110px;
+        left: 0px;
+        @media (min-width: $screen-sm-min) {
+          padding-top: 50px;
+        }
+        .btn {
+          background: #e67300;
+          color: #ffffff;
+          padding: 10px 30px;
+          margin-bottom: 20px;
+          @media (min-width: $screen-sm-min) {
+            padding: 24px 75px;
+            font-size: 28px;
+            margin-bottom: 33px;
+          }
+        }
+        .text {
+          color: #000000;
+          text-transform: uppercase;
+          i {
+            font-family: "SalesforceIcons";
+            font-style: normal;
+            font-weight: normal;
+            font-variant: normal;
+            text-transform: none;
+            line-height: 1;
+            font-size: 9px;
+            display: inline-block;
+            &:after {
+              content: "\E924";
+            }
+          }
+          @media (min-width: $screen-sm-min) {
+            font-size: 28px;
+            i {
+              font-size: 22px;
+            }
+          }
+        }
+      }
+    }
+    .slide-1 {
+      position: relative;
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -30px;
+      } 
+      .slide-image {
+        background: url(../assets/images/chapters/outro/mobile-outro-1.png) center center no-repeat;
+        background-size: contain;
+        height: 888px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/outro/mobile-outro-1-2x.png) center top no-repeat;
+          background-size: contain;
+          height: 1815px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 2420px;
+        }
+      }
+      .recap-buttons {
+        position: absolute;
+        bottom: 190px;
+        left: 45px;
+        .btn {
+          background: #e67300;
+          color: #ffffff;
+          padding: 10px 30px;
+        }
+        @media (min-width: $screen-sm-min) {
+          bottom: 410px;
+          left: 65px;
+          .btn {
+            font-size: 28px;
+            padding: 21px 33px;
+          }
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 515px;
+          left: 85px;
+
+        }
+      }
+      
+    }
+    
+  }
 }
