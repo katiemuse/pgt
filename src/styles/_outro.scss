@@ -68,25 +68,8 @@
   }
   &.mobile {
     height: 100%;
-    // .slides {
-    //   min-height: 600px;
-    // }
-    // .slide-image {
-    //   height: 560px;
-    //   position: relative;
-    //   background-size: cover;
-    //   @media (min-width: $screen-sm-min) {
-    //     height: 1152px;
-    //   }
-    //   @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-    //     height: 1158px;
-    //   }
-    // }
     .slide-0 {
       position: relative;
-      @media (min-width: $screen-sm-min) {
-      
-      }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: -30px;
       }
@@ -174,9 +157,6 @@
     }
     .slide-1 {
       position: relative;
-      @media (min-width: $screen-sm-min) {
-        // margin-top: -90px;
-      }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: -30px;
       } 
