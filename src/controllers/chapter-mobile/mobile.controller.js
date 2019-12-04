@@ -10,5 +10,6 @@ export default function ChapterMobileMobileController($scope, TopNavbar, Steps, 
     videoElem.play();
     vidSource.setAttribute("src", "../../assets/images/chapters/chapter-mobile/ch4-mobile-cut@60fps.mp4");
     $log.info("vid source", vidSource);
+    $log.info("test for build");
   };
 }
