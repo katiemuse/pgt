@@ -57,16 +57,21 @@ import ChapterDataController from './controllers/chapter-data/desktop.controller
 import ChapterDataDrawerController from './controllers/chapter-data/drawer.controller';
 import ChapterBuilderController from './controllers/chapter-builder/desktop.controller';
 import ChapterBuilderDrawerController from './controllers/chapter-builder/drawer.controller';
+import ChapterBuilderMobileController from './controllers/chapter-builder/mobile.controller';
 import ChapterFlowController from './controllers/chapter-flow/desktop.controller';
 import ChapterFlowDrawerController from './controllers/chapter-flow/drawer.controller';
+import ChapterFlowMobileController from './controllers/chapter-flow/mobile.controller';
 import ChapterAIController from './controllers/chapter-ai/desktop.controller';
 import ChapterAIDrawerController from './controllers/chapter-ai/drawer.controller';
+import ChapterAIMobileController from './controllers/chapter-ai/mobile.controller';
 import ChapterAIPhoneController from './controllers/chapter-ai/phone.controller';
 import ChapterCustomerAppController from './controllers/chapter-customer-app/desktop.controller';
 import ChapterCustomerAppDrawerController from './controllers/chapter-customer-app/drawer.controller';
+import ChapterCustomerAppMobileController from './controllers/chapter-customer-app/mobile.controller';
 import ChapterBlockchainController from './controllers/chapter-blockchain/desktop.controller';
 import ChapterBlockchainDrawerController from './controllers/chapter-blockchain/drawer.controller';
 import ChapterBlockchainPhoneController from './controllers/chapter-blockchain/phone.controller';
+import ChapterBlockchainMobileController from './controllers/chapter-blockchain/mobile.controller';
 import ChapterMobileController from './controllers/chapter-mobile/desktop.controller';
 import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.controller';
 import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
@@ -135,16 +140,21 @@ angular
   .controller('ChapterDataDrawerController', ChapterDataDrawerController)
   .controller('ChapterAIController', ChapterAIController)
   .controller('ChapterAIDrawerController', ChapterAIDrawerController)
+  .controller('ChapterAIMobileController', ChapterAIMobileController)
   .controller('ChapterAIPhoneController', ChapterAIPhoneController)
   .controller('ChapterFlowController', ChapterFlowController)
   .controller('ChapterFlowDrawerController', ChapterFlowDrawerController)
+  .controller('ChapterFlowMobileController', ChapterFlowMobileController)
   .controller('ChapterBuilderController', ChapterBuilderController)
   .controller('ChapterBuilderDrawerController', ChapterBuilderDrawerController)
+  .controller('ChapterBuilderMobileController', ChapterBuilderMobileController)
   .controller('ChapterCustomerAppController', ChapterCustomerAppController)
   .controller('ChapterCustomerAppDrawerController', ChapterCustomerAppDrawerController)
+  .controller('ChapterCustomerAppMobileController', ChapterCustomerAppMobileController)
   .controller('ChapterBlockchainController', ChapterBlockchainController)
   .controller('ChapterBlockchainDrawerController', ChapterBlockchainDrawerController)
   .controller('ChapterBlockchainPhoneController', ChapterBlockchainPhoneController)
+  .controller('ChapterBlockchainMobileController', ChapterBlockchainMobileController)
   .controller('ChapterMobileController', ChapterMobileController)
   .controller('ChapterMobileDrawerController', ChapterMobileDrawerController)
   .controller('ChapterMobilePhoneController', ChapterMobilePhoneController)
