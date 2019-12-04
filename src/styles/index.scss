@@ -13,6 +13,11 @@
   input, .html-editor *, .headline-modal {
     user-select: auto;
   }
+  -webkit-overflow-scrolling: touch;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 .atlwdg-trigger {

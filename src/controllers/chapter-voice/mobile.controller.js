@@ -1,7 +1,6 @@
 'use strict';
 export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $document, $log, $timeout) {
   $scope.scrollToTop = function() {
-    $log.info("in stt chapter voice");
     const mobileContainer = $document[0].querySelector('.container-fluid.main.mobile');
     if (!mobileContainer.classList.contains("scrolled")) {
       $document[0].querySelector('.container-fluid.main.mobile .navbar-header').scrollIntoView();
