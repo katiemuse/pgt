@@ -1,6 +1,6 @@
 'use strict';
 export default function ChapterMobileMobileController($scope, TopNavbar, Steps, $document, $timeout) {
-  $scope.startVideo = async function() {
+  $scope.startVideo = function() {
     const phonePlaceholder = $document[0].querySelector('.phone-placeholder');
     const playButton = $document[0].querySelector('.play-button');
     playButton.classList.add('hide');
