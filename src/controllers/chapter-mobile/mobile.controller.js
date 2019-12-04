@@ -1,6 +1,16 @@
 'use strict';
-export default function ChapterMobileMobileController($scope, TopNavbar, Steps, $document, $timeout) {
+export default function ChapterMobileMobileController($scope, TopNavbar, Steps, $document, $timeout, $log, $window) {
+  $scope.scrollToTop = function() {
+    $log.info("in sTT");
+    $log.info("screen position before scroll", $window.screenY);
+    const mobileContainer = $document[0].querySelector('.container-fluid.main.mobile');
+    if (!mobileContainer.classList.contains("scrolled")) {
+      $document[0].querySelector('.container-fluid.main.mobile .navbar-header').scrollIntoView();
+    }
+  };
   $scope.startVideo = function() {
+    const mobileContainer = $document[0].querySelector('.container-fluid.main.mobile');
+    mobileContainer.classList.add('scrolled');
     const phonePlaceholder = $document[0].querySelector('.phone-placeholder');
     const playButton = $document[0].querySelector('.play-button');
     playButton.classList.add('hide');
@@ -14,4 +24,8 @@ export default function ChapterMobileMobileController($scope, TopNavbar, Steps, 
       }, 2000);
     };
   };
+  $scope.$on("$destroy", () => {
+    const mobileContainer = $document[0].querySelector('.container-fluid.main.mobile');
+    mobileContainer.classList.remove("scrolled");
+  });
 }

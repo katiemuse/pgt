@@ -1,7 +1,9 @@
 export default function ($stateProvider, $urlRouterProvider, $provide) {
   $provide.decorator('$uiViewScroll', ($delegate, $window) => {
+    // const tourHeader = $document.querySelector('.container-fluid.main.mobile .product-tour');
     return () => {
       $window.scrollTo(0, 0);
+      // tourHeader.scrollIntoView();
     };
   });
 
@@ -85,7 +87,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterFlowDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-flow/mobile.html')
+          template: require('./partials/chapter-flow/mobile.html'),
+          controller: 'ChapterFlowMobileController'
         }
       },
       onEnter(TopNavbar) {
@@ -111,7 +114,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterAIPhoneController'
         },
         mobile: {
-          template: require('./partials/chapter-ai/mobile.html')
+          template: require('./partials/chapter-ai/mobile.html'),
+          controller: 'ChapterAIMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -130,7 +134,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBuilderDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-builder/mobile.html')
+          template: require('./partials/chapter-builder/mobile.html'),
+          controller: 'ChapterBuilderMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -149,7 +154,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterCustomerAppDrawerController'
         },
         mobile: {
-          template: require('./partials/chapter-customer-app/mobile.html')
+          template: require('./partials/chapter-customer-app/mobile.html'),
+          controller: 'ChapterCustomerAppMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
@@ -172,7 +178,8 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
           controller: 'ChapterBlockchainPhoneController'
         },
         mobile: {
-          template: require('./partials/chapter-blockchain/mobile.html')
+          template: require('./partials/chapter-blockchain/mobile.html'),
+          controller: 'ChapterBlockchainMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
