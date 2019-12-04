@@ -1,14 +1,17 @@
 'use strict';
-export default function ChapterMobileMobileController($scope, TopNavbar, Steps, $document, $log) {
+export default function ChapterMobileMobileController($scope, TopNavbar, Steps, $document, $timeout) {
   $scope.startVideo = function() {
     const phonePlaceholder = $document[0].querySelector('.phone-placeholder');
-    phonePlaceholder.classList.add('hide');
     const playButton = $document[0].querySelector('.play-button');
     playButton.classList.add('hide');
-    const vidSource = $document[0].querySelector('source');
-    const videoElem = $document[0].querySelector('#step-1-video');
+    const videoElem = $document[0].querySelector('#step-1-video-mobile');
+    phonePlaceholder.classList.add('hide');
     videoElem.play();
-    vidSource.setAttribute("src", "../../assets/images/chapters/chapter-mobile/ch4-mobile-cut@60fps.mp4");
-    $log.info("vid source", vidSource);
+    videoElem.onended = function() {
+      $timeout(() => {
+        const transitionElem = $document[0].querySelector('.slide-0 .transition-copy');
+        transitionElem.scrollIntoView({behavior: "smooth"});
+      }, 2000);
+    };
   };
 }
