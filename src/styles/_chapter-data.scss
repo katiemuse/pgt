@@ -273,3 +273,33 @@
     }
   }
 }
+
+// footer fixes
+#chapter-data {
+  .wrapper {
+    height: initial !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+    display: block !important;
+    position: relative !important;
+    padding-bottom: 173px !important;
+  }
+  // -webkit-overflow-scrolling: touch;
+  // .main.mobile {
+  //   height: 100%;
+  //   .ng-scope {
+  //     height: 100%;
+  //     section {
+  //       height: 100%;
+  //     }
+  //   }
+  //   .chapter-data.mobile {
+  //     .col-lg-12 {
+  //       height: 100%;
+  //       .row {
+  //         height: 100%;
+  //       }
+  //     }
+  //   }
+  // }
+}
