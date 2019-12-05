@@ -13,11 +13,20 @@
   input, .html-editor *, .headline-modal {
     user-select: auto;
   }
-  -webkit-overflow-scrolling: touch;
 }
 
 html {
   scroll-behavior: smooth;
+}
+
+.wrapper {
+  @media(max-width: $screen-sm-max) {
+    height: initial !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+    display: block !important;
+    position: relative !important;
+  }
 }
 
 .atlwdg-trigger {
@@ -171,7 +180,7 @@ footer {
   @media(max-width: $screen-sm-max) {
     padding: 28px 15px 20px;
     background-color: #000000;
-    position: relative;
+    position: static;
     margin-top: 0;
     max-width: 100%;
     display: flex;
