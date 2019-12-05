@@ -173,8 +173,8 @@
         top: -69px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 934px;
+          background-size: cover;
+          height: 993px;
           top: -104px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -208,6 +208,9 @@
         }
         .confettii-still {
           min-height: 330px;
+          @media (min-width: $screen-sm-min) {
+            min-height: 430px;
+          }
         }
       }
     }
