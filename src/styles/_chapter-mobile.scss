@@ -219,8 +219,8 @@
         margin-bottom: 128px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: -130px;
-        height: 1195px;
+        // margin-top: -130px;
+        // height: 1195px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-background.png) center bottom no-repeat;
@@ -235,7 +235,7 @@
         
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
-          height: 1310px;
+          height: 990px;
           background-size: contain;
           background-position: center center;
         }
