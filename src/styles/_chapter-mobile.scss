@@ -216,11 +216,12 @@
       @media (min-width: $screen-sm-min) {
         margin-top: -260px;
         height: 940px;
-        margin-bottom: 128px;
+        margin-bottom: 178px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        // margin-top: -130px;
-        // height: 1195px;
+        margin-top: -190px;
+        height: 970px;
+        margin-bottom: 65px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-background.png) center bottom no-repeat;
@@ -235,8 +236,8 @@
         
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
-          height: 990px;
-          background-size: contain;
+          height: 970px;
+          background-size: cover;
           background-position: center center;
         }
       }
@@ -250,8 +251,12 @@
         z-index: 2;
         pointer-events: none;
         @media (min-width: $screen-sm-min) {
-          bottom: -70px;
+          bottom: -140px;
         }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: -20px;
+        }
+        
       }
       .phone-placeholder {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-1.png) center center no-repeat;
@@ -264,8 +269,11 @@
         @media (min-width: $screen-sm-min) {
           top: initial;
           height: 560px;
-          bottom: -72px;
+          bottom: -140px;
           left: 3px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: -21px;
         }
       }
       .transition-copy {
