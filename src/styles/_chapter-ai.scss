@@ -97,7 +97,7 @@
     .slide-0 {
       margin-top: 50px;
       @media (min-width: $screen-sm-min) {
-        margin-top: -100px;
+        margin-top: 0px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: 220px;
@@ -109,8 +109,8 @@
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-ai/mobile-slide-0-2x.png) center center no-repeat;
           background-position: center bottom;
-          height: 1450px;
-          background-size: contain;
+          height: 1390px;
+          background-size: cover;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background-size: cover;
@@ -167,6 +167,9 @@
       @media (min-width: $screen-sm-min) {
         margin-top: -90px;
       }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -104px;
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-ai/mobile-slide-1.png) center top no-repeat;
         background-size: contain;
@@ -193,6 +196,9 @@
       @media (min-width: $screen-sm-min) {
         top: -280px;
       }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -287px;
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-ai/mobile-slide-2.png) center top no-repeat;
         background-size: contain;
@@ -200,10 +206,10 @@
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-ai/mobile-slide-2-2x.png) center top no-repeat;
           background-size: contain;
-          height: 1189px;
+          height: 1238px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
+          height: 1557px;
         }
       }
       .transition-copy {
@@ -219,17 +225,21 @@
       @media (min-width: $screen-sm-min) {
         top: -560px;
       }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -572px;
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-ai/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
         height: 579px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-ai/mobile-slide-3-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 1040px;
+          background-size: cover;
+          height: 1090px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
+          height: 1500px;
+          background-size: contain;
         }
       }
       .transition-copy {
@@ -243,12 +253,15 @@
       position: relative;
       top: -304px;
       min-height: 400px;
+      margin-bottom: -304px;
       @media (min-width: $screen-sm-min) {
         top: -696px;
         min-height: 560px;
+        margin-bottom: -696px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           min-height: 560px;
-          top: -795px;
+          top: -800px;
+          margin-bottom: -800px;
         }
       }
       .confetti-container{
