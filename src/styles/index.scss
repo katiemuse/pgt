@@ -27,6 +27,13 @@ html {
     display: block !important;
     position: relative !important;
   }
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+    height: initial !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+    display: block !important;
+    position: relative !important;
+  }
 }
 
 .atlwdg-trigger {
@@ -191,7 +198,7 @@ footer {
     // display: none;
     padding: 28px 15px 20px;
     background-color: #000000;
-    position: relative;
+    position: static;
     margin-top: 0;
     max-width: 100%;
     display: flex;
