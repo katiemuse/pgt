@@ -82,6 +82,7 @@
           background: url(../assets/images/chapters/chapter-builder/builder-slide-0-2x.png) center bottom no-repeat;
           background-size: cover;
           height: 1270px;
+          top: 0;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background-size: cover;
@@ -136,7 +137,7 @@
       .transition-copy {
         bottom: 166px;
         @media (min-width: $screen-sm-min) {
-          bottom: 103px;
+          bottom: 34px;
         }
       }
     }
@@ -152,8 +153,9 @@
         @media (min-width: $screen-sm-min) {
           background-position: center bottom;
           background: url(../assets/images/chapters/chapter-builder/builder-slide-1-2x.png) center center no-repeat;
-          background-size: contain;
+          background-size: cover;
           height: 935px;
+          top: 70px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           height: 1125px;
@@ -173,8 +175,9 @@
       margin-bottom: -242px;
       min-height: 380px;
       @media (min-width: $screen-sm-min) {
-        top: -65px;
+        top: -5px;
         min-height: 520px;
+        margin-bottom: -5px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           min-height: 470px;
         }
