@@ -81,12 +81,12 @@
           background-position: center bottom;
           background: url(../assets/images/chapters/chapter-builder/builder-slide-0-2x.png) center bottom no-repeat;
           background-size: cover;
-          height: 1270px;
+          height: 1330px;
           top: 0;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background-size: cover;
-          height: 1590px;
+          height: 1660px;
           top: -30px;
         }
       }
@@ -141,7 +141,7 @@
           bottom: 34px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 70px;
+          bottom: 72px;
         }
       }
     }
