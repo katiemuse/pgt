@@ -74,7 +74,7 @@
         // margin-top: 0px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        // margin-top: -260px;
+        top: -30px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-background.png) center center no-repeat;
@@ -87,9 +87,10 @@
           height: 1000px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          
+          background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
           background-size: cover;
-          height: 1250px;
-          background-position: center bottom;
+          height: 980px;
         }
       }
       .phone-background {
@@ -105,7 +106,7 @@
           bottom: 140px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: -970px;
+          bottom: 140px;
         }
       }
       .phone-placeholder {
@@ -123,7 +124,7 @@
           left: 3px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: -970px;
+          bottom: 140px;
         }
       }
       .play-button {
@@ -152,7 +153,7 @@
           left: 50.5%;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: -970px;
+          bottom: 140px;
         }
       }
       .slide-intro {
@@ -204,7 +205,7 @@
           bottom: 3px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 53px;
+          bottom: 0px;
         }
       }
     }
@@ -233,6 +234,7 @@
         }
         
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
           height: 1310px;
           background-size: contain;
           background-position: center center;
