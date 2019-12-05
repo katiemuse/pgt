@@ -86,7 +86,8 @@
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background-size: cover;
-          height: 1780px;
+          height: 1590px;
+          top: -30px;
         }
       }
       .slide-container{
@@ -138,6 +139,9 @@
         bottom: 166px;
         @media (min-width: $screen-sm-min) {
           bottom: 34px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 70px;
         }
       }
     }
