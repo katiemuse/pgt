@@ -170,7 +170,7 @@ footer {
   @media(max-width: $screen-sm-max) {
     padding: 28px 15px 20px;
     background-color: #000000;
-    position: absolute;
+    position: static;
     margin-top: 0;
     max-width: 100%;
     display: flex;
