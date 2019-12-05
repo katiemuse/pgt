@@ -19,6 +19,16 @@ html {
   scroll-behavior: smooth;
 }
 
+.wrapper {
+  @media(max-width: $screen-sm-max) {
+    height: initial !important;
+    min-height: 100vh !important;
+    overflow: hidden !important;
+    display: block !important;
+    position: relative !important;
+  }
+}
+
 .atlwdg-trigger {
   z-index: 99999;
 }

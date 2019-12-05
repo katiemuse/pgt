@@ -77,12 +77,12 @@
   &.mobile {
     height: 100%;
     .slides {
-      min-height: 600px;
+      // min-height: 600px;
     }
     .slide-image {
-      height: 560px;
-      position: relative;
-      background-size: cover;
+      // height: 560px;
+      // position: relative;
+      // background-size: cover;
       @media (min-width: $screen-sm-min) {
         height: 1152px;
       }
@@ -91,17 +91,17 @@
       }
     }
     .slide-0 {
-      margin-top: 50px;
+      // margin-top: 50px;
       @media (min-width: $screen-sm-min) {
-        margin-top: 230px;
+        // margin-top: 230px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: 220px;
+        // margin-top: 220px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0.png) center center no-repeat;
-        background-size: cover;
-        height: 733px;
+        background-size: contain;
+        height: 870px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-silde-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
@@ -153,20 +153,24 @@
         }
       }
       .transition-copy {
+        bottom: 70px;
         @media (min-width: $screen-sm-min) {
           bottom: 103px;
         }
       }
     }
     .slide-1 {
-      margin-top: -180px;
+      position: relative;
+      
       @media (min-width: $screen-sm-min) {
-        margin-top: -90px;
+        
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1.png) center center no-repeat;
-        background-size: contain;
-        height: 899px;
+        background-size: cover;
+        height: 495px;
+        position: relative;
+        top: -69px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-2x.png) center top no-repeat;
           background-size: contain;
@@ -177,7 +181,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        // bottom: 103px;
         @media (min-width: $screen-sm-min) {
           bottom: 285px;
         }
@@ -197,7 +201,7 @@
         }
       }
       .transition-copy {
-        bottom: 102px;
+        // bottom: 102px;
         @media (min-width: $screen-sm-min) {
           bottom: 284px;
         }
@@ -205,9 +209,9 @@
     }
     .slide-3 {
       position: relative;
-      top: -180px;
+      // top: -180px;
       @media (min-width: $screen-sm-min) {
-        top: -560px;
+        // top: -560px;
       }
       .slide-image {
         background: url(https://via.placeholder.com/375x600.png?text=Placeholder) center top no-repeat;
@@ -217,7 +221,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        // bottom: 103px;
         @media (min-width: $screen-sm-min) {
           bottom: 286px;
         }
@@ -225,7 +229,7 @@
     }
     .slide-4 {
       position: relative;
-      top: -270px;
+      // top: -270px;
       @media (min-width: $screen-sm-min) {
         top: -840px;
       }
@@ -237,13 +241,14 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        // bottom: 103px;
       }
     }
     .success {
       position: relative;
-      top: -237px;
       min-height: 300px;
+      top: -102px;
+      margin-bottom: -102px;
       @media (min-width: $screen-sm-min) {
         top: -66px;
         min-height: 430px;

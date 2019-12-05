@@ -245,8 +245,6 @@
     }
     .success {
       position: relative;
-      // top: -413px;
-      // min-height: 500px;
       @media (min-width: $screen-sm-min) {
         top: -63px;
         margin-bottom: -63px;
@@ -294,13 +292,7 @@
 
 // footer fixes
 #chapter-data {
-  .wrapper {
-    height: initial !important;
-    min-height: 100vh !important;
-    overflow: hidden !important;
-    display: block !important;
-    position: relative !important;
-  }
+  
   // -webkit-overflow-scrolling: touch;
   // .main.mobile {
   //   height: 100%;
