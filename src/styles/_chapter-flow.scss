@@ -92,11 +92,12 @@
     }
     .slide-0 {
       // margin-top: 50px;
+      position: relative;
       @media (min-width: $screen-sm-min) {
         // margin-top: 230px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        // margin-top: 220px;
+        top: -50px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0.png) center center no-repeat;
@@ -109,7 +110,7 @@
           height: 1444px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1360px;
+          height: 1630px;
         }
       }
       .slide-intro {
@@ -178,7 +179,8 @@
           top: -104px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1240px;
+          height: 1156px;
+          top: -154px;
         }
       }
       .transition-copy {
@@ -198,8 +200,9 @@
         margin-bottom: -170px;
         min-height: 430px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -83px;
           min-height: 430px;
+          top: -154px;
+          margin-bottom: -154px;
         }
       }
       .confetti-container {
