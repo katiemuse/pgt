@@ -4,7 +4,6 @@ export default function ChapterMobileMobileController($scope, TopNavbar, Steps, 
   const phonePlaceholder = $document[0].querySelector('.phone-placeholder');
   const playButton = $document[0].querySelector('.play-button');
   const videoElem = $document[0].querySelector('#step-1-video-mobile');
-  const transitionElem = $document[0].querySelector('.slide-0 .transition-copy');
   $scope.scrollToTop = function() {
     if (!mobileContainer.classList.contains("scrolled")) {
       $document[0].querySelector('.container-fluid.main.mobile .navbar-header').scrollIntoView();
@@ -17,7 +16,6 @@ export default function ChapterMobileMobileController($scope, TopNavbar, Steps, 
     videoElem.play();
     videoElem.onended = function() {
       $timeout(() => {
-        transitionElem.scrollIntoView({behavior: "smooth"});
         playButton.classList.remove('hide');
         phonePlaceholder.classList.remove('hide');
       }, 2000);

@@ -15,7 +15,6 @@ export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $
     playButton.classList.add('hide');
     gifHolder.classList.remove('hide');
     $timeout(() => {
-      const transitionElem = $document[0].querySelector('.slide-1 .transition-copy');
       const animatedGifURL = "../../assets/images/chapters/chapter-voice/ch6-img2-animated2.gif";
       const gilfHolderImage = $document[0].querySelector('.container-fluid.mobile .gif-holder img');
       const randomCacheNumber = Math.round(Math.random() * 1000);
@@ -24,7 +23,6 @@ export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $
       phonePlaceholder.classList.remove('hide');
       playButton.classList.remove('hide');
       gifHolder.classList.add('hide');
-      transitionElem.scrollIntoView({behavior: "smooth"});
     }, 9000);
   };
   $scope.$on("$destroy", () => {
