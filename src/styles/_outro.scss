@@ -75,16 +75,16 @@
       }
       .slide-image {
         background: url(../assets/images/chapters/outro/mobile-outro-0.png) center bottom no-repeat;
-        background-size: contain;
-        height: 500px;
+        background-size: cover;
+        height: 540px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/outro/mobile-outro-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
           background-size: cover;
-          height: 935px;
+          height: 1000px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1100px;
+          height: 1170px;
         }
       }
       .slide-container {
@@ -162,28 +162,28 @@
       } 
       .slide-image {
         background: url(../assets/images/chapters/outro/mobile-outro-1.png) center center no-repeat;
-        background-size: contain;
-        height: 888px;
+        background-size: cover;
+        height: 979px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/outro/mobile-outro-1-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 1815px;
+          background-size: cover;
+          height: 1915px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 2420px;
+          height: 2553px;
         }
       }
       .recap-buttons {
         position: absolute;
-        bottom: 190px;
-        left: 45px;
+        bottom: 230px;
+        left: 35px;
         .btn {
           background: #e67300;
           color: #ffffff;
           padding: 10px 30px;
         }
         @media (min-width: $screen-sm-min) {
-          bottom: 410px;
+          bottom: 430px;
           left: 65px;
           .btn {
             font-size: 28px;
@@ -191,7 +191,7 @@
           }
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 515px;
+          bottom: 540px;
           left: 85px;
 
         }

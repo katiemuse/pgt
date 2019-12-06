@@ -16,6 +16,14 @@ export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $
     gifHolder.classList.remove('hide');
     $timeout(() => {
       const transitionElem = $document[0].querySelector('.slide-1 .transition-copy');
+      const animatedGifURL = "../../assets/images/chapters/chapter-voice/ch6-img2-animated2.gif";
+      const gilfHolderImage = $document[0].querySelector('.container-fluid.mobile .gif-holder img');
+      const randomCacheNumber = Math.round(Math.random() * 1000);
+      const newAnimategGifUrl = animatedGifURL + "?x=" + randomCacheNumber;
+      gilfHolderImage.src = newAnimategGifUrl;
+      phonePlaceholder.classList.remove('hide');
+      playButton.classList.remove('hide');
+      gifHolder.classList.add('hide');
       transitionElem.scrollIntoView({behavior: "smooth"});
     }, 9000);
   };
