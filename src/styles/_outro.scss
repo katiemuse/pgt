@@ -163,27 +163,27 @@
       .slide-image {
         background: url(../assets/images/chapters/outro/mobile-outro-1.png) center center no-repeat;
         background-size: cover;
-        height: 888px;
+        height: 979px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/outro/mobile-outro-1-2x.png) center top no-repeat;
           background-size: cover;
-          height: 1815px;
+          height: 1915px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 2420px;
+          height: 2553px;
         }
       }
       .recap-buttons {
         position: absolute;
-        bottom: 190px;
-        left: 45px;
+        bottom: 230px;
+        left: 35px;
         .btn {
           background: #e67300;
           color: #ffffff;
           padding: 10px 30px;
         }
         @media (min-width: $screen-sm-min) {
-          bottom: 325px;
+          bottom: 430px;
           left: 65px;
           .btn {
             font-size: 28px;
@@ -191,7 +191,7 @@
           }
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 420px;
+          bottom: 540px;
           left: 85px;
 
         }
