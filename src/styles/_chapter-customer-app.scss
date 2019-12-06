@@ -83,7 +83,7 @@
         margin-top: 230px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: 220px;
+        margin-top: 280px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0.png) center center no-repeat;
@@ -159,7 +159,7 @@
         height: 630px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-1-2x.png) center top no-repeat;
-          background-size: contain;
+          background-size: cover;
           height: 934px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -222,6 +222,7 @@
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           height: 1245px;
+          background-size: cover;
         }
       }
       .transition-copy {
@@ -249,7 +250,7 @@
         height: 500px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-4-2x.png) center top no-repeat;
-          background-size: contain;
+          background-size: cover;
           height: 934px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -264,9 +265,11 @@
       position: relative;
       top: -415px;
       min-height: 300px;
+      margin-bottom: -415px;
       @media (min-width: $screen-sm-min) {
         top: -767px;
         min-height: 530px;
+        margin-bottom: -767px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           top: -673px;
           min-height: 430px;
