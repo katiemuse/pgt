@@ -359,6 +359,9 @@ body > div ~ div {
         background-repeat: no-repeat;
         background-size: cover;
       }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        height: 1215px;
+      }
       h1 {
         color: rgb(0, 49, 90);
         @media(max-width: $screen-xs-max) {
