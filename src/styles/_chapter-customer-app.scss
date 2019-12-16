@@ -140,6 +140,7 @@
         }
       }
       .transition-copy {
+        bottom: 13px;
         @media (min-width: $screen-sm-min) {
           bottom: 103px;
         }
@@ -167,7 +168,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        bottom: 111px;
         @media (min-width: $screen-sm-min) {
           bottom: 80px;
         }
@@ -196,7 +197,7 @@
         }
       }
       .transition-copy {
-        bottom: 102px;
+        bottom: 120px;
         @media (min-width: $screen-sm-min) {
           bottom: 284px;
         }
@@ -226,7 +227,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        bottom: 119px;
         @media (min-width: $screen-sm-min) {
           bottom: 295px;
         }
@@ -263,9 +264,9 @@
     }
     .success {
       position: relative;
-      top: -415px;
+      top: -430px;
       min-height: 300px;
-      margin-bottom: -415px;
+      margin-bottom: -430px;
       @media (min-width: $screen-sm-min) {
         top: -767px;
         min-height: 530px;
