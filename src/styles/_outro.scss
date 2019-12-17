@@ -172,6 +172,9 @@
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           height: 2553px;
         }
+        @media (max-width: 360px) {
+          height: 923px;
+        }
       }
       .recap-buttons {
         position: absolute;
