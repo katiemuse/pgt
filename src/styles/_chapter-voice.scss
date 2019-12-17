@@ -237,7 +237,7 @@
         }
       }
       .transition-copy {
-        bottom: 283px;
+        bottom: 290px;
         z-index: 2;
         @media (min-width: $screen-sm-min) {
           bottom: 96px;
@@ -270,7 +270,7 @@
         }
       }
       .transition-copy {
-        bottom: 102px;
+        bottom: 120px;
         @media (min-width: $screen-sm-min) {
           bottom: 284px;
         }
@@ -291,7 +291,7 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-voice/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
-        height: 560px;
+        height: 526px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-voice/mobile-slide-3-2x.png) center top no-repeat;
           background-size: contain;
@@ -308,28 +308,11 @@
         }
       }
     }
-    .slide-4 {
-      position: relative;
-      top: -270px;
-      @media (min-width: $screen-sm-min) {
-        top: -840px;
-      }
-      .slide-image {
-        background: url(https://via.placeholder.com/375x600.png?text=Placeholder) center top no-repeat;
-        background-size: contain;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1441px;
-        }
-      }
-      .transition-copy {
-        bottom: 103px;
-      }
-    }
     .success {
       position: relative;
-      top: -498px;
+      top: -516px;
       min-height: 370px;
-      margin-bottom: -498px;
+      margin-bottom: -516px;
       @media (min-width: $screen-sm-min) {
         top: -566px;
         min-height: 605px;

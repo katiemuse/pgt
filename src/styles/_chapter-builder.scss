@@ -74,7 +74,7 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-builder/builder-slide-0.png) center center no-repeat;
         background-size: contain;
-        height: 910px;
+        height: 970px;
         position: relative;
         top: -50px;
         @media (min-width: $screen-sm-min) {
@@ -136,7 +136,7 @@
         }
       }
       .transition-copy {
-        bottom: 166px;
+        bottom: 208px;
         @media (min-width: $screen-sm-min) {
           bottom: 34px;
         }
@@ -175,8 +175,8 @@
     
     .success {
       position: relative;
-      top: -242px;
-      margin-bottom: -242px;
+      top: -259px;
+      margin-bottom: -259px;
       min-height: 380px;
       @media (min-width: $screen-sm-min) {
         top: -5px;
