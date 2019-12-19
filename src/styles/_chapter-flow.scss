@@ -175,12 +175,13 @@
         top: -69px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-2x.png) center top no-repeat;
-          background-size: cover;
-          height: 993px;
+          background-size: contain;
+          height: 1049px;
           top: -104px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1156px;
+          background-size: cover;
+          height: 1240px;
           top: -154px;
         }
       }
@@ -226,6 +227,93 @@
       padding: 40px;
       position: relative;
       bottom: 0;
+      p {
+        color: #ffffff;
+        font-size: 16px;
+        line-height: 24px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 32px;
+          line-height: 40px;
+        }
+      }
+      .transition-arrow {
+        width: 0;
+        height: 0;
+        border-left: 20px solid transparent;
+        border-right: 20px solid transparent;
+        border-top: 20px solid #00315a;
+        position: absolute;
+        bottom: -19px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 1;
+      }
+    }
+    .slide-2 {
+      position: relative;
+      margin-top: -30px;
+      @media (min-width: $screen-sm-min) {
+        
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-2.png) center center no-repeat;
+        background-size: cover;
+        height: 495px;
+        position: relative;
+        top: -69px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-2-2x.png) center top no-repeat;
+          background-size: cover;
+          height: 993px;
+          top: -254px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1156px;
+          top: -254px;
+        }
+      }
+      .transition-copy {
+        // bottom: 103px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 285px;
+        }
+      }
+    }
+    .success {
+      position: relative;
+      min-height: 300px;
+      top: -102px;
+      margin-bottom: -102px;
+      @media (min-width: $screen-sm-min) {
+        top: -321px;
+        margin-bottom: -321px;
+        min-height: 430px;
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          min-height: 430px;
+          top: -254px;
+          margin-bottom: -254px;
+        }
+      }
+      .confetti-container {
+        .content-container{
+          top: 50px;
+        }
+        .confettii-still {
+          min-height: 330px;
+          @media (min-width: $screen-sm-min) {
+            min-height: 430px;
+          }
+        }
+      }
+    }
+    .transition-copy {
+      background-color: #00315a;
+      min-height: 115px;
+      display: flex;
+      align-items: center;
+      padding: 40px;
+      position: relative;
+      bottom: 103px;
       p {
         color: #ffffff;
         font-size: 16px;
