@@ -227,7 +227,7 @@
     }
     .slide-2 {
       position: relative;
-      top: -90px;
+      top: -100px;
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         top: -120px;
       }
@@ -275,7 +275,7 @@
         }
       }
       .transition-copy {
-        bottom: 119px;
+        bottom: 103px;
         @media (min-width: $screen-sm-min) {
           bottom: 295px;
         }
@@ -307,22 +307,54 @@
         }
       }
       .transition-copy {
+        bottom: 64px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 71px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 93px;
+        }
+      }
+    }
+    .slide-5 {
+      position: relative;
+      top: -320px;
+      @media (min-width: $screen-sm-min) {
+        top: -780px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -707px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-5.png) center top no-repeat;
+        background-size: contain;
+        height: 521px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-5-2x.png) center top no-repeat;
+          background-size: cover;
+          height: 1044px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1380px;
+        }
+      }
+      .transition-copy {
         bottom: 103px;
       }
     }
     .success {
       position: relative;
-      top: -415px;
+      top: -465px;
       min-height: 300px;
-      margin-bottom: -415px;
+      margin-bottom: -465px;
       @media (min-width: $screen-sm-min) {
-        top: -840px;
+        top: -912px;
         min-height: 530px;
-        margin-bottom: -840px;
+        margin-bottom: -912px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -763px;
+          top: -881px;
           min-height: 430px;
-          margin-bottom: -763px;
+          margin-bottom: -881px;
         }
       }
       .confetti-container {
