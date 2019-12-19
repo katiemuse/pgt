@@ -249,7 +249,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        bottom: 85px;
         @media (min-width: $screen-sm-min) {
           bottom: 138px;
         }
@@ -260,7 +260,7 @@
     }
     .slide-4 {
       position: relative;
-      top: -320px;
+      top: -305px;
       @media (min-width: $screen-sm-min) {
         top: -788px;
       }
@@ -282,7 +282,7 @@
         }
       }
       .transition-copy {
-        bottom: 138px;
+        bottom: 85px;
         @media (min-width: $screen-sm-min) {
           bottom: 138px;
         }
@@ -294,7 +294,7 @@
 
     .slide-5 {
       position: relative;
-      top: -420px;
+      top: -390px;
       @media (min-width: $screen-sm-min) {
         top: -926px;
       }
@@ -318,9 +318,9 @@
     }
     .success {
       position: relative;
-      top: -561px;
+      top: -514px;
       min-height: 400px;
-      margin-bottom: -561px;
+      margin-bottom: -514px;
       @media (min-width: $screen-sm-min) {
         top: -1066px;
         min-height: 560px;
