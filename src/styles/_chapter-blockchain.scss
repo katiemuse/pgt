@@ -310,6 +310,32 @@
         bottom: 103px;
       }
     }
+    .slide-5 {
+      position: relative;
+      top: -270px;
+      @media (min-width: $screen-sm-min) {
+        top: -700px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -587px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-5.png) center top no-repeat;
+        background-size: contain;
+        height: 521px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-5-2x.png) center top no-repeat;
+          background-size: cover;
+          height: 1044px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1380px;
+        }
+      }
+      .transition-copy {
+        bottom: 103px;
+      }
+    }
     .success {
       position: relative;
       top: -415px;
