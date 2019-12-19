@@ -165,7 +165,7 @@
       }
     }
     .slide-1 {
-      margin-top: 20px;
+      margin-top: 0px;
       @media (min-width: $screen-sm-min) {
         margin-top: -90px;
       }
@@ -215,17 +215,17 @@
         }
       }
       .transition-copy {
-        bottom: 120px;
+        bottom: 140px;
         @media (min-width: $screen-sm-min) {
-          bottom: 284px;
+          bottom: 370px;
         }
       }
     }
     .slide-3 {
       position: relative;
-      top: -180px;
+      top: -220px;
       @media (min-width: $screen-sm-min) {
-        top: -560px;
+        top: -650px;
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         top: -572px;
@@ -233,7 +233,7 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-ai/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
-        height: 579px;
+        height: 562px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-ai/mobile-slide-3-2x.png) center top no-repeat;
           background-size: cover;
@@ -247,23 +247,78 @@
       .transition-copy {
         bottom: 103px;
         @media (min-width: $screen-sm-min) {
-          bottom: 286px;
+          bottom: 138px;
+        }
+      }
+    }
+    .slide-4 {
+      position: relative;
+      top: -320px;
+      @media (min-width: $screen-sm-min) {
+        top: -788px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -572px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-ai/mobile-slide-4.png) center top no-repeat;
+        background-size: contain;
+        height: 562px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-4-2x.png) center top no-repeat;
+          background-size: cover;
+          height: 1090px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1500px;
+          background-size: contain;
+        }
+      }
+      .transition-copy {
+        bottom: 138px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 138px;
+        }
+      }
+    }
+
+    .slide-5 {
+      position: relative;
+      top: -420px;
+      @media (min-width: $screen-sm-min) {
+        top: -926px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -572px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-ai/mobile-slide-5.png) center top no-repeat;
+        background-size: contain;
+        height: 579px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-5-2x.png) center top no-repeat;
+          background-size: cover;
+          height: 1090px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1500px;
+          background-size: contain;
         }
       }
     }
     .success {
       position: relative;
-      top: -321px;
+      top: -561px;
       min-height: 400px;
-      margin-bottom: -321px;
+      margin-bottom: -561px;
       @media (min-width: $screen-sm-min) {
-        top: -696px;
+        top: -1066px;
         min-height: 560px;
-        margin-bottom: -696px;
+        margin-bottom: -1066px;
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           min-height: 560px;
-          top: -800px;
-          margin-bottom: -800px;
+          top: -1066px;
+          margin-bottom: -1066px;
         }
       }
       .confetti-container{
