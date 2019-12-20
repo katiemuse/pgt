@@ -7,6 +7,7 @@ const FailPlugin = require('webpack-fail-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('../package.json');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 module.exports = {
   module: {
@@ -77,6 +78,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
+    new CopyWebpackPlugin([
+      {from: path.join(__dirname, `../src/cookie-consent`)}
+    ]),
     new webpack.optimize.UglifyJsPlugin({
       output: {comments: false},
       compress: {unused: true, dead_code: true, warnings: false},
