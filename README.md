@@ -14,7 +14,6 @@ Some notes:
 * Browser sync is slow when saving changes before reloading the page
     * tried to update but introduced new issues so rolled back
     * some child SCSS files do not trigger a reload upon save for some odd reason
-* Most of the `Welcome` section is completed outside of some remaining CSS items
 * I had setup a test chapter to work through to figure out some of the more complicated interactions used but deleted all of that out to prevent confusion
 =======
 ```bash
@@ -77,6 +76,9 @@ The `src/index.js` needed updating of controller names (and throughout codebase)
 
 
 Finally, searched all source for previous names (e: `custom-objects`) and updated references to new chapter names (ex: `chapter-data`).
+
+ ## Update December 2019
+ Added OneTrust Cookie Consent scripts
 
 
 [![Build Status](http://jenkins.pendinglaunch.com:8080/buildStatus/icon?job=salesforce-platform-guided-tour)](http://jenkins.pendinglaunch.com:8080/job/salesforce-platform-guided-tour/) 
