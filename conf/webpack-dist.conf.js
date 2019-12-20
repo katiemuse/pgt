@@ -78,6 +78,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
+    new CopyWebpackPlugin([
+      {from: path.join(__dirname, `../src/cookie-consent`)}
+    ]),
     new webpack.optimize.UglifyJsPlugin({
       output: {comments: false},
       compress: {unused: true, dead_code: true, warnings: false},
@@ -100,10 +103,7 @@ module.exports = {
       options: {
         postcss: () => [autoprefixer]
       }
-    }),
-    new CopyWebpackPlugin([
-      {from: path.join(__dirname, `src/cookie-consent`)}
-    ])
+    })
   ],
   stats: {
     colors: true,
