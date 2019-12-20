@@ -102,9 +102,8 @@ module.exports = {
       }
     }),
     new CopyWebpackPlugin([
-        // Running this through the webpack bundler breaks the script, so just copy it
-        { from: path.join(__dirname, `src/cookie-consent`) },
-      ])
+      { from: path.join(__dirname, `src/cookie-consent`) }
+    ])  
   ],
   stats: {
     colors: true,
