@@ -7,6 +7,7 @@ const FailPlugin = require('webpack-fail-plugin');
 const ExtractTextPlugin = require('extract-text-webpack-plugin');
 const pkg = require('../package.json');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   module: {
@@ -99,7 +100,11 @@ module.exports = {
       options: {
         postcss: () => [autoprefixer]
       }
-    })
+    }),
+    new CopyWebpackPlugin([
+        // Running this through the webpack bundler breaks the script, so just copy it
+        { from: path.join(__dirname, `src/cookie-consent`) },
+      ])
   ],
   stats: {
     colors: true,
