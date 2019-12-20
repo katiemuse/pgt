@@ -79,7 +79,7 @@ module.exports = {
       template: conf.path.src('index.html')
     }),
     new CopyWebpackPlugin([
-      {from: path.join(__dirname, `../src/cookie-consent`)}
+      {from: path.join(__dirname, `../src/oneTrust`)}
     ]),
     new webpack.optimize.UglifyJsPlugin({
       output: {comments: false},
