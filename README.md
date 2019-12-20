@@ -79,6 +79,6 @@ Finally, searched all source for previous names (e: `custom-objects`) and update
 
  ## Update December 2019
  Added OneTrust Cookie Consent scripts
-/src/cookie-consent/oneTrust
+```/src/cookie-consent/oneTrust```
 
 [![Build Status](http://jenkins.pendinglaunch.com:8080/buildStatus/icon?job=salesforce-platform-guided-tour)](http://jenkins.pendinglaunch.com:8080/job/salesforce-platform-guided-tour/) 
