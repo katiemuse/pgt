@@ -5,6 +5,7 @@ const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const FailPlugin = require('webpack-fail-plugin');
 const autoprefixer = require('autoprefixer');
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   module: {
@@ -75,6 +76,9 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: conf.path.src('index.html')
     }),
+    new CopyWebpackPlugin([
+      {from: path.join(__dirname, `../src/oneTrust`)}
+    ]),
     new webpack.LoaderOptionsPlugin({
       options: {
         postcss: () => [autoprefixer]
