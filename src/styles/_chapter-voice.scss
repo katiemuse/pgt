@@ -134,7 +134,7 @@
       .transition-copy {
         bottom: 71px;
         @media (min-width: $screen-sm-min) {
-          bottom: 139px;
+          bottom: 144px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           bottom: 186px;
@@ -193,11 +193,11 @@
         transform: translateX(-50%);
         border-radius: 25%;
         @media (min-width: $screen-sm-min) {
-          top: -94px;
+          top: -95px;
           height: 100%;
           left: 50.8%;
           transform: translateX(-50%);
-          width: 50%;
+          width: 48%;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           top: -50px;
@@ -229,8 +229,8 @@
           border-radius: 4%;
         }
         @media (min-width: $screen-sm-min) {
-          top: 112px;
-          width: 50%;
+          top: 115px;
+          width: 48%;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           top: 115px;
