@@ -39,9 +39,10 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
     WizardHandler.wizard('phone').next();
     Steps.activate('one');
 
+    // *** 2020 update ASTRO REMOVED ***
     // show astro (re-hiding, and click handling is done by transparent flyout in phone.html and phone.controller.js)
-    const astro = angular.element('#astroPeeking');
-    astro.removeClass('astro-peeking-hidden');
-    astro.addClass('astro-peeking-visible');
+    // const astro = angular.element('#astroPeeking');
+    // astro.removeClass('astro-peeking-hidden');
+    // astro.addClass('astro-peeking-visible');
   };
 }

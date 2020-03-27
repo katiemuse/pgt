@@ -6,16 +6,16 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
     Steps.activate('one');
   };
 
-  $scope.GoToSlide2 = function() {
+  $scope.GoToStep2 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("two");
   };
 
-  $scope.GoToSlide2a = function() {
-    // hide astro
-    const astro = angular.element('#astroPeeking');
-    astro.removeClass('astro-peeking-visible');
-    astro.addClass('astro-peeking-hidden');
+  $scope.GoToStep2a = function() {
+    // hide astro * 2020 UPDATE astro removed *
+    // const astro = angular.element('#astroPeeking');
+    // astro.removeClass('astro-peeking-visible');
+    // astro.addClass('astro-peeking-hidden');
 
     WizardHandler.wizard("phone").next();
     Steps.activate("");
@@ -26,19 +26,19 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
     step2ImageDiv.src = newAnimategGifUrl;
   };
 
-  $scope.GoToSlide3 = function() {
+  $scope.GoToStep3 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("three");
   };
-  $scope.GoToSlide4 = function() {
+  $scope.GoToStep4 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("four");
   };
-  $scope.GoToSlide4a = function() {
+  $scope.GoToStep4a = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("");
   };
-  $scope.GoToSlide5 = function() {
+  $scope.GoToStep5 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("");
   };

@@ -4,24 +4,16 @@
       <hotspots-container>
         <wizard name="phone" on-finish="finishedWizard()">
           <wz-step>
-            <div class="step phone-step-0">
-
-            </div>
+            <div class="step phone-step-0"></div>
           </wz-step>
-          <!-- <wz-step>
-            <div class="step phone-step-1">
-              <div class="flyout active astro-click-area" ng-click="GoToSlide2()">
-              </div>
-            </div>
-          </wz-step>    -->
           <wz-step>
             <div class="step phone-step-1">
-              <div class="click-box active" ng-click="GoToSlide2()"></div>
+              <div class="click-box active" ng-click="GoToStep2()"></div>
             </div>
-          </wz-step>
+          </wz-step>   
           <wz-step>
             <div class="step phone-step-2">
-              <div class="click-box active" ng-click="GoToSlide2a()"></div>
+              <div class="click-box active" ng-click="GoToStep2a()"></div>
             </div>
           </wz-step>
           <wz-step>
@@ -29,47 +21,33 @@
               <img src="../../assets/images/chapters/chapter-voice/ch6-img2-animated2.gif" />
               <div class="flyout active">
                 <span>To complete this task, Einstein uses Natural Language Processing (NLP) to associate Mike’s notes and updates with specific fields within Salesforce.</span>
-                <a ng-click="GoToSlide3()">continue</a>
+                <a ng-click="GoToStep3()">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step phone-step-3">
-              <!-- <div class="flyout active"> -->
-                <div class="click-box active" ng-click="GoToSlide4()"></div>
-                <!-- <span>Einstein automatically saves updates from voice commands — all without a single click.</span>
-                <a ng-click="GoToSuccess()">continue</a>
-                <span class="carat"><i></i></span> -->
-              </div>
+              <div class="click-box active" ng-click="GoToStep4()"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step phone-step-4">
-              <!-- <div class="flyout active"> -->
-                <div class="click-box active" ng-click="GoToSlide4a()"></div>
-                <!-- <span>Einstein automatically saves updates from voice commands — all without a single click.</span>
-                <a ng-click="GoToSuccess()">continue</a>
-                <span class="carat"><i></i></span> -->
-              </div>
+              <div class="click-box active" ng-click="GoToStep4a()"></div>
             </div>
-          </wz-step>        
+          </wz-step>
           <wz-step>
             <div class="step phone-step-4a">
-                <div class="flyout active">
-                  <span>After Mike has reviewed everything and made any edits, Einstein saves the updates back to Salesforce.</span>
-                  <a ng-click="GoToSlide5()">continue</a>
-                  <span class="carat"><i></i></span>
-                </div>
+              <div class="flyout active">
+                <span>After Mike has reviewed everything and made any edits, Einstein saves the updates back to Salesforce.</span>
+                <a ng-click="GoToStep5()">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step phone-step-5">
-                <div class="click-box active" ng-click="GoToSuccess()"></div>
-                <!-- <span>Einstein automatically saves updates from voice commands — all without a single click.</span>
-                <a ng-click="GoToSuccess()">continue</a>
-                <span class="carat"><i></i></span> -->
-              </div>
+              <div class="click-box active" ng-click="GoToSuccess()"></div>
             </div>
           </wz-step>
         </wizard>

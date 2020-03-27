@@ -27,6 +27,7 @@
   .phone-step-4 {
     background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
   }
+
   .phone-step-5 {
     background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
   }
@@ -72,8 +73,33 @@
       bottom: 70px;
     }
   }
-
+  
   .phone-step-3 {
+    .click-box {
+      top: 333px;
+      left: 104px;
+      width: 79px;
+      height: 32px;
+    }
+  }
+  
+  .phone-step-4 {
+    .click-box {
+      top: 333px;
+      left: 104px;
+      width: 79px;
+      height: 32px;
+    }
+  }
+  .phone-step-4a {
+    .flyout {
+      width: 380px;
+      left: 280px;
+      bottom: 70px;
+    }
+  }
+
+  .phone-step-5 {
     .click-box {
       top: 333px;
       left: 104px;
