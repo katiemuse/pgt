@@ -17,8 +17,17 @@
   .phone-step-2 {
     background: url("../assets/images/chapters/chapter-voice/phone-bkg-2.png") center center no-repeat;
   }
+  .phone-step-2a {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-2.png") center center no-repeat;
+  }
 
-  .phone-step-3 {
+  .phone-step-3a {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
+  }
+  .phone-step-4 {
+    background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
+  }
+  .phone-step-5 {
     background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
   }
 
@@ -27,17 +36,36 @@
   }
 
   .phone-step-1 {
-    .astro-click-area {
-      width: 150px;
-      height: 280px;
-      left: 280px;
-      bottom: -10px;
-      cursor: pointer;
-      background-color: rgba($color: #ff0000, $alpha: 0.0);
+    // .astro-click-area {
+    //   width: 150px;
+    //   height: 280px;
+    //   left: 280px;
+    //   bottom: -10px;
+    //   cursor: pointer;
+    //   background-color: rgba($color: #ff0000, $alpha: 0.0);
+    // }
+    .click-box {
+      top: 333px;
+      left: 104px;
+      width: 79px;
+      height: 32px;
     }
   }
 
   .phone-step-2 {
+    // .flyout {
+    //   width: 380px;
+    //   left: 280px;
+    //   bottom: 70px;
+    // }
+    .click-box {
+      top: 333px;
+      left: 104px;
+      width: 79px;
+      height: 32px;
+    }
+  }
+  .phone-step-2a {
     .flyout {
       width: 380px;
       left: 280px;
@@ -46,11 +74,20 @@
   }
 
   .phone-step-3 {
-    .flyout {
-      width: 330px;
-      left: 280px;
-      bottom: 70px;
+    .click-box {
+      top: 333px;
+      left: 104px;
+      width: 79px;
+      height: 32px;
     }
+  }
+
+  .phone-step-3 {
+    // .flyout {
+    //   width: 330px;
+    //   left: 280px;
+    //   bottom: 70px;
+    // }
   }
   &.mobile {
     height: 100%;

@@ -7,7 +7,23 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
   Steps.clear();
   Steps.pop({
     number: 'one',
-    title: 'Click on Astro to start the voice command.'
+    title: 'Click “Update Opportunity” to start your intelligent update.'
+  });
+  Steps.pop({
+    number: 'two',
+    title: 'Click the microphone button to start a voice command.'
+  });
+  Steps.pop({
+    number: 'three',
+    title: 'Click &ldquo;Haven Enterprises&rdquo; to select the correct record.'
+  });
+  Steps.pop({
+    number: 'four',
+    title: 'Select “Haven Enterprises - Services - 115K” to select the correct opportunity.'
+  });
+  Steps.pop({
+    number: 'five',
+    title: 'Click “Done” to complete this task.'
   });
 
   Hotspots.clear();
