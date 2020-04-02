@@ -76,10 +76,10 @@ import ChapterMobileController from './controllers/chapter-mobile/desktop.contro
 import ChapterMobileDrawerController from './controllers/chapter-mobile/drawer.controller';
 import ChapterMobilePhoneController from './controllers/chapter-mobile/phone.controller';
 import ChapterMobileMobileController from './controllers/chapter-mobile/mobile.controller';
-import ChapterVoiceController from './controllers/chapter-voice/desktop.controller';
-import ChapterVoiceDrawerController from './controllers/chapter-voice/drawer.controller';
-import ChapterVoicePhoneController from './controllers/chapter-voice/phone.controller';
-import ChapterVoiceMobileController from './controllers/chapter-voice/mobile.controller';
+import ChapterVoiceController from './controllers/chapter-einstein-assistant/desktop.controller';
+import ChapterVoiceDrawerController from './controllers/chapter-einstein-assistant/drawer.controller';
+import ChapterVoicePhoneController from './controllers/chapter-einstein-assistant/phone.controller';
+import ChapterVoiceMobileController from './controllers/chapter-einstein-assistant/mobile.controller';
 
 import './styles/vendor.scss';
 import './styles/index.scss';

@@ -41,7 +41,7 @@ export default function run(
     3: ['chapter-builder'],
     4: ['chapter-mobile'],
     5: ['chapter-ai'],
-    6: ['chapter-voice'],
+    6: ['chapter-einstein-assistant'],
     7: ['chapter-customer-app'],
     8: ['chapter-blockchain']
   };

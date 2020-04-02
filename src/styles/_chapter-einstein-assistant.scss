@@ -1,35 +1,35 @@
 @import '_base';
 
-.chapter-voice {
+.chapter-einstein-assistant {
 
   .step-0, .step-1 {
     background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center no-repeat;
   }
 
   .phone-step-0 {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-0.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-0.png") center center no-repeat;
   }
 
   .phone-step-1 {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-1.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-1.png") center center no-repeat;
   }
 
   .phone-step-2 {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-2.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-2.png") center center no-repeat;
   }
   .phone-step-2a {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-2.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-2.png") center center no-repeat;
   }
 
   .phone-step-3a {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-3.png") center center no-repeat;
   }
   .phone-step-4 {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-3.png") center center no-repeat;
   }
 
   .phone-step-5 {
-    background: url("../assets/images/chapters/chapter-voice/phone-bkg-3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-3.png") center center no-repeat;
   }
 
   .step {
@@ -150,11 +150,11 @@
         margin-top: 150px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-voice/mobile-slide-0.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-0.png) center center no-repeat;
         background-size: cover;
         height: 733px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-voice/mobile-slide-0-2x.png) center bottom no-repeat;
+          background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
           background-size: cover;
           height: 1080px;
@@ -223,11 +223,11 @@
         margin-top: -205px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-voice/mobile-slide-1-bckg-sky.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-1-bckg-sky.png) center center no-repeat;
         background-size: contain;
         height: 973px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-voice/mobile-slide-1-bckgd-sky-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-1-bckgd-sky-2x.png) center top no-repeat;
           background-size: cover;
           height: 1050px;
         }
@@ -254,7 +254,7 @@
         }
       }
       .phone-placeholder {
-        background: url(../assets/images/chapters/chapter-voice/mobile-slide-1-bckgd.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-1-bckgd.png) center center no-repeat;
         background-size: contain;
         height: 559px;
         top: 145px;
@@ -329,11 +329,11 @@
         margin-top: 30px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-voice/mobile-slide-2.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-2.png) center top no-repeat;
         background-size: contain;
         height: 579px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-voice/mobile-slide-2-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-2-2x.png) center top no-repeat;
           background-size: contain;
           height: 1238px;
         }
@@ -361,11 +361,11 @@
           top: -320px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-voice/mobile-slide-3.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
         height: 526px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-voice/mobile-slide-3-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-3-2x.png) center top no-repeat;
           background-size: contain;
           height: 1100px;
         }

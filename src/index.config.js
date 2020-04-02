@@ -210,23 +210,23 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('chapter-voice', {
-      url: '/chapter-voice',
+    .state('chapter-einstein-assistant', {
+      url: '/chapter-einstein-assistant',
       views: {
         monitor: {
-          template: require('./partials/chapter-voice/desktop.html'),
+          template: require('./partials/chapter-einstein-assistant/desktop.html'),
           controller: 'ChapterVoiceController'
         },
         drawer: {
-          template: require('./partials/chapter-voice/drawer.html'),
+          template: require('./partials/chapter-einstein-assistant/drawer.html'),
           controller: 'ChapterVoiceDrawerController'
         },
         phone: {
-          template: require('./partials/chapter-voice/phone.html'),
+          template: require('./partials/chapter-einstein-assistant/phone.html'),
           controller: 'ChapterVoicePhoneController'
         },
         mobile: {
-          template: require('./partials/chapter-voice/mobile.html'),
+          template: require('./partials/chapter-einstein-assistant/mobile.html'),
           controller: 'ChapterVoiceMobileController'
         }
       },

@@ -40,7 +40,7 @@ Mass-renames done across all files for V2 were as follows:
 * `ui-sref="heroku-connect"` => `ui-sref="chapter-builder"`
 * `ui-sref="iot-explorer"` => `ui-sref="chapter-mobile"`
 * `ui-sref="einstein-prediction-builder"` => `ui-sref="chapter-ai"`
-* `ui-sref="new-lightning-page"` => `ui-sref="chapter-voice"`
+* `ui-sref="new-lightning-page"` => `ui-sref="chapter-einstein-assistant"`
 * `ui-sref="process-builder"` => `ui-sref="chapter-customer-app"`
 * `ui-sref="process-builder"` => `ui-sref="chapter-blockchain"` (copied, not renamed)
 
