@@ -9,13 +9,16 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
   $scope.GoToStep2 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("two");
+    const astro = angular.element('#astroPeeking');
+    astro.removeClass('astro-peeking-hidden');
+    astro.addClass('astro-peeking-visible');
   };
 
   $scope.GoToStep2a = function() {
     // hide astro * 2020 UPDATE astro removed *
-    // const astro = angular.element('#astroPeeking');
-    // astro.removeClass('astro-peeking-visible');
-    // astro.addClass('astro-peeking-hidden');
+    const astro = angular.element('#astroPeeking');
+    astro.removeClass('astro-peeking-visible');
+    astro.addClass('astro-peeking-hidden');
 
     WizardHandler.wizard("phone").next();
     Steps.activate("");
@@ -40,7 +43,7 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
   };
   $scope.GoToStep5 = function() {
     WizardHandler.wizard("phone").next();
-    Steps.activate("");
+    Steps.activate("five");
   };
 
   $scope.GoToSuccess = function() {

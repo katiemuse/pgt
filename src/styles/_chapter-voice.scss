@@ -60,10 +60,19 @@
     //   bottom: 70px;
     // }
     .click-box {
-      top: 333px;
-      left: 104px;
-      width: 79px;
-      height: 32px;
+      // top: 333px;
+      // left: 104px;
+      // width: 79px;
+      // height: 32px;
+    }
+    .astro-click-area {
+      width: 150px;
+      height: 280px;
+      left: 280px;
+      bottom: -10px;
+      cursor: pointer;
+      background-color: rgba($color: #ff0000, $alpha: 0.0);
+      position: absolute;
     }
   }
   .phone-step-2a {
