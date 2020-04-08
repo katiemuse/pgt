@@ -11,7 +11,7 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
   });
   Steps.pop({
     number: 'two',
-    title: 'Click the microphone button to start a voice command.'
+    title: 'Click Astro to start a voice command.'
   });
   Steps.pop({
     number: 'three',

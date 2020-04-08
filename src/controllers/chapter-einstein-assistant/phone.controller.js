@@ -29,6 +29,10 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
     step2ImageDiv.src = newAnimategGifUrl;
   };
 
+  $scope.GoToStep2b = function() {
+    WizardHandler.wizard("phone").next();
+    Steps.activate("");
+  };
   $scope.GoToStep3 = function() {
     WizardHandler.wizard("phone").next();
     Steps.activate("three");
