@@ -76,6 +76,13 @@
     }
   }
   .phone-step-2a {
+    video {
+      position: absolute;
+      width: 992px;
+      // height: 100%;
+      top: 0;
+      left: -123%;
+    }
     .flyout {
       width: 380px;
       left: 280px;
@@ -230,6 +237,38 @@
         margin-top: -205px;
       }
       .slide-image {
+        background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-2.png) center top no-repeat;
+        background-size: contain;
+        height: 579px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-2-2x.png) center top no-repeat;
+          background-size: contain;
+          height: 1238px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1460px;
+        }
+      }
+      .transition-copy {
+        bottom: 120px;
+        @media (min-width: $screen-sm-min) {
+          bottom: 284px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 192px;
+        }
+      }
+    }
+    .slide-2 {
+      margin-top: -170px;
+      position: relative;
+      @media (min-width: $screen-sm-min) {
+        margin-top: -165px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        margin-top: -205px;
+      }
+      .slide-image {
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-slide-1-bckg-sky.png) center center no-repeat;
         background-size: contain;
         height: 973px;
@@ -326,7 +365,7 @@
         }
       }
     }
-    .slide-2 {
+    .slide-3 {
       position: relative;
       top: -280px;
       @media (min-width: $screen-sm-min) {
@@ -358,7 +397,7 @@
         }
       }
     }
-    .slide-3 {
+    .slide-4 {
       position: relative;
       top: -375px;
       @media (min-width: $screen-sm-min) {
