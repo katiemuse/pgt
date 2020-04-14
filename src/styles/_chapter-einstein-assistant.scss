@@ -7,29 +7,35 @@
   }
 
   .phone-step-0 {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-0.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/home-1.png") center center no-repeat;
   }
 
   .phone-step-1 {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-1.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/home-1.png") center center no-repeat;
   }
 
   .phone-step-2 {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-2.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/task-2.png") center center no-repeat;
   }
   .phone-step-2a {
     background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-2.png") center center no-repeat;
   }
+  .phone-step-2b {
+    background: url("../assets/images/chapters/chapter-einstein-assistant/account-3.png") center center no-repeat;
+  }
 
-  .phone-step-3a {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-3.png") center center no-repeat;
+  .phone-step-3 {
+    background: url("../assets/images/chapters/chapter-einstein-assistant/account-3.png") center center no-repeat;
   }
   .phone-step-4 {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/contact-4.png") center center no-repeat;
+  }
+  .phone-step-4a {
+    background: url("../assets/images/chapters/chapter-einstein-assistant/edit-5.png") center center no-repeat;
   }
 
   .phone-step-5 {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-3.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-einstein-assistant/done-6.png") center center no-repeat;
   }
 
   .step {
@@ -46,10 +52,10 @@
     //   background-color: rgba($color: #ff0000, $alpha: 0.0);
     // }
     .click-box {
-      top: 333px;
-      left: 104px;
-      width: 79px;
-      height: 32px;
+      top: 171px;
+      left: 24px;
+      width: 240px;
+      height: 30px;
     }
   }
 
@@ -99,19 +105,19 @@
   
   .phone-step-3 {
     .click-box {
-      top: 333px;
-      left: 104px;
-      width: 79px;
-      height: 32px;
+      top: 261px;
+      left: 23px;
+      width: 240px;
+      height: 54px;
     }
   }
   
   .phone-step-4 {
     .click-box {
-      top: 333px;
-      left: 104px;
-      width: 79px;
-      height: 32px;
+      top: 225px;
+      left: 23px;
+      width: 241px;
+      height: 54px
     }
   }
   .phone-step-4a {
@@ -124,10 +130,11 @@
 
   .phone-step-5 {
     .click-box {
-      top: 333px;
-      left: 104px;
-      width: 79px;
-      height: 32px;
+      top: 361px;
+      left: 24px;
+      width: 240px;
+      height: 25px;
+      border-radius: 15px;
     }
   }
 
