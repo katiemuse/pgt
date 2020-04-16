@@ -23,7 +23,13 @@ export default function ChapterVoicePhoneController($scope, $timeout, Steps, Wiz
     WizardHandler.wizard("phone").next();
     Steps.activate("");
     const video = $document[0].querySelector('.video-container');
+    const afterVideoImage = $document[0].querySelector('.after-video-image');
     video.play();
+    video.onended = event => {
+      event.preventDefault();
+      video.classList.add('hide');
+      afterVideoImage.classList.remove('hide');
+    };
     // const animatedGifURL = "../../assets/images/chapters/chapter-einstein-assistant/ch6-img2-animated2.gif";
     // const step2ImageDiv = $document[0].querySelector('.phone-step-2a img');
     // const randomCacheNumber = Math.round(Math.random() * 1000);

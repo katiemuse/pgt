@@ -43,14 +43,6 @@
   }
 
   .phone-step-1 {
-    // .astro-click-area {
-    //   width: 150px;
-    //   height: 280px;
-    //   left: 280px;
-    //   bottom: -10px;
-    //   cursor: pointer;
-    //   background-color: rgba($color: #ff0000, $alpha: 0.0);
-    // }
     .click-box {
       top: 171px;
       left: 24px;
@@ -60,17 +52,6 @@
   }
 
   .phone-step-2 {
-    // .flyout {
-    //   width: 380px;
-    //   left: 280px;
-    //   bottom: 70px;
-    // }
-    .click-box {
-      // top: 333px;
-      // left: 104px;
-      // width: 79px;
-      // height: 32px;
-    }
     .astro-click-area {
       width: 150px;
       height: 280px;
@@ -84,15 +65,17 @@
   .phone-step-2a {
     video {
       position: absolute;
-      width: 992px;
-      // height: 100%;
+      width: 257px;
       top: 0;
-      left: -123%;
+      left: 15px;
     }
     .flyout {
       width: 380px;
       left: 280px;
       bottom: 70px;
+    }
+    .after-video-image {
+      width: 100%;
     }
   }
   .phone-step-2b {
@@ -138,13 +121,6 @@
     }
   }
 
-  .phone-step-3 {
-    // .flyout {
-    //   width: 330px;
-    //   left: 280px;
-    //   bottom: 70px;
-    // }
-  }
   &.mobile {
     height: 100%;
     background: rgb(187,233,247);
