@@ -15,9 +15,7 @@ export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $
     phonePlaceholder.classList.add('hide');
     playButton.classList.add('hide');
     gifHolder.classList.remove('hide');
-    $log.info("video", video);
     video.play();
-    $log.info("video playing");
     video.onended = () => {
       // const animatedGifURL = "../../assets/images/chapters/chapter-einstein-assistant/ch6-img2-apng.png";
       // const gilfHolderImage = $document[0].querySelector('.container-fluid.mobile .gif-holder img');
