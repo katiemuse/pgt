@@ -19,7 +19,7 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
   });
   Steps.pop({
     number: 'four',
-    title: 'Click "Mike West" to select the correct opportunity.'
+    title: 'Click "Mike West" to select the correct contact.'
   });
   Steps.pop({
     number: 'five',
