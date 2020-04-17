@@ -40,6 +40,11 @@
 
   .step {
     background-size: contain;
+    .success {
+      p {
+        padding: 0 6%;
+      }
+    }
   }
 
   .phone-step-1 {
