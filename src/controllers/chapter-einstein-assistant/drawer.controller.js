@@ -7,7 +7,7 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
   Steps.clear();
   Steps.pop({
     number: 'one',
-    title: 'Click "Create a Reminder" to start your intelligent update.'
+    title: 'Click "Create a Task" to start your intelligent update.'
   });
   Steps.pop({
     number: 'two',
@@ -15,7 +15,7 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
   });
   Steps.pop({
     number: 'three',
-    title: 'Click "Electron Motors" to select the correct account.'
+    title: 'Click "Astro Industries" to select the correct account.'
   });
   Steps.pop({
     number: 'four',
