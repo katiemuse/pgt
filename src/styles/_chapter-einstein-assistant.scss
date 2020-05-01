@@ -148,6 +148,9 @@
       @media (min-width: $screen-sm-min) {
         margin-top: 230px;
       }
+      @media only screen and (orientation:landscape) {
+        margin-top: -80px;
+      }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: 150px;
       }
@@ -155,6 +158,9 @@
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-1.png) center center no-repeat;
         background-size: cover;
         height: 733px;
+        @media only screen and (orientation:landscape) {
+          height: 1100px;
+        }
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-1.png) center bottom no-repeat;
           background-position: center bottom;
@@ -229,6 +235,10 @@
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-2.png) center top no-repeat;
         background-size: contain;
         height: 579px;
+        @media only screen and (orientation:landscape) {
+          background-size: cover;
+          height: 888px;
+        }
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-2.png) center top no-repeat;
           background-size: contain;
@@ -252,6 +262,9 @@
     .slide-2 {
       margin-top: -170px;
       position: relative;
+      @media only screen and (orientation: landscape) {
+        margin-top: -267px;
+      }
       @media (min-width: $screen-sm-min) {
         margin-top: -165px;
       }
@@ -283,6 +296,9 @@
         top: 126px;
         z-index: 2;
         pointer-events: none;
+        @media only screen and (orientation: landscape) {
+          top: 264px;
+        }
         @media (min-width: $screen-sm-min) {
           bottom: -517px;
           height: 68%;
@@ -308,6 +324,9 @@
         left: 50.8%;
         transform: translateX(-50%);
         border-radius: 0%;
+        @media only screen and (orientation: landscape) {
+          top: 275px;
+        }
         @media (min-width: $screen-sm-min) {
           top: -95px;
           height: 100%;
@@ -330,6 +349,9 @@
         left: 52%;
         transform: translateX(-52%);
         z-index: 1;
+        @media only screen and (orientation: landscape) {
+          top: 450px;
+        }
         @media (min-width: $screen-sm-min) {
           top: 253px;
         }
@@ -366,6 +388,9 @@
       .transition-copy {
         bottom: 290px;
         z-index: 2;
+        @media only screen and (orientation: landscape) {
+          bottom: 151px;
+        }
         @media (min-width: $screen-sm-min) {
           bottom: 96px;
         }
@@ -377,6 +402,9 @@
     .slide-3 {
       position: relative;
       top: -270px;
+      @media only screen and (orientation: landscape) {
+        top: -150px;
+      }
       @media (min-width: $screen-sm-min) {
         top: -110px;
       }
@@ -387,6 +415,10 @@
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-5.png) center top no-repeat;
         background-size: contain;
         height: 579px;
+        @media only screen and (orientation: landscape) {
+          background-size: cover;
+          height: 888px;
+        }
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-5.png) center top no-repeat;
           background-size: contain;
@@ -409,6 +441,9 @@
     .slide-4 {
       position: relative;
       top: -355px;
+      @media only screen and (orientation: landscape) {
+        top: -265px;
+      }
       @media (min-width: $screen-sm-min) {
         top: -420px;
       }
@@ -419,6 +454,10 @@
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-7.png) center top no-repeat;
         background-size: contain;
         height: 526px;
+        @media only screen and (orientation: landscape) {
+          background-size: cover;
+          height: 852px;
+        }
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-7.png) center top no-repeat;
           background-size: contain;
@@ -444,6 +483,9 @@
     .slide-5 {
       position: relative;
       top: -405px;
+      @media only screen and (orientation:landscape) {
+        top: -345px;
+      }
       @media (min-width: $screen-sm-min) {
         top: -420px;
       }
@@ -457,6 +499,10 @@
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-9.png) center top no-repeat;
         background-size: contain;
         height: 526px;
+        @media only screen and (orientation:landscape) {
+          background-size: cover;
+          height: 888px;
+        }
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-9.png) center top no-repeat;
           background-size: contain;
@@ -478,6 +524,10 @@
       top: -546px;
       min-height: 370px;
       margin-bottom: -546px;
+      @media only screen and (orientation: landscape){
+        top: -448px;
+        margin-bottom: -448px;
+      }
       @media (min-width: $screen-sm-min) {
         top: -566px;
         min-height: 605px;
