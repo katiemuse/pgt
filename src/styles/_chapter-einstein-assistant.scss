@@ -255,6 +255,9 @@
       @media (min-width: $screen-sm-min) {
         margin-top: -165px;
       }
+      @media only screen and (min-width: $screen-sm-min) and (orientation: portrait) {
+        margin-top: -265px;
+      }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: -205px;
       }
@@ -285,6 +288,11 @@
           height: 68%;
           top: 100px;
         }
+        @media (min-width: $screen-sm-min) and (orientation: portrait) {
+          bottom: -517px;
+          height: 69.7%;
+          top: 79px;
+        }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           height: 80%;
         }
@@ -307,6 +315,10 @@
           transform: translateX(-50%);
           width: 48%;
         }
+        @media (min-width: $screen-sm-min) and (orientation:portrait) {
+          top: -110px;
+        }
+
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           top: -50px;
           border-radius: 10%;
@@ -321,8 +333,11 @@
         @media (min-width: $screen-sm-min) {
           top: 253px;
         }
+        @media (min-width: $screen-sm-min) and (orientation:portrait) {
+          top: 395px;
+        }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: 333px;
+          top: 483px;
         }
       }
       .gif-holder {
@@ -338,6 +353,10 @@
         }
         @media (min-width: $screen-sm-min) {
           top: 115px;
+          width: 48%;
+        }
+        @media (min-width: $screen-sm-min) and (orientation: portrait){
+          top: 94px;
           width: 48%;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
@@ -414,6 +433,12 @@
         @media (min-width: $screen-sm-min) {
           bottom: 286px;
         }
+        @media (min-width: $screen-sm-min) and (orientation: portrait){
+          bottom: 156px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          bottom: 224px;
+        }
       }
     }
     .slide-5 {
@@ -422,8 +447,11 @@
       @media (min-width: $screen-sm-min) {
         top: -420px;
       }
+      @media only screen and (min-width: $screen-sm-min) and (orientation:portrait) {
+        top: -575px;
+      }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -320px;
+          top: -570px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-9.png) center top no-repeat;
@@ -454,10 +482,16 @@
         top: -566px;
         min-height: 605px;
         margin-bottom: -566px;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -558px;
-          min-height: 525px;
-        }
+      }
+      @media only screen and (min-width: $screen-sm-min) and (orientation: portrait) {
+        top: -721px;
+        min-height: 605px;
+        margin-bottom: -721px;
+      }
+      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        top: -793px;
+        min-height: 525px;
+        margin-bottom: -793px;
       }
       .confetti-container {
         .content-container{
