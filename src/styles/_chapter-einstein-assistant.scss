@@ -231,7 +231,7 @@
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-2.png) center top no-repeat;
-        background-size: contain;
+        background-size: cover;
         height: 590px;
         @media only screen and (orientation:landscape) {
           background-size: cover;
@@ -247,7 +247,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        bottom: 77px;
         padding: 40px 43px;
         @media (min-width: $screen-sm-min) {
           bottom: 284px;
@@ -258,7 +258,7 @@
       }
     }
     .slide-2 {
-      margin-top: -170px;
+      margin-top: -140px;
       position: relative;
       @media only screen and (orientation: landscape) {
         margin-top: -267px;
@@ -411,7 +411,7 @@
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-5.png) center top no-repeat;
-        background-size: contain;
+        background-size: cover;
         height: 590px;
         @media only screen and (orientation: landscape) {
           background-size: cover;
@@ -427,7 +427,7 @@
         }
       }
       .transition-copy {
-        bottom: 103px;
+        bottom: 77px;
         @media (min-width: $screen-sm-min) {
           bottom: 284px;
         }
@@ -451,7 +451,7 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-7.png) center top no-repeat;
         background-size: cover;
-        height: 554px;
+        height: 590px;
         @media only screen and (orientation: landscape) {
           background-size: cover;
           height: 852px;
@@ -466,7 +466,7 @@
         }
       }
       .transition-copy {
-        bottom: 67px;
+        bottom: 77px;
         @media (min-width: $screen-sm-min) {
           bottom: 286px;
         }
@@ -519,9 +519,9 @@
     }
     .success {
       position: relative;
-      top: -546px;
+      top: -518px;
       min-height: 370px;
-      margin-bottom: -546px;
+      margin-bottom: -518px;
       @media only screen and (orientation: landscape){
         top: -448px;
         margin-bottom: -448px;
