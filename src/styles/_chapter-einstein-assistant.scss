@@ -17,9 +17,7 @@
   .phone-step-2 {
     background: url("../assets/images/chapters/chapter-einstein-assistant/task-2.jpg") center center no-repeat;
   }
-  .phone-step-2a {
-    background: url("../assets/images/chapters/chapter-einstein-assistant/phone-bkg-2.png") center center no-repeat;
-  }
+  
   .phone-step-2b {
     background: url("../assets/images/chapters/chapter-einstein-assistant/account-3.jpg") center center no-repeat;
   }
@@ -497,8 +495,8 @@
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-einstein-assistant/mobile-screen-9.png) center top no-repeat;
-        background-size: contain;
-        height: 526px;
+        background-size: cover;
+        height: 560px;
         @media only screen and (orientation:landscape) {
           background-size: cover;
           height: 888px;
