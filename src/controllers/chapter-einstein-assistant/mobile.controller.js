@@ -1,5 +1,5 @@
 'use strict';
-export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $document, $log) {
+export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $document) {
   const mobileContainer = $document[0].querySelector('.container-fluid.main.mobile');
   const phonePlaceholder = $document[0].querySelector('.phone-placeholder');
   const playButton = $document[0].querySelector('.play-button');
@@ -15,6 +15,7 @@ export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $
     phonePlaceholder.classList.add('hide');
     playButton.classList.add('hide');
     gifHolder.classList.remove('hide');
+    video.playbackRate = 1.5;
     video.play();
     video.onended = () => {
       // const animatedGifURL = "../../assets/images/chapters/chapter-einstein-assistant/ch6-img2-apng.png";
@@ -22,7 +23,6 @@ export default function ChapterVoiceMobileController($scope, TopNavbar, Steps, $
       // const randomCacheNumber = Math.round(Math.random() * 1000);
       // const newAnimategGifUrl = animatedGifURL + "?x=" + randomCacheNumber;
       // gilfHolderImage.src = newAnimategGifUrl;
-      $log.info("video ended");
       phonePlaceholder.classList.remove('hide');
       playButton.classList.remove('hide');
       gifHolder.classList.add('hide');
