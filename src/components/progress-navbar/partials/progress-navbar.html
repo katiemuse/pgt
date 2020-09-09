@@ -21,9 +21,9 @@
     <li ui-sref-active="active"><a ui-sref="chapter-builder" ng-click="resetStep('chapter-builder')"><span progress-state-class="3">Builder</span></a></li>
     <li ui-sref-active="active"><a ui-sref="chapter-mobile" ng-click="resetStep('chapter-mobile')"><span progress-state-class="4">Mobile</span></a></li>
     <li ui-sref-active="active"><a ui-sref="chapter-ai" ng-click="resetStep('chapter-ai')"><span  progress-state-class="5">AI</span></a></li>
-    <li ui-sref-active="active"><a ui-sref="chapter-voice" ng-click="resetStep('chapter-voice')"><span progress-state-class="6">Voice</span></a></li>
+<!--    <li ui-sref-active="active"><a ui-sref="chapter-voice" ng-click="resetStep('chapter-voice')"><span progress-state-class="6">Voice</span></a></li>-->
     <li ui-sref-active="active"><a ui-sref="chapter-customer-app" ng-click="resetStep('chapter-customer-app')"><span progress-state-class="7">Customer App</span></a></li>
-    <li ui-sref-active="active"><a ui-sref="chapter-blockchain" ng-click="resetStep('chapter-blockchain')"><span progress-state-class="8">Blockchain</span></a></li>
+<!--    <li ui-sref-active="active"><a ui-sref="chapter-blockchain" ng-click="resetStep('chapter-blockchain')"><span progress-state-class="8">Blockchain</span></a></li>-->
     <!--<li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-class="5"></span></a></li>-->
   </ul>
   <ul class="nav nav-stacked progress-navbar inverted" ng-class="{'active':progress.open}">
@@ -46,9 +46,9 @@
     <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="chapter-builder"><span progress-state-inverted-class="3"></span><span class="label">Builder</span></a></li>
     <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="chapter-mobile"><span progress-state-inverted-class="4"></span><span class="label">Mobile</span></a></li>
     <li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="chapter-ai"><span progress-state-inverted-class="5"></span><span class="label">AI</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="chapter-voice"><span progress-state-inverted-class="6"></span><span class="label">Voice</span></a></li>
+<!--    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="chapter-voice"><span progress-state-inverted-class="6"></span><span class="label">Voice</span></a></li>-->
     <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="chapter-customer-app"><span progress-state-inverted-class="7"></span><span class="label">Customer App</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="chapter-blockchain"><span progress-state-inverted-class="8"></span><span class="label">Blockchain</span></a></li>
+<!--    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="chapter-blockchain"><span progress-state-inverted-class="8"></span><span class="label">Blockchain</span></a></li>-->
     <li class="text-center"><a id="start-over" class="btn btn-rounded btn-blue" href="#" ng-click="progress.startOver($event)">Start Over</a></li>
     <li class="text-center">&nbsp;</li>
     <li class="text-center skip-links"><a href="#" class="skip" ng-click="progress.skipToPreviousTask($event)" ng-show="$root.canSkipPrevious"><span class="salesforce-icon icon-sfdc-icon-right-arrow" aria-hidden="true"></span> Go to Previous Task</a> <span class="divider" ng-show="$root.canSkipPrevious && $root.canSkip"> | </span> <a href="#" class="skip" ng-click="progress.skipToNextTask($event)" ng-show="$root.canSkip">Skip to Next Task <span class="salesforce-icon icon-sfdc-icon-left-arrow" aria-hidden="true"></span></a></li>
