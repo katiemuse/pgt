@@ -9,7 +9,7 @@
   }
 
   .recap-1 {
-    background: url("../assets/images/chapters/outro/recap-1-new.jpg")
+    background: url("../assets/images/chapters/outro/recap-1-new.png")
       center center no-repeat;
     background-size: contain;
   }
@@ -38,7 +38,7 @@
     .recap-buttons {
       left: 50%;
       transform: translateX(-50%);
-      bottom: 330px;   
+      bottom: 330px;
       .text {
         color: #000000;
         text-transform: uppercase;
@@ -159,7 +159,7 @@
       position: relative;
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: -30px;
-      } 
+      }
       .slide-image {
         background: url(../assets/images/chapters/outro/mobile-outro-1.png) center center no-repeat;
         background-size: cover;
@@ -199,8 +199,8 @@
 
         }
       }
-      
+
     }
-    
+
   }
 }
