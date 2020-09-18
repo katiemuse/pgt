@@ -151,7 +151,7 @@ nav.top-navbar {
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
         top: -15px;
       }
-      
+
       .navbar-header {
         margin-right: 0;
         margin-left: 0;
@@ -164,7 +164,7 @@ nav.top-navbar {
         padding: 15px;
         height: 70px;
         .logo {
-          background-image: url(../../../assets/images/logos/2017-sf-customer-360-platform-logo-rgb.png);
+          background-image: url(../../../assets/images/logos/salesforce-platform-logo.svg);
           width: 143px;
           height: 55px;
           display: block;
@@ -174,7 +174,7 @@ nav.top-navbar {
             only screen and (-o-min-device-pixel-ratio: 1.3 / 1),
             only screen and (min-resolution: 125dpi),
             only screen and (min-resolution: 1.3dppx) {
-            background-image: url(../../../assets/images/logos/2017-sf-customer-360-platform-logo-rgb@2x.png);
+            background-image: url(../../../assets/images/logos/salesforce-platform-logo.svg);
             background-size: contain;
             width: 163px;
           }

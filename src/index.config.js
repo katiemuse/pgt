@@ -162,30 +162,54 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         resetState(TopNavbar, Hotspots);
       }
     })
-    .state('chapter-blockchain', {
-      url: '/chapter-blockchain',
-      views: {
-        monitor: {
-          template: require('./partials/chapter-blockchain/desktop.html'),
-          controller: 'ChapterBlockchainController'
-        },
-        drawer: {
-          template: require('./partials/chapter-blockchain/drawer.html'),
-          controller: 'ChapterBlockchainDrawerController'
-        },
-        phone: {
-          template: require('./partials/chapter-blockchain/phone.html'),
-          controller: 'ChapterBlockchainPhoneController'
-        },
-        mobile: {
-          template: require('./partials/chapter-blockchain/mobile.html'),
-          controller: 'ChapterBlockchainMobileController'
-        }
-      },
-      onEnter(TopNavbar, Hotspots) {
-        resetState(TopNavbar, Hotspots);
-      }
-    })
+    // .state('chapter-blockchain', {
+    //   url: '/chapter-blockchain',
+    //   views: {
+    //     monitor: {
+    //       template: require('./partials/chapter-blockchain/desktop.html'),
+    //       controller: 'ChapterBlockchainController'
+    //     },
+    //     drawer: {
+    //       template: require('./partials/chapter-blockchain/drawer.html'),
+    //       controller: 'ChapterBlockchainDrawerController'
+    //     },
+    //     phone: {
+    //       template: require('./partials/chapter-blockchain/phone.html'),
+    //       controller: 'ChapterBlockchainPhoneController'
+    //     },
+    //     mobile: {
+    //       template: require('./partials/chapter-blockchain/mobile.html'),
+    //       controller: 'ChapterBlockchainMobileController'
+    //     }
+    //   },
+    //   onEnter(TopNavbar, Hotspots) {
+    //     resetState(TopNavbar, Hotspots);
+    //   }
+    // })
+    // .state('chapter-voice', {
+    //   url: '/chapter-voice',
+    //   views: {
+    //     monitor: {
+    //       template: require('./partials/chapter-voice/desktop.html'),
+    //       controller: 'ChapterVoiceController'
+    //     },
+    //     drawer: {
+    //       template: require('./partials/chapter-voice/drawer.html'),
+    //       controller: 'ChapterVoiceDrawerController'
+    //     },
+    //     phone: {
+    //       template: require('./partials/chapter-voice/phone.html'),
+    //       controller: 'ChapterVoicePhoneController'
+    //     },
+    //     mobile: {
+    //       template: require('./partials/chapter-voice/mobile.html'),
+    //       controller: 'ChapterVoiceMobileController'
+    //     }
+    //   },
+    //   onEnter(TopNavbar, Hotspots) {
+    //     resetState(TopNavbar, Hotspots);
+    //   }
+    // })
     .state('chapter-mobile', {
       url: '/chapter-mobile',
       views: {
@@ -204,30 +228,6 @@ export default function ($stateProvider, $urlRouterProvider, $provide) {
         mobile: {
           template: require('./partials/chapter-mobile/mobile.html'),
           controller: 'ChapterMobileMobileController'
-        }
-      },
-      onEnter(TopNavbar, Hotspots) {
-        resetState(TopNavbar, Hotspots);
-      }
-    })
-    .state('chapter-voice', {
-      url: '/chapter-voice',
-      views: {
-        monitor: {
-          template: require('./partials/chapter-voice/desktop.html'),
-          controller: 'ChapterVoiceController'
-        },
-        drawer: {
-          template: require('./partials/chapter-voice/drawer.html'),
-          controller: 'ChapterVoiceDrawerController'
-        },
-        phone: {
-          template: require('./partials/chapter-voice/phone.html'),
-          controller: 'ChapterVoicePhoneController'
-        },
-        mobile: {
-          template: require('./partials/chapter-voice/mobile.html'),
-          controller: 'ChapterVoiceMobileController'
         }
       },
       onEnter(TopNavbar, Hotspots) {
