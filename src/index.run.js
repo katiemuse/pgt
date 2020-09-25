@@ -8,9 +8,7 @@ export default function run(
   $log,
   Drawer,
   $transitions,
-  WizardHandler,
-  $window,
-  $location
+  WizardHandler
 ) {
   $rootScope.$state = $state;
   $rootScope.allowJumpingStories = true;
@@ -88,7 +86,7 @@ export default function run(
       _.values($rootScope.progressStates[$rootScope.progressIndex]).length;
     $rootScope.canSkipPrevious = $rootScope.taskIndex - 1 >= 0;
     $rootScope.showMobilePopout = false;
-    $window.gtag('config', 'UA-142664671-2', { page_path: $location.url() });
+    // $window.gtag('config', 'UA-142664671-2', { page_path: $location.url() });
   });
 
   $rootScope.$on('$destroy', () => {
