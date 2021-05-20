@@ -31,9 +31,8 @@ function oneTrust() {
   const fileFilter = filter(file => file.stat.isFile());
 
   return gulp.src([
-    path.join(`${conf.paths.src}`, '/oneTrust/79a259f2-a572-43a3-997e-57ccda252e80.js'),
     path.join(`${conf.paths.src}`, '/oneTrust/jquery.min.js'),
-    path.join(`${conf.paths.src}`, '/oneTrust/salesforce.js'),
+    path.join(`${conf.paths.src}`, '/oneTrust/onetrust.js'),
     path.join(`${conf.paths.src}`, '/oneTrust/**/*')
   ])
     .pipe(fileFilter)
