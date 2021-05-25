@@ -74,3 +74,30 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'SalesforceSansRegular';
+  src: url('../fonts/SalesforceSans-Regular.eot'),
+  url('../fonts/SalesforceSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SalesforceSans-Regular.woff') format('woff'),
+  url('../fonts/SalesforceSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SalesforceSansBold';
+  src: url('../fonts/SalesforceSans-Bold.eot'),
+  url('../fonts/SalesforceSans-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SalesforceSans-Bold.woff') format('woff'),
+  url('../fonts/SalesforceSans-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SalesforceSansLight';
+  src: url('../fonts/SalesforceSans-Light.eot'),
+  url('../fonts/SalesforceSans-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/SalesforceSans-Light.woff') format('woff'),
+  url('../fonts/SalesforceSans-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
