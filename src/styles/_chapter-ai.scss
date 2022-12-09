@@ -3,11 +3,11 @@
 .chapter-ai {
 
   .step-0, .step-1{
-    background: url('../assets/images/chapters/chapter-ai/step1.png') center center no-repeat;
+    background: url('../assets/images/chapters/chapter-ai/step1.jpg') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../assets/images/chapters/chapter-ai/step2.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-ai/step2.jpg') center top no-repeat;
   }
 
   .step-3 {
@@ -39,6 +39,7 @@
   }
   .step {
     background-size: contain;
+    border-radius: 10px;
   }
   .step-1 {
     .prediction-drag {

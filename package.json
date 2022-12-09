@@ -87,8 +87,7 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "format": "prettier --write src/**/*.{js,scss}",
-    "postinstall": "gulp"
+    "format": "prettier --write src/**/*.{js,scss}"
   },
   "eslintConfig": {
     "globals": {
