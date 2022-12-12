@@ -101,9 +101,9 @@
         top: -50px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0.png) center bottom no-repeat;
         background-size: contain;
-        height: 870px;
+        height: 1020px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-silde-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
@@ -163,9 +163,9 @@
     }
     .slide-1 {
       position: relative;
-      
+
       @media (min-width: $screen-sm-min) {
-        
+
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1.png) center center no-repeat;
@@ -253,7 +253,7 @@
       position: relative;
       margin-top: -30px;
       @media (min-width: $screen-sm-min) {
-        
+
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-2.png) center center no-repeat;

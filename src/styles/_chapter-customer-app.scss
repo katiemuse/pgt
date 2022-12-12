@@ -33,7 +33,7 @@
       right: 9px;
       width: 47px;
       height: 26px;
-    }    
+    }
   }
   .step-2 {
     .click-box {
@@ -41,7 +41,7 @@
       right: 238px;
       width: 159px;
       height: 29px;
-    }    
+    }
   }
 
   .step-3 {
@@ -50,7 +50,7 @@
       left: 183px;
       width: 90px;
       height: 15px;
-    }    
+    }
   }
 
   .step-4 {
@@ -59,7 +59,7 @@
       right: 181px;
       width: 68px;
       height: 19px;
-    }    
+    }
   }
   &.mobile {
     height: 100%;
@@ -88,7 +88,7 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0.png) center center no-repeat;
         background-size: cover;
-        height: 694px;
+        height: 964px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
@@ -153,7 +153,7 @@
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: -150px;
-      } 
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-1.png) center center no-repeat;
         background-size: contain;
@@ -211,7 +211,7 @@
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         top: -452px;
-      }      
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
