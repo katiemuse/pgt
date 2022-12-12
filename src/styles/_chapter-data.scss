@@ -6,7 +6,7 @@
     background: url('../assets/images/chapters/chapter-data/screen-bkg-1.png') center center no-repeat;
   }
   .step-2 {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-2.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-2.jpg') center top no-repeat;
   }
   .step-2a,
   .step-3 {
@@ -16,10 +16,10 @@
     background: url('../assets/images/chapters/chapter-data/screen-bkg-3a.png') center top no-repeat;
   }
   .step-4 {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-4.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4.jpg') center top no-repeat;
   }
   .step-4a {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-4a.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4a.jpg') center top no-repeat;
   }
   .step-4b,
   .step-5 {
@@ -232,7 +232,7 @@
         background-size: cover;
         height: 450px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-4-2x.png) center bottom no-repeat;
+          background: url(../assets/images/chapters/chapter-data/chapter-data-4.png) center bottom no-repeat;
           background-size: cover;
           height: 850px;
         }
@@ -293,7 +293,7 @@
 
 // footer fixes
 #chapter-data {
-  
+
   // -webkit-overflow-scrolling: touch;
   // .main.mobile {
   //   height: 100%;

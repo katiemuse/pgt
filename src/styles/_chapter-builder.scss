@@ -2,12 +2,12 @@
 
 .chapter-builder {
   .step-0, .step-1, .step-1a {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.png")
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.jpg")
       center center no-repeat;
   }
 
   .step-2 {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-2.png")
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-2.jpg")
       center center no-repeat;
   }
 
@@ -52,7 +52,7 @@
   }
   &.mobile {
     background: rgb(187,233,247);
-    
+
     .slide-image {
       position: relative;
       background-size: cover;
@@ -79,7 +79,7 @@
         top: -50px;
         @media (min-width: $screen-sm-min) {
           background-position: center bottom;
-          background: url(../assets/images/chapters/chapter-builder/builder-slide-0-2x.png) center bottom no-repeat;
+          background: url(../assets/images/chapters/chapter-builder/builder-slide-0.png) center bottom no-repeat;
           background-size: cover;
           height: 1330px;
           top: 0;
@@ -156,7 +156,7 @@
         height: 700px;
         @media (min-width: $screen-sm-min) {
           background-position: center bottom;
-          background: url(../assets/images/chapters/chapter-builder/builder-slide-1-2x.png) center center no-repeat;
+          background: url(../assets/images/chapters/chapter-builder/builder-slide-1.png) center center no-repeat;
           background-size: cover;
           height: 935px;
           top: 70px;
@@ -172,7 +172,7 @@
         }
       }
     }
-    
+
     .success {
       position: relative;
       top: -259px;

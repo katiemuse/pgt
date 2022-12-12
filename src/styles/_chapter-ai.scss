@@ -3,11 +3,11 @@
 .chapter-ai {
 
   .step-0, .step-1{
-    background: url('../assets/images/chapters/chapter-ai/step1.png') center center no-repeat;
+    background: url('../assets/images/chapters/chapter-ai/step1.jpg') center center no-repeat;
   }
 
   .step-2 {
-    background: url('../assets/images/chapters/chapter-ai/step2.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-ai/step2.jpg') center top no-repeat;
   }
 
   .step-3 {
@@ -15,7 +15,7 @@
   }
 
   .phone-step-2a  {
-    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.jpg") center center no-repeat;
 
     .flyout {
       width: 309px;
@@ -25,20 +25,21 @@
   }
 
   .phone-step-3  {
-    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.jpg") center center no-repeat;
   }
 
   .phone-step-4  {
-    background: url("../assets/images/chapters/chapter-ai/step4-mobile.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-ai/step4-mobile.jpg") center center no-repeat;
 
     .flyout {
       width: 309px;
       left: 280px;
       bottom: 70px;
-    }    
+    }
   }
   .step {
     background-size: contain;
+    border-radius: 10px;
   }
   .step-1 {
     .prediction-drag {
@@ -59,7 +60,7 @@
       width: 200px;
       height: 13px;
     }
-  }  
+  }
 
   .step-2 {
     .click-box {
@@ -76,7 +77,7 @@
       left: 25px;
       width: 79px;
       height: 32px;
-    }    
+    }
   }
   &.mobile {
     background: rgb(187,233,247);
@@ -106,9 +107,9 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-ai/mobile-slide-0.png) center center no-repeat;
         background-size: cover;
-        height: 733px;
+        height: 863px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-ai/mobile-slide-0-2x.png) center center no-repeat;
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-0.png) center center no-repeat;
           background-position: center bottom;
           height: 1390px;
           background-size: cover;
@@ -177,7 +178,7 @@
         background-size: contain;
         height: 560px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-ai/mobile-slide-1-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-1.png) center top no-repeat;
           background-size: contain;
           height: 1153px;
         }
@@ -206,7 +207,7 @@
         background-size: contain;
         height: 579px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-ai/mobile-slide-2-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-2.png) center top no-repeat;
           background-size: contain;
           height: 1238px;
         }
@@ -239,7 +240,7 @@
         background-size: contain;
         height: 562px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-ai/mobile-slide-3-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-3.png) center top no-repeat;
           background-size: cover;
           height: 1090px;
         }
@@ -272,7 +273,7 @@
         background-size: contain;
         height: 562px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-ai/mobile-slide-4-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-4.png) center top no-repeat;
           background-size: cover;
           height: 1090px;
         }
@@ -306,7 +307,7 @@
         background-size: contain;
         height: 579px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-ai/mobile-slide-5-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-ai/mobile-slide-5.png) center top no-repeat;
           background-size: cover;
           height: 1090px;
         }
@@ -341,7 +342,7 @@
             min-height: 560px;
           }
         }
-      } 
+      }
     }
     .transition-copy {
       background-color: #00315a;

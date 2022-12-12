@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "8.15.1"
+    "node": "15.11.0"
   },
   "dependencies": {
     "angular": "^1.6.2",
@@ -87,8 +87,7 @@
     "serve:dist": "gulp serve:dist",
     "test": "gulp test",
     "test:auto": "gulp test:auto",
-    "format": "prettier --write src/**/*.{js,scss}",
-    "postinstall": "gulp"
+    "format": "prettier --write src/**/*.{js,scss}"
   },
   "eslintConfig": {
     "globals": {

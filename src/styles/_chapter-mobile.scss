@@ -15,6 +15,11 @@
 
   .step {
     background-size: contain;
+    border-radius: 10px;
+  }
+
+  #step-1-video {
+    border-radius: 10px;
   }
 
   .phone-step-2 {
@@ -87,7 +92,7 @@
           height: 1000px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          
+
           background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
           background-size: cover;
           height: 980px;
@@ -112,7 +117,7 @@
       .phone-placeholder {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-placeholder.png) center center no-repeat;
         background-size: contain;
-        height: 559px;
+        height: 574px;
         top: 285px;
         position: absolute;
         width: 100%;
@@ -147,6 +152,7 @@
         top: 285px;
         left: 51%;
         transform: translateX(-50%);
+        border-radius: 10px;
         @media (min-width: $screen-sm-min) {
           top: initial;
           bottom: 305px;
@@ -233,7 +239,7 @@
           height: 1069px;
           background-position: 50% 100px;
         }
-        
+
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
           height: 970px;
@@ -256,12 +262,12 @@
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           bottom: -20px;
         }
-        
+
       }
       .phone-placeholder {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-1.png) center center no-repeat;
         background-size: contain;
-        height: 559px;
+        height: 574px;
         top: 22px;
         position: absolute;
         width: 100%;
@@ -284,7 +290,7 @@
         }
       }
     }
-    
+
     .success {
       position: relative;
       top: -242px;
