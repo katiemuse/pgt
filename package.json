@@ -1,6 +1,6 @@
 {
   "engines": {
-    "node": "8.15.1"
+    "node": "15.11.0"
   },
   "dependencies": {
     "angular": "^1.6.2",

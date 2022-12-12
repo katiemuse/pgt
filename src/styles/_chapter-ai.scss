@@ -15,7 +15,7 @@
   }
 
   .phone-step-2a  {
-    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.jpg") center center no-repeat;
 
     .flyout {
       width: 309px;
@@ -25,17 +25,17 @@
   }
 
   .phone-step-3  {
-    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-ai/step2a-mobile.jpg") center center no-repeat;
   }
 
   .phone-step-4  {
-    background: url("../assets/images/chapters/chapter-ai/step4-mobile.png") center center no-repeat;
+    background: url("../assets/images/chapters/chapter-ai/step4-mobile.jpg") center center no-repeat;
 
     .flyout {
       width: 309px;
       left: 280px;
       bottom: 70px;
-    }    
+    }
   }
   .step {
     background-size: contain;
@@ -60,7 +60,7 @@
       width: 200px;
       height: 13px;
     }
-  }  
+  }
 
   .step-2 {
     .click-box {
@@ -77,7 +77,7 @@
       left: 25px;
       width: 79px;
       height: 32px;
-    }    
+    }
   }
   &.mobile {
     background: rgb(187,233,247);
@@ -342,7 +342,7 @@
             min-height: 560px;
           }
         }
-      } 
+      }
     }
     .transition-copy {
       background-color: #00315a;
