@@ -34,7 +34,7 @@ export default function ChapterDataDrawerController($scope, WizardHandler, TopNa
 
     Steps.pop({
       number: 'five',
-      title: 'Click &ldquo;Add Sources&rdquo; to easily add data from another system.'
+      title: 'Click &ldquo;Marketing Cloud&rdquo; to add a new data source.'
     });
 
     Hotspots.clear();

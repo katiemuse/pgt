@@ -51,6 +51,11 @@ export default function ChapterDataController($scope, Steps, Hotspots, WizardHan
     Steps.activate("");
   };
 
+  $scope.GoToStep5B = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
   $scope.GoToSuccess = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("six");

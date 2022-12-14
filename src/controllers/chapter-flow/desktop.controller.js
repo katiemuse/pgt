@@ -36,6 +36,21 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
     Steps.activate("four");
   };
 
+  $scope.goToStep5 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.goToStep6 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.goToStep7 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
   $scope.goToSuccess = function() {
     Steps.clear();
     WizardHandler.wizard("monitor").next();

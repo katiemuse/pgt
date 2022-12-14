@@ -28,6 +28,9 @@
   .step-5a {
     background: url('../assets/images/chapters/chapter-data/screen-bkg-5a.png') center top no-repeat;
   }
+  .step-5b {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-5b.png') center top no-repeat;
+  }
   .step {
     background-size: contain;
   }
@@ -70,10 +73,10 @@
 
   .step-5 {
     .click-box {
-      top: 374px;
-      left: 486px;
-      width: 72px;
-      height: 22px;
+      top: 134px;
+      left: 63px;
+      width: 176px;
+      height: 70px;
     }
   }
   &.mobile {
