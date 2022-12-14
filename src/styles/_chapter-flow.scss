@@ -15,7 +15,7 @@
     background: url('../assets/images/chapters/chapter-flow/screen-bkg-4.png') center top no-repeat;
   }
   .step-5 {
-    background: url('../assets/images/chapters/chapter-flow/screen-bkg-5.jpg') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-5.png') center top no-repeat;
   }
   .step-6 {
     background: url('../assets/images/chapters/chapter-flow/screen-bkg-6.jpg') center top no-repeat;
@@ -30,10 +30,10 @@
 
   .step-1 {
     .click-box {
-      top: 80px;
-      left: 574px;
-      width: 90px;
-      height: 80px;
+      top: 202px;
+      left: 381px;
+      width: 93px;
+      height: 24px;
     }
   }
 
@@ -41,11 +41,11 @@
     .currency-drag {
       position: absolute !important;
       bottom: 261px;
-      left: 6px;
+      left: 48px;
       border-radius: 4px;
       -webkit-user-select:none;
       -webkit-touch-callout:none;
-      width: 150px;
+      width: 90px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: move;
@@ -66,21 +66,21 @@
 
     .currency-label {
       position: absolute;
-      left: 586px;
-      top: 111px;
-      width: 192px !important;
+      left: 603px;
+      top: 110px;
+      width: 139px !important;
       opacity: 1;
-      font-size: 10px;
+      font-size: 7px;
       border-radius: 3px !important;
-      height: 26px !important;
+      height: 16px !important;
     }
   }
   .step-4 {
     .click-box {
-      top: 388px;
-      left: 730px;
-      width: 47px;
-      height: 25px;
+      top: 412px;
+      left: 708px;
+      width: 31px;
+      height: 15px;
     }
   }
   &.mobile {
