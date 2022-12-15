@@ -205,11 +205,11 @@
         top: -60px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-3.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-data/chapter-data-3-mobile.png) center top no-repeat;
         background-size: cover;
         height: 450px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-3-2x.png) center top no-repeat;
+          background: url(../assets/images/chapters/chapter-data/chapter-data-3-mobile.png) center top no-repeat;
           background-size: cover;
           height: 868px;
         }
@@ -231,11 +231,34 @@
         // top: -840px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-4.png) center top no-repeat;
+        background: url(../assets/images/chapters/chapter-data/chapter-data-4-mobile.png) center top no-repeat;
         background-size: cover;
         height: 450px;
         @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-4.png) center bottom no-repeat;
+          background: url(../assets/images/chapters/chapter-data/chapter-data-4-mobile.png) center bottom no-repeat;
+          background-size: cover;
+          height: 850px;
+        }
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+          height: 1156px;
+        }
+      }
+      .transition-copy {
+        bottom: 103px;
+      }
+    }
+    .slide-5 {
+      // position: relative;
+      // top: -270px;
+      @media (min-width: $screen-sm-min) {
+        // top: -840px;
+      }
+      .slide-image {
+        background: url(../assets/images/chapters/chapter-data/chapter-data-5-mobile.png) center top no-repeat;
+        background-size: cover;
+        height: 450px;
+        @media (min-width: $screen-sm-min) {
+          background: url(../assets/images/chapters/chapter-data/chapter-data-5-mobile.png) center bottom no-repeat;
           background-size: cover;
           height: 850px;
         }
