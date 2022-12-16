@@ -86,9 +86,9 @@
         margin-top: 280px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0.png) center center no-repeat;
-        background-size: cover;
-        height: 964px;
+        background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0.png) center bottom no-repeat;
+        background-size: contain;
+        height: 810px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-customer-app/mobile-slide-0-2x.png) center bottom no-repeat;
           background-position: center bottom;
@@ -140,7 +140,7 @@
         }
       }
       .transition-copy {
-        bottom: 13px;
+        bottom: 16px;
         @media (min-width: $screen-sm-min) {
           bottom: 103px;
         }

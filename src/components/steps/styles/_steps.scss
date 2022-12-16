@@ -454,6 +454,7 @@ button.step-close-button {
           }
           .btn {
             background-color: rgb(227, 115, 36);
+            width: fit-content;
             @media (min-width: $screen-sm-min) {
               padding: 20px 30px;
               font-size: 18px;
