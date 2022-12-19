@@ -120,8 +120,11 @@
         height: 574px;
         top: 285px;
         position: absolute;
-        width: 100%;
         z-index: 1;
+        width: 272px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 40px;
         @media (min-width: $screen-sm-min) {
           top: initial;
           height: 560px;
@@ -150,11 +153,11 @@
         position: absolute;
         z-index: 0;
         top: 285px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 10px;
         width: 262px;
         height: auto;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 40px;
         @media (min-width: $screen-sm-min) {
           top: initial;
           bottom: 305px;
@@ -272,8 +275,11 @@
         height: 574px;
         top: 22px;
         position: absolute;
-        width: 100%;
         z-index: 1;
+        width: 272px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 40px;
         @media (min-width: $screen-sm-min) {
           top: initial;
           height: 560px;
