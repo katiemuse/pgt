@@ -38,7 +38,7 @@
 
     height: $phone-height;
     width: $phone-width;
-    margin-left: 15px;    
+    margin-left: 15px;
 
     > section {
       height: $phone-height;
@@ -47,6 +47,7 @@
       > .step {
         height: $phone-height;
         width: $phone-width;
+        border-radius: 10px;
       }
     }
   }
