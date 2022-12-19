@@ -30,7 +30,7 @@
 
   .step-1 {
     .click-box {
-      top: 202px;
+      top: 184px;
       left: 381px;
       width: 93px;
       height: 24px;
@@ -40,7 +40,7 @@
   .step-2 {
     .currency-drag {
       position: absolute !important;
-      bottom: 261px;
+      bottom: 251px;
       left: 48px;
       border-radius: 4px;
       -webkit-user-select:none;
@@ -52,7 +52,7 @@
       }
     }
     .drop-box {
-      top: 61px;
+      top: 78px;
       left: 165px;
       width: 403px;
       height: 25px;
@@ -67,7 +67,7 @@
     .currency-label {
       position: absolute;
       left: 603px;
-      top: 110px;
+      top: 122px;
       width: 139px !important;
       opacity: 1;
       font-size: 7px;
@@ -77,7 +77,7 @@
   }
   .step-4 {
     .click-box {
-      top: 412px;
+      top: 424px;
       left: 708px;
       width: 31px;
       height: 15px;
@@ -85,7 +85,7 @@
   }
   .step-5 {
     .click-box {
-      top: 330px;
+      top: 311px;
       left: 293px;
       width: 103px;
       height: 23px;
@@ -172,7 +172,7 @@
         }
       }
       .transition-copy {
-        bottom: 72px;
+        bottom: 74px;
         @media (min-width: $screen-sm-min) {
           bottom: 103px;
         }
