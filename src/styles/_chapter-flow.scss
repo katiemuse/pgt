@@ -84,11 +84,14 @@
     }
   }
   .step-5 {
-    .click-box {
-      top: 311px;
-      left: 293px;
-      width: 103px;
-      height: 23px;
+    .highlight {
+      position: absolute;
+      border: 2px solid $color-marketing-cloud-orange;
+      top: 307px;
+      left: 287px;
+      width: 112px;
+      height: 32px;
+      border-radius: 5px;
     }
   }
   &.mobile {
