@@ -2,6 +2,7 @@
 /* Fonts */
 $proximanova: 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
 $salesforcesans:  SalesforceSans, 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
+$avantgarde: 'AvantGardeDemi', 'SalesforceSans', 'ProximaNova', 'VAG Rounded W01 Light', Futura, "Trebuchet MS", Arial, sans-serif;
 $font-family-sans-serif: $salesforcesans;
 
 /* Screen Sizes */
@@ -46,7 +47,7 @@ $color-background-gray: #cccccc;
 $color-background-gray-medium: #F7F7F7;
 $color-background-black: #000000;
 $color-background-white: #ffffff;
-$color-background-flyout: #e67300;
+$color-background-flyout: #321d71;
 
 /* Text Colors */
 $text-color-white: #ffffff;
@@ -54,7 +55,7 @@ $mobile-text-color-gray: #333333;
 $color-text-grey: #4d4d4d;
 $color-text-black: #212121;
 $color-form-label: #666666;
-$color-text-header: #444444;
+$color-text-header: #321d71;
 
 /* Error Colors */
 $error-red: #a21b0f;
@@ -66,10 +67,10 @@ $header1-font-color: $color-text-black;
 $header1-font-family: $salesforcesans;
 $header1-font-weight: 100;
 
-$header2-font-size: 35px;
-$header2-line-space: 36px;
-$header2-font-family: $salesforcesans;
-$header2-font-weight: bold;
+$header2-font-size: 36px;
+$header2-line-space: 40px;
+$header2-font-family: $avantgarde;
+$header2-font-weight: 600;
 
 $header3-font-size: 20px;
 $header3-line-space: 24px;

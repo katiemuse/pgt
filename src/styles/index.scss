@@ -50,9 +50,23 @@ h2 {
 
 .intro-text {
   color: #ffffff;
-  font-size: 24px;
-  margin: 0 auto 40px;
-  line-height: 30px;
+  font-family: $avantgarde;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 40px;
+  letter-spacing: -0.004em;
+}
+
+.intro-copy {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  letter-spacing: -0.001em;
+  margin-bottom: 10px;
 }
 
 p {
@@ -76,11 +90,11 @@ body {
   min-height: 100%;
   overflow-x: hidden;
   &.background {
-    background-image: url('../assets/images/backgrounds/monitor.jpg');
+    background-image: url('../assets/images/backgrounds/monitor.png');
     background-position: top center;
     background-repeat: repeat;
     @media screen and (min-width: $screen-1080p) {
-      background-image: url('../assets/images/backgrounds/monitor-big.jpg');
+      background-image: url('../assets/images/backgrounds/monitor-big.png');
       background-position: center center;
       background-repeat: repeat;
     }
@@ -98,15 +112,17 @@ body {
     background-color: white;
     position:relative;
     margin-top: 58px;
+    left: 5px;
+    border-radius: 14px;
+    top: -2px;
 
     @media screen and (min-width: $screen-1080p) {
       position: absolute;
-      z-index: $z-index-monitor;
-      margin: 30px auto 0 auto;
+      //z-index: $z-index-monitor;
       left: 50%;
       top: 50%;
-      margin-left: -396px;
-      margin-top: -260px;
+      margin: -267px auto 0 -396px;
+      border-radius: 14px;
       #chapter-blockchain & {
         overflow: visible;
       }
@@ -179,11 +195,14 @@ body {
 
 
 footer {
-  background-color:#333333;
+  background-color:#032d60;
   position:fixed;
-  bottom:0px;
+  bottom:0;
   width: 100%;
   z-index: $z-index-footer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   @media(max-width: $screen-sm-max) {
     padding: 28px 15px 20px;
     background-color: #000000;
@@ -211,10 +230,10 @@ footer {
     li {
       float: left;
       color:$text-color-white;
-      padding: 15px 5px;
+      padding: 30px 5px;
       font-family: $salesforcesans;
       font-size: $footnotes-font-size;
-      line-height: 1;
+      line-height: 1.5;
       @media(max-width: $screen-sm-max) {
         color: $color-text-header;
         font-family: $salesforcesans;
@@ -238,8 +257,6 @@ footer {
   .copyright {
     float: left;
     margin-left: 55px;
-    margin-top: -5px;
-    margin-bottom: -5px;
     max-width: 42%;
     @media(max-width: $screen-sm-max) {
       float: none;
@@ -312,10 +329,10 @@ footer {
         @media(max-device-width: 767px) {
           font-size: 24px;
         }
-        a {          
+        a {
           padding-right: 4px;
           margin-right: 4px;
-          @media(max-width: $screen-sm-max) {           
+          @media(max-width: $screen-sm-max) {
             padding-right: 5px;
             margin-right: 0;
             font-size: 12px;

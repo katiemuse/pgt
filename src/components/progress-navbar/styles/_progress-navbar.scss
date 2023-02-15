@@ -91,31 +91,31 @@ $progress-top: 15px;
       margin-bottom: 20px;
 
       > a {
-        width: 200px;
-        display: block;
+        width: 240px;
+        display: inline-block;
         height: 20px;
         background: transparent;
-        color: $text-color-white;
-        font-size: 16px;
+        color: #321d71;
+        font-family: $avantgarde;
+        font-style: normal;
+        font-size: 24px;
+        line-height: 1;
 
         &.disabled {
           z-index: -1;
           pointer-events: none;
         }
         span {
-          font-weight: normal;
+          font-weight: 600;
           &.active {
-            font-weight: bold;
-            padding-bottom: 3px;
-            border-bottom: 4px solid #00a1e0;
+            color: #5867e8;
           }
         }
 
         &:hover {
           text-decoration: none;
           span {
-            padding-bottom: 3px;
-            border-bottom: 1px solid #ffffff;
+            color: #5867e8;
           }
         }
       }

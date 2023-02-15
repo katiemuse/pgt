@@ -100,7 +100,7 @@ button.step-close-button {
   }
   > {
     div {
-      margin: 0 0 6px;
+      margin: 0 0 10px;
       padding: 25px;
       background-position: 0px center;
       background-repeat: no-repeat;
@@ -167,17 +167,18 @@ button.step-close-button {
 
     &:before {
       position: absolute;
-      left: 20px;
-      top: 13px;
-      color: $text-color-white;
-      font-family: $salesforcesans;
-      font-weight: bold;
-      font-size: 46px;
-      float: left;
+      left: 24px;
+      top: 50%;
+      font-family: $avantgarde;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 133%;
+      letter-spacing: -0.004em;
+      transform: translateY(-50%);
+
       @media (max-width: $screen-md-max) {
         left: 10px;
-        top: 9px;
-        font-size: 36px;
       }
     }
 
@@ -332,51 +333,52 @@ button.step-close-button {
 .step-four,
 .step-five,
 .step-six {
-  background-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 161, 224, 1) 0%,
-    rgba(0, 161, 224, 0.8) 47%,
-    rgba(0, 161, 224, 0.3) 100%
-  );
+  border-radius: 8px 0 0 8px;
+  background-color: #321d71;
+  //background-image: linear-gradient(
+  //  to right,
+  //  rgba(0, 161, 224, 1) 0%,
+  //  rgba(0, 161, 224, 0.8) 47%,
+  //  rgba(0, 161, 224, 0.3) 100%
+  //);
   &.active {
-    background-image: linear-gradient(to left, rgba(120, 120, 120, 0.5), #009cdb);
+    //background-image: linear-gradient(to left, rgba(120, 120, 120, 0.5), #009cdb);
   }
 }
 
 .step-one {
   &:before {
-    content: '01';
+    content: '1';
   }
 }
 
 .step-two {
   &:before {
-    content: '02';
+    content: '2';
   }
 }
 
 .step-three {
   &:before {
-    content: '03';
+    content: '3';
   }
 }
 
 .step-four {
   &:before {
-    content: '04';
+    content: '4';
   }
 }
 
 .step-five {
   &:before {
-    content: '05';
+    content: '5';
   }
 }
 
 .step-six {
   &:before {
-    content: '06';
+    content: '6';
   }
 }
 

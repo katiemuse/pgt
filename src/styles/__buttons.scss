@@ -1,6 +1,6 @@
 @import "_base";
 
-$button-font-size: 14px;
+$button-font-size: 16px;
 $button-rounded-radius: 4px;
 
 button, a {
@@ -11,11 +11,10 @@ button, a {
 
 .btn {
   font-family: $salesforcesans;
-  font-weight: normal;
+  font-weight: bold;
   font-size: $button-font-size;
-  padding: 4px 15px;
+  padding: 8px 24px;
   text-transform: uppercase;
-  letter-spacing: .102em;
   &:focus {
     outline: none !important;
   }
@@ -83,6 +82,7 @@ button, a {
   background-color: $color-continue;
   color: $color-button-white;
   transition: background .2s ease-in-out;
+  text-transform: capitalize;
   &:hover {
     background-color: $color-continue-hover;
     color: $color-button-white;
