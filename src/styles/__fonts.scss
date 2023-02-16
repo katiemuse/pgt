@@ -102,9 +102,9 @@
   font-style: normal;
 }
 @font-face {
-  font-family: 'AvantGardeDemi';
-  src: url('../fonts/ITCAvantGardePro-Demi.ttf') format('truetype');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
+  font-family: ITC Avant Garde;
+  src: url('../fonts/AvantGardeForSalesforceW05-Dm.woff') format('woff'),
+  url('../fonts/AvantGardeForSalesforceW05-Dm.woff2') format('woff2'),
+  url('../fonts/AvantGardeForSalesforceW05-Dm.ttf') format('truetype');
+  font-weight: 500;
 }

@@ -101,7 +101,7 @@ button.step-close-button {
   > {
     div {
       margin: 0 0 10px;
-      padding: 25px;
+      padding: 25px 25px 25px 68px;
       background-position: 0px center;
       background-repeat: no-repeat;
       color: $stepContainerColor;
@@ -129,8 +129,8 @@ button.step-close-button {
   .step {
     min-height: 90px;
     position: relative;
-    width: 174px;
-    margin-left: 119px;
+    width: 140px;
+    margin-left: auto;
     height: 90px;
     @media (max-width: $screen-md-max) {
       width: 74px;
@@ -140,11 +140,15 @@ button.step-close-button {
     }
 
     .step-title {
-      font-family: $salesforcesans;
-      font-weight: normal;
+      opacity: 0;
+      font-family: $avantgarde;
+      font-style: normal;
+      font-weight: 600;
       font-size: 16px;
       line-height: 20px;
-      opacity: 0;
+      letter-spacing: -0.002em;
+      color: #BEC7F6;
+
       @media (max-width: $screen-md-max) {
         font-size: 12px;
         line-height: 1.4;
@@ -183,7 +187,7 @@ button.step-close-button {
     }
 
     &.active {
-      width: 280px;
+      width: 320px;
       margin-left: 13px;
       max-height: 500px;
       min-height: auto;
@@ -219,10 +223,6 @@ button.step-close-button {
         @media (min-width: 1280px) and (max-width: 1399px) {
           padding: 0 10px;
         }
-      }
-
-      &:before {
-        content: '';
       }
     }
   }
