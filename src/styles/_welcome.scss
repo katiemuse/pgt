@@ -441,10 +441,14 @@
 }
 
 .welcome {
-  .step-1,
-  .step-2 {
+  .step-0,
+  .step-1 {
     background-image: url("../assets/images/chapters/welcome/intro-background.jpg");
     background-size: cover;
+  }
+
+  .step-2 {
+    background: #d8d8d8;
   }
 
   .step-3 {
@@ -460,19 +464,30 @@
   height: 360px;
   left: 470px;
   position: absolute;
-  top: 17px;
+  top: 37px;
 
   h2 {
-    font-size: 26px;
+    font-family: $avantgarde;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.004em;
+    color: #321D71;
   }
 
   p {
-    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.001em;
+    color: #000000;
   }
 
   a {
     position: absolute;
-    top: 360px;
+    top: 380px;
     left: 0px;
     width: auto;
   }

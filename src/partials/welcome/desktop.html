@@ -4,30 +4,17 @@
       <wizard name="monitor">
         <wz-step>
           <div class="step step-0">
-            <li-center>
-              <h2 class="intro-text">Platform Guided Tour</h2>
-              <p class="intro-copy">Take a look at the tips on this screen to get the<br> most out of your tour.</p>
-              <a id="begin-the-tour" ng-click="beginTour()" href="" li-autofocus="wizard.stateIndex == 0">
-                <text text-anchor="middle" x="50%" y="50%" alignment-baseline="middle">
-                  Start tour
-                </text>
-              </a>
-            </li-center>
-          </div>
-        </wz-step>
-        <wz-step>
-          <div class="step step-1">
             <div class="welcome-copy">
               <div class="welcome-copy-block">
-                <h2>Salesforce Platform Tour</h2>
+                <h2>Platform<br> Guided Tour</h2>
                 <p>Welcome! In this tour, you'll see how you can build intelligent apps and real-time automations to create personalized experiences to drive success now. Ready?</p>
               </div>
-              <a class="btn btn-intro active continue-button-1" href="" li-autofocus="wizard.stateIndex == 1" wz-next>Continue</a>
+              <a class="btn btn-intro active continue-button-1" href="" li-autofocus="wizard.stateIndex == 0" wz-next>Continue</a>
             </div>
           </div>
         </wz-step>
         <wz-step>
-          <div class="step step-2">
+          <div class="step step-1">
             <div class="welcome-copy">
               <div class="welcome-copy-block">
                 <!-- <h2>Your Mission</h2> -->
@@ -35,8 +22,21 @@
                 <p>Your mission is to build and automate key customer processes – from test drive to delivery – using Salesforce low-code automation and development tools, mobile, and artificial intelligence (AI).</p>
                 <p>Click “Continue” to start the first section on data.</p>
               </div>
-              <a ui-sref="chapter-data" class="btn btn-intro active" href="" li-autofocus="wizard.stateIndex == 2" wz-next>Continue</a>
+              <a class="btn btn-intro active" ng-click="beginIntro()" href="" li-autofocus="wizard.stateIndex == 1">Continue</a>
             </div>
+          </div>
+        </wz-step>
+        <wz-step>
+          <div class="step step-2">
+            <li-center>
+              <h2 class="intro-text">Platform Guided Tour</h2>
+              <p class="intro-copy">Take a look at the tips on this screen to get the<br> most out of your tour.</p>
+              <a id="begin-the-tour" ng-click="beginTour()" href="" li-autofocus="wizard.stateIndex == 2" ui-sref="chapter-data">
+                <text text-anchor="middle" x="50%" y="50%" alignment-baseline="middle">
+                  Start tour
+                </text>
+              </a>
+            </li-center>
           </div>
         </wz-step>
       </wizard>

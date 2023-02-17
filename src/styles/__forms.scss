@@ -18,25 +18,25 @@
 
 @keyframes borderActive {
   0% {
-    box-shadow: 0 0 0 0px rgba($color-marketing-cloud-orange, .2);
+    box-shadow: 0 0 0 0px rgba(#321D71, .2);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba($color-marketing-cloud-orange, 1);
+    box-shadow: 0 0 0 8px rgba(#321D71, 1);
   }
   100% {
-    box-shadow: 0 0 0 0px rgba($color-marketing-cloud-orange, .2);
+    box-shadow: 0 0 0 0px rgba(#321D71, .2);
   }
 }
 
 @keyframes highlightPrice {
   0% {
-    box-shadow: 0 0 0 0px rgba($color-marketing-cloud-orange, .2);
+    box-shadow: 0 0 0 0px rgba(#321D71, .2);
   }
   50% {
-    box-shadow: 0 0 0 8px rgba($color-marketing-cloud-orange, .5);
+    box-shadow: 0 0 0 8px rgba(#321D71, .5);
   }
   100% {
-    box-shadow: 0 0 0 0px rgba($color-marketing-cloud-orange, .2);
+    box-shadow: 0 0 0 0px rgba(#321D71, .2);
   }
 }
 
@@ -142,7 +142,7 @@ form {
         background-color: white;
         color: #2e4368;
         padding-left: 10px;
-        
+
         &:focus::-ms-value {
           background: white;
           color: #2e4368;
@@ -293,7 +293,7 @@ a:active {
     position: relative;
 
     &:nth-of-type(1):after {
-      color: #e98300;
+      color: #321D71;
       content: '*';
       display: block;
       position: absolute;
