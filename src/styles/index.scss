@@ -206,7 +206,6 @@ footer {
   align-items: center;
   @media(max-width: $screen-sm-max) {
     padding: 28px 15px 20px;
-    background-color: #000000;
     position: static;
     margin-top: 0;
     max-width: 100%;
@@ -300,8 +299,6 @@ footer {
   }
   .links {
     float: right;
-    margin-right: 15px;
-    margin-left: -15px;
     order: 2;
     @media(min-width: $screen-sm-min) {
       float: none;
@@ -315,6 +312,7 @@ footer {
     ul {
       @media(max-width: $screen-sm-max) {
         display: flex;
+        flex-wrap: wrap;
       }
       li {
         @media(max-width: $screen-sm-max) {
@@ -323,6 +321,13 @@ footer {
           padding-top: 0;
           display: flex;
           font-size: 34px;
+          border-right: 1px solid white;
+          padding-bottom: 0;
+          margin-bottom: 5px;
+          margin-right: 5px;
+          &:last-child {
+            border-right: none;
+          }
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           color: #000000;
@@ -341,7 +346,7 @@ footer {
             align-items: center;
           }
           &:link, &:visited {
-            color: #00a1e0;
+            color: white;
             font-size: 14px;
             @media(min-width: $screen-sm-min) {
               color: #00a1e0;
