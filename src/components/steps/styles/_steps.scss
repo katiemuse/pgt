@@ -444,11 +444,11 @@ button.step-close-button {
 // mobile version
 .slides {
   &.success {
-    background-color: #00315a;
+    background-color: #321D71;
     .confetti-container {
       position: relative;
       .confettii-still {
-        background: url('../../../assets/images/backgrounds/mobile-confetti.png') no-repeat;
+        background: url('../../../assets/images/backgrounds/success-clouds.png') no-repeat;
         background-position: center bottom;
         background-size: contain;
         min-height: 500px;
@@ -491,8 +491,10 @@ button.step-close-button {
             padding-top: 50px;
           }
           .btn {
-            background-color: rgb(227, 115, 36);
+            background-color: white;
             width: fit-content;
+            border: 2px solid #0176d3;
+            color: #0176d3;
             @media (min-width: $screen-sm-min) {
               padding: 20px 30px;
               font-size: 18px;
@@ -501,9 +503,8 @@ button.step-close-button {
           }
           .success-text-link {
             color: #fff;
-            text-transform: uppercase;
-            font-weight: normal;
-            font-size: 14px;
+            font-weight: bold;
+            font-size: 16px;
             @media (min-width: $screen-sm-min) {
               font-size: 18px;
             }
@@ -514,21 +515,14 @@ button.step-close-button {
             margin-top: 30px;
           }
           .carat {
-            display: flex;
-            margin-left: 3px;
-            color: #ffffff;
+            display: inline-flex;
+            margin-bottom: 0;
             i {
-              font-family: 'SalesforceIcons';
-              speak: none;
-              font-style: normal;
-              font-weight: normal;
-              font-variant: normal;
-              text-transform: none;
-              line-height: 1;
-              font-size: 9px;
-              &:after {
-                content: '\e924';
-              }
+              background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAQJ9/7zAg3xDPv5BwYJrNQHMAAAA9SURBVAjXYwCBXgYo2GcAZaQ/hjLY6pCFhJSAQPOdAYPdOzDwYEgUBAKpJwEQNXauEJoZXYDhSACUwQHEAEFeEguTgGcUAAAAAElFTkSuQmCC');
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 12px;
+              display: inline-block;
             }
           }
         }

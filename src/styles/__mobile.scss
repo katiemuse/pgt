@@ -1,7 +1,7 @@
 @import "_base";
 
 body > div ~ div {
-  background: #c2e8ff;
+  background: #ffffff;
 }
 
 .container-fluid {
@@ -50,10 +50,10 @@ body > div ~ div {
     font-weight: 600;
     font-size: 36px;
     line-height: 40px;
-    text-align: center;
     letter-spacing: -0.004em;
     margin-top: 20px;
     margin-bottom: 7px;
+    color: $color-text-header;
     @media(min-width: $screen-sm-min) {
       font-size: 50px;
       margin-top: 40px;
@@ -339,6 +339,51 @@ body > div ~ div {
           font-size: 22px;
         }
       }
+    }
+  }
+
+  .slide-intro {
+    .slide-header {
+      h1 {
+        font-size: 24px;
+        line-height: 28px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 40px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+
+  .transition-copy {
+    background-color: #BEC7F6;
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    p {
+      color: #181818;
+      font-size: 16px;
+      line-height: 24px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+    .transition-arrow {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #BEC7F6;
+      position: absolute;
+      bottom: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
     }
   }
 
