@@ -116,6 +116,7 @@
             line-height: 26px;
             margin-bottom: 40px;
             display: block;
+            text-align: center;
             @media (min-width: $screen-sm-min) {
               font-size: 32px;
               line-height: 40px;
@@ -133,8 +134,9 @@
           padding-top: 50px;
         }
         .btn {
-          background: #e67300;
-          color: #ffffff;
+          background: #ffffff;
+          color: #0176d3;
+          border: 2px solid #0176d3;
           padding: 10px 30px;
           margin-bottom: 20px;
           @media (min-width: $screen-sm-min) {
@@ -144,8 +146,9 @@
           }
         }
         .text {
-          color: #000000;
-          text-transform: uppercase;
+          color: #0176d3;
+          text-transform: capitalize;
+          text-align: center;
           i {
             font-family: "SalesforceIcons";
             font-style: normal;
