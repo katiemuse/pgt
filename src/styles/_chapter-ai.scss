@@ -97,7 +97,7 @@
       }
     }
     .slide-0 {
-      margin-top: 100px;
+      margin-top: 0;
       @media (min-width: $screen-sm-min) {
         margin-top: 0px;
       }
@@ -147,7 +147,7 @@
         }
       }
       .transition-copy {
-        bottom: 18px;
+        bottom: 0;
         @media (min-width: $screen-sm-min) {
           bottom: 103px;
         }
@@ -164,7 +164,7 @@
       .slide-image {
         background: url(../assets/images/chapters/chapter-ai/mobile-slide-1.png) center top no-repeat;
         background-size: contain;
-        height: 560px;
+        height: 400px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-ai/mobile-slide-1.png) center top no-repeat;
           background-size: contain;
@@ -175,7 +175,7 @@
         }
       }
       .transition-copy {
-        bottom: 120px;
+        bottom: 0;
         @media (min-width: $screen-sm-min) {
           bottom: 285px;
         }
@@ -204,7 +204,7 @@
         }
       }
       .transition-copy {
-        bottom: 140px;
+        bottom: 130px;
         @media (min-width: $screen-sm-min) {
           bottom: 370px;
         }

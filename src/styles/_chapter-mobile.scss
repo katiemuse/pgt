@@ -209,7 +209,6 @@
       }
     }
     .slide-1 {
-      margin-top: 40px;
       height: 800px;
       position: relative;
       @media (min-width: $screen-sm-min) {
@@ -246,7 +245,7 @@
         width: 100%;
         height: 570px;
         position: absolute;
-        bottom: 222px;
+        bottom: 192px;
         z-index: 2;
         pointer-events: none;
         @media (min-width: $screen-sm-min) {
@@ -261,7 +260,7 @@
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-1.png) center center no-repeat;
         background-size: contain;
         height: 574px;
-        top: 22px;
+        top: 52px;
         position: absolute;
         z-index: 1;
         width: 272px;

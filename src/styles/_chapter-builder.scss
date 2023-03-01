@@ -70,11 +70,11 @@
         // margin-top: -260px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-builder/builder-slide-0.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-builder/builder-slide-0.png) center top no-repeat;
         background-size: contain;
-        height: 970px;
+        height: 620px;
         position: relative;
-        top: -50px;
+        top: 0;
         @media (min-width: $screen-sm-min) {
           background-position: center bottom;
           background: url(../assets/images/chapters/chapter-builder/builder-slide-0.png) center bottom no-repeat;
@@ -122,7 +122,7 @@
         }
       }
       .transition-copy {
-        bottom: 208px;
+        bottom: 0px;
         @media (min-width: $screen-sm-min) {
           bottom: 34px;
         }
@@ -132,14 +132,14 @@
       }
     }
     .slide-1 {
-      margin-top: -160px;
+      margin-top: 0;
       @media (min-width: $screen-sm-min) {
         margin-top: -100px;
       }
       .slide-image {
         background: url(../assets/images/chapters/chapter-builder/builder-slide-1.png) center top no-repeat;
         background-size: contain;
-        height: 700px;
+        height: 640px;
         @media (min-width: $screen-sm-min) {
           background-position: center bottom;
           background: url(../assets/images/chapters/chapter-builder/builder-slide-1.png) center center no-repeat;

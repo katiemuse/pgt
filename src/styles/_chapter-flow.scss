@@ -120,9 +120,9 @@
         top: -50px;
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0-mobile.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0-mobile.png) center top no-repeat;
         background-size: contain;
-        height: 960px;
+        height: 800px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0-mobile.png) center bottom no-repeat;
           background-position: center bottom;
@@ -162,7 +162,7 @@
         }
       }
       .transition-copy {
-        bottom: 74px;
+        bottom: 0;
         @media (min-width: $screen-sm-min) {
           bottom: 103px;
         }
@@ -175,11 +175,10 @@
 
       }
       .slide-image {
-        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-mobile.png) center center no-repeat;
+        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-mobile.png) center top no-repeat;
         background-size: cover;
         height: 495px;
         position: relative;
-        top: -69px;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-mobile.png) center top no-repeat;
           background-size: contain;
@@ -237,7 +236,7 @@
         background-size: cover;
         height: 495px;
         position: relative;
-        top: -69px;
+        top: 0;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-2-mobile.png) center top no-repeat;
           background-size: cover;
@@ -267,7 +266,7 @@
         background-size: cover;
         height: 495px;
         position: relative;
-        top: -69px;
+        top: 0;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-3-mobile.png) center top no-repeat;
           background-size: cover;
@@ -297,7 +296,7 @@
         background-size: cover;
         height: 495px;
         position: relative;
-        top: -69px;
+        top: 0;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-4-mobile.png) center top no-repeat;
           background-size: cover;
@@ -318,7 +317,7 @@
     }
     .slide-5 {
       position: relative;
-      margin-top: -30px;
+      margin-top: 0;
       @media (min-width: $screen-sm-min) {
 
       }
@@ -327,7 +326,7 @@
         background-size: cover;
         height: 495px;
         position: relative;
-        top: -69px;
+        top: 0;
         @media (min-width: $screen-sm-min) {
           background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-5-mobile.gif) center top no-repeat;
           background-size: cover;
@@ -349,7 +348,7 @@
     .success {
       position: relative;
       min-height: 300px;
-      top: -72px;
+      top: 0;
       margin-bottom: -102px;
       @media (min-width: $screen-sm-min) {
         top: -321px;
