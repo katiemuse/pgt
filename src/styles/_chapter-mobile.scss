@@ -126,10 +126,7 @@
         transform: translateX(-50%);
         border-radius: 40px;
         @media (min-width: $screen-sm-min) {
-          top: initial;
-          height: 560px;
-          bottom: 305px;
-          left: 3px;
+          top: 402px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           bottom: 225px;
@@ -205,113 +202,6 @@
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           bottom: 0px;
-        }
-      }
-    }
-    .slide-1 {
-      height: 800px;
-      position: relative;
-      @media (min-width: $screen-sm-min) {
-        margin-top: -260px;
-        height: 940px;
-        margin-bottom: 178px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        margin-top: -190px;
-        height: 970px;
-        margin-bottom: 65px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-background.png) center bottom no-repeat;
-        background-size: cover;
-        height: 560px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-mobile/mobile-slide-background-1.png) center bottom no-repeat;
-          background-size: contain;
-          height: 1069px;
-          background-position: 50% 100px;
-        }
-
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
-          height: 970px;
-          background-size: cover;
-          background-position: center center;
-        }
-      }
-      .phone-background {
-        background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-phone.png) center center no-repeat;
-        background-size: contain;
-        width: 100%;
-        height: 570px;
-        position: absolute;
-        bottom: 192px;
-        z-index: 2;
-        pointer-events: none;
-        @media (min-width: $screen-sm-min) {
-          bottom: -140px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: -20px;
-        }
-
-      }
-      .phone-placeholder {
-        background: url(../assets/images/chapters/chapter-mobile/mobile-slide-1.png) center center no-repeat;
-        background-size: contain;
-        height: 574px;
-        top: 52px;
-        position: absolute;
-        z-index: 1;
-        width: 272px;
-        left: 50%;
-        transform: translateX(-50%);
-        border-radius: 40px;
-        @media (min-width: $screen-sm-min) {
-          top: initial;
-          height: 560px;
-          bottom: -140px;
-          left: 3px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: -21px;
-        }
-      }
-      .transition-copy {
-        bottom: 103px;
-        z-index: 3;
-        @media (min-width: $screen-sm-min) {
-          bottom: 285px;
-        }
-      }
-    }
-
-    .success {
-      position: relative;
-      top: -242px;
-      min-height: 380px;
-      z-index: 3;
-      margin-bottom: -242px;
-      @media (min-width: $screen-sm-min) {
-        top: -65px;
-        margin-bottom: -65px;
-        min-height: 520px;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          min-height: 470px;
-        }
-      }
-      .confetti-container {
-        .content-container{
-          top: 50px;
-        }
-        .confettii-still {
-          min-height: 420px;
-          @media (min-width: $screen-sm-min) {
-            min-height: 520px;
-          }
-          @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-            min-height: 470px;
-          }
         }
       }
     }
