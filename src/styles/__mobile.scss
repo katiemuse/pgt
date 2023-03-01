@@ -400,8 +400,8 @@ body > div ~ div {
       }
       @media(min-width: $screen-sm-min) {
         padding: 20px 0 100px;
-        height: 1185px;
-        background-image: url(../assets/images/chapters/welcome/intro-background-mobile.png);
+        height: 1445px;
+        background-image: url(../assets/images/chapters/welcome/intro-background-mobile-2x.png);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -509,5 +509,39 @@ body > div ~ div {
         line-height: 48px;
       }
     }
+  }
+}
+
+.mobile {
+  .slide {
+    position: relative;
+  }
+  .slide-text {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 40px;
+        line-height: 38px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #181818;
+      @media (min-width: $screen-sm-min) {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+  }
+  .slide-bg-image {
+    max-width: 100%;
+    height: auto;
   }
 }
