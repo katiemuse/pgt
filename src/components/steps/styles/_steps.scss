@@ -453,7 +453,7 @@ button.step-close-button {
         background-size: contain;
         min-height: 500px;
         @media (min-width: $screen-sm-min) {
-          min-height: 650px;
+          min-height: 750px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           min-height: 570px;
@@ -480,6 +480,19 @@ button.step-close-button {
           h2 {
             @media (min-width: $screen-sm-min) {
               font-size: 44px;
+            }
+          }
+          h3 {
+            font-family: $avantgarde;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.001em;
+            color: #C2C8E8;
+            @media (min-width: $screen-sm-min) {
+              font-size: 40px;
+              line-height: 50px;
             }
           }
         }
