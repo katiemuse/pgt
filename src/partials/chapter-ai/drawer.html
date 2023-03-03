@@ -1,7 +1,7 @@
 <div class="drawer-content chapter-ai-drawer">
   <div class="col-lg-12 drawer-intro" ng-show="drawer.mode == 'intro'">
 
-    <wizard name="drawer" on-finish="beginStory()">
+    <wizard name="drawer" on-finish="beginStory(); gtmTrack('progress', 'ai: complete step 1')">
       <wz-step>
         <h2>Predict Cancellation Risk Using AI</h2>
         <p>

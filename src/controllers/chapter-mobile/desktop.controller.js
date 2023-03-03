@@ -8,4 +8,14 @@ export default function ChapterMobileController($scope, $timeout, Steps, WizardH
   $scope.renderConfetti = function() {
     successConfetti.renderConfetti();
   };
+
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
 }

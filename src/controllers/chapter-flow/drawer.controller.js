@@ -4,6 +4,16 @@ export default function ChapterFlowDrawerController($scope, WizardHandler, TopNa
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
+
   $scope.beginStory = function () {
     TopNavbar.DidYouKnowEnabled = false;
     TopNavbar.HotspotsEnabled = false;

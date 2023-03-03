@@ -12,6 +12,13 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
     timeoutExtdsName = $timeout(() => {
       if (angular.isDefined(newValue) && newValue.length > 10) {
         $scope.goToStep4();
+        window.dataLayer.push({
+          event: 'eventTracker',
+          eventCat: 'progress',
+          eventAct: window.location.href,
+          eventLbl: 'flow: complete step 5',
+          nonInteraction: false
+        });
       }
     }, delayInMs);
   });
@@ -29,6 +36,13 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   $scope.goToStep3 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("three");
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: 'progress',
+      eventAct: window.location.href,
+      eventLbl: 'flow: complete step 4',
+      nonInteraction: false
+    });
   };
 
   $scope.goToStep4 = function() {
@@ -57,5 +71,15 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   };
   $scope.renderConfetti = function() {
     successConfetti.renderConfetti();
+  };
+
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
   };
 }
