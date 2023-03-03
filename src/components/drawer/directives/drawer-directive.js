@@ -19,9 +19,9 @@ export default function drawer($window, $rootScope, drawerRegisterEvents, $timeo
 
   function onResize() {
     const height = angular.element($window)[0].innerHeight - 99 + 'px';
-    bgEl.css('height', height);
+    bgEl.css('min-height', height);
     if (drawerEl) {
-      drawerEl.css('height', height);
+      drawerEl.css('min-height', height);
     }
   }
 
@@ -140,7 +140,7 @@ export default function drawer($window, $rootScope, drawerRegisterEvents, $timeo
       }
 
       element.addClass('drawer');
-      element.css('height', angular.element($window)[0].innerHeight - 100 + 'px');
+      element.css('min-height', angular.element($window)[0].innerHeight - 100 + 'px');
       element.addClass('drawer-right');
       drawerEl = element;
     }
