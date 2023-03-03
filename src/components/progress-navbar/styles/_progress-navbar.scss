@@ -274,3 +274,11 @@ $progress-top: 15px;
     }
   }
 }
+
+#outro .progress-navbar li {
+  display: none;
+}
+
+#outro .progress-navbar li.logo {
+  display: block;
+}
