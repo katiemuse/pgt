@@ -1,6 +1,7 @@
 'use strict';
 
 export default function OutroController($scope, WizardHandler, Steps, Drawer) {
+  Steps.clear();
   angular.element(document).ready(() => {
     Steps.clear();
     Drawer.close();
