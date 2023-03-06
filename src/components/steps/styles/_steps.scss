@@ -341,6 +341,12 @@ button.step-close-button {
       color: #0176D3;
       border: 2px solid #0176D3;
       font-weight: bold;
+
+      &:hover {
+        background-color: #EAF5FE;
+        color: #032D60;
+        border: 2px solid #032D60;
+      }
     }
 
     .success-text-link {
