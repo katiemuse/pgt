@@ -107,6 +107,10 @@ $progress-top: 15px;
         font-size: 24px;
         line-height: 1;
 
+        @media (max-width: 1133px) {
+          width: auto;
+        }
+
         &.disabled {
           z-index: -1;
           pointer-events: none;

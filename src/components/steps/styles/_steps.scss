@@ -200,8 +200,17 @@ button.step-close-button {
       @media (min-width: 1200px) and (max-width: 1279px) {
         width: 207px;
       }
-      @media (min-width: 1280px) and (max-width: 1400px) {
+      @media (min-width: 1280px) and (max-width: 1365px) {
         width: 237px;
+      }
+      @media (min-width: 1366px) and (max-width: 1400px) {
+        width: 267px;
+      }
+
+      &:before {
+        @media (max-width: $screen-md-max) {
+          visibility: hidden;
+        }
       }
 
       .step-title,
@@ -212,7 +221,7 @@ button.step-close-button {
         @media (max-width: $screen-md-max) {
           width: 110px;
         }
-        @media (min-width: 1200px) and (max-width: 1280px) {
+        @media (min-width: 1200px) and (max-width: 1366px) {
           max-width: 200px;
           padding-right: 20px;
         }
