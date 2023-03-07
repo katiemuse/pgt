@@ -88,7 +88,7 @@ body {
 
 
 .main {
-  min-height: 100%;
+  //min-height: 100%;
   overflow-x: hidden;
   &.background {
     background-image: url('../assets/images/backgrounds/monitor.png');
@@ -113,6 +113,7 @@ body {
     background-color: white;
     position:relative;
     margin-top: 58px;
+    margin-bottom: 58px;
     left: 5px;
     border-radius: 14px;
     top: -2px;
@@ -194,14 +195,13 @@ body {
 
 footer {
   background-color:#032d60;
-  position:fixed;
-  bottom:0;
+  position:relative;
   width: 100%;
   z-index: $z-index-footer;
-  display: block;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-
+  flex-direction: column;
 
   ul {
     margin: 0 0 0 55px;
