@@ -89,79 +89,66 @@
           background-position: center bottom;
           background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-background-2x.png) center bottom no-repeat;
           background-size: cover;
-          height: 1000px;
+          height: 1200px;
         }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-
-          background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
-          background-size: cover;
-          height: 980px;
-        }
+        //@media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+        //
+        //  background: url(../assets/images/chapters/chapter-mobile/background-ipad-landscape.jpg) center bottom no-repeat;
+        //  background-size: cover;
+        //  height: 980px;
+        //}
       }
       .phone-background {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-phone.png) center center no-repeat;
         background-size: contain;
-        width: 100%;
-        height: 570px;
+        width: 55vw;
+        height: calc(50.4vw / (136/287));
         position: absolute;
-        bottom: 200px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 2;
         pointer-events: none;
+        margin-top: 69px;
         @media (min-width: $screen-sm-min) {
-          bottom: 305px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 225px;
+          margin-top: 2px;
         }
       }
       .phone-placeholder {
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-placeholder.png) center center no-repeat;
         background-size: contain;
-        height: 574px;
-        top: 285px;
+        width: 50vw;
+        height: calc(50vw / (136/287));
         position: absolute;
-        z-index: 1;
-        width: 272px;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
+        z-index: 1;
         border-radius: 40px;
+        margin-top: 67px;
         @media (min-width: $screen-sm-min) {
-          top: 402px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 225px;
+          margin-top: 0;
         }
       }
       .play-button {
         position: absolute;
-        top: 425px;
-        z-index: 1;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
-        @media (min-width: $screen-sm-min) {
-          bottom: 0;
-          top: 610px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: -745px;
-        }
+        transform: translate(-50%, -50%);
+        z-index: 1;
       }
       #step-1-video-mobile {
+        width: 50vw;
+        height: calc(50vw / (136/287));
         position: absolute;
-        z-index: 0;
-        top: 285px;
-        width: 262px;
-        height: auto;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -50%);
+        z-index: 0;
         border-radius: 40px;
+        margin-top: 68px;
         @media (min-width: $screen-sm-min) {
-          top: initial;
-          bottom: 305px;
-          left: 50.5%;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          bottom: 227px;
+          margin-top: 1px;
         }
       }
       .slide-intro {
