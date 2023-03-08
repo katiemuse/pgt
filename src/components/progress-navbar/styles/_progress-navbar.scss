@@ -292,3 +292,14 @@ $progress-top: 15px;
 #outro .progress-navbar li.logo {
   display: block;
 }
+
+.welcome-step-0,
+.welcome-step-1 {
+  .progress-navbar li {
+    display: none;
+  }
+}
+
+.welcome-step-2 .progress-navbar li {
+  display: block;
+}
