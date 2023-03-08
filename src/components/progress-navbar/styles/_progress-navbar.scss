@@ -99,15 +99,22 @@ $progress-top: 15px;
       > a {
         width: 240px;
         display: inline-block;
-        height: 20px;
         background: transparent;
         color: #321d71;
         font-family: $avantgarde;
         font-style: normal;
-        font-size: 24px;
-        line-height: 1;
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 133%;
+        letter-spacing: -0.004em;
+        padding: 0;
 
-        @media (max-width: 1133px) {
+        @media(min-width: 1160px) {
+          font-size: 24px;
+          padding: 10px 15px;
+        }
+
+        @media (max-width: 1343px) {
           width: auto;
         }
 
@@ -138,6 +145,7 @@ $progress-top: 15px;
         background-size: 173px 48px;
         background-repeat: no-repeat;
         background-size: contain;
+        margin-bottom: 40px;
         > a {
           height: 100%;
         }
@@ -153,6 +161,7 @@ $progress-top: 15px;
           margin-top: 20px;
         }
         opacity: 0;
+        position: absolute;
       }
 
       &.toggle {

@@ -28,7 +28,7 @@ html {
     display: block !important;
     position: relative !important;
   }
-  @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
+  @media only screen and (min-device-width: 481px) and (max-device-width: 1023px) and (orientation:landscape) {
     height: initial !important;
     min-height: 100vh !important;
     overflow: hidden !important;
@@ -101,7 +101,7 @@ body {
     }
   }
   &.desktop {
-    @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+    @media only screen and (min-width: 481px) and (max-width: 1023px) and (orientation:landscape) {
       display: none !important;
     }
   }
@@ -163,7 +163,7 @@ body {
           padding-top: 0;
           padding-bottom: 0;
         }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation: landscape) {
+        @media only screen and (min-device-width: 481px) and (max-device-width: 1023px) and (orientation: landscape) {
           position: relative;
           top: -15px;
           z-index: 1;
@@ -184,7 +184,7 @@ body {
       }
     }
     &.hidden-md {
-      @media only screen and (min-width: 481px) and (max-width: 1024px) and (orientation:landscape) {
+      @media only screen and (min-width: 481px) and (max-width: 1023px) and (orientation:landscape) {
         display: block !important;
       }
     }
