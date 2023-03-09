@@ -8,21 +8,21 @@
               <div class="flyout active">
                 <span>This order currently has no cancellation risk.</span>
                 <span>What happens if you modify this order in a way that increases the risk of cancellation?</span>
-                <a ng-click="GoToStep3()">continue</a>
+                <a ng-click="GoToStep3(); gtmTrack('progress', 'ai: complete step 4')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step phone-step-3">
-              <div class="click-box active" ng-click="GoToStep4()"></div>
+              <div class="click-box active" ng-click="GoToStep4(); gtmTrack('progress', 'ai: complete step 5')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step phone-step-4">
               <div class="flyout active">
                 <span>Right away, Einstein predicts that there is a high risk of order cancellation, based on the top factors provided, and alerts the sales rep.</span>
-                <a ng-click="GoToSuccess()">continue</a>
+                <a ng-click="GoToSuccess(); gtmTrack('progress', 'ai: complete step 6')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>

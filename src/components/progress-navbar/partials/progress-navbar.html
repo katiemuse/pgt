@@ -3,12 +3,12 @@
   </div>
   <ul class="nav nav-stacked progress-navbar standard">
     <li class="logo">
-      <a ui-sref="welcome" href="#/">
+      <a ui-sref="welcome" href="#/" ng-click='gtmTrack("salesforce logo")'>
         <span class="logo"></span>
       </a>
     </li>
     <li class="title">
-      <h1>Interactive Guided Tour</h1>
+      <h1>Salesforce Platform Tour</h1>
     </li>
     <!-- <li class="toggle">
       <div class="animated-icon animated circular light" ng-class="{'x': progress.open, 'plus':!progress.open}" ng-click="progress.toggleOpen()" data-icon="close">
@@ -16,24 +16,24 @@
         <span class="second"></span>
       </div>
     </li> -->
-    <li ui-sref-active="active"><a ui-sref="chapter-data" ng-click="resetStep('chapter-data')"><span progress-state-class="1">Data</span></a></li>
-    <li ui-sref-active="active"><a ui-sref="chapter-flow" ng-click="resetStep('chapter-flow')"><span  progress-state-class="2">Flow</span></a></li>
-    <li ui-sref-active="active"><a ui-sref="chapter-builder" ng-click="resetStep('chapter-builder')"><span progress-state-class="3">Builder</span></a></li>
-    <li ui-sref-active="active"><a ui-sref="chapter-mobile" ng-click="resetStep('chapter-mobile')"><span progress-state-class="4">Mobile</span></a></li>
-    <li ui-sref-active="active"><a ui-sref="chapter-ai" ng-click="resetStep('chapter-ai')"><span  progress-state-class="5">AI</span></a></li>
+    <li ui-sref-active="active"><a ui-sref="chapter-data" ng-click="resetStep('chapter-data'); gtmTrack('chapter: Data')" ><span progress-state-class="1">Data</span></a></li>
+    <li ui-sref-active="active"><a ui-sref="chapter-flow" ng-click="resetStep('chapter-flow'); gtmTrack('chapter: Flow')"><span  progress-state-class="2">Flow</span></a></li>
+    <li ui-sref-active="active"><a ui-sref="chapter-builder" ng-click="resetStep('chapter-builder'); gtmTrack('chapter: Low Code Builder')"><span progress-state-class="3">Low Code Builder</span></a></li>
+    <li ui-sref-active="active"><a ui-sref="chapter-mobile" ng-click="resetStep('chapter-mobile'); gtmTrack('chapter: Mobile')"><span progress-state-class="4">Mobile</span></a></li>
+    <li ui-sref-active="active"><a ui-sref="chapter-ai" ng-click="resetStep('chapter-ai'); gtmTrack('chapter: AI')"><span  progress-state-class="5">AI</span></a></li>
 <!--    <li ui-sref-active="active"><a ui-sref="chapter-voice" ng-click="resetStep('chapter-voice')"><span progress-state-class="6">Voice</span></a></li>-->
-    <li ui-sref-active="active"><a ui-sref="chapter-customer-app" ng-click="resetStep('chapter-customer-app')"><span progress-state-class="7">Customer App</span></a></li>
+    <li ui-sref-active="active"><a ui-sref="chapter-customer-app" ng-click="resetStep('chapter-customer-app'); gtmTrack('chapter: Customer App')"><span progress-state-class="7">Customer App</span></a></li>
 <!--    <li ui-sref-active="active"><a ui-sref="chapter-blockchain" ng-click="resetStep('chapter-blockchain')"><span progress-state-class="8">Blockchain</span></a></li>-->
     <!--<li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="engagement-studio"><span progress-state-class="5"></span></a></li>-->
   </ul>
   <ul class="nav nav-stacked progress-navbar inverted" ng-class="{'active':progress.open}">
     <li class="logo">
-      <a ui-sref="welcome" href="#/">
+      <a ui-sref="welcome" href="#/" ng-click='gtmTrack("salesforce logo")'>
         <span class="logo"></span>
       </a>
     </li>
     <li class="title">
-      <h1>Interactive Guided Tour</h1>
+      <h1>Salesforce Platform Tour</h1>
     </li>
     <li class="toggle">
       <div class="animated-icon animated circular light" ng-class="{'x': progress.open, 'plus':!progress.open}" ng-click="progress.toggleOpen()" data-icon="close">
@@ -41,13 +41,59 @@
         <span class="second"></span>
       </div>
     </li>
-    <li ui-sref-active="active"><a progress-disabled-class="1" ui-sref="chapter-data"><span progress-state-inverted-class="1"></span><span class="label">Data</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="2" ui-sref="chapter-flow"><span progress-state-inverted-class="2"></span><span class="label">Flow</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="3" ui-sref="chapter-builder"><span progress-state-inverted-class="3"></span><span class="label">Builder</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="4" ui-sref="chapter-mobile"><span progress-state-inverted-class="4"></span><span class="label">Mobile</span></a></li>
-    <li ui-sref-active="active"><a progress-disabled-class="5" ui-sref="chapter-ai"><span progress-state-inverted-class="5"></span><span class="label">AI</span></a></li>
+    <li ui-sref-active="active">
+      <a
+        progress-disabled-class="1"
+        ui-sref="chapter-data"
+        ng-click='gtmTrack("chapter: Data")'
+      >
+        <span progress-state-inverted-class="1"></span><span class="label">Data</span>
+      </a>
+    </li>
+    <li ui-sref-active="active">
+      <a progress-disabled-class="2"
+         ui-sref="chapter-flow"
+         ng-click='gtmTrack("chapter: Flow")'
+      >
+        <span progress-state-inverted-class="2"></span><span class="label">Flow</span>
+      </a>
+    </li>
+    <li ui-sref-active="active">
+      <a
+        progress-disabled-class="3"
+        ui-sref="chapter-builder"
+        ng-click='gtmTrack("chapter: Low Code Builder")'
+      >
+        <span progress-state-inverted-class="3"></span><span class="label">Low Code Builder</span>
+      </a></li>
+    <li ui-sref-active="active">
+      <a
+        progress-disabled-class="4"
+        ui-sref="chapter-mobile"
+        ng-click='gtmTrack("chapter: Mobile")'
+      >
+        <span progress-state-inverted-class="4"></span><span class="label">Mobile</span>
+      </a>
+    </li>
+    <li ui-sref-active="active">
+      <a
+        progress-disabled-class="5"
+        ui-sref="chapter-ai"
+        ng-click='gtmTrack("chapter: AI")'
+      >
+        <span progress-state-inverted-class="5"></span><span class="label">AI</span>
+      </a>
+    </li>
 <!--    <li ui-sref-active="active"><a progress-disabled-class="6" ui-sref="chapter-voice"><span progress-state-inverted-class="6"></span><span class="label">Voice</span></a></li>-->
-    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="chapter-customer-app"><span progress-state-inverted-class="7"></span><span class="label">Customer App</span></a></li>
+    <li ui-sref-active="active">
+      <a
+        progress-disabled-class="7"
+        ui-sref="chapter-customer-app"
+        ng-click='gtmTrack("chapter: Customer App")'
+      >
+        <span progress-state-inverted-class="7"></span><span class="label">Customer App</span>
+      </a>
+    </li>
 <!--    <li ui-sref-active="active"><a progress-disabled-class="7" ui-sref="chapter-blockchain"><span progress-state-inverted-class="8"></span><span class="label">Blockchain</span></a></li>-->
     <li class="text-center"><a id="start-over" class="btn btn-rounded btn-blue" href="#" ng-click="progress.startOver($event)">Start Over</a></li>
     <li class="text-center">&nbsp;</li>

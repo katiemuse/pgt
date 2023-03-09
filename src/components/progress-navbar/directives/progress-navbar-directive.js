@@ -103,6 +103,16 @@ export default function progressNavbar($rootScope, $window, $state, $document) {
         $state.go(route, $state.params, { reload: true });
       };
 
+      scope.gtmTrack = label => {
+        window.dataLayer.push({
+          event: 'eventTracker',
+          eventCat: 'navigation',
+          eventAct: window.location.href,
+          eventLbl: label,
+          nonInteraction: false
+        });
+      };
+
       // when navigating, close the drawer
       const unregisterStateChangeStart = $rootScope.$on('$stateChangeStart', () => {
         scope.progress.open = false;

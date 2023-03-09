@@ -68,4 +68,14 @@ export default function ChapterCustomerAppController($scope, $timeout, Steps, Wi
   $scope.renderConfetti = function() {
     successConfetti.renderConfetti();
   };
+
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
 }

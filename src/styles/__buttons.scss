@@ -1,6 +1,6 @@
 @import "_base";
 
-$button-font-size: 14px;
+$button-font-size: 16px;
 $button-rounded-radius: 4px;
 
 button, a {
@@ -11,11 +11,9 @@ button, a {
 
 .btn {
   font-family: $salesforcesans;
-  font-weight: normal;
+  font-weight: bold;
   font-size: $button-font-size;
-  padding: 4px 15px;
-  text-transform: uppercase;
-  letter-spacing: .102em;
+  padding: 8px 24px;
   &:focus {
     outline: none !important;
   }
@@ -83,6 +81,7 @@ button, a {
   background-color: $color-continue;
   color: $color-button-white;
   transition: background .2s ease-in-out;
+  text-transform: capitalize;
   &:hover {
     background-color: $color-continue-hover;
     color: $color-button-white;
@@ -137,8 +136,8 @@ button, a {
 }
 
 .btn-intro {
-  background-color:#14315d;
-  color: $color-button-white;
+  background-color: #0176d3;
+  color: #ffffff;
   padding: 10px 40px;
   transition: color .2s ease-in-out, background .2s ease-in-out, border .2s ease-in-out;
   &:active, &:focus {

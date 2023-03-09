@@ -4,6 +4,16 @@ export default function ChapterMobileDrawerController($scope, WizardHandler, Top
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
+
   angular.element(document).ready(() => {
     // show the phone overlay after the page finishes loading
     $rootScope.showMobilePopout = true;

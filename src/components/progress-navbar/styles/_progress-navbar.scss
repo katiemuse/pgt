@@ -33,7 +33,7 @@ $progress-top: 15px;
 .progress-navbar-container {
   width: $progress-width-inactive;
   display: block;
-  position: fixed;
+  position: absolute;
   top: 0px;
   left: 0px;
   height: 100%;
@@ -44,12 +44,15 @@ $progress-top: 15px;
     width: 75px;
     padding-left: 25px;
   }
+  @media(max-width: 1280px) {
+    padding-left: 25px;
+  }
 
   .progress-navbar-blocker {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.0);
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     pointer-events: none;
@@ -71,7 +74,7 @@ $progress-top: 15px;
   }
 
   .nav.progress-navbar {
-    position: fixed;
+    position: absolute;
     left: 0;
     top: 0;
     height: 100%;
@@ -83,51 +86,69 @@ $progress-top: 15px;
     width: $progress-width-inactive;
 
     transition: all $progress-transition-time ease-in-out;
+    @media(max-width: 1366px) {
+      padding-left: 25px;
+    }
     @media(max-width: $screen-md-max) {
       width: 75px;
       padding-left: 25px;
+    }
+    @media(max-width: 1280px) {
+      padding-left: 10px;
     }
     li {
       margin-bottom: 20px;
 
       > a {
-        width: 200px;
-        display: block;
-        height: 20px;
+        width: 240px;
+        display: inline-block;
         background: transparent;
-        color: $text-color-white;
+        color: #321d71;
+        font-family: $avantgarde;
+        font-style: normal;
+        font-weight: 600;
         font-size: 16px;
+        line-height: 133%;
+        letter-spacing: -0.004em;
+        padding: 0;
+
+        @media(min-width: 1160px) {
+          font-size: 24px;
+          padding: 10px 15px;
+        }
+
+        @media (max-width: 1343px) {
+          width: auto;
+        }
 
         &.disabled {
           z-index: -1;
           pointer-events: none;
         }
         span {
-          font-weight: normal;
+          font-weight: 600;
           &.active {
-            font-weight: bold;
-            padding-bottom: 3px;
-            border-bottom: 4px solid #00a1e0;
+            color: #5867e8;
           }
         }
 
         &:hover {
           text-decoration: none;
           span {
-            padding-bottom: 3px;
-            border-bottom: 1px solid #ffffff;
+            color: #5867e8;
           }
         }
       }
 
       &.logo {
         width: 173px;
-        height: 48px;
+        height: 62px;
         display: block;
         background-image: url(../../../assets/images/logos/salesforce-logo.svg);
         background-size: 173px 48px;
         background-repeat: no-repeat;
         background-size: contain;
+        margin-bottom: 40px;
         > a {
           height: 100%;
         }
@@ -143,6 +164,7 @@ $progress-top: 15px;
           margin-top: 20px;
         }
         opacity: 0;
+        position: absolute;
       }
 
       &.toggle {
@@ -273,4 +295,23 @@ $progress-top: 15px;
       }
     }
   }
+}
+
+#outro .progress-navbar li {
+  display: none;
+}
+
+#outro .progress-navbar li.logo {
+  display: block;
+}
+
+.welcome-step-0,
+.welcome-step-1 {
+  .progress-navbar li {
+    display: none;
+  }
+}
+
+.welcome-step-2 .progress-navbar li {
+  display: block;
 }

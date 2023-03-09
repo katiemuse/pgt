@@ -8,47 +8,47 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="Next()"></div>
+              <div class="click-box active" ng-click="Next(); gtmTrack('progress', 'data: complete step 2')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="click-box active" ng-click="GoToStep2A()"></div>
+              <div class="click-box active" ng-click="GoToStep2A(); gtmTrack('progress', 'data: complete step 3')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2a">
               <div class="flyout active">
                 <span>Object Creator imported the vehicle data and automatically sorted it into editable columns and fields.</span>
-                <a ng-click="GoToStep3()">continue</a>
+                <a ng-click="GoToStep3(); gtmTrack('progress', 'data: complete step 4')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <div class="click-box active" ng-click="GoToStep3A()"></div>
+              <div class="click-box active" ng-click="GoToStep3A(); gtmTrack('progress', 'data: complete step 5')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3a">
               <div class="flyout active">
                 <span>Congratulations! Your data has been added to a Salesforce app that was created just for you. Let’s see your data in action.</span>
-                <a ng-click="GoToStep4()">continue</a>
+                <a ng-click="GoToStep4(); gtmTrack('progress', 'data: complete step 6')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <div class="click-box active" ng-click="GoToStep4A()"></div>
+              <div class="click-box active" ng-click="GoToStep4A(); gtmTrack('progress', 'data: complete step 7')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4a">
               <div class="flyout active">
                 <span>Your team can now access real-time order updates right in the app.</span>
-                <a ng-click="GoToStep4B()">continue</a>
+                <a ng-click="GoToStep4B(); gtmTrack('progress', 'data: complete step 8')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
@@ -56,40 +56,60 @@
           <wz-step>
             <div class="step step-4b">
               <div class="flyout active">
-                <span>But, it doesn’t stop there. You can get a 360° view of your customer using different data sources that are consolidated into a unified profile.</span>
-                <a ng-click="GoToStep5()">continue</a>
+                <span>
+                  But it doesn't stop there. You can get a 360° view of your customer using different data sources that are consolidated into a single, unified profile with Salesforce Data Cloud.
+                  <br><br>
+                  Data Cloud is a hyperscale data platform that is natively integrated with the Customer 360. With Data Cloud, connect and automatically harmonize all of your customer data to empower any business and create magical customer experiences, at scale.
+                </span>
+                <a ng-click="GoToStep5(); gtmTrack('progress', 'data: complete step 9')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-5">
-              <div class="click-box active" ng-click="GoToStep5A()"></div>
+              <div class="click-box active" ng-click="GoToStep5A(); gtmTrack('progress', 'data: complete step 10')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-5a">
               <div class="flyout active">
-                <span>Now, you can speed up innovation by empowering your teams to deliver connected and personalized customer experiences — with clicks, not code.</span>
-                <a ng-click="GoToSuccess()">continue</a>
+                <span>Salesforce Data Cloud makes it easy for us to map the incoming data from other systems into this shared data model.</span>
+                <a ng-click="GoToStep5B(); gtmTrack('progress', 'data: complete step 11')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5b">
+              <div class="flyout active">
+                <span>
+                  Data Cloud then harmonizes all of this data into a unified customer graph, giving you a single, centralized view of your customer. So that you can deliver magical customer experiences with low code.
+                </span>
+                <a ng-click="GoToSuccess(); gtmTrack('progress', 'data: complete step 12')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
-              <div class="confetti-container" ng-open="renderConfetti()">
-                <canvas id="success-confetti"></canvas>
-              </div>
+<!--              <div class="confetti-container" ng-open="renderConfetti()">-->
+<!--                <canvas id="success-confetti"></canvas>-->
+<!--              </div>-->
               <li-center>
+                <h3>Chapter Summary</h3>
+                <h4>Data</h4>
                 <p>
-                  With all customer data in one place, your business can operate faster and with greater agility. Next, let’s learn about adding automation to the buying process.
+                  With all customer data in one, centralized place, your business can increase ROI and drive success now. Next, let's learn about adding dynamic automation to the buying process.
                 </p>
-                <p>
-                  <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded active">Continue</a>
-                  <a href="https://www.salesforce.com/products/platform/features/customer-360-truth/" class="success-text-link" target="_blank" rel="noopener noreferrer">Learn more about data</a>
-                  <span class="carat"><i></i></span>
-                </p>
+                <div class="btn-container">
+                  <a ui-sref="chapter-flow" li-autofocus="wizard.stateIndex == 11" class="btn btn-rounded active"
+                     ng-click='gtmTrack("progress", "Continue", "data: summary screen")'
+                  >Continue</a>
+                  <a href="https://www.salesforce.com/products/genie/overview/" class="success-text-link" target="_blank" rel="noopener noreferrer"
+                     ng-click='gtmTrack("cta clicks", "Learn more about Data Cloud", "data: summary screen")'
+                  >Learn more about Data Cloud <span class="carat"><i></i></span></a>
+                </div>
               </li-center>
             </div>
           </wz-step>

@@ -7,14 +7,20 @@
   right: 0;
   transform: translateX(100%);
   transition: transform 0.2s ease-in-out;
+  border-radius: 8px 0 0 8px;
   span {
-    font-size: 18px;
-    color: white;
     margin-bottom: 20px;
     display: block;
+    font-family: $avantgarde;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: -0.002em;
+    color: #BEC7F6;
   }
   a {
-    text-transform: uppercase;
+    text-transform: capitalize;
     font-size: 16px;
     color: white;
     font-weight: bold;
@@ -27,17 +33,11 @@
     display: inline-flex;
     margin-bottom: 0;
     i {
-      font-family: 'SalesforceIcons';
-      speak: none;
-      font-style: normal;
-      font-weight: normal;
-      font-variant: normal;
-      text-transform: none;
-      line-height: 1;
-      font-size: 9px;
-      &:after {
-        content: "\e924";
-      }
+      background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAQJ9/7zAg3xDPv5BwYJrNQHMAAAA9SURBVAjXYwCBXgYo2GcAZaQ/hjLY6pCFhJSAQPOdAYPdOzDwYEgUBAKpJwEQNXauEJoZXYDhSACUwQHEAEFeEguTgGcUAAAAAElFTkSuQmCC');
+      background-repeat: no-repeat;
+      width: 15px;
+      height: 12px;
+      display: inline-block;
     }
   }
 }

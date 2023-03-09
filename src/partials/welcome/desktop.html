@@ -4,38 +4,39 @@
       <wizard name="monitor">
         <wz-step>
           <div class="step step-0">
-            <li-center>
-              <h2 class="intro-text">Welcome to the<br/>Salesforce Platform Tour</h2>
-              <a id="begin-the-tour" ng-click="beginTour()" href="" li-autofocus="wizard.stateIndex == 0">
-                <text text-anchor="middle" x="50%" y="50%" alignment-baseline="middle">
-                  Start
-                </text>
-              </a>
-            </li-center>
+            <div class="welcome-copy">
+              <div class="welcome-copy-block">
+                <h2>Salesforce<br> Platform Tour</h2>
+                <p>Welcome! In this tour, you'll see how you can build and extend your Customer 360 securely to drive success now. Ready?</p>
+              </div>
+              <a class="btn btn-intro active continue-button-1" href="" li-autofocus="wizard.stateIndex == 0" wz-next ng-click='gtmTrack("cta clicks", "intro 1: Continue")'>Continue</a>
+            </div>
           </div>
         </wz-step>
         <wz-step>
           <div class="step step-1">
             <div class="welcome-copy">
               <div class="welcome-copy-block">
-                <h2>Salesforce Platform Tour</h2>
-                <p>Welcome! In this tour, you’ll see how you can build smart apps with personalized experiences to delight every customer and employee. Ready?</p>
+                <!-- <h2>Your Mission</h2> -->
+                <p>Your company, Electron Motors, sells electric cars, but the buying process is disconnected, repetitive, and manual. Data lives in a variety of disparate systems, and you lack a single view of your customer, which is impacting business efficiency.</p>
+                <p>Your mission is to build and automate key customer processes – from test drive to delivery – using Salesforce low-code automation and development tools, mobile, and artificial intelligence (AI).</p>
+                <p>Click “Continue” to start the first section on data.</p>
               </div>
-              <a class="btn btn-intro active continue-button-1" href="" li-autofocus="wizard.stateIndex == 1" wz-next>Continue</a>
+              <a class="btn btn-intro active" ng-click="beginIntro(); gtmTrack('cta clicks', 'intro 2: Continue')" href="" li-autofocus="wizard.stateIndex == 1">Continue</a>
             </div>
           </div>
         </wz-step>
         <wz-step>
           <div class="step step-2">
-            <div class="welcome-copy">
-              <div class="welcome-copy-block">
-                <!-- <h2>Your Mission</h2> -->
-                <p>Your company, Electron Motors, sells electric cars, but the buying process is disconnected, repetitive, and manual.</p>
-                <p>Your mission is to digitize key customer processes — from test drive to delivery — using Salesforce builders, mobile, artificial intelligence (AI), and blockchain.</p>
-                <p>Click “Continue” to start the first section on data.</p>
-              </div>
-              <a ui-sref="chapter-data" class="btn btn-intro active" href="" li-autofocus="wizard.stateIndex == 2" wz-next>Continue</a>
-            </div>
+            <li-center>
+              <h2 class="intro-text">Salesforce Platform Tour</h2>
+              <p class="intro-copy">Take a look at the tips on this screen to get the<br> most out of your tour.</p>
+              <a id="begin-the-tour" ng-click="beginTour(); gtmTrack('progress', 'Start tour')" href="" li-autofocus="wizard.stateIndex == 2" ui-sref="chapter-data">
+                <text text-anchor="middle" x="50%" y="50%" alignment-baseline="middle">
+                  Start tour
+                </text>
+              </a>
+            </li-center>
           </div>
         </wz-step>
       </wizard>

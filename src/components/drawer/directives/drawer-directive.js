@@ -18,10 +18,12 @@ export default function drawer($window, $rootScope, drawerRegisterEvents, $timeo
   };
 
   function onResize() {
-    const height = angular.element($window)[0].innerHeight + 'px';
-    bgEl.css('height', height);
+    let height = angular.element($window)[0].innerHeight - angular.element($document[0].querySelector("footer"))[0].offsetHeight;
+    height = height < 678 ? 678 + 'px' : height + 'px';
+    bgEl.css('min-height', height);
+    angular.element($document[0].querySelector('.main.desktop'))[0].style.minHeight = height;
     if (drawerEl) {
-      drawerEl.css('height', height);
+      drawerEl.css('min-height', height);
     }
   }
 
@@ -140,7 +142,10 @@ export default function drawer($window, $rootScope, drawerRegisterEvents, $timeo
       }
 
       element.addClass('drawer');
-      element.css('height', angular.element($window)[0].innerHeight + 'px');
+      let height = angular.element($window)[0].innerHeight - angular.element($document[0].querySelector("footer"))[0].offsetHeight;
+      height = height < 678 ? 678 + 'px' : height + 'px';
+      element.css('min-height', height);
+      angular.element($document[0].querySelector('.main.desktop'))[0].style.minHeight = angular.element($window)[0].innerHeight - angular.element($document[0].querySelector("footer"))[0].offsetHeight + 'px';
       element.addClass('drawer-right');
       drawerEl = element;
     }

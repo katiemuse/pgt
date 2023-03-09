@@ -5,7 +5,7 @@
     .welcome {
       // background: url("../assets/images/backgrounds/intro-screen.jpg") center
       //   center repeat;
-      background-color: #032e61;
+      background-color: #d8d8d8;
     }
   }
 }
@@ -43,13 +43,13 @@
     }
   }
   h3 {
-    color: #00315a;
     font-family: $salesforcesans;
-    font-size: 19px;
-    line-height: 29px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    color: #181818;
     margin: 0 auto 10px;
     padding: 10px;
-    font-weight: normal;
     max-width: 340px;
     @media (min-width: $screen-sm-min) and (max-width: $screen-sm-max) {
       font-size: 38px;
@@ -236,7 +236,7 @@
       margin-bottom: 40px;
       padding: 15px 45px;
       font-size: 14px;
-      background: #032e61;
+      background: #0176d3;
       @media (min-width: $screen-sm-min){
         margin-bottom: 80px;
         padding: 23px 75px;
@@ -441,9 +441,14 @@
 }
 
 .welcome {
-  .step-1,
-  .step-2 {
+  .step-0,
+  .step-1 {
     background-image: url("../assets/images/chapters/welcome/intro-background.jpg");
+    background-size: cover;
+  }
+
+  .step-2 {
+    background: #d8d8d8;
   }
 
   .step-3 {
@@ -459,19 +464,30 @@
   height: 360px;
   left: 470px;
   position: absolute;
-  top: 17px;
+  top: 37px;
 
   h2 {
-    font-size: 26px;
+    font-family: $avantgarde;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.004em;
+    color: #321D71;
   }
 
   p {
-    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.001em;
+    color: #000000;
   }
 
   a {
     position: absolute;
-    top: 360px;
+    top: 380px;
     left: 0px;
     width: auto;
   }

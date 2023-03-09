@@ -14,6 +14,15 @@
   .step-4 {
     background: url('../assets/images/chapters/chapter-flow/screen-bkg-4.png') center top no-repeat;
   }
+  .step-5 {
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-5.png') center top no-repeat;
+  }
+  .step-6 {
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-6.jpg') center top no-repeat;
+  }
+  .step-7 {
+    background: url('../assets/images/chapters/chapter-flow/screen-bkg-7.gif') center top no-repeat;
+  }
 
   .step {
     background-size: contain;
@@ -21,29 +30,29 @@
 
   .step-1 {
     .click-box {
-      top: 80px;
-      left: 574px;
-      width: 90px;
-      height: 80px;
+      top: 184px;
+      left: 381px;
+      width: 93px;
+      height: 24px;
     }
   }
 
   .step-2 {
     .currency-drag {
       position: absolute !important;
-      bottom: 261px;
-      left: 6px;
+      bottom: 251px;
+      left: 48px;
       border-radius: 4px;
       -webkit-user-select:none;
       -webkit-touch-callout:none;
-      width: 150px;
+      width: 90px;
       &.active {
         animation: borderActive 1.5s infinite;
         cursor: move;
       }
     }
     .drop-box {
-      top: 61px;
+      top: 78px;
       left: 165px;
       width: 403px;
       height: 25px;
@@ -57,284 +66,32 @@
 
     .currency-label {
       position: absolute;
-      left: 586px;
-      top: 111px;
-      width: 192px !important;
+      left: 603px;
+      top: 122px;
+      width: 139px !important;
       opacity: 1;
-      font-size: 10px;
+      font-size: 7px;
       border-radius: 3px !important;
-      height: 26px !important;
+      height: 16px !important;
     }
   }
   .step-4 {
     .click-box {
-      top: 388px;
-      left: 730px;
-      width: 47px;
-      height: 25px;
+      top: 424px;
+      left: 708px;
+      width: 31px;
+      height: 15px;
     }
   }
-  &.mobile {
-    height: 100%;
-    background: rgb(187,233,247);
-    .slides {
-      // min-height: 600px;
-    }
-    .slide-image {
-      // height: 560px;
-      // position: relative;
-      // background-size: cover;
-      @media (min-width: $screen-sm-min) {
-        height: 1152px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        height: 1158px;
-      }
-    }
-    .slide-0 {
-      // margin-top: 50px;
-      position: relative;
-      @media (min-width: $screen-sm-min) {
-        // margin-top: 230px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        top: -50px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-0.png) center center no-repeat;
-        background-size: contain;
-        height: 870px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-flow/chapter-flow-silde-0-2x.png) center bottom no-repeat;
-          background-position: center bottom;
-          background-size: cover;
-          height: 1444px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1630px;
-        }
-      }
-      .slide-intro {
-        position: absolute;
-        padding: 0 15px 0 30px;
-        top: 20px;
-        width: 100%;
-        @media (min-width: $screen-sm-min) {
-          padding: 0 15px 0 60px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          // top: -30px;
-          padding: 0 15px 0 90px;
-        }
-        .slide-header {
-          margin-bottom: 30px;
-          h1 {
-            color: #000000;
-            font-size: 28px;
-            margin-bottom: 0;
-            @media (min-width: $screen-sm-min) {
-              font-size: 40px;
-              line-height: 38px;
-            }
-          }
-        }
-        .slide-copy {
-          max-width: 330px;
-          @media (min-width: $screen-sm-min) {
-            max-width: 650px;
-          }
-          p {
-            color: #000000;
-            font-size: 18px;
-            line-height: 26px;
-            @media (min-width: $screen-sm-min) {
-              font-size: 32px;
-              line-height: 40px;
-            }
-          }
-        }
-      }
-      .transition-copy {
-        bottom: 82px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 103px;
-        }
-      }
-    }
-    .slide-1 {
-      position: relative;
-      
-      @media (min-width: $screen-sm-min) {
-        
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1.png) center center no-repeat;
-        background-size: cover;
-        height: 495px;
-        position: relative;
-        top: -69px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-1-2x.png) center top no-repeat;
-          background-size: contain;
-          height: 1049px;
-          top: -104px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          background-size: cover;
-          height: 1240px;
-          top: -154px;
-        }
-      }
-      .transition-copy {
-        // bottom: 103px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 285px;
-        }
-      }
-    }
-    .success {
-      position: relative;
-      min-height: 300px;
-      top: -102px;
-      margin-bottom: -102px;
-      @media (min-width: $screen-sm-min) {
-        top: -170px;
-        margin-bottom: -170px;
-        min-height: 430px;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          min-height: 430px;
-          top: -154px;
-          margin-bottom: -154px;
-        }
-      }
-      .confetti-container {
-        .content-container{
-          top: 50px;
-        }
-        .confettii-still {
-          min-height: 330px;
-          @media (min-width: $screen-sm-min) {
-            min-height: 430px;
-          }
-        }
-      }
-    }
-    .transition-copy {
-      background-color: #00315a;
-      min-height: 115px;
-      display: flex;
-      align-items: center;
-      padding: 40px;
-      position: relative;
-      bottom: 0;
-      p {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 24px;
-        @media (min-width: $screen-sm-min) {
-          font-size: 32px;
-          line-height: 40px;
-        }
-      }
-      .transition-arrow {
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #00315a;
-        position: absolute;
-        bottom: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-      }
-    }
-    .slide-2 {
-      position: relative;
-      margin-top: -30px;
-      @media (min-width: $screen-sm-min) {
-        
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-2.png) center center no-repeat;
-        background-size: cover;
-        height: 495px;
-        position: relative;
-        top: -69px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-flow/chapter-flow-slide-2-2x.png) center top no-repeat;
-          background-size: cover;
-          height: 993px;
-          top: -254px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1156px;
-          top: -254px;
-        }
-      }
-      .transition-copy {
-        // bottom: 103px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 285px;
-        }
-      }
-    }
-    .success {
-      position: relative;
-      min-height: 300px;
-      top: -102px;
-      margin-bottom: -102px;
-      @media (min-width: $screen-sm-min) {
-        top: -321px;
-        margin-bottom: -321px;
-        min-height: 430px;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          min-height: 430px;
-          top: -254px;
-          margin-bottom: -254px;
-        }
-      }
-      .confetti-container {
-        .content-container{
-          top: 50px;
-        }
-        .confettii-still {
-          min-height: 330px;
-          @media (min-width: $screen-sm-min) {
-            min-height: 430px;
-          }
-        }
-      }
-    }
-    .transition-copy {
-      background-color: #00315a;
-      min-height: 115px;
-      display: flex;
-      align-items: center;
-      padding: 40px;
-      position: relative;
-      bottom: 103px;
-      p {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 24px;
-        @media (min-width: $screen-sm-min) {
-          font-size: 32px;
-          line-height: 40px;
-        }
-      }
-      .transition-arrow {
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #00315a;
-        position: absolute;
-        bottom: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-      }
+  .step-5 {
+    .highlight {
+      position: absolute;
+      border: 2px solid $color-marketing-cloud-orange;
+      top: 307px;
+      left: 287px;
+      width: 112px;
+      height: 32px;
+      border-radius: 5px;
     }
   }
 }

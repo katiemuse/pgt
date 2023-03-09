@@ -10,8 +10,15 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   $scope.$watch("label.input", newValue => {
     $timeout.cancel(timeoutExtdsName);
     timeoutExtdsName = $timeout(() => {
-      if (angular.isDefined(newValue) && newValue.length > 2) {
+      if (angular.isDefined(newValue) && newValue.length > 5) {
         $scope.goToStep4();
+        window.dataLayer.push({
+          event: 'eventTracker',
+          eventCat: 'progress',
+          eventAct: window.location.href,
+          eventLbl: 'flow: complete step 5',
+          nonInteraction: false
+        });
       }
     }, delayInMs);
   });
@@ -29,11 +36,33 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   $scope.goToStep3 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("three");
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: 'progress',
+      eventAct: window.location.href,
+      eventLbl: 'flow: complete step 4',
+      nonInteraction: false
+    });
   };
 
   $scope.goToStep4 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("four");
+  };
+
+  $scope.goToStep5 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.goToStep6 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+
+  $scope.goToStep7 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
   };
 
   $scope.goToSuccess = function() {
@@ -42,5 +71,15 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   };
   $scope.renderConfetti = function() {
     successConfetti.renderConfetti();
+  };
+
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
   };
 }

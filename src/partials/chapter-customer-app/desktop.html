@@ -13,66 +13,70 @@
                   >All the data from Salesforce will be synced to the customer
                   app.</span
                 >
-                <a ng-click="GoToFirstStep()">continue</a>
+                <a ng-click="GoToFirstStep(); gtmTrack('progress', 'customer app: complete step 2')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1a">
-              <div class="click-box active" ng-click="NextSlideNoTab()"></div>
+              <div class="click-box active" ng-click="NextSlideNoTab(); gtmTrack('progress', 'customer app: complete step 3')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1b">
               <div class="flyout active">
                 <span
-                  >Our customer, Mike, can now buy or customize his car on an
-                  engaging app built on Heroku.</span
+                  >Your customer, Mike, can now buy or customize his car with ease on an engaging app built on Heroku.</span
                 >
-                <a ng-click="GoToStep2()">continue</a>
+                <a ng-click="GoToStep2(); gtmTrack('progress', 'customer app: complete step 4')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <div class="click-box active" ng-click="GoToStep3()"></div>
+              <div class="click-box active" ng-click="GoToStep3(); gtmTrack('progress', 'customer app: complete step 5')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <div class="click-box active" ng-click="NextSlideNoTab()"></div>
+              <div class="click-box active" ng-click="NextSlideNoTab(); gtmTrack('progress', 'customer app: complete step 6')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4a">
               <div class="flyout active">
-                <span>Adding that selection increased the price by $3,000</span>
-                <a ng-click="GoToStep4()">continue</a>
+                <span>Adding that selection increased the price by $3,000.</span>
+                <a ng-click="GoToStep4(); gtmTrack('progress', 'customer app: complete step 7')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <div class="click-box active" ng-click="NextSlideNoTab()"></div>
+              <div class="click-box active" ng-click="NextSlideNoTab(); gtmTrack('progress', 'customer app: complete step 8')"></div>
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
-                <div class="confetti-container" ng-open="renderConfetti()">
-                  <canvas id="success-confetti"></canvas>
-                </div>
+<!--                <div class="confetti-container" ng-open="renderConfetti()">-->
+<!--                  <canvas id="success-confetti"></canvas>-->
+<!--                </div>-->
               <li-center>
+                <h3>Chapter Summary</h3>
+                <h4>Customer App</h4>
                 <p class="customer-app">
-                  You’ve created an engaging, personalized app experience for your customers and can empower your employees to do the same, all with little to no code. <br/> <br/>Ready to discover more about what the Salesforce Platform can do for you?
+                  You've created an engaging, personalized app experience for your customers, delivering real-time customer magic. And you can empower your employees to do the same, all with low-code tools that help you do more with less.<br /><br />Ready to discover more about what the Salesforce Platform can do for you?
                 </p>
-                <p>
-                  <a ui-sref="outro" li-autofocus="wizard.stateIndex == 8" class="btn btn-rounded active">Continue</a>
-                  <a href="https://www.salesforce.com/products/heroku/overview" class="success-text-link" target="_blank" rel="noopener noreferrer">Learn More About Heroku</a>
-                  <span class="carat"><i></i></span>
-                </p>
+                <div class="btn-container">
+                  <a ui-sref="outro" li-autofocus="wizard.stateIndex == 8" class="btn btn-rounded active"
+                     ng-click='gtmTrack("progress", "Continue", "customer app: summary screen")'
+                  >Continue</a>
+                  <a href="https://www.salesforce.com/products/heroku/overview" class="success-text-link" target="_blank" rel="noopener noreferrer"
+                     ng-click='gtmTrack("cta clicks", "Learn more about Heroku", "customer app: summary screen")'
+                  >Learn more about Heroku <span class="carat"><i></i></span></a>
+                </div>
               </li-center>
             </div>
           </wz-step>

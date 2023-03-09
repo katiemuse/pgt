@@ -15,27 +15,27 @@
                   No video support
                 </video>
               </div>
-            </wz-step>            
+            </wz-step>
             <wz-step>
               <div class="step phone-step-2">
                 <div class="flyout active">
                     <span>Let's use your new app!</span>
-                    <a ng-click="Next()">continue</a>
+                    <a ng-click="Next(); gtmTrack('progress', 'mobile: complete step 2')">continue</a>
                     <span class="carat"><i></i></span>
-                </div>                  
+                </div>
               </div>
             </wz-step>
             <wz-step>
               <div class="step phone-step-3">
-                <div class="click-box active" ng-click="GoToStep4()"></div>
+                <div class="click-box active" ng-click="GoToStep4(); gtmTrack('progress', 'mobile: complete step 3')"></div>
               </div>
             </wz-step>
             <wz-step>
               <div class="step phone-step-4">
                   <div class="click-box highlight"></div>
                 <div class="flyout active">
-                    <span>Notice how the price quote increases $5,000 when you upgrade the battery. Now your sales reps can generate automatic price quotes based on the car options they select.</span>
-                    <a ng-click="GoToSuccess()">continue</a>    
+                    <span>Notice how the price quote increases $5,000 when you upgrade the battery. Now, your sales reps can generate automatic price quotes based on the car options they select, saving them time and increasing productivity.</span>
+                    <a ng-click="GoToSuccess(); gtmTrack('progress', 'mobile: complete step 4')">continue</a>
                     <span class="carat"><i></i></span>
                 </div>
               </div>
