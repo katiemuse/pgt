@@ -102,7 +102,7 @@
         background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-phone.png) center center no-repeat;
         background-size: contain;
         width: 55vw;
-        height: calc(50.4vw / (136/287));
+        height: calc(50.8vw / (136/287));
         position: absolute;
         top: 50%;
         left: 50%;
@@ -115,8 +115,8 @@
         }
       }
       .phone-placeholder {
-        background: url(../assets/images/chapters/chapter-mobile/mobile-slide-0-placeholder.png) center center no-repeat;
         background-size: contain;
+        background: #F1F1F0 url(../assets/images/chapters/chapter-mobile/mobile-slide-0-placeholder.png) no-repeat center center;
         width: 50vw;
         height: calc(50vw / (136/287));
         position: absolute;

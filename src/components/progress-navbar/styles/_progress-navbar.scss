@@ -86,6 +86,9 @@ $progress-top: 15px;
     width: $progress-width-inactive;
 
     transition: all $progress-transition-time ease-in-out;
+    @media(max-width: 1366px) {
+      padding-left: 25px;
+    }
     @media(max-width: $screen-md-max) {
       width: 75px;
       padding-left: 25px;

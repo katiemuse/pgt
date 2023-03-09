@@ -193,8 +193,8 @@ button.step-close-button {
       min-height: auto;
       height: auto !important;
       @media (max-width: $screen-md-max) {
-        width: 130px;
-        margin-left: 0;
+        width: 115px;
+        margin-left: auto;
         min-height: 70px;
       }
       @media (min-width: 1200px) and (max-width: 1279px) {
