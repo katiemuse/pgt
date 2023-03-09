@@ -88,11 +88,11 @@ module.exports = {
       jQuery: 'jquery',
       $: 'jquery',
       jquery: 'jquery',
-      "window.jQuery": "jquery",
-      "root.jQuery": "jquery",
+      'window.jQuery': 'jquery',
+      'root.jQuery': 'jquery',
       Tether: 'tether',
       'window.Tether': 'tether',
-      "ui": "jquery-ui/ui/core"
+      'ui': 'jquery-ui/ui/core'
     }),
     new webpack.optimize.CommonsChunkPlugin({name: 'vendor'}),
     new webpack.LoaderOptionsPlugin({

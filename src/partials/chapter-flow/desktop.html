@@ -8,14 +8,14 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="goToStep1A()"></div>
+              <div class="click-box active" ng-click="goToStep1A(); gtmTrack('progress', 'flow: complete step 2')"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-1a">
               <div class="flyout active">
                 <span>Let's add price quote logic to your flow so that sales reps see automatic payment terms.</span>
-                <a ng-click="goToStep2()">continue</a>
+                <a ng-click="goToStep2(); gtmTrack('progress', 'flow: complete step 3')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
@@ -39,23 +39,63 @@
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <div class="click-box active" ng-click="goToSuccess()"></div>
+              <div class="click-box active" ng-click="goToStep5(); gtmTrack('progress', 'flow: complete step 6')"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
+              <div class="flyout active">
+                <span>
+                  Your financing process flow is now live!
+                  <br><br>
+                  While we created this flow without using any code, the Salesforce Platform also enables your team to build flows with code, like the one seen here. Seamlessly extend and enrich your automations through a number of programming languages based on your needs.
+                </span>
+                <a ng-click="goToStep6(); gtmTrack('progress', 'flow: complete step 7')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-6">
+              <div class="flyout active">
+                <span>
+                  Even better, developers can stay in the browser experience with Code Builder, allowing you to deliver trusted, end-to-end experiences and drive productivity.
+                </span>
+                <a ng-click="goToStep7(); gtmTrack('progress', 'flow: complete step 8')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-7">
+              <div class="flyout active">
+                <span>
+                  And with Data Cloud, workflows like this one become dynamic – they change just as your data does. Data Cloud helps boost automation, by connecting real-time data to real-time workflows with Salesforce Flow.
+                </span>
+                <a ng-click="goToSuccess(); gtmTrack('progress', 'flow: complete step 9')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
             </div>
           </wz-step>
           <wz-step success="true">
             <div class="step success">
-                <div class="confetti-container" ng-open="renderConfetti()">
-                  <canvas id="success-confetti"></canvas>
-                </div>
+<!--                <div class="confetti-container" ng-open="renderConfetti()">-->
+<!--                  <canvas id="success-confetti"></canvas>-->
+<!--                </div>-->
               <li-center>
+                <h3>Chapter Summary</h3>
+                <h4>Flow</h4>
                 <p>
-                  Automating these actions will expedite the overall purchasing process. Next, you’ll add this logic to your app with clicks, not code.
+                  Automating these actions will enhance and expedite the overall purchasing process, allowing your team to work more efficiently.<br /><br />Next, you'll add this business logic to your app with clicks, not code.
                 </p>
-                <p>
-                  <a ui-sref="chapter-builder" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active">Continue</a>
-                  <a href="https://www.salesforce.com/products/platform/solutions/automate-business-processes/" class="success-text-link" target="_blank" rel="noopener noreferrer">Learn more about automation</a>
-                  <span class="carat"><i></i></span>
-                </p>
+                <div class="btn-container">
+                  <a ui-sref="chapter-builder" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active"
+                     ng-click='gtmTrack("progress", "Continue", "flow: summary screen")'
+                  >Continue</a>
+                  <a href="https://www.salesforce.com/products/platform/workflow-automation/" class="success-text-link" target="_blank" rel="noopener noreferrer"
+                     ng-click='gtmTrack("cta clicks", "Learn more about Automation", "flow: summary screen")'
+                  >Learn more about automation <span class="carat"><i></i></span></a>
+                </div>
               </li-center>
             </div>
           </wz-step>

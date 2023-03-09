@@ -19,6 +19,16 @@ export class TopNavbarController {
       mobileEnabled: false
     };
 
+    this.$scope.topNavbar.gtmTrack = (cat, label) => {
+      window.dataLayer.push({
+        event: 'eventTracker',
+        eventCat: cat,
+        eventAct: window.location.href,
+        eventLbl: label,
+        nonInteraction: false
+      });
+    };
+
     this.$scope.topNavbar.didYouKnowClicked = () => {
       if (this.$scope.topNavbar.didYouKnowEnabled) {
         this.TopNavbar.DidYouKnowActive = true;

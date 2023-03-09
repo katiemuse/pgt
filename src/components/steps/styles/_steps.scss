@@ -100,8 +100,8 @@ button.step-close-button {
   }
   > {
     div {
-      margin: 0 0 6px;
-      padding: 25px;
+      margin: 0 0 10px;
+      padding: 25px 25px 25px 68px;
       background-position: 0px center;
       background-repeat: no-repeat;
       color: $stepContainerColor;
@@ -129,8 +129,8 @@ button.step-close-button {
   .step {
     min-height: 90px;
     position: relative;
-    width: 174px;
-    margin-left: 119px;
+    width: 140px;
+    margin-left: auto;
     height: 90px;
     @media (max-width: $screen-md-max) {
       width: 74px;
@@ -140,11 +140,15 @@ button.step-close-button {
     }
 
     .step-title {
-      font-family: $salesforcesans;
-      font-weight: normal;
+      opacity: 0;
+      font-family: $avantgarde;
+      font-style: normal;
+      font-weight: 600;
       font-size: 16px;
       line-height: 20px;
-      opacity: 0;
+      letter-spacing: -0.002em;
+      color: #BEC7F6;
+
       @media (max-width: $screen-md-max) {
         font-size: 12px;
         line-height: 1.4;
@@ -167,40 +171,46 @@ button.step-close-button {
 
     &:before {
       position: absolute;
-      left: 20px;
-      top: 13px;
-      color: $text-color-white;
-      font-family: $salesforcesans;
-      font-weight: bold;
-      font-size: 46px;
-      float: left;
+      left: 24px;
+      top: 50%;
+      font-family: $avantgarde;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 34px;
+      line-height: 133%;
+      letter-spacing: -0.004em;
+      transform: translateY(-50%);
+
       @media (max-width: $screen-md-max) {
         left: 10px;
-        top: 9px;
-        font-size: 36px;
       }
     }
 
     &.active {
-      width: 280px;
+      width: 320px;
       margin-left: 13px;
       max-height: 500px;
       min-height: auto;
       height: auto !important;
       @media (max-width: $screen-md-max) {
-        width: 130px;
-        margin-left: 0;
+        width: 115px;
+        margin-left: auto;
         min-height: 70px;
       }
       @media (min-width: 1200px) and (max-width: 1279px) {
         width: 207px;
-        margin-left: 86px;
-        padding: 25px 15px;
       }
-      @media (min-width: 1280px) and (max-width: 1400px) {
+      @media (min-width: 1280px) and (max-width: 1365px) {
         width: 237px;
-        margin-left: 57px;
-        padding: 25px 5px;
+      }
+      @media (min-width: 1366px) and (max-width: 1400px) {
+        width: 267px;
+      }
+
+      &:before {
+        @media (max-width: $screen-md-max) {
+          visibility: hidden;
+        }
       }
 
       .step-title,
@@ -211,17 +221,13 @@ button.step-close-button {
         @media (max-width: $screen-md-max) {
           width: 110px;
         }
-        @media (min-width: 1200px) and (max-width: 1280px) {
-          max-width: 200px;
+        @media (min-width: 1200px) and (max-width: 1366px) {
+          max-width: 170px;
           padding-right: 20px;
         }
         @media (min-width: 1280px) and (max-width: 1399px) {
           padding: 0 10px;
         }
-      }
-
-      &:before {
-        content: '';
       }
     }
   }
@@ -229,22 +235,9 @@ button.step-close-button {
 .step {
   &.success {
     position: relative;
-    .carat {
-      display: flex;
-      margin-left: 3px;
-      i {
-        font-family: 'SalesforceIcons';
-        speak: none;
-        font-style: normal;
-        font-weight: normal;
-        font-variant: normal;
-        text-transform: none;
-        line-height: 1;
-        font-size: 9px;
-        &:after {
-          content: '\e924';
-        }
-      }
+
+    .confetti-container {
+      display: none;
     }
 
     #success-confetti {
@@ -256,16 +249,43 @@ button.step-close-button {
     }
 
     h2,
+    h3,
     p {
       color: $text-color-white;
     }
 
+    h3 {
+      font-family: $avantgarde;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 36px;
+      line-height: 40px;
+      letter-spacing: -0.004em;
+    }
+
+    h4 {
+      font-family: $avantgarde;
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 28px;
+      letter-spacing: -0.001em;
+      color: #BEC7F6;
+      margin-bottom: 24px;
+    }
+
     p {
-      font-size: 22px;
-      padding: 0 10%;
-      font-weight: bold;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 26px;
+      letter-spacing: -0.002em;
+      margin-left: 100px;
+      margin-right: 100px;
+      margin-bottom: 40px;
+
       &.customer-app {
-        padding: 0 12%;
+        margin-left: 80px;
+        margin-right: 80px;
       }
       &:nth-child(2) {
         display: flex;
@@ -274,14 +294,15 @@ button.step-close-button {
         margin-top: 30px;
         a {
           &:nth-child(1) {
-            background: #e67300;
-            color: #ffffff;
+            background: #ffffff;
+            color: #0176D3;
             padding: 10px 30px;
             margin-top: 0;
             margin-right: 25px;
+            border: 2px solid #0176D3;
             &:hover {
-              background: #d26b03;
-              color: #ffffff;
+              background: #ffffff;
+              color: #0176D3;
             }
           }
           &:nth-child(2) {
@@ -308,20 +329,47 @@ button.step-close-button {
       }
     }
 
+    .btn-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .btn {
+        margin-bottom: 20px;
+        width: fit-content;
+      }
+    }
+
     .btn {
       padding: 10px 70px;
       margin-top: 0px;
-      border: none;
-      background: $color-marketing-cloud-orange;
-      color: #ffffff;
+      background: #ffffff;
+      color: #0176D3;
+      border: 2px solid #0176D3;
       font-weight: bold;
+
+      &:hover {
+        background-color: #EAF5FE;
+        color: #032D60;
+        border: 2px solid #032D60;
+      }
     }
 
     .success-text-link {
-      font-weight: normal;
-      font-size: 14px;
-      text-transform: uppercase;
-      color: #ffffff;
+      font-weight: 700;
+      font-size: 16px;
+      line-height: 28px;
+      color: #FFFFFF;
+      .carat {
+        display: inline-flex;
+        margin-bottom: 0;
+        i {
+          background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAQJ9/7zAg3xDPv5BwYJrNQHMAAAA9SURBVAjXYwCBXgYo2GcAZaQ/hjLY6pCFhJSAQPOdAYPdOzDwYEgUBAKpJwEQNXauEJoZXYDhSACUwQHEAEFeEguTgGcUAAAAAElFTkSuQmCC');
+          background-repeat: no-repeat;
+          width: 15px;
+          height: 12px;
+          display: inline-block;
+        }
+      }
     }
   }
 }
@@ -332,51 +380,52 @@ button.step-close-button {
 .step-four,
 .step-five,
 .step-six {
-  background-color: transparent;
-  background-image: linear-gradient(
-    to right,
-    rgba(0, 161, 224, 1) 0%,
-    rgba(0, 161, 224, 0.8) 47%,
-    rgba(0, 161, 224, 0.3) 100%
-  );
+  border-radius: 8px 0 0 8px;
+  background-color: #321d71;
+  //background-image: linear-gradient(
+  //  to right,
+  //  rgba(0, 161, 224, 1) 0%,
+  //  rgba(0, 161, 224, 0.8) 47%,
+  //  rgba(0, 161, 224, 0.3) 100%
+  //);
   &.active {
-    background-image: linear-gradient(to left, rgba(120, 120, 120, 0.5), #009cdb);
+    //background-image: linear-gradient(to left, rgba(120, 120, 120, 0.5), #009cdb);
   }
 }
 
 .step-one {
   &:before {
-    content: '01';
+    content: '1';
   }
 }
 
 .step-two {
   &:before {
-    content: '02';
+    content: '2';
   }
 }
 
 .step-three {
   &:before {
-    content: '03';
+    content: '3';
   }
 }
 
 .step-four {
   &:before {
-    content: '04';
+    content: '4';
   }
 }
 
 .step-five {
   &:before {
-    content: '05';
+    content: '5';
   }
 }
 
 .step-six {
   &:before {
-    content: '06';
+    content: '6';
   }
 }
 
@@ -406,16 +455,16 @@ button.step-close-button {
 // mobile version
 .slides {
   &.success {
-    background-color: #00315a;
+    background-color: #321D71;
     .confetti-container {
       position: relative;
       .confettii-still {
-        background: url('../../../assets/images/backgrounds/mobile-confetti.png') no-repeat;
+        background: url('../../../assets/images/backgrounds/success-clouds.png') no-repeat;
         background-position: center bottom;
         background-size: contain;
         min-height: 500px;
         @media (min-width: $screen-sm-min) {
-          min-height: 650px;
+          min-height: 750px;
         }
         @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
           min-height: 570px;
@@ -444,6 +493,19 @@ button.step-close-button {
               font-size: 44px;
             }
           }
+          h3 {
+            font-family: $avantgarde;
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 28px;
+            letter-spacing: -0.001em;
+            color: #C2C8E8;
+            @media (min-width: $screen-sm-min) {
+              font-size: 40px;
+              line-height: 50px;
+            }
+          }
         }
         .mobile-success-ctas {
           padding-top: 30px;
@@ -453,7 +515,10 @@ button.step-close-button {
             padding-top: 50px;
           }
           .btn {
-            background-color: rgb(227, 115, 36);
+            background-color: white;
+            width: fit-content;
+            border: 2px solid #0176d3;
+            color: #0176d3;
             @media (min-width: $screen-sm-min) {
               padding: 20px 30px;
               font-size: 18px;
@@ -462,9 +527,8 @@ button.step-close-button {
           }
           .success-text-link {
             color: #fff;
-            text-transform: uppercase;
-            font-weight: normal;
-            font-size: 14px;
+            font-weight: bold;
+            font-size: 16px;
             @media (min-width: $screen-sm-min) {
               font-size: 18px;
             }
@@ -475,21 +539,14 @@ button.step-close-button {
             margin-top: 30px;
           }
           .carat {
-            display: flex;
-            margin-left: 3px;
-            color: #ffffff;
+            display: inline-flex;
+            margin-bottom: 0;
             i {
-              font-family: 'SalesforceIcons';
-              speak: none;
-              font-style: normal;
-              font-weight: normal;
-              font-variant: normal;
-              text-transform: none;
-              line-height: 1;
-              font-size: 9px;
-              &:after {
-                content: '\e924';
-              }
+              background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAANBAMAAABSlfMXAAAALVBMVEUAAAD///////////////////////////////////////////////////////+hSKubAAAADnRSTlMAQJ9/7zAg3xDPv5BwYJrNQHMAAAA9SURBVAjXYwCBXgYo2GcAZaQ/hjLY6pCFhJSAQPOdAYPdOzDwYEgUBAKpJwEQNXauEJoZXYDhSACUwQHEAEFeEguTgGcUAAAAAElFTkSuQmCC');
+              background-repeat: no-repeat;
+              width: 15px;
+              height: 12px;
+              display: inline-block;
             }
           }
         }

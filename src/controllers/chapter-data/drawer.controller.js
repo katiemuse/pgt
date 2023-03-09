@@ -4,6 +4,16 @@ export default function ChapterDataDrawerController($scope, WizardHandler, TopNa
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
+
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
@@ -34,7 +44,7 @@ export default function ChapterDataDrawerController($scope, WizardHandler, TopNa
 
     Steps.pop({
       number: 'five',
-      title: 'Click &ldquo;Add Sources&rdquo; to easily add data from another system.'
+      title: 'Click &ldquo;Marketing Cloud&rdquo; to add a new data source.'
     });
 
     Hotspots.clear();

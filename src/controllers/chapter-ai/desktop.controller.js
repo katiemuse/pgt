@@ -8,6 +8,13 @@ export default function AddACustomFieldController($scope, $timeout, Steps, Hotsp
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 2) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('two');
+      window.dataLayer.push({
+        event: 'eventTracker',
+        eventCat: 'progress',
+        eventAct: window.location.href,
+        eventLbl: 'flow: complete step 2',
+        nonInteraction: false
+      });
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 3) {
       /* this is where the phone is shown */
       WizardHandler.wizard('monitor').next();
@@ -28,5 +35,15 @@ export default function AddACustomFieldController($scope, $timeout, Steps, Hotsp
 
   $scope.renderConfetti = function() {
     successConfetti.renderConfetti();
+  };
+
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
   };
 }

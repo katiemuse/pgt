@@ -34,7 +34,7 @@
   .step {
     background-size: contain;
   }
-  
+
   .step-1 {
     .click-box {
       top: 158px;
@@ -50,7 +50,7 @@
       right: 184px;
       width: 37px;
       height: 19px;
-    }    
+    }
   }
 
   .step-2a {
@@ -64,7 +64,7 @@
       right: 194px;
       width: 44px;
       height: 24px;
-    }    
+    }
   }
 
   .step-4 {
@@ -82,7 +82,7 @@
       left: 371px;
       width: 59px;
       height: 20px;
-    }    
+    }
   }
 
   .step-5a {
@@ -159,18 +159,6 @@
           top: 0px;
           padding: 0 15px 0 90px;
         }
-        .slide-header {
-          margin-bottom: 30px;
-          h1 {
-            color: #000000;
-            font-size: 28px;
-            margin-bottom: 0;
-            @media (min-width: $screen-sm-min) {
-              font-size: 40px;
-              line-height: 38px;
-            }
-          }
-        }
         .slide-copy {
           max-width: 330px;
           @media (min-width: $screen-sm-min) {
@@ -201,7 +189,7 @@
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         margin-top: -150px;
-      } 
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-1.png) center center no-repeat;
         background-size: contain;
@@ -259,7 +247,7 @@
       }
       @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
         top: -452px;
-      }      
+      }
       .slide-image {
         background: url(../assets/images/chapters/chapter-blockchain/mobile-slide-3.png) center top no-repeat;
         background-size: contain;
@@ -367,37 +355,6 @@
             min-height: 530px;
           }
         }
-      }
-    }
-    .transition-copy {
-      background-color: #00315a;
-      min-height: 115px;
-      display: flex;
-      align-items: center;
-      padding: 40px;
-      position: relative;
-      bottom: 0;
-      z-index: 1;
-      p {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 24px;
-        @media (min-width: $screen-sm-min) {
-          font-size: 32px;
-          line-height: 40px;
-        }
-      }
-      .transition-arrow {
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #00315a;
-        position: absolute;
-        bottom: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
       }
     }
   }

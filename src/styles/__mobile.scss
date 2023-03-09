@@ -1,7 +1,7 @@
 @import "_base";
 
 body > div ~ div {
-  background: #c2e8ff;
+  background: #ffffff;
 }
 
 .container-fluid {
@@ -11,7 +11,7 @@ body > div ~ div {
       // display: none;
     }
     .btn {
-      background: #215ca0;
+      background: #0176d3;
       border: none;
     }
     .mobile-view {
@@ -20,7 +20,7 @@ body > div ~ div {
       left: 0;
       width: 100%;
       transform: translateY(-50%);
-      
+
       img {
         margin: 0 auto;
       }
@@ -45,13 +45,15 @@ body > div ~ div {
     min-height: initial;
   }
   h1 {
-   color: #00a1e0;;
-    font-family: $proximanova;
-    font-weight: bold;
-    font-size: 25px;
+    font-family: $avantgarde;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: -0.004em;
     margin-top: 20px;
     margin-bottom: 7px;
-    line-height: 1;
+    color: $color-text-header;
     @media(min-width: $screen-sm-min) {
       font-size: 50px;
       margin-top: 40px;
@@ -340,6 +342,51 @@ body > div ~ div {
     }
   }
 
+  .slide-intro {
+    .slide-header {
+      h1 {
+        font-size: 24px;
+        line-height: 28px;
+        @media (min-width: $screen-sm-min) {
+          font-size: 40px;
+          line-height: 38px;
+        }
+      }
+    }
+  }
+
+  .transition-copy {
+    background-color: #BEC7F6;
+    min-height: 115px;
+    display: flex;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+    p {
+      color: #181818;
+      font-size: 16px;
+      line-height: 24px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 32px;
+        line-height: 40px;
+      }
+    }
+    .transition-arrow {
+      width: 0;
+      height: 0;
+      border-left: 20px solid transparent;
+      border-right: 20px solid transparent;
+      border-top: 20px solid #BEC7F6;
+      position: absolute;
+      bottom: -19px;
+      left: 50%;
+      transform: translateX(-50%);
+      z-index: 1;
+    }
+  }
+
   /************************
     Intro Page
   ************************/
@@ -348,13 +395,13 @@ body > div ~ div {
       text-align: center;
       @media(max-width: $screen-xs-max) {
         padding: 10px 0 50px;
-        height: 636px;
+        height: 182vw;
         // background-image: url(../assets/images/chapters/welcome/intro-background-mobile.png);;
       }
       @media(min-width: $screen-sm-min) {
         padding: 20px 0 100px;
-        height: 1185px;
-        background-image: url(../assets/images/chapters/welcome/intro-background-mobile.png);
+        height: 1445px;
+        background-image: url(../assets/images/chapters/welcome/intro-background-mobile-2x.png);
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
@@ -363,11 +410,15 @@ body > div ~ div {
         height: 1310px;
       }
       h1 {
-        color: rgb(0, 49, 90);
+        color: #321d71;
         @media(max-width: $screen-xs-max) {
-          font-size: 32px;
+          font-family: $avantgarde;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 36px;
           line-height: 40px;
-          margin-bottom: 30px;
+          text-align: center;
+          letter-spacing: -0.004em;
           width: 280px;
           margin: 0 auto;
         }
@@ -404,6 +455,7 @@ body > div ~ div {
         display: block;
         margin: 45px auto 30px;
         background-repeat: no-repeat;
+        background-position: center;
         @media (min-width: $screen-sm-min) {
           width: 320px;
           height: 88px;
@@ -444,8 +496,12 @@ body > div ~ div {
     }
     p {
       @media(max-width: $screen-xs-max) {
-        font-size: 17px;
         margin-bottom: 30px;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        color: #181818;
       }
       @media(min-width: $screen-sm-min) {
         font-size: 38px;
@@ -453,5 +509,40 @@ body > div ~ div {
         line-height: 48px;
       }
     }
+  }
+}
+
+.mobile {
+  .slide {
+    position: relative;
+  }
+  .slide-text {
+    position: absolute;
+    top: 0;
+    left: 30px;
+    right: 30px;
+    h1 {
+      font-size: 24px;
+      line-height: 28px;
+      @media (min-width: $screen-sm-min) {
+        font-size: 40px;
+        line-height: 38px;
+      }
+    }
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      color: #181818;
+      @media (min-width: $screen-sm-min) {
+        font-size: 36px;
+        line-height: 46px;
+      }
+    }
+  }
+  .slide-bg-image {
+    max-width: 100%;
+    height: auto;
+    min-width: 100%;
   }
 }

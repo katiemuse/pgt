@@ -4,6 +4,16 @@ export default function ChapterVoiceDrawerController($scope, WizardHandler, TopN
   TopNavbar.InfoActive = false;
   TopNavbar.DidYouKnowEnabled = false;
 
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
+
   Steps.clear();
   Steps.pop({
     number: 'one',

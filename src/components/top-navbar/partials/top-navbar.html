@@ -1,10 +1,10 @@
 <nav class="navbar navbar-static-top top-navbar">
   <div class="container-fluid">
     <div class="navbar-header">
-      <a class="navbar-brand" ui-sref="welcome">
+      <a class="navbar-brand" ui-sref="welcome" ng-click='topNavbar.gtmTrack("navigation", "salesforce logo")'>
         <span class="logo"></span>
       </a>
-      <a class="navbar-link" href="https://www.salesforce.com/form/demo/platform-overview.jsp" target="_blank">Watch Demo</a>
+      <a class="navbar-link" href="https://www.salesforce.com/form/demo/platform-overview.jsp" target="_blank" ng-click='topNavbar.gtmTrack("demo", "Watch demo")'>Watch demo</a>
     </div>
 
     <nav class="tips">

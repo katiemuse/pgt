@@ -13,14 +13,14 @@
   <meta name="og:title" content="Salesforce Platform Tour">
   <meta name="og:description" content="Learn how to build smart apps with personalized experiences to delight every customer and employee.">
   <meta name="og:type" content="website">
-  <meta name="og:image" content="/assets/images/facebook-c360-tour-social-share.jpg">
+  <meta name="og:image" content="/assets/images/social-share.png">
   <meta name="og:site_name" content="Salesforce Platform Tour">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:site" content="@salesforce">
   <meta name="twitter:creator" content="@launchxd">
   <meta name="twitter:title" content="Salesforce Platform Tour">
   <meta name="twitter:description" content="Learn how to build smart apps with personalized experiences to delight every customer and employee.">
-  <meta name="twitter:image" content="/assets/images/c360-tour-social-share-twitter.jpg">
+  <meta name="twitter:image" content="/assets/images/social-share.png">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
   <script>
     if (navigator.userAgent.match(/Android/i)
@@ -56,6 +56,9 @@
   <script src="./oneTrust/jquery.min.js"  type="text/javascript" charset="UTF-8"></script>
   <script src="./oneTrust/onetrust.js"  type="text/javascript" charset="UTF-8"></script>
   <!-- JQuery and salesforce js end-->
+  <script type="text/javascript" src="https://launchxd.atlassian.net/s/d41d8cd98f00b204e9800998ecf8427e-T/1jmxwi/b/8/c95134bc67d3a521bb3f4331beb9b804/_/download/batch/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector/com.atlassian.jira.collector.plugin.jira-issue-collector-plugin:issuecollector.js?locale=en-US&collectorId=16066cda"></script>
+
+
 
   <style type="text/css">
     [ng\:cloak],
@@ -82,7 +85,7 @@
     <![endif]-->
 </head>
 
-<body id="{{$state.current.name}}">
+<body id="{{$state.current.name}}" ng-class="$state.current.name+'-step-'+wizard.stateIndex">
   <!-- Google Tag Manager (noscript) -->
   <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-K4S25JQ"
                     height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -91,7 +94,7 @@
 
     <div class="container-fluid main desktop background hidden-sm hidden-xs">
 
-      <div ui-view="getting-started" class="getting-started-view" ng-show="wizard.stateIndex == 0">
+      <div ui-view="getting-started" class="getting-started-view" ng-show="wizard.stateIndex == 2">
       </div>
 
       <progress-navbar>
@@ -123,7 +126,7 @@
                   src="assets/images/chapters/chapter-voice/astro-orange-glow.gif" />
             </div>
             <div class="phone-backdrop">
-              <img src="./assets/images/backgrounds/iphone.png" />
+              <img src="./assets/images/backgrounds/iphone-2.png" />
             </div>
             <div class="phone-view" ui-view="phone"></div>
           </div>
@@ -153,8 +156,7 @@
       <div class="copyright">
         <ul>
           <li>
-            &copy; 2020 Salesforce.com, inc. <a href="https://www.salesforce.com/company/legal/intellectual/" target="_blank" rel="noopener noreferrer">All rights reserved.</a> Various trademarks held by their respective owners.<br />
-            Salesforce.com, inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States
+            &copy; 2023 Salesforce.com, inc. <a href="https://www.salesforce.com/company/legal/intellectual/" target="_blank" rel="noopener noreferrer">All rights reserved.</a> Various trademarks held by their respective owners. Salesforce.com, inc. Salesforce Tower, 415 Mission Street, 3rd Floor, San Francisco, CA 94105, United States
           </li>
         </ul>
       </div>
@@ -177,7 +179,15 @@
           </li>
           <li>|</li>
           <li>
-            <a href="https://www.salesforce.com/form/contact/contactme.jsp?d=70130000000EeYa" target="_blank" rel="noopener noreferrer">Contact</a>
+            <a href="https://www.salesforce.com/form/contact/contactme.jsp?d=70130000000EeYa" target="_blank" rel="noopener noreferrer"
+               onclick="window.dataLayer.push({
+                event: 'eventTracker',
+                eventCat: 'contact us',
+                eventAct: window.location.href,
+                eventLbl: 'Contact',
+                nonInteraction: false
+              });"
+            >Contact</a>
           </li>
           <li>|</li>
           <li>

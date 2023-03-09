@@ -6,7 +6,7 @@
     background: url('../assets/images/chapters/chapter-data/screen-bkg-1.png') center center no-repeat;
   }
   .step-2 {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-2.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-2.jpg') center top no-repeat;
   }
   .step-2a,
   .step-3 {
@@ -16,10 +16,10 @@
     background: url('../assets/images/chapters/chapter-data/screen-bkg-3a.png') center top no-repeat;
   }
   .step-4 {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-4.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4.jpg') center top no-repeat;
   }
   .step-4a {
-    background: url('../assets/images/chapters/chapter-data/screen-bkg-4a.png') center top no-repeat;
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-4a.jpg') center top no-repeat;
   }
   .step-4b,
   .step-5 {
@@ -27,6 +27,9 @@
   }
   .step-5a {
     background: url('../assets/images/chapters/chapter-data/screen-bkg-5a.png') center top no-repeat;
+  }
+  .step-5b {
+    background: url('../assets/images/chapters/chapter-data/screen-bkg-5b.png') center top no-repeat;
   }
   .step {
     background-size: contain;
@@ -70,246 +73,11 @@
 
   .step-5 {
     .click-box {
-      top: 374px;
-      left: 486px;
-      width: 72px;
-      height: 22px;
-    }
-  }
-  &.mobile {
-    .slide-image {
-      position: relative;
-      @media (min-width: $screen-sm-min) {
-        height: 1152px;
-      }
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        height: 1158px;
-      }
-    }
-    .slide-0 {
-      @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-        // margin-top: 220px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-0.png) center center no-repeat;
-        background-size: cover;
-        height: 600px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-0-2x.png) center bottom no-repeat;
-          height: 1140px;
-          background-size: cover;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1360px;
-          background-size: cover;
-        }
-      }
-      .slide-intro {
-        position: absolute;
-        padding: 0 15px 0 30px;
-        top: 20px;
-        width: 100%;
-        @media (min-width: $screen-sm-min) {
-          padding: 0 15px 0 60px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -30px;
-          padding: 0 15px 0 90px;
-        }
-        .slide-header {
-          // margin-bottom: 30px;
-          h1 {
-            color: #000000;
-            font-size: 28px;
-            margin-bottom: 0;
-            @media (min-width: $screen-sm-min) {
-              font-size: 40px;
-              line-height: 38px;
-            }
-          }
-        }
-        .slide-copy {
-          max-width: 330px;
-          @media (min-width: $screen-sm-min) {
-            max-width: 650px;
-          }
-          p {
-            color: #000000;
-            font-size: 18px;
-            line-height: 26px;
-            @media (min-width: $screen-sm-min) {
-              font-size: 32px;
-              line-height: 40px;
-            }
-          }
-        }
-      }
-      .transition-copy {
-        bottom: 10px;
-        @media (min-width: $screen-sm-min) {
-          bottom: 103px;
-        }
-      }
-    }
-    .slide-1 {
-      // margin-top: 20px;
-      @media (min-width: $screen-sm-min) {
-        margin-top: -90px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-1.png) center top no-repeat;
-        background-size: cover;
-        height: 450px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-1-2x.png) center top no-repeat;
-          height: 867px;
-          background-size: cover;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1156px;
-        }
-      }
-    }
-    .slide-2 {
-      // position: relative;
-      // top: -90px;
-      @media (min-width: $screen-sm-min) {
-        // top: -280px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-2.png) center top no-repeat;
-        background-size: cover;
-        height: 450px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-2-2x.png) center top no-repeat;
-          background-size: cover;
-          height: 920px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1220px;
-        }
-      }
-      .transition-copy {
-        @media (min-width: $screen-sm-min) {
-          bottom: 63px;
-        }
-      }
-    }
-    .slide-3 {
-      position: relative;
-      // top: -180px;
-      @media (min-width: $screen-sm-min) {
-        top: -60px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-3.png) center top no-repeat;
-        background-size: cover;
-        height: 450px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-3-2x.png) center top no-repeat;
-          background-size: cover;
-          height: 868px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1156px;
-        }
-      }
-      .transition-copy {
-        // bottom: 103px;
-        @media (min-width: $screen-sm-min) {
-          // bottom: 286px;
-        }
-      }
-    }
-    .slide-4 {
-      // position: relative;
-      // top: -270px;
-      @media (min-width: $screen-sm-min) {
-        // top: -840px;
-      }
-      .slide-image {
-        background: url(../assets/images/chapters/chapter-data/chapter-data-4.png) center top no-repeat;
-        background-size: cover;
-        height: 450px;
-        @media (min-width: $screen-sm-min) {
-          background: url(../assets/images/chapters/chapter-data/chapter-data-4-2x.png) center bottom no-repeat;
-          background-size: cover;
-          height: 850px;
-        }
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          height: 1156px;
-        }
-      }
-      .transition-copy {
-        bottom: 103px;
-      }
-    }
-    .success {
-      position: relative;
-      @media (min-width: $screen-sm-min) {
-        top: -63px;
-        margin-bottom: -63px;
-        min-height: 860px;
-        @media only screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) {
-          top: -84px;
-          margin-bottom: -84px;
-          min-height: 800px;
-        }
-      }
-    }
-    .transition-copy {
-      background-color: #00315a;
-      min-height: 115px;
-      display: flex;
-      align-items: center;
-      padding: 40px;
-      position: relative;
-      bottom: 0;
-      z-index: 1;
-      p {
-        color: #ffffff;
-        font-size: 16px;
-        line-height: 24px;
-        @media (min-width: $screen-sm-min) {
-          font-size: 32px;
-          line-height: 40px;
-        }
-      }
-      .transition-arrow {
-        width: 0;
-        height: 0;
-        border-left: 20px solid transparent;
-        border-right: 20px solid transparent;
-        border-top: 20px solid #00315a;
-        position: absolute;
-        bottom: -19px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 1;
-      }
+      top: 134px;
+      left: 63px;
+      width: 176px;
+      height: 70px;
     }
   }
 }
 
-// footer fixes
-#chapter-data {
-  
-  // -webkit-overflow-scrolling: touch;
-  // .main.mobile {
-  //   height: 100%;
-  //   .ng-scope {
-  //     height: 100%;
-  //     section {
-  //       height: 100%;
-  //     }
-  //   }
-  //   .chapter-data.mobile {
-  //     .col-lg-12 {
-  //       height: 100%;
-  //       .row {
-  //         height: 100%;
-  //       }
-  //     }
-  //   }
-  // }
-}

@@ -25,4 +25,14 @@ export default function ChapterMobileMobileController($scope, TopNavbar, Steps, 
     const mobileContainer = $document[0].querySelector('.container-fluid.main.mobile');
     mobileContainer.classList.remove("scrolled");
   });
+
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
 }

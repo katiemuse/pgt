@@ -4,6 +4,16 @@ export default function ChapterCustomerAppDrawerController($scope, WizardHandler
   TopNavbar.InfoActive = true;
   Drawer.openToIntro();
 
+  $scope.gtmTrack = (cat, label, act = "") => {
+    window.dataLayer.push({
+      event: 'eventTracker',
+      eventCat: cat,
+      eventAct: act === "" ? window.location.href : act,
+      eventLbl: label,
+      nonInteraction: false
+    });
+  };
+
   $scope.beginStory = function () {
     Drawer.close();
     WizardHandler.wizard('monitor').next();
