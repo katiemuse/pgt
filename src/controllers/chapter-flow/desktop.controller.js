@@ -10,7 +10,7 @@ export default function ChapterFlowController($scope, Steps, Hotspots, WizardHan
   $scope.$watch("label.input", newValue => {
     $timeout.cancel(timeoutExtdsName);
     timeoutExtdsName = $timeout(() => {
-      if (angular.isDefined(newValue) && newValue.length > 10) {
+      if (angular.isDefined(newValue) && newValue.length > 5) {
         $scope.goToStep4();
         window.dataLayer.push({
           event: 'eventTracker',
