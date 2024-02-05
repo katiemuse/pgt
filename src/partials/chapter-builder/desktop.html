@@ -6,44 +6,101 @@
           <wz-step>
             <div class="step step-0"></div>
           </wz-step>
-          <wz-step>
+          <!-- <wz-step>
             <div class="step step-1a">
               <div class="flyout active">
-                <span>Remember the price quote flow? Let's go ahead and add the price quote component to your app.</span>
-                <a ng-click="goToStep1(); gtmTrack('progress', 'low code builder: complete step 2')">continue</a>
+                <span>Remember the price quote flow? Let's go ahead and add the price quote component to your
+                  app.</span>
+                <a ng-click="goToStep1(); gtmTrack('progress', 'build fast: complete step 2')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
+            </div>
+          </wz-step> -->
+          <wz-step>
+            <div class="step step-1">
+              <div class="click-box" ng-class="{active:!button.show}"
+                ng-click="goToStep2(); gtmTrack('progress', 'build fast: complete step 1')"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-2">
+              <div class="click-box" ng-class="{active:!button.show}"
+                ng-click="goToStep3A(); gtmTrack('progress', 'build fast: complete step 1')"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-3a">
+              <div class="flyout active">
+                <span>Deliver seamless experiences for your employees and customers without
+                  code.</span><span>Goals change? You can modify the app to fit your needs with simple clicks to
+                  reach time to value fast.</span>
+                <a ng-click="goToStep3B(); gtmTrack('progress', 'build fast: complete step 2')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-1">
-              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}" alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}"/>
-              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep2'}"></div>
+            <div class="step step-3b">
+              <div class="flyout active">
+                <span>Remember the price quote flow? Let's go ahead and add the price quote component to your
+                  app.</span>
+                <a ng-click="goToStep3(); gtmTrack('progress', 'build fast: complete step 2')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-2">
-              <div class="click-box" ng-class="{active:!button.show}" ng-click="goToSuccess(); gtmTrack('progress', 'low code builder: complete step 4')"></div>
+            <div class="step step-3">
+              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true"
+                jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
+                alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}" />
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep4A'}"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4a">
+              <div class="flyout active">
+                <span>Let’s also add the Case Summary we just created</span>
+                <a ng-click="goToStep4(); gtmTrack('progress', 'build fast: complete step 2')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4">
+              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true"
+                jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
+                alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}" />
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep5'}"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-5">
+              <div class="click-box" ng-class="{active:!button.show}"
+                ng-click="goToSuccess(); gtmTrack('progress', 'build fast: complete step 4')"></div>
             </div>
           </wz-step>
 
           <wz-step success="true">
             <div class="step success">
-<!--                <div class="confetti-container" ng-open="renderConfetti()">-->
-<!--                  <canvas id="success-confetti"></canvas>-->
-<!--                </div>-->
+              <!--                <div class="confetti-container" ng-open="renderConfetti()">-->
+              <!--                  <canvas id="success-confetti"></canvas>-->
+              <!--                </div>-->
               <li-center>
                 <h3>Chapter Summary</h3>
-                <h4>Low Code Builder</h4>
+                <h4>Build Fast</h4>
                 <p>
-                  It only took a few clicks to give your employees the tools they need to provide a seamless, personalized customer experience – allowing you to do more with less.<br/><br />Now, let's see what your work looks like on a mobile app.</p>
+                  Code Builder helps dev teams customize directly from the web and code faster with generative AI
+                  options. Code Builder comes preinstalled with your favorite Salesforce tools, from the CLI and Apex
+                  Replay Debugger, to language support for Apex, Lightning Web Components, SOQL, Visualforce, Aura, and
+                  more.<br /> Let's create a case summary component for mobile layouts.</p>
                 <div class="btn-container">
                   <a ui-sref="chapter-mobile" li-autofocus="wizard.stateIndex == 4" class="btn btn-rounded active"
-                     ng-click='gtmTrack("progress", "Continue", "low code builder: summary screen")'
-                  >Continue</a>
-                  <a href="https://www.salesforce.com/products/platform/features/app-builder/" class="success-text-link" target="_blank" rel="noopener noreferrer"
-                     ng-click='gtmTrack("cta clicks", "Learn more about customizing apps", "low code builder: summary screen")'
-                  >Learn more about customizing apps <span class="carat"><i></i></span></a>
+                    ng-click='gtmTrack("progress", "Continue", "build fast: summary screen")'>Continue</a>
+                  <a href="https://www.salesforce.com/products/platform/features/app-builder/" class="success-text-link"
+                    target="_blank" rel="noopener noreferrer"
+                    ng-click='gtmTrack("cta clicks", "Learn more about customizing apps", "build fast: summary screen")'>Learn
+                    more about customizing apps <span class="carat"><i></i></span></a>
                 </div>
               </li-center>
             </div>

@@ -1,8 +1,8 @@
 'use strict';
 
-export default function ChapterBuilderController($scope, Steps, Hotspots, WizardHandler, successConfetti) {
+export default function ChapterBuilderController($scope, Steps, Hotspots, WizardHandler, successConfetti, $log) {
   $scope.Next = function () {
-    // $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
+    $log.log('Current step: ' + WizardHandler.wizard('monitor').currentStepNumber());
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
       Steps.activate('');
@@ -21,9 +21,34 @@ export default function ChapterBuilderController($scope, Steps, Hotspots, Wizard
       event: 'eventTracker',
       eventCat: 'progress',
       eventAct: window.location.href,
-      eventLbl: 'low code builder: complete step 3',
+      eventLbl: 'build fast: complete step 3',
       nonInteraction: false
     });
+  };
+
+  $scope.goToStep3A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+  $scope.goToStep3B = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+  $scope.goToStep3 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("three");
+  };
+  $scope.goToStep4A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+  $scope.goToStep4 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("four");
+  };
+  $scope.goToStep5 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("five");
   };
 
   $scope.goToSuccess = function() {
