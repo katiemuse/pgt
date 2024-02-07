@@ -45,6 +45,16 @@ export default function AddACustomFieldDrawerController(
       title:
         'Click the &ldquo;75 kWh&rdquo; battery option.'
     });
+    Steps.pop({
+      number: 'four',
+      title:
+        'Click the &ldquo;Draft with Einstein&rdquo;'
+    });
+    Steps.pop({
+      number: 'five',
+      title:
+        'Click the &ldquo;Send&rdquo;'
+    });
 
     Hotspots.clear();
     Hotspots.pop({

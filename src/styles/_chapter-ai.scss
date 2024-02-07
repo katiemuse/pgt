@@ -14,6 +14,13 @@
     background: url("../assets/images/backgrounds/generic-phone-backdrop.png") center center no-repeat;
   }
 
+  .step-4{
+    background: url("../assets/images/chapters/chapter-ai/step4.png") center center no-repeat;
+  }
+  .step-5{
+    background: url("../assets/images/chapters/chapter-ai/step5.png") center center no-repeat;
+  }
+
   .phone-step-2a  {
     background: url("../assets/images/chapters/chapter-ai/step2a-mobile.jpg") center center no-repeat;
 
@@ -29,7 +36,7 @@
     background: url("../assets/images/chapters/chapter-ai/step2a-mobile.jpg") center center no-repeat;
   }
 
-  .phone-step-4  {
+  .phone-step-4, .phone-step-5  {
     background: url("../assets/images/chapters/chapter-ai/step4-mobile.jpg") center center no-repeat;
 
     .flyout {
@@ -78,6 +85,24 @@
       left: 25px;
       width: 79px;
       height: 32px;
+    }
+  }
+  
+  .step-4 {
+    .click-box {
+      bottom: 80px;
+      left: 487px;
+      width: 98px;
+      height: 17px;
+    }
+  }
+
+  .step-5 {
+    .click-box {
+      bottom: 57px;
+      left: 700px;
+      width: 69px;
+      height: 17px;
     }
   }
 }

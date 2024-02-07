@@ -11,6 +11,17 @@ export default function ChapterAIPhoneController($scope, $timeout, Steps, Wizard
     Steps.activate("");
   };
 
+  $scope.GoToStep5 = function() {
+    WizardHandler.wizard("phone").next();
+    Steps.activate("");
+  };
+
+  $scope.GoToStep6 = function() {
+    WizardHandler.wizard('monitor').next();
+    $rootScope.showMobilePopout = false; // hide the phone view
+    Steps.activate("four");
+  };
+
   $scope.GoToSuccess = function() {
     Steps.clear();
     $rootScope.showMobilePopout = false;

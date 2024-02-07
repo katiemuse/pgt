@@ -1,6 +1,7 @@
 'use strict';
 
-export default function AddACustomFieldController($scope, $timeout, Steps, Hotspots, TopNavbar, WizardHandler, $rootScope, successConfetti) {
+export default function AddACustomFieldController($scope, $timeout, Steps, Hotspots, TopNavbar, WizardHandler, $rootScope, successConfetti, $log) {
+  $log.log("WizardHandler", WizardHandler);
   $scope.Next = function() {
     if (WizardHandler.wizard('monitor').currentStepNumber() === 1) {
       WizardHandler.wizard('monitor').next();
@@ -22,10 +23,16 @@ export default function AddACustomFieldController($scope, $timeout, Steps, Hotsp
       Steps.activate('');
     } else if (WizardHandler.wizard('monitor').currentStepNumber() === 4) {
       WizardHandler.wizard('monitor').next();
-      Steps.activate('four');
+      Steps.activate('five');
     } else {
       WizardHandler.wizard('monitor').next();
+      Steps.activate('');
     }
+  };
+
+  $scope.GoToStep5 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("five");
   };
 
   $scope.goToSuccess = function() {
