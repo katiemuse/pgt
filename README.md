@@ -81,4 +81,9 @@ Finally, searched all source for previous names (e: `custom-objects`) and update
  Added OneTrust Cookie Consent scripts
 ```/src/cookie-consent/oneTrust```
 
+## Update January 2024
+- Changed Low Code Builder chapter to build fast and added 2 additonal steps
+- **You cannot launch this project with ARM Macs. You will need to use and Intel Mac or run in a github codespaces (optimal)**
+
+
 [![Build Status](http://jenkins.pendinglaunch.com:8080/buildStatus/icon?job=salesforce-platform-guided-tour)](http://jenkins.pendinglaunch.com:8080/job/salesforce-platform-guided-tour/) 
