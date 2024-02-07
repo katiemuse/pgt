@@ -11,12 +11,12 @@
       center center no-repeat;
   }
 
-  .step-3, .step-3a, .step-3b, .step-4a, .step-4 {
+  .step-3, .step-3a, .step-3b {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.jpg")
       center center no-repeat;
   }
 
-  .step-5 {
+  .step-4 {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-2.jpg")
       center center no-repeat;
   }
@@ -32,6 +32,20 @@
       left: 173px;
       width: 28px;
       height: 13px;
+    }
+  }
+  
+  .step-2 {
+    .click-box {
+      bottom: 108px;
+      left: 354px;
+      width: 287px;
+      height: 15px;
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
     }
   }
 
@@ -56,42 +70,8 @@
       height: 13px;
     }
   }
-  .step-4 {
-    .price-quote-drag {
-      position: absolute !important;
-      bottom: 141px;
-      left: 2px;
-      border-radius: 4px;
-      -webkit-user-select:none;
-      -webkit-touch-callout:none;
-      width: 21%;
-      &.active {
-        animation: borderActive 1.5s infinite;
-        cursor: move;
-      }
-    }
-    .drop-box {
-      top: 398px;
-      left: 288px;
-      width: 200px;
-      height: 13px;
-    }
-  }
 
-  .step-2 {
-    .click-box {
-      bottom: 431px;
-      left: 709px;
-      width: 69px;
-      height: 24px;
-    }
-    .check {
-      position: absolute;
-      bottom: 90px;
-      left: 159px;
-    }
-  }
-  .step-5 {
+  .step-4 {
     .click-box {
       bottom: 431px;
       left: 709px;

@@ -37,10 +37,6 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
     });
     Steps.pop({
       number: 'four',
-      title: 'Drag and drop &ldquo;Open Case Summary&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
-    });
-    Steps.pop({
-      number: 'five',
       title: 'Click &ldquo;Activation&rdquo; to see your app live.'
     });
 
