@@ -24,12 +24,12 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Give Einstein instructions to generate Apex code'
+      title: 'Give Einstein instructions to generate Apex code.'
     });
 
     Steps.pop({
       number: 'two',
-      title: 'Deploy source code to org'
+      title: 'Deploy source code to org.'
     });
     Steps.pop({
       number: 'three',

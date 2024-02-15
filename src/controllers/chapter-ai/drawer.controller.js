@@ -48,12 +48,12 @@ export default function AddACustomFieldDrawerController(
     Steps.pop({
       number: 'four',
       title:
-        'Click the &ldquo;Draft with Einstein&rdquo;'
+        'Click &ldquo;Draft with Einstein&rdquo;'
     });
     Steps.pop({
       number: 'five',
       title:
-        'Click the &ldquo;Send&rdquo;'
+        'Click &ldquo;Send&rdquo;'
     });
 
     Hotspots.clear();
