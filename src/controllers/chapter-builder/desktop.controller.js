@@ -21,7 +21,7 @@ export default function ChapterBuilderController($scope, Steps, Hotspots, Wizard
       event: 'eventTracker',
       eventCat: 'progress',
       eventAct: window.location.href,
-      eventLbl: 'build fast: complete step 3',
+      eventLbl: 'low code: complete step 3',
       nonInteraction: false
     });
   };
