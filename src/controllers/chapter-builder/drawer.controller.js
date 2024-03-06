@@ -33,10 +33,14 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
     });
     Steps.pop({
       number: 'three',
-      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
+      title: 'Let\'s also add the price comparator component we just created.'
     });
     Steps.pop({
       number: 'four',
+      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
+    });
+    Steps.pop({
+      number: 'five',
       title: 'Click &ldquo;Activation&rdquo; to see your app live.'
     });
 
