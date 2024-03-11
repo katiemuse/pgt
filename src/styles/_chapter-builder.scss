@@ -12,11 +12,15 @@
   }
 
   .step-3, .step-3a, .step-3b {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.jpg")
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1-updated.jpg")
       center center no-repeat;
   }
 
-  .step-4, .step-5 {
+  .step-4 {
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-4-new.jpg")
+      center center no-repeat;
+  }
+  .step-5 {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-2.jpg")
       center center no-repeat;
   }
@@ -49,10 +53,31 @@
     }
   }
 
-  .step-3, .step-4 {
+  .step-3 {
     .price-quote-drag {
       position: absolute !important;
       bottom: 141px;
+      left: 2px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      width: 21%;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+    }
+    .drop-box {
+      top: 398px;
+      left: 288px;
+      width: 200px;
+      height: 13px;
+    }
+  }
+  .step-4 {
+    .price-quote-drag {
+      position: absolute !important;
+      bottom: 88px;
       left: 2px;
       border-radius: 4px;
       -webkit-user-select:none;
