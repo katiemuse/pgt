@@ -8,7 +8,8 @@
           </wz-step>
           <wz-step>
             <div class="step step-1">
-              <div class="click-box active" ng-click="goToStep1A(); gtmTrack('progress', 'flow: complete step 2')"></div>
+              <div class="click-box active" ng-click="goToStep1A(); gtmTrack('progress', 'flow: complete step 2')">
+              </div>
             </div>
           </wz-step>
           <wz-step>
@@ -22,7 +23,9 @@
           </wz-step>
           <wz-step>
             <div class="step step-2">
-              <img src="../../assets/images/chapters/chapter-flow/currency-drag2.png" data-drag="true" jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}" alt="currency drag" class="currency-drag" ng-class="{active:!currency.active}"/>
+              <img src="../../assets/images/chapters/chapter-flow/currency-drag2.png" data-drag="true"
+                jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
+                alt="currency drag" class="currency-drag" ng-class="{active:!currency.active}" />
               <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep3'}"></div>
             </div>
           </wz-step>
@@ -31,7 +34,8 @@
               <form class="form form-horizontal">
                 <div class="control-group">
                   <div class="controls">
-                    <input autocomplete="off" li-autofocus="wizard.stateIndex == 4" type="text" name="name" id="name" ng-model="label.input" class="text currency-label active" maxlength="80"/>
+                    <input autocomplete="off" li-autofocus="wizard.stateIndex == 4" type="text" name="name" id="name"
+                      ng-model="label.input" class="text currency-label active" maxlength="80" />
                   </div>
                 </div>
               </form>
@@ -48,20 +52,11 @@
                 <span>
                   Your financing process flow is now live!
                   <br><br>
-                  While we created this flow without using any code, the Salesforce Platform also enables your team to build flows with code, like the one seen here. Seamlessly extend and enrich your automations through a number of programming languages based on your needs.
+                  While we created this flow without using any code, the Salesforce Platform also enables your team to
+                  build flows with code, like the one seen here. Seamlessly extend and enrich your automations through a
+                  number of programming languages based on your needs.
                 </span>
-                <a ng-click="goToStep6(); gtmTrack('progress', 'flow: complete step 7')">continue</a>
-                <span class="carat"><i></i></span>
-              </div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-6">
-              <div class="flyout active">
-                <span>
-                  Even better, developers can stay in the browser experience with Code Builder, allowing you to deliver trusted, end-to-end experiences and drive productivity.
-                </span>
-                <a ng-click="goToStep7(); gtmTrack('progress', 'flow: complete step 8')">continue</a>
+                <a ng-click="goToStep7(); gtmTrack('progress', 'flow: complete step 7')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
@@ -70,7 +65,9 @@
             <div class="step step-7">
               <div class="flyout active">
                 <span>
-                  And with Data Cloud, workflows like this one become dynamic – they change just as your data does. Data Cloud helps boost automation, by connecting real-time data to real-time workflows with Salesforce Flow.
+                  And with Data Cloud, workflows like this one become dynamic – they change just as your data does. Data
+                  Cloud helps boost automation, by connecting real-time data to real-time workflows with Salesforce
+                  Flow.
                 </span>
                 <a ng-click="goToSuccess(); gtmTrack('progress', 'flow: complete step 9')">continue</a>
                 <span class="carat"><i></i></span>
@@ -79,22 +76,24 @@
           </wz-step>
           <wz-step success="true">
             <div class="step success">
-<!--                <div class="confetti-container" ng-open="renderConfetti()">-->
-<!--                  <canvas id="success-confetti"></canvas>-->
-<!--                </div>-->
+              <!--                <div class="confetti-container" ng-open="renderConfetti()">-->
+              <!--                  <canvas id="success-confetti"></canvas>-->
+              <!--                </div>-->
               <li-center>
                 <h3>Chapter Summary</h3>
                 <h4>Flow</h4>
                 <p>
-                  Automating these actions will enhance and expedite the overall purchasing process, allowing your team to work more efficiently.<br /><br />Next, you'll add this business logic to your app with clicks, not code.
+                  Automating these actions will enhance and expedite the overall purchasing process, allowing your team
+                  to work more efficiently.<br /><br />Next, you'll add this business logic to your app with clicks, not
+                  code.
                 </p>
                 <div class="btn-container">
                   <a ui-sref="chapter-builder" li-autofocus="wizard.stateIndex == 6" class="btn btn-rounded active"
-                     ng-click='gtmTrack("progress", "Continue", "flow: summary screen")'
-                  >Continue</a>
-                  <a href="https://www.salesforce.com/products/platform/workflow-automation/" class="success-text-link" target="_blank" rel="noopener noreferrer"
-                     ng-click='gtmTrack("cta clicks", "Learn more about Automation", "flow: summary screen")'
-                  >Learn more about automation <span class="carat"><i></i></span></a>
+                    ng-click='gtmTrack("progress", "Continue", "flow: summary screen")'>Continue</a>
+                  <a href="https://www.salesforce.com/products/platform/workflow-automation/" class="success-text-link"
+                    target="_blank" rel="noopener noreferrer"
+                    ng-click='gtmTrack("cta clicks", "Learn more about Automation", "flow: summary screen")'>Learn more
+                    about automation <span class="carat"><i></i></span></a>
                 </div>
               </li-center>
             </div>
