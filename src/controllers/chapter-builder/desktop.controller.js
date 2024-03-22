@@ -25,12 +25,7 @@ export default function ChapterBuilderController($scope, Steps, Hotspots, Wizard
       nonInteraction: false
     });
   };
-
-  $scope.goToStep3A = function() {
-    WizardHandler.wizard("monitor").next();
-    Steps.activate("");
-  };
-  $scope.goToStep3B = function() {
+  $scope.goToStep2A = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
   };
@@ -38,7 +33,12 @@ export default function ChapterBuilderController($scope, Steps, Hotspots, Wizard
     WizardHandler.wizard("monitor").next();
     Steps.activate("three");
   };
+
   $scope.goToStep4A = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("");
+  };
+  $scope.goToStep4B = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("");
   };
@@ -49,6 +49,10 @@ export default function ChapterBuilderController($scope, Steps, Hotspots, Wizard
   $scope.goToStep5 = function() {
     WizardHandler.wizard("monitor").next();
     Steps.activate("five");
+  };
+  $scope.goToStep6 = function() {
+    WizardHandler.wizard("monitor").next();
+    Steps.activate("six");
   };
 
   $scope.goToSuccess = function() {

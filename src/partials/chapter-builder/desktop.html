@@ -25,48 +25,63 @@
           <wz-step>
             <div class="step step-2">
               <div class="click-box" ng-class="{active:!button.show}"
-                ng-click="goToStep3A(); gtmTrack('progress', 'low code: complete step 2')"></div>
+                ng-click="goToStep2A(); gtmTrack('progress', 'low code: complete step 2')"></div>
             </div>
           </wz-step>
           <wz-step>
-            <div class="step step-3a">
+            <div class="step step-2a">
               <div class="flyout active">
-                <span>With Lightning App Builder you can deliver Seamless experiences for your employees and customers
-                  without code.</span><span>Goals change? You can modify the app to fit your needs with simple clicks to
-                  reach time to value fast.</span>
-                <a ng-click="goToStep3B(); gtmTrack('progress', 'low code: complete step 3')">continue</a>
-                <span class="carat"><i></i></span>
-              </div>
-            </div>
-          </wz-step>
-          <wz-step>
-            <div class="step step-3b">
-              <div class="flyout active">
-                <span>Remember the price quote flow? Let's go ahead and add the price quote component to your
-                  app.</span>
-                <a ng-click="goToStep3(); gtmTrack('progress', 'low code: complete step 4')">continue</a>
+                <span>The code that was generated has now been copied onto the command line</span>
+                <a ng-click="goToStep3(); gtmTrack('progress', 'low code: complete step 3')">continue</a>
                 <span class="carat"><i></i></span>
               </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-3">
-              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true"
-                jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
-                alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}" />
-              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep4'}"></div>
+              <div class="click-box" ng-class="{active:!button.show}"
+                ng-click="goToStep4A(); gtmTrack('progress', 'low code: complete step 2')"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4a">
+              <div class="flyout active">
+                <span>With Lightning App Builder you can deliver Seamless experiences for your employees and customers
+                  without code.</span><span>Goals change? You can modify the app to fit your needs with simple clicks to
+                  reach time to value fast.</span>
+                <a ng-click="goToStep4B(); gtmTrack('progress', 'low code: complete step 3')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-4b">
+              <div class="flyout active">
+                <span>Remember the price quote flow? Let's go ahead and add the price quote component to your
+                  app.</span>
+                <a ng-click="goToStep4(); gtmTrack('progress', 'low code: complete step 4')">continue</a>
+                <span class="carat"><i></i></span>
+              </div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-4">
-              <img src="../../assets/images/chapters/chapter-builder/price-comparator-drag.png" data-drag="true"
+              <img src="../../assets/images/chapters/chapter-builder/price-quote-drag.png" data-drag="true"
                 jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
-                alt="price comparator drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}" />
+                alt="price quote drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}" />
               <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep5'}"></div>
             </div>
           </wz-step>
           <wz-step>
             <div class="step step-5">
+              <img src="../../assets/images/chapters/chapter-builder/price-comparator-drag.png" data-drag="true"
+                jqyoui-draggable="{index: 0, animate:true}" data-jqyoui-options="{revert: 'invalid'}"
+                alt="price comparator drag" class="price-quote-drag" ng-class="{active:!priceQuote.active}" />
+              <div class="drop-box active" data-drop="true" jqyoui-droppable="{index: 1 , onDrop:'goToStep6'}"></div>
+            </div>
+          </wz-step>
+          <wz-step>
+            <div class="step step-6">
               <div class="click-box" ng-class="{active:!button.show}"
                 ng-click="goToSuccess(); gtmTrack('progress', 'low code: complete step 6')"></div>
             </div>

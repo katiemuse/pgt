@@ -29,18 +29,22 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
 
     Steps.pop({
       number: 'two',
-      title: 'Deploy source code to org.'
+      title: 'Click &ldquo;Copy code&rdquo;'
     });
     Steps.pop({
       number: 'three',
-      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
+      title: 'Deploy source code to org.'
     });
     Steps.pop({
       number: 'four',
-      title: 'Let\'s also add the price comparator component we just created.'
+      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
     });
     Steps.pop({
       number: 'five',
+      title: 'Let\'s also add the price comparator component we just created.'
+    });
+    Steps.pop({
+      number: 'six',
       title: 'Click &ldquo;Activation&rdquo; to see your app live.'
     });
 

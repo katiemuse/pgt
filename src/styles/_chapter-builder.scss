@@ -1,26 +1,39 @@
 @import '_base';
 
 .chapter-builder {
-  .step-0, .step-1 {
+  .step-0 {
+    background: url("../assets/images/chapters/chapter-builder/builder-slide-0-new.png")
+      center center no-repeat;
+  } 
+  
+  .step-1 {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-1-new.png")
       center center no-repeat;
   }
-
   .step-2 {
+    background: url("../assets/images/chapters/chapter-builder/builder-slide-2-new-1.png")
+      center center no-repeat;
+  }
+  .step-2a {
+    background: url("../assets/images/chapters/chapter-builder/builder-slide-2a-new-1.png")
+      center center no-repeat;
+  }
+
+  .step-3 {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-2-new.png")
       center center no-repeat;
   }
 
-  .step-3, .step-3a, .step-3b {
+  .step-4, .step-4a, .step-4b {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.png")
       center center no-repeat;
   }
 
-  .step-4 {
+  .step-5 {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-1-updated.jpg")
       center center no-repeat;
   }
-  .step-5 {
+  .step-6 {
     background: url("../assets/images/chapters/chapter-builder/screen-bkg-4-new.jpg")
       center center no-repeat;
   }
@@ -41,6 +54,32 @@
   
   .step-2 {
     .click-box {
+      bottom: 297px;
+      left: 153px;
+      width: 47px;
+      height: 14px;
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
+    }
+  }
+  .step-2a {
+    .click-box {
+      bottom: 110px;
+      left: 346px;
+      width: 289px;
+      height: 14px;
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
+    }
+  }
+  .step-3 {
+    .click-box {
       bottom: 110px;
       left: 346px;
       width: 289px;
@@ -53,7 +92,7 @@
     }
   }
 
-  .step-3 {
+  .step-4 {
     .price-quote-drag {
       position: absolute !important;
       bottom: 141px;
@@ -74,7 +113,7 @@
       height: 13px;
     }
   }
-  .step-4 {
+  .step-5 {
     .price-quote-drag {
       position: absolute !important;
       bottom: 88px;
@@ -96,7 +135,7 @@
     }
   }
 
-  .step-5 {
+  .step-6 {
     .click-box {
       bottom: 431px;
       left: 709px;
