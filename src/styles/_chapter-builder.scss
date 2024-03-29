@@ -1,13 +1,40 @@
 @import '_base';
 
 .chapter-builder {
-  .step-0, .step-1, .step-1a {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.jpg")
+  .step-0 {
+    background: url("../assets/images/chapters/chapter-builder/builder-slide-0-new-update.png")
+      center center no-repeat;
+  } 
+  
+  .step-1 {
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1-new-update.png")
+      center center no-repeat;
+  }
+  .step-2 {
+    background: url("../assets/images/chapters/chapter-builder/builder-slide-2-new-update.png")
+      center center no-repeat;
+  }
+  .step-2a {
+    background: url("../assets/images/chapters/chapter-builder/builder-slide-2a-new-update-1.png")
       center center no-repeat;
   }
 
-  .step-2 {
-    background: url("../assets/images/chapters/chapter-builder/screen-bkg-2.jpg")
+  .step-3 {
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-2-new.png")
+      center center no-repeat;
+  }
+
+  .step-4, .step-4a, .step-4b {
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1.png")
+      center center no-repeat;
+  }
+
+  .step-5 {
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-1-updated.jpg")
+      center center no-repeat;
+  }
+  .step-6 {
+    background: url("../assets/images/chapters/chapter-builder/screen-bkg-4-new.jpg")
       center center no-repeat;
   }
 
@@ -15,7 +42,57 @@
     background-size: contain;
   }
 
+
   .step-1 {
+    .click-box {
+      bottom: 355px;
+      left: 172px;
+      width: 28px;
+      height: 13px;
+    }
+  }
+  
+  .step-2 {
+    .click-box {
+      bottom: 321px;
+      left: 153px;
+      width: 47px;
+      height: 14px;
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
+    }
+  }
+  .step-2a {
+    .click-box {
+      bottom: 110px;
+      left: 346px;
+      width: 289px;
+      height: 14px;
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
+    }
+  }
+  .step-3 {
+    .click-box {
+      bottom: 84px;
+      left: 375px;
+      width: 286px;
+      height: 14px;
+    }
+    .check {
+      position: absolute;
+      bottom: 90px;
+      left: 159px;
+    }
+  }
+
+  .step-4 {
     .price-quote-drag {
       position: absolute !important;
       bottom: 141px;
@@ -36,8 +113,29 @@
       height: 13px;
     }
   }
+  .step-5 {
+    .price-quote-drag {
+      position: absolute !important;
+      bottom: 88px;
+      left: 2px;
+      border-radius: 4px;
+      -webkit-user-select:none;
+      -webkit-touch-callout:none;
+      width: 21%;
+      &.active {
+        animation: borderActive 1.5s infinite;
+        cursor: move;
+      }
+    }
+    .drop-box {
+      top: 398px;
+      left: 288px;
+      width: 200px;
+      height: 13px;
+    }
+  }
 
-  .step-2 {
+  .step-6 {
     .click-box {
       bottom: 431px;
       left: 709px;

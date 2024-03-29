@@ -1,6 +1,6 @@
 'use strict';
 
-export default function ChapterBuilderDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer) {
+export default function ChapterBuilderDrawerController($scope, WizardHandler, TopNavbar, Steps, Hotspots, Drawer, $timeout) {
   Drawer.openToIntro();
 
   $scope.gtmTrack = (cat, label, act = "") => {
@@ -24,14 +24,33 @@ export default function ChapterBuilderDrawerController($scope, WizardHandler, To
     Steps.clear();
     Steps.pop({
       number: 'one',
-      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
+      title: 'Give Einstein instructions to generate Apex code.'
     });
 
     Steps.pop({
       number: 'two',
+      title: 'Click &ldquo;Copy code&rdquo;'
+    });
+    Steps.pop({
+      number: 'three',
+      title: 'Deploy source code to org.'
+    });
+    Steps.pop({
+      number: 'four',
+      title: 'Drag and drop &ldquo;Flow - Price Quote&rdquo; right below the &ldquo;Car Configurator&rdquo; component.'
+    });
+    Steps.pop({
+      number: 'five',
+      title: 'Let\'s also add the price comparator component we just created.'
+    });
+    Steps.pop({
+      number: 'six',
       title: 'Click &ldquo;Activation&rdquo; to see your app live.'
     });
 
     Hotspots.clear();
+    $timeout(() => {
+      Steps.activate('one');
+    }, 250);
   };
 }
