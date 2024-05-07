@@ -109,7 +109,10 @@ $drawer-width: 410px;
         }
       }
       @media screen and (min-width: 1600px) {
-        padding: 100px 80px 0;
+        padding: 80px 80px 0;
+        h2 {
+          margin-top: 0;
+        }
       }
       @media screen and (min-width: $screen-1080p) {
         padding: 200px 80px 0;
