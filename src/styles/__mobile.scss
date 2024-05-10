@@ -415,8 +415,8 @@ body > div ~ div {
           font-family: $avantgarde;
           font-style: normal;
           font-weight: 600;
-          font-size: 36px;
-          line-height: 40px;
+          font-size: 28px;
+          line-height: 30px;
           text-align: center;
           letter-spacing: -0.004em;
           width: 280px;
@@ -531,8 +531,8 @@ body > div ~ div {
     }
     p {
       font-weight: 400;
-      font-size: 16px;
-      line-height: 24px;
+      font-size: 15px;
+      line-height: 22px;
       color: #181818;
       @media (min-width: $screen-sm-min) {
         font-size: 36px;

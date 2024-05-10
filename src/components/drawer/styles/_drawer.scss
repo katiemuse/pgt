@@ -89,16 +89,16 @@ $drawer-width: 410px;
         flex-flow: column;
         justify-content: start;
         height: 100%;
-        padding: 80px 60px 0;
+        padding: 60px 60px 0;
         overflow: hidden;
         h2 {
-          font-size: 28px;
+          font-size: 26px;
           line-height: 32px;
-          margin-bottom: 30px;
+          margin-bottom: 20px;
         }
         p {
           font-size: 16px;
-          line-height: 24px;
+          line-height: 23px;
           margin-bottom: 20px;
           &.continue {
             width: 0;
@@ -109,7 +109,10 @@ $drawer-width: 410px;
         }
       }
       @media screen and (min-width: 1600px) {
-        padding: 100px 80px 0;
+        padding: 80px 80px 0;
+        h2 {
+          margin-top: 0;
+        }
       }
       @media screen and (min-width: $screen-1080p) {
         padding: 200px 80px 0;

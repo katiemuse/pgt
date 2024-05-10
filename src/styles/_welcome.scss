@@ -45,8 +45,8 @@
   h3 {
     font-family: $salesforcesans;
     font-weight: 400;
-    font-size: 16px;
-    line-height: 24px;
+    font-size: 15px;
+    line-height: 20px;
     color: #181818;
     margin: 0 auto 10px;
     padding: 10px;
@@ -479,7 +479,7 @@
   p {
     font-style: normal;
     font-weight: 400;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 24px;
     letter-spacing: -0.001em;
     color: #000000;
@@ -487,12 +487,12 @@
 
   a {
     position: absolute;
-    top: 380px;
+    top: 390px;
     left: 0px;
     width: auto;
   }
   a.continue-button-1 {
-    top: 310px;
+    top: 395px;
   }
 
   .welcome-copy-block {
